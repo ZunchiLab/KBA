@@ -35,7 +35,7 @@
             }
 
             const a = document.createElement("a");
-            a.href = file.html_url.replace("github.com", "ZunchiLab.github.io").replace("/blob/", "/");
+            a.href = `https://${user}.github.io/${repo}/${path}/${file.name}`;
             a.textContent = label;
 
             li.appendChild(a);
