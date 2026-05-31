@@ -25,13 +25,24 @@
           .forEach(file => {
             const li = document.createElement("li");
 
-            // ファイル名加工
-            const match = file.name.match(/report_(\d{4})(\d{2})(\d{2})_(\w+)_/);
             let label = file.name;
 
-            if (match) {
-              const [_, y, m, d, type] = match;
+            // report_20260531_JRA_xxx.html
+            const reportMatch = file.name.match(
+              /report_(\d{4})(\d{2})(\d{2})_(\w+)_/
+            );
+
+            // reverse-all-JRA-20260531.html
+            const reverseMatch = file.name.match(
+              /reverse-all-([A-Za-z0-9]+)-(\d{4})(\d{2})(\d{2})\.html/
+            );
+
+            if (reportMatch) {
+              const [_, y, m, d, type] = reportMatch;
               label = `${y}-${m}-${d} (${type})`;
+            } else if (reverseMatch) {
+              const [_, type, y, m, d] = reverseMatch;
+              label = `${y}-${m}-${d} (reverse-${type})`;
             }
 
             const a = document.createElement("a");
@@ -41,6 +52,11 @@
             li.appendChild(a);
             list.appendChild(li);
           });
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById("list").innerHTML =
+          "<li>ファイル一覧の取得に失敗しました。</li>";
       });
   </script>
 </body>
