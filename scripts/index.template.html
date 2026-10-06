@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142f38">
+  <meta name="description" content="KBAの競馬予想一覧。最新の大井・地方競馬、JRA、海外競馬の予想を日付や競馬場で探せます。スマートフォンで読みやすい予想ノート。">
+  <title>KBA｜競馬予想ノート</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/catalog.js" defer></script>
+</head>
+<body>
+  <a href="#archive" class="skip">予想一覧へ移動</a>
+  <div class="container">
+    <header class="site-header">
+      <a class="logo" href="./" aria-label="KBA トップページ"><span class="logo-icon">KBA</span><span class="logo-text"><b>KBA</b><small>競馬予想ノート</small></span></a>
+      <a class="repo-link" href="https://github.com/ZunchiLab/KBA">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <span class="eyebrow">RACE NOTES &amp; ARCHIVE</span>
+          <h1 id="page-title">予想を読む。<br><span>次のレースへ。</span></h1>
+          <p>最新の予想から、過去の判断まで。<br>日付と競馬場で、読みたい予想を探せます。</p>
+          <div class="hero-note"><span class="dot" aria-hidden="true"></span>新しい版を先に表示。過去の版も記録として残します。</div>
+        </div>
+        <!-- FEATURED -->
+      </section>
+      <section id="archive" aria-labelledby="archive-title">
+        <div class="archive-head"><h2 id="archive-title">予想一覧</h2><p><span class="catalog-count" id="visible-count"><!-- COUNT --></span>件表示 · 新しい日付から</p></div>
+        <div class="control-panel">
+          <div class="search-row">
+            <div class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><label for="search" hidden>日付・競馬場・タイトルで検索</label><input id="search" type="search" placeholder="大井、JRA、2026-10-06…" autocomplete="off"></div>
+            <label for="month" hidden>開催月</label><select id="month"><option value="all">すべての月</option><!-- MONTHS --></select>
+          </div>
+          <div class="filter-row">
+            <div class="category-filters" aria-label="競馬区分"><button type="button" data-category-filter="all" aria-pressed="true">すべて</button><button type="button" data-category-filter="nar" aria-pressed="false">地方競馬</button><button type="button" data-category-filter="jra" aria-pressed="false">中央競馬</button><button type="button" data-category-filter="overseas" aria-pressed="false">海外競馬</button></div>
+            <label class="version-control"><input type="checkbox" id="show-versions">旧版も表示する</label>
+          </div>
+        </div>
+        <noscript><p>検索・絞り込みはJavaScriptを有効にすると利用できます。以下の予想はそのまま開けます。</p></noscript>
+        <div class="catalog-grid"><!-- CARDS --></div>
+        <div class="empty" id="empty" hidden>該当する予想がありません。<button type="button" class="reset" id="reset">絞り込みをリセット</button></div>
+      </section>
+    </main>
+    <footer class="footer"><p>© KBA · 競馬予想ノート<br>判断時刻・購入条件は、各予想ページで確認してください。</p><p><a href="https://www.keiba.go.jp/">地方競馬情報</a> · <a href="https://www.jra.go.jp/">JRA</a></p></footer>
+  </div>
+</body>
+</html>
