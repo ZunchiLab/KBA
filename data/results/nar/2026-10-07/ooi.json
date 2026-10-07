@@ -9,7 +9,7 @@
   "forecast_file": "report_20261007_nar_ooi_predictions_v1.json",
   "forecast_sha256": "800b33cfa64cc954c13198206206aca28ac925b1a178744f5e6dacf8e3b5c86a",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-07T17:38:15+09:00",
+  "updated_at": "2026-10-07T17:40:18+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -1774,9 +1774,9 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F07&k_babaCode=20&k_raceNo=7",
-        "retrieved_at": "2026-10-07T17:38:15+09:00",
+        "retrieved_at": "2026-10-07T17:40:17+09:00",
         "sha256": "6285eb669eabb5c5e2d1c2c4f61adea1431df78e33849f124211e77168114be2",
-        "saved_file": "data/results/sources/2026-10-07/ooi/r7_173815_6285eb669eab.html"
+        "saved_file": "data/results/sources/2026-10-07/ooi/r7_174017_6285eb669eab.html"
       },
       "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
     },
