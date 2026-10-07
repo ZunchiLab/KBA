@@ -142,6 +142,20 @@ async function fetchJson(url) {
   } finally { clearTimeout(timer); }
 }
 
+async function latestResultUrl(force) {
+  const key = 'kba-result-main-reference';
+  let cached;
+  try { cached = JSON.parse(localStorage.getItem(key) || 'null'); } catch {}
+  if (force || !cached || Date.now() - cached.checkedAt > 110000 || !/^[a-f0-9]{40}$/.test(cached.sha)) {
+    const ref = await fetchJson('https://api.github.com/repos/ZunchiLab/KBA/git/ref/heads/main');
+    if (!/^[a-f0-9]{40}$/.test(ref.object?.sha || '')) throw new Error('最新の更新を確認できません。');
+    cached = { sha: ref.object.sha, checkedAt: Date.now() };
+    try { localStorage.setItem(key, JSON.stringify(cached)); } catch {}
+  }
+  // An immutable commit URL avoids an old CDN response for the moving main URL.
+  return panel.dataset.liveUrl.replace('/KBA/main/', '/KBA/' + cached.sha + '/');
+}
+
 async function readForecast() {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 15000);
@@ -196,15 +210,19 @@ if (panel) {
   const status = panel.querySelector('.results-status');
   let lastData = null;
   let refreshTimer = null;
-  async function loadResults() {
+  async function loadResults(force = false) {
     if (button.disabled) return;
     button.disabled = true; panel.setAttribute('aria-busy', 'true');
     status.classList.remove('results-error'); status.textContent = '保存済みの公式結果を取得中…';
     try {
       const { forecast, digest } = await readForecast();
       let data, fallback = false;
-      try { data = await fetchJson(panel.dataset.liveUrl); }
-      catch { data = await fetchJson(panel.dataset.resultUrl); fallback = true; }
+      try { data = await fetchJson(await latestResultUrl(force)); }
+      catch {
+        fallback = true;
+        try { data = await fetchJson(panel.dataset.liveUrl); }
+        catch { data = await fetchJson(panel.dataset.resultUrl); }
+      }
       validate(data, forecast, digest);
       if (lastData && Date.parse(lastData.updated_at) > Date.parse(data.updated_at)) {
         data = lastData; fallback = true;
@@ -215,7 +233,7 @@ if (panel) {
       const staleMinutes = Math.max(5, (data.refresh_interval_minutes || 10) * 3);
       const stale = !data.complete && Date.now() - Date.parse(data.updated_at) > staleMinutes * 60000;
       status.textContent = '保存データ更新：' + formatTime(data.updated_at) +
-        (fallback ? '。最新配信に接続できず、保存済みの結果を表示。' : '。') +
+        (fallback ? '。最新の更新確認に接続できず、保存済みの結果を表示。' : '。') +
         (failed ? `${failed}Rは取得失敗・前回結果を含みます。` : '') +
         (stale ? `結果データの更新が${staleMinutes}分以上止まっています。取得処理が遅れている可能性があります。` : '');
       status.classList.toggle('results-error', failed > 0 || stale || fallback);
@@ -232,8 +250,8 @@ if (panel) {
       status.classList.add('results-error');
     } finally { button.disabled = false; panel.setAttribute('aria-busy', 'false'); }
   }
-  button.addEventListener('click', loadResults);
+  button.addEventListener('click', () => loadResults(true));
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden && lastData && !lastData.complete) loadResults();
+    if (!document.hidden && lastData && !lastData.complete) loadResults(true);
   });
 }
