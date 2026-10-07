@@ -9,7 +9,7 @@
   "forecast_file": "report_20261007_nar_sonoda_predictions_v1.json",
   "forecast_sha256": "22262213af9cc2d9912cb77acb3c625d5a4f6cc787ad13d35eacd0934ef27eab",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-07T15:44:01+09:00",
+  "updated_at": "2026-10-07T16:09:02+09:00",
   "complete": false,
   "refresh_interval_minutes": 10,
   "refresh_status": "scheduled",
@@ -759,26 +759,283 @@
       "race": 10,
       "name": "なにわの畜産ひろば特別Ｃ２ ３歳以上",
       "start_at": "2026-10-07T15:30:00+09:00",
-      "status": "pending",
-      "rows": [],
-      "refunds": [],
+      "status": "confirmed",
+      "rows": [
+        {
+          "number": 6,
+          "name": "エーピーポエティス",
+          "finish": 1,
+          "time": "2:07.5",
+          "margin": "",
+          "last_3f": "39.9",
+          "jockey": "山本太 （兵庫）",
+          "body_weight": "474(2)",
+          "final_popularity": 3,
+          "final_win_odds": "11.4"
+        },
+        {
+          "number": 7,
+          "name": "エルナンデス",
+          "finish": 2,
+          "time": "2:07.7",
+          "margin": "1.1/4",
+          "last_3f": "41.2",
+          "jockey": "廣瀬航 （兵庫）",
+          "body_weight": "582(-1)",
+          "final_popularity": 4,
+          "final_win_odds": "13.0"
+        },
+        {
+          "number": 11,
+          "name": "シャインフリーリー",
+          "finish": 3,
+          "time": "2:08.3",
+          "margin": "3.1/2",
+          "last_3f": "40.9",
+          "jockey": "笹田知 （兵庫）",
+          "body_weight": "471(-1)",
+          "final_popularity": 5,
+          "final_win_odds": "20.8"
+        },
+        {
+          "number": 10,
+          "name": "メイショウノヴァス",
+          "finish": 4,
+          "time": "2:08.5",
+          "margin": "1",
+          "last_3f": "41.8",
+          "jockey": "吉村智 （兵庫）",
+          "body_weight": "474(10)",
+          "final_popularity": 2,
+          "final_win_odds": "3.4"
+        },
+        {
+          "number": 1,
+          "name": "シギーコルエンド",
+          "finish": 5,
+          "time": "2:09.0",
+          "margin": "3",
+          "last_3f": "41.6",
+          "jockey": "下原理 （兵庫）",
+          "body_weight": "587(-14)",
+          "final_popularity": 6,
+          "final_win_odds": "25.2"
+        },
+        {
+          "number": 3,
+          "name": "メイショウコハル",
+          "finish": 6,
+          "time": "2:09.8",
+          "margin": "5",
+          "last_3f": "41.5",
+          "jockey": "大山真 （兵庫）",
+          "body_weight": "430(-2)",
+          "final_popularity": 8,
+          "final_win_odds": "45.7"
+        },
+        {
+          "number": 2,
+          "name": "エナアスコット",
+          "finish": 7,
+          "time": "2:10.1",
+          "margin": "1.3/4",
+          "last_3f": "42.7",
+          "jockey": "井上幹 （兵庫）",
+          "body_weight": "492(2)",
+          "final_popularity": 10,
+          "final_win_odds": "140.9"
+        },
+        {
+          "number": 8,
+          "name": "ジーティーピカソ",
+          "finish": 8,
+          "time": "2:10.2",
+          "margin": "3/4",
+          "last_3f": "43.2",
+          "jockey": "小牧太 （兵庫）",
+          "body_weight": "534(-2)",
+          "final_popularity": 1,
+          "final_win_odds": "1.5"
+        },
+        {
+          "number": 9,
+          "name": "エイシンピサロ",
+          "finish": 9,
+          "time": "2:10.4",
+          "margin": "3/4",
+          "last_3f": "43.7",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "480(2)",
+          "final_popularity": 7,
+          "final_win_odds": "41.9"
+        },
+        {
+          "number": 5,
+          "name": "ハチマン",
+          "finish": 10,
+          "time": "2:11.8",
+          "margin": "8",
+          "last_3f": "44.0",
+          "jockey": "杉浦健 （兵庫）",
+          "body_weight": "467(1)",
+          "final_popularity": 9,
+          "final_win_odds": "52.0"
+        },
+        {
+          "number": 4,
+          "name": "フィオーレクラウド",
+          "finish": 11,
+          "time": "2:17.8",
+          "margin": "大差",
+          "last_3f": "49.6",
+          "jockey": "田野豊 （兵庫）",
+          "body_weight": "458(-6)",
+          "final_popularity": 11,
+          "final_win_odds": "157.7"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "6",
+          "numbers": [
+            6
+          ],
+          "yen_per_100": 1140,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "6",
+          "numbers": [
+            6
+          ],
+          "yen_per_100": 220,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "7",
+          "numbers": [
+            7
+          ],
+          "yen_per_100": 250,
+          "popularity": "4人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "11",
+          "numbers": [
+            11
+          ],
+          "yen_per_100": 360,
+          "popularity": "6人気"
+        },
+        {
+          "kind": "枠連複",
+          "combination": "6-6",
+          "numbers": [
+            6,
+            6
+          ],
+          "yen_per_100": 3220,
+          "popularity": "7人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "6-7",
+          "numbers": [
+            6,
+            7
+          ],
+          "yen_per_100": 3960,
+          "popularity": "12人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "6-7",
+          "numbers": [
+            6,
+            7
+          ],
+          "yen_per_100": 7810,
+          "popularity": "19人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "6-7",
+          "numbers": [
+            6,
+            7
+          ],
+          "yen_per_100": 830,
+          "popularity": "9人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "6-11",
+          "numbers": [
+            6,
+            11
+          ],
+          "yen_per_100": 2140,
+          "popularity": "20人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "7-11",
+          "numbers": [
+            7,
+            11
+          ],
+          "yen_per_100": 2600,
+          "popularity": "23人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "6-7-11",
+          "numbers": [
+            6,
+            7,
+            11
+          ],
+          "yen_per_100": 20060,
+          "popularity": "47人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "6-7-11",
+          "numbers": [
+            6,
+            7,
+            11
+          ],
+          "yen_per_100": 54700,
+          "popularity": "138人気"
+        }
+      ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F07&k_babaCode=27&k_raceNo=10",
-        "retrieved_at": "2026-10-07T15:44:01+09:00",
-        "sha256": "0228b7e8875341e77eeb0938bdc8110c876e383b0578893e43fcf0b933d7857c",
-        "saved_file": "data/results/sources/2026-10-07/sonoda/r10_154401_0228b7e88753.html"
+        "retrieved_at": "2026-10-07T16:09:01+09:00",
+        "sha256": "57ace2e774d5f22926566787fd9535c363c40f4759328bfb2f4ff5e82397e93a",
+        "saved_file": "data/results/sources/2026-10-07/sonoda/r10_160901_57ace2e774d5.html"
       },
-      "note": "確定着順・払戻が揃うまで判定を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 11,
       "name": "ＪＲＡ交流 逆瀬川特別３歳以上登録馬",
       "start_at": "2026-10-07T16:05:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "rows": [],
       "refunds": [],
-      "source": null,
-      "note": "保存時点では発走前。"
+      "source": {
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F07&k_babaCode=27&k_raceNo=11",
+        "retrieved_at": "2026-10-07T16:09:01+09:00",
+        "sha256": "15fada06378837099cf9f1d1fa4f2f947380bd035c7b90ddda25fc0043691d32",
+        "saved_file": "data/results/sources/2026-10-07/sonoda/r11_160901_15fada063788.html"
+      },
+      "note": "公式の確定着順・払戻は未掲載。"
     },
     {
       "race": 12,
