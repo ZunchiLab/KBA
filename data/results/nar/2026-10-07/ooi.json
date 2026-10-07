@@ -9,7 +9,7 @@
   "forecast_file": "report_20261007_nar_ooi_predictions_v1.json",
   "forecast_sha256": "800b33cfa64cc954c13198206206aca28ac925b1a178744f5e6dacf8e3b5c86a",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-07T18:12:49+09:00",
+  "updated_at": "2026-10-07T18:14:52+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -1880,16 +1880,182 @@
       "race": 8,
       "name": "メキシカン賞Ｃ１七 八 九",
       "start_at": "2026-10-07T18:05:00+09:00",
-      "status": "pending",
-      "rows": [],
-      "refunds": [],
+      "status": "partial",
+      "rows": [
+        {
+          "number": 7,
+          "name": "ウエストリーダー",
+          "finish": 1,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "野畑凌 （川崎）",
+          "body_weight": "529(-5)",
+          "final_popularity": 6,
+          "final_win_odds": "16.0"
+        },
+        {
+          "number": 3,
+          "name": "バーナードハンサム",
+          "finish": 2,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "本田重 （船橋）",
+          "body_weight": "510(3)",
+          "final_popularity": 1,
+          "final_win_odds": "1.1"
+        },
+        {
+          "number": 8,
+          "name": "マウリノ",
+          "finish": 3,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "和田譲 （大井）",
+          "body_weight": "475(2)",
+          "final_popularity": 4,
+          "final_win_odds": "14.6"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "7",
+          "numbers": [
+            7
+          ],
+          "yen_per_100": 1600,
+          "popularity": "6人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "7",
+          "numbers": [
+            7
+          ],
+          "yen_per_100": 160,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "3",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 100,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "8",
+          "numbers": [
+            8
+          ],
+          "yen_per_100": 160,
+          "popularity": "4人気"
+        },
+        {
+          "kind": "枠連複",
+          "combination": "3-7",
+          "numbers": [
+            3,
+            7
+          ],
+          "yen_per_100": 530,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "3-7",
+          "numbers": [
+            3,
+            7
+          ],
+          "yen_per_100": 490,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "枠連単",
+          "combination": "7-3",
+          "numbers": [
+            7,
+            3
+          ],
+          "yen_per_100": 3090,
+          "popularity": "8人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "7-3",
+          "numbers": [
+            7,
+            3
+          ],
+          "yen_per_100": 3060,
+          "popularity": "7人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-7",
+          "numbers": [
+            3,
+            7
+          ],
+          "yen_per_100": 230,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "7-8",
+          "numbers": [
+            7,
+            8
+          ],
+          "yen_per_100": 680,
+          "popularity": "9人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-8",
+          "numbers": [
+            3,
+            8
+          ],
+          "yen_per_100": 190,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "3-7-8",
+          "numbers": [
+            3,
+            7,
+            8
+          ],
+          "yen_per_100": 1040,
+          "popularity": "4人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "7-3-8",
+          "numbers": [
+            7,
+            3,
+            8
+          ],
+          "yen_per_100": 13880,
+          "popularity": "39人気"
+        }
+      ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F07&k_babaCode=20&k_raceNo=8",
-        "retrieved_at": "2026-10-07T18:12:49+09:00",
-        "sha256": "15fada06378837099cf9f1d1fa4f2f947380bd035c7b90ddda25fc0043691d32",
-        "saved_file": "data/results/sources/2026-10-07/ooi/r8_181249_15fada063788.html"
+        "retrieved_at": "2026-10-07T18:14:52+09:00",
+        "sha256": "1300a803abcdc54bff61c477c8a8226f6e93d782705df115237ad484599038f3",
+        "saved_file": "data/results/sources/2026-10-07/ooi/r8_181452_1300a803abcd.html"
       },
-      "note": "公式の確定着順・払戻は未掲載。"
+      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
     },
     {
       "race": 9,
