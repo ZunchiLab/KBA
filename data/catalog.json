@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T16:33:29+09:00",
+  "generated_at": "2026-10-07T22:30:59+09:00",
   "reports": [
     {
       "file": "report_20261007_nar_ooi_predictions_v1.html",
@@ -152,7 +152,9 @@
         "モンゲーキララ",
         "ユイノコミチ"
       ],
-      "has_results": true
+      "has_results": true,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20261007_nar_sonoda_predictions_v1.html",
@@ -234,7 +236,227 @@
         "ナムラオリビア",
         "ビヨンドザシーン"
       ],
-      "has_results": true
+      "has_results": true,
+      "document_type": "prediction",
+      "reviewed_at": null
+    },
+    {
+      "file": "report_20261007_nar_review_v1.html",
+      "href": "predictions/report_20261007_nar_review_v1.html",
+      "date": "2026-10-07",
+      "category": "review",
+      "venue": "園田・大井",
+      "title": "園田・大井 10/7の振り返りと買い方補助｜KBA",
+      "heading": "園田・大井 10/7の振り返りと買い方補助｜KBA",
+      "note": "開催後の振り返り · 全頭の印と着順 · 買い方と購入記録の補助",
+      "version": 1,
+      "group": "report_20261007_nar_review",
+      "fixed_at": null,
+      "scope": null,
+      "phase": "開催後",
+      "superseded": false,
+      "horse_names": [
+        "ラクプエル",
+        "ガスパール",
+        "サクラトップクロス",
+        "アンフィニレイス",
+        "エイシンヴィエント",
+        "シュライフェ",
+        "エピックデイ",
+        "コンバットモモヒメ",
+        "ハイラブエナン",
+        "アスコットダンス",
+        "ラプスドール",
+        "ゼフィルス",
+        "マイトリックスター",
+        "スマートレイナ",
+        "シンパティア",
+        "セイクリッドシチー",
+        "ヤマカンドリーミン",
+        "ミステリアスレディ",
+        "グレンセロース",
+        "ブラッドショー",
+        "トシクン",
+        "クリノエニシ",
+        "フィオリータ",
+        "マスターライセンス",
+        "ララヴァニーユ",
+        "ヴラマンク",
+        "シバノストムキット",
+        "モーニンムスメ",
+        "エーピーポエティス",
+        "エルナンデス",
+        "シャインフリーリー",
+        "メイショウノヴァス",
+        "シギーコルエンド",
+        "メイショウコハル",
+        "エナアスコット",
+        "ジーティーピカソ",
+        "エイシンピサロ",
+        "ハチマン",
+        "フィオーレクラウド",
+        "バトゥカーダ",
+        "ルシャリオ",
+        "リッチハンター",
+        "キャンドルマス",
+        "ランドプリメーロ",
+        "レイアンドダンス",
+        "ヒノデテイオー",
+        "ミグラテール",
+        "イザグリーンライト",
+        "ジャスパーノベル",
+        "ナムラマイケル",
+        "ブラックサンライズ",
+        "エコロヴァイス",
+        "タガノウィリアム",
+        "ダイヤグラフ",
+        "アグネスシュウ",
+        "アイヤナ",
+        "ブチエー",
+        "プンタカナ",
+        "ナムラテディー",
+        "プレジールミノル",
+        "ブーヤカ",
+        "ビヨンドザシーン",
+        "ナムラオリビア",
+        "ネオアオトビ",
+        "ココミサイル",
+        "ムーンシェイド",
+        "トゥーナルビーズ",
+        "ハッピーワイド",
+        "ポロリス",
+        "コンプレックス",
+        "ヤマジュンハッピ",
+        "デスピナ",
+        "キミヲコイシタウ",
+        "リュウノナナホシ",
+        "サクラエナジー",
+        "ナックポピー",
+        "ココクイック",
+        "ラバテラダンサー",
+        "グロリアスワールド",
+        "オーシャンクロノス",
+        "ヨバフウチ",
+        "ルイーダ",
+        "スカイハピネス",
+        "ユウユウチャパティ",
+        "ライライラクラク",
+        "イノデジュエル",
+        "ポコポッチ",
+        "セイシンドラゴン",
+        "ルナベレッツァ",
+        "トレンドワン",
+        "ムサシウォリアー",
+        "トンスケ",
+        "ムーンショア",
+        "モーモールーツ",
+        "ハイラブクイーン",
+        "セラビーンズ",
+        "ヒールリフト",
+        "ラソンリーサ",
+        "ノーブルミューズ",
+        "スカイビーンズ",
+        "ライジングステップ",
+        "アロハフリューゲル",
+        "ジーニーキック",
+        "フカガワブギョー",
+        "ユイノサンバンカン",
+        "フィリピーヌ",
+        "リュウノギフト",
+        "アタックオフェール",
+        "クレマチスノーブル",
+        "トゥーナウィッシュ",
+        "ローレンモンブラン",
+        "アウフヴィント",
+        "コトリノサエズリ",
+        "ベルウッドモア",
+        "ペイルムーン",
+        "ナムラソラン",
+        "ムービングアップ",
+        "ラブリーファンク",
+        "ヤッティライネン",
+        "アンパンタイム",
+        "ハヴィティペイ",
+        "シストロン",
+        "ストレートビーム",
+        "ラインメテオラ",
+        "ベラジオスピード",
+        "ガーリッシュ",
+        "バイアホーン",
+        "ルーシーノワール",
+        "ネポティズムベビー",
+        "カンタベリータイム",
+        "ジューンアカデミー",
+        "スマイルケイ",
+        "トーケンサワー",
+        "マオノジーニー",
+        "ジャストリアン",
+        "ナンセイスコピオン",
+        "ウエストリーダー",
+        "バーナードハンサム",
+        "マウリノ",
+        "ボラボラフレイバー",
+        "エヌケイサイボウ",
+        "アクアジェット",
+        "ハイアップグレード",
+        "バレアレス",
+        "ハルイチバン",
+        "ライペニング",
+        "リノカ",
+        "コブラツイスト",
+        "エスプリワールド",
+        "ピルゴスアイトス",
+        "スペイスフォース",
+        "ベルオーシャン",
+        "マニス",
+        "ワイドモヒート",
+        "マドモアゼルレンヌ",
+        "インペリオ",
+        "オレンジマン",
+        "ダイヤメ",
+        "アンモニャイト",
+        "ファインブレード",
+        "ベネメレンティ",
+        "イマーシブ",
+        "ロンフォン",
+        "ウイングウインド",
+        "アルピニスト",
+        "モンサンヴデット",
+        "インサイダー",
+        "シルバーレシオ",
+        "ワンダーディーン",
+        "チェリヴェント",
+        "サンラザール",
+        "パイロマンサー",
+        "ロックターミガン",
+        "エンドレスソロウ",
+        "アイリーズ",
+        "フィンガー",
+        "ララメテオ",
+        "アヤサンジョウタロ",
+        "フォースメン",
+        "ロウリュ",
+        "デンテブリランテ",
+        "マロンソレイユ",
+        "イッテラッシャイ",
+        "ケイアイエルナト",
+        "アジャイルブラック",
+        "ハイケンス",
+        "フェアゴー",
+        "セキトバシューズ",
+        "ロンギングタイム",
+        "グリーズマン",
+        "ユニゾン",
+        "プロローク",
+        "コーゲンシルバー",
+        "アルティメットサガ",
+        "ユイノコミチ",
+        "モンゲーキララ",
+        "ウィンターサン"
+      ],
+      "has_results": false,
+      "document_type": "review",
+      "reviewed_at": "2026-10-07T22:29:36+09:00"
     },
     {
       "file": "report_20261006_nar_ooi_predictions_v2.html",
@@ -336,7 +558,9 @@
         "チャダルクン",
         "ポッドフェスタ"
       ],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20261006_nar_ooi_predictions_v1.html",
@@ -495,7 +719,9 @@
         "チャダルクン",
         "ポッドフェスタ"
       ],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "凱旋門賞_2026-10-04_本気予想.html",
@@ -513,7 +739,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "JRA_2026-10-04_全24R_本気予想.html",
@@ -531,7 +759,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20261003_jra_predictions.html",
@@ -549,7 +779,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "JRA_2026-10-03_全24R_本気予想_スマホ版.html",
@@ -567,7 +799,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "JRA_2026-09-27_全24R_印付き_得点順デフォルト.html",
@@ -585,7 +819,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260926_jra_predictions.html",
@@ -603,7 +839,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "jra_2026-09-26_allraces_pedigree_training_mobile.html",
@@ -621,7 +859,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260920_jra_predictions.html",
@@ -639,7 +879,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260919_jra_predictions.html",
@@ -657,7 +899,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260906_jra_predictions.html",
@@ -675,7 +919,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260905_jra_predictions.html",
@@ -693,7 +939,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260830_jra_predictions.html",
@@ -711,7 +959,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260811_nar_predictions.html",
@@ -729,7 +979,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260808_jra_predictions.html",
@@ -747,7 +999,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260802_jra_predictions.html",
@@ -765,7 +1019,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260711_jra_predictions.html",
@@ -783,7 +1039,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260705_jra_predictions.html",
@@ -801,7 +1059,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260704_jra_predictions.html",
@@ -819,7 +1079,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260621_jra_predictions.html",
@@ -837,7 +1099,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260620_jra_predictions.html",
@@ -855,7 +1119,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260614_jra_predictions.html",
@@ -873,7 +1139,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "reverse-all-JRA-20260606-fw.html",
@@ -891,7 +1159,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260606_jra_predictions.html",
@@ -909,7 +1179,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "reverse-all-JRA-20260531.html",
@@ -927,7 +1199,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260531_jra_predictions.html",
@@ -945,7 +1219,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260524_jra_predictions.html",
@@ -963,7 +1239,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260523_jra_predictions.html",
@@ -981,7 +1259,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260517_jra_predictions.html",
@@ -999,7 +1279,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260516_jra_predictions.html",
@@ -1017,7 +1299,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260510_jra_predictions.html",
@@ -1035,7 +1319,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260509_jra_predictions.html",
@@ -1053,7 +1339,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260503_jra_predictions.html",
@@ -1071,7 +1359,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260502_jra_predictions.html",
@@ -1089,7 +1379,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     },
     {
       "file": "report_20260429_nar_predictions.html",
@@ -1107,7 +1399,9 @@
       "phase": null,
       "superseded": false,
       "horse_names": [],
-      "has_results": false
+      "has_results": false,
+      "document_type": "prediction",
+      "reviewed_at": null
     }
   ]
 }
