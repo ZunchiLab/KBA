@@ -8,14 +8,14 @@
 </style>
 </head>
 <body><main>
-<header><nav><a href="https://zunchilab.github.io/KBA/">KBA一覧</a><a href="../predictions/report_20261007_nar_review_v1.html">10/7の振り返り</a></nav><small>KBA / BUYING SUPPORT</small><h1>印を、買い目にする前に。</h1><p class="lead">券種・着順の縛り・点数・予算を確認します。◎でも2・3着はあり得ます。候補を増やす前に、何を当てたいかを決めましょう。</p><p class="hint">ここでは点数計算と記録ができます。予算の初期値は例です。実際の投票・オッズ取得は行いません。</p></header>
+<header><nav><a href="https://zunchilab.github.io/KBA/">KBA一覧</a><a href="../predictions/report_20261007_nar_review_v1.html">10/7の振り返り</a><a href="../docs/common-spec.html">JRA・地方の共通仕様</a></nav><small>KBA / BUYING SUPPORT</small><h1>印を、買い目にする前に。</h1><p class="lead">JRA・地方共通で、券種・着順の縛り・点数・予算を確認します。◎でも2・3着はあり得ます。候補を増やす前に、何を当てたいかを決めましょう。</p><p class="hint">ここでは点数計算と記録ができます。予算の初期値は例です。実際の投票・オッズ取得は行いません。</p></header>
 <noscript><p>計算・記録にはJavaScriptが必要です。<a href="../predictions/report_20261007_nar_review_v1.html">振り返りと買い方の説明</a>はそのまま読めます。</p></noscript>
 <section><span class="step">01 / 券種を選ぶ</span><h2>予想できる範囲は？</h2>
 <label for="belief">自分の判断<select id="belief"><option value="two">2頭が馬券圏内に来そう</option><option value="one">1頭が馬券圏内に来そう</option><option value="three">3頭は選べるが、順は決めづらい</option><option value="win">勝つ1頭を選びたい</option><option value="order">1〜3着の役割まで説明できる</option><option value="unknown">軸候補を十分に比較できない</option></select></label>
 <div id="guidance" class="message"></div><button id="useSuggestion" type="button">候補の券種を選ぶ</button>
 <p class="hint">券種を変えても軸が圏外なら外れます。買う理由が薄いときは見送りも選択肢です。</p></section>
 <section><span class="step">02 / 点数と着順を確認</span><h2>重複を除いて計算</h2>
-<div class="grid"><label for="kind">券種<select id="kind"><option>ワイド</option><option>複勝</option><option>単勝</option><option>三連複</option><option>三連単</option></select></label><label for="mode">組み方<select id="mode"><option value="box">BOX / 全ての組合せ</option><option value="formation">フォーメーション</option></select></label></div>
+<div class="grid"><label for="kind">券種<select id="kind"><option>ワイド</option><option>複勝</option><option>単勝</option><option>馬連</option><option>馬単</option><option>三連複</option><option>三連単</option></select></label><label for="mode">組み方<select id="mode"><option value="box">BOX / 全ての組合せ</option><option value="formation">フォーメーション</option></select></label></div>
 <p id="rule" class="hint"></p>
 <label for="a"><span id="labelA">選ぶ馬番</span><input id="a" type="text" placeholder="例：10,14" autocomplete="off"></label>
 <div id="groupB" hidden><label for="b"><span id="labelB">2頭目</span><input id="b" type="text" placeholder="例：1,4" autocomplete="off"></label></div>
@@ -29,17 +29,17 @@
 </section>
 <section><span class="step">03 / 外れ方を想像</span><h2>この並びで拾える？</h2><p class="hint">単独の1〜3着を入力して組合せを確認します。同着・取消・返還は対象外。金額の精算は公式払戻で確認してください。</p>
 <div class="simgrid"><label for="first">1着の馬番<input id="first" type="number" min="1" max="18"></label><label for="second">2着の馬番<input id="second" type="number" min="1" max="18"></label><label for="third">3着の馬番<input id="third" type="number" min="1" max="18"></label></div>
-<label for="starters">出走頭数（この比較は3頭以上）<input id="starters" type="number" min="3" max="18" value="12"></label>
+<label for="starters">発売開始時の出走頭数（この比較は3頭以上）<input id="starters" type="number" min="3" max="18" value="12"></label><p class="hint">複勝は発売開始時の5〜7頭なら2着まで、8頭以上なら3着まで。4頭以下は発売されません。後の取消で減った頭数に置き換えないでください。</p>
 <div id="simulation" class="message" aria-live="polite">馬番を入れると、買い目に含まれるか表示します。</div>
 <details><summary>10/7の終了レースで学ぶ</summary><p class="hint">結果を知った後の説明用です。元案の全点を読み込みます。各点の発走前価格による除外はこの計算には適用しません。</p><div class="actions"><button type="button" data-example="sonoda9">園田9R・元の三連単</button><button type="button" data-example="ooi11">大井11R・元の三連単</button><button type="button" data-example="ooi12">大井12R・元のワイド</button></div><p id="exampleNote" class="note" hidden></p></details>
 </section>
 <section><span class="step">04 / 次の反省へ残す</span><h2>予定と購入済みを分ける</h2><p class="hint">記録はこのブラウザーに保存されます。JSONを書き出して購入履歴として共有できます。ブラウザーのデータ削除や別端末には引き継がれません。</p>
-<div class="grid"><label for="date">開催日<input id="date" type="date"></label><label for="venue">競馬場<input id="venue" type="text" placeholder="大井・園田など" maxlength="30"></label><label for="race">レース番号<input id="race" type="number" min="1" max="12"></label><label for="status">記録の種類<select id="status"><option value="planned">購入前の予定</option><option value="skipped">見送り</option><option value="purchased">購入済み（記録のみ）</option></select></label><label for="checked">価格・状態を確認した時刻<input id="checked" type="datetime-local"></label><label for="dayBudget">1日の上限（円・入力例）<input id="dayBudget" type="number" min="0" max="1000000" step="100" value="3000"></label></div>
+<div class="grid"><label for="authority">区分<select id="authority"><option value="nar">地方競馬</option><option value="jra">JRA</option></select></label><label for="date">開催日<input id="date" type="date"></label><label for="venue">競馬場<input id="venue" type="text" placeholder="東京・京都・大井・園田など" maxlength="30"></label><label for="race">レース番号<input id="race" type="number" min="1" max="12"></label><label for="status">記録の種類<select id="status"><option value="planned">購入前の予定</option><option value="skipped">見送り</option><option value="purchased">購入済み（記録のみ）</option></select></label><label for="checked">価格・状態を確認した時刻<input id="checked" type="datetime-local"></label><label for="dayBudget">1日の上限（円・入力例）<input id="dayBudget" type="number" min="0" max="1000000" step="100" value="3000"></label></div><p class="hint">1日の上限はこの端末に記録したJRA・地方の購入済みを合算します。ほかの端末や投票サイトの購入額は取得しません。</p>
 <label for="notes">購入時のオッズ、取消確認、採否の理由など<textarea id="notes" rows="3" placeholder="点ごとの価格や、見送った理由も残すと振り返りやすくなります。"></textarea></label>
 <p id="dailyMessage" class="hint"></p><p class="hint">取消・除外を確認したら買い目を作り直してください。購入済みを選ぶ場合は、実際に買った金額・買い目に合わせて入力します。</p>
 <div class="actions"><button id="save" type="button" class="primary">端末に記録する</button><button id="export" type="button">記録JSONを書き出す</button></div><p id="saveMessage" class="hint" aria-live="polite"></p><details><summary>保存した記録</summary><div id="records" class="records"></div></details>
 </section>
-<footer><p>点数や着順条件の整理を助ける道具です。的中確率・期待値・将来の収益は計算していません。オッズは締切まで変わります。</p><p>券種の条件・組み方：<a href="https://www.keiba.go.jp/beginner/step3.html">地方競馬全国協会「買い方を決める」</a>。複勝は出走7頭以下なら2着まで。ワイドは3着同着同士が対象外です。</p></footer>
+<footer><p>点数や着順条件の整理を助ける道具です。的中確率・期待値・将来の収益は計算していません。オッズは締切まで変わります。</p><p>券種の条件・組み方：<a href="https://www.jra.go.jp/kouza/beginner/baken/">JRA「馬券の種類」</a>、<a href="https://www.keiba.go.jp/beginner/step3.html">地方競馬全国協会「買い方を決める」</a>。複勝の対象着順は発売開始時の頭数で決まります。ワイドは3着同着同士が対象外です。</p></footer>
 </main>
 <script>
 (() => {
@@ -57,8 +57,8 @@ const jpDate = () => {
 };
 $('date').value = jpDate();
 let current = {combos:[],total:0,valid:false,unit:100};
-const arity = () => ['単勝','複勝'].includes($('kind').value) ? 1 : $('kind').value === 'ワイド' ? 2 : 3;
-const ordered = () => $('kind').value === '三連単';
+const arity = () => ['単勝','複勝'].includes($('kind').value) ? 1 : ['ワイド','馬連','馬単'].includes($('kind').value) ? 2 : 3;
+const ordered = () => ['馬単','三連単'].includes($('kind').value);
 const guidance = {
   two:['ワイド','2頭の圏内を狙うなら、ワイドを候補に。2頭とも3着以内が必要です。'],
   one:['複勝','1頭の圏内を狙うなら、複勝を候補に。少頭数では2着までです。低い払戻で的中しても全体収支は別に確認します。'],
@@ -98,7 +98,7 @@ function layout() {
   $('labelA').textContent=size===1 ? '選ぶ馬番' : !form ? 'BOXに入れる馬番' : ordered() ? '1着に置く馬番' : '1頭目の馬番（着順指定なし）';
   $('labelB').textContent=ordered()?'2着に置く馬番':'2頭目の馬番（着順指定なし）';
   $('labelC').textContent=ordered()?'3着に置く馬番':'3頭目の馬番（着順指定なし）';
-  const rules={単勝:'1着の馬を当てます。',複勝:'出走8頭以上は3着まで、7頭以下は2着まで。',ワイド:'3着以内に入る2頭。順は問いません。',三連複:'3着以内の3頭を組合せで当てます。',三連単:'1・2・3着を着順通りに当てます。'};
+  const rules={単勝:'1着の馬を当てます。',複勝:'発売開始時の5〜7頭は2着まで、8頭以上は3着まで。4頭以下は発売なし。',ワイド:'3着以内に入る2頭。順は問いません。',馬連:'1・2着の2頭を当てます。順は問いません。地方の「馬複・馬連複」もこの組み方です。',馬単:'1・2着の2頭を着順通りに当てます。地方の「馬連単」もこの組み方です。',三連複:'3着以内の3頭を組合せで当てます。',三連単:'1・2・3着を着順通りに当てます。'};
   $('rule').textContent=rules[$('kind').value];
 }
 function render() {
@@ -109,6 +109,7 @@ function render() {
     const size=arity(), form=$('mode').value==='formation';
     const a=parseNumbers($('a').value), b=size>=2&&form ? parseNumbers($('b').value):a, c=size===3&&form ? parseNumbers($('c').value):a;
     const unit=integer('unit',100,100000,100), budget=integer('budget',0,1000000,100);
+    if($('kind').value==='複勝'&&integer('starters',3,18)<5)throw Error('発売開始時の出走頭数が4頭以下なら複勝は発売されません。');
     const groups=[a,b,c].slice(0,size), combos=combinations(groups,size,ordered());
     const total=combos.length*unit; current={combos,total,unit,budget,groups,valid:combos.length>0};
     $('count').textContent=yen(combos.length);$('cost').textContent=yen(total);$('remaining').textContent=yen(budget-total);
@@ -136,10 +137,10 @@ function simulate() {
   if(finish.some(n=>!Number.isInteger(n)||n<1||n>18)||new Set(finish).size!==3){$('simulation').textContent='1〜3着は別々の馬番1〜18を入力してください。';return;}
   if(!current.valid){$('simulation').textContent='先に買い目を作ってください。';return;}
   const starters=Number($('starters').value);
-  if(!Number.isInteger(starters)||starters<3||starters>18){$('simulation').textContent='この比較の出走頭数は3〜18で入力してください。';return;}
+  if(!Number.isInteger(starters)||starters<3||starters>18){$('simulation').textContent='発売開始時の出走頭数は、この比較では3〜18で入力してください。';return;}
   const kind=$('kind').value;
-  const matches=current.combos.filter(c=>kind==='単勝'? c[0]===finish[0] : kind==='複勝'?finish.slice(0,starters<=7?2:3).includes(c[0]) : kind==='三連単'?c.every((n,i)=>n===finish[i]):c.every(n=>finish.includes(n)));
-  $('simulation').textContent=matches.length ? `${finish.join('→')}なら${matches.length}点が的中条件に入ります：${matches.map(x=>x.join(kind==='三連単'?'→':'–')).join('、')}。払戻額と合計収支は別に確認します。` : `${finish.join('→')}は、この買い目では拾えません。候補と着順の指定を確認してください。`;
+  const matches=current.combos.filter(c=>kind==='単勝'?c[0]===finish[0]:kind==='複勝'?finish.slice(0,starters<=7?2:3).includes(c[0]):['馬単','三連単'].includes(kind)?c.every((n,i)=>n===finish[i]):kind==='馬連'?c.every(n=>finish.slice(0,2).includes(n)):c.every(n=>finish.includes(n)));
+  $('simulation').textContent=matches.length ? `${finish.join('→')}なら${matches.length}点が的中条件に入ります：${matches.map(x=>x.join(ordered()?'→':'–')).join('、')}。払戻額と合計収支は別に確認します。` : `${finish.join('→')}は、この買い目では拾えません。候補と着順の指定を確認してください。`;
 }
 function daily() {
   const total=records.filter(x=>x.status==='purchased'&&x.date===$('date').value).reduce((s,x)=>s+(Number(x.total_yen)||0),0);
@@ -156,9 +157,10 @@ function showRecords() {
   for(const rec of [...records].reverse()) {
     const article=document.createElement('article'),title=document.createElement('b'),p=document.createElement('p'),detail=document.createElement('p'),del=document.createElement('button');
     const status={planned:'予定',skipped:'見送り',purchased:'購入済み'}[rec.status]||rec.status;
-    title.textContent=`${rec.date} ${rec.venue} ${rec.race}R / ${status}`;
+    const authority={jra:'JRA',nar:'地方競馬'}[rec.authority]||'区分未記録';
+    title.textContent=`${rec.date} ${authority} ${rec.venue} ${rec.race}R / ${status}`;
     p.textContent=`${rec.kind} ${rec.points}点 / ${yen(Number(rec.total_yen)||0)}円`;
-    detail.className='record-text';detail.textContent=(rec.tickets||[]).map(x=>`${x.numbers.join(rec.kind==='三連単'?'→':'–')} ${yen(x.stake_yen)}円`).join('\n')+(rec.notes?`\n${rec.notes}`:'');
+    detail.className='record-text';detail.textContent=(rec.tickets||[]).map(x=>`${x.numbers.join(['馬単','三連単'].includes(rec.kind)?'→':'–')} ${yen(x.stake_yen)}円`).join('\n')+(rec.notes?`\n${rec.notes}`:'');
     del.type='button';del.textContent='この記録を削除';del.addEventListener('click',()=>{
       const next=records.filter(x=>x.id!==rec.id);
       try{localStorage.setItem(key,JSON.stringify(next));records=next;showRecords();daily();}catch(_){$('saveMessage').textContent='削除を保存できませんでした。';}
@@ -166,7 +168,7 @@ function showRecords() {
   }
 }
 $('useSuggestion').addEventListener('click',()=>{const [s]=guidance[$('belief').value];if(s){$('kind').value=s;render();}});
-for(const id of ['belief','kind','mode','a','b','c','unit','budget','first','second','third','starters','date','venue','race','status','dayBudget']) $(id).addEventListener('input',render);
+for(const id of ['belief','kind','mode','a','b','c','unit','budget','first','second','third','starters','authority','date','venue','race','status','dayBudget']) $(id).addEventListener('input',render);
 $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('ticketText').value);$('copyMessage').textContent='コピーしました。';}catch(_){$('ticketText').focus();$('ticketText').select();$('copyMessage').textContent='買い目欄を選択しました。端末のコピー操作を使ってください。';}});
 const examples={
   sonoda9:{kind:'三連単',mode:'formation',a:'8',b:'1,4',c:'1,2,4,6,7,9',unit:100,budget:1000,first:7,second:6,third:8,starters:10,venue:'園田',race:9,note:'元案は10点、発走前価格を満たしたのは9点。8を1着に固定し、6・7を3着にしか入れなかったため7→6→8は拾えません。'},
@@ -175,12 +177,13 @@ const examples={
 };
 document.querySelectorAll('[data-example]').forEach(button=>button.addEventListener('click',()=>{
   const ex=examples[button.dataset.example];for(const id of ['kind','mode','a','b','c','unit','budget','first','second','third','starters','venue','race']) $(id).value=ex[id];
-  $('date').value='2026-10-07';$('status').value='planned';$('exampleNote').textContent=ex.note;$('exampleNote').hidden=false;render();
+  $('date').value='2026-10-07';$('authority').value='nar';$('status').value='planned';$('exampleNote').textContent=ex.note;$('exampleNote').hidden=false;render();
 }));
 $('save').addEventListener('click',()=>{
   if($('save').disabled)return;
   const skipped=$('status').value==='skipped';
-  const rec={schema_version:1,id:typeof crypto.randomUUID==='function'?crypto.randomUUID():`${Date.now()}-${Math.random()}`,recorded_at:new Date().toISOString(),date:$('date').value,venue:$('venue').value.trim(),race:Number($('race').value),status:$('status').value,
+  const saleCount=Number($('starters').value);
+  const rec={schema_version:1,id:typeof crypto.randomUUID==='function'?crypto.randomUUID():`${Date.now()}-${Math.random()}`,recorded_at:new Date().toISOString(),authority:$('authority').value,date:$('date').value,venue:$('venue').value.trim(),race:Number($('race').value),status:$('status').value,field_size_at_sale_start:Number.isInteger(saleCount)&&saleCount>=3&&saleCount<=18?saleCount:null,field_size_user_reported:true,
     kind:$('kind').value,method:arity()===1?'individual':$('mode').value,groups:current.groups||[],points:skipped?0:current.combos.length,total_yen:skipped?0:current.total,
     tickets:skipped?[]:current.combos.map(n=>({numbers:n,stake_yen:current.unit})),race_budget_yen:Number($('budget').value),day_budget_yen:Number($('dayBudget').value),checked_at_local:$('checked').value||null,checked_at_timezone:'Asia/Tokyo',notes:$('notes').value,actual_purchase_user_reported:!skipped&&$('status').value==='purchased'};
   try{const next=[...records,rec];localStorage.setItem(key,JSON.stringify(next));records=next;$('saveMessage').textContent='この端末に記録しました。必要ならJSONを書き出してください。';showRecords();daily();}

@@ -8,15 +8,28 @@
 - 対応JSONのある予想では、掲載馬の名前でも検索できます。
 - 同じ予想の新版は先に表示し、「旧版も表示する」で履歴を開けます。
 
+## JRA・地方の共通仕様
+
+- [スマホ向けの案内](https://zunchilab.github.io/KBA/docs/common-spec.html)
+- [共通仕様の正本](docs/common-spec.md)：画面、結果取得、購入補助、GitHub保存、実装状況。
+- [データ契約と旧形式の対応表](docs/data-contract.md)：JRA・地方の取得処理を同じ表示へ合わせるための項目。
+- 合意した構成は **JRA・地方は別ページ、開催日ごとに1ページ、ページ内で競馬場タブ**。次回の新規作成から採用し、既存ページと予想原本は保持します。
+- 共通公開コマンドは `scripts/publish_prediction.ps1`（PowerShell 7.5以降・Python）。旧JRA・旧地方・共通予想JSONのメタデータを受け入れます。クローンをworkdirにして実行します。
+- 買い方補助は両区分で共用。馬連・馬単と区分付き購入記録を追加しました。今回のコード変更の実行による動作確認は行っていません。
+- JRAの結果ボタン・継続取得の接続と、共通タブへの移行はこれからです。仕様の作成と稼働済みの機能を区別します。
+
 ## フォルダ構成
 
 ```text
 index.html                  公開する予想一覧（生成ファイル）
 predictions/                予想HTML・対応JSON・旧版
+docs/                       JRA・地方の共通仕様とデータ契約
+tools/bet-planner.html       共通の買い方・予算・購入記録の補助
 assets/css/site.css         一覧ページのスタイル
 assets/js/catalog.js        検索・絞り込み
 data/catalog.json           一覧のメタデータ（生成ファイル）
 scripts/build_catalog.py    一覧を作成するスクリプト
+scripts/publish_prediction.ps1 両区分の予想をコミット・プッシュ
 scripts/index.template.html 一覧ページのテンプレート
 ```
 
@@ -65,7 +78,7 @@ HTMLへの追加は`python -X utf8 scripts/add_results_view.py`。元HTML/JSON�
 ## 開催後の振り返りと買い方補助
 
 - [2026-10-07 園田・大井の振り返り](https://zunchilab.github.io/KBA/predictions/report_20261007_nar_review_v1.html)：園田7〜12R・大井1〜12Rの全197頭、固定予想との照合、掲載買い目・保存価格・公式払戻、券種比較、次回の判断手順。
-- [買い方・予算の補助](https://zunchilab.github.io/KBA/tools/bet-planner.html)：単勝・複勝・ワイド・三連複・三連単の点数計算、BOX・フォーメーションの重複除去、着順の役割表示、1〜3着の包含確認、予算と端末の購入記録。実際の投票やオッズ取得は行いません。
+- [買い方・予算の補助](https://zunchilab.github.io/KBA/tools/bet-planner.html)：単勝・複勝・ワイド・馬連・馬単・三連複・三連単の点数計算、BOX・フォーメーションの重複除去、着順の役割表示、1〜3着の包含確認、予算と端末の区分付き購入記録。実際の投票やオッズ取得は行いません。
 - 購入記録はブラウザーに保存。予定・見送り・購入済みを区別し、JSONを書き出せます。別端末やブラウザーデータ削除には引き継がれません。実購入の申告内容はユーザーが入力します。
 - 開催後のJSONには `document_type: "review"` を指定。一覧で「振り返り」と表示し、発走前の「最新の予想」と分けます。
 - 今回の振り返り専用の公式原文：`data/reviews/sources/2026-10-07/v1/`。取得は22:06:30〜31 JST、全18R確定。対応JSONに取得URL・日時・SHA-256を保存。予想原本の順位・印・価格は変更していません。

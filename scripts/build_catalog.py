@@ -19,14 +19,17 @@ def report(path):
     sidecar = path.with_suffix('.json')
     if sidecar.exists():
         data = json.loads(sidecar.read_text(encoding='utf-8-sig'))
-    date = data.get('date_jst', date)
+    date = data.get('date_jst') or data.get('target_date') or date
     version_match = re.search(r'_v(\d+)\.html$', path.name)
     version = int(version_match.group(1)) if version_match else None
     group = re.sub(r'_v\d+\.html$', '', path.name) if version else path.name
     name_lower = path.name.lower()
     is_review = data.get('document_type') == 'review'
     category = 'review' if is_review else 'nar' if '_nar_' in name_lower or data.get('baba_code') else 'overseas' if '凱旋門' in path.name else 'jra' if 'jra' in name_lower else 'other'
-    venue = data.get('venue') or {'nar':'地方競馬','jra':'JRA','overseas':'凱旋門賞','other':'競馬予想','review':'開催後の振り返り'}[category]
+    venues = [v['label'] for v in data.get('venues', []) if v.get('label')]
+    if not venues and category in ('jra', 'nar'):
+        venues = list(dict.fromkeys(r['venue'] for r in data.get('races', []) if r.get('venue')))
+    venue = data.get('venue') or '・'.join(venues) or {'nar':'地方競馬','jra':'JRA','overseas':'凱旋門賞','other':'競馬予想','review':'開催後の振り返り'}[category]
     scope = data.get('prediction_scope')
     scope_text = f'{min(scope)}〜{max(scope)}R 再評価' if scope else ''
     heading = f'{venue}競馬の本気予想' if venue=='大井' and not is_review else title
@@ -42,7 +45,7 @@ def report(path):
     horse_names=[h['name'] for race in data.get('races',[]) for h in race.get('horses',[])]
     if is_review:horse_names=[h['name'] for race in data.get('results',[]) for h in race.get('rows',[])]
     return {'file':path.name,'href':'predictions/'+quote(path.name),'date':date,'category':category,'venue':venue,
-            'title':title,'heading':heading,'note':note,'version':version,'group':group,'fixed_at':data.get('fixed_at'),
+            'title':title,'heading':heading,'note':note,'version':version,'group':group,'fixed_at':data.get('fixed_at') or data.get('generated_at'),
             'scope':scope,'phase':data.get('phase'),'superseded':False,'horse_names':horse_names,'has_results':has_results,
             'document_type':'review' if is_review else 'prediction','reviewed_at':data.get('reviewed_at')}
 
@@ -78,7 +81,8 @@ def main():
     latest_review=next((x for x in entries if x['document_type']=='review' and not x['superseded']),None)
     support='<a class="support-link" href="tools/bet-planner.html"><b>買い方・予算の補助 →</b><span>点数・着順の縛り・購入記録を確認</span></a>' if (ROOT/'tools/bet-planner.html').exists() else ''
     if latest_review:support+=f'<a class="support-link" href="{E(latest_review["href"])}"><b>{E(latest_review["date"])}の振り返り →</b><span>なぜ当たったか・外れたか、次回の判断へ</span></a>'
-    support=f'<section class="support-grid" aria-label="振り返りと購入補助">{support}</section>' if support else ''
+    if (ROOT/'docs/common-spec.html').exists():support+='<a class="support-link" href="docs/common-spec.html"><b>JRA・地方の共通仕様 →</b><span>会場タブ・結果更新・買い目・GitHub保存</span></a>'
+    support=f'<section class="support-grid" aria-label="振り返り・購入補助・共通仕様">{support}</section>' if support else ''
     replacements={'<!-- FEATURED -->':featured,'<!-- SUPPORT -->':support,'<!-- COUNT -->':str(len(entries)),'<!-- MONTHS -->':month_html,'<!-- CARDS -->':'\n'.join(cards)}
     for marker,value in replacements.items():template=template.replace(marker,value)
     (ROOT/'index.html').write_text(template,encoding='utf-8')
