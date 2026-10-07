@@ -9,7 +9,7 @@
   "forecast_file": "report_20261007_nar_ooi_predictions_v1.json",
   "forecast_sha256": "800b33cfa64cc954c13198206206aca28ac925b1a178744f5e6dacf8e3b5c86a",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-07T18:49:27+09:00",
+  "updated_at": "2026-10-07T18:51:30+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -2133,13 +2133,13 @@
       "race": 9,
       "name": "トゥインクルダートスター賞Ｃ１七 八 九",
       "start_at": "2026-10-07T18:40:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 2,
           "name": "ライペニング",
           "finish": 1,
-          "time": "",
+          "time": "1:27.1",
           "margin": "",
           "last_3f": "",
           "jockey": "矢野貴 （大井）",
@@ -2151,8 +2151,8 @@
           "number": 1,
           "name": "リノカ",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:27.7",
+          "margin": "3",
           "last_3f": "",
           "jockey": "安藤洋 （大井）",
           "body_weight": "424(9)",
@@ -2163,13 +2163,85 @@
           "number": 9,
           "name": "コブラツイスト",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:28.0",
+          "margin": "1.1/2",
           "last_3f": "",
           "jockey": "藤本現 （大井）",
           "body_weight": "465(-8)",
           "final_popularity": 5,
           "final_win_odds": "10.5"
+        },
+        {
+          "number": 5,
+          "name": "エスプリワールド",
+          "finish": 4,
+          "time": "1:28.0",
+          "margin": "アタマ",
+          "last_3f": "",
+          "jockey": "▲西優哉 （大井）",
+          "body_weight": "462(-3)",
+          "final_popularity": 8,
+          "final_win_odds": "46.6"
+        },
+        {
+          "number": 6,
+          "name": "ピルゴスアイトス",
+          "finish": 5,
+          "time": "1:28.4",
+          "margin": "2",
+          "last_3f": "",
+          "jockey": "中村尚 （大井）",
+          "body_weight": "484(3)",
+          "final_popularity": 6,
+          "final_win_odds": "16.2"
+        },
+        {
+          "number": 3,
+          "name": "スペイスフォース",
+          "finish": 6,
+          "time": "1:28.5",
+          "margin": "3/4",
+          "last_3f": "",
+          "jockey": "藤田凌 （大井）",
+          "body_weight": "509(2)",
+          "final_popularity": 7,
+          "final_win_odds": "44.2"
+        },
+        {
+          "number": 7,
+          "name": "ベルオーシャン",
+          "finish": 7,
+          "time": "1:28.7",
+          "margin": "1",
+          "last_3f": "",
+          "jockey": "吉井章 （大井）",
+          "body_weight": "434(22)",
+          "final_popularity": 4,
+          "final_win_odds": "9.0"
+        },
+        {
+          "number": 8,
+          "name": "マニス",
+          "finish": 8,
+          "time": "1:29.0",
+          "margin": "1.3/4",
+          "last_3f": "",
+          "jockey": "▲杉山海 （大井）",
+          "body_weight": "419(-4)",
+          "final_popularity": 9,
+          "final_win_odds": "48.2"
+        },
+        {
+          "number": 4,
+          "name": "ワイドモヒート",
+          "finish": 9,
+          "time": "1:29.4",
+          "margin": "2",
+          "last_3f": "",
+          "jockey": "吉原寛 （金沢）",
+          "body_weight": "524(36)",
+          "final_popularity": 3,
+          "final_win_odds": "5.1"
         }
       ],
       "refunds": [
@@ -2304,11 +2376,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F07&k_babaCode=20&k_raceNo=9",
-        "retrieved_at": "2026-10-07T18:49:27+09:00",
-        "sha256": "7ed728ea226d39f4527539e52236e924917dca2e82f5db8a560add1d32afd531",
-        "saved_file": "data/results/sources/2026-10-07/ooi/r9_184927_7ed728ea226d.html"
+        "retrieved_at": "2026-10-07T18:51:30+09:00",
+        "sha256": "06f99ea8a7529cac6bf10ff4eec3f3ff7c29b890c27fc5bda3756328350b8856",
+        "saved_file": "data/results/sources/2026-10-07/ooi/r9_185130_06f99ea8a752.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 10,
