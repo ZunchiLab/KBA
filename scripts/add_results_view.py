@@ -18,7 +18,7 @@ def committed_bytes(relative):
 def main():
     config = json.loads((ROOT/'data/results/targets.json').read_text(encoding='utf-8'))
     targets = config['targets']
-    refresh_note = ('本日10/7は約2分間隔で公式結果を取得・公開します。ボタンで最新の公開結果を表示し、その後も画面を開いている間は1分ごとに再読込します。公式の確定待ちや通信遅延は更新日時で確認してください。'
+    refresh_note = ('印と着順は保存結果を最初から表示します。本日10/7は約2分間隔で公式結果を取得・公開し、画面を開いている間は1分ごとに最新結果を読み直します。ボタンでも再取得できます。公式の確定待ちや通信遅延は更新日時で確認してください。'
                     if config.get('refresh_status') == 'continuous' else
                     'ボタンは保存済みの最新結果を読み込みます。本日10/7はおおむね10分間隔で公式結果を更新（処理に遅延する場合あり）。取得日時を必ず確認してください。'
                     if config.get('refresh_status') == 'scheduled' else
@@ -41,8 +41,10 @@ def main():
                           '<p class="result-note">'+refresh_note+'</p>', html, count=1)
             html = re.sub(r'<p class="result-note">本日10/7は約2分間隔で.*?</p>',
                           '<p class="result-note">'+refresh_note+'</p>', html, count=1)
+            html = re.sub(r'<p class="result-note">印と着順は保存結果を.*?</p>',
+                          '<p class="result-note">'+refresh_note+'</p>', html, count=1)
             html = re.sub(r'src="\.\./assets/js/results\.js(?:\?v=[^"]*)?"',
-                          'src="../assets/js/results.js?v=20261007_4"', html)
+                          'src="../assets/js/results.js?v=20261007_5"', html)
             hp.write_text(html, encoding='utf-8')
             continue
         for file in (hp, jp):
@@ -72,7 +74,7 @@ def main():
             raise ValueError('Expected report insertion point missing')
         html = html.replace(marker, panel+marker, 1)
         html = html.replace('</head>', '<link rel="stylesheet" href="../assets/css/results.css"></head>', 1)
-        html = html.replace('</body>', '<script type="module" src="../assets/js/results.js?v=20261007_4"></script></body>', 1)
+        html = html.replace('</body>', '<script type="module" src="../assets/js/results.js?v=20261007_5"></script></body>', 1)
         html = html.replace('データ・価格は自動更新しません。', '予想・保存価格は更新しません。公式結果だけを別欄へ取得できます。')
         hp.write_text(html, encoding='utf-8')
         print('Added result view: '+hp.name)

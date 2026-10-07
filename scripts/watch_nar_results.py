@@ -11,8 +11,9 @@ def git(*args, check=True):
     return subprocess.run(['git', *args], cwd=ROOT, check=check)
 
 
-def publish():
-    git('add', '--', 'data/results/nar', 'data/results/sources')
+def publish(targets):
+    html_paths = [str((ROOT/target['forecast']).with_suffix('.html').relative_to(ROOT)) for target in targets]
+    git('add', '--', 'data/results/nar', 'data/results/sources', *html_paths)
     if git('diff', '--cached', '--quiet', check=False).returncode == 0:
         return
     git('commit', '-m', 'Update official NAR result snapshots')
@@ -43,7 +44,7 @@ def main():
         interval = max(1, int(config.get('refresh_interval_minutes', 2)))
         for target in targets:
             update(target, now, refresh_status='continuous', refresh_interval=interval)
-        publish()
+        publish(targets)
         completed = all(json.loads((ROOT/'data/results/nar'/target['date']/(target['venue']+'.json')).read_text(encoding='utf-8')).get('complete') for target in targets)
         if completed:
             print('All requested races confirmed; stopping.', flush=True)

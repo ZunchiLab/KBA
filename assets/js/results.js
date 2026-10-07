@@ -113,7 +113,8 @@ function renderRace(race, result) {
     block.append(node('p', `事前${pick.mark} ${pick.number} ${pick.name}：${finish === undefined && result.status === 'partial' ? '全着順待ち' : finishLabel(finish)}`, Number.isInteger(finish) && finish <= 3 ? 'result-hit' : result.status === 'partial' ? 'result-note' : 'result-miss'));
     block.append(ticketSummary(race, result));
     const hmap = new Map(race.horses.map(h => [h.number, h]));
-    block.append(details(result.status === 'partial' ? '掲載済み着順と事前評価（全着順待ち）' : '全頭の着順と事前評価', table(['着順', '馬番・馬名', '事前評価', 'タイム'], result.rows.map(h => [finishLabel(h.finish), h.number + ' ' + h.name, hmap.get(h.number).mark + ' / ' + hmap.get(h.number).rank + '位', h.time || '—']))));
+    block.append(node('h4', result.status === 'partial' ? '事前印と掲載済み着順（全着順待ち）' : '全頭の事前印と着順'));
+    block.append(table(['事前印', '馬番・馬名', '着順', 'タイム'], result.rows.map(h => [hmap.get(h.number).mark + ' / ' + hmap.get(h.number).rank + '位', h.number + ' ' + h.name, finishLabel(h.finish), h.time || '—'])));
     block.append(details('公式払戻金（100円あたり）', table(['券種', '組合せ', '払戻'], result.refunds.map(p => [p.kind, p.combination, money(p.yen_per_100)]))));
   } else if (result.status === 'cancelled') block.append(ticketSummary(race, result));
   else block.append(node('p', result.note || '次回の保存結果を再取得してください。', 'result-note'));
@@ -213,6 +214,10 @@ if (panel) {
   const status = panel.querySelector('.results-status');
   let lastData = null;
   let refreshTimer = null;
+  try {
+    const saved = JSON.parse(document.querySelector('#results-bootstrap')?.textContent || 'null');
+    if (saved?.schema_version === 1 && Number.isFinite(Date.parse(saved.updated_at))) lastData = saved;
+  } catch {}
   async function loadResults(force = false) {
     if (button.disabled) return;
     button.disabled = true; panel.setAttribute('aria-busy', 'true');
@@ -228,6 +233,7 @@ if (panel) {
       }
       validate(data, forecast, digest);
       if (lastData && Date.parse(lastData.updated_at) > Date.parse(data.updated_at)) {
+        validate(lastData, forecast, digest);
         data = lastData; fallback = true;
       }
       data.races.forEach(result => renderRace(forecast.races.find(r => r.race === result.race), result));
@@ -249,7 +255,8 @@ if (panel) {
         }, 60000);
       }
     } catch (error) {
-      status.textContent = '取得できませんでした。' + (lastData ? '前回表示した結果を残しています。' : '時間をおいて再取得するか、各レースの公式結果をご確認ください。');
+      status.textContent = '最新結果への更新に失敗しました。' + (lastData ? 'このページに保存された印と着順を表示しています。' : '時間をおいて再取得してください。');
+      console.warn('NAR results update failed', error);
       status.classList.add('results-error');
     } finally { button.disabled = false; panel.setAttribute('aria-busy', 'false'); }
   }
@@ -257,4 +264,11 @@ if (panel) {
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden && lastData && !lastData.complete) loadResults(true);
   });
+  if (lastData && !lastData.complete) {
+    refreshTimer = setInterval(() => {
+      if (!document.hidden) loadResults();
+    }, 60000);
+  }
+  // Saved marks/finishes are already in the HTML; refresh them on opening the page.
+  loadResults();
 }

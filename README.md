@@ -47,6 +47,8 @@ scripts/index.template.html 一覧ページのテンプレート
 
 公式が上位着順だけを先に掲載した場合も「速報」として表示します。全頭着順を待つ間、掲載済みの1〜3着や払戻を隠しません。速報は最終の確定集計へ含めず、未掲載馬の着順・返還有無・不的中判定は保留します。
 
+印と着順は結果JSONからHTMLへも保存し、ページを開いた時点で表示します。各馬のカードにも着順を載せます。JavaScriptの再取得が失敗してもこの表示を残し、ページを開いた後に最新結果へ自動更新します。印と着順の一覧は折り畳みません。`scripts/render_nar_results.py` が結果欄だけを更新し、継続取得は結果JSON・取得原本と対象2ページのHTMLを同時に公開します。予想原本と予想JSONは保持します。
+
 - 追加前の公開HTML・JSON原本：`predictions/archive/20261007_original/`。Gitの元コミットのバイト列とSHA-256を保存。
 - 結果だけのJSON：`data/results/nar/2026-10-07/sonoda.json`、`ooi.json`。
 - 公式結果HTMLの取得原本：`data/results/sources/2026-10-07/`。取得日時とSHA-256は結果JSONに記録。

@@ -12,6 +12,7 @@ from urllib.request import Request, urlopen
 import json
 import re
 import time
+from render_nar_results import render_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 JST = timezone(timedelta(hours=9))
@@ -158,6 +159,7 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
     if previous.get('forecast_sha256') not in (None, forecast_digest, sha256(forecast_raw).hexdigest()):
         raise ValueError('Frozen forecast changed; do not mix results with a new forecast')
     if previous.get('complete') and not force:
+        render_snapshot(target, forecast, previous)
         print(f'{target["venue"]}: all target races confirmed; no further polling')
         return
     old_races = {r['race']: r for r in previous.get('races', [])}
@@ -208,6 +210,7 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
                    refresh_status=refresh_status, races=results,
                    actual_purchase=None, note='結果専用データ。事前予想・価格・採否を変更しない。')
     write_atomic(out, payload)
+    render_snapshot(target, forecast, payload)
     counts = {status: sum(r['status'] == status for r in results) for status in ('confirmed', 'partial', 'pending', 'not_started', 'error', 'cancelled')}
     print(f'{target["venue"]}: {counts}; {payload["updated_at"]}')
 

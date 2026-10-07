@@ -7,6 +7,7 @@ on:
       - .github/workflows/nar-results.yml
       - scripts/update_nar_results.py
       - scripts/watch_nar_results.py
+      - scripts/render_nar_results.py
       - data/results/targets.json
   workflow_dispatch:
   # Hourly recovery only. The running worker handles the two-minute updates.
