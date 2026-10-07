@@ -18,7 +18,9 @@ def committed_bytes(relative):
 def main():
     config = json.loads((ROOT/'data/results/targets.json').read_text(encoding='utf-8'))
     targets = config['targets']
-    refresh_note = ('ボタンは保存済みの最新結果を読み込みます。本日10/7はおおむね10分間隔で公式結果を更新（処理に遅延する場合あり）。取得日時を必ず確認してください。'
+    refresh_note = ('本日10/7は約2分間隔で公式結果を取得・公開します。ボタンで最新の公開結果を表示し、その後も画面を開いている間は1分ごとに再読込します。公式の確定待ちや通信遅延は更新日時で確認してください。'
+                    if config.get('refresh_status') == 'continuous' else
+                    'ボタンは保存済みの最新結果を読み込みます。本日10/7はおおむね10分間隔で公式結果を更新（処理に遅延する場合あり）。取得日時を必ず確認してください。'
                     if config.get('refresh_status') == 'scheduled' else
                     'ボタンは保存済みの結果を読み込みます。定期更新はGitHubの追加接続設定待ちです。現時点では表示された保存日時の結果です。')
     archive = ROOT/'predictions/archive/20261007_original'
@@ -37,6 +39,9 @@ def main():
             import re
             html = re.sub(r'<p class="result-note">ボタンは保存済みの.*?</p>',
                           '<p class="result-note">'+refresh_note+'</p>', html, count=1)
+            html = re.sub(r'<p class="result-note">本日10/7は約2分間隔で.*?</p>',
+                          '<p class="result-note">'+refresh_note+'</p>', html, count=1)
+            html = html.replace('src="../assets/js/results.js"', 'src="../assets/js/results.js?v=20261007_2"')
             hp.write_text(html, encoding='utf-8')
             continue
         for file in (hp, jp):

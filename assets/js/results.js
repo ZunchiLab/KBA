@@ -195,7 +195,9 @@ if (panel) {
   const button = panel.querySelector('button');
   const status = panel.querySelector('.results-status');
   let lastData = null;
-  button.addEventListener('click', async () => {
+  let refreshTimer = null;
+  async function loadResults() {
+    if (button.disabled) return;
     button.disabled = true; panel.setAttribute('aria-busy', 'true');
     status.classList.remove('results-error'); status.textContent = '保存済みの公式結果を取得中…';
     try {
@@ -210,16 +212,28 @@ if (panel) {
       data.races.forEach(result => renderRace(forecast.races.find(r => r.race === result.race), result));
       summary(data, forecast);
       const failed = data.races.filter(r => r.status === 'error' || r.refresh_error).length;
-      const stale = !data.complete && Date.now() - Date.parse(data.updated_at) > 20 * 60000;
+      const staleMinutes = Math.max(5, (data.refresh_interval_minutes || 10) * 3);
+      const stale = !data.complete && Date.now() - Date.parse(data.updated_at) > staleMinutes * 60000;
       status.textContent = '保存データ更新：' + formatTime(data.updated_at) +
         (fallback ? '。最新配信に接続できず、保存済みの結果を表示。' : '。') +
         (failed ? `${failed}Rは取得失敗・前回結果を含みます。` : '') +
-        (stale ? '更新から20分以上経過しています。最新状態は公式をご確認ください。' : '');
+        (stale ? `結果データの更新が${staleMinutes}分以上止まっています。取得処理が遅れている可能性があります。` : '');
       status.classList.toggle('results-error', failed > 0 || stale || fallback);
       button.textContent = '結果を再取得'; lastData = data;
+      if (data.complete && refreshTimer) {
+        clearInterval(refreshTimer); refreshTimer = null;
+      } else if (!data.complete && !refreshTimer) {
+        refreshTimer = setInterval(() => {
+          if (!document.hidden) loadResults();
+        }, 60000);
+      }
     } catch (error) {
       status.textContent = '取得できませんでした。' + (lastData ? '前回表示した結果を残しています。' : '時間をおいて再取得するか、各レースの公式結果をご確認ください。');
       status.classList.add('results-error');
     } finally { button.disabled = false; panel.setAttribute('aria-busy', 'false'); }
+  }
+  button.addEventListener('click', loadResults);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && lastData && !lastData.complete) loadResults();
   });
 }

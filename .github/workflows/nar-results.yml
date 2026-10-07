@@ -6,38 +6,31 @@ on:
     paths:
       - .github/workflows/nar-results.yml
       - scripts/update_nar_results.py
+      - scripts/watch_nar_results.py
       - data/results/targets.json
   workflow_dispatch:
-  # This request covers October 7 only. The collector also checks the full JST year/date.
+  # Hourly recovery only. The running worker handles the two-minute updates.
   schedule:
-    - cron: '7,17,27,37,47,57 6-13 7 10 *'
+    - cron: '7 7-13 7 10 *'
 
 permissions:
   contents: write
 
 concurrency:
   group: nar-results-main
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v6
         with:
           ref: main
           fetch-depth: 0
-      - name: Read and archive official results
-        run: python3 scripts/update_nar_results.py --active-only
-      - name: Publish result data only
+      - name: Keep official results current until the meeting is complete
         run: |
-          git add -- data/results/nar data/results/sources
-          if git diff --cached --quiet; then
-            exit 0
-          fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update official NAR result snapshots'
-          git pull --rebase origin main
-          git push origin HEAD:main
+          python3 -u scripts/watch_nar_results.py

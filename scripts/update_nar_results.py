@@ -141,7 +141,7 @@ def write_atomic(path, value):
     tmp.replace(path)
 
 
-def update(target, now, force=False, refresh_status='manual_pending_workflow_permission'):
+def update(target, now, force=False, refresh_status='manual_pending_workflow_permission', refresh_interval=None):
     forecast_path = ROOT / target['forecast']
     if forecast_path.parent != ROOT/'predictions':
         raise ValueError('Forecast must be directly in predictions/')
@@ -202,7 +202,7 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
                    forecast_digest_method='UTF-8 without BOM, CRLF normalized to LF',
                    updated_at=datetime.now(JST).isoformat(timespec='seconds'),
                    complete=all(r['status'] in ('confirmed', 'cancelled') for r in results),
-                   refresh_interval_minutes=10 if refresh_status == 'scheduled' else None,
+                   refresh_interval_minutes=(refresh_interval or 10) if refresh_status in ('scheduled', 'continuous') else None,
                    refresh_status=refresh_status, races=results,
                    actual_purchase=None, note='結果専用データ。事前予想・価格・採否を変更しない。')
     write_atomic(out, payload)
@@ -220,7 +220,8 @@ def main():
     for target in config['targets']:
         if options.active_only and (target['date'] != now.date().isoformat() or not 9 <= now.hour < 23):
             continue
-        update(target, now, options.force, config.get('refresh_status', 'manual_pending_workflow_permission'))
+        update(target, now, options.force, config.get('refresh_status', 'manual_pending_workflow_permission'),
+               config.get('refresh_interval_minutes'))
 
 
 if __name__ == '__main__':
