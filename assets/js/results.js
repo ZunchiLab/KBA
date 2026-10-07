@@ -43,12 +43,13 @@ function comboKey(numbers, kind) {
 
 function judgeTicket(bet, ticket, result) {
   if (result.status === 'cancelled') return { status: '返還', yen: 100, cls: 'result-refund' };
-  if (result.status !== 'confirmed') return { status: '未確定', yen: null, cls: 'result-pending' };
+  if (!['confirmed', 'partial'].includes(result.status)) return { status: '未確定', yen: null, cls: 'result-pending' };
   const withdrawn = new Set(result.rows.filter(h => ['取消', '除外', '競走除外', '出走取消'].includes(h.finish)).map(h => h.number));
   if (ticket.numbers.some(n => withdrawn.has(n))) return { status: '返還', yen: 100, cls: 'result-refund' };
   const payouts = result.refunds.filter(p => p.kind === bet.type);
   if (!payouts.length) return { status: '払戻未確認', yen: null, cls: 'result-pending' };
   const payout = payouts.find(p => comboKey(p.numbers, bet.type) === comboKey(ticket.numbers, bet.type));
+  if (!payout && result.status === 'partial') return { status: '全着順待ち', yen: null, cls: 'result-pending' };
   return payout ? { status: '的中', yen: payout.yen_per_100, cls: 'result-hit' } : { status: '不的中', yen: 0, cls: 'result-miss' };
 }
 
@@ -96,23 +97,23 @@ function renderRace(race, result) {
   }
   block.replaceChildren(node('h3', '公式結果 · ' + race.race + 'R'));
   const now = Date.now();
-  const labels = { confirmed: '着順・払戻確定', pending: '未確定', not_started: now >= Date.parse(race.start_at) ? '未確定（保存時は発走前）' : '発走前', error: '結果取得失敗・判定保留', cancelled: '競走取り止め・返還' };
+  const labels = { confirmed: '着順・払戻確定', partial: '速報（掲載済みの着順・払戻を表示、全着順待ち）', pending: '未確定', not_started: now >= Date.parse(race.start_at) ? '未確定（保存時は発走前）' : '発走前', error: '結果取得失敗・判定保留', cancelled: '競走取り止め・返還' };
   block.append(node('p', labels[result.status] || '未取得', result.status === 'error' ? 'results-error' : 'result-note'));
   if (result.source) block.append(node('p', '公式取得：' + formatTime(result.source.retrieved_at), 'result-note'));
   if (result.refresh_error) block.append(node('p', '再取得に失敗したため、前回の確定結果を表示しています。', 'results-error'));
   const official = node('a', '公式結果を開く ↗');
   official.href = result.source?.url || result.official_url || race.source.url.replace('DebaTable', 'RaceMarkTable');
   official.target = '_blank'; official.rel = 'noopener';
-  if (result.status === 'confirmed') {
+  if (['confirmed', 'partial'].includes(result.status)) {
     const podium = node('div', undefined, 'result-podium');
     result.rows.filter(h => Number.isInteger(h.finish) && h.finish <= 3).forEach(h => podium.append(node('span', `${h.finish}着 ${h.number} ${h.name}`)));
     block.append(podium);
     const pick = race.horses.find(h => h.rank === 1);
     const finish = result.rows.find(h => h.number === pick.number)?.finish;
-    block.append(node('p', `事前${pick.mark} ${pick.number} ${pick.name}：${finishLabel(finish)}`, Number.isInteger(finish) && finish <= 3 ? 'result-hit' : 'result-miss'));
+    block.append(node('p', `事前${pick.mark} ${pick.number} ${pick.name}：${finish === undefined && result.status === 'partial' ? '全着順待ち' : finishLabel(finish)}`, Number.isInteger(finish) && finish <= 3 ? 'result-hit' : result.status === 'partial' ? 'result-note' : 'result-miss'));
     block.append(ticketSummary(race, result));
     const hmap = new Map(race.horses.map(h => [h.number, h]));
-    block.append(details('全頭の着順と事前評価', table(['着順', '馬番・馬名', '事前評価', 'タイム'], result.rows.map(h => [finishLabel(h.finish), h.number + ' ' + h.name, hmap.get(h.number).mark + ' / ' + hmap.get(h.number).rank + '位', h.time || '—']))));
+    block.append(details(result.status === 'partial' ? '掲載済み着順と事前評価（全着順待ち）' : '全頭の着順と事前評価', table(['着順', '馬番・馬名', '事前評価', 'タイム'], result.rows.map(h => [finishLabel(h.finish), h.number + ' ' + h.name, hmap.get(h.number).mark + ' / ' + hmap.get(h.number).rank + '位', h.time || '—']))));
     block.append(details('公式払戻金（100円あたり）', table(['券種', '組合せ', '払戻'], result.refunds.map(p => [p.kind, p.combination, money(p.yen_per_100)]))));
   } else if (result.status === 'cancelled') block.append(ticketSummary(race, result));
   else block.append(node('p', result.note || '次回の保存結果を再取得してください。', 'result-note'));
@@ -125,8 +126,8 @@ function renderRace(race, result) {
       horseEl.querySelector('.horse-meta').after(finishEl);
     }
     const finish = result.rows.find(h => h.number === number)?.finish;
-    finishEl.textContent = '結果：' + (result.status === 'confirmed' ? finishLabel(finish) : labels[result.status]);
-    finishEl.classList.toggle('podium', result.status === 'confirmed' && Number.isInteger(finish) && finish <= 3);
+    finishEl.textContent = '結果：' + (['confirmed', 'partial'].includes(result.status) ? finish === undefined ? '全着順待ち' : finishLabel(finish) : labels[result.status]);
+    finishEl.classList.toggle('podium', ['confirmed', 'partial'].includes(result.status) && Number.isInteger(finish) && finish <= 3);
   }
 }
 
@@ -177,11 +178,11 @@ function validate(data, forecast, digest) {
   const seen = new Set();
   for (const result of data.races) {
     const race = forecast.races.find(r => r.race === result.race);
-    if (!race || seen.has(result.race) || !['confirmed', 'pending', 'not_started', 'error', 'cancelled'].includes(result.status) || !Array.isArray(result.rows) || !Array.isArray(result.refunds)) throw new Error('結果形式を確認できません。');
+    if (!race || seen.has(result.race) || !['confirmed', 'partial', 'pending', 'not_started', 'error', 'cancelled'].includes(result.status) || !Array.isArray(result.rows) || !Array.isArray(result.refunds)) throw new Error('結果形式を確認できません。');
     seen.add(result.race);
-    if (result.status === 'confirmed') {
+    if (['confirmed', 'partial'].includes(result.status)) {
       const horses = new Map(race.horses.map(h => [h.number, h.name]));
-      if (result.rows.length !== horses.size || new Set(result.rows.map(h => h.number)).size !== horses.size || result.rows.some(h => horses.get(h.number)?.replace(/\s/g, '') !== h.name.replace(/\s/g, ''))) throw new Error('出走馬との対応を確認できません。');
+      if ((result.status === 'confirmed' && result.rows.length !== horses.size) || new Set(result.rows.map(h => h.number)).size !== result.rows.length || result.rows.some(h => horses.get(h.number)?.replace(/\s/g, '') !== h.name.replace(/\s/g, ''))) throw new Error('出走馬との対応を確認できません。');
     }
   }
   if (seen.size !== forecast.races.length) throw new Error('結果の対象レースが不足しています。');
@@ -191,6 +192,7 @@ function summary(data, forecast) {
   const area = panel.querySelector('.results-summary');
   area.replaceChildren();
   const confirmed = data.races.filter(r => r.status === 'confirmed');
+  const partial = data.races.filter(r => r.status === 'partial');
   let wins = 0, top3 = 0;
   for (const result of confirmed) {
     const race = forecast.races.find(r => r.race === result.race);
@@ -203,6 +205,7 @@ function summary(data, forecast) {
     const stat = node('div', undefined, 'results-stat');
     stat.append(node('strong', value), node('small', label)); area.append(stat);
   }
+  if (partial.length) area.append(node('p', `別に${partial.length}Rの速報を表示しています。全着順待ちのレースは上の確定集計に含めません。`, 'result-note'));
 }
 
 if (panel) {

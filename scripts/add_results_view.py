@@ -42,7 +42,7 @@ def main():
             html = re.sub(r'<p class="result-note">本日10/7は約2分間隔で.*?</p>',
                           '<p class="result-note">'+refresh_note+'</p>', html, count=1)
             html = re.sub(r'src="\.\./assets/js/results\.js(?:\?v=[^"]*)?"',
-                          'src="../assets/js/results.js?v=20261007_3"', html)
+                          'src="../assets/js/results.js?v=20261007_4"', html)
             hp.write_text(html, encoding='utf-8')
             continue
         for file in (hp, jp):
@@ -72,7 +72,7 @@ def main():
             raise ValueError('Expected report insertion point missing')
         html = html.replace(marker, panel+marker, 1)
         html = html.replace('</head>', '<link rel="stylesheet" href="../assets/css/results.css"></head>', 1)
-        html = html.replace('</body>', '<script type="module" src="../assets/js/results.js?v=20261007_3"></script></body>', 1)
+        html = html.replace('</body>', '<script type="module" src="../assets/js/results.js?v=20261007_4"></script></body>', 1)
         html = html.replace('データ・価格は自動更新しません。', '予想・保存価格は更新しません。公式結果だけを別欄へ取得できます。')
         hp.write_text(html, encoding='utf-8')
         print('Added result view: '+hp.name)

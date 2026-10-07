@@ -126,11 +126,13 @@ def parse(raw, forecast, race, source):
     finished = any(h['finish'] == 1 for h in numeric)
     payout_kinds = {p['kind'] for p in refunds}
     confirmed = finished and len(rows) == len(known) and {'単勝', '三連単'} <= payout_kinds
+    partial = finished and not confirmed
     race_title = root.find('raceTitle')
     cancelled = not numeric and race_title and re.search(r'競走(?:取り止め|取止)|この競走は取り止め', race_title.text())
-    return dict(status='confirmed' if confirmed else 'cancelled' if cancelled else 'pending',
-                rows=rows if confirmed else [], refunds=refunds if confirmed else [],
+    return dict(status='confirmed' if confirmed else 'partial' if partial else 'cancelled' if cancelled else 'pending',
+                rows=rows if confirmed or partial else [], refunds=refunds if confirmed or partial else [],
                 source=source, note='公式着順と払戻を照合済み。' if confirmed else
+                '公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。' if partial else
                 '公式の競走取り止め。' if cancelled else '確定着順・払戻が揃うまで判定を保留。')
 
 
@@ -206,7 +208,7 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
                    refresh_status=refresh_status, races=results,
                    actual_purchase=None, note='結果専用データ。事前予想・価格・採否を変更しない。')
     write_atomic(out, payload)
-    counts = {status: sum(r['status'] == status for r in results) for status in ('confirmed', 'pending', 'not_started', 'error', 'cancelled')}
+    counts = {status: sum(r['status'] == status for r in results) for status in ('confirmed', 'partial', 'pending', 'not_started', 'error', 'cancelled')}
     print(f'{target["venue"]}: {counts}; {payload["updated_at"]}')
 
 
