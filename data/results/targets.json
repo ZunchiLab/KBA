@@ -1,0 +1,7 @@
+{
+  "refresh_status": "manual_pending_workflow_permission",
+  "targets": [
+    {"date": "2026-10-07", "venue": "sonoda", "forecast": "predictions/report_20261007_nar_sonoda_predictions_v1.json"},
+    {"date": "2026-10-07", "venue": "ooi", "forecast": "predictions/report_20261007_nar_ooi_predictions_v1.json"}
+  ]
+}

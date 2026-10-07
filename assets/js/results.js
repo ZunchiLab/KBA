@@ -1,0 +1,225 @@
+const panel = document.querySelector('#results-panel');
+
+function node(tag, text, cls) {
+  const el = document.createElement(tag);
+  if (text !== undefined) el.textContent = String(text);
+  if (cls) el.className = cls;
+  return el;
+}
+
+function formatTime(value) {
+  return value ? new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(value)) + ' JST' : '未取得';
+}
+
+function money(value) { return value.toLocaleString('ja-JP') + '円'; }
+function finishLabel(value) { return Number.isInteger(value) ? value + '着' : value || '未確定'; }
+
+function table(headers, rows, cls = 'result-table') {
+  const wrap = node('div', undefined, 'scroll');
+  const t = node('table', undefined, cls);
+  const head = node('thead');
+  const hr = node('tr');
+  headers.forEach(value => hr.append(node('th', value)));
+  head.append(hr);
+  const body = node('tbody');
+  rows.forEach(values => {
+    const row = node('tr');
+    values.forEach(value => row.append(node('td', value)));
+    body.append(row);
+  });
+  t.append(head, body); wrap.append(t);
+  return wrap;
+}
+
+function details(title, content) {
+  const el = node('details');
+  el.append(node('summary', title), content);
+  return el;
+}
+
+function comboKey(numbers, kind) {
+  return (['ワイド', '馬連複', '三連複', '枠連複'].includes(kind) ? [...numbers].sort((a, b) => a - b) : numbers).join('-');
+}
+
+function judgeTicket(bet, ticket, result) {
+  if (result.status === 'cancelled') return { status: '返還', yen: 100, cls: 'result-refund' };
+  if (result.status !== 'confirmed') return { status: '未確定', yen: null, cls: 'result-pending' };
+  const withdrawn = new Set(result.rows.filter(h => ['取消', '除外', '競走除外', '出走取消'].includes(h.finish)).map(h => h.number));
+  if (ticket.numbers.some(n => withdrawn.has(n))) return { status: '返還', yen: 100, cls: 'result-refund' };
+  const payouts = result.refunds.filter(p => p.kind === bet.type);
+  if (!payouts.length) return { status: '払戻未確認', yen: null, cls: 'result-pending' };
+  const payout = payouts.find(p => comboKey(p.numbers, bet.type) === comboKey(ticket.numbers, bet.type));
+  return payout ? { status: '的中', yen: payout.yen_per_100, cls: 'result-hit' } : { status: '不的中', yen: 0, cls: 'result-miss' };
+}
+
+function ticketSummary(race, result) {
+  const section = node('div');
+  if (!race.bets.length) {
+    section.append(node('p', '事前判断：見送り。掲載買い目はありません。', 'result-note'));
+    return section;
+  }
+  section.append(node('h3', '掲載買い目との照合'));
+  for (const bet of race.bets) {
+    let hits = 0, refunds = 0, eligibleHits = 0, stake = 0, returned = 0, allKnown = true;
+    const rows = bet.tickets.map(ticket => {
+      const judgement = judgeTicket(bet, ticket, result);
+      if (judgement.status === '的中') hits++;
+      if (judgement.status === '返還') refunds++;
+      const eligible = ticket.price_condition_at_snapshot === true;
+      if (eligible) {
+        stake += ticket.example_stake_yen;
+        if (judgement.status === '的中') eligibleHits++;
+        if (judgement.yen === null) allKnown = false;
+        else returned += judgement.yen * ticket.example_stake_yen / 100;
+      }
+      return [ticket.numbers.join('→'), judgement.status, judgement.yen === null ? '—' : money(judgement.yen),
+        eligible ? '保存時に価格達成*' : ticket.price_condition_at_snapshot === false ? '価格未達・見送り' : '価格未取得・見送り'];
+    });
+    section.append(node('p', `${bet.type}：組合せ的中 ${hits}/${bet.tickets.length}点、返還 ${refunds}点。そのうち保存価格を満たした的中は${eligibleHits}点。`, hits ? 'result-hit' : 'result-note'));
+    if (allKnown && ['confirmed', 'cancelled'].includes(result.status)) {
+      section.append(node('p', `仮想検証：保存時に価格達成の${money(stake)}分を購入し、直前条件も満たしたと仮定 → 払戻・返還 ${money(returned)}。実購入・実収支ではありません。`, 'result-note'));
+    }
+    section.append(details(`${bet.type}の全${bet.tickets.length}点・価格条件を見る`, table(['組合せ', '結果', '100円払戻', '事前の価格判定'], rows, 'result-ticket-table')));
+  }
+  section.append(node('p', '*価格達成だけで購入確定にはなりません。直前価格・状態・実購入時刻は未記録。最終払戻から事前の見送りを変更しません。', 'result-note'));
+  return section;
+}
+
+function renderRace(race, result) {
+  const raceEl = document.querySelector('#r' + race.race);
+  if (!raceEl) return;
+  let block = raceEl.querySelector('.race-result');
+  if (!block) {
+    block = node('section', undefined, 'race-result');
+    block.setAttribute('aria-label', race.race + 'Rの結果');
+    raceEl.querySelector('.race-body').prepend(block);
+  }
+  block.replaceChildren(node('h3', '公式結果 · ' + race.race + 'R'));
+  const now = Date.now();
+  const labels = { confirmed: '着順・払戻確定', pending: '未確定', not_started: now >= Date.parse(race.start_at) ? '未確定（保存時は発走前）' : '発走前', error: '結果取得失敗・判定保留', cancelled: '競走取り止め・返還' };
+  block.append(node('p', labels[result.status] || '未取得', result.status === 'error' ? 'results-error' : 'result-note'));
+  if (result.source) block.append(node('p', '公式取得：' + formatTime(result.source.retrieved_at), 'result-note'));
+  if (result.refresh_error) block.append(node('p', '再取得に失敗したため、前回の確定結果を表示しています。', 'results-error'));
+  const official = node('a', '公式結果を開く ↗');
+  official.href = result.source?.url || result.official_url || race.source.url.replace('DebaTable', 'RaceMarkTable');
+  official.target = '_blank'; official.rel = 'noopener';
+  if (result.status === 'confirmed') {
+    const podium = node('div', undefined, 'result-podium');
+    result.rows.filter(h => Number.isInteger(h.finish) && h.finish <= 3).forEach(h => podium.append(node('span', `${h.finish}着 ${h.number} ${h.name}`)));
+    block.append(podium);
+    const pick = race.horses.find(h => h.rank === 1);
+    const finish = result.rows.find(h => h.number === pick.number)?.finish;
+    block.append(node('p', `事前${pick.mark} ${pick.number} ${pick.name}：${finishLabel(finish)}`, Number.isInteger(finish) && finish <= 3 ? 'result-hit' : 'result-miss'));
+    block.append(ticketSummary(race, result));
+    const hmap = new Map(race.horses.map(h => [h.number, h]));
+    block.append(details('全頭の着順と事前評価', table(['着順', '馬番・馬名', '事前評価', 'タイム'], result.rows.map(h => [finishLabel(h.finish), h.number + ' ' + h.name, hmap.get(h.number).mark + ' / ' + hmap.get(h.number).rank + '位', h.time || '—']))));
+    block.append(details('公式払戻金（100円あたり）', table(['券種', '組合せ', '払戻'], result.refunds.map(p => [p.kind, p.combination, money(p.yen_per_100)]))));
+  } else if (result.status === 'cancelled') block.append(ticketSummary(race, result));
+  else block.append(node('p', result.note || '次回の保存結果を再取得してください。', 'result-note'));
+  block.append(official);
+  for (const horseEl of raceEl.querySelectorAll('.horse')) {
+    const number = Number(horseEl.querySelector('.number').textContent);
+    let finishEl = horseEl.querySelector('.result-horse-finish');
+    if (!finishEl) {
+      finishEl = node('p', undefined, 'result-horse-finish');
+      horseEl.querySelector('.horse-meta').after(finishEl);
+    }
+    const finish = result.rows.find(h => h.number === number)?.finish;
+    finishEl.textContent = '結果：' + (result.status === 'confirmed' ? finishLabel(finish) : labels[result.status]);
+    finishEl.classList.toggle('podium', result.status === 'confirmed' && Number.isInteger(finish) && finish <= 3);
+  }
+}
+
+async function fetchJson(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 15000);
+  try {
+    const requestUrl = new URL(url, location.href);
+    requestUrl.searchParams.set('_updated', String(Date.now()));
+    const response = await fetch(requestUrl, { cache: 'no-store', credentials: 'omit', signal: controller.signal });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return await response.json();
+  } finally { clearTimeout(timer); }
+}
+
+async function readForecast() {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 15000);
+  let raw;
+  try {
+    const response = await fetch(panel.dataset.forecastUrl, { cache: 'no-store', credentials: 'omit', signal: controller.signal });
+    if (!response.ok) throw new Error('事前予想データを取得できません。');
+    raw = (await response.text()).replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
+  } finally { clearTimeout(timer); }
+  const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
+  const digest = [...new Uint8Array(bytes)].map(b => b.toString(16).padStart(2, '0')).join('');
+  return { forecast: JSON.parse(raw), digest };
+}
+
+function validate(data, forecast, digest) {
+  if (data.schema_version !== 1 || data.forecast_sha256 !== digest || data.forecast_version !== forecast.version || data.date_jst !== forecast.date_jst || data.baba_code !== forecast.baba_code || !Number.isFinite(Date.parse(data.updated_at)) || !Array.isArray(data.races)) {
+    throw new Error('予想と結果データの対応を確認できません。判定を保留します。');
+  }
+  const seen = new Set();
+  for (const result of data.races) {
+    const race = forecast.races.find(r => r.race === result.race);
+    if (!race || seen.has(result.race) || !['confirmed', 'pending', 'not_started', 'error', 'cancelled'].includes(result.status) || !Array.isArray(result.rows) || !Array.isArray(result.refunds)) throw new Error('結果形式を確認できません。');
+    seen.add(result.race);
+    if (result.status === 'confirmed') {
+      const horses = new Map(race.horses.map(h => [h.number, h.name]));
+      if (result.rows.length !== horses.size || new Set(result.rows.map(h => h.number)).size !== horses.size || result.rows.some(h => horses.get(h.number)?.replace(/\s/g, '') !== h.name.replace(/\s/g, ''))) throw new Error('出走馬との対応を確認できません。');
+    }
+  }
+  if (seen.size !== forecast.races.length) throw new Error('結果の対象レースが不足しています。');
+}
+
+function summary(data, forecast) {
+  const area = panel.querySelector('.results-summary');
+  area.replaceChildren();
+  const confirmed = data.races.filter(r => r.status === 'confirmed');
+  let wins = 0, top3 = 0;
+  for (const result of confirmed) {
+    const race = forecast.races.find(r => r.race === result.race);
+    const pick = race.horses.find(h => h.rank === 1);
+    const finish = result.rows.find(h => h.number === pick.number)?.finish;
+    if (finish === 1) wins++;
+    if (Number.isInteger(finish) && finish <= 3) top3++;
+  }
+  for (const [value, label] of [[`${confirmed.length}/${forecast.races.length}R`, '着順・払戻確定'], [`${wins}/${confirmed.length}R`, '事前◎の1着（同着含む）'], [`${top3}/${confirmed.length}R`, '事前◎の3着以内']]) {
+    const stat = node('div', undefined, 'results-stat');
+    stat.append(node('strong', value), node('small', label)); area.append(stat);
+  }
+}
+
+if (panel) {
+  const button = panel.querySelector('button');
+  const status = panel.querySelector('.results-status');
+  let lastData = null;
+  button.addEventListener('click', async () => {
+    button.disabled = true; panel.setAttribute('aria-busy', 'true');
+    status.classList.remove('results-error'); status.textContent = '保存済みの公式結果を取得中…';
+    try {
+      const { forecast, digest } = await readForecast();
+      let data, fallback = false;
+      try { data = await fetchJson(panel.dataset.liveUrl); }
+      catch { data = await fetchJson(panel.dataset.resultUrl); fallback = true; }
+      validate(data, forecast, digest);
+      if (lastData && Date.parse(lastData.updated_at) > Date.parse(data.updated_at)) {
+        data = lastData; fallback = true;
+      }
+      data.races.forEach(result => renderRace(forecast.races.find(r => r.race === result.race), result));
+      summary(data, forecast);
+      const failed = data.races.filter(r => r.status === 'error' || r.refresh_error).length;
+      const stale = !data.complete && Date.now() - Date.parse(data.updated_at) > 20 * 60000;
+      status.textContent = '保存データ更新：' + formatTime(data.updated_at) +
+        (fallback ? '。最新配信に接続できず、保存済みの結果を表示。' : '。') +
+        (failed ? `${failed}Rは取得失敗・前回結果を含みます。` : '') +
+        (stale ? '更新から20分以上経過しています。最新状態は公式をご確認ください。' : '');
+      status.classList.toggle('results-error', failed > 0 || stale || fallback);
+      button.textContent = '結果を再取得'; lastData = data;
+    } catch (error) {
+      status.textContent = '取得できませんでした。' + (lastData ? '前回表示した結果を残しています。' : '時間をおいて再取得するか、各レースの公式結果をご確認ください。');
+      status.classList.add('results-error');
+    } finally { button.disabled = false; panel.setAttribute('aria-busy', 'false'); }
+  });
+}

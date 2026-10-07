@@ -1,0 +1,27 @@
+{
+  "archived_at": "2026-10-07T15:30:58+09:00",
+  "reason": "ユーザー依頼で同じ公開URLへ結果取得UIを追加。事前予想の内容は変更しない。",
+  "source_commit": "4564da347f980a0bbac2fbac0fa54263d156d24a",
+  "files": [
+    {
+      "path": "predictions/report_20261007_nar_sonoda_predictions_v1.html",
+      "archive": "predictions/archive/20261007_original/report_20261007_nar_sonoda_predictions_v1.html",
+      "sha256": "bcba4c9342897e384d2bec1ee36a0da1891cc7e32256a39ec1dfdc49e9c26e49"
+    },
+    {
+      "path": "predictions/report_20261007_nar_sonoda_predictions_v1.json",
+      "archive": "predictions/archive/20261007_original/report_20261007_nar_sonoda_predictions_v1.json",
+      "sha256": "22262213af9cc2d9912cb77acb3c625d5a4f6cc787ad13d35eacd0934ef27eab"
+    },
+    {
+      "path": "predictions/report_20261007_nar_ooi_predictions_v1.html",
+      "archive": "predictions/archive/20261007_original/report_20261007_nar_ooi_predictions_v1.html",
+      "sha256": "1ac968d9e8a9cd21dec05d484fab988edc4987743427aa16a1fa161683085a51"
+    },
+    {
+      "path": "predictions/report_20261007_nar_ooi_predictions_v1.json",
+      "archive": "predictions/archive/20261007_original/report_20261007_nar_ooi_predictions_v1.json",
+      "sha256": "800b33cfa64cc954c13198206206aca28ac925b1a178744f5e6dacf8e3b5c86a"
+    }
+  ]
+}

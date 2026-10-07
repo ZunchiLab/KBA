@@ -31,6 +31,8 @@ def report(path):
     heading = f'{venue}競馬の本気予想' if venue=='大井' else title
     if len(heading)>75:heading=heading[:74]+'…'
     note = scope_text or ('全24Rの予想' if '全24R' in title else '全頭評価と予想の記録' if 'allraces' in name_lower or '_predictions' in name_lower else '予想の記録')
+    has_results = 'id="results-panel"' in text
+    if has_results:note+=' · 結果取得対応'
     if 'reverse' in name_lower:note='別の観点から評価した予想'
     if 'スマホ' in path.name:note+=' · スマホ版'
     elif '印付き' in path.name:note+=' · 印・得点順'
@@ -38,7 +40,7 @@ def report(path):
     horse_names=[h['name'] for race in data.get('races',[]) for h in race.get('horses',[])]
     return {'file':path.name,'href':'predictions/'+quote(path.name),'date':date,'category':category,'venue':venue,
             'title':title,'heading':heading,'note':note,'version':version,'group':group,'fixed_at':data.get('fixed_at'),
-            'scope':scope,'phase':data.get('phase'),'superseded':False,'horse_names':horse_names}
+            'scope':scope,'phase':data.get('phase'),'superseded':False,'horse_names':horse_names,'has_results':has_results}
 
 def main():
     entries=[report(path) for path in (ROOT/'predictions').glob('*.html')]
