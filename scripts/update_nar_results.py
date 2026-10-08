@@ -152,6 +152,12 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
     forecast_text = forecast_raw.decode('utf-8-sig').replace('\r\n', '\n')
     forecast = json.loads(forecast_text)
     forecast_digest = sha256(forecast_text.encode('utf-8')).hexdigest()
+    if forecast.get('schema_version') == 'kba.forecast/1' and forecast.get('venues'):
+        venue = next((v for v in forecast['venues'] if v['venue_key'] == target['venue']), None)
+        if not venue:
+            raise ValueError('Target venue missing from day forecast')
+        forecast = dict(forecast, venue=venue['label'], venue_key=venue['venue_key'], baba_code=venue['baba_code'],
+                        races=[r for r in forecast['races'] if r['venue_key'] == target['venue']])
     if target['date'] != forecast['date_jst'] or target['venue'] != forecast['venue_key']:
         raise ValueError('Target metadata mismatch')
     out = ROOT/'data/results/nar'/target['date']/(target['venue']+'.json')
@@ -188,10 +194,13 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
             source = dict(url=url, retrieved_at=at.isoformat(timespec='seconds'),
                           sha256=digest, saved_file=relative.as_posix())
             result.update(parse(raw, forecast, race, source))
+            if old and old.get('rows') and len(result.get('rows', [])) < len(old['rows']) and result['status'] != 'confirmed':
+                result = dict(old, refresh_error='Latest response omitted previously known rows; retained prior snapshot',
+                              last_attempt_at=at.isoformat(timespec='seconds'))
             (ROOT/relative).parent.mkdir(parents=True, exist_ok=True)
             (ROOT/relative).write_bytes(raw)
         except Exception as ex:
-            if old and old['status'] in ('confirmed', 'cancelled'):
+            if old and (old['status'] in ('confirmed', 'cancelled') or old.get('rows')):
                 result = dict(old, refresh_error=str(ex), last_attempt_at=datetime.now(JST).isoformat(timespec='seconds'))
             else:
                 result.update(status='error', rows=[], refunds=[], source=None,

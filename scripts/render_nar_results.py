@@ -18,6 +18,10 @@ def finish_text(result, number):
 
 
 def render_snapshot(target, forecast, data):
+    if forecast.get('schema_version') == 'kba.forecast/1' and forecast.get('venues'):
+        from render_day_prediction import render_day_snapshot
+        render_day_snapshot(target)
+        return
     forecast_text = (ROOT/target['forecast']).read_text(encoding='utf-8-sig').replace('\r\n', '\n')
     if data['forecast_sha256'] != sha256(forecast_text.encode('utf-8')).hexdigest() or data['forecast_version'] != forecast['version'] or data['date_jst'] != forecast['date_jst'] or data['baba_code'] != forecast['baba_code']:
         raise ValueError('Snapshot does not match the frozen forecast')
