@@ -27,6 +27,8 @@ def render(d,json_name,results=None):
 <section class="panel" id="results-panel"><div class="row"><h2>印と結果</h2><button type="button" id="refresh-results">最新の保存結果を取得</button></div><p id="result-status" role="status" aria-live="polite">{E('会場別の保存結果を表示しています。' if results else 'まだ結果を取得していません。印と馬名は取得前・取得失敗時も表示します。')}</p><p class="muted">ボタンは公式を収集したGitHubの最新保存データを取得します。表示中は約2分ごとにも確認。取得元・確認時刻をレースごとに表示し、既知の結果を消しません。</p></section>
 <details class="panel"><summary>昨日の反省と、今日の評価方法</summary><ul>{''.join('<li>'+E(x)+'</li>' for x in d['improvements'])}</ul><p>{E(d['model']['definition'])}</p><ul>{''.join('<li>'+E(x)+'</li>' for x in d['model']['limitations'])}</ul><p>自信度は比較材料の揃い方、波乱度は未知条件・休養・先行競合の主観評価です。勝率・期待値は推定していません。</p><p>対象外：{E(' / '.join(v['label']+' '+','.join(str(x['race_no']) for x in d['excluded_races'] if x['venue_key']==v['venue_key'])+'R' for v in d['venues'] if any(x['venue_key']==v['venue_key'] for x in d['excluded_races'])))}</p><p>発走済み、または直前確認・公開の時間を確保できないレースは後付け予想に含めません。</p></details>
 <nav class="sticky" aria-label="競馬場"><div id="venue-tabs" role="tablist">{''.join(f'<button type="button" role="tab" id="tab-{v["venue_key"]}" aria-controls="venue-{v["venue_key"]}" aria-selected="false" data-venue="{v["venue_key"]}">{E(v["label"])}</button>' for v in d['venues'])}</div><div class="row filters"><input id="horse-search" type="search" aria-label="馬名・レースを検索" placeholder="馬名・レース名を検索"><select id="race-filter" aria-label="レース表示"><option value="all">すべて</option><option value="buy">買い目あり</option><option value="future">発走前</option></select></div><div id="plan-total" role="status">仮プラン合計 {b['selected_main_yen']:,}円 / 上限例 {b['day_limit_yen']:,}円</div></nav>''')
+    if d.get('revision'):
+        parts.append('<aside class="panel"><h2>v2の訂正内容</h2><p>'+E(d['revision']['reason'])+'</p><p>v1は保存しています。結果判明前の訂正です。</p></aside>')
     for v in d['venues']:
         key=v['venue_key'];vr=[r for r in d['races'] if r['venue_key']==key]
         parts.append(f'<section class="venue-panel" id="venue-{key}" role="tabpanel" aria-labelledby="tab-{key}" tabindex="0"><h2 class="venue-title">{E(v["label"])} <small>{len(vr)}レース</small></h2><nav class="race-jumps" aria-label="{E(v["label"])}のレース">'+''.join(f'<a href="#{r["race_uid"]}">{r["race"]}R <small>{E(r["start"])}</small></a>' for r in vr)+'</nav>')
@@ -62,7 +64,9 @@ def render_day_snapshot(target):
     path=ROOT/target['forecast'];text=path.read_text(encoding='utf-8-sig').replace('\r\n','\n');d=json.loads(text)
     digest=sha256(text.encode('utf-8')).hexdigest();results={}
     for v in d['venues']:
-        rp=ROOT/'data/results/nar'/d['date_jst']/(v['venue_key']+'.json')
+        rp=ROOT/'data/results/nar'/d['date_jst']
+        if d['forecast_version']!='v1':rp=rp/d['forecast_version']
+        rp=rp/(v['venue_key']+'.json')
         if not rp.exists():continue
         data=json.loads(rp.read_text(encoding='utf-8'))
         if data['forecast_sha256']!=digest or data['forecast_version']!=d['forecast_version'] or data['date_jst']!=d['date_jst'] or data['venue_key']!=v['venue_key']:raise ValueError('Result snapshot identity mismatch')

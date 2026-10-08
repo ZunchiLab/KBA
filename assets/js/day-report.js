@@ -149,7 +149,7 @@
       const digest=await forecastHash();let base,origin;
       try {const head=await getJSON('https://api.github.com/repos/ZunchiLab/KBA/commits/main?ts='+Date.now());if(!/^[a-f0-9]{40}$/.test(head.sha))throw new Error('Invalid SHA');base=`https://raw.githubusercontent.com/ZunchiLab/KBA/${head.sha}/`;origin='GitHub最新コミット';}
       catch (_){base=new URL('../',location.href).href;origin='公開サイトの保存データ（最新コミット確認不可）';}
-      const outcomes=await Promise.allSettled(config.venues.map(async v=>{const path=`data/results/nar/${config.date}/${v.venue_key}.json`;const data=await getJSON(base+path+'?ts='+Date.now());validate(data,v.venue_key,digest);merge(data,v.venue_key);return v.label+': '+data.updated_at.slice(11,19)+' JST'+(data.complete?' 全対象確定':'');}));
+      const outcomes=await Promise.allSettled(config.venues.map(async v=>{const versionPath=config.version==='v1'?'':config.version+'/';const path=`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`;const data=await getJSON(base+path+'?ts='+Date.now());validate(data,v.venue_key,digest);merge(data,v.venue_key);return v.label+': '+data.updated_at.slice(11,19)+' JST'+(data.complete?' 全対象確定':'');}));
       const ok=outcomes.filter(x=>x.status==='fulfilled').map(x=>x.value);const failed=outcomes.filter(x=>x.status==='rejected').length;
       status.textContent=origin+' / '+ok.join(' / ')+(failed?` / ${failed}会場の取得に失敗。既知の印・結果を保持しています。`:'');
       for(const v of config.venues){const data=stored[v.venue_key];if(data&&!data.complete&&Date.now()-Date.parse(data.updated_at)>20*60000)status.textContent+=` / ${v.label}は保存更新から20分超。最新結果を取得できていません。`;}

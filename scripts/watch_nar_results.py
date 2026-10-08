@@ -45,7 +45,7 @@ def main():
         for target in targets:
             update(target, now, refresh_status='continuous', refresh_interval=interval)
         publish(targets)
-        completed = all(json.loads((ROOT/'data/results/nar'/target['date']/(target['venue']+'.json')).read_text(encoding='utf-8')).get('complete') for target in targets)
+        completed = all(json.loads((ROOT/'data/results/nar'/target['date']/target.get('result_version', '')/(target['venue']+'.json')).read_text(encoding='utf-8')).get('complete') for target in targets)
         if completed:
             print('All requested races confirmed; stopping.', flush=True)
             return

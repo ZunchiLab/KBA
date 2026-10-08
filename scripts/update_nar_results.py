@@ -160,7 +160,10 @@ def update(target, now, force=False, refresh_status='manual_pending_workflow_per
                         races=[r for r in forecast['races'] if r['venue_key'] == target['venue']])
     if target['date'] != forecast['date_jst'] or target['venue'] != forecast['venue_key']:
         raise ValueError('Target metadata mismatch')
-    out = ROOT/'data/results/nar'/target['date']/(target['venue']+'.json')
+    out = ROOT/'data/results/nar'/target['date']
+    if target.get('result_version'):
+        out = out/target['result_version']
+    out = out/(target['venue']+'.json')
     previous = json.loads(out.read_text(encoding='utf-8')) if out.exists() else {}
     if previous.get('forecast_sha256') not in (None, forecast_digest, sha256(forecast_raw).hexdigest()):
         raise ValueError('Frozen forecast changed; do not mix results with a new forecast')
