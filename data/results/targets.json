@@ -1,5 +1,7 @@
 {
   "refresh_status": "continuous",
+  "execution_environment": "local",
+  "execution_note": "GitHub hosted runner returned HTTP404 for official result pages. Local official fetch succeeds; bounded local worker updates the same result files until 22:05 JST or completion.",
   "refresh_interval_minutes": 2,
   "active_until": "2026-10-08T22:05:00+09:00",
   "targets": [

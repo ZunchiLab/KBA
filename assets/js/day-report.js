@@ -21,6 +21,7 @@
     if(previous!==key){document.getElementById('horse-search').value=viewStates[key]?.search||'';document.getElementById('race-filter').value=viewStates[key]?.filter||'all';}
     tabs.forEach(t => { const on=t.dataset.venue===key;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1; });
     panels.forEach(p => p.hidden=p.id!=='venue-'+key);
+    document.querySelectorAll('.sticky .race-jumps').forEach(jumps=>jumps.hidden=jumps.dataset.venue!==key);
     if(updateURL) { const u=new URL(location.href);u.searchParams.set('venue',key);if(hashVenue()&&hashVenue()!==key)u.hash='';history.replaceState(null,'',u); }
     filter();
     if(updateURL&&previous!==key&&viewStates[key]) window.scrollTo({top:viewStates[key].scroll,behavior:'instant'});
@@ -121,6 +122,7 @@
       const note=card.querySelector('.race-result-status');note.replaceChildren();
       note.append((labels[rr.status]||'未確定')+' · 保存 '+data.updated_at.slice(5,16).replace('T',' ')+' JST');
       if(rr.source){const a=document.createElement('a');a.href=rr.source.url;a.textContent=' / 公式確認 '+rr.source.retrieved_at.slice(11,19)+' JST';note.append(a);}
+      else if(rr.status==='error')note.append(' / 公式取得に失敗。着順をまだ保存できていません。');
       if(rr.refresh_error)note.append(' / 既知の結果を保持');
       for(const h of race.horses){const row=rr.rows.find(r=>r.number===h.number);const el=card.querySelector(`.horse[data-number="${h.number}"] .horse-finish`);
         el.textContent=row?(Number.isInteger(row.finish)?row.finish+'着':String(row.finish)):h.status_at_snapshot==='withdrawn'?'取消':rr.status==='cancelled'?'競走取止':rr.status==='not_started'?'保存時は発走前':'未確定';
@@ -149,7 +151,7 @@
       const digest=await forecastHash();let base,origin;
       try {const head=await getJSON('https://api.github.com/repos/ZunchiLab/KBA/commits/main?ts='+Date.now());if(!/^[a-f0-9]{40}$/.test(head.sha))throw new Error('Invalid SHA');base=`https://raw.githubusercontent.com/ZunchiLab/KBA/${head.sha}/`;origin='GitHub最新コミット';}
       catch (_){base=new URL('../',location.href).href;origin='公開サイトの保存データ（最新コミット確認不可）';}
-      const outcomes=await Promise.allSettled(config.venues.map(async v=>{const versionPath=config.version==='v1'?'':config.version+'/';const path=`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`;const data=await getJSON(base+path+'?ts='+Date.now());validate(data,v.venue_key,digest);merge(data,v.venue_key);return v.label+': '+data.updated_at.slice(11,19)+' JST'+(data.complete?' 全対象確定':'');}));
+      const outcomes=await Promise.allSettled(config.venues.map(async v=>{const versionPath=config.version==='v1'?'':config.version+'/';const path=`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`;const data=await getJSON(base+path+'?ts='+Date.now());validate(data,v.venue_key,digest);merge(data,v.venue_key);const confirmed=data.races.filter(r=>r.status==='confirmed').length;const errors=data.races.filter(r=>r.status==='error').length;return v.label+': '+confirmed+'R確定 / 保存 '+data.updated_at.slice(11,19)+' JST'+(errors?' / 公式取得失敗 '+errors+'R':'')+(data.complete?' 全対象確定':'');}));
       const ok=outcomes.filter(x=>x.status==='fulfilled').map(x=>x.value);const failed=outcomes.filter(x=>x.status==='rejected').length;
       status.textContent=origin+' / '+ok.join(' / ')+(failed?` / ${failed}会場の取得に失敗。既知の印・結果を保持しています。`:'');
       for(const v of config.venues){const data=stored[v.venue_key];if(data&&!data.complete&&Date.now()-Date.parse(data.updated_at)>20*60000)status.textContent+=` / ${v.label}は保存更新から20分超。最新結果を取得できていません。`;}

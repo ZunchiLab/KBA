@@ -1,5 +1,6 @@
 """Keep today's official result feed fresh during one bounded Actions job."""
 from datetime import datetime, timedelta
+from argparse import ArgumentParser
 import json
 import subprocess
 import time
@@ -27,11 +28,18 @@ def publish(targets):
 
 
 def main():
+    parser = ArgumentParser()
+    parser.add_argument('--local', action='store_true', help='Use the explicitly configured local worker')
+    args = parser.parse_args()
     # Stay below the hosted runner's six-hour limit, including final publication.
     deadline = datetime.now(JST) + timedelta(minutes=345)
     while True:
         git('pull', '--ff-only', 'origin', 'main')
         config = json.loads((ROOT/'data/results/targets.json').read_text(encoding='utf-8'))
+        required = config.get('execution_environment', 'github')
+        if required != ('local' if args.local else 'github'):
+            print(f'Configured worker is {required}; stopping this worker.', flush=True)
+            return
         now = datetime.now(JST)
         until = datetime.fromisoformat(config['active_until'])
         targets = [target for target in config['targets'] if target['date'] == now.date().isoformat()]
