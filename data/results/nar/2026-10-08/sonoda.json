@@ -9,7 +9,7 @@
   "forecast_file": "report_20261008_nar_predictions_v1.json",
   "forecast_sha256": "386a49a9640ae3bd7fd207762bb2d53f3bbe360020a69c96940ffba682f685cd",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-08T19:20:28+09:00",
+  "updated_at": "2026-10-08T21:45:36+09:00",
   "complete": true,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -287,9 +287,9 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=9",
-        "retrieved_at": "2026-10-08T19:20:26+09:00",
+        "retrieved_at": "2026-10-08T21:45:33+09:00",
         "sha256": "fb4d1bd6e437f072297ad49aa3cb4589db2a93aeacd9c5f513c23744bc61e8f5",
-        "saved_file": "data/results/sources/2026-10-08/sonoda/r9_192026_fb4d1bd6e437.html"
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r9_214533_fb4d1bd6e437.html"
       },
       "note": "公式着順と払戻を照合済み。"
     },
@@ -566,9 +566,9 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=10",
-        "retrieved_at": "2026-10-08T19:20:26+09:00",
-        "sha256": "e70bc54a72033f696db7f4d3c83230d550c1dcd5a789c7df7b52829d20015ea8",
-        "saved_file": "data/results/sources/2026-10-08/sonoda/r10_192026_e70bc54a7203.html"
+        "retrieved_at": "2026-10-08T21:45:34+09:00",
+        "sha256": "9127ff4754162d40dee4181fe01e713bdd8f06092249e42751fce33fa926c910",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r10_214534_9127ff475416.html"
       },
       "note": "公式着順と払戻を照合済み。"
     },
@@ -845,9 +845,9 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=11",
-        "retrieved_at": "2026-10-08T19:20:27+09:00",
-        "sha256": "e3d7508bd9b6edd301e64fb09a2a4908e20d0cdd796dc72b1ef44da58e259b60",
-        "saved_file": "data/results/sources/2026-10-08/sonoda/r11_192027_e3d7508bd9b6.html"
+        "retrieved_at": "2026-10-08T21:45:35+09:00",
+        "sha256": "c830b1776f1e01c6e27e1a5fbe882574afd7ec159b8d93d73f016531d92951c5",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r11_214535_c830b1776f1e.html"
       },
       "note": "公式着順と払戻を照合済み。"
     },
@@ -1124,9 +1124,9 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=12",
-        "retrieved_at": "2026-10-08T19:20:27+09:00",
-        "sha256": "fec9aaece196252b51ecddcb74a3329ff7b14e2bb872caf8c968141956cb63a0",
-        "saved_file": "data/results/sources/2026-10-08/sonoda/r12_192027_fec9aaece196.html"
+        "retrieved_at": "2026-10-08T21:45:35+09:00",
+        "sha256": "9fca0b56f6b188cc5f57a03535134a45ffbc6fb9051c319bff8c7c2c80c183d9",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r12_214535_9fca0b56f6b1.html"
       },
       "note": "公式着順と払戻を照合済み。"
     }
