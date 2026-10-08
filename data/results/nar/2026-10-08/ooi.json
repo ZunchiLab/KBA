@@ -9,7 +9,7 @@
   "forecast_file": "report_20261008_nar_predictions_v1.json",
   "forecast_sha256": "386a49a9640ae3bd7fd207762bb2d53f3bbe360020a69c96940ffba682f685cd",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-08T20:10:17+09:00",
+  "updated_at": "2026-10-08T20:12:21+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -2816,9 +2816,9 @@
       "refunds": [],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=20&k_raceNo=11",
-        "retrieved_at": "2026-10-08T20:10:16+09:00",
+        "retrieved_at": "2026-10-08T20:12:21+09:00",
         "sha256": "15fada06378837099cf9f1d1fa4f2f947380bd035c7b90ddda25fc0043691d32",
-        "saved_file": "data/results/sources/2026-10-08/ooi/r11_201016_15fada063788.html"
+        "saved_file": "data/results/sources/2026-10-08/ooi/r11_201221_15fada063788.html"
       },
       "note": "公式の確定着順・払戻は未掲載。"
     },
