@@ -9,7 +9,7 @@
   "forecast_file": "report_20261008_nar_predictions_v1.json",
   "forecast_sha256": "386a49a9640ae3bd7fd207762bb2d53f3bbe360020a69c96940ffba682f685cd",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-08T16:08:51+09:00",
+  "updated_at": "2026-10-08T16:10:57+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -24,7 +24,7 @@
       "source": null,
       "note": "公式結果の取得・照合に失敗。",
       "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T16:08:49+09:00",
+      "last_attempt_at": "2026-10-08T16:10:56+09:00",
       "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=9"
     },
     {
@@ -37,7 +37,7 @@
       "source": null,
       "note": "公式結果の取得・照合に失敗。",
       "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T16:08:50+09:00",
+      "last_attempt_at": "2026-10-08T16:10:57+09:00",
       "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=10"
     },
     {
@@ -50,7 +50,7 @@
       "source": null,
       "note": "公式結果の取得・照合に失敗。",
       "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T16:08:51+09:00",
+      "last_attempt_at": "2026-10-08T16:10:57+09:00",
       "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=11"
     },
     {
