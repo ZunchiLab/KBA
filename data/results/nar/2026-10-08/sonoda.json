@@ -9,8 +9,8 @@
   "forecast_file": "report_20261008_nar_predictions_v1.json",
   "forecast_sha256": "386a49a9640ae3bd7fd207762bb2d53f3bbe360020a69c96940ffba682f685cd",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-08T19:18:55+09:00",
-  "complete": false,
+  "updated_at": "2026-10-08T19:20:28+09:00",
+  "complete": true,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
   "races": [
@@ -18,53 +18,1117 @@
       "race": 9,
       "name": "Ｃ１ ３歳以上",
       "start_at": "2026-10-08T14:45:00+09:00",
-      "status": "error",
-      "rows": [],
-      "refunds": [],
-      "source": null,
-      "note": "公式結果の取得・照合に失敗。",
-      "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T19:18:53+09:00",
-      "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=9"
+      "status": "confirmed",
+      "rows": [
+        {
+          "number": 5,
+          "name": "フェアリータイザン",
+          "finish": 1,
+          "time": "0:50.4",
+          "margin": "",
+          "last_3f": "36.3",
+          "jockey": "田野豊 （兵庫）",
+          "body_weight": "449(-8)",
+          "final_popularity": 1,
+          "final_win_odds": "2.2"
+        },
+        {
+          "number": 9,
+          "name": "ディナーラッシュ",
+          "finish": 2,
+          "time": "0:50.4",
+          "margin": "ハナ",
+          "last_3f": "35.8",
+          "jockey": "小牧太 （兵庫）",
+          "body_weight": "473(-2)",
+          "final_popularity": 2,
+          "final_win_odds": "3.3"
+        },
+        {
+          "number": 7,
+          "name": "セレリタス",
+          "finish": 3,
+          "time": "0:50.6",
+          "margin": "1.1/4",
+          "last_3f": "36.3",
+          "jockey": "笹田知 （兵庫）",
+          "body_weight": "475(16)",
+          "final_popularity": 5,
+          "final_win_odds": "13.8"
+        },
+        {
+          "number": 8,
+          "name": "アングラー",
+          "finish": 4,
+          "time": "0:50.6",
+          "margin": "クビ",
+          "last_3f": "36.4",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "460(-1)",
+          "final_popularity": 7,
+          "final_win_odds": "34.8"
+        },
+        {
+          "number": 12,
+          "name": "ピンクマーベル",
+          "finish": 5,
+          "time": "0:50.6",
+          "margin": "アタマ",
+          "last_3f": "36.5",
+          "jockey": "井上幹 （兵庫）",
+          "body_weight": "410(-2)",
+          "final_popularity": 4,
+          "final_win_odds": "7.9"
+        },
+        {
+          "number": 11,
+          "name": "アサメシマエ",
+          "finish": 6,
+          "time": "0:50.8",
+          "margin": "1.1/4",
+          "last_3f": "36.0",
+          "jockey": "竹村達 （兵庫）",
+          "body_weight": "481(2)",
+          "final_popularity": 10,
+          "final_win_odds": "123.0"
+        },
+        {
+          "number": 10,
+          "name": "バクレツマホウ",
+          "finish": 7,
+          "time": "0:50.9",
+          "margin": "クビ",
+          "last_3f": "36.8",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "478(19)",
+          "final_popularity": 6,
+          "final_win_odds": "30.7"
+        },
+        {
+          "number": 6,
+          "name": "ミストルティン",
+          "finish": 8,
+          "time": "0:51.3",
+          "margin": "2.1/2",
+          "last_3f": "36.7",
+          "jockey": "▲南部楓 （兵庫）",
+          "body_weight": "474(3)",
+          "final_popularity": 9,
+          "final_win_odds": "71.5"
+        },
+        {
+          "number": 2,
+          "name": "メイショウマサツラ",
+          "finish": 9,
+          "time": "0:51.3",
+          "margin": "アタマ",
+          "last_3f": "36.7",
+          "jockey": "山本咲 （兵庫）",
+          "body_weight": "497(0)",
+          "final_popularity": 8,
+          "final_win_odds": "35.0"
+        },
+        {
+          "number": 3,
+          "name": "ヴェレノージ",
+          "finish": 10,
+          "time": "0:51.3",
+          "margin": "アタマ",
+          "last_3f": "36.6",
+          "jockey": "新庄海 （高知）",
+          "body_weight": "542(-3)",
+          "final_popularity": 11,
+          "final_win_odds": "223.7"
+        },
+        {
+          "number": 1,
+          "name": "ヴァンセゾニエ",
+          "finish": 11,
+          "time": "0:51.7",
+          "margin": "2.1/2",
+          "last_3f": "37.6",
+          "jockey": "★塩津璃 （兵庫）",
+          "body_weight": "494(3)",
+          "final_popularity": 3,
+          "final_win_odds": "5.1"
+        },
+        {
+          "number": 4,
+          "name": "キタノセレナード",
+          "finish": 12,
+          "time": "0:52.1",
+          "margin": "2.1/2",
+          "last_3f": "36.5",
+          "jockey": "小谷周 （兵庫）",
+          "body_weight": "427(1)",
+          "final_popularity": 12,
+          "final_win_odds": "712.5"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "5",
+          "numbers": [
+            5
+          ],
+          "yen_per_100": 220,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "5",
+          "numbers": [
+            5
+          ],
+          "yen_per_100": 110,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "9",
+          "numbers": [
+            9
+          ],
+          "yen_per_100": 130,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "7",
+          "numbers": [
+            7
+          ],
+          "yen_per_100": 460,
+          "popularity": "8人気"
+        },
+        {
+          "kind": "枠連複",
+          "combination": "5-7",
+          "numbers": [
+            5,
+            7
+          ],
+          "yen_per_100": 330,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "5-9",
+          "numbers": [
+            5,
+            9
+          ],
+          "yen_per_100": 380,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "5-9",
+          "numbers": [
+            5,
+            9
+          ],
+          "yen_per_100": 520,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "5-9",
+          "numbers": [
+            5,
+            9
+          ],
+          "yen_per_100": 190,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "5-7",
+          "numbers": [
+            5,
+            7
+          ],
+          "yen_per_100": 630,
+          "popularity": "6人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "7-9",
+          "numbers": [
+            7,
+            9
+          ],
+          "yen_per_100": 640,
+          "popularity": "7人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "5-7-9",
+          "numbers": [
+            5,
+            7,
+            9
+          ],
+          "yen_per_100": 1340,
+          "popularity": "4人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "5-9-7",
+          "numbers": [
+            5,
+            9,
+            7
+          ],
+          "yen_per_100": 5110,
+          "popularity": "11人気"
+        }
+      ],
+      "source": {
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=9",
+        "retrieved_at": "2026-10-08T19:20:26+09:00",
+        "sha256": "fb4d1bd6e437f072297ad49aa3cb4589db2a93aeacd9c5f513c23744bc61e8f5",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r9_192026_fb4d1bd6e437.html"
+      },
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 10,
       "name": "ＹＪＳトライアルラウンド園田 第１戦Ｃ３ ３歳以上登録馬特別",
       "start_at": "2026-10-08T15:20:00+09:00",
-      "status": "error",
-      "rows": [],
-      "refunds": [],
-      "source": null,
-      "note": "公式結果の取得・照合に失敗。",
-      "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T19:18:54+09:00",
-      "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=10"
+      "status": "confirmed",
+      "rows": [
+        {
+          "number": 12,
+          "name": "ウィスピースノー",
+          "finish": 1,
+          "time": "1:32.8",
+          "margin": "",
+          "last_3f": "41.1",
+          "jockey": "新庄海 （兵庫）",
+          "body_weight": "448(-1)",
+          "final_popularity": 1,
+          "final_win_odds": "1.7"
+        },
+        {
+          "number": 3,
+          "name": "サトノグラン",
+          "finish": 2,
+          "time": "1:33.1",
+          "margin": "1.1/2",
+          "last_3f": "41.3",
+          "jockey": "河原菜 （JRA）",
+          "body_weight": "480(-6)",
+          "final_popularity": 2,
+          "final_win_odds": "4.8"
+        },
+        {
+          "number": 10,
+          "name": "レッドアクトゥール",
+          "finish": 3,
+          "time": "1:33.2",
+          "margin": "1/2",
+          "last_3f": "39.8",
+          "jockey": "柴田裕 （JRA）",
+          "body_weight": "452(-3)",
+          "final_popularity": 9,
+          "final_win_odds": "41.6"
+        },
+        {
+          "number": 6,
+          "name": "エイシングリュック",
+          "finish": 4,
+          "time": "1:33.3",
+          "margin": "1/2",
+          "last_3f": "40.5",
+          "jockey": "小谷哲 （兵庫）",
+          "body_weight": "472(3)",
+          "final_popularity": 10,
+          "final_win_odds": "46.5"
+        },
+        {
+          "number": 5,
+          "name": "マジカルフェイス",
+          "finish": 5,
+          "time": "1:33.3",
+          "margin": "ハナ",
+          "last_3f": "41.1",
+          "jockey": "小笠羚 （愛知）",
+          "body_weight": "465(2)",
+          "final_popularity": 7,
+          "final_win_odds": "29.8"
+        },
+        {
+          "number": 7,
+          "name": "ニシノウインド",
+          "finish": 6,
+          "time": "1:33.4",
+          "margin": "1/2",
+          "last_3f": "42.0",
+          "jockey": "阿部基 （高知）",
+          "body_weight": "458(0)",
+          "final_popularity": 5,
+          "final_win_odds": "15.3"
+        },
+        {
+          "number": 8,
+          "name": "カシスオレンジ",
+          "finish": 7,
+          "time": "1:33.7",
+          "margin": "1.3/4",
+          "last_3f": "40.7",
+          "jockey": "長谷蓮 （佐賀）",
+          "body_weight": "496(4)",
+          "final_popularity": 12,
+          "final_win_odds": "55.4"
+        },
+        {
+          "number": 2,
+          "name": "サンライズプライド",
+          "finish": 8,
+          "time": "1:33.9",
+          "margin": "1.1/4",
+          "last_3f": "40.6",
+          "jockey": "青海大 （佐賀）",
+          "body_weight": "521(-8)",
+          "final_popularity": 6,
+          "final_win_odds": "27.0"
+        },
+        {
+          "number": 11,
+          "name": "メイショウセツゲツ",
+          "finish": 9,
+          "time": "1:34.0",
+          "margin": "クビ",
+          "last_3f": "42.5",
+          "jockey": "塩津璃 （兵庫）",
+          "body_weight": "497(6)",
+          "final_popularity": 4,
+          "final_win_odds": "11.0"
+        },
+        {
+          "number": 9,
+          "name": "グランテミス",
+          "finish": 10,
+          "time": "1:34.2",
+          "margin": "1.1/4",
+          "last_3f": "41.6",
+          "jockey": "大久友 （JRA）",
+          "body_weight": "462(1)",
+          "final_popularity": 8,
+          "final_win_odds": "36.1"
+        },
+        {
+          "number": 4,
+          "name": "ファルコンエース",
+          "finish": 11,
+          "time": "1:34.5",
+          "margin": "1.1/2",
+          "last_3f": "41.3",
+          "jockey": "森田誠 （JRA）",
+          "body_weight": "428(1)",
+          "final_popularity": 11,
+          "final_win_odds": "49.8"
+        },
+        {
+          "number": 1,
+          "name": "ベジョータ",
+          "finish": 12,
+          "time": "1:34.9",
+          "margin": "2.1/2",
+          "last_3f": "43.1",
+          "jockey": "田山旺 （JRA）",
+          "body_weight": "514(-8)",
+          "final_popularity": 3,
+          "final_win_odds": "6.7"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "12",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 170,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "12",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 130,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "3",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 140,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "10",
+          "numbers": [
+            10
+          ],
+          "yen_per_100": 410,
+          "popularity": "8人気"
+        },
+        {
+          "kind": "枠連複",
+          "combination": "3-8",
+          "numbers": [
+            3,
+            8
+          ],
+          "yen_per_100": 490,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "3-12",
+          "numbers": [
+            3,
+            12
+          ],
+          "yen_per_100": 490,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "12-3",
+          "numbers": [
+            12,
+            3
+          ],
+          "yen_per_100": 710,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-12",
+          "numbers": [
+            3,
+            12
+          ],
+          "yen_per_100": 250,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "10-12",
+          "numbers": [
+            10,
+            12
+          ],
+          "yen_per_100": 710,
+          "popularity": "8人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-10",
+          "numbers": [
+            3,
+            10
+          ],
+          "yen_per_100": 1620,
+          "popularity": "20人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "3-10-12",
+          "numbers": [
+            3,
+            10,
+            12
+          ],
+          "yen_per_100": 3070,
+          "popularity": "8人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "12-3-10",
+          "numbers": [
+            12,
+            3,
+            10
+          ],
+          "yen_per_100": 7260,
+          "popularity": "15人気"
+        }
+      ],
+      "source": {
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=10",
+        "retrieved_at": "2026-10-08T19:20:26+09:00",
+        "sha256": "e70bc54a72033f696db7f4d3c83230d550c1dcd5a789c7df7b52829d20015ea8",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r10_192026_e70bc54a7203.html"
+      },
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 11,
       "name": "ＤＡＳＨよかわ開設１８周年記念Ｂ２ ３歳以上特別",
       "start_at": "2026-10-08T15:55:00+09:00",
-      "status": "error",
-      "rows": [],
-      "refunds": [],
-      "source": null,
-      "note": "公式結果の取得・照合に失敗。",
-      "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T19:18:54+09:00",
-      "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=11"
+      "status": "confirmed",
+      "rows": [
+        {
+          "number": 4,
+          "name": "ファンシンレディー",
+          "finish": 1,
+          "time": "1:30.6",
+          "margin": "",
+          "last_3f": "40.1",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "458(-3)",
+          "final_popularity": 3,
+          "final_win_odds": "5.5"
+        },
+        {
+          "number": 10,
+          "name": "ザゴリ",
+          "finish": 2,
+          "time": "1:30.6",
+          "margin": "アタマ",
+          "last_3f": "40.1",
+          "jockey": "★塩津璃 （兵庫）",
+          "body_weight": "403(0)",
+          "final_popularity": 9,
+          "final_win_odds": "128.2"
+        },
+        {
+          "number": 1,
+          "name": "リリーオブザハート",
+          "finish": 3,
+          "time": "1:30.7",
+          "margin": "1/2",
+          "last_3f": "39.3",
+          "jockey": "下原理 （兵庫）",
+          "body_weight": "432(-2)",
+          "final_popularity": 7,
+          "final_win_odds": "33.5"
+        },
+        {
+          "number": 5,
+          "name": "グロリアスアポイ",
+          "finish": 4,
+          "time": "1:30.7",
+          "margin": "ハナ",
+          "last_3f": "38.5",
+          "jockey": "田野豊 （兵庫）",
+          "body_weight": "462(6)",
+          "final_popularity": 11,
+          "final_win_odds": "190.3"
+        },
+        {
+          "number": 7,
+          "name": "タンバブショウ",
+          "finish": 5,
+          "time": "1:30.7",
+          "margin": "ハナ",
+          "last_3f": "39.6",
+          "jockey": "竹村達 （兵庫）",
+          "body_weight": "497(-3)",
+          "final_popularity": 4,
+          "final_win_odds": "17.3"
+        },
+        {
+          "number": 3,
+          "name": "スターオブアダム",
+          "finish": 6,
+          "time": "1:30.8",
+          "margin": "クビ",
+          "last_3f": "40.0",
+          "jockey": "吉村智 （兵庫）",
+          "body_weight": "514(12)",
+          "final_popularity": 1,
+          "final_win_odds": "1.6"
+        },
+        {
+          "number": 8,
+          "name": "ドンデンガエシ",
+          "finish": 7,
+          "time": "1:31.0",
+          "margin": "1.1/4",
+          "last_3f": "39.8",
+          "jockey": "廣瀬航 （兵庫）",
+          "body_weight": "491(1)",
+          "final_popularity": 6,
+          "final_win_odds": "18.6"
+        },
+        {
+          "number": 9,
+          "name": "ヘルツアス",
+          "finish": 8,
+          "time": "1:31.1",
+          "margin": "クビ",
+          "last_3f": "39.7",
+          "jockey": "山本咲 （兵庫）",
+          "body_weight": "441(6)",
+          "final_popularity": 2,
+          "final_win_odds": "4.5"
+        },
+        {
+          "number": 2,
+          "name": "シルバーブレッド",
+          "finish": 9,
+          "time": "1:31.3",
+          "margin": "1.1/4",
+          "last_3f": "38.8",
+          "jockey": "土方颯 （兵庫）",
+          "body_weight": "438(-11)",
+          "final_popularity": 10,
+          "final_win_odds": "186.5"
+        },
+        {
+          "number": 11,
+          "name": "グランコスメ",
+          "finish": 10,
+          "time": "1:31.3",
+          "margin": "クビ",
+          "last_3f": "38.8",
+          "jockey": "☆小谷哲 （兵庫）",
+          "body_weight": "451(5)",
+          "final_popularity": 8,
+          "final_win_odds": "39.3"
+        },
+        {
+          "number": 12,
+          "name": "サンライズスコール",
+          "finish": 11,
+          "time": "1:32.4",
+          "margin": "7",
+          "last_3f": "41.3",
+          "jockey": "小牧太 （兵庫）",
+          "body_weight": "476(2)",
+          "final_popularity": 5,
+          "final_win_odds": "18.2"
+        },
+        {
+          "number": 6,
+          "name": "エスオーライジング",
+          "finish": 12,
+          "time": "1:32.6",
+          "margin": "1.1/4",
+          "last_3f": "40.9",
+          "jockey": "小谷周 （兵庫）",
+          "body_weight": "478(0)",
+          "final_popularity": 12,
+          "final_win_odds": "526.0"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "4",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 550,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "4",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 290,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "10",
+          "numbers": [
+            10
+          ],
+          "yen_per_100": 1210,
+          "popularity": "9人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "1",
+          "numbers": [
+            1
+          ],
+          "yen_per_100": 750,
+          "popularity": "7人気"
+        },
+        {
+          "kind": "枠連複",
+          "combination": "4-7",
+          "numbers": [
+            4,
+            7
+          ],
+          "yen_per_100": 1910,
+          "popularity": "9人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "4-10",
+          "numbers": [
+            4,
+            10
+          ],
+          "yen_per_100": 24750,
+          "popularity": "33人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "4-10",
+          "numbers": [
+            4,
+            10
+          ],
+          "yen_per_100": 32510,
+          "popularity": "48人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "4-10",
+          "numbers": [
+            4,
+            10
+          ],
+          "yen_per_100": 4940,
+          "popularity": "32人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "1-4",
+          "numbers": [
+            1,
+            4
+          ],
+          "yen_per_100": 2460,
+          "popularity": "21人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "1-10",
+          "numbers": [
+            1,
+            10
+          ],
+          "yen_per_100": 19900,
+          "popularity": "53人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "1-4-10",
+          "numbers": [
+            1,
+            4,
+            10
+          ],
+          "yen_per_100": 73570,
+          "popularity": "95人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "4-10-1",
+          "numbers": [
+            4,
+            10,
+            1
+          ],
+          "yen_per_100": 675240,
+          "popularity": "582人気"
+        }
+      ],
+      "source": {
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=11",
+        "retrieved_at": "2026-10-08T19:20:27+09:00",
+        "sha256": "e3d7508bd9b6edd301e64fb09a2a4908e20d0cdd796dc72b1ef44da58e259b60",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r11_192027_e3d7508bd9b6.html"
+      },
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 12,
       "name": "ＹＪＳトライアルラウンド園田 第２戦Ｃ２ ３歳以上登録馬特別",
       "start_at": "2026-10-08T16:30:00+09:00",
-      "status": "error",
-      "rows": [],
-      "refunds": [],
-      "source": null,
-      "note": "公式結果の取得・照合に失敗。",
-      "error": "HTTP Error 404: Not Found",
-      "last_attempt_at": "2026-10-08T19:18:55+09:00",
-      "official_url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=12"
+      "status": "confirmed",
+      "rows": [
+        {
+          "number": 12,
+          "name": "マエストロライト",
+          "finish": 1,
+          "time": "1:32.7",
+          "margin": "",
+          "last_3f": "40.8",
+          "jockey": "河原菜 （JRA）",
+          "body_weight": "514(-2)",
+          "final_popularity": 7,
+          "final_win_odds": "13.5"
+        },
+        {
+          "number": 11,
+          "name": "シンゼンハチマン",
+          "finish": 2,
+          "time": "1:32.7",
+          "margin": "アタマ",
+          "last_3f": "40.9",
+          "jockey": "新庄海 （兵庫）",
+          "body_weight": "467(2)",
+          "final_popularity": 1,
+          "final_win_odds": "3.6"
+        },
+        {
+          "number": 3,
+          "name": "セイパレル",
+          "finish": 3,
+          "time": "1:32.7",
+          "margin": "アタマ",
+          "last_3f": "40.3",
+          "jockey": "森田誠 （JRA）",
+          "body_weight": "503(-5)",
+          "final_popularity": 3,
+          "final_win_odds": "5.1"
+        },
+        {
+          "number": 5,
+          "name": "アンニーナ",
+          "finish": 4,
+          "time": "1:32.8",
+          "margin": "クビ",
+          "last_3f": "41.0",
+          "jockey": "大久友 （JRA）",
+          "body_weight": "424(-5)",
+          "final_popularity": 12,
+          "final_win_odds": "60.4"
+        },
+        {
+          "number": 10,
+          "name": "サンライズキース",
+          "finish": 5,
+          "time": "1:33.1",
+          "margin": "1.3/4",
+          "last_3f": "41.5",
+          "jockey": "阿部基 （高知）",
+          "body_weight": "508(-2)",
+          "final_popularity": 6,
+          "final_win_odds": "10.4"
+        },
+        {
+          "number": 1,
+          "name": "インジェクション",
+          "finish": 6,
+          "time": "1:33.4",
+          "margin": "2",
+          "last_3f": "40.8",
+          "jockey": "柴田裕 （JRA）",
+          "body_weight": "481(-2)",
+          "final_popularity": 4,
+          "final_win_odds": "7.7"
+        },
+        {
+          "number": 7,
+          "name": "ウインリフレクト",
+          "finish": 7,
+          "time": "1:33.6",
+          "margin": "1",
+          "last_3f": "42.6",
+          "jockey": "青海大 （佐賀）",
+          "body_weight": "434(-2)",
+          "final_popularity": 10,
+          "final_win_odds": "46.2"
+        },
+        {
+          "number": 8,
+          "name": "クリノアチーバー",
+          "finish": 8,
+          "time": "1:33.7",
+          "margin": "1/2",
+          "last_3f": "42.7",
+          "jockey": "小谷哲 （兵庫）",
+          "body_weight": "497(2)",
+          "final_popularity": 2,
+          "final_win_odds": "4.1"
+        },
+        {
+          "number": 6,
+          "name": "メイショウトッド",
+          "finish": 9,
+          "time": "1:33.8",
+          "margin": "1/2",
+          "last_3f": "42.4",
+          "jockey": "田山旺 （JRA）",
+          "body_weight": "443(2)",
+          "final_popularity": 5,
+          "final_win_odds": "9.7"
+        },
+        {
+          "number": 9,
+          "name": "ノブアンドホワイト",
+          "finish": 10,
+          "time": "1:34.5",
+          "margin": "4",
+          "last_3f": "43.3",
+          "jockey": "塩津璃 （兵庫）",
+          "body_weight": "454(-1)",
+          "final_popularity": 9,
+          "final_win_odds": "45.5"
+        },
+        {
+          "number": 4,
+          "name": "ベラジオマサキ",
+          "finish": 11,
+          "time": "1:34.8",
+          "margin": "1.1/2",
+          "last_3f": "43.4",
+          "jockey": "城野慈 （高知）",
+          "body_weight": "464(3)",
+          "final_popularity": 8,
+          "final_win_odds": "17.7"
+        },
+        {
+          "number": 2,
+          "name": "ヴァリラプトル",
+          "finish": 12,
+          "time": "1:35.3",
+          "margin": "3",
+          "last_3f": "43.6",
+          "jockey": "小笠羚 （愛知）",
+          "body_weight": "432(1)",
+          "final_popularity": 11,
+          "final_win_odds": "59.6"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "12",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 1350,
+          "popularity": "7人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "12",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 320,
+          "popularity": "7人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "11",
+          "numbers": [
+            11
+          ],
+          "yen_per_100": 180,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "3",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 200,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "枠連複",
+          "combination": "8-8",
+          "numbers": [
+            8,
+            8
+          ],
+          "yen_per_100": 3620,
+          "popularity": "15人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "11-12",
+          "numbers": [
+            11,
+            12
+          ],
+          "yen_per_100": 4520,
+          "popularity": "18人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "12-11",
+          "numbers": [
+            12,
+            11
+          ],
+          "yen_per_100": 12290,
+          "popularity": "41人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "11-12",
+          "numbers": [
+            11,
+            12
+          ],
+          "yen_per_100": 1110,
+          "popularity": "16人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-12",
+          "numbers": [
+            3,
+            12
+          ],
+          "yen_per_100": 1150,
+          "popularity": "18人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-11",
+          "numbers": [
+            3,
+            11
+          ],
+          "yen_per_100": 410,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "3-11-12",
+          "numbers": [
+            3,
+            11,
+            12
+          ],
+          "yen_per_100": 5310,
+          "popularity": "19人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "12-11-3",
+          "numbers": [
+            12,
+            11,
+            3
+          ],
+          "yen_per_100": 57740,
+          "popularity": "208人気"
+        }
+      ],
+      "source": {
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F08&k_babaCode=27&k_raceNo=12",
+        "retrieved_at": "2026-10-08T19:20:27+09:00",
+        "sha256": "fec9aaece196252b51ecddcb74a3329ff7b14e2bb872caf8c968141956cb63a0",
+        "saved_file": "data/results/sources/2026-10-08/sonoda/r12_192027_fec9aaece196.html"
+      },
+      "note": "公式着順と払戻を照合済み。"
     }
   ],
   "actual_purchase": null,
