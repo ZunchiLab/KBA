@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-10-08",
+  "venue": "園田",
+  "venue_key": "sonoda",
+  "baba_code": 27,
+  "forecast_version": "v1",
+  "forecast_fixed_at": "2026-10-08T14:07:35+09:00",
+  "forecast_file": "report_20261008_nar_predictions_v1.json",
+  "forecast_sha256": "386a49a9640ae3bd7fd207762bb2d53f3bbe360020a69c96940ffba682f685cd",
+  "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
+  "updated_at": "2026-10-08T14:08:44+09:00",
+  "complete": false,
+  "refresh_interval_minutes": 2,
+  "refresh_status": "continuous",
+  "races": [
+    {
+      "race": 9,
+      "name": "Ｃ１ ３歳以上",
+      "start_at": "2026-10-08T14:45:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 10,
+      "name": "ＹＪＳトライアルラウンド園田 第１戦Ｃ３ ３歳以上登録馬特別",
+      "start_at": "2026-10-08T15:20:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 11,
+      "name": "ＤＡＳＨよかわ開設１８周年記念Ｂ２ ３歳以上特別",
+      "start_at": "2026-10-08T15:55:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 12,
+      "name": "ＹＪＳトライアルラウンド園田 第２戦Ｃ２ ３歳以上登録馬特別",
+      "start_at": "2026-10-08T16:30:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    }
+  ],
+  "actual_purchase": null,
+  "note": "結果専用データ。事前予想・価格・採否を変更しない。"
+}

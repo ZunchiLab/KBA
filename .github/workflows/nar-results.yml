@@ -8,11 +8,12 @@ on:
       - scripts/update_nar_results.py
       - scripts/watch_nar_results.py
       - scripts/render_nar_results.py
+      - scripts/render_day_prediction.py
       - data/results/targets.json
   workflow_dispatch:
   # Hourly recovery only. The running worker handles the two-minute updates.
   schedule:
-    - cron: '7 7-13 7 10 *'
+    - cron: '7 5-13 8 10 *'
 
 permissions:
   contents: write

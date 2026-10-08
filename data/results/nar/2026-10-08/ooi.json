@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-10-08",
+  "venue": "大井",
+  "venue_key": "ooi",
+  "baba_code": 20,
+  "forecast_version": "v1",
+  "forecast_fixed_at": "2026-10-08T14:07:35+09:00",
+  "forecast_file": "report_20261008_nar_predictions_v1.json",
+  "forecast_sha256": "386a49a9640ae3bd7fd207762bb2d53f3bbe360020a69c96940ffba682f685cd",
+  "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
+  "updated_at": "2026-10-08T14:08:44+09:00",
+  "complete": false,
+  "refresh_interval_minutes": 2,
+  "refresh_status": "continuous",
+  "races": [
+    {
+      "race": 1,
+      "name": "３歳一 二",
+      "start_at": "2026-10-08T14:30:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 2,
+      "name": "３歳一 二",
+      "start_at": "2026-10-08T15:02:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 3,
+      "name": "２歳三 四",
+      "start_at": "2026-10-08T15:35:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 4,
+      "name": "２歳三 四",
+      "start_at": "2026-10-08T16:07:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 5,
+      "name": "Ｃ２七 八 九",
+      "start_at": "2026-10-08T16:40:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 6,
+      "name": "Ｃ２七 八 九",
+      "start_at": "2026-10-08T17:12:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 7,
+      "name": "Ｃ２七 八 九",
+      "start_at": "2026-10-08T17:45:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 8,
+      "name": "シャーリー・テンプル賞Ｃ１五 六",
+      "start_at": "2026-10-08T18:20:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 9,
+      "name": "清秋賞Ｃ１五 六",
+      "start_at": "2026-10-08T18:55:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 10,
+      "name": "銀杏坂賞Ｂ３三選抜特別",
+      "start_at": "2026-10-08T19:30:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 11,
+      "name": "第６０回 東京盃JpnII３上選定馬重賞",
+      "start_at": "2026-10-08T20:10:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 12,
+      "name": "みずがめ座特別Ｃ１十Ｃ２一選抜",
+      "start_at": "2026-10-08T20:50:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    }
+  ],
+  "actual_purchase": null,
+  "note": "結果専用データ。事前予想・価格・採否を変更しない。"
+}
