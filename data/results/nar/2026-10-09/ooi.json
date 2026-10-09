@@ -9,7 +9,7 @@
   "forecast_file": "report_20261009_nar_predictions_v1.json",
   "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-09T16:10:30+09:00",
+  "updated_at": "2026-10-09T16:12:36+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -239,16 +239,153 @@
       "race": 2,
       "name": "Ｃ２三",
       "start_at": "2026-10-09T16:07:00+09:00",
-      "status": "pending",
-      "rows": [],
-      "refunds": [],
+      "status": "partial",
+      "rows": [
+        {
+          "number": 4,
+          "name": "ピコピンク",
+          "finish": 1,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "藤田凌 （大井）",
+          "body_weight": "508(9)",
+          "final_popularity": 1,
+          "final_win_odds": "1.1"
+        },
+        {
+          "number": 3,
+          "name": "サウンドキングダム",
+          "finish": 2,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "▲高橋優 （大井）",
+          "body_weight": "515(-2)",
+          "final_popularity": 3,
+          "final_win_odds": "6.4"
+        },
+        {
+          "number": 5,
+          "name": "ポルタロマーナ",
+          "finish": 3,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "達城龍 （大井）",
+          "body_weight": "512(-4)",
+          "final_popularity": 2,
+          "final_win_odds": "6.0"
+        }
+      ],
+      "refunds": [
+        {
+          "kind": "単勝",
+          "combination": "4",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 110,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "4",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 110,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "複勝",
+          "combination": "3",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 150,
+          "popularity": "3人気"
+        },
+        {
+          "kind": "馬連複",
+          "combination": "3-4",
+          "numbers": [
+            3,
+            4
+          ],
+          "yen_per_100": 220,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "馬連単",
+          "combination": "4-3",
+          "numbers": [
+            4,
+            3
+          ],
+          "yen_per_100": 280,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-4",
+          "numbers": [
+            3,
+            4
+          ],
+          "yen_per_100": 120,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "4-5",
+          "numbers": [
+            4,
+            5
+          ],
+          "yen_per_100": 120,
+          "popularity": "2人気"
+        },
+        {
+          "kind": "ワイド",
+          "combination": "3-5",
+          "numbers": [
+            3,
+            5
+          ],
+          "yen_per_100": 180,
+          "popularity": "4人気"
+        },
+        {
+          "kind": "三連複",
+          "combination": "3-4-5",
+          "numbers": [
+            3,
+            4,
+            5
+          ],
+          "yen_per_100": 180,
+          "popularity": "1人気"
+        },
+        {
+          "kind": "三連単",
+          "combination": "4-3-5",
+          "numbers": [
+            4,
+            3,
+            5
+          ],
+          "yen_per_100": 440,
+          "popularity": "1人気"
+        }
+      ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F09&k_babaCode=20&k_raceNo=2",
-        "retrieved_at": "2026-10-09T16:10:30+09:00",
-        "sha256": "15fada06378837099cf9f1d1fa4f2f947380bd035c7b90ddda25fc0043691d32",
-        "saved_file": "data/results/sources/2026-10-09/ooi/r2_161030_15fada063788.html"
+        "retrieved_at": "2026-10-09T16:12:35+09:00",
+        "sha256": "449958c139f1f850073b858dac1624a72f6ca1a7c6f4e19412fd23b37824f3f9",
+        "saved_file": "data/results/sources/2026-10-09/ooi/r2_161235_449958c139f1.html"
       },
-      "note": "公式の確定着順・払戻は未掲載。"
+      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
     },
     {
       "race": 3,
