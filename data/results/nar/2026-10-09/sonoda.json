@@ -9,7 +9,7 @@
   "forecast_file": "report_20261009_nar_predictions_v1.json",
   "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-09T16:02:10+09:00",
+  "updated_at": "2026-10-09T16:04:15+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -694,13 +694,13 @@
       "race": 4,
       "name": "Ｃ１ ３歳以上特別",
       "start_at": "2026-10-09T15:50:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 3,
           "name": "ベラジオハルカ",
           "finish": 1,
-          "time": "",
+          "time": "1:53.8",
           "margin": "",
           "last_3f": "",
           "jockey": "吉村智 （兵庫）",
@@ -712,8 +712,8 @@
           "number": 1,
           "name": "ボンヌーヴェル",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:53.9",
+          "margin": "クビ",
           "last_3f": "",
           "jockey": "田野豊 （兵庫）",
           "body_weight": "469(-1)",
@@ -724,13 +724,49 @@
           "number": 5,
           "name": "ディザーヴユー",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:54.5",
+          "margin": "4",
           "last_3f": "",
           "jockey": "小牧太 （兵庫）",
           "body_weight": "505(9)",
           "final_popularity": 1,
           "final_win_odds": "1.4"
+        },
+        {
+          "number": 4,
+          "name": "マカセナハレ",
+          "finish": 4,
+          "time": "1:54.9",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "下原理 （兵庫）",
+          "body_weight": "490(2)",
+          "final_popularity": 5,
+          "final_win_odds": "18.8"
+        },
+        {
+          "number": 6,
+          "name": "ファッシネイトパイ",
+          "finish": 5,
+          "time": "1:54.9",
+          "margin": "アタマ",
+          "last_3f": "",
+          "jockey": "土方颯 （兵庫）",
+          "body_weight": "489(2)",
+          "final_popularity": 2,
+          "final_win_odds": "4.5"
+        },
+        {
+          "number": 2,
+          "name": "インオービット",
+          "finish": 6,
+          "time": "1:55.5",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "山本咲 （兵庫）",
+          "body_weight": "486(6)",
+          "final_popularity": 6,
+          "final_win_odds": "193.3"
         }
       ],
       "refunds": [
@@ -836,11 +872,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F09&k_babaCode=27&k_raceNo=4",
-        "retrieved_at": "2026-10-09T16:02:10+09:00",
-        "sha256": "2814993a37b57326a5963a7b6149c17861f97eddcb570651b8407ea15df7bc79",
-        "saved_file": "data/results/sources/2026-10-09/sonoda/r4_160210_2814993a37b5.html"
+        "retrieved_at": "2026-10-09T16:04:15+09:00",
+        "sha256": "d5f581f647f9a458056653f281d17e9b3ab7a9e4a889f88e0fbf6eb19e7b4dc1",
+        "saved_file": "data/results/sources/2026-10-09/sonoda/r4_160415_d5f581f647f9.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 5,
