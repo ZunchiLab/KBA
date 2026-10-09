@@ -3,9 +3,9 @@
   "execution_environment": "local",
   "execution_note": "GitHub hosted runner returned HTTP404 for official result pages. Local official fetch succeeds; bounded local worker updates the same result files until 22:05 JST or completion.",
   "refresh_interval_minutes": 2,
-  "active_until": "2026-10-08T22:05:00+09:00",
+  "active_until": "2026-10-09T22:05:00+09:00",
   "targets": [
-    {"date": "2026-10-08", "venue": "sonoda", "forecast": "predictions/report_20261008_nar_predictions_v1.json"},
-    {"date": "2026-10-08", "venue": "ooi", "forecast": "predictions/report_20261008_nar_predictions_v1.json"}
+    {"date": "2026-10-09", "venue": "sonoda", "forecast": "predictions/report_20261009_nar_predictions_v1.json"},
+    {"date": "2026-10-09", "venue": "ooi", "forecast": "predictions/report_20261009_nar_predictions_v1.json"}
   ]
 }

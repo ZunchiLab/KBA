@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-10-09",
+  "venue": "大井",
+  "venue_key": "ooi",
+  "baba_code": 20,
+  "forecast_version": "v1",
+  "forecast_fixed_at": "2026-10-09T12:52:26+09:00",
+  "forecast_file": "report_20261009_nar_predictions_v1.json",
+  "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
+  "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
+  "updated_at": "2026-10-09T12:54:48+09:00",
+  "complete": false,
+  "refresh_interval_minutes": 2,
+  "refresh_status": "continuous",
+  "races": [
+    {
+      "race": 1,
+      "name": "２歳一 二",
+      "start_at": "2026-10-09T15:35:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 2,
+      "name": "Ｃ２三",
+      "start_at": "2026-10-09T16:07:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 3,
+      "name": "とき特別２歳一 二選抜",
+      "start_at": "2026-10-09T16:40:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 4,
+      "name": "Ｃ２四 五 六",
+      "start_at": "2026-10-09T17:12:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 5,
+      "name": "Ｃ２四 五 六",
+      "start_at": "2026-10-09T17:45:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 6,
+      "name": "サンチャゴ賞Ｃ２四 五 六",
+      "start_at": "2026-10-09T18:20:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 7,
+      "name": "Ｃ１二 三 四",
+      "start_at": "2026-10-09T18:55:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 8,
+      "name": "金風特別Ｃ１二 三 四選抜",
+      "start_at": "2026-10-09T19:30:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 9,
+      "name": "汝、星のごとく賞Ｂ２三選抜特別",
+      "start_at": "2026-10-09T20:10:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 10,
+      "name": "神無月特別Ｃ１二 三 四選抜",
+      "start_at": "2026-10-09T20:50:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    }
+  ],
+  "actual_purchase": null,
+  "note": "結果専用データ。事前予想・価格・採否を変更しない。"
+}
