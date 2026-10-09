@@ -9,7 +9,7 @@
   "forecast_file": "report_20261009_nar_predictions_v1.json",
   "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-09T17:44:22+09:00",
+  "updated_at": "2026-10-09T17:46:27+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -1346,13 +1346,13 @@
       "race": 7,
       "name": "Ｃ３二３歳以上",
       "start_at": "2026-10-09T17:35:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 10,
           "name": "グルーヴグルーヴ",
           "finish": 1,
-          "time": "",
+          "time": "1:33.7",
           "margin": "",
           "last_3f": "",
           "jockey": "渡瀬和 （兵庫）",
@@ -1364,8 +1364,8 @@
           "number": 9,
           "name": "ジョイブラック",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:33.7",
+          "margin": "クビ",
           "last_3f": "",
           "jockey": "☆小谷哲 （兵庫）",
           "body_weight": "402(-1)",
@@ -1376,13 +1376,97 @@
           "number": 6,
           "name": "マイネルトラキア",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:33.9",
+          "margin": "1.1/4",
           "last_3f": "",
           "jockey": "竹村達 （兵庫）",
           "body_weight": "451(1)",
           "final_popularity": 3,
           "final_win_odds": "5.3"
+        },
+        {
+          "number": 7,
+          "name": "ニシノフォーリーフ",
+          "finish": 4,
+          "time": "1:34.0",
+          "margin": "クビ",
+          "last_3f": "",
+          "jockey": "▲南部楓 （兵庫）",
+          "body_weight": "402(-2)",
+          "final_popularity": 8,
+          "final_win_odds": "37.7"
+        },
+        {
+          "number": 8,
+          "name": "ピエスダルジャン",
+          "finish": 5,
+          "time": "1:34.3",
+          "margin": "2",
+          "last_3f": "",
+          "jockey": "廣瀬航 （兵庫）",
+          "body_weight": "451(-3)",
+          "final_popularity": 1,
+          "final_win_odds": "3.4"
+        },
+        {
+          "number": 1,
+          "name": "シロノクミキョク",
+          "finish": 6,
+          "time": "1:34.6",
+          "margin": "1.3/4",
+          "last_3f": "",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "441(0)",
+          "final_popularity": 9,
+          "final_win_odds": "48.1"
+        },
+        {
+          "number": 3,
+          "name": "ブロンドエール",
+          "finish": 7,
+          "time": "1:34.6",
+          "margin": "アタマ",
+          "last_3f": "",
+          "jockey": "★塩津璃 （兵庫）",
+          "body_weight": "425(2)",
+          "final_popularity": 2,
+          "final_win_odds": "4.2"
+        },
+        {
+          "number": 5,
+          "name": "チェリースカヤ",
+          "finish": 8,
+          "time": "1:35.0",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "高畑皓 （兵庫）",
+          "body_weight": "486(-4)",
+          "final_popularity": 10,
+          "final_win_odds": "343.3"
+        },
+        {
+          "number": 2,
+          "name": "ケンシロウニセイ",
+          "finish": 9,
+          "time": "1:36.1",
+          "margin": "7",
+          "last_3f": "",
+          "jockey": "長尾翼 （兵庫）",
+          "body_weight": "431(-4)",
+          "final_popularity": 5,
+          "final_win_odds": "8.2"
+        },
+        {
+          "number": 4,
+          "name": "セトノダイヤモンド",
+          "finish": 10,
+          "time": "1:36.5",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "427(6)",
+          "final_popularity": 4,
+          "final_win_odds": "6.5"
         }
       ],
       "refunds": [
@@ -1507,11 +1591,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F09&k_babaCode=27&k_raceNo=7",
-        "retrieved_at": "2026-10-09T17:44:22+09:00",
-        "sha256": "d1f4ff0a15d172a591df7ace0d8a032a8539d5ec934eaf367863862096183655",
-        "saved_file": "data/results/sources/2026-10-09/sonoda/r7_174422_d1f4ff0a15d1.html"
+        "retrieved_at": "2026-10-09T17:46:27+09:00",
+        "sha256": "e94e1fe29ca5bc9f55eb5b05ef095358148136a34f42c257b54ee9a969213e44",
+        "saved_file": "data/results/sources/2026-10-09/sonoda/r7_174627_e94e1fe29ca5.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 8,

@@ -9,7 +9,7 @@
   "forecast_file": "report_20261009_nar_predictions_v1.json",
   "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-09T17:44:22+09:00",
+  "updated_at": "2026-10-09T17:46:28+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -945,11 +945,16 @@
       "race": 5,
       "name": "Ｃ２四 五 六",
       "start_at": "2026-10-09T17:45:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "rows": [],
       "refunds": [],
-      "source": null,
-      "note": "保存時点では発走前。"
+      "source": {
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F09&k_babaCode=20&k_raceNo=5",
+        "retrieved_at": "2026-10-09T17:46:27+09:00",
+        "sha256": "15fada06378837099cf9f1d1fa4f2f947380bd035c7b90ddda25fc0043691d32",
+        "saved_file": "data/results/sources/2026-10-09/ooi/r5_174627_15fada063788.html"
+      },
+      "note": "公式の確定着順・払戻は未掲載。"
     },
     {
       "race": 6,
