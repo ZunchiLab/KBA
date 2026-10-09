@@ -11,6 +11,8 @@
   let active = config.venues[0].venue_key;
   const viewStates = {};
   let forecastPromise;
+  let lastRefreshStarted = 0;
+  let lastRefreshMessage = '';
   const storageKey = 'kba-day-plan:' + config.date + ':' + config.version;
   const escapeWhitespace = text => String(text).replace(/\s/g, '');
   function chooseVenue(key, updateURL=true) {
@@ -99,9 +101,11 @@
   function validate(data,key,digest) {
     const venue=config.venues.find(v=>v.venue_key===key);
     if(data.date_jst!==config.date||data.venue_key!==key||data.baba_code!==venue.baba_code||data.forecast_version!==config.version||(digest&&data.forecast_sha256!==digest))throw new Error('結果の対象・予想版が不一致');
+    if(!Number.isFinite(Date.parse(data.updated_at))||!Array.isArray(data.races))throw new Error('結果の保存時刻・構造が不正');
     const expected=config.races.filter(r=>r.venue_key===key);const nums=new Set();
     for(const rr of data.races){
       const race=expected.find(r=>r.race===rr.race);if(!race||nums.has(rr.race))throw new Error('レース番号不一致');nums.add(rr.race);
+      if(!labels[rr.status]||!Array.isArray(rr.rows)||rr.status==='confirmed'&&rr.rows.length!==race.horses.length)throw new Error('結果の状態・全頭着順が不正');
       const runners=new Set();
       for(const row of rr.rows){const horse=race.horses.find(h=>h.number===row.number);if(!horse||runners.has(row.number)||escapeWhitespace(row.name)!==escapeWhitespace(horse.name))throw new Error('馬番・馬名不一致');runners.add(row.number);}
     }
@@ -109,11 +113,13 @@
   }
   function merge(data,key) {
     const prev=stored[key];
+    if(prev&&Date.parse(prev.updated_at)>Date.parse(data.updated_at))return prev;
     if(prev) for(let i=0;i<data.races.length;i++) {
       const r=data.races[i];const old=prev.races.find(p=>p.race===r.race);
-      if(old&&(['confirmed','cancelled'].includes(old.status)&&!['confirmed','cancelled'].includes(r.status)||old.rows.length>0&&r.rows.length===0||Date.parse(prev.updated_at)>Date.parse(data.updated_at))) data.races[i]={...old,refresh_error:'新しい取得では確定情報が揃わず、既知の結果を保持'};
+      if(old&&(['confirmed','cancelled'].includes(old.status)&&!['confirmed','cancelled'].includes(r.status)||old.rows.length>r.rows.length&&r.status!=='confirmed')) data.races[i]={...old,refresh_error:'新しい取得では確定情報が揃わず、既知の結果を保持'};
     }
-    stored[key]=data;draw(key);
+    data.complete=data.races.every(r=>['confirmed','cancelled'].includes(r.status));
+    stored[key]=data;draw(key);return data;
   }
   function draw(key) {
     const data=stored[key];if(!data)return;
@@ -144,20 +150,56 @@
     }
   }
   for(const key of Object.keys(stored)){try{validate(stored[key],key,null);draw(key);}catch(_){delete stored[key];}}
+  function showRefreshStatus() {
+    if(button.disabled)return;
+    const warnings=[];
+    for(const v of config.venues){
+      const data=stored[v.venue_key];
+      const due=data?.races.some(r=>Date.parse(r.start_at)<=Date.now()&&!['confirmed','cancelled'].includes(r.status));
+      const limit=Math.max(3,3*(Number(data?.refresh_interval_minutes)||2));
+      if(data&&!data.complete&&due&&Date.now()-Date.parse(data.updated_at)>limit*60000)
+        warnings.push(`${v.label}は保存更新から${limit}分超。収集・公開が停止している可能性があります。`);
+    }
+    status.textContent=lastRefreshMessage+(warnings.length?' / '+warnings.join(' / '):'');
+    status.classList.toggle('update-warning',warnings.length>0);
+  }
   async function refresh(automatic=false) {
     if(button.disabled||automatic&&document.hidden||automatic&&config.venues.every(v=>stored[v.venue_key]?.complete))return;
+    lastRefreshStarted=Date.now();
     button.disabled=true;status.textContent='最新コミットと会場別結果を確認中…';
     try {
       const digest=await forecastHash();let base,origin;
       try {const head=await getJSON('https://api.github.com/repos/ZunchiLab/KBA/commits/main?ts='+Date.now());if(!/^[a-f0-9]{40}$/.test(head.sha))throw new Error('Invalid SHA');base=`https://raw.githubusercontent.com/ZunchiLab/KBA/${head.sha}/`;origin='GitHub最新コミット';}
       catch (_){base=new URL('../',location.href).href;origin='公開サイトの保存データ（最新コミット確認不可）';}
-      const outcomes=await Promise.allSettled(config.venues.map(async v=>{const versionPath=config.version==='v1'?'':config.version+'/';const path=`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`;const data=await getJSON(base+path+'?ts='+Date.now());validate(data,v.venue_key,digest);merge(data,v.venue_key);const confirmed=data.races.filter(r=>r.status==='confirmed').length;const errors=data.races.filter(r=>r.status==='error').length;return v.label+': '+confirmed+'R確定 / 保存 '+data.updated_at.slice(11,19)+' JST'+(errors?' / 公式取得失敗 '+errors+'R':'')+(data.complete?' 全対象確定':'');}));
+      const outcomes=await Promise.allSettled(config.venues.map(async v=>{
+        const versionPath=config.version==='v1'?'':config.version+'/';
+        const path=`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`;
+        let incoming,fallback=false;
+        try {incoming=await getJSON(base+path+'?ts='+Date.now());}
+        catch(error){
+          if(origin!=='GitHub最新コミット')throw error;
+          incoming=await getJSON(new URL('../',location.href).href+path+'?ts='+Date.now());
+          fallback=true;
+        }
+        validate(incoming,v.venue_key,digest);
+        const data=merge(incoming,v.venue_key);
+        const confirmed=data.races.filter(r=>r.status==='confirmed').length;
+        const errors=data.races.filter(r=>r.status==='error').length;
+        return v.label+': '+confirmed+'R確定 / 保存 '+data.updated_at.slice(11,19)+' JST'+(errors?' / 公式取得失敗 '+errors+'R':'')+(data.complete?' 全対象確定':'')+(fallback?' / 最新データ配信に失敗・公開サイトの保存結果を表示':'');
+      }));
       const ok=outcomes.filter(x=>x.status==='fulfilled').map(x=>x.value);const failed=outcomes.filter(x=>x.status==='rejected').length;
-      status.textContent=origin+' / '+ok.join(' / ')+(failed?` / ${failed}会場の取得に失敗。既知の印・結果を保持しています。`:'');
-      for(const v of config.venues){const data=stored[v.venue_key];const due=data?.races.some(r=>Date.parse(r.start_at)<=Date.now()&&!['confirmed','cancelled'].includes(r.status));if(data&&!data.complete&&due&&Date.now()-Date.parse(data.updated_at)>20*60000)status.textContent+=` / ${v.label}は保存更新から20分超。最新結果を取得できていません。`;}
-    } catch(e){status.textContent='結果の取得・照合に失敗しました。既知の印・結果は保持しています。 '+e.message;}
-    finally{button.disabled=false;}
+      lastRefreshMessage=origin+' / '+ok.join(' / ')+(failed?` / ${failed}会場の取得に失敗。既知の印・結果を保持しています。`:'')+' / 画面確認 '+new Date().toLocaleTimeString('ja-JP',{timeZone:'Asia/Tokyo',hour12:false})+' JST';
+    } catch(e){lastRefreshMessage='結果の取得・照合に失敗しました。既知の印・結果は保持しています。 '+e.message;}
+    finally{button.disabled=false;showRefreshStatus();}
   }
   button.addEventListener('click',()=>refresh());
+  // Mobile browsers suspend timers while hidden. Refresh immediately on return,
+  // rather than leaving the last successful message visible for another interval.
+  const resume=()=>{showRefreshStatus();if(!document.hidden&&Date.now()-lastRefreshStarted>5000)refresh(true);};
+  document.addEventListener('visibilitychange',resume);
+  window.addEventListener('pageshow',resume);
+  window.addEventListener('focus',resume);
+  lastRefreshMessage=status.textContent;
+  showRefreshStatus();setInterval(showRefreshStatus,30000);
   refresh(true);setInterval(()=>refresh(true),120000);
 })();
