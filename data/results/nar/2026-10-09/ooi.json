@@ -9,7 +9,7 @@
   "forecast_file": "report_20261009_nar_predictions_v1.json",
   "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-09T16:14:41+09:00",
+  "updated_at": "2026-10-09T16:16:46+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -239,13 +239,13 @@
       "race": 2,
       "name": "Ｃ２三",
       "start_at": "2026-10-09T16:07:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 4,
           "name": "ピコピンク",
           "finish": 1,
-          "time": "",
+          "time": "0:59.6",
           "margin": "",
           "last_3f": "",
           "jockey": "藤田凌 （大井）",
@@ -257,8 +257,8 @@
           "number": 3,
           "name": "サウンドキングダム",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:01.4",
+          "margin": "9",
           "last_3f": "",
           "jockey": "▲高橋優 （大井）",
           "body_weight": "515(-2)",
@@ -269,13 +269,49 @@
           "number": 5,
           "name": "ポルタロマーナ",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:01.5",
+          "margin": "3/4",
           "last_3f": "",
           "jockey": "達城龍 （大井）",
           "body_weight": "512(-4)",
           "final_popularity": 2,
           "final_win_odds": "6.0"
+        },
+        {
+          "number": 1,
+          "name": "ファビエンヌ",
+          "finish": 4,
+          "time": "1:01.9",
+          "margin": "2",
+          "last_3f": "",
+          "jockey": "▲西優哉 （大井）",
+          "body_weight": "446(0)",
+          "final_popularity": 4,
+          "final_win_odds": "24.6"
+        },
+        {
+          "number": 2,
+          "name": "ヴァンクラッセ",
+          "finish": 5,
+          "time": "1:02.7",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "☆谷内貫 （大井）",
+          "body_weight": "505(12)",
+          "final_popularity": 6,
+          "final_win_odds": "116.1"
+        },
+        {
+          "number": 6,
+          "name": "グリンバーム",
+          "finish": 6,
+          "time": "1:03.6",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "張田昂 （船橋）",
+          "body_weight": "479(-6)",
+          "final_popularity": 5,
+          "final_win_odds": "71.9"
         }
       ],
       "refunds": [
@@ -381,11 +417,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F09&k_babaCode=20&k_raceNo=2",
-        "retrieved_at": "2026-10-09T16:14:41+09:00",
-        "sha256": "449958c139f1f850073b858dac1624a72f6ca1a7c6f4e19412fd23b37824f3f9",
-        "saved_file": "data/results/sources/2026-10-09/ooi/r2_161441_449958c139f1.html"
+        "retrieved_at": "2026-10-09T16:16:46+09:00",
+        "sha256": "c991e26c14eb5a69d8d7a4fa6ef847210154ea9ece0e01855f4e43c92168d617",
+        "saved_file": "data/results/sources/2026-10-09/ooi/r2_161646_c991e26c14eb.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 3,
