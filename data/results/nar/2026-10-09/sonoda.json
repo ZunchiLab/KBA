@@ -9,7 +9,7 @@
   "forecast_file": "report_20261009_nar_predictions_v1.json",
   "forecast_sha256": "bb3cbacc5e8fbd0c5e2d036c98a8e87544262ad4a04f12f05127d4316481c4a4",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-09T14:59:37+09:00",
+  "updated_at": "2026-10-09T15:01:42+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -273,13 +273,13 @@
       "race": 2,
       "name": "２歳オープン",
       "start_at": "2026-10-09T14:50:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 5,
           "name": "ゴッズフェイヴリト",
           "finish": 1,
-          "time": "",
+          "time": "1:32.2",
           "margin": "",
           "last_3f": "",
           "jockey": "田野豊 （兵庫）",
@@ -291,8 +291,8 @@
           "number": 4,
           "name": "スナップコール",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:32.3",
+          "margin": "クビ",
           "last_3f": "",
           "jockey": "小牧太 （兵庫）",
           "body_weight": "460(-4)",
@@ -303,13 +303,61 @@
           "number": 1,
           "name": "クールスカイ",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:32.9",
+          "margin": "4",
           "last_3f": "",
           "jockey": "大山真 （兵庫）",
           "body_weight": "461(3)",
           "final_popularity": 5,
           "final_win_odds": "17.9"
+        },
+        {
+          "number": 7,
+          "name": "コパノジャマイカ",
+          "finish": 4,
+          "time": "1:32.9",
+          "margin": "ハナ",
+          "last_3f": "",
+          "jockey": "吉村智 （兵庫）",
+          "body_weight": "471(2)",
+          "final_popularity": 3,
+          "final_win_odds": "3.6"
+        },
+        {
+          "number": 3,
+          "name": "ニッポンセーラ",
+          "finish": 5,
+          "time": "1:33.6",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "448(5)",
+          "final_popularity": 7,
+          "final_win_odds": "128.3"
+        },
+        {
+          "number": 6,
+          "name": "ラゲルサ",
+          "finish": 6,
+          "time": "1:33.7",
+          "margin": "3/4",
+          "last_3f": "",
+          "jockey": "山本咲 （兵庫）",
+          "body_weight": "434(5)",
+          "final_popularity": 4,
+          "final_win_odds": "11.4"
+        },
+        {
+          "number": 2,
+          "name": "ブラーヴテン",
+          "finish": 7,
+          "time": "1:34.1",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "松木大 （兵庫）",
+          "body_weight": "487(4)",
+          "final_popularity": 6,
+          "final_win_odds": "34.6"
         }
       ],
       "refunds": [
@@ -415,11 +463,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F09&k_babaCode=27&k_raceNo=2",
-        "retrieved_at": "2026-10-09T14:59:36+09:00",
-        "sha256": "02f4e630cf14e08949d2652ee1fb9385d421df08cddccf130bb04580e12c6932",
-        "saved_file": "data/results/sources/2026-10-09/sonoda/r2_145936_02f4e630cf14.html"
+        "retrieved_at": "2026-10-09T15:01:41+09:00",
+        "sha256": "1a5e83a47df03d9393c8a3d3141f079e56888714f0c71a51fc66f2affd39b004",
+        "saved_file": "data/results/sources/2026-10-09/sonoda/r2_150141_1a5e83a47df0.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 3,
