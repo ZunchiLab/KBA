@@ -154,7 +154,7 @@
       const outcomes=await Promise.allSettled(config.venues.map(async v=>{const versionPath=config.version==='v1'?'':config.version+'/';const path=`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`;const data=await getJSON(base+path+'?ts='+Date.now());validate(data,v.venue_key,digest);merge(data,v.venue_key);const confirmed=data.races.filter(r=>r.status==='confirmed').length;const errors=data.races.filter(r=>r.status==='error').length;return v.label+': '+confirmed+'R確定 / 保存 '+data.updated_at.slice(11,19)+' JST'+(errors?' / 公式取得失敗 '+errors+'R':'')+(data.complete?' 全対象確定':'');}));
       const ok=outcomes.filter(x=>x.status==='fulfilled').map(x=>x.value);const failed=outcomes.filter(x=>x.status==='rejected').length;
       status.textContent=origin+' / '+ok.join(' / ')+(failed?` / ${failed}会場の取得に失敗。既知の印・結果を保持しています。`:'');
-      for(const v of config.venues){const data=stored[v.venue_key];if(data&&!data.complete&&Date.now()-Date.parse(data.updated_at)>20*60000)status.textContent+=` / ${v.label}は保存更新から20分超。最新結果を取得できていません。`;}
+      for(const v of config.venues){const data=stored[v.venue_key];const due=data?.races.some(r=>Date.parse(r.start_at)<=Date.now()&&!['confirmed','cancelled'].includes(r.status));if(data&&!data.complete&&due&&Date.now()-Date.parse(data.updated_at)>20*60000)status.textContent+=` / ${v.label}は保存更新から20分超。最新結果を取得できていません。`;}
     } catch(e){status.textContent='結果の取得・照合に失敗しました。既知の印・結果は保持しています。 '+e.message;}
     finally{button.disabled=false;}
   }

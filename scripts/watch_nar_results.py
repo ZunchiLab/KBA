@@ -31,8 +31,9 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--local', action='store_true', help='Use the explicitly configured local worker')
     args = parser.parse_args()
-    # Stay below the hosted runner's six-hour limit, including final publication.
-    deadline = datetime.now(JST) + timedelta(minutes=345)
+    # Hosted runner stays below six hours. Local night meetings may span longer;
+    # the configured active_until still bounds both workers.
+    deadline = datetime.now(JST) + (timedelta(hours=12) if args.local else timedelta(minutes=345))
     while True:
         git('pull', '--ff-only', 'origin', 'main')
         config = json.loads((ROOT/'data/results/targets.json').read_text(encoding='utf-8'))
@@ -50,6 +51,16 @@ def main():
             print('Continuous updating has been disabled; stopping.', flush=True)
             return
         interval = max(1, int(config.get('refresh_interval_minutes', 2)))
+        # A future meeting has no results yet. Keep the worker alive without
+        # creating commits whose only change is the pre-race check timestamp.
+        starts = [datetime.fromisoformat(r['start_at']) for target in targets
+                  for r in json.loads((ROOT/target['forecast']).read_text(encoding='utf-8-sig'))['races']
+                  if r.get('venue_key', target['venue']) == target['venue']]
+        if starts and min(starts) > now:
+            remaining = (min(until, deadline, min(starts)) - now).total_seconds()
+            print(f'Waiting for first start {min(starts).isoformat()}.', flush=True)
+            time.sleep(min(interval * 60, max(1, remaining)))
+            continue
         for target in targets:
             update(target, now, refresh_status='continuous', refresh_interval=interval)
         publish(targets)

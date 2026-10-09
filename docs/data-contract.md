@@ -51,6 +51,8 @@
 - `bet_plans[]`：以下の買い目契約。
 - `actual_purchase` は固定予想へ後付けしない。実購入記録は別データにする。
 
+10/9の地方追加項目（互換の任意項目）：`analysis.win_view`・`place_view` は人手で記述した勝つ／圏内の説明、`win_candidates`・`place_candidates` は評価上の候補。`popular_compare` は保存時の単勝最小値との比較。`horses[].comparison` の `suitability`・`recency`・`last_actual_start`・`days_since_actual_start`・`position`・`roles`・`ticket_review` は全頭の比較と採否理由。`past[].full_name`・`additional_source` は省略競走名を補う公式原文で、元の `name` を保持する。
+
 ## 3. 買い目
 
 ### 券種の正規化
