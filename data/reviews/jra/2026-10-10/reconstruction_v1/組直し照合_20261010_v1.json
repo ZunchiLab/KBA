@@ -1,0 +1,8192 @@
+{
+  "schema_version": "kba.reconstruction-evaluation/1",
+  "document_type": "retrospective_reconstruction_evaluation",
+  "date_jst": "2026-10-10",
+  "evaluated_at": "2026-10-10T21:03:25+09:00",
+  "not_blind_test": true,
+  "not_pre_race_forecast": true,
+  "results_known_to_author": true,
+  "reconstruction_ref": {
+    "constructed_at": "2026-10-10T21:01:46+09:00",
+    "document": "組直し構成_20261010_v1.json",
+    "sha256": "19ed22a40f92a743bc14a163222f9c88b2df839b6e5906e23e1bc0d33a518590",
+    "forecast_sha256": "691243712000a47cc0f0bf252ab33d1c0ce891b07094ce808916e230254bf88c",
+    "protocol_sha256": "0800fbe93a9e1fe8bcf7890df63d6bdd9949e02ddec84a3ac7451baec81ca89a",
+    "choices_sha256": "cd8691c06402d26972b8cf3a8b6cb260e23319d640e091c4dcf7332d33d09e02",
+    "not_blind_test": true
+  },
+  "official_result_ref": {
+    "file": "公式結果_最終照合.json",
+    "sha256": "9cb4b96e747b9f052a240afee3b591208bfd0880a123be30d4811a8b8a530fa4"
+  },
+  "price_conditions_applied": false,
+  "yen_per_point": 100,
+  "actual_purchase": null,
+  "target_races": 24,
+  "flat_independent_comparison_races": 18,
+  "constructed_races": 17,
+  "held_races": 7,
+  "held_keys": [
+    "T4",
+    "T5",
+    "T6",
+    "K4",
+    "K5",
+    "K6",
+    "K7"
+  ],
+  "statistics": {
+    "reconstructed": {
+      "quinella": {
+        "races": 17,
+        "hit_races": 8,
+        "hit_percent": 47.06,
+        "points": 85,
+        "cost_yen": 8500,
+        "payout_yen": 15050,
+        "net_yen": 6550,
+        "return_percent": 177.06,
+        "hit_keys": [
+          "T8",
+          "T10",
+          "T11",
+          "K1",
+          "K2",
+          "K8",
+          "K9",
+          "K12"
+        ],
+        "diagnoses": {
+          "counterpart_outside_pool": 9,
+          "hit": 8
+        }
+      },
+      "trio": {
+        "races": 17,
+        "hit_races": 8,
+        "hit_percent": 47.06,
+        "points": 201,
+        "cost_yen": 20100,
+        "payout_yen": 42470,
+        "net_yen": 22370,
+        "return_percent": 211.29,
+        "hit_keys": [
+          "T7",
+          "T8",
+          "T9",
+          "T10",
+          "T11",
+          "K1",
+          "K3",
+          "K8"
+        ],
+        "diagnoses": {
+          "axis_outside_top_three": 6,
+          "formation_group_exclusion": 1,
+          "hit": 8,
+          "counterpart_outside_pool": 2
+        }
+      }
+    },
+    "original_rank": {
+      "quinella": {
+        "races": 17,
+        "hit_races": 5,
+        "hit_percent": 29.41,
+        "points": 85,
+        "cost_yen": 8500,
+        "payout_yen": 3420,
+        "net_yen": -5080,
+        "return_percent": 40.24,
+        "hit_keys": [
+          "T8",
+          "K1",
+          "K2",
+          "K9",
+          "K12"
+        ],
+        "diagnoses": {
+          "counterpart_outside_pool": 12,
+          "hit": 5
+        }
+      },
+      "trio": {
+        "races": 17,
+        "hit_races": 6,
+        "hit_percent": 35.29,
+        "points": 201,
+        "cost_yen": 20100,
+        "payout_yen": 16300,
+        "net_yen": -3800,
+        "return_percent": 81.09,
+        "hit_keys": [
+          "T8",
+          "T9",
+          "T10",
+          "K1",
+          "K3",
+          "K8"
+        ],
+        "diagnoses": {
+          "axis_outside_top_three": 6,
+          "counterpart_outside_pool": 5,
+          "hit": 6
+        }
+      }
+    },
+    "snapshot_market_rank": {
+      "quinella": {
+        "races": 17,
+        "hit_races": 5,
+        "hit_percent": 29.41,
+        "points": 85,
+        "cost_yen": 8500,
+        "payout_yen": 4090,
+        "net_yen": -4410,
+        "return_percent": 48.12,
+        "hit_keys": [
+          "T8",
+          "K1",
+          "K3",
+          "K9",
+          "K12"
+        ],
+        "diagnoses": {
+          "counterpart_outside_pool": 11,
+          "hit": 5,
+          "formation_group_exclusion": 1
+        }
+      },
+      "trio": {
+        "races": 17,
+        "hit_races": 4,
+        "hit_percent": 23.53,
+        "points": 201,
+        "cost_yen": 20100,
+        "payout_yen": 10980,
+        "net_yen": -9120,
+        "return_percent": 54.63,
+        "hit_keys": [
+          "T8",
+          "T10",
+          "K1",
+          "K8"
+        ],
+        "diagnoses": {
+          "axis_outside_top_three": 6,
+          "counterpart_outside_pool": 5,
+          "formation_group_exclusion": 2,
+          "hit": 4
+        }
+      }
+    }
+  },
+  "changes_from_original_rank": {
+    "quinella": {
+      "gained_hit_keys": [
+        "T10",
+        "T11",
+        "K8"
+      ],
+      "lost_hit_keys": [],
+      "both_hit_keys": [
+        "T8",
+        "K1",
+        "K2",
+        "K9",
+        "K12"
+      ]
+    },
+    "trio": {
+      "gained_hit_keys": [
+        "T7",
+        "T11"
+      ],
+      "lost_hit_keys": [],
+      "both_hit_keys": [
+        "T8",
+        "T9",
+        "T10",
+        "K1",
+        "K3",
+        "K8"
+      ]
+    }
+  },
+  "either_ticket_hit_keys": [
+    "T7",
+    "T8",
+    "T9",
+    "T10",
+    "T11",
+    "K1",
+    "K2",
+    "K3",
+    "K8",
+    "K9",
+    "K12"
+  ],
+  "both_ticket_hit_keys": [
+    "T8",
+    "T10",
+    "T11",
+    "K1",
+    "K8"
+  ],
+  "combined_cost_yen": 28600,
+  "combined_payout_yen": 57520,
+  "combined_is_diagnostic_not_recommended_purchase": true,
+  "limitations": [
+    "結果を知った後に行った人手の再構成。選択バイアスを排除できず、改善実証ではない。",
+    "選択入力は保存した発走前の材料だけだが、方法・係数選択が発走前に固定されていたとは扱わない。",
+    "新馬5R、障害1R、初ダート馬との優先比較未解決の京都7Rを保留。全24Rの一覧に残す。",
+    "保存された近走だけの比較。全戦歴・調教・パドックの不足を事後データで補わない。",
+    "各点100円、価格・馬場・状態の直前条件は未適用。実購入収支ではない。",
+    "馬連と三連複を両方自動購入する提案ではない。ワイドの指定形式が不明のため全日試算には加えない。",
+    "組直し案を保存した後に評価スクリプトで照合する。結果を見て版内の軸・相手・採否を修正しない。",
+    "保留レースを外して選択率と的中率の分母を混ぜない。",
+    "同費用基準も当日の価格条件未適用。機械変換基準と元の掲載購入案は別。"
+  ],
+  "races": [
+    {
+      "key": "T1",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "venue": "東京",
+      "race_no": 1,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 4,
+          "name": "ソラティオ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:20.0",
+          "margin": "",
+          "last_3f": "36.3",
+          "final_popularity": "12",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "サイモンオリエント",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:20.0",
+          "margin": "ハナ",
+          "last_3f": "35.9",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 14,
+          "name": "リアスブルー",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:20.2",
+          "margin": "１ 1/4",
+          "last_3f": "38.1",
+          "final_popularity": "6",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030120261010/08"
+        },
+        "retrieved_at": "2026-10-10T18:31:07+09:00",
+        "raw_sha256": "0eafd613477c879148b72a77202ab0d44107141c711cb1f099bed2b403b82250",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/0eafd613477c879148b72a77202ab0d44107141c711cb1f099bed2b403b82250.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              9,
+              8,
+              7,
+              16
+            ],
+            "tickets": [
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                16
+              ],
+              [
+                9,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 9,
+            "axis_finish": 9
+          },
+          "trio": {
+            "role_order": [
+              9,
+              8,
+              7,
+              16,
+              5,
+              6,
+              14
+            ],
+            "tickets": [
+              [
+                5,
+                7,
+                9
+              ],
+              [
+                5,
+                8,
+                9
+              ],
+              [
+                5,
+                9,
+                16
+              ],
+              [
+                6,
+                7,
+                9
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                6,
+                9,
+                16
+              ],
+              [
+                7,
+                8,
+                9
+              ],
+              [
+                7,
+                9,
+                14
+              ],
+              [
+                7,
+                9,
+                16
+              ],
+              [
+                8,
+                9,
+                14
+              ],
+              [
+                8,
+                9,
+                16
+              ],
+              [
+                9,
+                14,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 9,
+            "axis_finish": 9
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              9,
+              8,
+              7,
+              16
+            ],
+            "tickets": [
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                16
+              ],
+              [
+                9,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 9,
+            "axis_finish": 9
+          },
+          "trio": {
+            "role_order": [
+              9,
+              8,
+              7,
+              16,
+              1,
+              5,
+              12
+            ],
+            "tickets": [
+              [
+                1,
+                7,
+                9
+              ],
+              [
+                1,
+                8,
+                9
+              ],
+              [
+                1,
+                9,
+                16
+              ],
+              [
+                5,
+                7,
+                9
+              ],
+              [
+                5,
+                8,
+                9
+              ],
+              [
+                5,
+                9,
+                16
+              ],
+              [
+                7,
+                8,
+                9
+              ],
+              [
+                7,
+                9,
+                12
+              ],
+              [
+                7,
+                9,
+                16
+              ],
+              [
+                8,
+                9,
+                12
+              ],
+              [
+                8,
+                9,
+                16
+              ],
+              [
+                9,
+                12,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 9,
+            "axis_finish": 9
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              8,
+              9,
+              7,
+              16
+            ],
+            "tickets": [
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                16
+              ],
+              [
+                9,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 8,
+            "axis_finish": 12
+          },
+          "trio": {
+            "role_order": [
+              8,
+              9,
+              7,
+              16,
+              1,
+              5,
+              14
+            ],
+            "tickets": [
+              [
+                1,
+                7,
+                8
+              ],
+              [
+                1,
+                8,
+                9
+              ],
+              [
+                1,
+                8,
+                16
+              ],
+              [
+                5,
+                7,
+                8
+              ],
+              [
+                5,
+                8,
+                9
+              ],
+              [
+                5,
+                8,
+                16
+              ],
+              [
+                7,
+                8,
+                9
+              ],
+              [
+                7,
+                8,
+                14
+              ],
+              [
+                7,
+                8,
+                16
+              ],
+              [
+                8,
+                9,
+                14
+              ],
+              [
+                8,
+                9,
+                16
+              ],
+              [
+                8,
+                14,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 8,
+            "axis_finish": 12
+          }
+        }
+      }
+    },
+    {
+      "key": "T2",
+      "race_uid": "jra-2026-10-10-tokyo-r2",
+      "venue": "東京",
+      "race_no": 2,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 12,
+          "name": "ゴールデンハニビー",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:34.2",
+          "margin": "",
+          "last_3f": "34.7",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "ラッパースヴィル",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:34.5",
+          "margin": "２",
+          "last_3f": "34.7",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "ソプラノクイーン",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:34.5",
+          "margin": "クビ",
+          "last_3f": "34.9",
+          "final_popularity": "7",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030220261010/BD"
+        },
+        "retrieved_at": "2026-10-10T18:31:07+09:00",
+        "raw_sha256": "a6f87172419617a5cc6a57cc745d3112d1aa7a55a6914b24249e3c24b7b6913b",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/a6f87172419617a5cc6a57cc745d3112d1aa7a55a6914b24249e3c24b7b6913b.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              2,
+              7,
+              10,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                7
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                7,
+                10
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 2,
+            "axis_finish": 9
+          },
+          "trio": {
+            "role_order": [
+              2,
+              7,
+              10,
+              1,
+              6,
+              4,
+              12
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                4
+              ],
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                2,
+                7
+              ],
+              [
+                1,
+                2,
+                10
+              ],
+              [
+                1,
+                2,
+                12
+              ],
+              [
+                2,
+                4,
+                7
+              ],
+              [
+                2,
+                4,
+                10
+              ],
+              [
+                2,
+                6,
+                7
+              ],
+              [
+                2,
+                6,
+                10
+              ],
+              [
+                2,
+                7,
+                10
+              ],
+              [
+                2,
+                7,
+                12
+              ],
+              [
+                2,
+                10,
+                12
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 2,
+            "axis_finish": 9
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              10,
+              7,
+              2,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                7
+              ],
+              [
+                1,
+                10
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                7,
+                10
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 10,
+            "axis_finish": 4
+          },
+          "trio": {
+            "role_order": [
+              10,
+              7,
+              2,
+              1,
+              6,
+              12,
+              4
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                10
+              ],
+              [
+                1,
+                4,
+                10
+              ],
+              [
+                1,
+                6,
+                10
+              ],
+              [
+                1,
+                7,
+                10
+              ],
+              [
+                1,
+                10,
+                12
+              ],
+              [
+                2,
+                4,
+                10
+              ],
+              [
+                2,
+                6,
+                10
+              ],
+              [
+                2,
+                7,
+                10
+              ],
+              [
+                2,
+                10,
+                12
+              ],
+              [
+                4,
+                7,
+                10
+              ],
+              [
+                6,
+                7,
+                10
+              ],
+              [
+                7,
+                10,
+                12
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 10,
+            "axis_finish": 4
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              12,
+              1,
+              10,
+              6
+            ],
+            "tickets": [
+              [
+                1,
+                6
+              ],
+              [
+                1,
+                10
+              ],
+              [
+                1,
+                12
+              ],
+              [
+                6,
+                12
+              ],
+              [
+                10,
+                12
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 12,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              12,
+              1,
+              10,
+              6,
+              7,
+              2,
+              4
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                12
+              ],
+              [
+                1,
+                4,
+                12
+              ],
+              [
+                1,
+                6,
+                12
+              ],
+              [
+                1,
+                7,
+                12
+              ],
+              [
+                1,
+                10,
+                12
+              ],
+              [
+                2,
+                6,
+                12
+              ],
+              [
+                2,
+                10,
+                12
+              ],
+              [
+                4,
+                6,
+                12
+              ],
+              [
+                4,
+                10,
+                12
+              ],
+              [
+                6,
+                7,
+                12
+              ],
+              [
+                6,
+                10,
+                12
+              ],
+              [
+                7,
+                10,
+                12
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 12,
+            "axis_finish": 1
+          }
+        }
+      }
+    },
+    {
+      "key": "T3",
+      "race_uid": "jra-2026-10-10-tokyo-r3",
+      "venue": "東京",
+      "race_no": 3,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 11,
+          "name": "ノシェリー",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:37.9",
+          "margin": "",
+          "last_3f": "35.7",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "マーゴットパラディ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:38.2",
+          "margin": "１ 3/4",
+          "last_3f": "37.0",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "フジサンインフレ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:39.0",
+          "margin": "５",
+          "last_3f": "36.3",
+          "final_popularity": "6",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030320261010/72"
+        },
+        "retrieved_at": "2026-10-10T18:31:07+09:00",
+        "raw_sha256": "6ed1606387ef2ef8753cc2b7a5657f43226b0349c3e5bc151f36b468cc0d0a30",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/6ed1606387ef2ef8753cc2b7a5657f43226b0349c3e5bc151f36b468cc0d0a30.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              11,
+              12,
+              13,
+              8
+            ],
+            "tickets": [
+              [
+                8,
+                11
+              ],
+              [
+                8,
+                12
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 11,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              11,
+              12,
+              13,
+              8,
+              5,
+              2,
+              6
+            ],
+            "tickets": [
+              [
+                2,
+                8,
+                11
+              ],
+              [
+                2,
+                11,
+                12
+              ],
+              [
+                2,
+                11,
+                13
+              ],
+              [
+                5,
+                8,
+                11
+              ],
+              [
+                5,
+                11,
+                12
+              ],
+              [
+                5,
+                11,
+                13
+              ],
+              [
+                6,
+                8,
+                11
+              ],
+              [
+                6,
+                11,
+                12
+              ],
+              [
+                6,
+                11,
+                13
+              ],
+              [
+                8,
+                11,
+                12
+              ],
+              [
+                8,
+                11,
+                13
+              ],
+              [
+                11,
+                12,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "formation_group_exclusion",
+            "axis_number": 11,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              11,
+              12,
+              13,
+              8
+            ],
+            "tickets": [
+              [
+                8,
+                11
+              ],
+              [
+                8,
+                12
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 11,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              11,
+              12,
+              13,
+              8,
+              5,
+              15,
+              6
+            ],
+            "tickets": [
+              [
+                5,
+                8,
+                11
+              ],
+              [
+                5,
+                11,
+                12
+              ],
+              [
+                5,
+                11,
+                13
+              ],
+              [
+                6,
+                8,
+                11
+              ],
+              [
+                6,
+                11,
+                12
+              ],
+              [
+                6,
+                11,
+                13
+              ],
+              [
+                8,
+                11,
+                12
+              ],
+              [
+                8,
+                11,
+                13
+              ],
+              [
+                8,
+                11,
+                15
+              ],
+              [
+                11,
+                12,
+                13
+              ],
+              [
+                11,
+                12,
+                15
+              ],
+              [
+                11,
+                13,
+                15
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 11,
+            "axis_finish": 1
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              11,
+              8,
+              13,
+              12
+            ],
+            "tickets": [
+              [
+                8,
+                11
+              ],
+              [
+                8,
+                12
+              ],
+              [
+                8,
+                13
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 11,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              11,
+              8,
+              13,
+              12,
+              5,
+              15,
+              2
+            ],
+            "tickets": [
+              [
+                2,
+                8,
+                11
+              ],
+              [
+                2,
+                11,
+                12
+              ],
+              [
+                2,
+                11,
+                13
+              ],
+              [
+                5,
+                8,
+                11
+              ],
+              [
+                5,
+                11,
+                12
+              ],
+              [
+                5,
+                11,
+                13
+              ],
+              [
+                8,
+                11,
+                12
+              ],
+              [
+                8,
+                11,
+                13
+              ],
+              [
+                8,
+                11,
+                15
+              ],
+              [
+                11,
+                12,
+                13
+              ],
+              [
+                11,
+                12,
+                15
+              ],
+              [
+                11,
+                13,
+                15
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "formation_group_exclusion",
+            "axis_number": 11,
+            "axis_finish": 1
+          }
+        }
+      }
+    },
+    {
+      "key": "T4",
+      "race_uid": "jra-2026-10-10-tokyo-r4",
+      "venue": "東京",
+      "race_no": 4,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 15,
+          "name": "カラメーロ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:26.5",
+          "margin": "",
+          "last_3f": "36.3",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "エコロヴォルグ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:26.5",
+          "margin": "ハナ",
+          "last_3f": "37.0",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 16,
+          "name": "ヴァーヴヴァーヴ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:27.3",
+          "margin": "５",
+          "last_3f": "37.6",
+          "final_popularity": "2",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030420261010/27"
+        },
+        "retrieved_at": "2026-10-10T18:31:08+09:00",
+        "raw_sha256": "2ae4af643cb1ecd8db284fbf04fde6317c63a056ae935be0a42bbb08ba9f1a9d",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/2ae4af643cb1ecd8db284fbf04fde6317c63a056ae935be0a42bbb08ba9f1a9d.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "T5",
+      "race_uid": "jra-2026-10-10-tokyo-r5",
+      "venue": "東京",
+      "race_no": 5,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 1,
+          "name": "サトノカグラ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:50.6",
+          "margin": "",
+          "last_3f": "32.7",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "アスクゴクジョウ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:50.8",
+          "margin": "１",
+          "last_3f": "33.1",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "カーラベッリーナ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:51.3",
+          "margin": "３ 1/2",
+          "last_3f": "33.1",
+          "final_popularity": "6",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030520261010/DC"
+        },
+        "retrieved_at": "2026-10-10T18:31:08+09:00",
+        "raw_sha256": "27fcd011d7aece8f26bef49478ed028d93c8acc5e229e2c2ac5a24de92c086e0",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/27fcd011d7aece8f26bef49478ed028d93c8acc5e229e2c2ac5a24de92c086e0.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "T6",
+      "race_uid": "jra-2026-10-10-tokyo-r6",
+      "venue": "東京",
+      "race_no": 6,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 9,
+          "name": "ブレイクソロ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:36.2",
+          "margin": "",
+          "last_3f": "33.7",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 13,
+          "name": "ランギヌイ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:36.2",
+          "margin": "アタマ",
+          "last_3f": "33.6",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "ポートマンロード",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:36.5",
+          "margin": "１ 1/2",
+          "last_3f": "33.7",
+          "final_popularity": "5",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030620261010/91"
+        },
+        "retrieved_at": "2026-10-10T18:31:08+09:00",
+        "raw_sha256": "e4ae91d568140efc9be1d86c3a5ec2fe391d79b4fb787914589de0a3856f5f4c",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/e4ae91d568140efc9be1d86c3a5ec2fe391d79b4fb787914589de0a3856f5f4c.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "T7",
+      "race_uid": "jra-2026-10-10-tokyo-r7",
+      "venue": "東京",
+      "race_no": 7,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 5,
+          "name": "ケープウィッカム",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:36.6",
+          "margin": "",
+          "last_3f": "36.6",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "カルネヴァーレ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:37.5",
+          "margin": "５",
+          "last_3f": "37.2",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "アンディラメナ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:37.6",
+          "margin": "クビ",
+          "last_3f": "38.1",
+          "final_popularity": "6",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030720261010/46"
+        },
+        "retrieved_at": "2026-10-10T18:31:09+09:00",
+        "raw_sha256": "46396de5b7d6fcc1b1386eab376758cdf1a78a768c3eb62499f7519195a93fd9",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/46396de5b7d6fcc1b1386eab376758cdf1a78a768c3eb62499f7519195a93fd9.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              5,
+              2,
+              13,
+              3
+            ],
+            "tickets": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                13
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                5,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              5,
+              2,
+              13,
+              3,
+              10,
+              4,
+              11
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                2,
+                5,
+                10
+              ],
+              [
+                2,
+                5,
+                11
+              ],
+              [
+                2,
+                5,
+                13
+              ],
+              [
+                3,
+                4,
+                5
+              ],
+              [
+                3,
+                5,
+                10
+              ],
+              [
+                3,
+                5,
+                11
+              ],
+              [
+                3,
+                5,
+                13
+              ],
+              [
+                4,
+                5,
+                13
+              ],
+              [
+                5,
+                10,
+                13
+              ],
+              [
+                5,
+                11,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 22770,
+            "net_yen": 21570,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  3,
+                  4,
+                  5
+                ],
+                "yen_per_100": 22770
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 5,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              5,
+              2,
+              1,
+              13
+            ],
+            "tickets": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                13
+              ],
+              [
+                5,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              5,
+              2,
+              1,
+              13,
+              10,
+              3,
+              6
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                1,
+                5,
+                10
+              ],
+              [
+                1,
+                5,
+                13
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                2,
+                5,
+                10
+              ],
+              [
+                2,
+                5,
+                13
+              ],
+              [
+                3,
+                5,
+                13
+              ],
+              [
+                5,
+                6,
+                13
+              ],
+              [
+                5,
+                10,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              5,
+              13,
+              2,
+              6
+            ],
+            "tickets": [
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                13
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                13
+              ],
+              [
+                6,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              5,
+              13,
+              2,
+              6,
+              8,
+              10,
+              3
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                2,
+                5,
+                10
+              ],
+              [
+                2,
+                5,
+                13
+              ],
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                3,
+                5,
+                13
+              ],
+              [
+                5,
+                6,
+                8
+              ],
+              [
+                5,
+                6,
+                10
+              ],
+              [
+                5,
+                6,
+                13
+              ],
+              [
+                5,
+                8,
+                13
+              ],
+              [
+                5,
+                10,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          }
+        }
+      }
+    },
+    {
+      "key": "T8",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "venue": "東京",
+      "race_no": 8,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 4,
+          "name": "アローメタル",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "2:00.2",
+          "margin": "",
+          "last_3f": "33.8",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ウップヘリーア",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "2:00.4",
+          "margin": "１",
+          "last_3f": "34.3",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "コスモアチーブ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "2:00.6",
+          "margin": "１ 1/4",
+          "last_3f": "33.9",
+          "final_popularity": "4",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030820261010/FB"
+        },
+        "retrieved_at": "2026-10-10T18:31:09+09:00",
+        "raw_sha256": "9f64789c7ff684a1ac7d17cdd16a547d6137e51fc4597b5e48f854ae3ffb1d7c",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/9f64789c7ff684a1ac7d17cdd16a547d6137e51fc4597b5e48f854ae3ffb1d7c.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              4,
+              6,
+              10,
+              2
+            ],
+            "tickets": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                10
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 220,
+            "net_yen": -280,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  4,
+                  6
+                ],
+                "yen_per_100": 220
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 4,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              10,
+              1,
+              2,
+              9,
+              8
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                1,
+                6,
+                8
+              ],
+              [
+                1,
+                6,
+                9
+              ],
+              [
+                1,
+                6,
+                10
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                6,
+                10
+              ],
+              [
+                4,
+                6,
+                8
+              ],
+              [
+                4,
+                6,
+                9
+              ],
+              [
+                4,
+                6,
+                10
+              ],
+              [
+                6,
+                8,
+                10
+              ],
+              [
+                6,
+                9,
+                10
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 730,
+            "net_yen": -470,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  1,
+                  4,
+                  6
+                ],
+                "yen_per_100": 730
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              6,
+              4,
+              10,
+              2
+            ],
+            "tickets": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                10
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 220,
+            "net_yen": -280,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  4,
+                  6
+                ],
+                "yen_per_100": 220
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              10,
+              2,
+              7,
+              1,
+              8
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                1,
+                6,
+                10
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                6,
+                7
+              ],
+              [
+                2,
+                6,
+                8
+              ],
+              [
+                2,
+                6,
+                10
+              ],
+              [
+                4,
+                6,
+                7
+              ],
+              [
+                4,
+                6,
+                8
+              ],
+              [
+                4,
+                6,
+                10
+              ],
+              [
+                6,
+                7,
+                10
+              ],
+              [
+                6,
+                8,
+                10
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 730,
+            "net_yen": -470,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  1,
+                  4,
+                  6
+                ],
+                "yen_per_100": 730
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              6,
+              4,
+              10,
+              9
+            ],
+            "tickets": [
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 220,
+            "net_yen": -280,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  4,
+                  6
+                ],
+                "yen_per_100": 220
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              10,
+              9,
+              2,
+              7,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                1,
+                6,
+                9
+              ],
+              [
+                1,
+                6,
+                10
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                6,
+                9
+              ],
+              [
+                2,
+                6,
+                10
+              ],
+              [
+                4,
+                6,
+                7
+              ],
+              [
+                4,
+                6,
+                9
+              ],
+              [
+                4,
+                6,
+                10
+              ],
+              [
+                6,
+                7,
+                9
+              ],
+              [
+                6,
+                7,
+                10
+              ],
+              [
+                6,
+                9,
+                10
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 730,
+            "net_yen": -470,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  1,
+                  4,
+                  6
+                ],
+                "yen_per_100": 730
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          }
+        }
+      }
+    },
+    {
+      "key": "T9",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "venue": "東京",
+      "race_no": 9,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 3,
+          "name": "ノラリクラリ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "2:24.4",
+          "margin": "",
+          "last_3f": "35.1",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "キングズトゥルー",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "2:24.7",
+          "margin": "１ 1/2",
+          "last_3f": "35.6",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "イクリール",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "2:24.7",
+          "margin": "クビ",
+          "last_3f": "35.8",
+          "final_popularity": "4",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604030920261010/B0"
+        },
+        "retrieved_at": "2026-10-10T18:31:09+09:00",
+        "raw_sha256": "bbae24e6e0b3b9ac9608d3fcb5be9e7e02541efc9dd49c0a1ae1fc76a1522661",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/bbae24e6e0b3b9ac9608d3fcb5be9e7e02541efc9dd49c0a1ae1fc76a1522661.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              3,
+              2,
+              7,
+              8
+            ],
+            "tickets": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 3,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              3,
+              7,
+              2,
+              8,
+              6,
+              4,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                3,
+                7
+              ],
+              [
+                1,
+                3,
+                8
+              ],
+              [
+                2,
+                3,
+                4
+              ],
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                3,
+                7
+              ],
+              [
+                2,
+                3,
+                8
+              ],
+              [
+                3,
+                4,
+                7
+              ],
+              [
+                3,
+                4,
+                8
+              ],
+              [
+                3,
+                6,
+                7
+              ],
+              [
+                3,
+                6,
+                8
+              ],
+              [
+                3,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 3640,
+            "net_yen": 2440,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  3,
+                  6,
+                  8
+                ],
+                "yen_per_100": 3640
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 3,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              3,
+              2,
+              7,
+              8
+            ],
+            "tickets": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 3,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              3,
+              2,
+              7,
+              8,
+              6,
+              1,
+              4
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                3,
+                7
+              ],
+              [
+                1,
+                3,
+                8
+              ],
+              [
+                2,
+                3,
+                4
+              ],
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                3,
+                7
+              ],
+              [
+                2,
+                3,
+                8
+              ],
+              [
+                3,
+                4,
+                7
+              ],
+              [
+                3,
+                4,
+                8
+              ],
+              [
+                3,
+                6,
+                7
+              ],
+              [
+                3,
+                6,
+                8
+              ],
+              [
+                3,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 3640,
+            "net_yen": 2440,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  3,
+                  6,
+                  8
+                ],
+                "yen_per_100": 3640
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 3,
+            "axis_finish": 1
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              2,
+              3,
+              7,
+              8
+            ],
+            "tickets": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 2,
+            "axis_finish": 5
+          },
+          "trio": {
+            "role_order": [
+              2,
+              3,
+              7,
+              8,
+              1,
+              6,
+              9
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                7
+              ],
+              [
+                1,
+                2,
+                8
+              ],
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                3,
+                7
+              ],
+              [
+                2,
+                3,
+                8
+              ],
+              [
+                2,
+                3,
+                9
+              ],
+              [
+                2,
+                6,
+                7
+              ],
+              [
+                2,
+                6,
+                8
+              ],
+              [
+                2,
+                7,
+                8
+              ],
+              [
+                2,
+                7,
+                9
+              ],
+              [
+                2,
+                8,
+                9
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 2,
+            "axis_finish": 5
+          }
+        }
+      }
+    },
+    {
+      "key": "T10",
+      "race_uid": "jra-2026-10-10-tokyo-r10",
+      "venue": "東京",
+      "race_no": 10,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 7,
+          "name": "コズミックダンサー",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "2:09.8",
+          "margin": "",
+          "last_3f": "36.4",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ユウトザユウト",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "2:10.1",
+          "margin": "１ 1/2",
+          "last_3f": "36.8",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 14,
+          "name": "ボクマダネムイヨ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "2:10.1",
+          "margin": "ハナ",
+          "last_3f": "36.2",
+          "final_popularity": "2",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604031020261010/A5"
+        },
+        "retrieved_at": "2026-10-10T18:31:09+09:00",
+        "raw_sha256": "e4f6fe555d5c5196acb25d7e78ac01576ff88ccdf3a8388b72a8de45d4a87798",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/e4f6fe555d5c5196acb25d7e78ac01576ff88ccdf3a8388b72a8de45d4a87798.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              7,
+              16,
+              2,
+              14
+            ],
+            "tickets": [
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                16
+              ],
+              [
+                7,
+                14
+              ],
+              [
+                7,
+                16
+              ],
+              [
+                14,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 4030,
+            "net_yen": 3530,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  7
+                ],
+                "yen_per_100": 4030
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 7,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              7,
+              16,
+              2,
+              14,
+              3,
+              15,
+              9
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                7
+              ],
+              [
+                2,
+                7,
+                9
+              ],
+              [
+                2,
+                7,
+                14
+              ],
+              [
+                2,
+                7,
+                15
+              ],
+              [
+                2,
+                7,
+                16
+              ],
+              [
+                3,
+                7,
+                14
+              ],
+              [
+                3,
+                7,
+                16
+              ],
+              [
+                7,
+                9,
+                14
+              ],
+              [
+                7,
+                9,
+                16
+              ],
+              [
+                7,
+                14,
+                15
+              ],
+              [
+                7,
+                14,
+                16
+              ],
+              [
+                7,
+                15,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 6060,
+            "net_yen": 4860,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  7,
+                  14
+                ],
+                "yen_per_100": 6060
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 7,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              7,
+              16,
+              3,
+              14
+            ],
+            "tickets": [
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                16
+              ],
+              [
+                7,
+                14
+              ],
+              [
+                7,
+                16
+              ],
+              [
+                14,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 7,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              7,
+              16,
+              3,
+              14,
+              2,
+              15,
+              9
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                7
+              ],
+              [
+                2,
+                7,
+                14
+              ],
+              [
+                2,
+                7,
+                16
+              ],
+              [
+                3,
+                7,
+                9
+              ],
+              [
+                3,
+                7,
+                14
+              ],
+              [
+                3,
+                7,
+                15
+              ],
+              [
+                3,
+                7,
+                16
+              ],
+              [
+                7,
+                9,
+                14
+              ],
+              [
+                7,
+                9,
+                16
+              ],
+              [
+                7,
+                14,
+                15
+              ],
+              [
+                7,
+                14,
+                16
+              ],
+              [
+                7,
+                15,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 6060,
+            "net_yen": 4860,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  7,
+                  14
+                ],
+                "yen_per_100": 6060
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 7,
+            "axis_finish": 1
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              14,
+              3,
+              7,
+              16
+            ],
+            "tickets": [
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                3,
+                16
+              ],
+              [
+                7,
+                14
+              ],
+              [
+                14,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 14,
+            "axis_finish": 3
+          },
+          "trio": {
+            "role_order": [
+              14,
+              3,
+              7,
+              16,
+              5,
+              2,
+              9
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                14
+              ],
+              [
+                2,
+                7,
+                14
+              ],
+              [
+                2,
+                14,
+                16
+              ],
+              [
+                3,
+                5,
+                14
+              ],
+              [
+                3,
+                7,
+                14
+              ],
+              [
+                3,
+                9,
+                14
+              ],
+              [
+                3,
+                14,
+                16
+              ],
+              [
+                5,
+                7,
+                14
+              ],
+              [
+                5,
+                14,
+                16
+              ],
+              [
+                7,
+                9,
+                14
+              ],
+              [
+                7,
+                14,
+                16
+              ],
+              [
+                9,
+                14,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 6060,
+            "net_yen": 4860,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  7,
+                  14
+                ],
+                "yen_per_100": 6060
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 14,
+            "axis_finish": 3
+          }
+        }
+      }
+    },
+    {
+      "key": "T11",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "venue": "東京",
+      "race_no": 11,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 4,
+          "name": "アゴルディーノ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:34.4",
+          "margin": "",
+          "last_3f": "33.4",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "サトノハクマイ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:34.4",
+          "margin": "クビ",
+          "last_3f": "34.0",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "フィリオソラーレ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:34.6",
+          "margin": "１",
+          "last_3f": "33.9",
+          "final_popularity": "1",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604031120261010/5A"
+        },
+        "retrieved_at": "2026-10-10T18:31:10+09:00",
+        "raw_sha256": "114882abf2aa4ca89569db2eb250ad898545771877487ac24c69985641f99abd",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/114882abf2aa4ca89569db2eb250ad898545771877487ac24c69985641f99abd.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              4,
+              6,
+              5,
+              3
+            ],
+            "tickets": [
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 5180,
+            "net_yen": 4680,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  3,
+                  4
+                ],
+                "yen_per_100": 5180
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 4,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              4,
+              6,
+              5,
+              3,
+              9,
+              11,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                3,
+                4
+              ],
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                3,
+                4,
+                5
+              ],
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                3,
+                4,
+                9
+              ],
+              [
+                3,
+                4,
+                11
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                4,
+                5,
+                9
+              ],
+              [
+                4,
+                5,
+                11
+              ],
+              [
+                4,
+                6,
+                9
+              ],
+              [
+                4,
+                6,
+                11
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 3400,
+            "net_yen": 2200,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  3,
+                  4,
+                  5
+                ],
+                "yen_per_100": 3400
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 4,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              5,
+              6,
+              4,
+              9
+            ],
+            "tickets": [
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                6,
+                9
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 3
+          },
+          "trio": {
+            "role_order": [
+              5,
+              6,
+              4,
+              9,
+              1,
+              10,
+              2
+            ],
+            "tickets": [
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                1,
+                5,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                2,
+                5,
+                9
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                4,
+                5,
+                9
+              ],
+              [
+                4,
+                5,
+                10
+              ],
+              [
+                5,
+                6,
+                9
+              ],
+              [
+                5,
+                6,
+                10
+              ],
+              [
+                5,
+                9,
+                10
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 3
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              5,
+              6,
+              9,
+              2
+            ],
+            "tickets": [
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                6,
+                9
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 3
+          },
+          "trio": {
+            "role_order": [
+              5,
+              6,
+              9,
+              2,
+              4,
+              3,
+              10
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                2,
+                5,
+                9
+              ],
+              [
+                2,
+                5,
+                10
+              ],
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                3,
+                5,
+                9
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                4,
+                5,
+                9
+              ],
+              [
+                5,
+                6,
+                9
+              ],
+              [
+                5,
+                6,
+                10
+              ],
+              [
+                5,
+                9,
+                10
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "formation_group_exclusion",
+            "axis_number": 5,
+            "axis_finish": 3
+          }
+        }
+      }
+    },
+    {
+      "key": "T12",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "venue": "東京",
+      "race_no": 12,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 8,
+          "name": "プレダトゥール",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:24.9",
+          "margin": "",
+          "last_3f": "36.0",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "マーガレットクレア",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:25.0",
+          "margin": "クビ",
+          "last_3f": "35.8",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "ゴーゴーパンチ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:25.0",
+          "margin": "クビ",
+          "last_3f": "35.4",
+          "final_popularity": "1",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604031220261010/0F"
+        },
+        "retrieved_at": "2026-10-10T18:31:10+09:00",
+        "raw_sha256": "fe2aaae4c76fdc02dfee34339630be6fb51a02a7795fe484b97e25059cd14de4",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/fe2aaae4c76fdc02dfee34339630be6fb51a02a7795fe484b97e25059cd14de4.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              3,
+              16,
+              10,
+              8
+            ],
+            "tickets": [
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                16
+              ],
+              [
+                8,
+                16
+              ],
+              [
+                10,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 3,
+            "axis_finish": 10
+          },
+          "trio": {
+            "role_order": [
+              3,
+              16,
+              10,
+              8,
+              11,
+              9,
+              15
+            ],
+            "tickets": [
+              [
+                3,
+                8,
+                9
+              ],
+              [
+                3,
+                8,
+                10
+              ],
+              [
+                3,
+                8,
+                11
+              ],
+              [
+                3,
+                8,
+                15
+              ],
+              [
+                3,
+                8,
+                16
+              ],
+              [
+                3,
+                9,
+                10
+              ],
+              [
+                3,
+                9,
+                16
+              ],
+              [
+                3,
+                10,
+                11
+              ],
+              [
+                3,
+                10,
+                15
+              ],
+              [
+                3,
+                10,
+                16
+              ],
+              [
+                3,
+                11,
+                16
+              ],
+              [
+                3,
+                15,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 3,
+            "axis_finish": 10
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              3,
+              16,
+              10,
+              11
+            ],
+            "tickets": [
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                3,
+                16
+              ],
+              [
+                10,
+                16
+              ],
+              [
+                11,
+                16
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 3,
+            "axis_finish": 10
+          },
+          "trio": {
+            "role_order": [
+              3,
+              16,
+              10,
+              11,
+              8,
+              15,
+              12
+            ],
+            "tickets": [
+              [
+                3,
+                8,
+                10
+              ],
+              [
+                3,
+                8,
+                11
+              ],
+              [
+                3,
+                8,
+                16
+              ],
+              [
+                3,
+                10,
+                11
+              ],
+              [
+                3,
+                10,
+                12
+              ],
+              [
+                3,
+                10,
+                15
+              ],
+              [
+                3,
+                10,
+                16
+              ],
+              [
+                3,
+                11,
+                12
+              ],
+              [
+                3,
+                11,
+                15
+              ],
+              [
+                3,
+                11,
+                16
+              ],
+              [
+                3,
+                12,
+                16
+              ],
+              [
+                3,
+                15,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 3,
+            "axis_finish": 10
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              3,
+              10,
+              8,
+              11
+            ],
+            "tickets": [
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 3,
+            "axis_finish": 10
+          },
+          "trio": {
+            "role_order": [
+              3,
+              10,
+              8,
+              11,
+              16,
+              12,
+              7
+            ],
+            "tickets": [
+              [
+                3,
+                7,
+                8
+              ],
+              [
+                3,
+                7,
+                10
+              ],
+              [
+                3,
+                7,
+                11
+              ],
+              [
+                3,
+                8,
+                10
+              ],
+              [
+                3,
+                8,
+                11
+              ],
+              [
+                3,
+                8,
+                12
+              ],
+              [
+                3,
+                8,
+                16
+              ],
+              [
+                3,
+                10,
+                11
+              ],
+              [
+                3,
+                10,
+                12
+              ],
+              [
+                3,
+                10,
+                16
+              ],
+              [
+                3,
+                11,
+                12
+              ],
+              [
+                3,
+                11,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 3,
+            "axis_finish": 10
+          }
+        }
+      }
+    },
+    {
+      "key": "K1",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "venue": "京都",
+      "race_no": 1,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 2,
+          "name": "リヴァイアサン",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:53.8",
+          "margin": "",
+          "last_3f": "36.7",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 14,
+          "name": "マコトブリッツ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:54.1",
+          "margin": "２",
+          "last_3f": "37.3",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ジョイザモーメント",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:54.5",
+          "margin": "２ 1/2",
+          "last_3f": "37.4",
+          "final_popularity": "2",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030120261010/E6"
+        },
+        "retrieved_at": "2026-10-10T18:31:11+09:00",
+        "raw_sha256": "038861fbecd4cea8465e062794d667d987baaa4a5f95f2381a4d772949fbef18",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/038861fbecd4cea8465e062794d667d987baaa4a5f95f2381a4d772949fbef18.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              14,
+              2,
+              8,
+              6
+            ],
+            "tickets": [
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                14
+              ],
+              [
+                6,
+                14
+              ],
+              [
+                8,
+                14
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 670,
+            "net_yen": 170,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  14
+                ],
+                "yen_per_100": 670
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 14,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              14,
+              2,
+              8,
+              7,
+              6,
+              3,
+              11
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                14
+              ],
+              [
+                2,
+                6,
+                14
+              ],
+              [
+                2,
+                7,
+                14
+              ],
+              [
+                2,
+                8,
+                14
+              ],
+              [
+                2,
+                11,
+                14
+              ],
+              [
+                3,
+                7,
+                14
+              ],
+              [
+                3,
+                8,
+                14
+              ],
+              [
+                6,
+                7,
+                14
+              ],
+              [
+                6,
+                8,
+                14
+              ],
+              [
+                7,
+                8,
+                14
+              ],
+              [
+                7,
+                11,
+                14
+              ],
+              [
+                8,
+                11,
+                14
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 1280,
+            "net_yen": 80,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  6,
+                  14
+                ],
+                "yen_per_100": 1280
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 14,
+            "axis_finish": 2
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              14,
+              2,
+              8,
+              6
+            ],
+            "tickets": [
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                14
+              ],
+              [
+                6,
+                14
+              ],
+              [
+                8,
+                14
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 670,
+            "net_yen": 170,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  14
+                ],
+                "yen_per_100": 670
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 14,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              14,
+              2,
+              8,
+              6,
+              7,
+              3,
+              11
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                14
+              ],
+              [
+                2,
+                6,
+                14
+              ],
+              [
+                2,
+                7,
+                14
+              ],
+              [
+                2,
+                8,
+                14
+              ],
+              [
+                2,
+                11,
+                14
+              ],
+              [
+                3,
+                6,
+                14
+              ],
+              [
+                3,
+                8,
+                14
+              ],
+              [
+                6,
+                7,
+                14
+              ],
+              [
+                6,
+                8,
+                14
+              ],
+              [
+                6,
+                11,
+                14
+              ],
+              [
+                7,
+                8,
+                14
+              ],
+              [
+                8,
+                11,
+                14
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 1280,
+            "net_yen": 80,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  6,
+                  14
+                ],
+                "yen_per_100": 1280
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 14,
+            "axis_finish": 2
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              6,
+              2,
+              8,
+              14
+            ],
+            "tickets": [
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                14
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                14
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 670,
+            "net_yen": 170,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  14
+                ],
+                "yen_per_100": 670
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 3
+          },
+          "trio": {
+            "role_order": [
+              6,
+              2,
+              8,
+              14,
+              7,
+              3,
+              11
+            ],
+            "tickets": [
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                6,
+                7
+              ],
+              [
+                2,
+                6,
+                8
+              ],
+              [
+                2,
+                6,
+                11
+              ],
+              [
+                2,
+                6,
+                14
+              ],
+              [
+                3,
+                6,
+                8
+              ],
+              [
+                3,
+                6,
+                14
+              ],
+              [
+                6,
+                7,
+                8
+              ],
+              [
+                6,
+                7,
+                14
+              ],
+              [
+                6,
+                8,
+                11
+              ],
+              [
+                6,
+                8,
+                14
+              ],
+              [
+                6,
+                11,
+                14
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 1280,
+            "net_yen": 80,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  6,
+                  14
+                ],
+                "yen_per_100": 1280
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 3
+          }
+        }
+      }
+    },
+    {
+      "key": "K2",
+      "race_uid": "jra-2026-10-10-kyoto-r2",
+      "venue": "京都",
+      "race_no": 2,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 8,
+          "name": "バティック",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:32.1",
+          "margin": "レコード",
+          "last_3f": "34.2",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "コンセルノ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:32.1",
+          "margin": "クビ",
+          "last_3f": "34.4",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "イーサンマリーン",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:32.6",
+          "margin": "３",
+          "last_3f": "34.0",
+          "final_popularity": "6",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030220261010/9B"
+        },
+        "retrieved_at": "2026-10-10T18:31:11+09:00",
+        "raw_sha256": "7dc810d15d04a401177361d53bd2b4921b2ee025866a2a252b08b05853063cf5",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/7dc810d15d04a401177361d53bd2b4921b2ee025866a2a252b08b05853063cf5.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              8,
+              5,
+              2,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                8
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                5,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 980,
+            "net_yen": 480,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  8
+                ],
+                "yen_per_100": 980
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 8,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              5,
+              8,
+              2,
+              3,
+              1,
+              4,
+              7
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                2,
+                5,
+                7
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3,
+                4,
+                5
+              ],
+              [
+                3,
+                5,
+                7
+              ],
+              [
+                3,
+                5,
+                8
+              ],
+              [
+                4,
+                5,
+                8
+              ],
+              [
+                5,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 5,
+            "axis_finish": 9
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              5,
+              8,
+              2,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                8
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                5,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 980,
+            "net_yen": 480,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  8
+                ],
+                "yen_per_100": 980
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 5,
+            "axis_finish": 9
+          },
+          "trio": {
+            "role_order": [
+              5,
+              8,
+              2,
+              1,
+              4,
+              3,
+              7
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                1,
+                5,
+                7
+              ],
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                2,
+                5,
+                7
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3,
+                5,
+                8
+              ],
+              [
+                4,
+                5,
+                8
+              ],
+              [
+                5,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 5,
+            "axis_finish": 9
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              1,
+              5,
+              8,
+              2
+            ],
+            "tickets": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                8
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                5,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "formation_group_exclusion",
+            "axis_number": 1,
+            "axis_finish": 6
+          },
+          "trio": {
+            "role_order": [
+              1,
+              5,
+              8,
+              2,
+              3,
+              4,
+              7
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                4
+              ],
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                1,
+                2,
+                7
+              ],
+              [
+                1,
+                2,
+                8
+              ],
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                1,
+                3,
+                8
+              ],
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                1,
+                4,
+                8
+              ],
+              [
+                1,
+                5,
+                7
+              ],
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                1,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 1,
+            "axis_finish": 6
+          }
+        }
+      }
+    },
+    {
+      "key": "K3",
+      "race_uid": "jra-2026-10-10-kyoto-r3",
+      "venue": "京都",
+      "race_no": 3,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 6,
+          "name": "ドーンレーサー",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:46.6",
+          "margin": "",
+          "last_3f": "35.0",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ジャンゴッド",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:46.7",
+          "margin": "１／２",
+          "last_3f": "35.3",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "アイオリスパルス",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:46.7",
+          "margin": "クビ",
+          "last_3f": "35.2",
+          "final_popularity": "2",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030320261010/50"
+        },
+        "retrieved_at": "2026-10-10T18:31:11+09:00",
+        "raw_sha256": "8dd376af95dfd0cb4872232538f34a77856f358537d7dd7e98a3d5e83de0d019",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/8dd376af95dfd0cb4872232538f34a77856f358537d7dd7e98a3d5e83de0d019.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              6,
+              4,
+              8,
+              5
+            ],
+            "tickets": [
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                6,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 6,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              8,
+              5,
+              2,
+              3,
+              7
+            ],
+            "tickets": [
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                2,
+                6,
+                8
+              ],
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                3,
+                6,
+                8
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                4,
+                6,
+                7
+              ],
+              [
+                4,
+                6,
+                8
+              ],
+              [
+                5,
+                6,
+                7
+              ],
+              [
+                5,
+                6,
+                8
+              ],
+              [
+                6,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 1680,
+            "net_yen": 480,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  4,
+                  6
+                ],
+                "yen_per_100": 1680
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              4,
+              8,
+              5,
+              6
+            ],
+            "tickets": [
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                6,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 4,
+            "axis_finish": 3
+          },
+          "trio": {
+            "role_order": [
+              4,
+              8,
+              5,
+              6,
+              2,
+              3,
+              7
+            ],
+            "tickets": [
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                4,
+                8
+              ],
+              [
+                3,
+                4,
+                5
+              ],
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                3,
+                4,
+                8
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                4,
+                5,
+                7
+              ],
+              [
+                4,
+                5,
+                8
+              ],
+              [
+                4,
+                6,
+                7
+              ],
+              [
+                4,
+                6,
+                8
+              ],
+              [
+                4,
+                7,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 1680,
+            "net_yen": 480,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  4,
+                  6
+                ],
+                "yen_per_100": 1680
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 4,
+            "axis_finish": 3
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              8,
+              2,
+              4,
+              6
+            ],
+            "tickets": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                6,
+                8
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 1650,
+            "net_yen": 1150,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  6
+                ],
+                "yen_per_100": 1650
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 8,
+            "axis_finish": 4
+          },
+          "trio": {
+            "role_order": [
+              8,
+              2,
+              4,
+              6,
+              5,
+              3,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                8
+              ],
+              [
+                1,
+                4,
+                8
+              ],
+              [
+                1,
+                6,
+                8
+              ],
+              [
+                2,
+                3,
+                8
+              ],
+              [
+                2,
+                4,
+                8
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                2,
+                6,
+                8
+              ],
+              [
+                3,
+                4,
+                8
+              ],
+              [
+                3,
+                6,
+                8
+              ],
+              [
+                4,
+                5,
+                8
+              ],
+              [
+                4,
+                6,
+                8
+              ],
+              [
+                5,
+                6,
+                8
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 8,
+            "axis_finish": 4
+          }
+        }
+      }
+    },
+    {
+      "key": "K4",
+      "race_uid": "jra-2026-10-10-kyoto-r4",
+      "venue": "京都",
+      "race_no": 4,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 13,
+          "name": "ヴェールランス",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "3:34.1",
+          "margin": "",
+          "last_3f": "13.5",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "ミレニアムヒロイン",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "3:34.4",
+          "margin": "１ 3/4",
+          "last_3f": "13.5",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "ライツフォル",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "3:34.5",
+          "margin": "クビ",
+          "last_3f": "13.5",
+          "final_popularity": "8",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030420261010/05"
+        },
+        "retrieved_at": "2026-10-10T18:31:12+09:00",
+        "raw_sha256": "a9d4aab785f3a4c2e564fee33718686f1547b8582a9e687ab922622e235bcdba",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/a9d4aab785f3a4c2e564fee33718686f1547b8582a9e687ab922622e235bcdba.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "K5",
+      "race_uid": "jra-2026-10-10-kyoto-r5",
+      "venue": "京都",
+      "race_no": 5,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 8,
+          "name": "キューティボンド",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:33.1",
+          "margin": "",
+          "last_3f": "34.4",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ドンクラッシュ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:33.3",
+          "margin": "１ 1/4",
+          "last_3f": "34.9",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ハニーベル",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:33.4",
+          "margin": "１／２",
+          "last_3f": "35.1",
+          "final_popularity": "3",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030520261010/BA"
+        },
+        "retrieved_at": "2026-10-10T18:31:12+09:00",
+        "raw_sha256": "87c2a3ae55eb2f82bfb02f7ba9c4ec2455d2007f05d5e4d0c4f8597dbca602b2",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/87c2a3ae55eb2f82bfb02f7ba9c4ec2455d2007f05d5e4d0c4f8597dbca602b2.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "K6",
+      "race_uid": "jra-2026-10-10-kyoto-r6",
+      "venue": "京都",
+      "race_no": 6,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 1,
+          "name": "マイスターシューズ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:12.2",
+          "margin": "",
+          "last_3f": "35.7",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "ライフイズアソング",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:12.4",
+          "margin": "１ 1/4",
+          "last_3f": "37.6",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 11,
+          "name": "カムトゥルー",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:12.8",
+          "margin": "２ 1/2",
+          "last_3f": "36.3",
+          "final_popularity": "7",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030620261010/6F"
+        },
+        "retrieved_at": "2026-10-10T18:31:12+09:00",
+        "raw_sha256": "1d7fde7594053b13316ec1593c5ec27cba5e6a2c0e1b3d9c66c92d62cf703a0b",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/1d7fde7594053b13316ec1593c5ec27cba5e6a2c0e1b3d9c66c92d62cf703a0b.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "K7",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "venue": "京都",
+      "race_no": 7,
+      "status": "held",
+      "top_three": [
+        {
+          "number": 13,
+          "name": "レディーゴール",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:52.2",
+          "margin": "",
+          "last_3f": "37.1",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "ブラックドレス",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:52.3",
+          "margin": "クビ",
+          "last_3f": "37.3",
+          "final_popularity": "15",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "エイコーンドリーム",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:52.3",
+          "margin": "クビ",
+          "last_3f": "36.8",
+          "final_popularity": "1",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030720261010/24"
+        },
+        "retrieved_at": "2026-10-10T18:31:12+09:00",
+        "raw_sha256": "0062f3f252e8c006d106995cdf472d593705f5c39d5e440ac5e1fa81ce1415fc",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/0062f3f252e8c006d106995cdf472d593705f5c39d5e440ac5e1fa81ce1415fc.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {}
+    },
+    {
+      "key": "K8",
+      "race_uid": "jra-2026-10-10-kyoto-r8",
+      "venue": "京都",
+      "race_no": 8,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 5,
+          "name": "ビップヴィーナス",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:59.4",
+          "margin": "",
+          "last_3f": "34.1",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ドラゴンバルド",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:59.4",
+          "margin": "ハナ",
+          "last_3f": "33.9",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ホウオウワールド",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:59.4",
+          "margin": "アタマ",
+          "last_3f": "34.2",
+          "final_popularity": "3",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030820261010/D9"
+        },
+        "retrieved_at": "2026-10-10T18:31:13+09:00",
+        "raw_sha256": "6ee55a2f664221876a05f653ef4a8223842c355dbb197d794bae308d04fb2ed2",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/6ee55a2f664221876a05f653ef4a8223842c355dbb197d794bae308d04fb2ed2.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              6,
+              4,
+              2,
+              5
+            ],
+            "tickets": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 2420,
+            "net_yen": 1920,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  5,
+                  6
+                ],
+                "yen_per_100": 2420
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              5,
+              2,
+              3,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                4,
+                5,
+                6
+              ]
+            ],
+            "points": 9,
+            "cost_yen": 900,
+            "payout_yen": 2910,
+            "net_yen": 2010,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  5,
+                  6
+                ],
+                "yen_per_100": 2910
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              6,
+              4,
+              3,
+              2
+            ],
+            "tickets": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 6,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              3,
+              2,
+              1,
+              5
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                3,
+                6
+              ],
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                4,
+                5,
+                6
+              ]
+            ],
+            "points": 9,
+            "cost_yen": 900,
+            "payout_yen": 2910,
+            "net_yen": 2010,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  5,
+                  6
+                ],
+                "yen_per_100": 2910
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              6,
+              4,
+              2,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 6,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              6,
+              4,
+              2,
+              1,
+              3,
+              5
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                3,
+                6
+              ],
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                4,
+                5,
+                6
+              ]
+            ],
+            "points": 9,
+            "cost_yen": 900,
+            "payout_yen": 2910,
+            "net_yen": 2010,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  2,
+                  5,
+                  6
+                ],
+                "yen_per_100": 2910
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 6,
+            "axis_finish": 2
+          }
+        }
+      }
+    },
+    {
+      "key": "K9",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "venue": "京都",
+      "race_no": 9,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 6,
+          "name": "テーオーパーセル",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:23.1",
+          "margin": "",
+          "last_3f": "37.1",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "オウケンブラッド",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:23.1",
+          "margin": "ハナ",
+          "last_3f": "35.7",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 12,
+          "name": "エシェックオロワ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:23.4",
+          "margin": "２",
+          "last_3f": "36.8",
+          "final_popularity": "7",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604030920261010/8E"
+        },
+        "retrieved_at": "2026-10-10T18:31:13+09:00",
+        "raw_sha256": "7927ffb7b8fd9c264aeeb17f49e79cfaadf3588564a77d293882e6ca38a180e8",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/7927ffb7b8fd9c264aeeb17f49e79cfaadf3588564a77d293882e6ca38a180e8.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              9,
+              7,
+              6,
+              4
+            ],
+            "tickets": [
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                7,
+                9
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 820,
+            "net_yen": 320,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  6,
+                  9
+                ],
+                "yen_per_100": 820
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 9,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              9,
+              7,
+              6,
+              4,
+              11,
+              2,
+              8
+            ],
+            "tickets": [
+              [
+                2,
+                4,
+                9
+              ],
+              [
+                2,
+                6,
+                9
+              ],
+              [
+                2,
+                7,
+                9
+              ],
+              [
+                4,
+                6,
+                9
+              ],
+              [
+                4,
+                7,
+                9
+              ],
+              [
+                4,
+                8,
+                9
+              ],
+              [
+                4,
+                9,
+                11
+              ],
+              [
+                6,
+                7,
+                9
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                6,
+                9,
+                11
+              ],
+              [
+                7,
+                8,
+                9
+              ],
+              [
+                7,
+                9,
+                11
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 9,
+            "axis_finish": 2
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              9,
+              7,
+              4,
+              6
+            ],
+            "tickets": [
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                7,
+                9
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 820,
+            "net_yen": 320,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  6,
+                  9
+                ],
+                "yen_per_100": 820
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 9,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              9,
+              7,
+              4,
+              6,
+              2,
+              11,
+              8
+            ],
+            "tickets": [
+              [
+                2,
+                4,
+                9
+              ],
+              [
+                2,
+                6,
+                9
+              ],
+              [
+                2,
+                7,
+                9
+              ],
+              [
+                4,
+                6,
+                9
+              ],
+              [
+                4,
+                7,
+                9
+              ],
+              [
+                4,
+                8,
+                9
+              ],
+              [
+                4,
+                9,
+                11
+              ],
+              [
+                6,
+                7,
+                9
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                6,
+                9,
+                11
+              ],
+              [
+                7,
+                8,
+                9
+              ],
+              [
+                7,
+                9,
+                11
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 9,
+            "axis_finish": 2
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              9,
+              7,
+              2,
+              6
+            ],
+            "tickets": [
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                7,
+                9
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 820,
+            "net_yen": 320,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  6,
+                  9
+                ],
+                "yen_per_100": 820
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 9,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              9,
+              7,
+              2,
+              6,
+              4,
+              16,
+              11
+            ],
+            "tickets": [
+              [
+                2,
+                4,
+                9
+              ],
+              [
+                2,
+                6,
+                9
+              ],
+              [
+                2,
+                7,
+                9
+              ],
+              [
+                2,
+                9,
+                11
+              ],
+              [
+                2,
+                9,
+                16
+              ],
+              [
+                4,
+                6,
+                9
+              ],
+              [
+                4,
+                7,
+                9
+              ],
+              [
+                6,
+                7,
+                9
+              ],
+              [
+                6,
+                9,
+                11
+              ],
+              [
+                6,
+                9,
+                16
+              ],
+              [
+                7,
+                9,
+                11
+              ],
+              [
+                7,
+                9,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 9,
+            "axis_finish": 2
+          }
+        }
+      }
+    },
+    {
+      "key": "K10",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "venue": "京都",
+      "race_no": 10,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 6,
+          "name": "エルハーベン",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:19.7",
+          "margin": "",
+          "last_3f": "33.5",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "アイルドリアン",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:19.7",
+          "margin": "クビ",
+          "last_3f": "34.1",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "ヒーローインチーフ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:19.9",
+          "margin": "１",
+          "last_3f": "33.3",
+          "final_popularity": "8",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604031020261010/83"
+        },
+        "retrieved_at": "2026-10-10T18:31:13+09:00",
+        "raw_sha256": "f35a5440ddadee24615b086f46a450c327917d5cdaa6fedff61d7224b32701ba",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/f35a5440ddadee24615b086f46a450c327917d5cdaa6fedff61d7224b32701ba.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              15,
+              2,
+              6,
+              12
+            ],
+            "tickets": [
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                12
+              ],
+              [
+                2,
+                15
+              ],
+              [
+                6,
+                15
+              ],
+              [
+                12,
+                15
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 15,
+            "axis_finish": 4
+          },
+          "trio": {
+            "role_order": [
+              15,
+              2,
+              6,
+              12,
+              1,
+              11,
+              14
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                15
+              ],
+              [
+                1,
+                6,
+                15
+              ],
+              [
+                1,
+                12,
+                15
+              ],
+              [
+                2,
+                6,
+                15
+              ],
+              [
+                2,
+                11,
+                15
+              ],
+              [
+                2,
+                12,
+                15
+              ],
+              [
+                2,
+                14,
+                15
+              ],
+              [
+                6,
+                11,
+                15
+              ],
+              [
+                6,
+                12,
+                15
+              ],
+              [
+                6,
+                14,
+                15
+              ],
+              [
+                11,
+                12,
+                15
+              ],
+              [
+                12,
+                14,
+                15
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 15,
+            "axis_finish": 4
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              15,
+              2,
+              6,
+              11
+            ],
+            "tickets": [
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                2,
+                15
+              ],
+              [
+                6,
+                15
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 15,
+            "axis_finish": 4
+          },
+          "trio": {
+            "role_order": [
+              15,
+              2,
+              6,
+              11,
+              1,
+              14,
+              12
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                15
+              ],
+              [
+                1,
+                6,
+                15
+              ],
+              [
+                1,
+                11,
+                15
+              ],
+              [
+                2,
+                6,
+                15
+              ],
+              [
+                2,
+                11,
+                15
+              ],
+              [
+                2,
+                12,
+                15
+              ],
+              [
+                2,
+                14,
+                15
+              ],
+              [
+                6,
+                11,
+                15
+              ],
+              [
+                6,
+                12,
+                15
+              ],
+              [
+                6,
+                14,
+                15
+              ],
+              [
+                11,
+                12,
+                15
+              ],
+              [
+                11,
+                14,
+                15
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 15,
+            "axis_finish": 4
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              6,
+              11,
+              2,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                6
+              ],
+              [
+                1,
+                11
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                6,
+                11
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 6,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              6,
+              11,
+              2,
+              1,
+              15,
+              14,
+              13
+            ],
+            "tickets": [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                6,
+                11
+              ],
+              [
+                1,
+                6,
+                13
+              ],
+              [
+                1,
+                6,
+                14
+              ],
+              [
+                1,
+                6,
+                15
+              ],
+              [
+                2,
+                6,
+                11
+              ],
+              [
+                2,
+                6,
+                13
+              ],
+              [
+                2,
+                6,
+                14
+              ],
+              [
+                2,
+                6,
+                15
+              ],
+              [
+                6,
+                11,
+                13
+              ],
+              [
+                6,
+                11,
+                14
+              ],
+              [
+                6,
+                11,
+                15
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 6,
+            "axis_finish": 1
+          }
+        }
+      }
+    },
+    {
+      "key": "K11",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "venue": "京都",
+      "race_no": 11,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 11,
+          "name": "サイモンシュバリエ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:50.9",
+          "margin": "",
+          "last_3f": "36.1",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "ベルダイナフェロー",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:50.9",
+          "margin": "アタマ",
+          "last_3f": "35.9",
+          "final_popularity": "12",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "ショウサンジョージ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:51.0",
+          "margin": "３／４",
+          "last_3f": "35.8",
+          "final_popularity": "7",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604031120261010/38"
+        },
+        "retrieved_at": "2026-10-10T18:31:14+09:00",
+        "raw_sha256": "e339f88d9e8b117b72d78a95b6686b7d483b644028b72b041d0aefabb4a91050",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/e339f88d9e8b117b72d78a95b6686b7d483b644028b72b041d0aefabb4a91050.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              12,
+              13,
+              11,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                12
+              ],
+              [
+                1,
+                13
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 12,
+            "axis_finish": 6
+          },
+          "trio": {
+            "role_order": [
+              12,
+              13,
+              11,
+              1,
+              5,
+              4,
+              8
+            ],
+            "tickets": [
+              [
+                1,
+                4,
+                12
+              ],
+              [
+                1,
+                5,
+                12
+              ],
+              [
+                1,
+                8,
+                12
+              ],
+              [
+                1,
+                11,
+                12
+              ],
+              [
+                1,
+                12,
+                13
+              ],
+              [
+                4,
+                11,
+                12
+              ],
+              [
+                4,
+                12,
+                13
+              ],
+              [
+                5,
+                11,
+                12
+              ],
+              [
+                5,
+                12,
+                13
+              ],
+              [
+                8,
+                11,
+                12
+              ],
+              [
+                8,
+                12,
+                13
+              ],
+              [
+                11,
+                12,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 12,
+            "axis_finish": 6
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              12,
+              5,
+              13,
+              1
+            ],
+            "tickets": [
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                12
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                5,
+                13
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 12,
+            "axis_finish": 6
+          },
+          "trio": {
+            "role_order": [
+              12,
+              5,
+              13,
+              1,
+              11,
+              3,
+              6
+            ],
+            "tickets": [
+              [
+                1,
+                3,
+                12
+              ],
+              [
+                1,
+                5,
+                12
+              ],
+              [
+                1,
+                6,
+                12
+              ],
+              [
+                1,
+                11,
+                12
+              ],
+              [
+                1,
+                12,
+                13
+              ],
+              [
+                3,
+                5,
+                12
+              ],
+              [
+                3,
+                12,
+                13
+              ],
+              [
+                5,
+                6,
+                12
+              ],
+              [
+                5,
+                11,
+                12
+              ],
+              [
+                5,
+                12,
+                13
+              ],
+              [
+                6,
+                12,
+                13
+              ],
+              [
+                11,
+                12,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 12,
+            "axis_finish": 6
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              13,
+              1,
+              5,
+              11
+            ],
+            "tickets": [
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                11
+              ],
+              [
+                1,
+                13
+              ],
+              [
+                5,
+                13
+              ],
+              [
+                11,
+                13
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 0,
+            "net_yen": -500,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 13,
+            "axis_finish": 13
+          },
+          "trio": {
+            "role_order": [
+              13,
+              1,
+              5,
+              11,
+              3,
+              12,
+              6
+            ],
+            "tickets": [
+              [
+                1,
+                3,
+                13
+              ],
+              [
+                1,
+                5,
+                13
+              ],
+              [
+                1,
+                6,
+                13
+              ],
+              [
+                1,
+                11,
+                13
+              ],
+              [
+                1,
+                12,
+                13
+              ],
+              [
+                3,
+                5,
+                13
+              ],
+              [
+                3,
+                11,
+                13
+              ],
+              [
+                5,
+                6,
+                13
+              ],
+              [
+                5,
+                11,
+                13
+              ],
+              [
+                5,
+                12,
+                13
+              ],
+              [
+                6,
+                11,
+                13
+              ],
+              [
+                11,
+                12,
+                13
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "axis_outside_top_three",
+            "axis_number": 13,
+            "axis_finish": 13
+          }
+        }
+      }
+    },
+    {
+      "key": "K12",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "venue": "京都",
+      "race_no": 12,
+      "status": "constructed",
+      "top_three": [
+        {
+          "number": 5,
+          "name": "ペプチドレオン",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:23.4",
+          "margin": "",
+          "last_3f": "36.0",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "テーオーカイザー",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:23.5",
+          "margin": "３／４",
+          "last_3f": "35.4",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "クリノセーラーマン",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:23.7",
+          "margin": "１",
+          "last_3f": "35.6",
+          "final_popularity": "12",
+          "final_win_odds": null
+        }
+      ],
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604031220261010/ED"
+        },
+        "retrieved_at": "2026-10-10T18:31:14+09:00",
+        "raw_sha256": "a21ccb52ed14a939dfe71ec25e9ffd1a1b82c01d7a227171123ea0186a42d7e7",
+        "raw_file": "data/results/sources/jra/2026-10-10/kyoto/a21ccb52ed14a939dfe71ec25e9ffd1a1b82c01d7a227171123ea0186a42d7e7.raw.html",
+        "encoding": "cp932"
+      },
+      "comparisons": {
+        "reconstructed": {
+          "quinella": {
+            "role_order": [
+              5,
+              15,
+              8,
+              12
+            ],
+            "tickets": [
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                5,
+                15
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                12,
+                15
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 730,
+            "net_yen": 230,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  5,
+                  8
+                ],
+                "yen_per_100": 730
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 5,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              5,
+              15,
+              8,
+              12,
+              16,
+              9,
+              2
+            ],
+            "tickets": [
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                2,
+                5,
+                12
+              ],
+              [
+                2,
+                5,
+                15
+              ],
+              [
+                5,
+                8,
+                9
+              ],
+              [
+                5,
+                8,
+                12
+              ],
+              [
+                5,
+                8,
+                15
+              ],
+              [
+                5,
+                8,
+                16
+              ],
+              [
+                5,
+                9,
+                12
+              ],
+              [
+                5,
+                9,
+                15
+              ],
+              [
+                5,
+                12,
+                15
+              ],
+              [
+                5,
+                12,
+                16
+              ],
+              [
+                5,
+                15,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          }
+        },
+        "original_rank": {
+          "quinella": {
+            "role_order": [
+              5,
+              12,
+              15,
+              8
+            ],
+            "tickets": [
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                5,
+                15
+              ],
+              [
+                8,
+                12
+              ],
+              [
+                12,
+                15
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 730,
+            "net_yen": 230,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  5,
+                  8
+                ],
+                "yen_per_100": 730
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 5,
+            "axis_finish": 1
+          },
+          "trio": {
+            "role_order": [
+              5,
+              12,
+              15,
+              8,
+              16,
+              1,
+              9
+            ],
+            "tickets": [
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                1,
+                5,
+                12
+              ],
+              [
+                1,
+                5,
+                15
+              ],
+              [
+                5,
+                8,
+                9
+              ],
+              [
+                5,
+                8,
+                12
+              ],
+              [
+                5,
+                8,
+                15
+              ],
+              [
+                5,
+                8,
+                16
+              ],
+              [
+                5,
+                9,
+                12
+              ],
+              [
+                5,
+                9,
+                15
+              ],
+              [
+                5,
+                12,
+                15
+              ],
+              [
+                5,
+                12,
+                16
+              ],
+              [
+                5,
+                15,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 5,
+            "axis_finish": 1
+          }
+        },
+        "snapshot_market_rank": {
+          "quinella": {
+            "role_order": [
+              8,
+              5,
+              12,
+              9
+            ],
+            "tickets": [
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                12
+              ]
+            ],
+            "points": 5,
+            "cost_yen": 500,
+            "payout_yen": 730,
+            "net_yen": 230,
+            "hit": true,
+            "hit_tickets": [
+              {
+                "numbers": [
+                  5,
+                  8
+                ],
+                "yen_per_100": 730
+              }
+            ],
+            "diagnosis": "hit",
+            "axis_number": 8,
+            "axis_finish": 2
+          },
+          "trio": {
+            "role_order": [
+              8,
+              5,
+              12,
+              9,
+              15,
+              7,
+              16
+            ],
+            "tickets": [
+              [
+                5,
+                7,
+                8
+              ],
+              [
+                5,
+                8,
+                9
+              ],
+              [
+                5,
+                8,
+                12
+              ],
+              [
+                5,
+                8,
+                15
+              ],
+              [
+                5,
+                8,
+                16
+              ],
+              [
+                7,
+                8,
+                9
+              ],
+              [
+                7,
+                8,
+                12
+              ],
+              [
+                8,
+                9,
+                12
+              ],
+              [
+                8,
+                9,
+                15
+              ],
+              [
+                8,
+                9,
+                16
+              ],
+              [
+                8,
+                12,
+                15
+              ],
+              [
+                8,
+                12,
+                16
+              ]
+            ],
+            "points": 12,
+            "cost_yen": 1200,
+            "payout_yen": 0,
+            "net_yen": -1200,
+            "hit": false,
+            "hit_tickets": [],
+            "diagnosis": "counterpart_outside_pool",
+            "axis_number": 8,
+            "axis_finish": 2
+          }
+        }
+      }
+    }
+  ]
+}

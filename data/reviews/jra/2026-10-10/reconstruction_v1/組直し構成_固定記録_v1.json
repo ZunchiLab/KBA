@@ -1,0 +1,9 @@
+{
+  "constructed_at": "2026-10-10T21:01:46+09:00",
+  "document": "組直し構成_20261010_v1.json",
+  "sha256": "19ed22a40f92a743bc14a163222f9c88b2df839b6e5906e23e1bc0d33a518590",
+  "forecast_sha256": "691243712000a47cc0f0bf252ab33d1c0ce891b07094ce808916e230254bf88c",
+  "protocol_sha256": "0800fbe93a9e1fe8bcf7890df63d6bdd9949e02ddec84a3ac7451baec81ca89a",
+  "choices_sha256": "cd8691c06402d26972b8cf3a8b6cb260e23319d640e091c4dcf7332d33d09e02",
+  "not_blind_test": true
+}
