@@ -1,0 +1,856 @@
+{
+  "schema_version": "kba.jra-preflight/1",
+  "forecast": "predictions/report_20261010_jra_predictions_v1.json",
+  "strict": false,
+  "passed": false,
+  "scope": "形式・整合性と明示的比較の記録を確認。自由文の全事実・能力・期待値・未来の的中は検証しない。",
+  "findings": [
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 6,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 7,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 10,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 10,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 14,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 14,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 15,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 15,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": 16,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r1",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "market_reference_order_stale",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r4",
+      "number": null,
+      "message": "市場参考の順位が表示中の保存単勝順と違う。価格更新後に参考順位も確認する。"
+    },
+    {
+      "code": "single_win_edge_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 6,
+      "message": "圏内の安定性とは別に、各有力相手より勝ち切る理由と双方の根拠走が必要。説明できなければ単勝本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 1,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 4,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 5,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 5,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 8,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 9,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 9,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": 10,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r8",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": 1,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": 7,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": 8,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": 9,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": 9,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r9",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": 1,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": 9,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": 10,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r11",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": 7,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": 7,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": 8,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": 11,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": 15,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-tokyo-r12",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "single_win_edge_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 14,
+      "message": "圏内の安定性とは別に、各有力相手より勝ち切る理由と双方の根拠走が必要。説明できなければ単勝本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 2,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 4,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 4,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 7,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 8,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 11,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": 11,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r1",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r2",
+      "number": 1,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r2",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r2",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r2",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r2",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "market_reference_order_stale",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r5",
+      "number": null,
+      "message": "市場参考の順位が表示中の保存単勝順と違う。価格更新後に参考順位も確認する。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 1,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 4,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 5,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 9,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 13,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 13,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 14,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": 15,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r7",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": 8,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": 10,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": 11,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r9",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 5,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 5,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 11,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 12,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 13,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": 14,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r10",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 2,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "uncertainty_not_resolved",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 2,
+      "message": "数値保留を最下位・不適性へ置き換えない。未知のまま採用馬を優先できる理由が必要。未解決ならレース本線を見送る。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 3,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 4,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 6,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 9,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 11,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": 13,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r11",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": 1,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": 8,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": 9,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": 13,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "opponent_comparison_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": 16,
+      "message": "比較不足・有力候補・直近好走の除外は、採用馬を名指しした同基準の比較と双方の根拠走を残す。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": null,
+      "message": "main展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "scenario_ticket_audit_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": null,
+      "message": "alternate展開で軸・相手と買い目を維持する／見送る／差し替える根拠を記録する。"
+    },
+    {
+      "code": "source_claim_checks_missing",
+      "severity": "warning",
+      "race_uid": "jra-2026-10-10-kyoto-r12",
+      "number": null,
+      "message": "本文の級・距離・着順を根拠走の値へ照合する記録が必要。"
+    }
+  ]
+}

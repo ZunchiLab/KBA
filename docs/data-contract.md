@@ -153,3 +153,14 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 変換したファイルには `origin` として元ファイル・元版・元ハッシュ・変換処理の版・変換日時を残す。取得後・結果判明後の時刻を、元の予想固定時刻へ転記しない。
 
 形式の変更は互換性を保って版を上げ、共通仕様と両チャットの参照指示も同時に更新する。ここにある項目の存在だけで、校正・取得・購入照合が実装済みだとは扱わない。
+
+## 8. 2026-10-10追加：JRAの明示的比較と開催後レビュー
+
+既存の `kba.forecast/1` の固定内容は変更しない。2026-10-11以降に作成するJRA予想の本線対象レースは `analysis.preflight_review` を追加する。詳細は [jra-next-review-checklist.md](jra-next-review-checklist.md)。
+
+- `single_win_edge`：単勝本線の馬番、全有力相手の馬番、圏内安定性とは別の先着理由、採用馬と各相手の実際の根拠走ID。
+- `exclusions[]`：除外馬、直接比較した採用馬、同基準の理由、双方の根拠走。指数保留の除外には `unknown_is_not_inferior_reason` も必要。記録不足なら本線を見送る。
+- `scenario_checks[]`：`main` / `alternate` の買い目への対応 `keep` / `skip` / `replace`、理由、根拠走ID。説明だけで別案を購入済みへ変換しない。
+- `fact_checks[]`：馬番・根拠走ID・実際のフィールド名・期待値。値の一致はその自由文全体の正しさや予測力の保証ではない。
+
+開催後のJRAレビューは `kba.jra-review/1` / `document_type: review`。`forecast_fixed_at` と `reviewed_at` を分け、元の固定SHA、公開JSONの参照SHA、全頭の固定値と公式結果、掲載点と朝価格、仮想収支、同費用基準、診断、限界、改善の実装状態を保持する。実購入なしでは `actual_purchase: null`。元予想を結果後の評価へ書き換えない。
