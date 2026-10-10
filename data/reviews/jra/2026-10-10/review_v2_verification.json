@@ -1,0 +1,49 @@
+{
+  "schema_version": "kba.review-verification/1",
+  "authority": "jra",
+  "date_jst": "2026-10-10",
+  "review_file": "predictions/report_20261010_jra_review_v2.json",
+  "forecast_ref": {
+    "file": "predictions/report_20261010_jra_predictions_v1.json",
+    "sha256": "c3d583b88549b63c53cfd46ebe828b544eac1f8cd301be7bca6b7f1e01ef8d0a"
+  },
+  "original_record": {
+    "fixed_at": "2026-10-10T09:19:12+09:00",
+    "hash_method": "utf8-no-bom-lf-sha256",
+    "files": {
+      "report_20261010_jra_predictions_v1.html": "4220c7efeb9f3dec72e6f5c1c0e3c7092d27a805d21c41fb97625275183c43cc",
+      "report_20261010_jra_predictions_v1.json": "691243712000a47cc0f0bf252ab33d1c0ce891b07094ce808916e230254bf88c"
+    },
+    "publication_status": "not_yet_published"
+  },
+  "verified_at": "2026-10-10T19:11:44+09:00",
+  "checks": {
+    "original_sha_unchanged": true,
+    "original_and_published_forecast_values_equal": true,
+    "official_races_confirmed": 24,
+    "horse_number_and_name_matches": 315,
+    "raw_source_sha_matches": 24,
+    "html_race_cards": 24,
+    "html_horse_rows": 315,
+    "html_horse_evidence": 315,
+    "listed_tickets": 27,
+    "unique_ids_and_internal_anchors": true,
+    "independent_official_payout_examples": {
+      "tokyo11_wide_4_5_yen_per_100": 380,
+      "tokyo9_win_3_yen_per_100": 410
+    },
+    "javascript_syntax": "passed",
+    "new_preflight_unit_tests": 8,
+    "real_publisher_rejection_test": 1,
+    "existing_jra_result_parser_tests": 4
+  },
+  "limitations": "UI・配信確認は公開後に記録。新ゲートは比較記録と構造の検査で、予測改善は未実証。",
+  "correction": [
+    {
+      "changed_at": "2026-10-10T19:11:44+09:00",
+      "previous": "report_20261010_jra_review_v1.html",
+      "reason": "レビューv1の京都3R本文で参考ワイドを4–8と誤記した。発走前JSONの実際の掲載案は4–5で、相手⑤は5着。本文を訂正し、元のレビューv1・発走前予想v1を保持。金額・順位・公式結果・集計は変更なし。画面の馬場区分も日本語へ変更。"
+    }
+  ],
+  "money_and_tickets_unchanged_from_review_v1": true
+}
