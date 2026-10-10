@@ -164,3 +164,17 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 - `fact_checks[]`：馬番・根拠走ID・実際のフィールド名・期待値。値の一致はその自由文全体の正しさや予測力の保証ではない。
 
 開催後のJRAレビューは `kba.jra-review/1` / `document_type: review`。`forecast_fixed_at` と `reviewed_at` を分け、元の固定SHA、公開JSONの参照SHA、全頭の固定値と公式結果、掲載点と朝価格、仮想収支、同費用基準、診断、限界、改善の実装状態を保持する。実購入なしでは `actual_purchase: null`。元予想を結果後の評価へ書き換えない。
+
+## 9. 的中を重視するフォーメーションの比較記録
+
+2026-10-10の追加合意。次回の指定形式を検討するレースでは `analysis.formation_review` に以下を保存する。既存原本へ後付けしない。既存の指数・`rank`・`bet_plans`の意味を変えない追加項目であり、専用の描画・公開前ゲート・自動集計は未実装。
+
+- `objective`：`hit_within_fixed_budget`。所定の点数・予算での的中を重視し、費用・回収も確認する作成方針。最適化済み確率の宣言ではない。
+- `reviewed_at`：発走前の比較確認時刻。未確認は `null` と理由を残す。
+- `plans[]`：券種 `kind`、検討した馬番の群 `groups`、`decision`（`main` / `alternative` / `skip` / `reference`）、`linked_plan_id`（採用案の `bet_plans[].plan_id`。見送り等で案がなければ `null`）、`reason`。群は着順ではなく券種の組合せ条件。実際の全点・金額・価格条件は対応する買い目に保存する。
+- `plans[].role_reviews[]`：`number`、`role`（`top_two_axis` / `top_three_axis` / `counterpart`）、有力相手と直接比較した `compared_with`、`reason`、実際の根拠 `evidence_refs`。勝つ候補・総合順位とは別に記述する。
+- `plans[].scenario_checks[]`：`main` / `alternate` の展開、同時好走を想定する馬と組合せ、その根拠と崩れる条件、案の採否。未校正指数から同時的中確率を生成しない。
+- `plans[].excluded_combinations[]`：群の制限で外す組合せ `numbers`、残した点との比較 `reason`、`evidence_refs`。単なる順位が下位という説明で代替しない。通常の相手候補外の比較も残し、JRAでは既存 `preflight_review.exclusions` を併用する。
+- `missing[]`：不足材料と、採否への影響。未確認を適性あり・安全な軸・価格達成へ変換しない。
+
+検証用の従来順位・人気基準も同じ発走前スナップショットへ固定する。開催後は軸の捕捉と相手の同時捕捉、群の除外、的中・費用・払戻を分離。実購入・掲載案・新規の事後診断を混ぜない。判断手順は [betting-formations.md](betting-formations.md) を参照する。
