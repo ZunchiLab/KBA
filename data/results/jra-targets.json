@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-10",
+  "forecast": "predictions/report_20261010_jra_predictions_v1.json",
+  "result_menu_cname": "pw01sli00/AF",
+  "active_until": "2026-10-10T17:30:00+09:00",
+  "state_file": "C:\\Users\\furokei\\Documents\\Codex\\2026-09-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\20261010\\results_worker.health.json"
+}
