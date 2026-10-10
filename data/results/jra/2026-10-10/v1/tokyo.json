@@ -9,8 +9,8 @@
     "sha256": "c3d583b88549b63c53cfd46ebe828b544eac1f8cd301be7bca6b7f1e01ef8d0a",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-10T13:04:04+09:00",
-  "last_poll_at": "2026-10-10T13:04:04+09:00",
+  "updated_at": "2026-10-10T13:06:10+09:00",
+  "last_poll_at": "2026-10-10T13:06:10+09:00",
   "published_at": null,
   "races": [
     {
@@ -1672,12 +1672,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604030620261010/91"
         },
-        "retrieved_at": "2026-10-10T13:04:04+09:00",
-        "raw_sha256": "94c36c9c88d657ffe93ba55e8362c64cb77b2be6056480acd2a514f4c34df468",
-        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/94c36c9c88d657ffe93ba55e8362c64cb77b2be6056480acd2a514f4c34df468.raw.html",
+        "retrieved_at": "2026-10-10T13:06:10+09:00",
+        "raw_sha256": "ff8b434037507645f4e9210ab9caeebf4145942a4ede6af6f52555823a96d15c",
+        "raw_file": "data/results/sources/jra/2026-10-10/tokyo/ff8b434037507645f4e9210ab9caeebf4145942a4ede6af6f52555823a96d15c.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-10T13:04:04+09:00",
+      "source_checked_at": "2026-10-10T13:06:10+09:00",
       "rows_complete": false,
       "rows": [
         {
@@ -1689,7 +1689,7 @@
           "time": "1:36.2",
           "margin": "",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "4",
           "final_win_odds": null
         },
         {
@@ -1701,7 +1701,7 @@
           "time": "",
           "margin": "アタマ",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "1",
           "final_win_odds": null
         },
         {
@@ -1713,7 +1713,7 @@
           "time": "",
           "margin": "１ 1/2",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "5",
           "final_win_odds": null
         },
         {
@@ -1725,7 +1725,7 @@
           "time": "",
           "margin": "１",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "3",
           "final_win_odds": null
         },
         {
@@ -1737,7 +1737,7 @@
           "time": "",
           "margin": "２ 1/2",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "9",
           "final_win_odds": null
         }
       ],
