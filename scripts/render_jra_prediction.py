@@ -12,12 +12,43 @@ def render(d,json_name,results=None):
     results={k:legacy_result(v) if v.get('schema_version')=='kba.results/1' else v for k,v in (results or {}).items()}
     s=shared_render(d,json_name,results)
     s=s.replace('園田・大井','東京・京都').replace('園田と大井。','東京と京都。').replace('NAR ·','JRA ·').replace('昨日の反省と、今日の評価方法','これまでの反省と、今日の評価方法')
-    s=s.replace('全頭評価 / 少点数の本線 / 三連単の別案','全24レース・315頭 / 勝つ候補と圏内候補 / 公式出馬表で照合')
+    s=s.replace('全頭評価 / 少点数の本線 / 三連単の別案',f'全{len(d["races"])}レース・{sum(len(r["horses"]) for r in d["races"])}頭 / 勝つ候補と圏内候補 / 公式出馬表で照合')
     s=s.replace('金額はすべて例・全点100円。','金額はすべて例。点ごとの額は買い目表を参照。')
     s=s.replace('自信度は比較材料の揃い方、波乱度は未知条件・休養・先行競合の主観評価です。勝率・期待値は推定していません。','自信度は比較材料の揃い方、波乱度は未知条件・休養・先行競合の主観評価です。荒れ確率は未校正のため未算定。勝率・期待値は推定していません。比較指数と人手の印の違いは各馬へ記録しています。')
     s=s.replace('本線／別案／見送り','本線／別案／見送り')
     s=s.replace('三連単などの別案','本線との入替え参考案')
     s=s.replace('前日','前日')
+    has_formations=any(r.get('analysis',{}).get('formation_review') for r in d['races'])
+    if has_formations:
+        s=s.replace('<strong>価格と直前条件を満たした点だけ</strong>が候補です。','<strong>構成の全点が価格と直前条件を満たす案だけ</strong>が候補です。1点でも未達・未取得なら、その案全体を見送ります。')
+        s=s.replace('保存価格で下限達成の本線：','保存価格で全点の下限が揃った本線：')
+        s=s.replace('BOXは順番違いをカバーしますが、選ばなかった馬が入ると外れます。','群は着順ではなく組合せの制限です。軸が外れる、相手候補外の馬が入る、相手2頭が追加群だけになる場合は外れます。')
+        s=s.replace('直前条件：取消なし・状態と馬場を確認・各点の下限以上・締切前。未確認なら見送り。BOXの全組合せを買う必要はありません。','直前条件：取消なし・状態と馬場を確認・構成全点が下限以上・締切前。1点でも不達または未確認なら案全体を見送り。別案は本線と入替えです。')
+        for r in d['races']:
+            review=r.get('analysis',{}).get('formation_review')
+            if not review:continue
+            blocks=['<section class="formation-review panel"><h3>券種別の軸・相手・組合せの制限</h3><p class="muted">馬番で表示。総合順位と別に選んだ候補群です。馬連は連対軸、三連複・ワイドは圏内軸。群は着順ではありません。</p>']
+            for f in review['plans']:
+                label={'main':'本線','alternative':'入替え案','reference':'参考・本線見送り','skip':'見送り'}[f['decision']]
+                groups=f.get('groups',[])
+                group_text=(' / '.join('−'.join(map(str,g)) for g in groups) if f['kind']=='wide' else ' → '.join(','.join(map(str,g)) for g in groups)) if groups else '構成を固定しない'
+                axes='・'.join(str(x['number']) for x in f.get('role_reviews',[]) if x['role']!='counterpart')
+                blocks.append('<div class="formation-item"><h4>'+KINDS[f['kind']]+' · '+label+'</h4><p><b>'+escape(group_text)+'</b>'+(' ／軸 '+axes if axes else '')+'</p><p>'+escape(f['reason'])+'</p>')
+                if f.get('linked_plan_id'):
+                    plan=next(p for p in r['bet_plans'] if p['plan_id']==f['linked_plan_id'])
+                    ok=plan.get('all_points_price_condition_at_snapshot')
+                    status='保存価格では全点下限達成（直前条件は未確認）' if ok else '保存価格では1点以上が未達・未取得：案全体を見送り'
+                    blocks.append('<p class="decision">'+escape(status)+f'。全{plan["points"]}点・{plan["maximum_example_yen"]:,}円の例。</p>')
+                if f.get('excluded_combinations'):
+                    combos=' / '.join('−'.join(map(str,c['numbers'])) for c in f['excluded_combinations'])
+                    blocks.append('<details><summary>この群の制限で外れる点：'+escape(combos)+'</summary><p>'+escape(f.get('group_exclusion_note',''))+'</p></details>')
+                blocks.append('</div>')
+            blocks.append('<p class="muted">比較固定 '+escape(review['reviewed_at'])+'。同時的中確率は未算定。金額・ワイド形式は今回の例で、実購入記録ではありません。</p></section>')
+            start=s.index('<article class="race" id="'+r['race_uid']+'"');end=s.index('</article>',start)
+            fragment=s[start:end]
+            marker='<fieldset class="plan-choice">' if r['bet_plans'] else '<h3>全頭の印・評価・着順</h3>'
+            fragment=fragment.replace(marker,''.join(blocks)+marker,1)
+            s=s[:start]+fragment+s[end:]
     for r in d['races']:
         for p in r['bet_plans']:
             old=f'{p["points"]}点 × 100円 = 最大{p["maximum_example_yen"]:,}円'
@@ -58,7 +89,11 @@ def render(d,json_name,results=None):
     def config(m):
         c=json.loads(m[2]);c['authority']='jra';return m[1]+json.dumps(c,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+m[3]
     s=re.sub(pattern,config,s,flags=re.S)
-    quick='<section class="panel"><h2>本線の一覧：価格条件付き・金額は例</h2><div class="quick-picks">'+''.join('<a href="#'+r['race_uid']+'"><b>'+r['venue']+str(r['race'])+'R</b> '+r['start']+'<br>'+escape(' / '.join(p['type']+' '+', '.join('−'.join(map(str,t['numbers']))+' 最低'+str(t['minimum_odds'])+'倍' for t in p['tickets']) for p in r['bet_plans'] if p['selected_for_example']))+'</a>' for r in d['races'] if any(p['selected_for_example'] for p in r['bet_plans']))+'</div><p class="muted">朝の確認版です。午後のオッズ・馬場・取消・状態は購入直前に再確認。満たさなければ見送り、余りは再配分しません。</p></section>'
+    def quick_plan(p):
+        if p['method']=='formation':
+            return p['type']+' '+ ' → '.join(','.join(map(str,g)) for g in p['groups'])+f' ／{p["points"]}点・{p["maximum_example_yen"]:,}円'
+        return p['type']+' '+', '.join('−'.join(map(str,t['numbers']))+' 最低'+str(t['minimum_odds'])+'倍' for t in p['tickets'])
+    quick='<section class="panel"><h2>本線の一覧：価格条件付き・金額は例</h2><div class="quick-picks">'+''.join('<a href="#'+r['race_uid']+'"><b>'+r['venue']+str(r['race'])+'R</b> '+r['start']+'<br>'+escape(' / '.join(quick_plan(p) for p in r['bet_plans'] if p['selected_for_example']))+'</a>' for r in d['races'] if any(p['selected_for_example'] for p in r['bet_plans']))+'</div><p class="muted">朝の確認版です。午後のオッズ・馬場・取消・状態は購入直前に再確認。満たさなければ見送り、余りは再配分しません。</p></section>'
     s=s.replace('<section class="panel" id="results-panel">',quick+'<section class="panel" id="results-panel">',1)
     w=d.get('win5',{});s=s.replace('<footer class="panel">','<section class="panel"><h2>WIN5：今回は見送り</h2><p>'+escape(w.get('note','未作成'))+'</p><ul>'+''.join('<li>'+escape(x['label'])+'：'+escape('・'.join(map(str,x['candidates'])))+'</li>' for x in w.get('legs',[]))+'</ul></section><footer class="panel">',1)
     return s
