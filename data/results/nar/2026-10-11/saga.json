@@ -9,7 +9,7 @@
   "forecast_file": "report_20261011_nar_predictions_v1.json",
   "forecast_sha256": "4cd44badb90ecc33c978a40a96d425af50ab0dd15ce957ef4a3420f234187c3f",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-11T20:19:36+09:00",
+  "updated_at": "2026-10-11T20:21:41+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -1377,13 +1377,13 @@
       "race": 10,
       "name": "長崎街道境原（さかいばる）宿特選Ｃ１",
       "start_at": "2026-10-11T20:10:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 8,
           "name": "モズライフセーバー",
           "finish": 1,
-          "time": "",
+          "time": "1:30.2",
           "margin": "",
           "last_3f": "",
           "jockey": "山口勲 （佐賀）",
@@ -1395,8 +1395,8 @@
           "number": 10,
           "name": "ケンブリッジナイト",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:30.3",
+          "margin": "クビ",
           "last_3f": "",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "430(-1)",
@@ -1407,13 +1407,109 @@
           "number": 5,
           "name": "バウンドトゥウィン",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:30.7",
+          "margin": "2",
           "last_3f": "",
           "jockey": "青海大 （佐賀）",
           "body_weight": "434(-1)",
           "final_popularity": 9,
           "final_win_odds": "88.6"
+        },
+        {
+          "number": 2,
+          "name": "ジューンナデシコ",
+          "finish": 4,
+          "time": "1:31.2",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "長谷蓮 （佐賀）",
+          "body_weight": "491(1)",
+          "final_popularity": 4,
+          "final_win_odds": "13.4"
+        },
+        {
+          "number": 6,
+          "name": "ルーメン",
+          "finish": 5,
+          "time": "1:31.4",
+          "margin": "1.1/4",
+          "last_3f": "",
+          "jockey": "竹吉徹 （佐賀）",
+          "body_weight": "439(9)",
+          "final_popularity": 7,
+          "final_win_odds": "24.4"
+        },
+        {
+          "number": 11,
+          "name": "グレイストーム",
+          "finish": 6,
+          "time": "1:32.1",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "飛田愛 （佐賀）",
+          "body_weight": "485(7)",
+          "final_popularity": 5,
+          "final_win_odds": "14.6"
+        },
+        {
+          "number": 1,
+          "name": "メイショウマツリ",
+          "finish": 7,
+          "time": "1:32.3",
+          "margin": "1.1/4",
+          "last_3f": "",
+          "jockey": "田中純 （佐賀）",
+          "body_weight": "488(-18)",
+          "final_popularity": 10,
+          "final_win_odds": "92.4"
+        },
+        {
+          "number": 9,
+          "name": "ドラゴンバスター",
+          "finish": 8,
+          "time": "1:32.4",
+          "margin": "クビ",
+          "last_3f": "",
+          "jockey": "出水拓 （佐賀）",
+          "body_weight": "449(-10)",
+          "final_popularity": 3,
+          "final_win_odds": "11.9"
+        },
+        {
+          "number": 7,
+          "name": "ファイヴロージズ",
+          "finish": 9,
+          "time": "1:32.4",
+          "margin": "ハナ",
+          "last_3f": "",
+          "jockey": "田中直 （佐賀）",
+          "body_weight": "497(-6)",
+          "final_popularity": 6,
+          "final_win_odds": "21.9"
+        },
+        {
+          "number": 3,
+          "name": "キングオリヴァー",
+          "finish": 10,
+          "time": "1:32.4",
+          "margin": "クビ",
+          "last_3f": "",
+          "jockey": "山田貴 （佐賀）",
+          "body_weight": "469(-1)",
+          "final_popularity": 8,
+          "final_win_odds": "25.1"
+        },
+        {
+          "number": 4,
+          "name": "ファーレンジョー",
+          "finish": 11,
+          "time": "1:32.6",
+          "margin": "1",
+          "last_3f": "",
+          "jockey": "加茂飛 （佐賀）",
+          "body_weight": "462(4)",
+          "final_popularity": 11,
+          "final_win_odds": "274.4"
         }
       ],
       "refunds": [
@@ -1538,11 +1634,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=10",
-        "retrieved_at": "2026-10-11T20:19:35+09:00",
-        "sha256": "2056684e60fc04e70b43af0aed10648e139d3a13afc12ecaaffa4c4bc110acd6",
-        "saved_file": "data/results/sources/2026-10-11/saga/r10_201935_2056684e60fc.html"
+        "retrieved_at": "2026-10-11T20:21:41+09:00",
+        "sha256": "2657e2430ff17a0b5f4240c6891a63d5059b77d9aee8790bad63ed013987fb7a",
+        "saved_file": "data/results/sources/2026-10-11/saga/r10_202141_2657e2430ff1.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 11,
