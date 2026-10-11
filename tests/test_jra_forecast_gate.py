@@ -28,4 +28,26 @@ class Gate(unittest.TestCase):
         p=fixture();p['races'][0]['analysis']['preflight_review']['scenario_checks'].pop();self.assertIn('scenario_ticket_audit_missing',self.codes(p))
     def test_repeated_evidence_and_cost_error_fail(self):
         p=fixture();h=p['races'][0]['horses'][0];h['evaluated_runs']*=2;p['budget']['selected_main_yen']=200;self.assertTrue({'duplicate_scored_run','budget_mismatch'}<=self.codes(p))
+    def counterpart_fixture(self):
+        p=fixture();p['date_jst']='2026-10-12';p['fixed_at']='2026-10-12T09:00:00+09:00';r=p['races'][0];r['start_at']='2026-10-12T10:00:00+09:00'
+        for n in [3,4,5]:
+            h=deepcopy(r['horses'][1]);h.update(number=n,rank=n,model_rank=n,market={'win':2.5 if n==5 else float(n+1)},evidence_refs=['run'+str(n)])
+            h['past'][0].update(run_id='run'+str(n),finish=n);h['evaluated_runs'][0]['run_id']='run'+str(n);r['horses'].append(h)
+        r['bet_plans']=[dict(plan_id='q',kind='quinella',groups=[[1,2],[1,2,3,4]],selected_for_example=True,tickets=[dict(numbers=list(t),example_stake_yen=100) for t in [(1,2),(1,3),(1,4),(2,3),(2,4)]])];p['budget']['selected_main_yen']=500
+        r['analysis']['formation_review']={'plans':[{'linked_plan_id':'q','counterpart_exclusions':[]}]}
+        return p
+    def test_new_omitted_popular_counterpart_requires_its_own_comparison(self):
+        p=self.counterpart_fixture();self.assertIn('counterpart_slot_comparison_missing',self.codes(p))
+        e={'number':5,'compared_with':[1],'reason':'Only compared against axis','evidence_refs':['run1','run5']};p['races'][0]['analysis']['formation_review']['plans'][0]['counterpart_exclusions']=[e]
+        self.assertIn('counterpart_slot_comparison_missing',self.codes(p))
+        e.update(compared_with=[4],evidence_refs=['run4','run5']);self.assertEqual(audit(p,True),[])
+    def test_counterpart_comparison_needs_evidence_from_both_horses(self):
+        p=self.counterpart_fixture();p['races'][0]['analysis']['formation_review']['plans'][0]['counterpart_exclusions']=[{'number':5,'compared_with':[4],'reason':'Comparison','evidence_refs':['run5']}]
+        self.assertIn('counterpart_slot_comparison_missing',self.codes(p))
+    def test_condition_return_candidate_outside_top_four_is_reviewed(self):
+        p=self.counterpart_fixture();h=p['races'][0]['horses'][-1];h['market']['win']=90.;h['condition_return_candidate']=True
+        self.assertIn('counterpart_slot_comparison_missing',self.codes(p))
+    def test_existing_forecast_and_unselected_plan_keep_their_contract(self):
+        p=self.counterpart_fixture();p['date_jst']='2026-10-11';p['fixed_at']='2026-10-11T09:00:00+09:00';self.assertEqual(audit(p,True),[])
+        p=self.counterpart_fixture();p['races'][0]['bet_plans'][0]['selected_for_example']=False;p['budget']['selected_main_yen']=0;self.assertEqual(audit(p,True),[])
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "unit_cases": 10,
+  "actual_browser_verified": false,
+  "scope": "Delivered inline JS on DOM stub: venue, search, category, empty results, reset, jump, hash navigation, keyboard, URL restoration."
+}

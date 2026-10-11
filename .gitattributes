@@ -1,3 +1,4 @@
 # Preserve source HTML byte hashes and committed forecast archives on Windows/Linux.
 data/results/sources/** -text
 predictions/archive/** -text
+data/reviews/**/morning-odds/** -text

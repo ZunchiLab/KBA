@@ -36,6 +36,23 @@ def audit(data,strict=False):
                 n=t['numbers'][0];e=review.get('single_win_edge',{});rivals=set(a.get('win_candidates',[])+a.get('place_candidates',[]))-{n};compared=e.get('rival_numbers',[])
                 if e.get('number')!=n or not rivals<=set(compared) or not e.get('why_win_not_only_place') or not evidence(e,n,compared):
                     add('single_win_edge_missing',uid,n,'圏内の安定性とは別に、各有力相手より勝ち切る理由と双方の根拠走が必要。説明できなければ単勝本線を見送る。')
+        # Prospective only: an omitted counterpart competes with another counterpart,
+        # not merely with the strongest axis. Preserve previously fixed forecasts.
+        if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-10-12':
+            market=sorted(hs.values(),key=lambda h:(h['market']['win'] is None,h['market']['win'] or math.inf,h['number']))
+            priced=[h for h in market if h['market']['win'] is not None]
+            credible={h['number'] for h in priced[:4]} | {n for n,h in hs.items() if h.get('condition_return_candidate')}
+            formation=a.get('formation_review',{})
+            for p in mains:
+                if p['kind'] not in ['quinella','trio']:continue
+                pool={n for t in p['tickets'] for n in t['numbers']}
+                axes=set((p.get('groups') or [[]])[0]);counterparts=pool-axes
+                plan_review=next((e for e in formation.get('plans',[]) if e.get('linked_plan_id')==p.get('plan_id')), {})
+                entries={e.get('number'):e for e in plan_review.get('counterpart_exclusions',[])}
+                for n in sorted(credible-pool):
+                    e=entries.get(n,{});compared=e.get('compared_with',[])
+                    if not (set(compared)<=pool and set(compared)&counterparts and e.get('reason') and evidence(e,n,compared)):
+                        add('counterpart_slot_comparison_missing',uid,n,'保存単勝上位4頭・条件戻り候補を本線の馬連／三連複候補群から外す時は、枠を争う採用相手（軸以外）との比較と双方の根拠走をformation_review.plans[].counterpart_exclusionsへ保存する。')
         # Compare all uncertain runners and credible omitted opponents, not just today's eventual winners.
         exclusions={x['number']:x for x in review.get('exclusions',[]) if 'number' in x}
         for n,h in hs.items():

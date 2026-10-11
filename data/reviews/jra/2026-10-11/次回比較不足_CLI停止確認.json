@@ -1,0 +1,16 @@
+{
+  "schema_version": "kba.jra-preflight/1",
+  "forecast": "C:\\Users\\furokei\\Documents\\Codex\\2026-09-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\20261011_review\\gate_synthetic_incomplete.json",
+  "strict": true,
+  "passed": false,
+  "scope": "形式・整合性と明示的比較の記録を確認。自由文の全事実・能力・期待値・未来の的中は検証しない。",
+  "findings": [
+    {
+      "code": "counterpart_slot_comparison_missing",
+      "severity": "error",
+      "race_uid": "test",
+      "number": 5,
+      "message": "保存単勝上位4頭・条件戻り候補を本線の馬連／三連複候補群から外す時は、枠を争う採用相手（軸以外）との比較と双方の根拠走をformation_review.plans[].counterpart_exclusionsへ保存する。"
+    }
+  ]
+}

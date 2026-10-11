@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-11T17:27:09+09:00",
+  "passed": true,
+  "races": 24,
+  "horses": 344,
+  "raw_result_sha_count": 24,
+  "published_morning_price_raw_sha_count": 10,
+  "settled_ticket_checks": 1083,
+  "originals": [
+    {
+      "name": "report_20261011_jra_predictions_v1.html",
+      "sha256": "112ae0689eb1c2f11acf45681dc9b912bd2af659d0e30c10374909ca38ef2e02"
+    },
+    {
+      "name": "report_20261011_jra_predictions_v1.json",
+      "sha256": "af994fc9e0924668b74463f4e90406bc350598f8da07d74214d49a1f835acdba"
+    },
+    {
+      "name": "report_20261011_jra_predictions_v2.html",
+      "sha256": "24bbd66cc59267f9309a10b8062151e9c02152d24ca194fe335d88e769805dca"
+    },
+    {
+      "name": "report_20261011_jra_predictions_v2.json",
+      "sha256": "c4de4f56c50671bf8a9748b5f7c6fe304bd4b8a829036601f51793132c08ca80"
+    },
+    {
+      "name": "report_20261011_jra_predictions_v3.json",
+      "sha256": "8b6f3f3d4f8e8f08897a0e361c69f3679b7d2f25720e29230dc80c64855be44d"
+    },
+    {
+      "name": "report_20261011_jra_predictions_v3.html",
+      "sha256": "67d47c9af5439dff705933e5cf2f37842e5226d1812b6a654e03b38c267e83e8"
+    }
+  ],
+  "public_forecast_identical_excluding_publication": true,
+  "report_fixed_horse_values_identical": true,
+  "formation_expansion_checks": 171,
+  "inline_js_syntax": true,
+  "all_internal_links_resolve": true,
+  "strict_original_forecast_passed": true,
+  "next_forecast_incomplete_cli_exit": 1,
+  "actual_browser_verified": false,
+  "browser_limit": "Computer Use inventory returned apps=[], browsers=[]; actual screen/mobile interaction not tested in this turn."
+}
