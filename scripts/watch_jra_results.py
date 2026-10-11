@@ -2,7 +2,7 @@
 from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from hashlib import sha256
-from argparse import ArgumentParser
+from argparse import ArgumentParser,SUPPRESS
 from contextlib import contextmanager
 import json,re,urllib.request,urllib.parse,subprocess,time,os,sys,tempfile
 from bs4 import BeautifulSoup
@@ -132,9 +132,22 @@ def publish(config):
             if any((ROOT/git('rev-parse','--git-path',n).stdout.strip()).exists() for n in ['rebase-merge','rebase-apply']):git('rebase','--abort')
             if i==2:raise
             time.sleep(3+i*5)
+def meeting_active(config,at=None):
+    at=at or datetime.now(JST)
+    until=datetime.fromisoformat(config['active_until'])
+    if until.tzinfo is None or until.astimezone(JST).date().isoformat()!=config['date']:
+        raise ValueError('Meeting deadline must match the configured JST date')
+    return at.astimezone(JST).date().isoformat()==config['date'] and at<until
+
+def load_config(args):
+    return json.loads((ROOT/args.config).read_text(encoding='utf-8'))
+
+def state_path(args,config):
+    return ROOT/(getattr(args,'state_file',None) or config['state_file'])
+
 def run(args):
-    config=json.loads((ROOT/args.config).read_text(encoding='utf-8'));state=ROOT/config['state_file'];until=datetime.fromisoformat(config['active_until'])
-    while datetime.now(JST)<until:
+    config=load_config(args);state=state_path(args,config);until=datetime.fromisoformat(config['active_until'])
+    while meeting_active(config):
         try:
             complete,changed=update(config,args.recheck)
             if args.publish:publish(config)
@@ -146,7 +159,44 @@ def run(args):
             atomic(state,dict(at=now(),state='retrying',pid=os.getpid(),error=str(e),stop_at=config['active_until']));print(now(),str(e),flush=True)
             if args.once:raise
             time.sleep(15)
-    atomic(state,dict(at=now(),state='stopped_at_deadline',pid=os.getpid(),stop_at=config['active_until']))
+    atomic(state,dict(at=now(),state='stopped_outside_meeting',pid=os.getpid(),stop_at=config['active_until']))
+
+def saved_complete(config):
+    text=(ROOT/config['forecast']).read_text(encoding='utf-8-sig').replace('\r\n','\n')
+    d=json.loads(text);digest=sha256(text.encode()).hexdigest()
+    for v in d['venues']:
+        path=ROOT/'data/results/jra'/config['date']/d['forecast_version']/(v['venue_key']+'.json')
+        if not path.exists():return False
+        data=json.loads(path.read_text(encoding='utf-8'))
+        expected={r['race_no'] for r in d['races'] if r['venue_key']==v['venue_key']}
+        if data['forecast_ref']['sha256']!=digest or data['forecast_ref']['version']!=d['forecast_version']:
+            return False
+        if {r['race_no'] for r in data['races']}!=expected or not all(r['status'] in ['confirmed','cancelled'] for r in data['races']):
+            return False
+    return True
+
+def supervise(args):
+    """Keep a failed local child running only within the configured meeting."""
+    while True:
+        config=load_config(args)
+        if not meeting_active(config):return
+        command=[sys.executable,'-u','-X','utf8',str(Path(__file__).resolve()),'--config',args.config,'--worker']
+        for flag in ['publish','recheck']:
+            if getattr(args,flag):command.append('--'+flag)
+        if args.state_file:command+=['--state-file',args.state_file]
+        remaining=(datetime.fromisoformat(config['active_until'])-datetime.now(JST)).total_seconds()
+        try:
+            child=subprocess.run(command,cwd=ROOT,timeout=max(1,remaining)+30)
+            # A clean exit is only final when collection has actually completed.
+            if child.returncode==0 and saved_complete(config):return
+            reason='Worker exited with code '+str(child.returncode)
+        except (subprocess.TimeoutExpired,OSError) as error:
+            reason=str(error)
+        config=load_config(args)
+        if not meeting_active(config):return
+        atomic(state_path(args,config),dict(at=now(),state='restarting',supervisor_pid=os.getpid(),reason=reason,stop_at=config['active_until']))
+        print(now(),reason,'restarting within meeting window',flush=True)
+        time.sleep(min(15,max(0,(datetime.fromisoformat(config['active_until'])-datetime.now(JST)).total_seconds())))
 @contextmanager
 def lock():
     # Local collection only. Byte-range lock is automatically released on process exit.
@@ -158,6 +208,12 @@ def lock():
             import fcntl;fcntl.flock(f.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB)
         yield
     finally:f.close()
-if __name__=='__main__':
-    ap=ArgumentParser();ap.add_argument('--config',default='data/results/jra-targets.json');ap.add_argument('--once',action='store_true');ap.add_argument('--publish',action='store_true');ap.add_argument('--recheck',action='store_true');args=ap.parse_args()
-    with lock():run(args)
+def main():
+    ap=ArgumentParser();ap.add_argument('--config',default='data/results/jra-targets.json');mode=ap.add_mutually_exclusive_group();mode.add_argument('--once',action='store_true');mode.add_argument('--supervise',action='store_true');ap.add_argument('--publish',action='store_true');ap.add_argument('--recheck',action='store_true');ap.add_argument('--state-file');ap.add_argument('--worker',action='store_true',help=SUPPRESS);args=ap.parse_args()
+    if args.worker:run(args)
+    else:
+        with lock():
+            if args.supervise:supervise(args)
+            else:run(args)
+
+if __name__=='__main__':main()

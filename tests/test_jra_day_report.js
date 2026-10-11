@@ -14,18 +14,19 @@ class Element {
   append(...items) { this.children.push(...items);this.textContent+=items.map(x=>typeof x==='string'?x:x.textContent).join(''); }
   replaceChildren() { this.children=[];this.textContent=''; }
 }
-function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,rows:r.rows,payouts:[]}))};}
-function fixture() {
+function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,rows:r.rows,payouts:r.refunds||[]}))};}
+function fixture(plans=[]) {
   const venues=[{venue_key:'tokyo',label:'東京',baba_code:5},{venue_key:'kyoto',label:'京都',baba_code:8}];
   const forecast={authority:'jra',date_jst:'2026-10-09',forecast_version:'v1'};
   const forecastText=JSON.stringify(forecast)+'\n';
   const digest=crypto.createHash('sha256').update(forecastText).digest('hex');
-  const config={date:forecast.date_jst,version:'v1',jsonFile:'day.json',venues,budget:{day_limit_yen:3000},races:venues.map(v=>({venue_key:v.venue_key,race:1,race_uid:v.venue_key+'-r1',start_at:new Date(now-3600000).toISOString(),horses:[{number:1,name:v.label+'馬',status_at_snapshot:'running'}],bet_plans:[]}))};
+  const numbers=[...new Set([1,...plans.flatMap(p=>p.tickets.flatMap(t=>t.numbers))])].sort((a,b)=>a-b);
+  const config={date:forecast.date_jst,version:'v1',jsonFile:'day.json',venues,budget:{day_limit_yen:3000},races:venues.map(v=>({venue_key:v.venue_key,race:1,race_uid:v.venue_key+'-r1',start_at:new Date(now-3600000).toISOString(),horses:numbers.map(n=>({number:n,name:v.label+'馬'+(n===1?'':n),status_at_snapshot:'running'})),bet_plans:clone(plans)}))};
   const results={};
   for(const v of venues)results[v.venue_key]={authority:'jra',date_jst:config.date,venue_key:v.venue_key,baba_code:v.baba_code,forecast_version:'v1',forecast_sha256:digest,updated_at:new Date(now-60000).toISOString(),refresh_interval_minutes:2,complete:false,races:[{race:1,start_at:new Date(now-3600000).toISOString(),status:'pending',rows:[],refunds:[]}]};
   const nodes={};for(const id of ['day-forecast','day-results','result-status','refresh-results','horse-search','race-filter','empty-state','plan-total'])nodes[id]=new Element();
   nodes['day-forecast'].textContent=JSON.stringify(config);nodes['day-results'].textContent=JSON.stringify(results);nodes['race-filter'].value='all';nodes['result-status'].textContent='保存済み結果';
-  const cards=config.races.map(r=>{const c=new Element();c.id=r.race_uid;c.dataset={venue:r.venue_key,start:r.start_at,search:'馬',bets:'false'};c.parts={};for(const selector of ['.clock-state','.race-result-status','.payouts','.horse[data-number="1"] .horse-finish'])c.parts[selector]=new Element();c.querySelector=s=>{assert(c.parts[s],s);return c.parts[s];};return c;});
+  const cards=config.races.map(r=>{const c=new Element();c.id=r.race_uid;c.dataset={venue:r.venue_key,start:r.start_at,search:'馬',bets:'false'};c.parts={};for(const selector of ['.clock-state','.race-result-status','.payouts',...r.horses.map(h=>`.horse[data-number="${h.number}"] .horse-finish`),...r.bet_plans.map(p=>`[data-plan-result="${p.plan_id}"]`)])c.parts[selector]=new Element();c.querySelector=s=>{assert(c.parts[s],s);return c.parts[s];};return c;});
   cards.forEach(c=>nodes[c.id]=c);
   const doc={hidden:true,events:{},getElementById:id=>nodes[id],querySelectorAll:s=>s==='.race'?cards:[],createElement:()=>new Element(),addEventListener(event,fn){this.events[event]=fn;},body:new Element()};
   const win={events:{},scrollY:0,addEventListener(event,fn){this.events[event]=fn;},scrollTo(){}};
@@ -35,7 +36,7 @@ function fixture() {
     fetch:async url=>{requests.push(url);if(url==='day.json')return{ok:true,text:async()=>forecastText};if(url.includes('api.github.com')){if(apiFailure)throw new Error('API unavailable');return{ok:true,json:async()=>({sha:'a'.repeat(40)})};}const key=venues.find(v=>url.includes('/'+v.venue_key+'.json'))?.venue_key;assert(key,'Unexpected URL '+url);if(unavailable.has(key)||url.includes('raw.githubusercontent.com')&&rawUnavailable.has(key))throw new Error('HTTP outage');return{ok:true,json:async()=>common(clone(results[key]))};}};
   vm.runInNewContext(script, context, {filename:'jra-day-report.js'});
   const flush=async()=>{for(let i=0;i<30;i++)await new Promise(resolve=>setImmediate(resolve));};
-  const confirm=key=>{results[key].races[0].status='confirmed';results[key].races[0].rows=[{number:1,name:venues.find(v=>v.venue_key===key).label+'馬',finish:1}];results[key].complete=true;};
+  const confirm=key=>{results[key].races[0].status='confirmed';results[key].races[0].rows=config.races.find(r=>r.venue_key===key).horses.map((h,i)=>({number:h.number,name:h.name,finish:i+1}));results[key].complete=true;};
   return {nodes,cards,doc,win,results,requests,intervals,confirm,flush,click:()=>nodes['refresh-results'].events.click(),advance:ms=>clock+=ms,failAPI:()=>apiFailure=true,unavailable,rawUnavailable};
 }
 let passed=0;
@@ -53,5 +54,9 @@ async function test(name, action){await action();passed++;console.log('PASS '+na
   await test('returning from hidden mobile tab immediately refreshes',async()=>{const f=fixture();await f.click();f.advance(10000);f.confirm('tokyo');const before=f.requests.length;f.doc.hidden=false;f.doc.events.visibilitychange();await f.flush();assert(f.requests.length>before);assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
   await test('pageshow and focus resume events refresh without waiting two minutes',async()=>{for(const event of ['pageshow','focus']){const f=fixture();await f.click();f.advance(10000);f.confirm('tokyo');f.doc.hidden=false;f.win.events[event]();await f.flush();assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');}});
   await test('completed page stops automatic polling but manual refresh remains available',async()=>{const f=fixture();f.confirm('tokyo');f.confirm('kyoto');await f.click();f.doc.hidden=false;const before=f.requests.length;f.intervals.find(x=>x.ms===120000).fn();await f.flush();assert.equal(f.requests.length,before);await f.click();assert(f.requests.length>before);});
+  const formationPlan=value=>({plan_id:'formation',type:'馬連',kind:'quinella',ordered:false,all_points_price_condition_at_snapshot:value===true,tickets:[[1,2],[1,3],[1,4],[2,3],[2,4]].map((numbers,i)=>({numbers,example_stake_yen:100,price_condition_at_snapshot:i===0?value:true}))});
+  await test('one failed or missing point skips the complete formation',async()=>{for(const value of [false,null]){const f=fixture([formationPlan(value)]);f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'quinella',numbers:[1,3],yen_per_100:1000}];await f.click();const text=f.cards[0].parts['[data-plan-result="formation"]'].textContent;assert.match(text,/構成全点を見送り/);assert.doesNotMatch(text,/400円|点的中/);}});
+  await test('all eligible formation points use the complete cost and official payout',async()=>{const f=fixture([formationPlan(true)]);f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'quinella',numbers:[1,2],yen_per_100:1000}];await f.click();assert.match(f.cards[0].parts['[data-plan-result="formation"]'].textContent,/1\/5点的中、500円→1000円/);});
+  await test('historical per-ticket price semantics stay unchanged',async()=>{const p=formationPlan(false);delete p.all_points_price_condition_at_snapshot;const f=fixture([p]);f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'quinella',numbers:[1,3],yen_per_100:1000}];await f.click();assert.match(f.cards[0].parts['[data-plan-result="formation"]'].textContent,/1\/4点的中、400円→1000円/);});
   console.log(passed+' UI regression cases passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});

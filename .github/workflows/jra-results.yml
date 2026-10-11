@@ -1,0 +1,55 @@
+name: Update JRA results
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/jra-results.yml
+      - scripts/watch_jra_results.py
+      - scripts/render_jra_prediction.py
+      - assets/js/jra-day-report.js
+      - data/results/jra-targets.json
+  workflow_dispatch:
+  # Recovery during October 11 only; the active job polls every two minutes.
+  schedule:
+    - cron: '7 3-8 11 10 *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jra-results-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Check the configured meeting window
+        id: meeting
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          c=json.loads(Path('data/results/jra-targets.json').read_text())
+          now=datetime.now(timezone(timedelta(hours=9)))
+          until=datetime.fromisoformat(c['active_until'])
+          active=(until.tzinfo is not None and now.date().isoformat()==c['date'] and until.astimezone(now.tzinfo).date()==now.date() and now<until)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('active='+str(active).lower()+chr(10))
+          PY
+      - name: Install the official-page parser dependency
+        if: steps.meeting.outputs.active == 'true'
+        run: python3 -m pip install beautifulsoup4
+      - name: Keep official JRA results current until completion or deadline
+        if: steps.meeting.outputs.active == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 -u scripts/watch_jra_results.py --publish --state-file .git/jra-results-cloud.health.json
