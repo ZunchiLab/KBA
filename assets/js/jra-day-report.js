@@ -9,6 +9,7 @@
   const button = document.getElementById('refresh-results');
   const labels = {confirmed:'全着順・払戻掲載',partial:'速報・全着順待ち',not_started:'保存時は発走前',pending:'確定待ち',error:'取得保留',cancelled:'競走取り止め'};
   let active = config.venues[0].venue_key;
+  const compactRaces = {};
   const viewStates = {};
   let forecastPromise;
   let lastRefreshStarted = 0;
@@ -40,17 +41,40 @@
     const q=document.getElementById('horse-search').value.trim().toLowerCase();
     const mode=document.getElementById('race-filter').value;
     const now=Date.now();let visible=0;
+    const matched=[];
     cards.forEach(card=>{
       const closed=Date.parse(card.dataset.start)<=now;
       card.querySelector('.clock-state').textContent=closed?'発走時刻を経過':'';
       card.hidden=Boolean(q&&!card.dataset.search.toLowerCase().includes(q))||(mode==='buy'&&card.dataset.bets!=='true')||(mode==='future'&&closed);
       if(card.dataset.venue===active&&!card.hidden)visible++;
+      if(card.dataset.venue===active&&!card.hidden)matched.push(card);
     });
+    if(config.compact){
+      const requested=config.races.find(r=>'#'+r.race_uid===location.hash&&r.venue_key===active)?.race_uid;
+      if(requested&&matched.some(c=>c.id===requested))compactRaces[active]=requested;
+      if(!matched.some(c=>c.id===compactRaces[active]))compactRaces[active]=matched[0]?.id;
+      cards.filter(c=>c.dataset.venue===active).forEach(c=>c.hidden=c.hidden||c.id!==compactRaces[active]);
+      document.querySelectorAll('.race-jumps a[data-race-uid]').forEach(a=>{
+        const on=a.dataset.raceUid===compactRaces[active];
+        a.setAttribute('aria-current',String(on));
+        const found=matched.some(c=>c.id===a.dataset.raceUid);
+        if(a.closest('[data-venue]').dataset.venue===active)a.setAttribute('aria-disabled',String(!found));
+      });
+      // Replace a stale hash after filtering without adding a history entry.
+      if(compactRaces[active]&&location.hash!=='#'+compactRaces[active]){
+        const u=new URL(location.href);u.hash=compactRaces[active];history.replaceState(null,'',u);
+      }
+    }
     document.getElementById('empty-state').hidden=visible>0;
   }
   document.getElementById('horse-search').addEventListener('input',filter);
   document.getElementById('race-filter').addEventListener('change',filter);
   window.addEventListener('hashchange',()=>{if(hashVenue())chooseVenue(hashVenue());});
+  if(config.compact)document.querySelectorAll('a[href^="#jra-"]').forEach(a=>a.addEventListener('click',event=>{
+    if(a.getAttribute('aria-disabled')==='true'){event.preventDefault();return;}
+    const r=config.races.find(r=>'#'+r.race_uid===a.getAttribute('href'));
+    if(r){compactRaces[r.venue_key]=r.race_uid;}
+  }));
   chooseVenue(hashVenue()||new URL(location.href).searchParams.get('venue'),false);
   setInterval(filter,30000);
   try {
@@ -61,7 +85,7 @@
     let total=0;const choices={};
     document.querySelectorAll('.plan-choice input:checked').forEach(r=>{total+=Number(r.dataset.cost);choices[r.name]=r.value;});
     const el=document.getElementById('plan-total');
-    el.textContent=`仮プラン全点合計 ${total.toLocaleString()}円 / 上限例 ${config.budget.day_limit_yen.toLocaleString()}円（購入未記録）`;
+    el.textContent=config.compact?`仮プラン ${total.toLocaleString()}円 / 上限例 ${config.budget.day_limit_yen.toLocaleString()}円 · 未購入`:`仮プラン全点合計 ${total.toLocaleString()}円 / 上限例 ${config.budget.day_limit_yen.toLocaleString()}円（購入未記録）`;
     el.classList.toggle('over-budget',total>config.budget.day_limit_yen);
     try {localStorage.setItem(storageKey,JSON.stringify(choices));} catch (_) {}
   }
@@ -71,7 +95,7 @@
     const byNumber=btn.dataset.order!=='number';const list=card.querySelector('.all-horses');
     const rank=n=>race.horses.find(h=>h.number===n).rank||999;
     [...list.children].sort((a,b)=>byNumber?Number(a.dataset.number)-Number(b.dataset.number):rank(Number(a.dataset.number))-rank(Number(b.dataset.number))).forEach(h=>list.append(h));
-    btn.dataset.order=byNumber?'number':'rank';btn.textContent=byNumber?'総合順位順に切替':'馬番順に切替';
+    btn.dataset.order=byNumber?'number':'rank';btn.textContent=config.compact?(byNumber?'総合順':'馬番順'):(byNumber?'総合順位順に切替':'馬番順に切替');
   }));
   function toast(message) { const e=document.createElement('div');e.className='toast';e.role='status';e.textContent=message;document.body.append(e);setTimeout(()=>e.remove(),4000); }
   document.querySelectorAll('.copy-plan').forEach(btn=>btn.addEventListener('click',async()=>{
@@ -139,13 +163,13 @@
       else if(rr.status==='error')note.append(' / 公式取得に失敗。着順をまだ保存できていません。');
       if(rr.refresh_error)note.append(' / 既知の結果を保持');
       for(const h of race.horses){const row=rr.rows.find(r=>r.number===h.number);const el=card.querySelector(`.horse[data-number="${h.number}"] .horse-finish`);
-        el.textContent=row?(Number.isInteger(row.finish)?row.finish+'着':String(row.finish)):h.status_at_snapshot==='withdrawn'?'取消':rr.status==='cancelled'?'競走取止':rr.status==='not_started'?'保存時は発走前':'未確定';
+        el.textContent=row?(Number.isInteger(row.finish)?row.finish+'着':String(row.finish)):h.status_at_snapshot==='withdrawn'?'取消':rr.status==='cancelled'?'競走取止':config.compact?'—':rr.status==='not_started'?'保存時は発走前':'未確定';
         el.classList.toggle('podium',Boolean(row&&Number.isInteger(row.finish)&&row.finish<=3));
       }
       const payouts=card.querySelector('.payouts');payouts.replaceChildren();
       if(rr.refunds?.length){const det=document.createElement('details');const sum=document.createElement('summary');sum.textContent='公式払戻を見る（100円あたり）';det.append(sum);const ul=document.createElement('ul');for(const p of rr.refunds){const li=document.createElement('li');li.textContent=`${p.kind} ${p.combination} ${p.yen_per_100.toLocaleString()}円`;ul.append(li);}det.append(ul);payouts.append(det);}
       for(const plan of race.bet_plans){const el=card.querySelector(`[data-plan-result="${plan.plan_id}"]`);
-        if(rr.status!=='confirmed'){el.textContent='掲載案の結果：確定待ち／実購入未記録';continue;}
+        if(rr.status!=='confirmed'){el.textContent=config.compact?'結果待ち · 実購入未記録':'掲載案の結果：確定待ち／実購入未記録';continue;}
         if(rr.rows.some(row=>!Number.isInteger(row.finish))){el.textContent='取消・除外等を含むため返還の照合待ち。収支判定は保留／実購入未記録';continue;}
         const eligible=plan.tickets.filter(t=>t.price_condition_at_snapshot===true);
         if(plan.all_points_price_condition_at_snapshot!==undefined&&eligible.length!==plan.tickets.length){el.textContent='保存価格条件では構成全点を見送り（1点以上が未達・未取得）／実購入未記録';continue;}
@@ -171,6 +195,7 @@
     }
     status.textContent=lastRefreshMessage+(warnings.length?' / '+warnings.join(' / '):'');
     status.classList.toggle('update-warning',warnings.length>0);
+    if(config.compact&&warnings.length)document.querySelector('#results-panel details').open=true;
   }
   async function refresh(automatic=false) {
     if(button.disabled||automatic&&document.hidden||automatic&&config.venues.every(v=>stored[v.venue_key]?.complete))return;

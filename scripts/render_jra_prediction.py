@@ -10,6 +10,9 @@ def legacy_result(d):
     return dict(schema_version=1,authority='jra',date_jst=d['date_jst'],venue_key=d['venue_key'],baba_code=5 if d['venue_key']=='tokyo' else 8,forecast_version=d['forecast_ref']['version'],forecast_sha256=d['forecast_ref']['sha256'],updated_at=d['updated_at'],last_poll_at=d['last_poll_at'],complete=all(r['status'] in ['confirmed','cancelled'] for r in d['races']),refresh_interval_minutes=2,races=[dict(race=r['race_no'],start_at=r['start_at'],status=r['status'],source=r.get('source'),refresh_error=r.get('refresh_error'),rows=[dict(number=h['number'],name=h['name'],finish=h['finish'] if h['finish'] is not None else h.get('official_status_text','未確定')) for h in r['rows']],refunds=[dict(kind=KINDS.get(p['kind'],p['kind']),numbers=p['numbers'],combination='−'.join(map(str,p['numbers'])),yen_per_100=p['yen_per_100']) for p in r['payouts']]) for r in d['races']])
 def render(d,json_name,results=None):
     results={k:legacy_result(v) if v.get('schema_version')=='kba.results/1' else v for k,v in (results or {}).items()}
+    if d.get('presentation',{}).get('layout')=='compact-v1':
+        from render_jra_compact import render as compact_render
+        return compact_render(d,json_name,results)
     s=shared_render(d,json_name,results)
     if d.get('revision'):
         revision=d['revision']
