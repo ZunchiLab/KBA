@@ -139,7 +139,8 @@
       for(const plan of race.bet_plans){const el=card.querySelector(`[data-plan-result="${plan.plan_id}"]`);
         if(rr.status!=='confirmed'){el.textContent='掲載案の結果：確定待ち／実購入未記録';continue;}
         if(rr.rows.some(row=>!Number.isInteger(row.finish))){el.textContent='取消・除外等を含むため返還の照合待ち。収支判定は保留／実購入未記録';continue;}
-        const eligible=plan.tickets.filter(t=>t.price_condition_at_snapshot===true);
+        const priced=plan.tickets.filter(t=>t.price_condition_at_snapshot===true);
+        const eligible=plan.price_rule==='all_tickets_required'&&priced.length!==plan.tickets.length?[]:priced;
         if(!eligible.length){el.textContent='保存価格条件では全点見送り／実購入未記録';continue;}
         const prices=rr.refunds.filter(p=>p.kind===plan.type);
         if(!prices.length){el.textContent='該当券種の払戻未確認。判定保留';continue;}
