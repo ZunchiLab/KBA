@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: jra-results-main
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 jobs:
   update:

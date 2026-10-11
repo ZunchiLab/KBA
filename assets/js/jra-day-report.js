@@ -86,6 +86,9 @@
     try{const response=await fetch(url,{cache:'no-store',signal:c.signal});if(!response.ok)throw new Error('HTTP '+response.status);return await response.json();}finally{clearTimeout(timer);}
   }
   async function forecastHash() {
+    // Result snapshots were matched against this digest by the server renderer.
+    // Keep the legacy JSON verification when no validated digest was embedded.
+    if(/^[a-f0-9]{64}$/.test(config.forecastSha256||''))return config.forecastSha256;
     if(!forecastPromise) forecastPromise=(async()=>{
       const c=new AbortController();const timer=setTimeout(()=>c.abort(),15000);
       try {

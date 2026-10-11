@@ -91,7 +91,12 @@ def render(d,json_name,results=None):
     # The shared browser code uses this extra discriminator for result paths.
     pattern=r'(<script type="application/json" id="day-forecast">)(.*?)(</script>)'
     def config(m):
-        c=json.loads(m[2]);c['authority']='jra';return m[1]+json.dumps(c,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+m[3]
+        c=json.loads(m[2]);c['authority']='jra'
+        digests={value.get('forecast_sha256') for value in results.values()}
+        if len(digests)==1:
+            digest=next(iter(digests))
+            if isinstance(digest,str) and re.fullmatch('[a-f0-9]{64}',digest):c['forecastSha256']=digest
+        return m[1]+json.dumps(c,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+m[3]
     s=re.sub(pattern,config,s,flags=re.S)
     def quick_plan(p):
         if p['method']=='formation':

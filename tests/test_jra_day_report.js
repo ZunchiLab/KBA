@@ -15,13 +15,14 @@ class Element {
   replaceChildren() { this.children=[];this.textContent=''; }
 }
 function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,rows:r.rows,payouts:r.refunds||[]}))};}
-function fixture(plans=[]) {
+function fixture(plans=[],embeddedDigest=false) {
   const venues=[{venue_key:'tokyo',label:'東京',baba_code:5},{venue_key:'kyoto',label:'京都',baba_code:8}];
   const forecast={authority:'jra',date_jst:'2026-10-09',forecast_version:'v1'};
   const forecastText=JSON.stringify(forecast)+'\n';
   const digest=crypto.createHash('sha256').update(forecastText).digest('hex');
   const numbers=[...new Set([1,...plans.flatMap(p=>p.tickets.flatMap(t=>t.numbers))])].sort((a,b)=>a-b);
   const config={date:forecast.date_jst,version:'v1',jsonFile:'day.json',venues,budget:{day_limit_yen:3000},races:venues.map(v=>({venue_key:v.venue_key,race:1,race_uid:v.venue_key+'-r1',start_at:new Date(now-3600000).toISOString(),horses:numbers.map(n=>({number:n,name:v.label+'馬'+(n===1?'':n),status_at_snapshot:'running'})),bet_plans:clone(plans)}))};
+  if(embeddedDigest)config.forecastSha256=embeddedDigest===true?digest:embeddedDigest;
   const results={};
   for(const v of venues)results[v.venue_key]={authority:'jra',date_jst:config.date,venue_key:v.venue_key,baba_code:v.baba_code,forecast_version:'v1',forecast_sha256:digest,updated_at:new Date(now-60000).toISOString(),refresh_interval_minutes:2,complete:false,races:[{race:1,start_at:new Date(now-3600000).toISOString(),status:'pending',rows:[],refunds:[]}]};
   const nodes={};for(const id of ['day-forecast','day-results','result-status','refresh-results','horse-search','race-filter','empty-state','plan-total'])nodes[id]=new Element();
@@ -58,5 +59,8 @@ async function test(name, action){await action();passed++;console.log('PASS '+na
   await test('one failed or missing point skips the complete formation',async()=>{for(const value of [false,null]){const f=fixture([formationPlan(value)]);f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'quinella',numbers:[1,3],yen_per_100:1000}];await f.click();const text=f.cards[0].parts['[data-plan-result="formation"]'].textContent;assert.match(text,/構成全点を見送り/);assert.doesNotMatch(text,/400円|点的中/);}});
   await test('all eligible formation points use the complete cost and official payout',async()=>{const f=fixture([formationPlan(true)]);f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'quinella',numbers:[1,2],yen_per_100:1000}];await f.click();assert.match(f.cards[0].parts['[data-plan-result="formation"]'].textContent,/1\/5点的中、500円→1000円/);});
   await test('historical per-ticket price semantics stay unchanged',async()=>{const p=formationPlan(false);delete p.all_points_price_condition_at_snapshot;const f=fixture([p]);f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'quinella',numbers:[1,3],yen_per_100:1000}];await f.click();assert.match(f.cards[0].parts['[data-plan-result="formation"]'].textContent,/1\/4点的中、400円→1000円/);});
+  await test('server-verified embedded digest avoids the large forecast download',async()=>{const f=fixture([],true);f.confirm('tokyo');await f.click();assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert(!f.requests.includes('day.json'));});
+  await test('embedded digest still rejects a mismatched result hash',async()=>{const f=fixture([],true);f.confirm('tokyo');await f.click();f.results.tokyo.forecast_sha256='b'.repeat(64);await f.click();assert.match(f.nodes['result-status'].textContent,/取得に失敗/);assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
+  await test('invalid embedded digest keeps the legacy JSON verification',async()=>{const f=fixture([],'bad');f.confirm('tokyo');await f.click();assert(f.requests.includes('day.json'));assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
   console.log(passed+' UI regression cases passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});
