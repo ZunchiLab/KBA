@@ -1347,14 +1347,13 @@ body{overflow-wrap:anywhere}.hero{background:linear-gradient(125deg,#17332d,#246
     try {
       const digest=await forecastHash();let base,origin;
       try {const head=await getJSON('https://api.github.com/repos/ZunchiLab/KBA/commits/main?ts='+Date.now());if(!/^[a-f0-9]{40}$/.test(head.sha))throw new Error('Invalid SHA');base=`https://raw.githubusercontent.com/ZunchiLab/KBA/${head.sha}/`;origin='GitHub最新コミット';}
-      catch (_){base=new URL('../',location.href).href;origin='公開サイトの保存データ（最新コミット確認不可）';}
+      catch (_){base='https://raw.githubusercontent.com/ZunchiLab/KBA/main/';origin='GitHub mainの保存データ（最新コミット確認不可）';}
       const outcomes=await Promise.allSettled(config.venues.map(async v=>{
         const versionPath=config.version==='v1'?'':config.version+'/';
         const path=`data/results/jra/${config.date}/${config.version}/${v.venue_key}.json`;
         let incoming,fallback=false;
         try {incoming=await getJSON(base+path+'?ts='+Date.now());}
         catch(error){
-          if(origin!=='GitHub最新コミット')throw error;
           incoming=await getJSON(new URL('../',location.href).href+path+'?ts='+Date.now());
           fallback=true;
         }
