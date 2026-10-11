@@ -1,0 +1,16 @@
+{
+  "forecast_version": "v1",
+  "reviewed_at": "2026-10-11T21:28:42+09:00",
+  "corrections": [
+    {
+      "race_uid": "nar-2026-10-11-kochi-r9",
+      "number": 3,
+      "old_text": "過去A－２勝ちは残すが直近同走では5の現級好走を優先。",
+      "text": "高知9R③の「直近同走では⑤」は誤記。③の9/27はA−3・1600m、⑤は珊瑚冠賞・1900mで別レースです。直接対戦による先着比較ではありません。固定原本を保持し、この注記で訂正します。",
+      "evidence_refs": [
+        "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=10&k_babaCode=31",
+        "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=7&k_babaCode=31"
+      ]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   "forecast_file": "report_20261011_nar_predictions_v1.json",
   "forecast_sha256": "4cd44badb90ecc33c978a40a96d425af50ab0dd15ce957ef4a3420f234187c3f",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-11T20:52:57+09:00",
+  "updated_at": "2026-10-11T21:28:42+09:00",
   "complete": true,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -26,11 +26,12 @@
           "finish": 1,
           "time": "1:24.1",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "39.1",
           "jockey": "長谷蓮 （佐賀）",
           "body_weight": "498(-4)",
           "final_popularity": 1,
-          "final_win_odds": "1.6"
+          "final_win_odds": "1.6",
+          "corner_order": null
         },
         {
           "number": 5,
@@ -38,11 +39,12 @@
           "finish": 2,
           "time": "1:24.6",
           "margin": "2.1/2",
-          "last_3f": "",
+          "last_3f": "40.4",
           "jockey": "山下裕 （佐賀）",
           "body_weight": "481(6)",
           "final_popularity": 3,
-          "final_win_odds": "5.6"
+          "final_win_odds": "5.6",
+          "corner_order": null
         },
         {
           "number": 8,
@@ -50,11 +52,12 @@
           "finish": 3,
           "time": "1:24.6",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "499(10)",
           "final_popularity": 4,
-          "final_win_odds": "12.4"
+          "final_win_odds": "12.4",
+          "corner_order": null
         },
         {
           "number": 4,
@@ -62,11 +65,12 @@
           "finish": 4,
           "time": "1:25.0",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "38.4",
           "jockey": "青海大 （佐賀）",
           "body_weight": "474(-1)",
           "final_popularity": 7,
-          "final_win_odds": "89.9"
+          "final_win_odds": "89.9",
+          "corner_order": null
         },
         {
           "number": 2,
@@ -74,11 +78,12 @@
           "finish": 5,
           "time": "1:25.4",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "38.4",
           "jockey": "川島拓 （佐賀）",
           "body_weight": "498(6)",
           "final_popularity": 8,
-          "final_win_odds": "96.6"
+          "final_win_odds": "96.6",
+          "corner_order": null
         },
         {
           "number": 9,
@@ -86,11 +91,12 @@
           "finish": 6,
           "time": "1:25.8",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "40.7",
           "jockey": "小松丈 （佐賀）",
           "body_weight": "453(-2)",
           "final_popularity": 6,
-          "final_win_odds": "86.0"
+          "final_win_odds": "86.0",
+          "corner_order": null
         },
         {
           "number": 12,
@@ -98,11 +104,12 @@
           "finish": 7,
           "time": "1:27.0",
           "margin": "6",
-          "last_3f": "",
+          "last_3f": "41.4",
           "jockey": "山田貴 （佐賀）",
           "body_weight": "494(3)",
           "final_popularity": 2,
-          "final_win_odds": "3.8"
+          "final_win_odds": "3.8",
+          "corner_order": null
         },
         {
           "number": 1,
@@ -110,11 +117,12 @@
           "finish": 8,
           "time": "1:27.0",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "39.2",
           "jockey": "▲後藤武 （佐賀）",
           "body_weight": "437(-6)",
           "final_popularity": 10,
-          "final_win_odds": "263.8"
+          "final_win_odds": "263.8",
+          "corner_order": null
         },
         {
           "number": 11,
@@ -122,11 +130,12 @@
           "finish": 9,
           "time": "1:27.1",
           "margin": "1/2",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "竹吉徹 （佐賀）",
           "body_weight": "451(7)",
           "final_popularity": 11,
-          "final_win_odds": "344.2"
+          "final_win_odds": "344.2",
+          "corner_order": null
         },
         {
           "number": 7,
@@ -134,11 +143,12 @@
           "finish": 10,
           "time": "1:27.3",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "40.7",
           "jockey": "田中直 （佐賀）",
           "body_weight": "485(6)",
           "final_popularity": 12,
-          "final_win_odds": "372.6"
+          "final_win_odds": "372.6",
+          "corner_order": null
         },
         {
           "number": 10,
@@ -146,11 +156,12 @@
           "finish": 11,
           "time": "1:27.7",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "42.7",
           "jockey": "田中純 （佐賀）",
           "body_weight": "411(-6)",
           "final_popularity": 9,
-          "final_win_odds": "145.1"
+          "final_win_odds": "145.1",
+          "corner_order": null
         },
         {
           "number": 3,
@@ -158,11 +169,12 @@
           "finish": 12,
           "time": "1:30.5",
           "margin": "大差",
-          "last_3f": "",
+          "last_3f": "46.3",
           "jockey": "飛田愛 （佐賀）",
           "body_weight": "435(2)",
           "final_popularity": 5,
-          "final_win_odds": "15.3"
+          "final_win_odds": "15.3",
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -287,11 +299,12 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=5",
-        "retrieved_at": "2026-10-11T17:47:33+09:00",
-        "sha256": "ca72c20c5b366ef564a8b67aa3a1910a424fb56c71a23ecde666b52100ce1590",
-        "saved_file": "data/results/sources/2026-10-11/saga/r5_174733_ca72c20c5b36.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "b8498fabcbb38e163c544b45c97f2c98b4dbdcd4de49b332742879e3e060921b",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r5_b8498fabcbb3.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     },
     {
       "race": 6,
@@ -305,11 +318,12 @@
           "finish": 1,
           "time": "1:25.1",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "38.7",
           "jockey": "山口勲 （佐賀）",
           "body_weight": "498(-5)",
           "final_popularity": 1,
-          "final_win_odds": "2.1"
+          "final_win_odds": "2.1",
+          "corner_order": null
         },
         {
           "number": 8,
@@ -317,11 +331,12 @@
           "finish": 2,
           "time": "1:25.3",
           "margin": "3/4",
-          "last_3f": "",
+          "last_3f": "38.7",
           "jockey": "飛田愛 （佐賀）",
           "body_weight": "417(-6)",
           "final_popularity": 3,
-          "final_win_odds": "4.8"
+          "final_win_odds": "4.8",
+          "corner_order": null
         },
         {
           "number": 4,
@@ -329,11 +344,12 @@
           "finish": 3,
           "time": "1:26.5",
           "margin": "6",
-          "last_3f": "",
+          "last_3f": "39.4",
           "jockey": "川島拓 （佐賀）",
           "body_weight": "469(4)",
           "final_popularity": 4,
-          "final_win_odds": "10.1"
+          "final_win_odds": "10.1",
+          "corner_order": null
         },
         {
           "number": 9,
@@ -341,11 +357,12 @@
           "finish": 4,
           "time": "1:26.5",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "39.7",
           "jockey": "山田貴 （佐賀）",
           "body_weight": "402(3)",
           "final_popularity": 6,
-          "final_win_odds": "24.8"
+          "final_win_odds": "24.8",
+          "corner_order": null
         },
         {
           "number": 12,
@@ -353,11 +370,12 @@
           "finish": 5,
           "time": "1:26.7",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "▲後藤武 （佐賀）",
           "body_weight": "434(12)",
           "final_popularity": 11,
-          "final_win_odds": "176.2"
+          "final_win_odds": "176.2",
+          "corner_order": null
         },
         {
           "number": 10,
@@ -365,11 +383,12 @@
           "finish": 6,
           "time": "1:26.8",
           "margin": "1/2",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "青海大 （佐賀）",
           "body_weight": "523(-1)",
           "final_popularity": 8,
-          "final_win_odds": "39.8"
+          "final_win_odds": "39.8",
+          "corner_order": null
         },
         {
           "number": 5,
@@ -377,11 +396,12 @@
           "finish": 7,
           "time": "1:26.8",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "38.9",
           "jockey": "山下裕 （佐賀）",
           "body_weight": "509(-4)",
           "final_popularity": 9,
-          "final_win_odds": "66.3"
+          "final_win_odds": "66.3",
+          "corner_order": null
         },
         {
           "number": 1,
@@ -389,11 +409,12 @@
           "finish": 8,
           "time": "1:26.8",
           "margin": "アタマ",
-          "last_3f": "",
+          "last_3f": "39.6",
           "jockey": "出水拓 （佐賀）",
           "body_weight": "442(5)",
           "final_popularity": 5,
-          "final_win_odds": "16.9"
+          "final_win_odds": "16.9",
+          "corner_order": null
         },
         {
           "number": 7,
@@ -401,11 +422,12 @@
           "finish": 9,
           "time": "1:27.2",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "40.0",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "432(2)",
           "final_popularity": 7,
-          "final_win_odds": "34.4"
+          "final_win_odds": "34.4",
+          "corner_order": null
         },
         {
           "number": 3,
@@ -413,11 +435,12 @@
           "finish": 10,
           "time": "1:27.3",
           "margin": "1/2",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "竹吉徹 （佐賀）",
           "body_weight": "447(3)",
           "final_popularity": 2,
-          "final_win_odds": "3.5"
+          "final_win_odds": "3.5",
+          "corner_order": null
         },
         {
           "number": 2,
@@ -425,11 +448,12 @@
           "finish": 11,
           "time": "1:27.5",
           "margin": "1.1/4",
-          "last_3f": "",
+          "last_3f": "39.9",
           "jockey": "加茂飛 （佐賀）",
           "body_weight": "536(2)",
           "final_popularity": 12,
-          "final_win_odds": "178.3"
+          "final_win_odds": "178.3",
+          "corner_order": null
         },
         {
           "number": 6,
@@ -437,11 +461,12 @@
           "finish": 12,
           "time": "1:28.5",
           "margin": "5",
-          "last_3f": "",
+          "last_3f": "41.8",
           "jockey": "田中直 （佐賀）",
           "body_weight": "514(7)",
           "final_popularity": 10,
-          "final_win_odds": "76.9"
+          "final_win_odds": "76.9",
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -566,11 +591,12 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=6",
-        "retrieved_at": "2026-10-11T18:16:44+09:00",
-        "sha256": "34e6e36a70e4544d3fba4963c0e13da895b9e89470f736c4ebbb21c144cbf164",
-        "saved_file": "data/results/sources/2026-10-11/saga/r6_181644_34e6e36a70e4.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "fee06ff011b9a05548ade4b8f4f67d9e1e221cf200f3171c399c49daa595aa76",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r6_fee06ff011b9.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     },
     {
       "race": 7,
@@ -584,11 +610,12 @@
           "finish": 1,
           "time": "1:24.3",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "38.4",
           "jockey": "山下裕 （佐賀）",
           "body_weight": "444(-6)",
           "final_popularity": 3,
-          "final_win_odds": "4.4"
+          "final_win_odds": "4.4",
+          "corner_order": null
         },
         {
           "number": 1,
@@ -596,11 +623,12 @@
           "finish": 2,
           "time": "1:24.7",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "38.2",
           "jockey": "飛田愛 （佐賀）",
           "body_weight": "481(3)",
           "final_popularity": 4,
-          "final_win_odds": "6.8"
+          "final_win_odds": "6.8",
+          "corner_order": null
         },
         {
           "number": 8,
@@ -608,11 +636,12 @@
           "finish": 3,
           "time": "1:25.2",
           "margin": "2.1/2",
-          "last_3f": "",
+          "last_3f": "39.8",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "439(3)",
           "final_popularity": 1,
-          "final_win_odds": "2.7"
+          "final_win_odds": "2.7",
+          "corner_order": null
         },
         {
           "number": 2,
@@ -620,11 +649,12 @@
           "finish": 4,
           "time": "1:25.4",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "39.3",
           "jockey": "長谷蓮 （佐賀）",
           "body_weight": "429(-8)",
           "final_popularity": 5,
-          "final_win_odds": "7.1"
+          "final_win_odds": "7.1",
+          "corner_order": null
         },
         {
           "number": 4,
@@ -632,11 +662,12 @@
           "finish": 5,
           "time": "1:25.5",
           "margin": "1/2",
-          "last_3f": "",
+          "last_3f": "38.3",
           "jockey": "小松丈 （佐賀）",
           "body_weight": "466(5)",
           "final_popularity": 6,
-          "final_win_odds": "24.0"
+          "final_win_odds": "24.0",
+          "corner_order": null
         },
         {
           "number": 9,
@@ -644,11 +675,12 @@
           "finish": 6,
           "time": "1:25.8",
           "margin": "1.1/2",
-          "last_3f": "",
+          "last_3f": "38.9",
           "jockey": "青海大 （佐賀）",
           "body_weight": "403(-3)",
           "final_popularity": 8,
-          "final_win_odds": "77.4"
+          "final_win_odds": "77.4",
+          "corner_order": null
         },
         {
           "number": 10,
@@ -656,11 +688,12 @@
           "finish": 7,
           "time": "1:26.1",
           "margin": "1.1/2",
-          "last_3f": "",
+          "last_3f": "39.3",
           "jockey": "▲後藤武 （佐賀）",
           "body_weight": "503(-1)",
           "final_popularity": 7,
-          "final_win_odds": "32.5"
+          "final_win_odds": "32.5",
+          "corner_order": null
         },
         {
           "number": 7,
@@ -668,11 +701,12 @@
           "finish": 8,
           "time": "1:26.1",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "39.9",
           "jockey": "出水拓 （佐賀）",
           "body_weight": "526(2)",
           "final_popularity": 2,
-          "final_win_odds": "3.6"
+          "final_win_odds": "3.6",
+          "corner_order": null
         },
         {
           "number": 5,
@@ -680,11 +714,12 @@
           "finish": 9,
           "time": "1:26.4",
           "margin": "1.1/2",
-          "last_3f": "",
+          "last_3f": "39.2",
           "jockey": "田中純 （佐賀）",
           "body_weight": "471(14)",
           "final_popularity": 9,
-          "final_win_odds": "114.6"
+          "final_win_odds": "114.6",
+          "corner_order": null
         },
         {
           "number": 6,
@@ -692,11 +727,12 @@
           "finish": 10,
           "time": "1:27.4",
           "margin": "5",
-          "last_3f": "",
+          "last_3f": "39.7",
           "jockey": "加茂飛 （佐賀）",
           "body_weight": "461(1)",
           "final_popularity": 10,
-          "final_win_odds": "179.1"
+          "final_win_odds": "179.1",
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -821,11 +857,12 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=7",
-        "retrieved_at": "2026-10-11T18:45:54+09:00",
-        "sha256": "71a5dde32003dfab74575a60adda1621614c04f5efadb9f85ec22b4bd4c6033d",
-        "saved_file": "data/results/sources/2026-10-11/saga/r7_184554_71a5dde32003.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "99aa7118e7597e14080248e650f10626cb80833a80d3522382429dd1969a7737",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r7_99aa7118e759.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     },
     {
       "race": 8,
@@ -837,133 +874,144 @@
           "number": 6,
           "name": "ロングジーニアス",
           "finish": 1,
-          "time": "",
+          "time": "1:31.8",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "39.4",
           "jockey": "出水拓 （佐賀）",
           "body_weight": "414(0)",
           "final_popularity": 3,
-          "final_win_odds": "3.6"
+          "final_win_odds": "3.6",
+          "corner_order": null
         },
         {
           "number": 5,
           "name": "テイエムファントム",
           "finish": 2,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:32.4",
+          "margin": "3",
+          "last_3f": "39.6",
           "jockey": "山田貴 （佐賀）",
           "body_weight": "492(-11)",
           "final_popularity": 4,
-          "final_win_odds": "5.6"
+          "final_win_odds": "5.6",
+          "corner_order": null
         },
         {
           "number": 7,
           "name": "シエルブリエ",
           "finish": 3,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:32.8",
+          "margin": "2",
+          "last_3f": "39.7",
           "jockey": "山口勲 （佐賀）",
           "body_weight": "529(3)",
           "final_popularity": 1,
-          "final_win_odds": "2.2"
+          "final_win_odds": "2.2",
+          "corner_order": null
         },
         {
           "number": 4,
           "name": "レディホークダイヤ",
           "finish": 4,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:33.1",
+          "margin": "1.1/2",
+          "last_3f": "40.3",
           "jockey": "青海大 （佐賀）",
           "body_weight": "450(5)",
           "final_popularity": 2,
-          "final_win_odds": "3.4"
+          "final_win_odds": "3.4",
+          "corner_order": null
         },
         {
           "number": 1,
           "name": "ヴァーティゴー",
           "finish": 5,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:35.1",
+          "margin": "大差",
+          "last_3f": "42.4",
           "jockey": "川島拓 （佐賀）",
           "body_weight": "446(-12)",
           "final_popularity": 5,
-          "final_win_odds": "46.9"
+          "final_win_odds": "46.9",
+          "corner_order": null
         },
         {
           "number": 2,
           "name": "スワイメイク",
           "finish": 6,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:35.8",
+          "margin": "4",
+          "last_3f": "42.4",
           "jockey": "山下裕 （佐賀）",
           "body_weight": "467(6)",
           "final_popularity": 6,
-          "final_win_odds": "71.2"
+          "final_win_odds": "71.2",
+          "corner_order": null
         },
         {
           "number": 10,
           "name": "ケンブリッジルプス",
           "finish": 7,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:36.0",
+          "margin": "3/4",
+          "last_3f": "42.3",
           "jockey": "田中直 （佐賀）",
           "body_weight": "505(-1)",
           "final_popularity": 9,
-          "final_win_odds": "191.4"
+          "final_win_odds": "191.4",
+          "corner_order": null
         },
         {
           "number": 8,
           "name": "テイエムリチャード",
           "finish": 8,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:36.1",
+          "margin": "1/2",
+          "last_3f": "41.7",
           "jockey": "中山蓮 （佐賀）",
           "body_weight": "506(-1)",
           "final_popularity": 7,
-          "final_win_odds": "95.0"
+          "final_win_odds": "95.0",
+          "corner_order": null
         },
         {
           "number": 11,
           "name": "ビーチボール",
           "finish": 9,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:36.4",
+          "margin": "1.1/2",
+          "last_3f": "42.6",
           "jockey": "小松丈 （佐賀）",
           "body_weight": "416(-4)",
           "final_popularity": 8,
-          "final_win_odds": "148.0"
+          "final_win_odds": "148.0",
+          "corner_order": null
         },
         {
           "number": 12,
           "name": "テムホウサク",
           "finish": 10,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:37.1",
+          "margin": "4",
+          "last_3f": "43.6",
           "jockey": "加茂飛 （佐賀）",
           "body_weight": "406(-7)",
           "final_popularity": 11,
-          "final_win_odds": "248.3"
+          "final_win_odds": "248.3",
+          "corner_order": null
         },
         {
           "number": 9,
           "name": "カゼノハゴロモ",
           "finish": 11,
-          "time": "",
-          "margin": "",
-          "last_3f": "",
+          "time": "1:38.3",
+          "margin": "6",
+          "last_3f": "45.6",
           "jockey": "田中純 （佐賀）",
           "body_weight": "429(10)",
           "final_popularity": 10,
-          "final_win_odds": "229.3"
+          "final_win_odds": "229.3",
+          "corner_order": null
         },
         {
           "number": 3,
@@ -975,7 +1023,8 @@
           "jockey": "☆林悠翔 （佐賀）",
           "body_weight": "494(7)",
           "final_popularity": null,
-          "final_win_odds": null
+          "final_win_odds": null,
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -1100,11 +1149,12 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=8",
-        "retrieved_at": "2026-10-11T19:21:17+09:00",
-        "sha256": "1ae5d284059142a0594b479d5aa804564f266a41c303ab232315781d96494e97",
-        "saved_file": "data/results/sources/2026-10-11/saga/r8_192117_1ae5d2840591.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "2d25c961d3f0dce4c1922a091976fdda68b55c471b3c1dc6c219b257bb64d82f",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r8_2d25c961d3f0.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     },
     {
       "race": 9,
@@ -1118,11 +1168,12 @@
           "finish": 1,
           "time": "1:29.7",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "38.3",
           "jockey": "長谷蓮 （佐賀）",
           "body_weight": "497(4)",
           "final_popularity": 2,
-          "final_win_odds": "3.5"
+          "final_win_odds": "3.5",
+          "corner_order": null
         },
         {
           "number": 1,
@@ -1130,11 +1181,12 @@
           "finish": 2,
           "time": "1:29.9",
           "margin": "1.1/4",
-          "last_3f": "",
+          "last_3f": "38.5",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "465(-1)",
           "final_popularity": 1,
-          "final_win_odds": "1.3"
+          "final_win_odds": "1.3",
+          "corner_order": null
         },
         {
           "number": 8,
@@ -1142,11 +1194,12 @@
           "finish": 3,
           "time": "1:30.6",
           "margin": "4",
-          "last_3f": "",
+          "last_3f": "39.2",
           "jockey": "山口勲 （佐賀）",
           "body_weight": "454(-1)",
           "final_popularity": 3,
-          "final_win_odds": "11.3"
+          "final_win_odds": "11.3",
+          "corner_order": null
         },
         {
           "number": 9,
@@ -1154,11 +1207,12 @@
           "finish": 4,
           "time": "1:30.6",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "38.9",
           "jockey": "竹吉徹 （佐賀）",
           "body_weight": "477(2)",
           "final_popularity": 4,
-          "final_win_odds": "15.8"
+          "final_win_odds": "15.8",
+          "corner_order": null
         },
         {
           "number": 2,
@@ -1166,11 +1220,12 @@
           "finish": 5,
           "time": "1:30.6",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "38.9",
           "jockey": "田中純 （佐賀）",
           "body_weight": "467(-5)",
           "final_popularity": 7,
-          "final_win_odds": "131.5"
+          "final_win_odds": "131.5",
+          "corner_order": null
         },
         {
           "number": 4,
@@ -1178,11 +1233,12 @@
           "finish": 6,
           "time": "1:30.8",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "38.9",
           "jockey": "長田進 （佐賀）",
           "body_weight": "506(6)",
           "final_popularity": 9,
-          "final_win_odds": "208.9"
+          "final_win_odds": "208.9",
+          "corner_order": null
         },
         {
           "number": 11,
@@ -1190,11 +1246,12 @@
           "finish": 7,
           "time": "1:31.2",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "41.0",
           "jockey": "小松丈 （佐賀）",
           "body_weight": "483(-6)",
           "final_popularity": 8,
-          "final_win_odds": "150.3"
+          "final_win_odds": "150.3",
+          "corner_order": null
         },
         {
           "number": 6,
@@ -1202,11 +1259,12 @@
           "finish": 8,
           "time": "1:31.4",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "39.3",
           "jockey": "山田貴 （佐賀）",
           "body_weight": "484(0)",
           "final_popularity": 5,
-          "final_win_odds": "49.9"
+          "final_win_odds": "49.9",
+          "corner_order": null
         },
         {
           "number": 7,
@@ -1214,11 +1272,12 @@
           "finish": 9,
           "time": "1:31.6",
           "margin": "3/4",
-          "last_3f": "",
+          "last_3f": "41.5",
           "jockey": "青海大 （佐賀）",
           "body_weight": "514(3)",
           "final_popularity": 6,
-          "final_win_odds": "84.1"
+          "final_win_odds": "84.1",
+          "corner_order": null
         },
         {
           "number": 3,
@@ -1226,11 +1285,12 @@
           "finish": 10,
           "time": "1:31.9",
           "margin": "1.1/2",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "出水拓 （佐賀）",
           "body_weight": "493(3)",
           "final_popularity": 10,
-          "final_win_odds": "288.9"
+          "final_win_odds": "288.9",
+          "corner_order": null
         },
         {
           "number": 5,
@@ -1238,11 +1298,12 @@
           "finish": 11,
           "time": "1:32.1",
           "margin": "1.1/4",
-          "last_3f": "",
+          "last_3f": "39.8",
           "jockey": "川島拓 （佐賀）",
           "body_weight": "468(2)",
           "final_popularity": 11,
-          "final_win_odds": "409.2"
+          "final_win_odds": "409.2",
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -1367,11 +1428,12 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=9",
-        "retrieved_at": "2026-10-11T19:50:27+09:00",
-        "sha256": "b5c530e81db96eaca53f3d9e2e621ba7376bbda4f84a79583d831d8d886b19d3",
-        "saved_file": "data/results/sources/2026-10-11/saga/r9_195027_b5c530e81db9.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "15ceeb49f5bcd50efe44983bd2b40d132383bce0039a97f302ac16bb4bbb8015",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r9_15ceeb49f5bc.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     },
     {
       "race": 10,
@@ -1385,11 +1447,12 @@
           "finish": 1,
           "time": "1:30.2",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "39.3",
           "jockey": "山口勲 （佐賀）",
           "body_weight": "499(16)",
           "final_popularity": 2,
-          "final_win_odds": "3.4"
+          "final_win_odds": "3.4",
+          "corner_order": null
         },
         {
           "number": 10,
@@ -1397,11 +1460,12 @@
           "finish": 2,
           "time": "1:30.3",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "39.2",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "430(-1)",
           "final_popularity": 1,
-          "final_win_odds": "1.7"
+          "final_win_odds": "1.7",
+          "corner_order": null
         },
         {
           "number": 5,
@@ -1409,11 +1473,12 @@
           "finish": 3,
           "time": "1:30.7",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "39.1",
           "jockey": "青海大 （佐賀）",
           "body_weight": "434(-1)",
           "final_popularity": 9,
-          "final_win_odds": "88.6"
+          "final_win_odds": "88.6",
+          "corner_order": null
         },
         {
           "number": 2,
@@ -1421,11 +1486,12 @@
           "finish": 4,
           "time": "1:31.2",
           "margin": "2.1/2",
-          "last_3f": "",
+          "last_3f": "39.4",
           "jockey": "長谷蓮 （佐賀）",
           "body_weight": "491(1)",
           "final_popularity": 4,
-          "final_win_odds": "13.4"
+          "final_win_odds": "13.4",
+          "corner_order": null
         },
         {
           "number": 6,
@@ -1433,11 +1499,12 @@
           "finish": 5,
           "time": "1:31.4",
           "margin": "1.1/4",
-          "last_3f": "",
+          "last_3f": "39.6",
           "jockey": "竹吉徹 （佐賀）",
           "body_weight": "439(9)",
           "final_popularity": 7,
-          "final_win_odds": "24.4"
+          "final_win_odds": "24.4",
+          "corner_order": null
         },
         {
           "number": 11,
@@ -1445,11 +1512,12 @@
           "finish": 6,
           "time": "1:32.1",
           "margin": "4",
-          "last_3f": "",
+          "last_3f": "39.7",
           "jockey": "飛田愛 （佐賀）",
           "body_weight": "485(7)",
           "final_popularity": 5,
-          "final_win_odds": "14.6"
+          "final_win_odds": "14.6",
+          "corner_order": null
         },
         {
           "number": 1,
@@ -1457,11 +1525,12 @@
           "finish": 7,
           "time": "1:32.3",
           "margin": "1.1/4",
-          "last_3f": "",
+          "last_3f": "39.9",
           "jockey": "田中純 （佐賀）",
           "body_weight": "488(-18)",
           "final_popularity": 10,
-          "final_win_odds": "92.4"
+          "final_win_odds": "92.4",
+          "corner_order": null
         },
         {
           "number": 9,
@@ -1469,11 +1538,12 @@
           "finish": 8,
           "time": "1:32.4",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "39.8",
           "jockey": "出水拓 （佐賀）",
           "body_weight": "449(-10)",
           "final_popularity": 3,
-          "final_win_odds": "11.9"
+          "final_win_odds": "11.9",
+          "corner_order": null
         },
         {
           "number": 7,
@@ -1481,11 +1551,12 @@
           "finish": 9,
           "time": "1:32.4",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "41.9",
           "jockey": "田中直 （佐賀）",
           "body_weight": "497(-6)",
           "final_popularity": 6,
-          "final_win_odds": "21.9"
+          "final_win_odds": "21.9",
+          "corner_order": null
         },
         {
           "number": 3,
@@ -1493,11 +1564,12 @@
           "finish": 10,
           "time": "1:32.4",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "40.2",
           "jockey": "山田貴 （佐賀）",
           "body_weight": "469(-1)",
           "final_popularity": 8,
-          "final_win_odds": "25.1"
+          "final_win_odds": "25.1",
+          "corner_order": null
         },
         {
           "number": 4,
@@ -1505,11 +1577,12 @@
           "finish": 11,
           "time": "1:32.6",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "40.4",
           "jockey": "加茂飛 （佐賀）",
           "body_weight": "462(4)",
           "final_popularity": 11,
-          "final_win_odds": "274.4"
+          "final_win_odds": "274.4",
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -1634,11 +1707,12 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=10",
-        "retrieved_at": "2026-10-11T20:21:41+09:00",
-        "sha256": "2657e2430ff17a0b5f4240c6891a63d5059b77d9aee8790bad63ed013987fb7a",
-        "saved_file": "data/results/sources/2026-10-11/saga/r10_202141_2657e2430ff1.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "a6719165a4fc16f43a67a9dcee3b39d878e7d96bd962222760bc03216cc306b4",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r10_a6719165a4fc.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     },
     {
       "race": 11,
@@ -1652,11 +1726,12 @@
           "finish": 1,
           "time": "1:32.6",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "39.8",
           "jockey": "川島拓 （佐賀）",
           "body_weight": "462(-3)",
           "final_popularity": 4,
-          "final_win_odds": "8.9"
+          "final_win_odds": "8.9",
+          "corner_order": null
         },
         {
           "number": 14,
@@ -1664,11 +1739,12 @@
           "finish": 2,
           "time": "1:32.6",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "40.7",
           "jockey": "山口勲 （佐賀）",
           "body_weight": "420(-5)",
           "final_popularity": 2,
-          "final_win_odds": "2.6"
+          "final_win_odds": "2.6",
+          "corner_order": null
         },
         {
           "number": 3,
@@ -1676,11 +1752,12 @@
           "finish": 3,
           "time": "1:32.7",
           "margin": "1/2",
-          "last_3f": "",
+          "last_3f": "40.3",
           "jockey": "田中純 （佐賀）",
           "body_weight": "487(-1)",
           "final_popularity": 3,
-          "final_win_odds": "6.8"
+          "final_win_odds": "6.8",
+          "corner_order": null
         },
         {
           "number": 1,
@@ -1688,11 +1765,12 @@
           "finish": 4,
           "time": "1:32.8",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "41.0",
           "jockey": "長田進 （佐賀）",
           "body_weight": "472(4)",
           "final_popularity": 1,
-          "final_win_odds": "2.1"
+          "final_win_odds": "2.1",
+          "corner_order": null
         },
         {
           "number": 7,
@@ -1700,11 +1778,12 @@
           "finish": 5,
           "time": "1:33.2",
           "margin": "2",
-          "last_3f": "",
+          "last_3f": "41.0",
           "jockey": "石川慎 （佐賀）",
           "body_weight": "417(-5)",
           "final_popularity": 5,
-          "final_win_odds": "19.1"
+          "final_win_odds": "19.1",
+          "corner_order": null
         },
         {
           "number": 5,
@@ -1712,11 +1791,12 @@
           "finish": 6,
           "time": "1:33.4",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "39.8",
           "jockey": "小松丈 （佐賀）",
           "body_weight": "406(-2)",
           "final_popularity": 12,
-          "final_win_odds": "178.7"
+          "final_win_odds": "178.7",
+          "corner_order": null
         },
         {
           "number": 13,
@@ -1724,11 +1804,12 @@
           "finish": 7,
           "time": "1:33.4",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "40.3",
           "jockey": "竹吉徹 （佐賀）",
           "body_weight": "451(-5)",
           "final_popularity": 8,
-          "final_win_odds": "56.4"
+          "final_win_odds": "56.4",
+          "corner_order": null
         },
         {
           "number": 11,
@@ -1736,11 +1817,12 @@
           "finish": 8,
           "time": "1:33.6",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "40.8",
           "jockey": "加茂飛 （佐賀）",
           "body_weight": "454(7)",
           "final_popularity": 13,
-          "final_win_odds": "191.4"
+          "final_win_odds": "191.4",
+          "corner_order": null
         },
         {
           "number": 10,
@@ -1748,11 +1830,12 @@
           "finish": 9,
           "time": "1:33.7",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "40.1",
           "jockey": "長谷蓮 （佐賀）",
           "body_weight": "421(-6)",
           "final_popularity": 6,
-          "final_win_odds": "31.7"
+          "final_win_odds": "31.7",
+          "corner_order": null
         },
         {
           "number": 9,
@@ -1760,11 +1843,12 @@
           "finish": 10,
           "time": "1:33.7",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "39.5",
           "jockey": "青海大 （佐賀）",
           "body_weight": "475(-4)",
           "final_popularity": 10,
-          "final_win_odds": "170.2"
+          "final_win_odds": "170.2",
+          "corner_order": null
         },
         {
           "number": 12,
@@ -1772,11 +1856,12 @@
           "finish": 11,
           "time": "1:33.8",
           "margin": "1/2",
-          "last_3f": "",
+          "last_3f": "39.0",
           "jockey": "中山蓮 （佐賀）",
           "body_weight": "415(-1)",
           "final_popularity": 11,
-          "final_win_odds": "171.8"
+          "final_win_odds": "171.8",
+          "corner_order": null
         },
         {
           "number": 2,
@@ -1784,11 +1869,12 @@
           "finish": 12,
           "time": "1:34.0",
           "margin": "1",
-          "last_3f": "",
+          "last_3f": "41.2",
           "jockey": "出水拓 （佐賀）",
           "body_weight": "422(7)",
           "final_popularity": 7,
-          "final_win_odds": "46.4"
+          "final_win_odds": "46.4",
+          "corner_order": null
         },
         {
           "number": 4,
@@ -1796,11 +1882,12 @@
           "finish": 13,
           "time": "1:34.3",
           "margin": "1.1/2",
-          "last_3f": "",
+          "last_3f": "40.6",
           "jockey": "山下裕 （佐賀）",
           "body_weight": "509(0)",
           "final_popularity": 14,
-          "final_win_odds": "245.6"
+          "final_win_odds": "245.6",
+          "corner_order": null
         },
         {
           "number": 6,
@@ -1808,11 +1895,12 @@
           "finish": 14,
           "time": "1:34.3",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "42.0",
           "jockey": "田中直 （佐賀）",
           "body_weight": "451(3)",
           "final_popularity": 9,
-          "final_win_odds": "152.3"
+          "final_win_odds": "152.3",
+          "corner_order": null
         }
       ],
       "refunds": [
@@ -1937,13 +2025,15 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F11&k_babaCode=32&k_raceNo=11",
-        "retrieved_at": "2026-10-11T20:52:57+09:00",
-        "sha256": "ba48d14c73d7ff5d608a29b6eeaa1ff936b6933542cd797dcd959b3bfdf3dd71",
-        "saved_file": "data/results/sources/2026-10-11/saga/r11_205257_ba48d14c73d7.html"
+        "retrieved_at": "2026-10-11T21:16:58+09:00",
+        "sha256": "29d1157b4b8fd8c723b5b519681ce2f3ed7e739951bd5012931546152e2e2451",
+        "saved_file": "data/reviews/nar/2026-10-11/sources/saga/r11_29d1157b4b8f.html",
+        "provider": "NAR"
       },
-      "note": "公式着順と払戻を照合済み。"
+      "note": "公式の確定着順・払戻と、後続掲載の時計・上がりを反省時に再確認。"
     }
   ],
   "actual_purchase": null,
-  "note": "結果専用データ。事前予想・価格・採否を変更しない。"
+  "note": "結果専用データ。事前予想・価格・採否を変更しない。",
+  "post_event_rechecked_at": "2026-10-11T21:28:42+09:00"
 }
