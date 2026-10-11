@@ -11,6 +11,10 @@ def legacy_result(d):
 def render(d,json_name,results=None):
     results={k:legacy_result(v) if v.get('schema_version')=='kba.results/1' else v for k,v in (results or {}).items()}
     s=shared_render(d,json_name,results)
+    if d.get('revision'):
+        revision=d['revision']
+        s=s.replace('<h2>v2の訂正内容</h2>', '<h2>'+escape(d['forecast_version'])+'の訂正内容</h2>')
+        s=s.replace('v1は保存しています。結果判明前の訂正です。', '以前の版は保存しています。変更記録 '+escape(revision.get('changed_at',d['fixed_at']))+'。結果判明前の訂正です。')
     s=s.replace('園田・大井','東京・京都').replace('園田と大井。','東京と京都。').replace('NAR ·','JRA ·').replace('昨日の反省と、今日の評価方法','これまでの反省と、今日の評価方法')
     s=s.replace('全頭評価 / 少点数の本線 / 三連単の別案',f'全{len(d["races"])}レース・{sum(len(r["horses"]) for r in d["races"])}頭 / 勝つ候補と圏内候補 / 公式出馬表で照合')
     s=s.replace('金額はすべて例・全点100円。','金額はすべて例。点ごとの額は買い目表を参照。')
