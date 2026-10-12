@@ -9,8 +9,8 @@
     "sha256": "6ad43db7d88ce1a9a8f1c2f2e0ad3bab44700e8bb24f9a44e4f04b1b62da6a91",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-12T14:36:28+09:00",
-  "last_poll_at": "2026-10-12T14:36:28+09:00",
+  "updated_at": "2026-10-12T14:48:43+09:00",
+  "last_poll_at": "2026-10-12T14:48:43+09:00",
   "published_at": null,
   "races": [
     {
@@ -2485,16 +2485,298 @@
       "race_uid": "jra-2026-10-12-kyoto-r9",
       "race_no": 9,
       "start_at": "2026-10-12T14:35:00+09:00",
-      "status": "pending",
-      "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
-      "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "status": "confirmed",
+      "official_confirmed": true,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604050920261012/EE"
+        },
+        "retrieved_at": "2026-10-12T14:48:45+09:00",
+        "raw_sha256": "f37f9099a0ade0b0b09077ac98aeaa355b6cc67779525655170688016c0efd7c",
+        "raw_file": "data/results/sources/jra/2026-10-12/kyoto/f37f9099a0ade0b0b09077ac98aeaa355b6cc67779525655170688016c0efd7c.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-10-12T14:48:45+09:00",
+      "rows_complete": true,
+      "rows": [
+        {
+          "number": 4,
+          "name": "ソルチェリア",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:50.5",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "クロノスバレット",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:50.5",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 12,
+          "name": "テイエムサンレーヴ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:50.8",
+          "margin": "２",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "イプシロンナンバー",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "1:51.3",
+          "margin": "３",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ロードソルスティス",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "1:51.3",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "トゥーザムーン",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:51.3",
+          "margin": "ハナ",
+          "last_3f": "",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "ゼンエスポワール",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:51.3",
+          "margin": "ハナ",
+          "last_3f": "",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "マシン",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:52.0",
+          "margin": "４",
+          "last_3f": "",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "シグムンド",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:52.2",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "11",
+          "final_win_odds": null
+        },
+        {
+          "number": 11,
+          "name": "レッドボブ",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:52.5",
+          "margin": "１ 3/4",
+          "last_3f": "",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "ニホンピロデヴィン",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:53.0",
+          "margin": "３",
+          "last_3f": "",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "サザンウォリアー",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:55.6",
+          "margin": "大差",
+          "last_3f": "",
+          "final_popularity": "12",
+          "final_win_odds": null
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 480,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 150,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 190,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 140,
+          "popularity": null
+        },
+        {
+          "kind": "bracket_quinella",
+          "number_type": "bracket",
+          "numbers": [
+            3,
+            4
+          ],
+          "yen_per_100": 1900,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            4
+          ],
+          "yen_per_100": 560,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            12
+          ],
+          "yen_per_100": 340,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            12
+          ],
+          "yen_per_100": 560,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            4
+          ],
+          "yen_per_100": 1840,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            3
+          ],
+          "yen_per_100": 3010,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            4,
+            12
+          ],
+          "yen_per_100": 1880,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            3,
+            12
+          ],
+          "yen_per_100": 13540,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "wide": "confirmed",
+        "place": "confirmed",
+        "win": "confirmed",
+        "trifecta": "confirmed",
+        "quinella": "confirmed",
+        "trio": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
+      "refund_status": "no_runner_refund_indication",
       "refresh_error": null
     },
     {
