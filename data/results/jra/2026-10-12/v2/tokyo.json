@@ -9,8 +9,8 @@
     "sha256": "6ad43db7d88ce1a9a8f1c2f2e0ad3bab44700e8bb24f9a44e4f04b1b62da6a91",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-12T10:31:10+09:00",
-  "last_poll_at": "2026-10-12T10:31:10+09:00",
+  "updated_at": "2026-10-12T10:33:17+09:00",
+  "last_poll_at": "2026-10-12T10:33:17+09:00",
   "published_at": null,
   "races": [
     {
@@ -363,8 +363,8 @@
       "race_uid": "jra-2026-10-12-tokyo-r2",
       "race_no": 2,
       "start_at": "2026-10-12T10:20:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -372,13 +372,13 @@
         "request_fields": {
           "cname": "pw01sde0105202604050220261012/1D"
         },
-        "retrieved_at": "2026-10-12T10:31:15+09:00",
-        "raw_sha256": "535e1b1e050d261dcc90a7ea9f3b0eb7931d8707f1a4474e8bb9a23fec0daf9c",
-        "raw_file": "data/results/sources/jra/2026-10-12/tokyo/535e1b1e050d261dcc90a7ea9f3b0eb7931d8707f1a4474e8bb9a23fec0daf9c.raw.html",
+        "retrieved_at": "2026-10-12T10:33:20+09:00",
+        "raw_sha256": "cec68151d61e290d05542f7ec8b769ab45c681de436f23143a18fcf6c4b730d9",
+        "raw_file": "data/results/sources/jra/2026-10-12/tokyo/cec68151d61e290d05542f7ec8b769ab45c681de436f23143a18fcf6c4b730d9.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-12T10:31:15+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-12T10:33:20+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 2,
@@ -388,7 +388,7 @@
           "official_status_text": "1",
           "time": "1:22.6",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "33.3",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -398,9 +398,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:23.0",
           "margin": "２ 1/2",
-          "last_3f": "",
+          "last_3f": "34.1",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -410,9 +410,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:23.2",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "34.6",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -422,9 +422,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:23.2",
           "margin": "アタマ",
-          "last_3f": "",
+          "last_3f": "34.1",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -434,10 +434,94 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:23.3",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "34.2",
           "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "アイレバルバドス",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:23.3",
+          "margin": "クビ",
+          "last_3f": "33.7",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "コールオンユー",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:23.5",
+          "margin": "１ 1/2",
+          "last_3f": "34.7",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "クラオルグジェシダ",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:23.6",
+          "margin": "クビ",
+          "last_3f": "34.5",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "マホロ",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:23.7",
+          "margin": "１／２",
+          "last_3f": "35.1",
+          "final_popularity": "11",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "ナムラジョン",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:23.9",
+          "margin": "１ 1/2",
+          "last_3f": "34.0",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "ベールダウン",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:24.3",
+          "margin": "２",
+          "last_3f": "35.0",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "シンボリサーブル",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:25.9",
+          "margin": "１０",
+          "last_3f": "36.2",
+          "final_popularity": "12",
           "final_win_odds": null
         }
       ],
@@ -562,12 +646,12 @@
         }
       ],
       "payouts_status": {
-        "wide": "partial",
-        "place": "partial",
-        "win": "partial",
-        "trifecta": "partial",
-        "quinella": "partial",
-        "trio": "partial"
+        "wide": "confirmed",
+        "place": "confirmed",
+        "win": "confirmed",
+        "trifecta": "confirmed",
+        "quinella": "confirmed",
+        "trio": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
