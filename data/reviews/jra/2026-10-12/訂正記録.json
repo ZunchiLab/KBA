@@ -1,0 +1,54 @@
+{
+  "key": "T9",
+  "number": 13,
+  "name": "ヴァイスクレー",
+  "original_fragment": "地方ダート連続勝利の級比較と初芝は未検証",
+  "correction": "初芝との記述は誤り。公式掲載履歴に芝の出走・未勝利2着がある。直近4走から全戦歴の経験を判断した。",
+  "historical_facts": [
+    {
+      "date": "2025-01-25",
+      "venue": "中京",
+      "surface": "turf",
+      "distance": 1600,
+      "grade": "未勝利",
+      "finish": 2,
+      "gap_seconds": 0.9
+    },
+    {
+      "date": "2024-11-02",
+      "venue": "東京",
+      "surface": "turf",
+      "distance": 1800,
+      "grade": "未勝利",
+      "finish": 2,
+      "gap_seconds": 0.0
+    },
+    {
+      "date": "2025-08-17",
+      "venue": "中京",
+      "surface": "turf",
+      "distance": 1600,
+      "grade": "未勝利",
+      "finish": 13,
+      "gap_seconds": 1.1
+    }
+  ],
+  "sources": [
+    {
+      "provider": "JRA",
+      "url": "https://jra.jp/JRADB/accessU.html?CNAME=pw01dud002022105010/91",
+      "retrieved_at": "2026-10-12T17:25:48+09:00",
+      "raw_sha256": "92f2761afd7d8b1c352b0626159fe8ab96c9bb75d88af3ec806faffc3d4b607a",
+      "raw_file": "補足資料/history-raw/T9-13.raw.html",
+      "encoding": "cp932",
+      "review_raw_file": "data/reviews/jra/2026-10-12/history-raw/T9-13.raw.html"
+    },
+    {
+      "provider": "NAR",
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30086405896"
+    }
+  ],
+  "identified_after_results": true,
+  "forecast_modified": false,
+  "limitation": "過去の未勝利好走は現在の1勝クラス圏内を保証しない。今回結果を混ぜて発走前予想を変更しない。"
+}

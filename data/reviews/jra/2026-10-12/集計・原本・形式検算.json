@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-12T17:40:34+09:00",
+  "passed": true,
+  "races": 24,
+  "horses": 321,
+  "result_status_counts": {
+    "finished": 320,
+    "did_not_finish": 1
+  },
+  "raw_result_sha_count": 24,
+  "morning_price_raw_sha_count": 4,
+  "settled_ticket_checks": 1011,
+  "originals": [
+    {
+      "name": "report_20261012_jra_predictions_v1.html",
+      "sha256": "e5d501a40a3508076331d583cf1c1e8d9f8dc367fee796bbe5634a1dd2931c95"
+    },
+    {
+      "name": "report_20261012_jra_predictions_v1.json",
+      "sha256": "8499311bd5004ec6e9bd04542d11560fe7e489cc0587900cdc2cade38d1f6bb3"
+    },
+    {
+      "name": "report_20261012_jra_predictions_v2.json",
+      "sha256": "884cf942efcfb4314e4f06dd9306f98a330a99be0dda78ab401aa11e6e9eb8b9"
+    },
+    {
+      "name": "report_20261012_jra_predictions_v2.html",
+      "sha256": "fbac64ff79b94dcd5b89ab03ac6a61645652ae2245de8e6b2e61db5dd1561c7b"
+    }
+  ],
+  "public_forecast_identical_excluding_publication": true,
+  "report_fixed_horse_values_identical": true,
+  "formation_expansion_checks": 162,
+  "inline_js_syntax": true,
+  "all_internal_links_resolve": true,
+  "strict_original_forecast_passed": true,
+  "post_result_history_cohort": 25,
+  "history_parsed": 24,
+  "history_unresolved": 1,
+  "history_pre_target_dates_only": true,
+  "actual_browser_verified": false
+}
