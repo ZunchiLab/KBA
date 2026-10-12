@@ -9,8 +9,8 @@
     "sha256": "6ad43db7d88ce1a9a8f1c2f2e0ad3bab44700e8bb24f9a44e4f04b1b62da6a91",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-12T16:27:53+09:00",
-  "last_poll_at": "2026-10-12T16:27:53+09:00",
+  "updated_at": "2026-10-12T16:29:57+09:00",
+  "last_poll_at": "2026-10-12T16:29:57+09:00",
   "published_at": null,
   "races": [
     {
@@ -3453,12 +3453,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604051220261012/6F"
         },
-        "retrieved_at": "2026-10-12T16:27:55+09:00",
-        "raw_sha256": "b3582615670a41f1402777097b3f997437326e1bd30f45be9958832adf545800",
-        "raw_file": "data/results/sources/jra/2026-10-12/tokyo/b3582615670a41f1402777097b3f997437326e1bd30f45be9958832adf545800.raw.html",
+        "retrieved_at": "2026-10-12T16:30:00+09:00",
+        "raw_sha256": "9713a1541e6e2c0557ed6a66de562281fa9ac248188d10f73a1fd2c4e383c8a1",
+        "raw_file": "data/results/sources/jra/2026-10-12/tokyo/9713a1541e6e2c0557ed6a66de562281fa9ac248188d10f73a1fd2c4e383c8a1.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-12T16:27:55+09:00",
+      "source_checked_at": "2026-10-12T16:30:00+09:00",
       "rows_complete": false,
       "rows": [
         {
@@ -3469,7 +3469,7 @@
           "official_status_text": "1",
           "time": "1:18.7",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "35.7",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -3481,7 +3481,7 @@
           "official_status_text": "2",
           "time": "",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "36.1",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -3493,7 +3493,7 @@
           "official_status_text": "3",
           "time": "",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "35.6",
           "final_popularity": "15",
           "final_win_odds": null
         },
@@ -3505,7 +3505,7 @@
           "official_status_text": "4",
           "time": "",
           "margin": "アタマ",
-          "last_3f": "",
+          "last_3f": "36.2",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -3517,7 +3517,7 @@
           "official_status_text": "5",
           "time": "",
           "margin": "２ 1/2",
-          "last_3f": "",
+          "last_3f": "36.8",
           "final_popularity": "6",
           "final_win_odds": null
         }
