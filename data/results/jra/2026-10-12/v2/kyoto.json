@@ -9,8 +9,8 @@
     "sha256": "6ad43db7d88ce1a9a8f1c2f2e0ad3bab44700e8bb24f9a44e4f04b1b62da6a91",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-12T15:18:40+09:00",
-  "last_poll_at": "2026-10-12T15:18:40+09:00",
+  "updated_at": "2026-10-12T15:20:44+09:00",
+  "last_poll_at": "2026-10-12T15:20:44+09:00",
   "published_at": null,
   "races": [
     {
@@ -2783,8 +2783,8 @@
       "race_uid": "jra-2026-10-12-kyoto-r10",
       "race_no": 10,
       "start_at": "2026-10-12T15:10:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -2792,13 +2792,13 @@
         "request_fields": {
           "cname": "pw01sde0108202604051020261012/E3"
         },
-        "retrieved_at": "2026-10-12T15:18:43+09:00",
-        "raw_sha256": "bb7ebea48a26049f529366544912ba0757e7bc613066f7345037530bb441b392",
-        "raw_file": "data/results/sources/jra/2026-10-12/kyoto/bb7ebea48a26049f529366544912ba0757e7bc613066f7345037530bb441b392.raw.html",
+        "retrieved_at": "2026-10-12T15:20:47+09:00",
+        "raw_sha256": "9eb39b41dd8eaa8649b00ae85d9950b48d6750da21f1be871aa278039f1994a2",
+        "raw_file": "data/results/sources/jra/2026-10-12/kyoto/9eb39b41dd8eaa8649b00ae85d9950b48d6750da21f1be871aa278039f1994a2.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-12T15:18:43+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-12T15:20:47+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 5,
@@ -2818,7 +2818,7 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:44.1",
           "margin": "４",
           "last_3f": "",
           "final_popularity": "2",
@@ -2830,7 +2830,7 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:44.1",
           "margin": "クビ",
           "last_3f": "",
           "final_popularity": "3",
@@ -2842,7 +2842,7 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:44.5",
           "margin": "２",
           "last_3f": "",
           "final_popularity": "5",
@@ -2854,10 +2854,70 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:44.5",
           "margin": "ハナ",
           "last_3f": "",
           "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "アンヘリータス",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:45.0",
+          "margin": "３",
+          "last_3f": "",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ウインリベラシオン",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:45.2",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "キーウェーブ",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:45.3",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "ハイディージェン",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:46.2",
+          "margin": "５",
+          "last_3f": "",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "ホウオウトランプ",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:46.4",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "6",
           "final_win_odds": null
         }
       ],
@@ -2982,12 +3042,12 @@
         }
       ],
       "payouts_status": {
-        "trifecta": "partial",
-        "place": "partial",
-        "quinella": "partial",
-        "trio": "partial",
-        "win": "partial",
-        "wide": "partial"
+        "trifecta": "confirmed",
+        "place": "confirmed",
+        "quinella": "confirmed",
+        "trio": "confirmed",
+        "win": "confirmed",
+        "wide": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
