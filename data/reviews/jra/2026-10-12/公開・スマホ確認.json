@@ -1,0 +1,271 @@
+{
+  "checked_at": "2026-10-12T17:45:31+09:00",
+  "passed": true,
+  "commit": "a9c4e23181b5d1ca90568d9df404fb6b0e415162",
+  "remote_main": "a9c4e23181b5d1ca90568d9df404fb6b0e415162",
+  "pages_run": 38225177998,
+  "pages_conclusion": "success",
+  "checks": [
+    {
+      "path": "predictions/report_20261012_jra_review_v1.html",
+      "http_status": 200,
+      "sha256": "93b02b541c6755b65039725ea6d7dd2c5e54a4de9360b067061bf0b6cb05d8e3",
+      "bytes": 527000,
+      "matches": true
+    },
+    {
+      "path": "predictions/report_20261012_jra_review_v1.json",
+      "http_status": 200,
+      "sha256": "1f2fd27d32dc6e4a588abcb27169f9705b23b69fc98ee7f533618ff5296d7570",
+      "bytes": 4938981,
+      "matches": true
+    },
+    {
+      "path": "predictions/report_20261012_jra_review_v1.md",
+      "http_status": 200,
+      "sha256": "3f959dddd5bd7368023de9176511dcb5ffc737475363cb763ee7494d5341595d",
+      "bytes": 19607,
+      "matches": true
+    },
+    {
+      "path": "data/catalog.json",
+      "http_status": 200,
+      "sha256": "b7d340b995b26a2dab6f1b15194600d5afa4af420df68acfb08ff37b44c163b1",
+      "bytes": 209797,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/morning-odds/cb410415fe73707e1f3aaee0406b88a87a67c70184de1fc70aa324362b9f187d.raw.html",
+      "http_status": 200,
+      "sha256": "cb410415fe73707e1f3aaee0406b88a87a67c70184de1fc70aa324362b9f187d",
+      "bytes": 95364,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/morning-odds/8f9f2ce15f4726aa0fd571a06e7e36cae96a544579e87fd121522cc5fb4f537e.raw.html",
+      "http_status": 200,
+      "sha256": "8f9f2ce15f4726aa0fd571a06e7e36cae96a544579e87fd121522cc5fb4f537e",
+      "bytes": 98366,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/morning-odds/316131afb54efed00bf255e46d451f730cd6f2d6b1b55b4fad677d41cae02b2d.raw.html",
+      "http_status": 200,
+      "sha256": "316131afb54efed00bf255e46d451f730cd6f2d6b1b55b4fad677d41cae02b2d",
+      "bytes": 90542,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/morning-odds/b6396c0bc29d20a5494ec7d21c4eba814d9da8949cfc7183b8dc3fd47e15b1f4.raw.html",
+      "http_status": 200,
+      "sha256": "b6396c0bc29d20a5494ec7d21c4eba814d9da8949cfc7183b8dc3fd47e15b1f4",
+      "bytes": 82038,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T1-1.raw.html",
+      "http_status": 200,
+      "sha256": "c561e51c57b16f7d04b1fc2a55159e0ef011c2027037069d52ee3090bee79482",
+      "bytes": 100775,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T1-8.raw.html",
+      "http_status": 200,
+      "sha256": "3710eab94d74f88c102230014fc002826fa76809a74369e78c60c6839ab94fa1",
+      "bytes": 102431,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T1-12.raw.html",
+      "http_status": 200,
+      "sha256": "3106c3317190515da400315272299e5e07f3b16040636269c8819c57ead843fc",
+      "bytes": 101022,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T2-4.raw.html",
+      "http_status": 200,
+      "sha256": "6c15dd436e940aa306545ba66a862d7dc5a403d943cde49dc7cd57bbebae655a",
+      "bytes": 100963,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T4-7.raw.html",
+      "http_status": 200,
+      "sha256": "e4b817e258f5e3e73ad5980e9a5dbe6f74041df929aca554254866ec2cbdfffe",
+      "bytes": 117774,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T4-9.raw.html",
+      "http_status": 200,
+      "sha256": "4a587818619560a47f70b4f66f060334015b244c99fc48f361adf16c360a8f72",
+      "bytes": 129677,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T4-12.raw.html",
+      "http_status": 200,
+      "sha256": "f1531fa62e9ca4a4e16cd615f46e880cb254ccc63ebfc837d135b7ac60781a6d",
+      "bytes": 115909,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T7-4.raw.html",
+      "http_status": 200,
+      "sha256": "eacb38bd453a7b8ca097ed1dd3e73490230fca55bd073364d722f8724854490a",
+      "bytes": 115733,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T7-13.raw.html",
+      "http_status": 200,
+      "sha256": "168519996760b5c5642636c90346742c1c0a0a0e6f2a9b536ee89f19325e6dd2",
+      "bytes": 106921,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T8-6.raw.html",
+      "http_status": 200,
+      "sha256": "b83a4fe9ef6a5db6676e0919007244d5874f882937271a4cd53b965259775517",
+      "bytes": 102758,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/T9-13.raw.html",
+      "http_status": 200,
+      "sha256": "92f2761afd7d8b1c352b0626159fe8ab96c9bb75d88af3ec806faffc3d4b607a",
+      "bytes": 117540,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K1-5.raw.html",
+      "http_status": 200,
+      "sha256": "14e24693b1363c220bf2412159a1cecb85607c9c44343dd6b6e9e986404c25ef",
+      "bytes": 101806,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K1-7.raw.html",
+      "http_status": 200,
+      "sha256": "274cca531e6b4f512a7ea500f448ea38a9760d54d1eb2ac3908d0b44ced6409a",
+      "bytes": 100981,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K1-11.raw.html",
+      "http_status": 200,
+      "sha256": "10d2db176f629da13ad37cae3fd8e22cd970bd319175d2d4db67064d40b88160",
+      "bytes": 101701,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K2-4.raw.html",
+      "http_status": 200,
+      "sha256": "e1a520f43e7bfbc93c5c6d15f3849b0bd572c34fa2b3b2f7b7ead184c8a65d67",
+      "bytes": 101785,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K2-6.raw.html",
+      "http_status": 200,
+      "sha256": "124ded444a69c87edf842e737e01f7c41c37df1fc5cc4bc7ad5b1a81cb2621c8",
+      "bytes": 100985,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K2-7.raw.html",
+      "http_status": 200,
+      "sha256": "d4be303377fb5cc331ba7161497aee09164a32e55c070d0238b964232f9c323e",
+      "bytes": 100805,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K2-9.raw.html",
+      "http_status": 200,
+      "sha256": "2b3bdc56da000c14da732242233d3a375ff285c12bce8519bb95150e8441afce",
+      "bytes": 100953,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K2-12.raw.html",
+      "http_status": 200,
+      "sha256": "2a24d157489a5df00ae36d32ec545db99718260d891bad96057e1451b738229e",
+      "bytes": 100914,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K3-4.raw.html",
+      "http_status": 200,
+      "sha256": "afa189f6591531b71d271fb32182e436a9b143468678c1cfe8925fd1e93ff122",
+      "bytes": 100888,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K3-11.raw.html",
+      "http_status": 200,
+      "sha256": "0e92cfd3da36df20b19bec6cfd9ebefdf6932b646c555e0588eb6137df0fe0e4",
+      "bytes": 101603,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K7-4.raw.html",
+      "http_status": 200,
+      "sha256": "dd71aa071928d48638145a0468dd39031f14931ced697640f42064857e3f9487",
+      "bytes": 110342,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K7-14.raw.html",
+      "http_status": 200,
+      "sha256": "ac3642ab9d7174993d72f1abca6c61a52758b32bd6267ed39eef7175907380c1",
+      "bytes": 111688,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K8-6.raw.html",
+      "http_status": 200,
+      "sha256": "5a36d731fa79a1ff8d01b63084ec16436a7377a8458ca3b25ec652d51b783040",
+      "bytes": 96380,
+      "matches": true
+    },
+    {
+      "path": "data/reviews/jra/2026-10-12/history-raw/K11-7.raw.html",
+      "http_status": 200,
+      "sha256": "d2cd42c34717206144fdb9bd10f846962d764c712b3f416789461df396cf86c4",
+      "bytes": 127964,
+      "matches": true
+    }
+  ],
+  "fixed_forecast_sha256": "6ad43db7d88ce1a9a8f1c2f2e0ad3bab44700e8bb24f9a44e4f04b1b62da6a91",
+  "original_forecast_unchanged": true,
+  "browser_checks": {
+    "checked_at": "2026-10-12T17:47:17+09:00",
+    "actual_browser_verified": true,
+    "viewport_test": {
+      "width": 390,
+      "height": 844
+    },
+    "document_width": 375,
+    "horizontal_document_overflow": false,
+    "race_articles": 24,
+    "horse_rows": 321,
+    "single_race_display": true,
+    "venue_switch": true,
+    "main_filter_kyoto_count": 3,
+    "race_jump_K9": true,
+    "search_empty_state_and_recovery": true,
+    "cross_venue_main_link_T9": true,
+    "did_not_finish_T4_number7": "中止",
+    "main_outside_top3_filter_tokyo_races": [
+      2,
+      3,
+      7,
+      12
+    ],
+    "details_initially_closed": true,
+    "temporary_viewport_reset": true,
+    "screenshots_visually_inspected": true
+  }
+}
