@@ -192,3 +192,11 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 ## 11. 2026-10-12追加：簡潔表示の指定
 
 新規JRAは任意の `presentation` に `layout: compact-v1`、`default_race_mode: single`、`details_collapsed: true` を保存できる。描画はこの値で選択し、旧原本の契約を変更しない。全頭の印・比較指数・着順は選択レースで常時表示。全頭の根拠・採否・出典・予算例・各点価格は固定JSONに保持する。画面用JSONの縮小は固定JSONのデータ削除ではない。新馬の市場参考値・障害の暫定比較・指数保留の意味も維持する。
+
+## 12. 2026-10-17：掲載戦歴の範囲と簡潔表示の初期選択
+
+`horses[].history_audit` は `status`・`summary`・公式の `source`・`listed_races`・`same_surface_count`・`near_condition_count`・`exact_distance_count`・`scope` を保持する。確認範囲外の不存在を断定しない。10/17以降の本線レースでは全出走予定馬の有効な発走前確認記録を必須とし、strict公開ゲートが検査する。全文の意味・予測力の検査ではない。補足過去走は `supplemental: true` / `used_in_score: false` で、四走指数と区別する。
+
+新規JRAの任意指定 `presentation.price_eligible_defaults: true` は、簡潔表示の仮プラン初期選択を保存価格の全点条件達成案に限る。`selected_for_example` は本線候補の記録を保持し、`budget.selected_main_yen` は全候補費用、`price_eligible_main_yen` は保存価格条件達成案の費用例。直前条件や実購入の達成を意味しない。旧版の初期選択を一律変更しない。
+
+`comparison_baselines.plans[]` には同時刻の市場順・従来指数順を、各掲載案と同じ券種・形式・点数・金額で展開した比較用の全点・価格・下限・時刻・出典を保存できる。購入推奨へ合算しない。

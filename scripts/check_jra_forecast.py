@@ -2,7 +2,8 @@
 from pathlib import Path
 from argparse import ArgumentParser
 from datetime import datetime
-import json,math
+import json,math,re
+from urllib.parse import urlparse
 
 def audit(data,strict=False):
     findings=[]
@@ -21,10 +22,18 @@ def audit(data,strict=False):
             if len(used)!=len(set(used)):add('duplicate_scored_run',uid,h['number'],'同じ過去走を複数回集約している。')
             if any(not p.get('resolved_class') for p in h.get('evaluated_runs',[])):add('unclassified_run_scored',uid,h['number'],'級未確認の走を採点に使っている。')
         if hs and all(h.get('score_method')=='market_reference' for h in hs.values()):
-            market=sorted(hs.values(),key=lambda h:(h['market']['win'] is None,h['market']['win'] or math.inf,h['number']))
+            market=sorted((h for h in hs.values() if h.get('status_at_snapshot') not in ['withdrawn','excluded']),key=lambda h:(h['market']['win'] is None,h['market']['win'] or math.inf,h['number']))
             if any(h.get('rank')!=i+1 for i,h in enumerate(market)):add('market_reference_order_stale',uid,message='市場参考の順位が表示中の保存単勝順と違う。価格更新後に参考順位も確認する。')
         mains=[p for p in r.get('bet_plans',[]) if p.get('selected_for_example')]
         if not mains:continue
+        if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-10-17':
+            for n,h in hs.items():
+                if h.get('status_at_snapshot') in ['withdrawn','excluded']:continue
+                history=h.get('history_audit',{});source=history.get('source') or {}
+                try:before=datetime.fromisoformat(source['retrieved_at'])<=datetime.fromisoformat(data['fixed_at'])
+                except (KeyError,TypeError,ValueError):before=False
+                valid=(history.get('status')=='parsed' and history.get('summary') and source.get('provider')=='JRA' and urlparse(source.get('url','')).hostname in ['jra.jp','www.jra.jp','jra.go.jp','www.jra.go.jp'] and re.fullmatch('[a-f0-9]{64}',source.get('raw_sha256','')) and before)
+                if not valid:add('listed_history_scope_missing',uid,n,'本線レースの全出走予定馬について、発走前のJRA公式掲載戦歴の確認範囲・出典・取得時刻・原文SHAをhistory_auditへ保存。未解決なら本線を見送る。書式通過は初条件の文章の正しさを保証しない。')
         adopted={n for p in mains for t in p['tickets'] for n in t['numbers']}
         all_refs={ref for h in hs.values() for ref in h.get('evidence_refs',[])}
         def evidence(entry,number,compared):

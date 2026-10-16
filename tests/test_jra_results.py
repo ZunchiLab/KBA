@@ -19,7 +19,7 @@ class JRAResults(unittest.TestCase):
         self.assertEqual(sum(p['kind']=='wide' for p in r['payouts']),3)
         self.assertEqual(sum(p['kind']=='place' for p in r['payouts']),3)
     def test_foreign_date_venue_number_title_rejected(self):
-        for field,value in [('start_at','2026-10-03T10:05:00+09:00'),('venue_key','kyoto'),('race_no',2),('name','他のレース')]:
+        for field,value in [('start_at','2026-10-03T10:05:00+09:00'),('venue_key','kyoto'),('venue_key','niigata'),('race_no',2),('name','他のレース')]:
             with self.subTest(field=field):
                 f=deepcopy(self.f);f[field]=value
                 with self.assertRaises(ValueError):parse(self.html,f,self.source)

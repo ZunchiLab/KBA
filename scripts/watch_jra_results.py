@@ -34,7 +34,7 @@ def parse(s,forecast,source):
     if not hd or wanted not in hd.get_text(' ',strip=True):raise ValueError('Result date mismatch')
     number=hd.select_one('.race_number img');m=re.search(r'(\d+)レース',number.get('alt','') if number else '')
     if not m or int(m[1])!=forecast['race_no']:raise ValueError('Result race number mismatch')
-    venue={'tokyo':'東京','kyoto':'京都'}.get(forecast.get('venue_key'))
+    venue={'tokyo':'東京','kyoto':'京都','niigata':'新潟'}.get(forecast.get('venue_key'))
     if venue and venue not in hd.get_text():raise ValueError('Result venue mismatch')
     title=hd.select_one('.race_name')
     if not title or re.sub(r'\s+','',title.get_text())!=re.sub(r'\s+','',forecast['name']):raise ValueError('Result race title mismatch')
@@ -84,15 +84,15 @@ def update(config,recheck=False):
     if menu:
         date=d['date_jst'].replace('-','')
         for token in tokens(menu):
-            m=re.search(r'^pw01srl\d{2}(05|08)\d{8}'+date+r'/',token)
+            m=re.search(r'^pw01srl\d{2}(04|05|08)\d{8}'+date+r'/',token)
             if not m:continue
-            key='tokyo' if m[1]=='05' else 'kyoto'
+            key={'04':'niigata','05':'tokyo','08':'kyoto'}[m[1]]
             if not any(k==key for k,n in wanted):continue
             try:
                 page,_=raw_fetch('accessS.html',token,d['date_jst'],key+'_menu')
                 for t in tokens(page):
-                    mm=re.search(r'^pw01sde\d{2}(05|08)\d{8}(\d{2})'+date+r'/',t)
-                    if mm:urls[('tokyo' if mm[1]=='05' else 'kyoto',int(mm[2]))]=t
+                    mm=re.search(r'^pw01sde\d{2}(04|05|08)\d{8}(\d{2})'+date+r'/',t)
+                    if mm:urls[({'04':'niigata','05':'tokyo','08':'kyoto'}[mm[1]],int(mm[2]))]=t
             except Exception as e:menu_error=str(e)
     for key,no in wanted:
         path,data=datasets[key];i=next(i for i,r in enumerate(data['races']) if r['race_no']==no);old=data['races'][i]

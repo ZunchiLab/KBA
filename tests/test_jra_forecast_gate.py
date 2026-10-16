@@ -24,6 +24,21 @@ class Gate(unittest.TestCase):
         p=fixture();p['races'][0]['analysis']['preflight_review']['fact_checks'][0]['expected']='2勝クラス';self.assertIn('source_claim_mismatch',self.codes(p))
     def test_stale_market_reference_rank_fails(self):
         p=fixture();hs=p['races'][0]['horses'];hs[0]['score_method']=hs[1]['score_method']='market_reference';hs[0]['market']['win']=9.;self.assertIn('market_reference_order_stale',self.codes(p))
+    def test_withdrawn_debut_runner_has_no_reference_rank(self):
+        p=fixture();r=p['races'][0];r['bet_plans']=[];p['budget']['selected_main_yen']=0
+        for h in r['horses']:h['score_method']='market_reference';h['status_at_snapshot']='declared'
+        r['horses'][1].update(status_at_snapshot='withdrawn',rank=None,market={'win':None})
+        self.assertEqual(audit(p,True),[])
+        r['horses'][0]['rank']=2
+        self.assertIn('market_reference_order_stale',self.codes(p))
+    def test_new_main_requires_pre_race_official_listed_history(self):
+        p=fixture();p['date_jst']='2026-10-17';p['fixed_at']='2026-10-17T09:00:00+09:00';p['races'][0]['start_at']='2026-10-17T10:00:00+09:00'
+        self.assertIn('listed_history_scope_missing',self.codes(p))
+        for h in p['races'][0]['horses']:
+            h['history_audit']=dict(status='parsed',summary='Fixture listed-history scope',source=dict(provider='JRA',url='https://jra.jp/JRADB/accessU.html?CNAME=fixture',retrieved_at='2026-10-17T08:59:00+09:00',raw_sha256='a'*64))
+        self.assertNotIn('listed_history_scope_missing',self.codes(p))
+        p['races'][0]['horses'][1]['history_audit']['source']['retrieved_at']='2026-10-17T09:01:00+09:00'
+        self.assertIn('listed_history_scope_missing',self.codes(p))
     def test_missing_alternate_scenario_fails(self):
         p=fixture();p['races'][0]['analysis']['preflight_review']['scenario_checks'].pop();self.assertIn('scenario_ticket_audit_missing',self.codes(p))
     def test_repeated_evidence_and_cost_error_fail(self):

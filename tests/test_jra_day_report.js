@@ -15,8 +15,9 @@ class Element {
   replaceChildren() { this.children=[];this.textContent=''; }
 }
 function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,rows:r.rows,payouts:r.refunds||[]}))};}
-function fixture(plans=[],embeddedDigest=false) {
+function fixture(plans=[],embeddedDigest=false,thirdVenue=false) {
   const venues=[{venue_key:'tokyo',label:'東京',baba_code:5},{venue_key:'kyoto',label:'京都',baba_code:8}];
+  if(thirdVenue)venues.push({venue_key:'niigata',label:'新潟',baba_code:4});
   const forecast={authority:'jra',date_jst:'2026-10-09',forecast_version:'v1'};
   const forecastText=JSON.stringify(forecast)+'\n';
   const digest=crypto.createHash('sha256').update(forecastText).digest('hex');
@@ -63,5 +64,6 @@ async function test(name, action){await action();passed++;console.log('PASS '+na
   await test('embedded digest still rejects a mismatched result hash',async()=>{const f=fixture([],true);f.confirm('tokyo');await f.click();f.results.tokyo.forecast_sha256='b'.repeat(64);await f.click();assert.match(f.nodes['result-status'].textContent,/取得に失敗/);assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
   await test('invalid embedded digest keeps the legacy JSON verification',async()=>{const f=fixture([],'bad');f.confirm('tokyo');await f.click();assert(f.requests.includes('day.json'));assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
   await test('both API and raw main outages still use the public-site saved data',async()=>{const f=fixture();f.confirm('tokyo');f.failAPI();f.rawUnavailable.add('tokyo');await f.click();assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/公開サイトの保存結果/);assert(f.requests.some(x=>x.startsWith('https://zunchilab.github.io/KBA/data/')));});
+  await test('Niigata common results validate as official venue 04 and update beside Tokyo/Kyoto',async()=>{const f=fixture([],true,true);f.confirm('niigata');await f.click();assert.equal(f.cards[2].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/新潟: 1R確定/);});
   console.log(passed+' UI regression cases passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});
