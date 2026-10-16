@@ -1,0 +1,134 @@
+{
+  "baseline_plans": 180,
+  "all_strategy_ticket_prices_checked": 1698,
+  "history_cohort": 406,
+  "older_supplements": 353,
+  "cancelled_number_verified": [
+    "T5",
+    5
+  ],
+  "passed": true,
+  "fixed_at": "2026-10-17T08:49:03+09:00",
+  "races": 36,
+  "horses": 472,
+  "source_count": 803,
+  "source_times": [
+    "2026-10-17T08:22:23+09:00",
+    "2026-10-17T08:46:05+09:00"
+  ],
+  "main_races": 7,
+  "main_example_yen": 1400,
+  "all_prices_met_yen": 700,
+  "main": [
+    {
+      "key": "N4",
+      "type": "ワイド",
+      "groups": [
+        [
+          11,
+          9
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": true
+    },
+    {
+      "key": "N6",
+      "type": "ワイド",
+      "groups": [
+        [
+          3,
+          13
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": true
+    },
+    {
+      "key": "N10",
+      "type": "ワイド",
+      "groups": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "T6",
+      "type": "ワイド",
+      "groups": [
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K2",
+      "type": "馬連",
+      "groups": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          6,
+          7,
+          9
+        ]
+      ],
+      "points": 5,
+      "all_prices_met": false
+    },
+    {
+      "key": "K10",
+      "type": "ワイド",
+      "groups": [
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": false
+    },
+    {
+      "key": "K12",
+      "type": "ワイド",
+      "groups": [
+        [
+          10,
+          4
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": true
+    }
+  ],
+  "checks": [
+    "全36R472頭を公式カード・価格ページで照合",
+    "買い目全点・点数・費用・保存価格の原文を照合",
+    "未判定の級・地方過去走を採点へ混ぜない",
+    "全頭DOM・重複ID・圧縮した画面用JSON",
+    "根拠走の時点・参照・欠損表示",
+    "単勝・複勝の推奨なし・本線7R14点・実購入未記録"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "kba.jra-preflight/1",
+  "forecast": "C:/Users/furokei/Documents/Codex/2026-09-26/referenced-chatgpt-conversation-this-is-an/outputs/20261017/report_20261017_jra_predictions_v2.json",
+  "strict": true,
+  "passed": true,
+  "scope": "形式・整合性と明示的比較の記録を確認。自由文の全事実・能力・期待値・未来の的中は検証しない。",
+  "findings": []
+}
