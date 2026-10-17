@@ -1,0 +1,30 @@
+{
+  "schema_version": "kba.jra-preflight/1",
+  "forecast": "C:\\Users\\furokei\\Documents\\Codex\\2026-09-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\20261017_review\\合成データ_翌日公開停止検査.json",
+  "strict": true,
+  "passed": false,
+  "scope": "形式・整合性と明示的比較の記録を確認。自由文の全事実・能力・期待値・未来の的中は検証しない。",
+  "findings": [
+    {
+      "code": "large_rank_downgrade_comparison_missing",
+      "severity": "error",
+      "race_uid": "test",
+      "number": 5,
+      "message": "本線レースで指数上位3頭を総合5位以下・順位保留へ下げる場合、上位へ採用した馬との個別比較と双方の根拠走をpreflight_review.rank_override_reviewsへ保存する。定型的な理由では完了としない。"
+    },
+    {
+      "code": "wide_counterpart_slot_comparison_missing",
+      "severity": "error",
+      "race_uid": "test",
+      "number": 3,
+      "message": "本線ワイドの相手外へ朝単勝上位4頭・指数上位3頭・条件戻り候補を置く場合、軸だけでなく採用相手との直接比較と双方の根拠走をformation_review.plans[].counterpart_exclusionsへ保存する。"
+    },
+    {
+      "code": "wide_counterpart_slot_comparison_missing",
+      "severity": "error",
+      "race_uid": "test",
+      "number": 5,
+      "message": "本線ワイドの相手外へ朝単勝上位4頭・指数上位3頭・条件戻り候補を置く場合、軸だけでなく採用相手との直接比較と双方の根拠走をformation_review.plans[].counterpart_exclusionsへ保存する。"
+    }
+  ]
+}

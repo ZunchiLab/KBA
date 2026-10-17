@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-17T22:02:37+09:00",
+  "passed": true,
+  "races": 36,
+  "horses": 472,
+  "result_status_counts": {
+    "finished": 470,
+    "did_not_finish": 1,
+    "withdrawn": 1
+  },
+  "raw_result_sha_count": 36,
+  "morning_price_raw_sha_count": 7,
+  "settled_ticket_checks": 1698,
+  "formation_expansion_checks": 270,
+  "originals": [
+    {
+      "name": "report_20261017_jra_predictions_v1.html",
+      "sha256": "9dfd75e9d6af39719b8817d5765d93400e91b51f072a80b6753f1b466af2a222"
+    },
+    {
+      "name": "report_20261017_jra_predictions_v1.json",
+      "sha256": "6f9f62c3aea89d28422de618487a9943934161b332929cdeaa3c6a3f9db6e950"
+    },
+    {
+      "name": "report_20261017_jra_predictions_v2.html",
+      "sha256": "4c505d0998bf1ff7e989d8ba920d6fcc85696eb057f71d24c6fb9f1a23c54d78"
+    },
+    {
+      "name": "report_20261017_jra_predictions_v2.json",
+      "sha256": "41f59495c16b4f8cd6a1d37166d1d96d94365dabe439d4ce9e800377ad5b6e41"
+    }
+  ],
+  "public_forecast_identical_excluding_publication": true,
+  "report_fixed_horse_values_identical": true,
+  "source_histories_pre_race": 406,
+  "individual_review_notes": 36,
+  "dead_heat_settlement_verified": "京都12R 2着⑦⑩同着、馬連⑤–⑦/⑤–⑩",
+  "inline_js_syntax": true,
+  "all_internal_links_resolve": true,
+  "strict_original_forecast_passed": true,
+  "next_day_missing_record_probe_exit_code": 1,
+  "next_day_gate_tests_total": 26,
+  "actual_browser_verified": false
+}

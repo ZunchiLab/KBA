@@ -65,4 +65,39 @@ class Gate(unittest.TestCase):
     def test_existing_forecast_and_unselected_plan_keep_their_contract(self):
         p=self.counterpart_fixture();p['date_jst']='2026-10-11';p['fixed_at']='2026-10-11T09:00:00+09:00';self.assertEqual(audit(p,True),[])
         p=self.counterpart_fixture();p['races'][0]['bet_plans'][0]['selected_for_example']=False;p['budget']['selected_main_yen']=0;self.assertEqual(audit(p,True),[])
+    def october18_wide_fixture(self):
+        p=self.counterpart_fixture();p.update(date_jst='2026-10-18',fixed_at='2026-10-18T09:00:00+09:00');r=p['races'][0];r['start_at']='2026-10-18T10:00:00+09:00'
+        for h in r['horses']:
+            h['status_at_snapshot']='declared'
+            h['history_audit']=dict(status='parsed',summary='Fixture scope',source=dict(provider='JRA',url='https://jra.jp/JRADB/accessU.html?CNAME=fixture',retrieved_at='2026-10-18T08:59:00+09:00',raw_sha256='a'*64))
+        r['analysis']['trio']=[1,[2,3,4],[2,3,4,5]]
+        r['bet_plans']=[dict(plan_id='w',kind='wide',groups=[[1,2]],selected_for_example=True,tickets=[dict(numbers=[1,2],example_stake_yen=100)])];p['budget']['selected_main_yen']=100
+        entries=[dict(number=n,compared_with=[2],reason='Fixture counterpart comparison',evidence_refs=['run'+str(n),'run2']) for n in [3,4,5]]
+        r['analysis']['formation_review']={'plans':[{'linked_plan_id':'w','counterpart_exclusions':entries}]}
+        r['analysis']['preflight_review']['exclusions']+=deepcopy(entries)
+        return p
+    def test_wide_requires_counterpart_instead_of_only_axis(self):
+        p=self.october18_wide_fixture();self.assertEqual(audit(p,True),[])
+        e=p['races'][0]['analysis']['formation_review']['plans'][0]['counterpart_exclusions'][0]
+        e.update(compared_with=[1],evidence_refs=['run1','run3'])
+        self.assertIn('wide_counterpart_slot_comparison_missing',self.codes(p))
+    def test_index_top_three_omitted_wide_opponent_is_reviewed(self):
+        p=self.october18_wide_fixture();r=p['races'][0];h=r['horses'][-1];h['market']['win']=100.;h['model_rank']=3
+        r['analysis']['formation_review']['plans'][0]['counterpart_exclusions']=[e for e in r['analysis']['formation_review']['plans'][0]['counterpart_exclusions'] if e['number']!=5]
+        self.assertIn('wide_counterpart_slot_comparison_missing',self.codes(p))
+    def test_large_rank_downgrade_requires_individual_evidence(self):
+        p=self.october18_wide_fixture();r=p['races'][0];r['horses'][-1].update(model_rank=2,rank=5)
+        self.assertIn('large_rank_downgrade_comparison_missing',self.codes(p))
+        e=dict(number=5,compared_with=[2],reason='Fixture grade distance and uncertainty comparison',evidence_refs=['run5','run2'])
+        r['analysis']['preflight_review']['rank_override_reviews']=[e];self.assertEqual(audit(p,True),[])
+        e['evidence_refs']=['run5'];self.assertIn('large_rank_downgrade_comparison_missing',self.codes(p))
+    def test_generic_reason_does_not_complete_large_downgrade(self):
+        p=self.october18_wide_fixture();r=p['races'][0];r['horses'][-1].update(model_rank=2,rank=5)
+        r['analysis']['preflight_review']['rank_override_reviews']=[dict(number=5,compared_with=[2],reason='印・総合順位は今回条件と展開を含む人手判断',evidence_refs=['run5','run2'])]
+        self.assertIn('large_rank_downgrade_comparison_missing',self.codes(p))
+    def test_october17_frozen_contract_does_not_gain_new_wide_requirements(self):
+        p=self.october18_wide_fixture();p['date_jst']='2026-10-17';r=p['races'][0]
+        r['analysis']['formation_review']['plans'][0]['counterpart_exclusions']=[]
+        r['horses'][-1].update(model_rank=2,rank=5)
+        self.assertEqual(audit(p,True),[])
 if __name__=='__main__':unittest.main()

@@ -200,3 +200,11 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 新規JRAの任意指定 `presentation.price_eligible_defaults: true` は、簡潔表示の仮プラン初期選択を保存価格の全点条件達成案に限る。`selected_for_example` は本線候補の記録を保持し、`budget.selected_main_yen` は全候補費用、`price_eligible_main_yen` は保存価格条件達成案の費用例。直前条件や実購入の達成を意味しない。旧版の初期選択を一律変更しない。
 
 `comparison_baselines.plans[]` には同時刻の市場順・従来指数順を、各掲載案と同じ券種・形式・点数・金額で展開した比較用の全点・価格・下限・時刻・出典を保存できる。購入推奨へ合算しない。
+
+## 13. 2026-10-18以降：本線ワイド相手・指数上位の降格
+
+10/17の開催後検証から追加。既存の固定原本は変更しない。新規JRA本線ワイドでは `analysis.formation_review.plans[].counterpart_exclusions[]` に、朝単勝上位4頭・指数上位3頭・条件戻り候補のうち買い目全点の候補外馬を保存する。`number`・`compared_with`・`reason`・双方の実際の `evidence_refs` が必要。比較先は採用馬のみで、共通軸がある場合は少なくとも1頭の採用相手を含める。現行データでは全点共通の `analysis.trio[0]` または一意の全点共通馬を軸の対応に使う。新しい構成でこの対応が取れない場合は役割を明示して契約を確認する。
+
+同じ日以降、本線レースの指数上位3頭を総合5位以下・順位保留にする場合、`analysis.preflight_review.rank_override_reviews[]` に `number`・`compared_with`・`reason`・双方の `evidence_refs` を保存する。比較先は総合上位4頭の別馬を少なくとも1頭。既定の「印・総合順位は今回条件と展開…」という定型文だけでは未完了。上位指数を自動採用する指示ではなく、降格の説明と参照を必須化する。
+
+`check_jra_forecast.py --strict` を既存公開コマンドが呼び出し、不足なら停止。Python26件と合成JSONのCLI停止を確認。自由文の全意味・実力差・同時的中確率・収益・未来の改善効果は検証しない。指数の採点係数は変更していない。明日の実際の予想取得・作成・公開を自動で開始したものでもない。

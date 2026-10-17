@@ -3,3 +3,4 @@ data/results/sources/** -text
 predictions/archive/** -text
 data/reviews/**/morning-odds/** -text
 data/reviews/**/history-raw/** -text
+data/reviews/**/result-raw/** -text

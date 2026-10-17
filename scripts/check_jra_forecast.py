@@ -39,6 +39,33 @@ def audit(data,strict=False):
         def evidence(entry,number,compared):
             refs=set(entry.get('evidence_refs',[]));own=set(hs[number].get('evidence_refs',[]))
             return bool(compared and refs<=all_refs and refs&own and all(n in hs and refs&set(hs[n].get('evidence_refs',[])) for n in compared))
+        if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-10-18':
+            # Record substantial downgrades before results; this cannot validate
+            # the semantic quality of the explanation or make a horse predictable.
+            overrides={e.get('number'):e for e in review.get('rank_override_reviews',[])}
+            for n,h in hs.items():
+                if h.get('status_at_snapshot') in ['withdrawn','excluded']:continue
+                if h.get('model_rank') not in [1,2,3] or (h.get('rank') is not None and h['rank']<5):continue
+                e=overrides.get(n,{});compared=e.get('compared_with',[])
+                peers=[k for k in compared if k!=n and k in hs and hs[k].get('rank') in [1,2,3,4]]
+                if not (peers and e.get('reason') and not e['reason'].startswith('印・総合順位は今回条件と展開') and evidence(e,n,compared)):
+                    add('large_rank_downgrade_comparison_missing',uid,n,'本線レースで指数上位3頭を総合5位以下・順位保留へ下げる場合、上位へ採用した馬との個別比較と双方の根拠走をpreflight_review.rank_override_reviewsへ保存する。定型的な理由では完了としない。')
+            active=[h for h in hs.values() if h.get('status_at_snapshot') not in ['withdrawn','excluded']]
+            priced=sorted((h for h in active if h.get('market',{}).get('win') is not None),key=lambda h:(h['market']['win'],h['number']))
+            credible={h['number'] for h in priced[:4]} | {h['number'] for h in active if h.get('model_rank') in [1,2,3] or h.get('condition_return_candidate')}
+            for p in mains:
+                if p['kind']!='wide':continue
+                groups=p.get('groups') or [t['numbers'] for t in p['tickets']]
+                common=set.intersection(*(set(g) for g in groups)) if groups else set()
+                declared=a.get('trio',[])
+                axis={declared[0]} if declared and declared[0] in common else common if len(common)==1 else set()
+                pool={n for t in p['tickets'] for n in t['numbers']};counterparts=pool-axis
+                plan_review=next((e for e in a.get('formation_review',{}).get('plans',[]) if e.get('linked_plan_id')==p.get('plan_id')),{})
+                entries={e.get('number'):e for e in plan_review.get('counterpart_exclusions',[])}
+                for n in sorted(credible-pool):
+                    e=entries.get(n,{});compared=e.get('compared_with',[])
+                    if not (set(compared)<=pool and set(compared)&counterparts and e.get('reason') and evidence(e,n,compared)):
+                        add('wide_counterpart_slot_comparison_missing',uid,n,'本線ワイドの相手外へ朝単勝上位4頭・指数上位3頭・条件戻り候補を置く場合、軸だけでなく採用相手との直接比較と双方の根拠走をformation_review.plans[].counterpart_exclusionsへ保存する。')
         for p in mains:
             if p['kind']!='win':continue
             for t in p['tickets']:
