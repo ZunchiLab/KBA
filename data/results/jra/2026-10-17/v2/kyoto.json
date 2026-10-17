@@ -9,8 +9,8 @@
     "sha256": "d52e66017e63ecc95011b79221c83861d54c85189ac96dfef0536bcac19c6e0e",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-17T14:26:13+09:00",
-  "last_poll_at": "2026-10-17T14:26:13+09:00",
+  "updated_at": "2026-10-17T14:28:19+09:00",
+  "last_poll_at": "2026-10-17T14:28:19+09:00",
   "published_at": null,
   "races": [
     {
@@ -2145,12 +2145,12 @@
         "request_fields": {
           "cname": "pw01sde0108202604060920261017/12"
         },
-        "retrieved_at": "2026-10-17T14:26:17+09:00",
+        "retrieved_at": "2026-10-17T14:28:23+09:00",
         "raw_sha256": "60e14a35c0758b1259f5eb21bf3d00adee537e7818955b17641ebea054ced1bd",
         "raw_file": "data/results/sources/jra/2026-10-17/kyoto/60e14a35c0758b1259f5eb21bf3d00adee537e7818955b17641ebea054ced1bd.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-17T14:26:17+09:00",
+      "source_checked_at": "2026-10-17T14:28:23+09:00",
       "rows_complete": false,
       "rows": [
         {
