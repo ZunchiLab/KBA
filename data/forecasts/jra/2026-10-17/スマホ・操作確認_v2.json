@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-17T08:59:49+09:00",
+  "passed": true,
+  "url": "https://zunchilab.github.io/KBA/predictions/report_20261017_jra_predictions_v2.html",
+  "browser": "Codex In-app Browser",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "observed_document_scroll_width": 375,
+  "horizontal_page_overflow": false,
+  "race_articles": 36,
+  "horse_details": 472,
+  "initial_open_details": 0,
+  "verified_actions": [
+    "東京・京都・新潟の3タブ、東京から新潟タブへの切替え",
+    "新潟4Rジャンプで本線ワイド9–11・100円例・下限2.0倍を表示",
+    "本線候補フィルターで新潟4・6・10R以外のレースボタンを無効化",
+    "一覧・予算の展開で候補7Rと価格達成5R700円を区別",
+    "初期仮プラン700円、未購入と表示",
+    "馬名検索で東京5Rを表示、ジェットシェヴロンは取消・指数保留",
+    "結果を更新で3場各0R確定・保存08:54:10 JSTを表示",
+    "主観の自信・波乱表示、全頭と詳細の折畳み、馬番と印と着順の並列表記"
+  ],
+  "browser_errors_or_warnings": [],
+  "viewport_reset_after_check": true,
+  "limitation": "スマホ相当390pxの実画面と上記操作を確認。全機種や当日確定結果取得の成功を保証しない。"
+}
