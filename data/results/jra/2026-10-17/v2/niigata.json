@@ -9,8 +9,8 @@
     "sha256": "d52e66017e63ecc95011b79221c83861d54c85189ac96dfef0536bcac19c6e0e",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-17T14:05:35+09:00",
-  "last_poll_at": "2026-10-17T14:05:35+09:00",
+  "updated_at": "2026-10-17T14:15:52+09:00",
+  "last_poll_at": "2026-10-17T14:15:52+09:00",
   "published_at": null,
   "races": [
     {
@@ -2675,7 +2675,10 @@
       "payouts_status": {},
       "refunds": [],
       "refund_status": "unconfirmed",
-      "refresh_error": null
+      "refresh_error": {
+        "at": "2026-10-17T14:15:52+09:00",
+        "reason": "Result date mismatch"
+      }
     },
     {
       "race_uid": "jra-2026-10-17-niigata-r10",
