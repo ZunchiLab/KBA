@@ -9,8 +9,8 @@
     "sha256": "d52e66017e63ecc95011b79221c83861d54c85189ac96dfef0536bcac19c6e0e",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-17T13:53:15+09:00",
-  "last_poll_at": "2026-10-17T13:53:15+09:00",
+  "updated_at": "2026-10-17T13:55:20+09:00",
+  "last_poll_at": "2026-10-17T13:55:20+09:00",
   "published_at": null,
   "races": [
     {
@@ -1917,8 +1917,8 @@
       "race_uid": "jra-2026-10-17-kyoto-r8",
       "race_no": 8,
       "start_at": "2026-10-17T13:45:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -1926,13 +1926,13 @@
         "request_fields": {
           "cname": "pw01sde0108202604060820261017/5D"
         },
-        "retrieved_at": "2026-10-17T13:53:18+09:00",
-        "raw_sha256": "0c11b11196b1e6d103c276febe2f6eac2ccb73769c836a748ea7c9ceb7633969",
-        "raw_file": "data/results/sources/jra/2026-10-17/kyoto/0c11b11196b1e6d103c276febe2f6eac2ccb73769c836a748ea7c9ceb7633969.raw.html",
+        "retrieved_at": "2026-10-17T13:55:23+09:00",
+        "raw_sha256": "d344d34aca39ad0a22eefe9659fd9aab6bb4742a92521f4c06022f0a46bd4057",
+        "raw_file": "data/results/sources/jra/2026-10-17/kyoto/d344d34aca39ad0a22eefe9659fd9aab6bb4742a92521f4c06022f0a46bd4057.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-17T13:53:18+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-17T13:55:23+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 7,
@@ -1943,7 +1943,7 @@
           "time": "1:20.5",
           "margin": "",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "1",
           "final_win_odds": null
         },
         {
@@ -1952,10 +1952,10 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:20.5",
           "margin": "ハナ",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "2",
           "final_win_odds": null
         },
         {
@@ -1964,10 +1964,10 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:20.5",
           "margin": "ハナ",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "3",
           "final_win_odds": null
         },
         {
@@ -1976,10 +1976,10 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:21.0",
           "margin": "２ 1/2",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "4",
           "final_win_odds": null
         },
         {
@@ -1988,10 +1988,34 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:21.3",
           "margin": "２",
           "last_3f": "",
-          "final_popularity": "",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "メモリーブック",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:21.7",
+          "margin": "２ 1/2",
+          "last_3f": "",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "リエーヴェ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:21.8",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "7",
           "final_win_odds": null
         }
       ],
@@ -2097,12 +2121,12 @@
         }
       ],
       "payouts_status": {
-        "trio": "partial",
-        "win": "partial",
-        "wide": "partial",
-        "quinella": "partial",
-        "trifecta": "partial",
-        "place": "partial"
+        "trio": "confirmed",
+        "win": "confirmed",
+        "wide": "confirmed",
+        "quinella": "confirmed",
+        "trifecta": "confirmed",
+        "place": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
