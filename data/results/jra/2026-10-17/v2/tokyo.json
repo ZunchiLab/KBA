@@ -9,8 +9,8 @@
     "sha256": "d52e66017e63ecc95011b79221c83861d54c85189ac96dfef0536bcac19c6e0e",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-17T10:46:06+09:00",
-  "last_poll_at": "2026-10-17T10:46:06+09:00",
+  "updated_at": "2026-10-17T10:48:11+09:00",
+  "last_poll_at": "2026-10-17T10:48:11+09:00",
   "published_at": null,
   "races": [
     {
@@ -315,8 +315,8 @@
       "race_uid": "jra-2026-10-17-tokyo-r2",
       "race_no": 2,
       "start_at": "2026-10-17T10:35:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -324,13 +324,13 @@
         "request_fields": {
           "cname": "pw01sde0105202604060220261017/41"
         },
-        "retrieved_at": "2026-10-17T10:46:09+09:00",
-        "raw_sha256": "f3f8f61c6f17e11bb51b4baadc157cd07c6d773968a9d490b466b58bc6f800cb",
-        "raw_file": "data/results/sources/jra/2026-10-17/tokyo/f3f8f61c6f17e11bb51b4baadc157cd07c6d773968a9d490b466b58bc6f800cb.raw.html",
+        "retrieved_at": "2026-10-17T10:48:15+09:00",
+        "raw_sha256": "616056fec653711fa9231af04731425ecfcba6d4be6c2f793fb569a0ffa4c15d",
+        "raw_file": "data/results/sources/jra/2026-10-17/tokyo/616056fec653711fa9231af04731425ecfcba6d4be6c2f793fb569a0ffa4c15d.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-17T10:46:09+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-17T10:48:15+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 4,
@@ -350,7 +350,7 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "2:04.1",
           "margin": "１ 1/4",
           "last_3f": "",
           "final_popularity": "1",
@@ -362,7 +362,7 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "2:04.5",
           "margin": "２ 1/2",
           "last_3f": "",
           "final_popularity": "8",
@@ -374,7 +374,7 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "2:04.6",
           "margin": "アタマ",
           "last_3f": "",
           "final_popularity": "3",
@@ -386,10 +386,70 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "2:04.7",
           "margin": "１",
           "last_3f": "",
           "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ゴーゼンチュー",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "2:04.8",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "ロードスピアヘッド",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "2:04.9",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "キセキテキニキテル",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "2:05.1",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "セイウンランウェイ",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "2:05.2",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "マイネルウルカヌス",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "2:05.8",
+          "margin": "３ 1/2",
+          "last_3f": "",
+          "final_popularity": "9",
           "final_win_odds": null
         }
       ],
@@ -514,12 +574,12 @@
         }
       ],
       "payouts_status": {
-        "trio": "partial",
-        "win": "partial",
-        "wide": "partial",
-        "quinella": "partial",
-        "trifecta": "partial",
-        "place": "partial"
+        "trio": "confirmed",
+        "win": "confirmed",
+        "wide": "confirmed",
+        "quinella": "confirmed",
+        "trifecta": "confirmed",
+        "place": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
