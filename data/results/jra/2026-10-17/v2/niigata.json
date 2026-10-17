@@ -9,8 +9,8 @@
     "sha256": "d52e66017e63ecc95011b79221c83861d54c85189ac96dfef0536bcac19c6e0e",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-17T13:16:02+09:00",
-  "last_poll_at": "2026-10-17T13:16:02+09:00",
+  "updated_at": "2026-10-17T13:18:07+09:00",
+  "last_poll_at": "2026-10-17T13:18:07+09:00",
   "published_at": null,
   "races": [
     {
@@ -1961,8 +1961,8 @@
       "race_uid": "jra-2026-10-17-niigata-r7",
       "race_no": 7,
       "start_at": "2026-10-17T13:05:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -1970,13 +1970,13 @@
         "request_fields": {
           "cname": "pw01sde0104202604010720261017/41"
         },
-        "retrieved_at": "2026-10-17T13:16:04+09:00",
-        "raw_sha256": "9cad27f1e65e9b4ea04078e9c4fac7999ef42fb330ad5d1e324b246a20613ed0",
-        "raw_file": "data/results/sources/jra/2026-10-17/niigata/9cad27f1e65e9b4ea04078e9c4fac7999ef42fb330ad5d1e324b246a20613ed0.raw.html",
+        "retrieved_at": "2026-10-17T13:18:10+09:00",
+        "raw_sha256": "031a9b04e438ff34755bd001f5aa9d7d9c13e5b9dbba507169237805baacc003",
+        "raw_file": "data/results/sources/jra/2026-10-17/niigata/031a9b04e438ff34755bd001f5aa9d7d9c13e5b9dbba507169237805baacc003.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-17T13:16:04+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-17T13:18:10+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 6,
@@ -1996,7 +1996,7 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:53.6",
           "margin": "２",
           "last_3f": "",
           "final_popularity": "13",
@@ -2008,7 +2008,7 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:53.7",
           "margin": "クビ",
           "last_3f": "",
           "final_popularity": "6",
@@ -2020,7 +2020,7 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:53.9",
           "margin": "１ 1/4",
           "last_3f": "",
           "final_popularity": "3",
@@ -2032,10 +2032,130 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:53.9",
           "margin": "クビ",
           "last_3f": "",
           "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 13,
+          "name": "インシオン",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:54.2",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "セントゴーデンス",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:54.2",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "ブルージャイアント",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:54.3",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "カーフキック",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:54.4",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "11",
+          "final_win_odds": null
+        },
+        {
+          "number": 11,
+          "name": "コスモシェルベット",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:54.6",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "14",
+          "final_win_odds": null
+        },
+        {
+          "number": 12,
+          "name": "ベイビールビオ",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:55.0",
+          "margin": "２ 1/2",
+          "last_3f": "",
+          "final_popularity": "15",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "タイセイエムロード",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:55.1",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 15,
+          "name": "ナウオアネヴァー",
+          "finish": 13,
+          "runner_status": "finished",
+          "official_status_text": "13",
+          "time": "1:55.9",
+          "margin": "５",
+          "last_3f": "",
+          "final_popularity": "12",
+          "final_win_odds": null
+        },
+        {
+          "number": 14,
+          "name": "サトノクラシカル",
+          "finish": 14,
+          "runner_status": "finished",
+          "official_status_text": "14",
+          "time": "1:56.5",
+          "margin": "３ 1/2",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "ダノンヴェステル",
+          "finish": 15,
+          "runner_status": "finished",
+          "official_status_text": "15",
+          "time": "1:59.2",
+          "margin": "大差",
+          "last_3f": "",
+          "final_popularity": "5",
           "final_win_odds": null
         }
       ],
@@ -2160,12 +2280,12 @@
         }
       ],
       "payouts_status": {
-        "trio": "partial",
-        "win": "partial",
-        "wide": "partial",
-        "quinella": "partial",
-        "trifecta": "partial",
-        "place": "partial"
+        "trio": "confirmed",
+        "win": "confirmed",
+        "wide": "confirmed",
+        "quinella": "confirmed",
+        "trifecta": "confirmed",
+        "place": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
