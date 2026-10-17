@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-17T22:05:12+09:00",
+  "passed": true,
+  "url": "https://zunchilab.github.io/KBA/predictions/report_20261017_jra_review_v1.html",
+  "browser": "Codex In-app Browser",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "document_scroll_width": 375,
+  "horizontal_page_overflow": false,
+  "race_articles": 36,
+  "horse_rows": 472,
+  "initial_open_details": 0,
+  "verified_actions": [
+    "東京・京都・新潟3場切替",
+    "新潟4Rジャンプで相手不足の反省表示",
+    "本線候補フィルターで新潟4/6/10Rだけ有効",
+    "京都12Rの指数2位→総合9位と事後検討を展開",
+    "京都12R⑦⑩の2着同着表示",
+    "検索該当なし・解除で復帰",
+    "ジェットシェヴロン検索で東京5R取消を表示",
+    "新潟8R⑯アイアムステキ中止を全頭DOMで確認",
+    "本線一覧の東京6Rリンクで対象レースへ移動"
+  ],
+  "browser_errors_or_warnings": [],
+  "viewport_reset": true,
+  "limitation": "390px実画面と記載操作を確認。全機種・全操作を保証しない。"
+}
