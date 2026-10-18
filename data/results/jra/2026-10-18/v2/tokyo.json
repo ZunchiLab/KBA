@@ -9,8 +9,8 @@
     "sha256": "c62a9d30f798a5d2ccf45ecaf675fe14a8f2f6fdeca6115bee15cfd5a327f8ab",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-18T16:25:19+09:00",
-  "last_poll_at": "2026-10-18T16:25:19+09:00",
+  "updated_at": "2026-10-18T17:10:48+09:00",
+  "last_poll_at": "2026-10-18T17:10:48+09:00",
   "published_at": null,
   "races": [
     {
@@ -26,12 +26,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070120261018/BC"
         },
-        "retrieved_at": "2026-10-18T09:57:39+09:00",
-        "raw_sha256": "0058210a5683a13723294887c250cf5edccb80050148b08b48c75565d9ede65f",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/0058210a5683a13723294887c250cf5edccb80050148b08b48c75565d9ede65f.raw.html",
+        "retrieved_at": "2026-10-18T17:10:50+09:00",
+        "raw_sha256": "288856e29aaa204a75fc4ef395f574cc8f605ce8da9cfbea46d1d68c911fb911",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/288856e29aaa204a75fc4ef395f574cc8f605ce8da9cfbea46d1d68c911fb911.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T09:57:39+09:00",
+      "source_checked_at": "2026-10-18T17:10:50+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -42,7 +42,7 @@
           "official_status_text": "1",
           "time": "1:25.7",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "37.0",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -54,7 +54,7 @@
           "official_status_text": "2",
           "time": "1:25.8",
           "margin": "３／４",
-          "last_3f": "",
+          "last_3f": "37.9",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -66,7 +66,7 @@
           "official_status_text": "3",
           "time": "1:26.5",
           "margin": "４",
-          "last_3f": "",
+          "last_3f": "38.9",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -78,7 +78,7 @@
           "official_status_text": "4",
           "time": "1:26.6",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "38.6",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -90,7 +90,7 @@
           "official_status_text": "5",
           "time": "1:27.3",
           "margin": "４",
-          "last_3f": "",
+          "last_3f": "38.3",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -102,7 +102,7 @@
           "official_status_text": "6",
           "time": "1:27.3",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "38.9",
           "final_popularity": "7",
           "final_win_odds": null
         },
@@ -114,7 +114,7 @@
           "official_status_text": "7",
           "time": "1:27.6",
           "margin": "２",
-          "last_3f": "",
+          "last_3f": "39.6",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -126,7 +126,7 @@
           "official_status_text": "8",
           "time": "1:27.8",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "37.7",
           "final_popularity": "10",
           "final_win_odds": null
         },
@@ -138,7 +138,7 @@
           "official_status_text": "9",
           "time": "1:27.9",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "39.1",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -150,7 +150,7 @@
           "official_status_text": "10",
           "time": "1:28.2",
           "margin": "２",
-          "last_3f": "",
+          "last_3f": "39.1",
           "final_popularity": "11",
           "final_win_odds": null
         },
@@ -162,7 +162,7 @@
           "official_status_text": "11",
           "time": "1:29.2",
           "margin": "６",
-          "last_3f": "",
+          "last_3f": "38.7",
           "final_popularity": "9",
           "final_win_odds": null
         },
@@ -174,7 +174,7 @@
           "official_status_text": "12",
           "time": "1:30.5",
           "margin": "８",
-          "last_3f": "",
+          "last_3f": "42.7",
           "final_popularity": "12",
           "final_win_odds": null
         }
@@ -300,12 +300,14 @@
         }
       ],
       "payouts_status": {
-        "trio": "confirmed",
+        "win": "confirmed",
         "place": "confirmed",
+        "bracket_quinella": "confirmed",
         "quinella": "confirmed",
         "wide": "confirmed",
-        "trifecta": "confirmed",
-        "win": "confirmed"
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
@@ -324,12 +326,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070220261018/71"
         },
-        "retrieved_at": "2026-10-18T10:26:32+09:00",
-        "raw_sha256": "5b99fe13e5f57f1b4a330b83ee65fc9ed2fcdd990d1c074cc8627ec9bbd93c12",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/5b99fe13e5f57f1b4a330b83ee65fc9ed2fcdd990d1c074cc8627ec9bbd93c12.raw.html",
+        "retrieved_at": "2026-10-18T17:10:50+09:00",
+        "raw_sha256": "7c3a5c7dd25ff6ec850e6d9924020be015500b7a1e3844f478e0c55703115313",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/7c3a5c7dd25ff6ec850e6d9924020be015500b7a1e3844f478e0c55703115313.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T10:26:32+09:00",
+      "source_checked_at": "2026-10-18T17:10:50+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -574,12 +576,14 @@
         }
       ],
       "payouts_status": {
-        "trio": "confirmed",
+        "win": "confirmed",
         "place": "confirmed",
+        "bracket_quinella": "confirmed",
         "quinella": "confirmed",
         "wide": "confirmed",
-        "trifecta": "confirmed",
-        "win": "confirmed"
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
@@ -598,12 +602,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070320261018/26"
         },
-        "retrieved_at": "2026-10-18T10:57:53+09:00",
-        "raw_sha256": "5c005b33c48621096117e8f07c48991f4a95ebbee3cc6406494dc8a690ad2177",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/5c005b33c48621096117e8f07c48991f4a95ebbee3cc6406494dc8a690ad2177.raw.html",
+        "retrieved_at": "2026-10-18T17:10:51+09:00",
+        "raw_sha256": "42465f60b756e439b11f33c191225b0cf682180f37f7b7410c8c7018cdc41a3c",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/42465f60b756e439b11f33c191225b0cf682180f37f7b7410c8c7018cdc41a3c.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T10:57:53+09:00",
+      "source_checked_at": "2026-10-18T17:10:51+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -614,7 +618,7 @@
           "official_status_text": "1",
           "time": "1:22.8",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "34.8",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -626,7 +630,7 @@
           "official_status_text": "2",
           "time": "1:23.3",
           "margin": "３",
-          "last_3f": "",
+          "last_3f": "34.3",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -638,7 +642,7 @@
           "official_status_text": "3",
           "time": "1:23.3",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "35.1",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -650,7 +654,7 @@
           "official_status_text": "4",
           "time": "1:23.3",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "35.0",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -662,7 +666,7 @@
           "official_status_text": "5",
           "time": "1:23.4",
           "margin": "３／４",
-          "last_3f": "",
+          "last_3f": "35.3",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -674,7 +678,7 @@
           "official_status_text": "6",
           "time": "1:23.5",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "35.2",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -686,7 +690,7 @@
           "official_status_text": "7",
           "time": "1:23.5",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "35.4",
           "final_popularity": "7",
           "final_win_odds": null
         },
@@ -698,7 +702,7 @@
           "official_status_text": "8",
           "time": "1:23.5",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "34.8",
           "final_popularity": "11",
           "final_win_odds": null
         },
@@ -710,7 +714,7 @@
           "official_status_text": "9",
           "time": "1:24.2",
           "margin": "４",
-          "last_3f": "",
+          "last_3f": "36.0",
           "final_popularity": "12",
           "final_win_odds": null
         },
@@ -722,7 +726,7 @@
           "official_status_text": "10",
           "time": "1:24.2",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "36.3",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -734,7 +738,7 @@
           "official_status_text": "11",
           "time": "1:25.1",
           "margin": "５",
-          "last_3f": "",
+          "last_3f": "35.5",
           "final_popularity": "10",
           "final_win_odds": null
         },
@@ -746,7 +750,7 @@
           "official_status_text": "12",
           "time": "1:25.9",
           "margin": "５",
-          "last_3f": "",
+          "last_3f": "37.2",
           "final_popularity": "9",
           "final_win_odds": null
         }
@@ -898,12 +902,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070420261018/DB"
         },
-        "retrieved_at": "2026-10-18T11:30:44+09:00",
-        "raw_sha256": "50671c81221948c524b318edf7d5c3828c1d278abfac2cac00a9660a06c16824",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/50671c81221948c524b318edf7d5c3828c1d278abfac2cac00a9660a06c16824.raw.html",
+        "retrieved_at": "2026-10-18T17:10:51+09:00",
+        "raw_sha256": "3eacd59a573920fbd01c38f6387bf51383e90e9bf58663f1a86c0c4b56d27c41",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/3eacd59a573920fbd01c38f6387bf51383e90e9bf58663f1a86c0c4b56d27c41.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T11:30:44+09:00",
+      "source_checked_at": "2026-10-18T17:10:51+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -1246,12 +1250,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070520261018/90"
         },
-        "retrieved_at": "2026-10-18T12:17:39+09:00",
-        "raw_sha256": "1c6fcb7fee12be0b4974b7ab55aa7d7a4716a5f1120de1288ca4655ea523db7b",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/1c6fcb7fee12be0b4974b7ab55aa7d7a4716a5f1120de1288ca4655ea523db7b.raw.html",
+        "retrieved_at": "2026-10-18T17:10:52+09:00",
+        "raw_sha256": "3205a2d095aebe731aac14b96b4fec4b488c3f299946c2f576a8867631e90fdf",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/3205a2d095aebe731aac14b96b4fec4b488c3f299946c2f576a8867631e90fdf.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T12:17:39+09:00",
+      "source_checked_at": "2026-10-18T17:10:52+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -1262,7 +1266,7 @@
           "official_status_text": "1",
           "time": "2:05.9",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "34.7",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -1274,7 +1278,7 @@
           "official_status_text": "2",
           "time": "2:06.1",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "35.4",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -1286,7 +1290,7 @@
           "official_status_text": "3",
           "time": "2:06.2",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "35.2",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -1298,7 +1302,7 @@
           "official_status_text": "4",
           "time": "2:06.6",
           "margin": "２ 1/2",
-          "last_3f": "",
+          "last_3f": "35.7",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -1310,7 +1314,7 @@
           "official_status_text": "5",
           "time": "2:07.2",
           "margin": "３ 1/2",
-          "last_3f": "",
+          "last_3f": "34.9",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -1322,7 +1326,7 @@
           "official_status_text": "6",
           "time": "2:07.3",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "36.0",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -1334,7 +1338,7 @@
           "official_status_text": "7",
           "time": "2:08.2",
           "margin": "５",
-          "last_3f": "",
+          "last_3f": "35.6",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -1346,7 +1350,7 @@
           "official_status_text": "8",
           "time": "2:08.3",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "35.4",
           "final_popularity": "7",
           "final_win_odds": null
         }
@@ -1488,12 +1492,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070620261018/45"
         },
-        "retrieved_at": "2026-10-18T12:46:21+09:00",
-        "raw_sha256": "a9058c0a631333ffea8ef17ae0c9daa0f49e3372a8f547ac2355218fbaf4805a",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/a9058c0a631333ffea8ef17ae0c9daa0f49e3372a8f547ac2355218fbaf4805a.raw.html",
+        "retrieved_at": "2026-10-18T17:10:52+09:00",
+        "raw_sha256": "7767d5a1743dad6871e45e6710c7d8683455034fca2fa60bcb3272acb9dac52d",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/7767d5a1743dad6871e45e6710c7d8683455034fca2fa60bcb3272acb9dac52d.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T12:46:21+09:00",
+      "source_checked_at": "2026-10-18T17:10:52+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -1730,12 +1734,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070720261018/FA"
         },
-        "retrieved_at": "2026-10-18T13:19:12+09:00",
-        "raw_sha256": "5488ce9ad256d1eaf03a64559e7ba83594793068545a7d24aadcdf4a6c1afd79",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/5488ce9ad256d1eaf03a64559e7ba83594793068545a7d24aadcdf4a6c1afd79.raw.html",
+        "retrieved_at": "2026-10-18T17:10:52+09:00",
+        "raw_sha256": "87d4303e255d3657a63f0ba6724547cfb5575742cebbebea28c065b930d363f1",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/87d4303e255d3657a63f0ba6724547cfb5575742cebbebea28c065b930d363f1.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T13:19:12+09:00",
+      "source_checked_at": "2026-10-18T17:10:52+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -2030,12 +2034,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070820261018/AF"
         },
-        "retrieved_at": "2026-10-18T13:47:55+09:00",
-        "raw_sha256": "9e11c81898d1a9c62013373fea248d4a397b2856fca3c85ccb93e802ca596b5a",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/9e11c81898d1a9c62013373fea248d4a397b2856fca3c85ccb93e802ca596b5a.raw.html",
+        "retrieved_at": "2026-10-18T17:10:53+09:00",
+        "raw_sha256": "d9dcc2b7180e8e8ed1101b336f599c06d1eb0236e775df408ece2cb2f76725c5",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/d9dcc2b7180e8e8ed1101b336f599c06d1eb0236e775df408ece2cb2f76725c5.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T13:47:55+09:00",
+      "source_checked_at": "2026-10-18T17:10:53+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -2046,7 +2050,7 @@
           "official_status_text": "1",
           "time": "1:23.9",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "36.3",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -2058,7 +2062,7 @@
           "official_status_text": "2",
           "time": "1:24.3",
           "margin": "２ 1/2",
-          "last_3f": "",
+          "last_3f": "36.8",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -2070,7 +2074,7 @@
           "official_status_text": "3",
           "time": "1:24.4",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "36.5",
           "final_popularity": "7",
           "final_win_odds": null
         },
@@ -2082,7 +2086,7 @@
           "official_status_text": "4",
           "time": "1:24.6",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "35.4",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -2094,7 +2098,7 @@
           "official_status_text": "5",
           "time": "1:24.6",
           "margin": "アタマ",
-          "last_3f": "",
+          "last_3f": "35.5",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -2106,7 +2110,7 @@
           "official_status_text": "6",
           "time": "1:24.8",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "38.1",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -2118,7 +2122,7 @@
           "official_status_text": "7",
           "time": "1:25.1",
           "margin": "１ 3/4",
-          "last_3f": "",
+          "last_3f": "36.2",
           "final_popularity": "11",
           "final_win_odds": null
         },
@@ -2130,7 +2134,7 @@
           "official_status_text": "8",
           "time": "1:25.2",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "38.7",
           "final_popularity": "9",
           "final_win_odds": null
         },
@@ -2142,7 +2146,7 @@
           "official_status_text": "9",
           "time": "1:25.4",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "36.4",
           "final_popularity": "10",
           "final_win_odds": null
         },
@@ -2154,7 +2158,7 @@
           "official_status_text": "10",
           "time": "1:25.7",
           "margin": "２",
-          "last_3f": "",
+          "last_3f": "38.5",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -2166,7 +2170,7 @@
           "official_status_text": "11",
           "time": "1:26.2",
           "margin": "３",
-          "last_3f": "",
+          "last_3f": "37.3",
           "final_popularity": "14",
           "final_win_odds": null
         },
@@ -2178,7 +2182,7 @@
           "official_status_text": "12",
           "time": "1:26.4",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "39.0",
           "final_popularity": "12",
           "final_win_odds": null
         },
@@ -2190,7 +2194,7 @@
           "official_status_text": "13",
           "time": "1:27.1",
           "margin": "４",
-          "last_3f": "",
+          "last_3f": "38.7",
           "final_popularity": "15",
           "final_win_odds": null
         },
@@ -2202,7 +2206,7 @@
           "official_status_text": "14",
           "time": "1:27.4",
           "margin": "１ 3/4",
-          "last_3f": "",
+          "last_3f": "38.7",
           "final_popularity": "13",
           "final_win_odds": null
         },
@@ -2214,7 +2218,7 @@
           "official_status_text": "15",
           "time": "1:27.6",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "39.2",
           "final_popularity": "16",
           "final_win_odds": null
         },
@@ -2226,7 +2230,7 @@
           "official_status_text": "16",
           "time": "1:29.3",
           "margin": "１０",
-          "last_3f": "",
+          "last_3f": "42.8",
           "final_popularity": "1",
           "final_win_odds": null
         }
@@ -2378,12 +2382,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604070920261018/64"
         },
-        "retrieved_at": "2026-10-18T14:24:49+09:00",
-        "raw_sha256": "e01af319bfc4b527e90f7d454332c2d406a1f0454899426af9b1976943f00af1",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/e01af319bfc4b527e90f7d454332c2d406a1f0454899426af9b1976943f00af1.raw.html",
+        "retrieved_at": "2026-10-18T17:10:53+09:00",
+        "raw_sha256": "bc09728b500bcb6c6f7219c3af231ab3c510d15016189cd0ad9fa91b364d26c2",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/bc09728b500bcb6c6f7219c3af231ab3c510d15016189cd0ad9fa91b364d26c2.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T14:24:49+09:00",
+      "source_checked_at": "2026-10-18T17:10:53+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -2394,7 +2398,7 @@
           "official_status_text": "1",
           "time": "3:23.2",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "13.1",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -2406,7 +2410,7 @@
           "official_status_text": "2",
           "time": "3:23.7",
           "margin": "３",
-          "last_3f": "",
+          "last_3f": "13.1",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -2418,7 +2422,7 @@
           "official_status_text": "3",
           "time": "3:24.4",
           "margin": "４",
-          "last_3f": "",
+          "last_3f": "13.1",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -2430,7 +2434,7 @@
           "official_status_text": "4",
           "time": "3:24.5",
           "margin": "３／４",
-          "last_3f": "",
+          "last_3f": "13.2",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -2442,7 +2446,7 @@
           "official_status_text": "5",
           "time": "3:25.8",
           "margin": "８",
-          "last_3f": "",
+          "last_3f": "13.2",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -2454,7 +2458,7 @@
           "official_status_text": "6",
           "time": "3:27.0",
           "margin": "７",
-          "last_3f": "",
+          "last_3f": "13.3",
           "final_popularity": "9",
           "final_win_odds": null
         },
@@ -2466,7 +2470,7 @@
           "official_status_text": "7",
           "time": "3:27.5",
           "margin": "３",
-          "last_3f": "",
+          "last_3f": "13.3",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -2478,7 +2482,7 @@
           "official_status_text": "8",
           "time": "3:30.6",
           "margin": "大差",
-          "last_3f": "",
+          "last_3f": "13.5",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -2642,12 +2646,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604071020261018/59"
         },
-        "retrieved_at": "2026-10-18T14:57:37+09:00",
-        "raw_sha256": "c12d54837caa4f7cb89ecafa12eb6e3bcfb8bd67dc3efca0c99f081575bd9226",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/c12d54837caa4f7cb89ecafa12eb6e3bcfb8bd67dc3efca0c99f081575bd9226.raw.html",
+        "retrieved_at": "2026-10-18T17:10:53+09:00",
+        "raw_sha256": "b2145e79b351896dee7e70f6bbc8b61e1d1c0d20c3872f608aeb1d80281b9f6f",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/b2145e79b351896dee7e70f6bbc8b61e1d1c0d20c3872f608aeb1d80281b9f6f.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T14:57:37+09:00",
+      "source_checked_at": "2026-10-18T17:10:53+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -2906,12 +2910,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604071120261018/0E"
         },
-        "retrieved_at": "2026-10-18T15:34:21+09:00",
-        "raw_sha256": "c56cf64d36d565a43476432153266641d80d6740643534c507079506642bf10e",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/c56cf64d36d565a43476432153266641d80d6740643534c507079506642bf10e.raw.html",
+        "retrieved_at": "2026-10-18T17:10:54+09:00",
+        "raw_sha256": "25a27a313ec8dca3161728a351def509da447abfafc7e708fa703ca62c173441",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/25a27a313ec8dca3161728a351def509da447abfafc7e708fa703ca62c173441.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T15:34:21+09:00",
+      "source_checked_at": "2026-10-18T17:10:54+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -2922,7 +2926,7 @@
           "official_status_text": "1",
           "time": "2:10.0",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "37.6",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -2934,7 +2938,7 @@
           "official_status_text": "2",
           "time": "2:10.2",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "36.8",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -2946,7 +2950,7 @@
           "official_status_text": "3",
           "time": "2:10.2",
           "margin": "アタマ",
-          "last_3f": "",
+          "last_3f": "36.9",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -2958,7 +2962,7 @@
           "official_status_text": "4",
           "time": "2:10.4",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "38.1",
           "final_popularity": "10",
           "final_win_odds": null
         },
@@ -2970,7 +2974,7 @@
           "official_status_text": "5",
           "time": "2:10.5",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "37.7",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -2982,7 +2986,7 @@
           "official_status_text": "6",
           "time": "2:10.6",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "36.5",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -2994,7 +2998,7 @@
           "official_status_text": "7",
           "time": "2:10.7",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "37.0",
           "final_popularity": "12",
           "final_win_odds": null
         },
@@ -3006,7 +3010,7 @@
           "official_status_text": "8",
           "time": "2:10.9",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "38.7",
           "final_popularity": "11",
           "final_win_odds": null
         },
@@ -3018,7 +3022,7 @@
           "official_status_text": "9",
           "time": "2:11.1",
           "margin": "３／４",
-          "last_3f": "",
+          "last_3f": "38.6",
           "final_popularity": "9",
           "final_win_odds": null
         },
@@ -3030,7 +3034,7 @@
           "official_status_text": "10",
           "time": "2:11.3",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "38.1",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -3042,7 +3046,7 @@
           "official_status_text": "11",
           "time": "2:11.7",
           "margin": "２ 1/2",
-          "last_3f": "",
+          "last_3f": "38.8",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -3054,7 +3058,7 @@
           "official_status_text": "12",
           "time": "2:11.7",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "39.6",
           "final_popularity": "7",
           "final_win_odds": null
         },
@@ -3066,7 +3070,7 @@
           "official_status_text": "13",
           "time": "2:13.2",
           "margin": "９",
-          "last_3f": "",
+          "last_3f": "39.1",
           "final_popularity": "13",
           "final_win_odds": null
         }
@@ -3218,12 +3222,12 @@
         "request_fields": {
           "cname": "pw01sde0105202604071220261018/C3"
         },
-        "retrieved_at": "2026-10-18T16:25:20+09:00",
-        "raw_sha256": "38e1644ab35223fbd56886a3be2c488bb89bb21dbe309b99ec0844e16b7c68a6",
-        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/38e1644ab35223fbd56886a3be2c488bb89bb21dbe309b99ec0844e16b7c68a6.raw.html",
+        "retrieved_at": "2026-10-18T17:10:54+09:00",
+        "raw_sha256": "1500f3acc36a71087bd92443a7a3bed4bf3d51ba7d3e9de2c9702a085a792e76",
+        "raw_file": "data/results/sources/jra/2026-10-18/tokyo/1500f3acc36a71087bd92443a7a3bed4bf3d51ba7d3e9de2c9702a085a792e76.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-18T16:25:20+09:00",
+      "source_checked_at": "2026-10-18T17:10:54+09:00",
       "rows_complete": true,
       "rows": [
         {
@@ -3234,7 +3238,7 @@
           "official_status_text": "1",
           "time": "1:46.5",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "34.4",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -3246,7 +3250,7 @@
           "official_status_text": "2",
           "time": "1:46.5",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "34.2",
           "final_popularity": "10",
           "final_win_odds": null
         },
@@ -3258,7 +3262,7 @@
           "official_status_text": "3",
           "time": "1:46.6",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "34.3",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -3270,7 +3274,7 @@
           "official_status_text": "4",
           "time": "1:46.6",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "34.7",
           "final_popularity": "9",
           "final_win_odds": null
         },
@@ -3282,7 +3286,7 @@
           "official_status_text": "5",
           "time": "1:46.7",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "34.2",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -3294,7 +3298,7 @@
           "official_status_text": "6",
           "time": "1:46.8",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "33.4",
           "final_popularity": "13",
           "final_win_odds": null
         },
@@ -3306,7 +3310,7 @@
           "official_status_text": "7",
           "time": "1:46.8",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "34.0",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -3318,7 +3322,7 @@
           "official_status_text": "8",
           "time": "1:47.0",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "34.2",
           "final_popularity": "11",
           "final_win_odds": null
         },
@@ -3330,7 +3334,7 @@
           "official_status_text": "9",
           "time": "1:47.1",
           "margin": "３／４",
-          "last_3f": "",
+          "last_3f": "34.0",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -3342,7 +3346,7 @@
           "official_status_text": "10",
           "time": "1:47.3",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "34.2",
           "final_popularity": "14",
           "final_win_odds": null
         },
@@ -3354,7 +3358,7 @@
           "official_status_text": "11",
           "time": "1:47.3",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "35.5",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -3366,7 +3370,7 @@
           "official_status_text": "12",
           "time": "1:47.5",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "34.1",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -3378,7 +3382,7 @@
           "official_status_text": "13",
           "time": "1:47.8",
           "margin": "１ 3/4",
-          "last_3f": "",
+          "last_3f": "34.1",
           "final_popularity": "16",
           "final_win_odds": null
         },
@@ -3390,7 +3394,7 @@
           "official_status_text": "14",
           "time": "1:48.3",
           "margin": "３ 1/2",
-          "last_3f": "",
+          "last_3f": "35.8",
           "final_popularity": "15",
           "final_win_odds": null
         },
@@ -3402,7 +3406,7 @@
           "official_status_text": "15",
           "time": "1:48.6",
           "margin": "２",
-          "last_3f": "",
+          "last_3f": "34.9",
           "final_popularity": "12",
           "final_win_odds": null
         },
@@ -3414,7 +3418,7 @@
           "official_status_text": "16",
           "time": "1:51.2",
           "margin": "大差",
-          "last_3f": "",
+          "last_3f": "37.0",
           "final_popularity": "7",
           "final_win_odds": null
         }
