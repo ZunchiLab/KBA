@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "fixed_at": "2026-10-18T09:30:16+09:00",
+  "revision": {
+    "changed_at": "2026-10-18T09:31:36+09:00",
+    "original_selection_fixed_at": "2026-10-18T09:30:16+09:00",
+    "original_version": "v1",
+    "reason": "公開前照合で京都3R8・5の根拠文に旧候補順位の表記が残っていたため総合4位・6位へ統一。",
+    "changes": [
+      "京都3R8の本文順位3位を総合4位へ。",
+      "京都3R5の本文順位5位を総合6位へ。"
+    ],
+    "forecast_values_unchanged": true
+  },
+  "races": 36,
+  "horses": 450,
+  "candidates": 26,
+  "priorities": {
+    "優先": {
+      "races": 12,
+      "cost": 3200,
+      "eligible_races": 11
+    },
+    "追加": {
+      "races": 14,
+      "cost": 2900,
+      "eligible_races": 12
+    }
+  },
+  "eligible_races": 23,
+  "all_candidates_yen": 6100,
+  "price_eligible_yen": 5700,
+  "baseline_plans": 180,
+  "listed_history_fetched": 388,
+  "listed_history_parsed": 385,
+  "unresolved": [
+    [
+      "T1",
+      7
+    ],
+    [
+      "K1",
+      7
+    ],
+    [
+      "K1",
+      12
+    ]
+  ],
+  "older_supplements": 302,
+  "source_count": 772,
+  "actual_purchase": null,
+  "results_initialized": true,
+  "unknown_future_accuracy": true
+}

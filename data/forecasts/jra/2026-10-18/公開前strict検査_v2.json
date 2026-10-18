@@ -1,0 +1,8 @@
+{
+  "schema_version": "kba.jra-preflight/1",
+  "forecast": "outputs/20261018/report_20261018_jra_predictions_v2.json",
+  "strict": true,
+  "passed": true,
+  "scope": "形式・整合性と明示的比較の記録を確認。自由文の全事実・能力・期待値・未来の的中は検証しない。",
+  "findings": []
+}

@@ -1,0 +1,439 @@
+{
+  "baseline_plans": 180,
+  "all_strategy_ticket_prices_checked": 1698,
+  "history_cohort": 388,
+  "older_supplements": 302,
+  "cancelled_number_verified": [],
+  "passed": true,
+  "fixed_at": "2026-10-18T09:30:16+09:00",
+  "races": 36,
+  "horses": 450,
+  "source_count": 772,
+  "source_times": [
+    "2026-10-17T08:22:23+09:00",
+    "2026-10-18T09:20:02+09:00"
+  ],
+  "main_races": 26,
+  "main_example_yen": 6100,
+  "all_prices_met_yen": 5700,
+  "main": [
+    {
+      "key": "N1",
+      "type": "馬連",
+      "groups": [
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          7,
+          1,
+          5
+        ]
+      ],
+      "points": 5,
+      "all_prices_met": true
+    },
+    {
+      "key": "N2",
+      "type": "ワイド",
+      "groups": [
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          15
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N3",
+      "type": "ワイド",
+      "groups": [
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N4",
+      "type": "ワイド",
+      "groups": [
+        [
+          4,
+          15
+        ],
+        [
+          4,
+          12
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N6",
+      "type": "ワイド",
+      "groups": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N7",
+      "type": "ワイド",
+      "groups": [
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N9",
+      "type": "ワイド",
+      "groups": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          12
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N10",
+      "type": "ワイド",
+      "groups": [
+        [
+          13,
+          15
+        ],
+        [
+          13,
+          7
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N11",
+      "type": "ワイド",
+      "groups": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "N12",
+      "type": "ワイド",
+      "groups": [
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "T2",
+      "type": "ワイド",
+      "groups": [
+        [
+          10,
+          3
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": false
+    },
+    {
+      "key": "T3",
+      "type": "ワイド",
+      "groups": [
+        [
+          1,
+          7
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": true
+    },
+    {
+      "key": "T6",
+      "type": "ワイド",
+      "groups": [
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": false
+    },
+    {
+      "key": "T7",
+      "type": "ワイド",
+      "groups": [
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "T8",
+      "type": "ワイド",
+      "groups": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "T10",
+      "type": "ワイド",
+      "groups": [
+        [
+          6,
+          3
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": false
+    },
+    {
+      "key": "T11",
+      "type": "ワイド",
+      "groups": [
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "T12",
+      "type": "ワイド",
+      "groups": [
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K3",
+      "type": "ワイド",
+      "groups": [
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K4",
+      "type": "ワイド",
+      "groups": [
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K7",
+      "type": "ワイド",
+      "groups": [
+        [
+          3,
+          9
+        ]
+      ],
+      "points": 1,
+      "all_prices_met": true
+    },
+    {
+      "key": "K8",
+      "type": "ワイド",
+      "groups": [
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K9",
+      "type": "ワイド",
+      "groups": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K10",
+      "type": "ワイド",
+      "groups": [
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    },
+    {
+      "key": "K11",
+      "type": "三連複",
+      "groups": [
+        [
+          13
+        ],
+        [
+          8,
+          3,
+          4
+        ],
+        [
+          8,
+          3,
+          4,
+          14,
+          6,
+          1
+        ]
+      ],
+      "points": 12,
+      "all_prices_met": true
+    },
+    {
+      "key": "K12",
+      "type": "ワイド",
+      "groups": [
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "points": 2,
+      "all_prices_met": true
+    }
+  ],
+  "checks": [
+    "全36R450頭を公式カード・価格ページで照合",
+    "買い目全点・点数・費用・保存価格の原文を照合",
+    "未判定の級・地方過去走を採点へ混ぜない",
+    "全頭DOM・重複ID・圧縮した画面用JSON",
+    "根拠走の時点・参照・欠損表示",
+    "単勝・複勝の推奨なし・候補26R61点・実購入未記録"
+  ]
+}
