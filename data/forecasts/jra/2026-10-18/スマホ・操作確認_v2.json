@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-18T09:35:30+09:00",
+  "passed": true,
+  "url": "https://zunchilab.github.io/KBA/predictions/report_20261018_jra_predictions_v2.html",
+  "browser": "Codex In-app Browser",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "observed_document_scroll_width": 375,
+  "horizontal_page_overflow": false,
+  "race_articles": 36,
+  "horse_details": 450,
+  "initial_open_details": 0,
+  "verified_actions": [
+    "京都・新潟タブ切替",
+    "京都11R番号ジャンプと三連複12点1200円・全点下限12倍・全12点達成",
+    "購入候補フィルター",
+    "ラインエレガントの馬名検索で京都3Rへ移動し総合3位・指数1位・ワイド本線採用を確認",
+    "優先候補と追加候補の別表示",
+    "新潟1R馬連5点500円・全点下限5倍・全5点達成",
+    "一覧の候補26R・価格達成23R5700円",
+    "結果更新でGitHub最新コミットの3場0R確定・保存09:32:18JSTを表示"
+  ],
+  "browser_errors_or_warnings": [],
+  "viewport_reset_after_check": true,
+  "forecast_values_unchanged_in_v2": true,
+  "originals_sha_unchanged": true,
+  "limitation": "390px相当の実画面と上記操作を確認。全機種や当日確定結果取得の成功、将来の的中改善を保証しない。"
+}

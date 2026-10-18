@@ -1,0 +1,103 @@
+{
+  "checked_at": "2026-10-18T09:34:09+09:00",
+  "passed": true,
+  "forecast_commit": "ab728c097f3240e2570b7a03247de7d275960177",
+  "files": [
+    {
+      "path": "predictions/report_20261018_jra_predictions_v2.html",
+      "url": "https://zunchilab.github.io/KBA/predictions/report_20261018_jra_predictions_v2.html",
+      "status": 200,
+      "bytes": 3959524,
+      "sha256": "eae8184d91a9609ebee51dc0631426ea7ebe022f9d48a080e712052b610e9d27"
+    },
+    {
+      "path": "predictions/report_20261018_jra_predictions_v2.json",
+      "url": "https://zunchilab.github.io/KBA/predictions/report_20261018_jra_predictions_v2.json",
+      "status": 200,
+      "bytes": 17102883,
+      "sha256": "c62a9d30f798a5d2ccf45ecaf675fe14a8f2f6fdeca6115bee15cfd5a327f8ab"
+    },
+    {
+      "path": "predictions/report_20261018_jra_histories_v1.json",
+      "url": "https://zunchilab.github.io/KBA/predictions/report_20261018_jra_histories_v1.json",
+      "status": 200,
+      "bytes": 3793217,
+      "sha256": "339e3560f263ae2de5fc3fecfe77477bebe643613ad44c61f071e4207c695bbd"
+    },
+    {
+      "path": "data/catalog.json",
+      "url": "https://zunchilab.github.io/KBA/data/catalog.json",
+      "status": 200,
+      "bytes": 258561,
+      "sha256": "47bccaf7f09558292b3795df099243c56cb31cfad765dea71eb6bc6b37d99d4c"
+    },
+    {
+      "path": "data/results/jra/2026-10-18/v2/tokyo.json",
+      "url": "https://zunchilab.github.io/KBA/data/results/jra/2026-10-18/v2/tokyo.json",
+      "status": 200,
+      "bytes": 5651,
+      "sha256": "a2e2f201c363684c7e9d3c64fa8eed8abea4c644ecdf105e5c983264823a4b6e"
+    },
+    {
+      "path": "data/results/jra/2026-10-18/v2/kyoto.json",
+      "url": "https://zunchilab.github.io/KBA/data/results/jra/2026-10-18/v2/kyoto.json",
+      "status": 200,
+      "bytes": 5651,
+      "sha256": "cc86dce0090fc649125c66d990df65c1a1837310e63336521bbff7acf42c93b8"
+    },
+    {
+      "path": "data/results/jra/2026-10-18/v2/niigata.json",
+      "url": "https://zunchilab.github.io/KBA/data/results/jra/2026-10-18/v2/niigata.json",
+      "status": 200,
+      "bytes": 5677,
+      "sha256": "7acccb324ec2942cf0cf8266360e365746f938d41abc5bf901612d8119accbe4"
+    }
+  ],
+  "originals_preserved": true,
+  "forecast_sha_matches_all_result_venues": true,
+  "pages_run": "https://github.com/ZunchiLab/KBA/actions/runs/39083157427",
+  "pages_conclusion": "success",
+  "results_worker_run": "https://github.com/ZunchiLab/KBA/actions/runs/39083157657",
+  "results_worker_status": "in_progress",
+  "results_worker_steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-18T00:32:52Z"
+    },
+    {
+      "name": "Run actions/checkout@v6",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-18T00:32:52Z"
+    },
+    {
+      "name": "Check the configured meeting window",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-18T00:33:01Z"
+    },
+    {
+      "name": "Install the official-page parser dependency",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-18T00:33:01Z"
+    },
+    {
+      "name": "Keep official JRA results current until completion or deadline",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-18T00:33:02Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v6",
+      "status": "pending",
+      "conclusion": null,
+      "started_at": null
+    }
+  ],
+  "confirmed_races": 0,
+  "not_started_races": 36,
+  "limitation": "結果取得ループの起動・発走前待機を確認。当日の確定結果取得成功は未検証。"
+}
