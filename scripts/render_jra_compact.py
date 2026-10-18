@@ -3,6 +3,7 @@ from pathlib import Path
 from html import escape
 import json
 from render_day_prediction import comparison_table, formation_section, past_item, result_for, finish
+from jra_payouts import payout_html
 
 ROOT=Path(__file__).resolve().parents[1]
 E=lambda x:escape(str(x),quote=True)
@@ -69,6 +70,7 @@ def render(d,json_name,results):
             level=r['grade'] or r['class_text']
             parts.append(f'<article class="race" id="{uid}" data-venue="{key}" data-start="{E(r["start_at"])}" data-search="{E(search)}" data-bets="{str(bool(main)).lower()}"><header class="race-head"><div class="row"><b>{E(v["label"])} {r["race"]}R · {E(r["start"])}</b><span class="decision-badge {"buy" if main else "skip"}">{decision}</span></div><h2>{E(r["name"])}</h2><p>{E(level)} · {surface}{r["distance_m"]}m · {E(going)} · {len(r["horses"])}頭 <span class="clock-state"></span></p><div class="badges"><span>自信 {E(confidence)}</span><span>波乱 {E(a["volatility"])}</span><small>主観評価</small></div></header><div class="race-body">')
             secondary=[]
+            parts.append('<div class="payouts">'+payout_html(res)+'</div>')
             if not main:parts.append('<p class="one-line">'+E(a['headline'])+'</p>')
             for p in main:parts.append(plan_html(p,True))
             if not main:parts.append('<p class="skip-reason">'+E(a.get('short_skip',a['decision']))+'</p>')
@@ -92,7 +94,7 @@ def render(d,json_name,results):
                 if history:
                     history_html='<details><summary>公式掲載戦歴の確認範囲</summary><p>'+E(history['summary'])+'</p><a href="'+E(history['source']['url'])+'">JRA公式掲載履歴</a><p>確認 '+E(history['source']['retrieved_at'])+'。掲載範囲外の経験は断定しません。</p></details>'
                 parts.append(f'<details class="horse" data-number="{h["number"]}"><summary><span class="mark">{E(mark)}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{E(rank_label)} · {E(h["style"])}</small></span><b class="score">{E(score)}</b><strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(h["jockey"])} · {h["weight"]}kg · 馬体重 {E(h["body"] or "未発表")}</p><p>{ref_label} {E(score)} · 勝比較 {E(h["win"] if h["win"] is not None else "未算定")} / 圏内比較 {E(h["place"] if h["place"] is not None else "未算定")}</p><p><b>総合判断</b> {E(h.get("mark_override_reason") or "指数と総合順位が一致。以下の根拠と懸念を確認。")}</p><p><b>根拠</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p><b>採否</b> {E(h["ticket_review"])}</p><details><summary>過去走と出典</summary><ul>'+''.join(past_item(p) for p in h['past'])+'</ul></details>'+history_html+'</div></details>')
-            parts.append('</div><div class="payouts"></div>'+''.join(secondary))
+            parts.append('</div>'+''.join(secondary))
             parts.append(comparison_table(r)+formation_section(r))
             parts.append('<details class="sources"><summary>出馬表・確認時刻</summary><a href="'+E(r['source']['url'])+'">JRA公式出馬表</a><p>出馬表 '+E(r['source']['retrieved_at'])+'／価格 '+E(r['source_checked_at'])+'</p><p>馬場は出馬表取得時点。取消・馬場・状態・価格は直前再確認。</p></details></div></article>')
         parts.append('</section>')

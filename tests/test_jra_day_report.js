@@ -14,7 +14,7 @@ class Element {
   append(...items) { this.children.push(...items);this.textContent+=items.map(x=>typeof x==='string'?x:x.textContent).join(''); }
   replaceChildren() { this.children=[];this.textContent=''; }
 }
-function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,rows:r.rows,payouts:r.refunds||[]}))};}
+function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,source:r.source,rows:r.rows,payouts_status:r.payouts_status||{},payouts:r.refunds||[]}))};}
 function fixture(plans=[],embeddedDigest=false,thirdVenue=false) {
   const venues=[{venue_key:'tokyo',label:'東京',baba_code:5},{venue_key:'kyoto',label:'京都',baba_code:8}];
   if(thirdVenue)venues.push({venue_key:'niigata',label:'新潟',baba_code:4});
@@ -65,5 +65,23 @@ async function test(name, action){await action();passed++;console.log('PASS '+na
   await test('invalid embedded digest keeps the legacy JSON verification',async()=>{const f=fixture([],'bad');f.confirm('tokyo');await f.click();assert(f.requests.includes('day.json'));assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
   await test('both API and raw main outages still use the public-site saved data',async()=>{const f=fixture();f.confirm('tokyo');f.failAPI();f.rawUnavailable.add('tokyo');await f.click();assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/公開サイトの保存結果/);assert(f.requests.some(x=>x.startsWith('https://zunchilab.github.io/KBA/data/')));});
   await test('Niigata common results validate as official venue 04 and update beside Tokyo/Kyoto',async()=>{const f=fixture([],true,true);f.confirm('niigata');await f.click();assert.equal(f.cards[2].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/新潟: 1R確定/);});
+  await test('all eight payout types are visible with ordered arrows and bracket labels',async()=>{
+    const f=fixture([formationPlan(true)]);f.confirm('tokyo');
+    f.results.tokyo.races[0].refunds=[{kind:'win',numbers:[3],yen_per_100:1550},{kind:'place',numbers:[3],yen_per_100:220},{kind:'place',numbers:[1],yen_per_100:120},{kind:'bracket_quinella',numbers:[1,3],yen_per_100:390},{kind:'quinella',numbers:[1,3],yen_per_100:1190},{kind:'wide',numbers:[1,3],yen_per_100:390},{kind:'exacta',numbers:[3,1],yen_per_100:4180},{kind:'trio',numbers:[1,2,3],yen_per_100:1150},{kind:'trifecta',numbers:[3,1,2],yen_per_100:17820}];
+    await f.click();const details=f.cards[0].parts['.payouts'].children[0];assert.equal(details.open,true);
+    const body=details.children.find(e=>e.className==='payout-table').children[1];assert.equal(body.children.length,8);
+    const text=details.textContent;for(const name of ['単勝','複勝','枠連（枠番）','馬連','ワイド','馬単','三連複','三連単'])assert(text.includes(name));
+    assert.match(text,/3→1.*4,180円/);assert.match(text,/3→1→2.*17,820円/);
+    assert.equal(body.children.find(e=>e.dataset.kind==='place').children[1].children.length,2);
+  });
+  await test('payout refresh preserves a manually closed table and all known results during outages',async()=>{
+    const f=fixture();f.confirm('tokyo');f.results.tokyo.races[0].refunds=[{kind:'win',numbers:[1],yen_per_100:250}];await f.click();
+    f.cards[0].parts['.payouts'].children[0].open=false;await f.click();assert.equal(f.cards[0].parts['.payouts'].children[0].open,false);
+    f.unavailable.add('tokyo');await f.click();assert.match(f.cards[0].parts['.payouts'].textContent,/250円/);
+  });
+  await test('missing payouts stay pending and explicit unavailable bet types stay distinct',async()=>{
+    const f=fixture();f.confirm('tokyo');f.results.tokyo.races[0].payouts_status={bracket_quinella:'not_offered'};await f.click();
+    const text=f.cards[0].parts['.payouts'].textContent;assert.match(text,/発売なし/);assert.match(text,/未掲載・確認待ち/);assert.doesNotMatch(text,/(^|\D)0円/);
+  });
   console.log(passed+' UI regression cases passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -7,6 +7,9 @@ on:
       - .github/workflows/jra-results.yml
       - scripts/watch_jra_results.py
       - scripts/render_jra_prediction.py
+      - scripts/render_jra_compact.py
+      - scripts/jra_payouts.py
+      - assets/css/jra-compact.css
       - assets/js/jra-day-report.js
       - data/results/jra-targets.json
   workflow_dispatch:

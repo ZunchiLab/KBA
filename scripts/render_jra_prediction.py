@@ -4,10 +4,11 @@ from html import escape
 from hashlib import sha256
 import json,re
 from render_day_prediction import render as shared_render
+from jra_payouts import payout_html
 ROOT=Path(__file__).resolve().parents[1]
 KINDS={'win':'単勝','place':'複勝','wide':'ワイド','quinella':'馬連','exacta':'馬単','trio':'三連複','trifecta':'三連単','bracket_quinella':'枠連'}
 def legacy_result(d):
-    return dict(schema_version=1,authority='jra',date_jst=d['date_jst'],venue_key=d['venue_key'],baba_code={'tokyo':5,'kyoto':8,'niigata':4}[d['venue_key']],forecast_version=d['forecast_ref']['version'],forecast_sha256=d['forecast_ref']['sha256'],updated_at=d['updated_at'],last_poll_at=d['last_poll_at'],complete=all(r['status'] in ['confirmed','cancelled'] for r in d['races']),refresh_interval_minutes=2,races=[dict(race=r['race_no'],start_at=r['start_at'],status=r['status'],source=r.get('source'),refresh_error=r.get('refresh_error'),rows=[dict(number=h['number'],name=h['name'],finish=h['finish'] if h['finish'] is not None else h.get('official_status_text','未確定')) for h in r['rows']],refunds=[dict(kind=KINDS.get(p['kind'],p['kind']),numbers=p['numbers'],combination='−'.join(map(str,p['numbers'])),yen_per_100=p['yen_per_100']) for p in r['payouts']]) for r in d['races']])
+    return dict(schema_version=1,authority='jra',date_jst=d['date_jst'],venue_key=d['venue_key'],baba_code={'tokyo':5,'kyoto':8,'niigata':4}[d['venue_key']],forecast_version=d['forecast_ref']['version'],forecast_sha256=d['forecast_ref']['sha256'],updated_at=d['updated_at'],last_poll_at=d['last_poll_at'],complete=all(r['status'] in ['confirmed','cancelled'] for r in d['races']),refresh_interval_minutes=2,races=[dict(race=r['race_no'],start_at=r['start_at'],status=r['status'],source=r.get('source'),refresh_error=r.get('refresh_error'),payouts_status=r.get('payouts_status',{}),rows=[dict(number=h['number'],name=h['name'],finish=h['finish'] if h['finish'] is not None else h.get('official_status_text','未確定')) for h in r['rows']],refunds=[dict(kind=KINDS.get(p['kind'],p['kind']),number_type=p.get('number_type'),numbers=p['numbers'],combination=('→' if p['kind'] in ['exacta','trifecta'] else '−').join(map(str,p['numbers'])),yen_per_100=p['yen_per_100']) for p in r['payouts']]) for r in d['races']])
 def render(d,json_name,results=None):
     results={k:legacy_result(v) if v.get('schema_version')=='kba.results/1' else v for k,v in (results or {}).items()}
     if d.get('presentation',{}).get('layout')=='compact-v1':

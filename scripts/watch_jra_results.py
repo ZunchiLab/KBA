@@ -7,6 +7,7 @@ from contextlib import contextmanager
 import json,re,urllib.request,urllib.parse,subprocess,time,os,sys,tempfile
 from bs4 import BeautifulSoup
 from render_jra_prediction import render_day_snapshot
+from jra_payouts import PAYOUT_KINDS
 ROOT=Path(__file__).resolve().parents[1];JST=timezone(timedelta(hours=9))
 KINDS={'win':'win','place':'place','wide':'wide','umaren':'quinella','umatan':'exacta','trio':'trio','tierce':'trifecta','trifecta':'trifecta','wakuren':'bracket_quinella'}
 def now():return datetime.now(JST).isoformat(timespec='seconds')
@@ -62,8 +63,18 @@ def parse(s,forecast,source):
                 if not amount or not numbers:continue
                 if kind not in ['exacta','trifecta']:numbers.sort()
                 payouts.append(dict(kind=kind,number_type='bracket' if kind=='bracket_quinella' else 'horse',numbers=numbers,yen_per_100=int(amount),popularity=None))
-    complete=seen==set(known);required={'win','place','wide','quinella','trio','trifecta'};paid=required<={x['kind'] for x in payouts}
-    return dict(race_uid=forecast['race_uid'],race_no=forecast['race_no'],start_at=forecast['start_at'],status='confirmed' if complete and paid else 'partial' if rows else 'pending',official_confirmed=bool(complete and paid),source=source,source_checked_at=source['retrieved_at'],rows_complete=complete,rows=rows,payouts=payouts,payouts_status={k:'confirmed' if complete and paid else 'partial' for k in required},refunds=[],refund_status='unconfirmed' if any(r['runner_status'] in ['withdrawn','excluded'] for r in rows) else 'no_runner_refund_indication',refresh_error=None)
+    present={p['kind'] for p in payouts};statuses={kind:'confirmed' if kind in present else 'pending' for kind in PAYOUT_KINDS}
+    # A blank box is not proof that a bet was not sold. Use an explicit official
+    # notice or a separately verified sale-start field size, never post-cancel count.
+    for li in soup.select('.refund_unit li'):
+        kind=next((KINDS[c] for c in li.get('class',[]) if c in KINDS),None)
+        if kind and kind not in present and any(t in li.get_text() for t in ['発売なし','発売せず','発売しません','発売されません']):statuses[kind]='not_offered'
+    at_sale=forecast.get('field_size_at_sale_start')
+    if at_sale is not None and at_sale<=8 and 'bracket_quinella' not in present:statuses['bracket_quinella']='not_offered'
+    required=set(PAYOUT_KINDS)-{'bracket_quinella'}
+    if len(known)>8 or (at_sale is not None and at_sale>=9):required.add('bracket_quinella')
+    complete=seen==set(known);paid=all(statuses[k] in ['confirmed','not_offered'] for k in required)
+    return dict(race_uid=forecast['race_uid'],race_no=forecast['race_no'],start_at=forecast['start_at'],status='confirmed' if complete and paid else 'partial' if rows else 'pending',official_confirmed=bool(complete and paid),source=source,source_checked_at=source['retrieved_at'],rows_complete=complete,rows=rows,payouts=payouts,payouts_status=statuses,refunds=[],refund_status='unconfirmed' if any(r['runner_status'] in ['withdrawn','excluded'] for r in rows) else 'no_runner_refund_indication',refresh_error=None)
 def initial(r):return dict(race_uid=r['race_uid'],race_no=r['race_no'],start_at=r['start_at'],status='not_started',official_confirmed=False,source=None,source_checked_at=None,rows_complete=False,rows=[],payouts=[],payouts_status={},refunds=[],refund_status='unconfirmed',refresh_error=None)
 def update(config,recheck=False):
     forecast=ROOT/config['forecast'];text=forecast.read_text(encoding='utf-8-sig').replace('\r\n','\n');d=json.loads(text);digest=sha256(text.encode()).hexdigest();assert d['authority']=='jra' and d['date_jst']==config['date']

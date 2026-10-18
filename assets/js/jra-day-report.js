@@ -7,7 +7,8 @@
   const cards = [...document.querySelectorAll('.race')];
   const status = document.getElementById('result-status');
   const button = document.getElementById('refresh-results');
-  const labels = {confirmed:'全着順・払戻掲載',partial:'速報・全着順待ち',not_started:'保存時は発走前',pending:'確定待ち',error:'取得保留',cancelled:'競走取り止め'};
+  const labels = {confirmed:'全着順・払戻掲載',partial:'速報・着順／払戻の確認待ち',not_started:'保存時は発走前',pending:'確定待ち',error:'取得保留',cancelled:'競走取り止め'};
+  const payoutKinds = {win:'単勝',place:'複勝',bracket_quinella:'枠連',quinella:'馬連',wide:'ワイド',exacta:'馬単',trio:'三連複',trifecta:'三連単'};
   let active = config.venues[0].venue_key;
   const compactRaces = {};
   const viewStates = {};
@@ -127,8 +128,7 @@
   }
   function adaptJRA(data) {
     if(data.schema_version!=='kba.results/1'||data.authority!=='jra'||!data.forecast_ref)throw new Error('JRA共通結果形式が不正');
-    const names={win:'単勝',place:'複勝',wide:'ワイド',quinella:'馬連',exacta:'馬単',trio:'三連複',trifecta:'三連単',bracket_quinella:'枠連'};
-    return {authority:'jra',date_jst:data.date_jst,venue_key:data.venue_key,baba_code:({tokyo:5,kyoto:8,niigata:4})[data.venue_key],forecast_version:data.forecast_ref.version,forecast_sha256:data.forecast_ref.sha256,updated_at:data.updated_at,last_poll_at:data.last_poll_at,refresh_interval_minutes:2,complete:data.races.every(r=>['confirmed','cancelled'].includes(r.status)),races:data.races.map(r=>({race:r.race_no,start_at:r.start_at,status:r.status,source:r.source,refresh_error:r.refresh_error,rows:r.rows.map(h=>({number:h.number,name:h.name,finish:Number.isInteger(h.finish)?h.finish:h.official_status_text||'未確定'})),refunds:r.payouts.map(p=>({kind:names[p.kind]||p.kind,numbers:p.numbers,combination:p.numbers.join('−'),yen_per_100:p.yen_per_100}))}))};
+    return {authority:'jra',date_jst:data.date_jst,venue_key:data.venue_key,baba_code:({tokyo:5,kyoto:8,niigata:4})[data.venue_key],forecast_version:data.forecast_ref.version,forecast_sha256:data.forecast_ref.sha256,updated_at:data.updated_at,last_poll_at:data.last_poll_at,refresh_interval_minutes:2,complete:data.races.every(r=>['confirmed','cancelled'].includes(r.status)),races:data.races.map(r=>({race:r.race_no,start_at:r.start_at,status:r.status,source:r.source,refresh_error:r.refresh_error,payouts_status:r.payouts_status||{},rows:r.rows.map(h=>({number:h.number,name:h.name,finish:Number.isInteger(h.finish)?h.finish:h.official_status_text||'未確定'})),refunds:r.payouts.map(p=>({kind:payoutKinds[p.kind]||p.kind,numbers:p.numbers,number_type:p.number_type,combination:p.numbers.join(['exacta','trifecta'].includes(p.kind)?'→':'−'),yen_per_100:p.yen_per_100}))}))};
   }
   function validate(data,key,digest) {
     const venue=config.venues.find(v=>v.venue_key===key);
@@ -153,6 +153,28 @@
     data.complete=data.races.every(r=>['confirmed','cancelled'].includes(r.status));
     stored[key]=data;draw(key);return data;
   }
+  function drawPayouts(container,rr) {
+    const open=container.children[0]?.open;
+    container.replaceChildren();
+    if(!rr.rows.length&&!rr.refunds?.length)return;
+    const details=document.createElement('details');details.className='official-payouts';details.open=typeof open==='boolean'?open:true;
+    const summary=document.createElement('summary');summary.textContent='結果・払戻（全8式別／100円）';details.append(summary);
+    const finish=[1,2,3].map(rank=>{const nums=rr.rows.filter(r=>r.finish===rank).map(r=>r.number);return nums.length?`${rank}着 ${nums.join('・')}`:'';}).filter(Boolean);
+    if(finish.length){const p=document.createElement('p');p.className='official-top-finish';p.textContent=finish.join(' / ');details.append(p);}
+    const table=document.createElement('table');table.className='payout-table';const head=document.createElement('thead');const row=document.createElement('tr');
+    for(const text of ['式別','的中番号・払戻金']){const th=document.createElement('th');th.scope='col';th.textContent=text;row.append(th);}head.append(row);table.append(head);
+    const body=document.createElement('tbody');
+    for(const [kind,label] of Object.entries(payoutKinds)){
+      const row=document.createElement('tr');row.dataset.kind=kind;const th=document.createElement('th');th.scope='row';th.textContent=kind==='bracket_quinella'?label+'（枠番）':label;
+      const td=document.createElement('td');const entries=(rr.refunds||[]).filter(p=>p.kind===label);
+      for(const payout of entries){const line=document.createElement('div');line.className='payout-line';const nums=document.createElement('span');nums.textContent=payout.numbers.join(['exacta','trifecta'].includes(kind)?'→':'−');const money=document.createElement('b');money.textContent=payout.yen_per_100.toLocaleString()+'円';line.append(nums,money);td.append(line);}
+      if(!entries.length){const span=document.createElement('span');span.className='payout-pending';span.textContent=rr.payouts_status?.[kind]==='not_offered'?'発売なし':'未掲載・確認待ち';td.append(span);}
+      row.append(th,td);body.append(row);
+    }
+    table.append(body);details.append(table);
+    if(rr.source?.retrieved_at){const p=document.createElement('p');p.className='payout-checked';p.textContent='公式確認 '+rr.source.retrieved_at.slice(11,19)+' JST · 各100円あたり';details.append(p);}
+    container.append(details);
+  }
   function draw(key) {
     const data=stored[key];if(!data)return;
     for(const rr of data.races){
@@ -166,8 +188,7 @@
         el.textContent=row?(Number.isInteger(row.finish)?row.finish+'着':String(row.finish)):h.status_at_snapshot==='withdrawn'?'取消':rr.status==='cancelled'?'競走取止':config.compact?'—':rr.status==='not_started'?'保存時は発走前':'未確定';
         el.classList.toggle('podium',Boolean(row&&Number.isInteger(row.finish)&&row.finish<=3));
       }
-      const payouts=card.querySelector('.payouts');payouts.replaceChildren();
-      if(rr.refunds?.length){const det=document.createElement('details');const sum=document.createElement('summary');sum.textContent='公式払戻を見る（100円あたり）';det.append(sum);const ul=document.createElement('ul');for(const p of rr.refunds){const li=document.createElement('li');li.textContent=`${p.kind} ${p.combination} ${p.yen_per_100.toLocaleString()}円`;ul.append(li);}det.append(ul);payouts.append(det);}
+      drawPayouts(card.querySelector('.payouts'),rr);
       for(const plan of race.bet_plans){const el=card.querySelector(`[data-plan-result="${plan.plan_id}"]`);
         if(rr.status!=='confirmed'){el.textContent=config.compact?'結果待ち · 実購入未記録':'掲載案の結果：確定待ち／実購入未記録';continue;}
         if(rr.rows.some(row=>!Number.isInteger(row.finish))){el.textContent='取消・除外等を含むため返還の照合待ち。収支判定は保留／実購入未記録';continue;}

@@ -108,7 +108,7 @@
 - `rows[]`：`number`、`name`、`finish: integer/null`、`runner_status`、`official_status_text`、`time`、`margin`、`last_3f`、`final_popularity`、`final_win_odds`。
 - `runner_status`：`finished` / `withdrawn` / `excluded` / `did_not_finish` / `disqualified` / `unknown`。元の表示文言を残す。
 - `payouts[]`：`kind`、`number_type`、`numbers`、`yen_per_100`、`popularity`。同着の複数的中を全て保存する。
-- `payouts_status`：券種別に `pending` / `partial` / `confirmed`。払戻未掲載を0円として扱わない。
+- `payouts_status`：券種別に `pending` / `partial` / `confirmed` / `not_offered`。JRAの新しい取得では通常8式別の全キーを記録する。`not_offered` は公式の発売なし明示または確認済み発売開始時頭数が根拠。現在の出走頭数や空欄だけで断定しない。払戻未掲載を0円として扱わない。
 - `refunds[]`：公式で確認した券種・番号・返還率・理由・出典。`refund_status`が未確認なら返還判定を保留する。
 - `refresh_error`：失敗した時刻・理由。以前の確定結果を消して `error` のみへ置き換えない。
 - 非公式を使う場合は `official_confirmed: false` と情報源を明示し、公式確定の集計へ入れない。
