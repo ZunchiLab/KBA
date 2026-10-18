@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-10-18",
+  "venue": "高知",
+  "venue_key": "kochi",
+  "baba_code": 31,
+  "forecast_version": "v1",
+  "forecast_fixed_at": "2026-10-18T20:12:43+09:00",
+  "forecast_file": "report_20261018_nar_predictions_v1.json",
+  "forecast_sha256": "a4dfad293b871bbe8fd78ed1d3f0fa6630c0e3078d8e102adad41df6b3ddc2e4",
+  "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
+  "updated_at": "2026-10-18T20:14:35+09:00",
+  "complete": false,
+  "refresh_interval_minutes": 2,
+  "refresh_status": "continuous",
+  "races": [
+    {
+      "race": 11,
+      "name": "ファイナルレースＣ１－６記者選抜",
+      "start_at": "2026-10-18T20:50:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    }
+  ],
+  "actual_purchase": null,
+  "note": "結果専用データ。事前予想・価格・採否を変更しない。"
+}
