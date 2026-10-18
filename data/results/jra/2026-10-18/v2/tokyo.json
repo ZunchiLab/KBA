@@ -9,8 +9,8 @@
     "sha256": "c62a9d30f798a5d2ccf45ecaf675fe14a8f2f6fdeca6115bee15cfd5a327f8ab",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-18T16:11:00+09:00",
-  "last_poll_at": "2026-10-18T16:11:00+09:00",
+  "updated_at": "2026-10-18T16:23:15+09:00",
+  "last_poll_at": "2026-10-18T16:23:15+09:00",
   "published_at": null,
   "races": [
     {
@@ -3219,7 +3219,10 @@
       "payouts_status": {},
       "refunds": [],
       "refund_status": "unconfirmed",
-      "refresh_error": null
+      "refresh_error": {
+        "at": "2026-10-18T16:23:15+09:00",
+        "reason": "HTTP Error 503: Service Unavailable"
+      }
     }
   ]
 }
