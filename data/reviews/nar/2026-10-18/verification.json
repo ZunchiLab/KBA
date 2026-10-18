@@ -1,0 +1,62 @@
+{
+  "reviewed_at": "2026-10-18T22:21:25+09:00",
+  "forecast_sha256": "a4dfad293b871bbe8fd78ed1d3f0fa6630c0e3078d8e102adad41df6b3ddc2e4",
+  "forecast_unchanged": true,
+  "races": 2,
+  "horses": 25,
+  "settlements": {
+    "main_all": {
+      "cost_yen": 500,
+      "payout_yen": 150,
+      "points": 5,
+      "hit_points": 1,
+      "net_yen": -350,
+      "return_percent": 30.0
+    },
+    "main_price": {
+      "cost_yen": 500,
+      "payout_yen": 150,
+      "points": 5,
+      "hit_points": 1,
+      "net_yen": -350,
+      "return_percent": 30.0
+    },
+    "rank_all": {
+      "cost_yen": 500,
+      "payout_yen": 150,
+      "points": 5,
+      "hit_points": 1,
+      "net_yen": -350,
+      "return_percent": 30.0
+    },
+    "rank_price": {
+      "cost_yen": 500,
+      "payout_yen": 150,
+      "points": 5,
+      "hit_points": 1,
+      "net_yen": -350,
+      "return_percent": 30.0
+    },
+    "popular_all": {
+      "cost_yen": 500,
+      "payout_yen": 150,
+      "points": 5,
+      "hit_points": 1,
+      "net_yen": -350,
+      "return_percent": 30.0
+    },
+    "popular_price": {
+      "cost_yen": 500,
+      "payout_yen": 150,
+      "points": 5,
+      "hit_points": 1,
+      "net_yen": -350,
+      "return_percent": 30.0
+    }
+  },
+  "ordinal_formula_matches": 25,
+  "html_horse_rows": 25,
+  "html_uncomputed_scores": 25,
+  "post_event_diagnostics_blind": false,
+  "actual_purchase": null
+}

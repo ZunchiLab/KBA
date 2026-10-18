@@ -61,6 +61,11 @@ if ($authority -eq 'jra' -and $predictionDate -ge '2026-10-11') {
     & python -X utf8 (Join-Path $repositoryRoot 'scripts/check_jra_forecast.py') $sourceJson --strict
     if ($LASTEXITCODE -ne 0) { throw 'JRAの公開前比較・根拠照合が未完了です。指摘を直すか本線を見送ってください。' }
 }
+# Future NAR days share the compact layout and must not publish ordinal values as ability scores.
+if ($authority -eq 'nar' -and $predictionDate -ge '2026-10-19') {
+    & python -X utf8 (Join-Path $repositoryRoot 'scripts/check_nar_forecast.py') $sourceJson --strict
+    if ($LASTEXITCODE -ne 0) { throw '地方予想の表示・指数記録が未完了です。指摘を修正してください。' }
+}
 $venueNames = @($jsonDocument.venues | ForEach-Object { $_.label } | Where-Object { $_ })
 if (-not $venueNames.Count -and $jsonDocument.venue) { $venueNames = @($jsonDocument.venue) }
 if (-not $venueNames.Count) { $venueNames = @($jsonDocument.races | ForEach-Object { $_.venue } | Where-Object { $_ } | Select-Object -Unique) }

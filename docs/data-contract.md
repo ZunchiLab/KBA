@@ -208,3 +208,17 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 同じ日以降、本線レースの指数上位3頭を総合5位以下・順位保留にする場合、`analysis.preflight_review.rank_override_reviews[]` に `number`・`compared_with`・`reason`・双方の `evidence_refs` を保存する。比較先は総合上位4頭の別馬を少なくとも1頭。既定の「印・総合順位は今回条件と展開…」という定型文だけでは未完了。上位指数を自動採用する指示ではなく、降格の説明と参照を必須化する。
 
 `check_jra_forecast.py --strict` を既存公開コマンドが呼び出し、不足なら停止。Python26件と合成JSONのCLI停止を確認。自由文の全意味・実力差・同時的中確率・収益・未来の改善効果は検証しない。指数の採点係数は変更していない。明日の実際の予想取得・作成・公開を自動で開始したものでもない。
+
+
+## 2026-10-18追加：地方の指数と共通compact表示
+
+10/19以降の新規地方は `presentation.layout: compact-v1` を必須とする。`default_race_mode: single`・`details_collapsed: true` を基本とし、JRA共通の描画・操作を利用。旧地方schema_version:1の結果は表示アダプターで変換し、原本を書き換えない。枠連複→枠連、馬連複→馬連、馬連単→馬単、枠連単→枠単の名称対応は、番号種別と着順指定を保持する。
+
+- 総合印・`rank`は比較上の評価順位。`score`と独立し、順位から等間隔に変換した数値を能力指数へ用いない。
+- 指数未算出は `score:null`、`score_method:not_computed`、未算出理由を `score_definition` へ。`model_rank`も未算出ならnull。未知をゼロ点・最下位へ自動配置しない。
+- 計算した数値指数は `score_method`・`score_definition` と `score_evidence.formula`・`score_evidence.components[]` を保存。各成分は実在する `run_id`、`inputs`（入力・単位・補正）、`contribution`（寄与）を持ち、馬の `evidence_refs` へ接続する。採点式は開催前に固定し、今回2Rの結果へ合わせない。
+- strict検査は記録・参照の有無を確認する。計算式全文の意味、他場の級換算、校正、予測精度、収益性の確認とは別。未知開催の改善を断定しない。
+- `presentation.storage_namespace`は表示見本・反省の仮プランを原本の仮プランから分ける任意項目。購入履歴を削除・変更しない。
+- 開催後の表示見本・レビューは `post_event_presentation` / `post_event_review` と明示し、元の固定予想・SHAを参照する。結果後に新しい事前予想版として公開しない。
+
+2026/10/18の原本に保存されたscore値は保持し、能力指数ではないことを訂正注記へ保存。未算出表示は元の数値を再計算した意味ではない。

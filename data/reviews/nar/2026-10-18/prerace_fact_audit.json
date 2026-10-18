@@ -1,0 +1,3164 @@
+{
+  "date": "2026-10-18",
+  "fixed_at": "2026-10-18T20:12:43+09:00",
+  "method": "全頭の人手比較と、級・年齢条件・距離・着順の原文参照表。級文字列の機械照合は補助であり、勝率検証ではない。",
+  "additional_sources": [
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30057403196",
+      "retrieved_at": "2026-10-18T20:06:25+09:00",
+      "sha256": "d8bf8c77c3a43c1b5563598d73318c2f9c21507094e111fcfa93c462bdeaf679",
+      "saved_file": "history/h1.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 1,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406676",
+      "retrieved_at": "2026-10-18T20:06:25+09:00",
+      "sha256": "6ae5d935311bb0cc9e31986c123eda25b09d9af74c7337a2318e54b0060e1579",
+      "saved_file": "history/h2.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 2,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30013405186",
+      "retrieved_at": "2026-10-18T20:06:25+09:00",
+      "sha256": "690acc003ad938c0d02d0a2ea879be4a29e569dc135302fa6cb8a6fe3ffea4ac",
+      "saved_file": "history/h3.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 3,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30036400736",
+      "retrieved_at": "2026-10-18T20:06:25+09:00",
+      "sha256": "a2783927835466029d65cd58b1cd4e9f053eec958c36e8c730ddf395e21b87ca",
+      "saved_file": "history/h4.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 4,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072402176",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "0e46187bef3787cdff04ba1c074bec6edc23b3f3bbbbb7730aed357970990ba9",
+      "saved_file": "history/h5.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 5,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30018407466",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "6a1cc9f01d2b9a75e49cc1490b8b7aa5c88c045cd3446033d0f8b3c4c861b0c4",
+      "saved_file": "history/h6.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 6,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30075406586",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "be4281fc7711eda152728adef11614f20a1c7f45003bf12336e111b6e89a5bab",
+      "saved_file": "history/h7.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 7,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30064404786",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "408adb45e61fcab186ef402d9061ea23866d86ee0f3e401fe73abe325a045eb2",
+      "saved_file": "history/h8.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 8,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30026403786",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "253a7465eb559fd557e6b216dfc2aed8a3f268185418319eafff94643fc68b08",
+      "saved_file": "history/h9.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 9,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072404156",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "e70670cc105dab48f79b15a4166ad627b8fedbc06080beb80175927abdd3c8cb",
+      "saved_file": "history/h10.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 10,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30022403686",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "3e1edd582174b809f28657050865723ee2e44322d56348133c49f9510f143fde",
+      "saved_file": "history/h11.html",
+      "provider": "NAR",
+      "venue_key": "kochi",
+      "number": 11,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30078405496",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "6249796856c8ec1f7b6860750b6a3eaf903e171ed5bce769b69080e425a80c3e",
+      "saved_file": "history/h1.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 1,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30077409076",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "29b2a3fab0bd7676789c5411d156deac0dbe889f5316ae4e004071c56d77de30",
+      "saved_file": "history/h2.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 2,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30073401696",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "749d8785dfdab25af781484d8926f726b2a5fee9004f580c80a1664613cd6884",
+      "saved_file": "history/h3.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 3,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30058401586",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "720dc987e6c96208d3d01d056c40b90bb078c884c8f5d413bc139860adc78347",
+      "saved_file": "history/h4.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 4,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406096",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "f591b32b27e9aedd9914e187583439b64e366031eb5d3cafa38d17ad1b998aa7",
+      "saved_file": "history/h5.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 5,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30016400886",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "8729f14051ab566e973926ac92121d35dc910421a92419fc3bd24f1d4a8eb853",
+      "saved_file": "history/h6.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 6,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30096409386",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "5a3cf76a8947a0481e09d47508008e6f993f1d8f0f053361d8d3702a94c8069d",
+      "saved_file": "history/h7.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 7,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30088407466",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "103cbdb8c4ee779cade80f83bbd48814827403b7671b34b35dc0d2d30258b9d0",
+      "saved_file": "history/h8.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 8,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30024408986",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "ffefd734b92773ab2a5dd8323eed5043b0a2ef20187e35cdc04e816bf1fba62f",
+      "saved_file": "history/h9.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 9,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30006406696",
+      "retrieved_at": "2026-10-18T20:06:26+09:00",
+      "sha256": "592d7ed5fef9045fa68bfacb7a02f6efd28b061fa3327505ec8d079e96790b0a",
+      "saved_file": "history/h10.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 10,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30096405396",
+      "retrieved_at": "2026-10-18T20:06:27+09:00",
+      "sha256": "92a9d36076986c38635621ed390b0ee825bf949e07a464f0d8591c182e2f1525",
+      "saved_file": "history/h11.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 11,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30097407707",
+      "retrieved_at": "2026-10-18T20:06:27+09:00",
+      "sha256": "3bb9e32e96ecaf04fb8ae678507e11a742dad852ad09eca5816261dca0170387",
+      "saved_file": "history/h12.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 12,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30025403896",
+      "retrieved_at": "2026-10-18T20:06:27+09:00",
+      "sha256": "aa5d4ed87e1b245bb787ecfb6b1e7167babee338222749606a35a21654522f8f",
+      "saved_file": "history/h13.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 13,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    },
+    {
+      "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30056400207",
+      "retrieved_at": "2026-10-18T20:06:27+09:00",
+      "sha256": "dfdb8f5696e927d59aba25749ea9c64dbd0259bb4d8f51ba989d8ac3722c9472",
+      "saved_file": "history/h14.html",
+      "provider": "NAR",
+      "venue_key": "saga",
+      "number": 14,
+      "scope": "公式履歴の2026年同場・同距離。未確認の以前の走を不存在にしない。"
+    }
+  ],
+  "items": [
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 1,
+      "name": "アリアルブラック",
+      "reason": "6/28の当地1600m・Ｃ１－２で3着0.2秒差。9/6の同距離選抜は6着で、5の4着には後れた。距離戻りの材料は保持する。",
+      "risk": "近4走は8着以下3回。先行時に8・4と競合する可能性があり、減量だけで変化を断定しない。",
+      "record_raw": "全 2- 7- 3- 21 左 0- 1- 0- 5 右 2- 6- 2- 13 場 2- 6- 2- 11 距 0- 1- 1- 3 1:45.4 良－",
+      "evidence": [
+        {
+          "overview": "9 26.10.04 不良 11頭 高知 右1400 3番",
+          "rank": "9",
+          "name": "Ｃ１－２",
+          "rider_weight": "9人 507 畑中信 57.0",
+          "time_corners": "1:32.4 6-6-6-8 40.9",
+          "gap_winner": "2.3 トップアメリカン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.06 重 8頭 高知 右1600 2番",
+          "rank": "6",
+          "name": "琴ヶ浜特別Ｃ１－１",
+          "rider_weight": "7人 506 山崎雅 57.0",
+          "time_corners": "1:49.5 3-3-3-4 42.7",
+          "gap_winner": "2.8 ララマルシュドロワ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=11&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=11&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.07.25 良 12頭 高知 右1300 7番",
+          "rank": "8",
+          "name": "アイスクリン特別Ｃ１－２",
+          "rider_weight": "8人 512 山崎雅 57.0",
+          "time_corners": "1:27.2 9-9-10-10 39.9",
+          "gap_winner": "1.9 コスモルーテウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "12 26.07.12 稍重 12頭 高知 右1400 2番",
+          "rank": "12",
+          "name": "柏島特別Ｃ１－１選抜馬",
+          "rider_weight": "8人 503 △阿部基 55.0",
+          "time_corners": "1:33.7 7-7-10-11 40.9",
+          "gap_winner": "3.7 ウィズユアドリーム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "3 26.06.28 不良 10頭 高知 右1600 1番",
+          "rank": "3",
+          "name": "Ｃ１－２",
+          "rider_weight": "7人 504 △阿部基 55.0",
+          "time_corners": "1:46.9 2-2-2-2 40.9",
+          "gap_winner": "0.2 マジックタッチ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "4 26.04.05 不良 8頭 高知 右1600 6番",
+          "rank": "4",
+          "name": "Ｃ１－３",
+          "full_name": "Ｃ１－３",
+          "rider_weight": "2人 501 畑中信 (高知) 57.0",
+          "time_corners": "1:45.4 上がり39.7（履歴表に通過順なし）",
+          "gap_winner": "1.0 モノノフブルー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=9&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30057403196",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "d8bf8c77c3a43c1b5563598d73318c2f9c21507094e111fcfa93c462bdeaf679",
+            "saved_file": "history/h1.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 2,
+      "name": "ノーブルラン",
+      "reason": "9/22の当地1400mファイナルで2着0.2秒差。距離成績0勝・2着2回・3着2回を保持し、勝ち切りより圏内を比較する。",
+      "risk": "9/6の1600mは6着2.7秒差。後方の位置取りが多く、1400mでの追込み好走が1600mでも続くとは限らない。",
+      "record_raw": "全 2- 6- 6- 43 左 1- 0- 0- 12 右 0- 6- 4- 23 場 0- 6- 4- 21 距 0- 2- 2- 4 1:44.4 良1:46.9",
+      "evidence": [
+        {
+          "overview": "7 26.10.04 不良 11頭 高知 右1400 6番",
+          "rank": "7",
+          "name": "Ｃ１－２",
+          "rider_weight": "10人 480 郷間勇 57.0",
+          "time_corners": "1:32.0 11-11-11-8 40.1",
+          "gap_winner": "1.9 トップアメリカン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "2 26.09.22 良 12頭 高知 右1400 9番",
+          "rank": "2",
+          "name": "ファイナルレースＣ１－６記者選",
+          "rider_weight": "7人 483 郷間勇 57.0",
+          "time_corners": "1:35.0 12-11-10-7 41.6",
+          "gap_winner": "0.2 アンジョルラス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.06 重 10頭 高知 右1600 8番",
+          "rank": "6",
+          "name": "Ｃ１－２",
+          "rider_weight": "9人 475 郷間勇 57.0",
+          "time_corners": "1:49.3 10-10-10-7 42.7",
+          "gap_winner": "2.7 メイショウミカワ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=10&k_babaCode=31"
+        },
+        {
+          "overview": "10 26.07.25 良 12頭 高知 右1300 1番",
+          "rank": "10",
+          "name": "アイスクリン特別Ｃ１－２",
+          "rider_weight": "12人 478 郷間勇 57.0",
+          "time_corners": "1:27.2 6-7-7-7 41.0",
+          "gap_winner": "1.9 コスモルーテウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "9 26.07.12 稍重 11頭 高知 右1400 9番",
+          "rank": "9",
+          "name": "Ｃ１－２",
+          "rider_weight": "10人 476 郷間勇 57.0",
+          "time_corners": "1:32.7 10-10-10-10 40.4",
+          "gap_winner": "1.9 テーオーシリウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.06.28 不良 10頭 高知 右1600 9番",
+          "rank": "6",
+          "name": "Ｃ１－２",
+          "full_name": "Ｃ１－２",
+          "rider_weight": "8人 480 郷間勇 (高知) 57.0",
+          "time_corners": "1:47.8 上がり41.1（履歴表に通過順なし）",
+          "gap_winner": "1.1 マジックタッチ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406676",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "6ae5d935311bb0cc9e31986c123eda25b09d9af74c7337a2318e54b0060e1579",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "6 26.05.31 稍重 9頭 高知 右1600 5番",
+          "rank": "6",
+          "name": "Ｃ１－３",
+          "full_name": "Ｃ１－３",
+          "rider_weight": "6人 486 郷間勇 (高知) 57.0",
+          "time_corners": "1:48.0 上がり40.9（履歴表に通過順なし）",
+          "gap_winner": "1.8 ビステル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406676",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "6ae5d935311bb0cc9e31986c123eda25b09d9af74c7337a2318e54b0060e1579",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "3 26.04.05 不良 8頭 高知 右1600 8番",
+          "rank": "3",
+          "name": "Ｃ１－４",
+          "full_name": "Ｃ１－４",
+          "rider_weight": "3人 475 郷間勇 (高知) 57.0",
+          "time_corners": "1:46.2 上がり38.9（履歴表に通過順なし）",
+          "gap_winner": "0.7 ディープギルドン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=8&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406676",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "6ae5d935311bb0cc9e31986c123eda25b09d9af74c7337a2318e54b0060e1579",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "7 26.02.25 不良 11頭 高知 右1600 8番",
+          "rank": "7",
+          "name": "ファイナルレースＣ１－４記者選",
+          "full_name": "ファイナルレースＣ１－４記者選",
+          "rider_weight": "2人 473 山崎雅 (高知) 57.0",
+          "time_corners": "1:44.4 上がり39.0（履歴表に通過順なし）",
+          "gap_winner": "0.2 マツリダマスラオ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F25&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F25&k_raceNo=10&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406676",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "6ae5d935311bb0cc9e31986c123eda25b09d9af74c7337a2318e54b0060e1579",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "3 26.01.13 良 7頭 高知 右1600 4番",
+          "rank": "3",
+          "name": "双名島特別Ｃ１－１選抜馬",
+          "full_name": "双名島特別Ｃ１－１選抜馬",
+          "rider_weight": "5人 473 郷間勇 (高知) 57.0",
+          "time_corners": "1:46.9 上がり38.8（履歴表に通過順なし）",
+          "gap_winner": "1.5 ルコルセール",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F13&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F13&k_raceNo=9&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406676",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "6ae5d935311bb0cc9e31986c123eda25b09d9af74c7337a2318e54b0060e1579",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 3,
+      "name": "ペプチドヒナタ",
+      "reason": "当地1600mは2勝・2着1回・3着3回。公式履歴の3/18・Ｃ１－２で1着0.5秒差、6/28はＣ１－４で3着0.7秒差。直近1400mの敗戦だけで距離実績を消さない。",
+      "risk": "9/5の1600mは6着2.5秒差、近5走に圏内なし。多田騎手への変更だけで好転を保証しない。",
+      "record_raw": "全 4- 2- 5- 35 左 0- 0- 0- 7 右 4- 2- 5- 26 場 3- 2- 5- 21 距 2- 1- 3- 4 1:45.3 良1:47.4",
+      "evidence": [
+        {
+          "overview": "8 26.10.04 不良 12頭 高知 右1400 3番",
+          "rank": "8",
+          "name": "Ｃ１－３",
+          "rider_weight": "11人 497 ▲塚本直 54.0",
+          "time_corners": "1:31.8 12-11-11-10 38.6",
+          "gap_winner": "1.7 オリーブブランチ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "9 26.09.22 良 9頭 高知 右1400 2番",
+          "rank": "9",
+          "name": "Ｃ１－３",
+          "rider_weight": "8人 501 新庄海 57.0",
+          "time_corners": "1:34.6 9-9-9-9 40.5",
+          "gap_winner": "1.9 プレジール",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.05 不良 9頭 高知 右1600 3番",
+          "rank": "6",
+          "name": "Ｃ１－３",
+          "rider_weight": "5人 498 多田誠 57.0",
+          "time_corners": "1:48.7 9-9-9-7 41.3",
+          "gap_winner": "2.5 トップアメリカン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=7&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.07.25 良 12頭 高知 右1300 1番",
+          "rank": "7",
+          "name": "Ｃ１－３",
+          "rider_weight": "7人 502 井上瑛 57.0",
+          "time_corners": "1:26.5 10-10-11-10 40.0",
+          "gap_winner": "1.2 アプサラー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.07.12 稍重 12頭 高知 右1400 11番",
+          "rank": "8",
+          "name": "柏島特別Ｃ１－１選抜馬",
+          "rider_weight": "12人 499 ☆城野慈 56.0",
+          "time_corners": "1:31.2 10-10-10-9 38.4",
+          "gap_winner": "1.2 ウィズユアドリーム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "3 26.06.28 不良 8頭 高知 右1600 2番",
+          "rank": "3",
+          "name": "Ｃ１－４",
+          "full_name": "Ｃ１－４",
+          "rider_weight": "6人 498 畑中信 (高知) 57.0",
+          "time_corners": "1:46.2 上がり39.2（履歴表に通過順なし）",
+          "gap_winner": "0.7 ダイヤモンドフジ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=7&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30013405186",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "690acc003ad938c0d02d0a2ea879be4a29e569dc135302fa6cb8a6fe3ffea4ac",
+            "saved_file": "history/h3.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "4 26.05.30 稍重 10頭 高知 右1600 9番",
+          "rank": "4",
+          "name": "Ｃ１－６",
+          "full_name": "Ｃ１－６",
+          "rider_weight": "4人 499 多田誠 (高知) 57.0",
+          "time_corners": "1:47.9 上がり39.5（履歴表に通過順なし）",
+          "gap_winner": "0.7 コスモルーテウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=4&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=4&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30013405186",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "690acc003ad938c0d02d0a2ea879be4a29e569dc135302fa6cb8a6fe3ffea4ac",
+            "saved_file": "history/h3.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "4 26.04.05 不良 11頭 高知 右1600 9番",
+          "rank": "4",
+          "name": "ファイナルレースＣ１－７",
+          "full_name": "ファイナルレースＣ１－７",
+          "rider_weight": "1人 487 多田誠 (高知) 57.0",
+          "time_corners": "1:46.2 上がり40.0（履歴表に通過順なし）",
+          "gap_winner": "0.4 オールラウンダー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=12&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30013405186",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "690acc003ad938c0d02d0a2ea879be4a29e569dc135302fa6cb8a6fe3ffea4ac",
+            "saved_file": "history/h3.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "1 26.03.18 重 9頭 高知 右1600 9番",
+          "rank": "1",
+          "name": "Ｃ１－２",
+          "full_name": "Ｃ１－２",
+          "rider_weight": "5人 498 多田誠 (高知) 57.0",
+          "time_corners": "1:47.2 上がり40.2（履歴表に通過順なし）",
+          "gap_winner": "0.5 （ワクワクドリーム）",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F18&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F18&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30013405186",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "690acc003ad938c0d02d0a2ea879be4a29e569dc135302fa6cb8a6fe3ffea4ac",
+            "saved_file": "history/h3.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "2 26.01.13 良 11頭 高知 右1600 8番",
+          "rank": "2",
+          "name": "ファイナルレースＣ１－７記者選",
+          "full_name": "ファイナルレースＣ１－７記者選",
+          "rider_weight": "4人 494 中島龍 (高知) 57.0",
+          "time_corners": "1:47.4 上がり39.4（履歴表に通過順なし）",
+          "gap_winner": "0.8 ビックス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F13&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F13&k_raceNo=10&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30013405186",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "690acc003ad938c0d02d0a2ea879be4a29e569dc135302fa6cb8a6fe3ffea4ac",
+            "saved_file": "history/h3.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 4,
+      "name": "ダノンジャスティス",
+      "reason": "距離成績3勝・2着2回・3着8回。以前のＡ・Ｂ級の出走歴と前へ行く形は保持する。",
+      "risk": "近走1600mは6着2.4秒差・5着3.1秒差、直近1400mも9着3.0秒差。過去の上級歴と現在の能力を同一視しない。",
+      "record_raw": "全 10- 7- 13- 93 左 0- 0- 0- 3 右 7- 6- 12- 81 場 5- 5- 9- 70 距 3- 2- 8- 21 1:43.1 良1:45.2",
+      "evidence": [
+        {
+          "overview": "9 26.10.03 稍重 10頭 高知 右1400 1番",
+          "rank": "9",
+          "name": "Ｃ１－５",
+          "rider_weight": "8人 482 ◇濱尚美 55.0",
+          "time_corners": "1:34.0 3-3-5-6 41.8",
+          "gap_winner": "3.0 メイショウジェンマ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.09.22 良 12頭 高知 右1400 6番",
+          "rank": "7",
+          "name": "ファイナルレースＣ１－６記者選",
+          "rider_weight": "6人 473 畑中信 57.0",
+          "time_corners": "1:35.8 5-5-5-7 43.4",
+          "gap_winner": "1.0 アンジョルラス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.05 不良 10頭 高知 右1600 7番",
+          "rank": "6",
+          "name": "Ｃ１－６",
+          "rider_weight": "6人 482 ◇濱尚美 55.0",
+          "time_corners": "1:49.6 3-3-3-5 43.1",
+          "gap_winner": "2.4 ジャガーノート",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.08.01 良 12頭 高知 右1300 10番",
+          "rank": "7",
+          "name": "物部川特別３歳以上Ｂ級以下",
+          "rider_weight": "11人 476 畑中信 57.0",
+          "time_corners": "1:26.1 1-1-1-1 41.7",
+          "gap_winner": "1.4 ダイヤモンドフジ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F01&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F01&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "5 26.07.18 良 8頭 高知 右1600 5番",
+          "rank": "5",
+          "name": "Ｂ－４",
+          "rider_weight": "8人 479 ☆城野慈 56.0",
+          "time_corners": "1:50.5 6-6-7-7 42.2",
+          "gap_winner": "3.1 グランツアーテム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F18&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F18&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "9 26.06.06 不良 11頭 高知 右1600 1番",
+          "rank": "9",
+          "name": "ファイナルレースＢ－４記者選抜",
+          "full_name": "ファイナルレースＢ－４記者選抜",
+          "rider_weight": "9人 483 城野慈 (高知) 56.0",
+          "time_corners": "1:46.8 上がり41.2（履歴表に通過順なし）",
+          "gap_winner": "2.3 クラックオブドーン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F06&k_raceNo=11&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F06&k_raceNo=11&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30036400736",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "a2783927835466029d65cd58b1cd4e9f053eec958c36e8c730ddf395e21b87ca",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "7 26.04.05 不良 8頭 高知 右1600 4番",
+          "rank": "7",
+          "name": "牧野公園特別Ｃ１－１",
+          "full_name": "牧野公園特別Ｃ１－１",
+          "rider_weight": "7人 483 畑中信 (高知) 57.0",
+          "time_corners": "1:45.9 上がり40.7（履歴表に通過順なし）",
+          "gap_winner": "2.3 セイウンガレオン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=11&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=11&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30036400736",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "a2783927835466029d65cd58b1cd4e9f053eec958c36e8c730ddf395e21b87ca",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "8 26.03.15 良 8頭 高知 右1600 5番",
+          "rank": "8",
+          "name": "アクアマリン特別Ａ－１",
+          "full_name": "アクアマリン特別Ａ－１",
+          "rider_weight": "8人 485 畑中信 (高知) 57.0",
+          "time_corners": "1:50.9 上がり42.6（履歴表に通過順なし）",
+          "gap_winner": "2.3 エクセレントタイム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F15&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F15&k_raceNo=7&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30036400736",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "a2783927835466029d65cd58b1cd4e9f053eec958c36e8c730ddf395e21b87ca",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "7 26.03.01 不良 7頭 高知 右1600 2番",
+          "rank": "7",
+          "name": "Ａ－２",
+          "full_name": "Ａ－２",
+          "rider_weight": "7人 483 畑中信 (高知) 57.0",
+          "time_corners": "1:47.6 上がり41.8（履歴表に通過順なし）",
+          "gap_winner": "2.0 ウインヴェルデ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F01&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F01&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30036400736",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "a2783927835466029d65cd58b1cd4e9f053eec958c36e8c730ddf395e21b87ca",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "6 26.02.15 重 7頭 高知 右1600 7番",
+          "rank": "6",
+          "name": "Ａ－２",
+          "full_name": "Ａ－２",
+          "rider_weight": "7人 480 畑中信 (高知) 57.0",
+          "time_corners": "1:47.5 上がり42.3（履歴表に通過順なし）",
+          "gap_winner": "2.7 ビオグラフィア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F15&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F15&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30036400736",
+            "retrieved_at": "2026-10-18T20:06:25+09:00",
+            "sha256": "a2783927835466029d65cd58b1cd4e9f053eec958c36e8c730ddf395e21b87ca",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 5,
+      "name": "フライヤートゥルー",
+      "reason": "公式履歴で6/28・当地1600mＣ１－２の2着0.1秒差、5/31同距離Ｃ１－３の3着0.5秒差を確認。9/6の1600m選抜でも4着1.5秒差。",
+      "risk": "直近1400mは7・11着。7/18の除外を実走や好走へ数えず、今回の状態はパドック未確認。",
+      "record_raw": "全 4- 1- 8- 27 左 1- 0- 4- 9 右 2- 1- 4- 16 場 2- 1- 2- 9 距 0- 1- 1- 2 1:46.7 良－",
+      "evidence": [
+        {
+          "overview": "11 26.10.04 不良 11頭 高知 右1400 1番",
+          "rank": "11",
+          "name": "Ｃ１－２",
+          "rider_weight": "6人 500 石本純 57.0",
+          "time_corners": "1:33.0 7-9-7-11 41.4",
+          "gap_winner": "2.9 トップアメリカン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.09.22 良 8頭 高知 右1400 6番",
+          "rank": "7",
+          "name": "Ｃ１－２",
+          "rider_weight": "5人 495 石本純 57.0",
+          "time_corners": "1:34.1 4-5-5-5 41.5",
+          "gap_winner": "1.3 ブラッティーキッド",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=10&k_babaCode=31"
+        },
+        {
+          "overview": "4 26.09.06 重 8頭 高知 右1600 5番",
+          "rank": "4",
+          "name": "琴ヶ浜特別Ｃ１－１",
+          "rider_weight": "2人 502 井上瑛 57.0",
+          "time_corners": "1:48.2 8-7-6-6 39.9",
+          "gap_winner": "1.5 ララマルシュドロワ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=11&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=11&k_babaCode=31"
+        },
+        {
+          "overview": "3 26.08.01 良 12頭 高知 右1300 6番",
+          "rank": "3",
+          "name": "鳴子特別Ｂ－４",
+          "rider_weight": "4人 503 上田将 57.0",
+          "time_corners": "1:25.8 10-10-9-5 39.2",
+          "gap_winner": "0.8 ステラマテュティナ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F01&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F01&k_raceNo=7&k_babaCode=31"
+        },
+        {
+          "overview": "除外 26.07.18 良 8頭 高知 右1600 9番",
+          "rank": "除外",
+          "name": "Ｂ－４",
+          "rider_weight": "500 岡村卓 57.0",
+          "time_corners": "",
+          "gap_winner": "",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F18&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F18&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "2 26.06.28 不良 10頭 高知 右1600 8番",
+          "rank": "2",
+          "name": "Ｃ１－２",
+          "full_name": "Ｃ１－２",
+          "rider_weight": "5人 496 山田貴 (高知) 57.0",
+          "time_corners": "1:46.8 上がり40.8（履歴表に通過順なし）",
+          "gap_winner": "0.1 マジックタッチ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072402176",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "0e46187bef3787cdff04ba1c074bec6edc23b3f3bbbbb7730aed357970990ba9",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "3 26.05.31 稍重 9頭 高知 右1600 9番",
+          "rank": "3",
+          "name": "Ｃ１－３",
+          "full_name": "Ｃ１－３",
+          "rider_weight": "2人 490 上田将 (高知) 57.0",
+          "time_corners": "1:46.7 上がり40.1（履歴表に通過順なし）",
+          "gap_winner": "0.5 ビステル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072402176",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "0e46187bef3787cdff04ba1c074bec6edc23b3f3bbbbb7730aed357970990ba9",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "5 26.03.18 重 10頭 高知 右1600 7番",
+          "rank": "5",
+          "name": "八畳岩特別Ｃ級以下",
+          "full_name": "八畳岩特別Ｃ級以下",
+          "rider_weight": "5人 506 永森大 (高知) 57.0",
+          "time_corners": "1:47.6 上がり39.9（履歴表に通過順なし）",
+          "gap_winner": "2.7 スカンジナビア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F18&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F18&k_raceNo=7&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072402176",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "0e46187bef3787cdff04ba1c074bec6edc23b3f3bbbbb7730aed357970990ba9",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 6,
+      "name": "ラインメッセージ",
+      "reason": "7/12の当地1400mファイナルを1着0.2秒差。減量55kgと後方から進出した勝ち方は保存する。",
+      "risk": "1600mは0勝・2着1回・3着2回に対し着外20回。近3走1400・1600mとも圏外で、距離延長の裏付けが弱い。",
+      "record_raw": "全 7- 5- 9- 85 左 1- 0- 0- 5 右 6- 5- 9- 78 場 6- 3- 9- 69 距 0- 1- 2- 20 1:44.5 良1:47.4",
+      "evidence": [
+        {
+          "overview": "9 26.10.04 不良 12頭 高知 右1400 9番",
+          "rank": "9",
+          "name": "Ｃ１－３",
+          "rider_weight": "12人 498 ◇濱尚美 55.0",
+          "time_corners": "1:32.5 11-11-11-12 39.3",
+          "gap_winner": "2.4 オリーブブランチ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F04&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.22 良 9頭 高知 右1400 7番",
+          "rank": "6",
+          "name": "Ｃ１－３",
+          "rider_weight": "9人 494 ◇濱尚美 55.0",
+          "time_corners": "1:34.1 6-8-7-8 40.9",
+          "gap_winner": "1.4 プレジール",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.09.05 不良 9頭 高知 右1600 4番",
+          "rank": "7",
+          "name": "Ｃ１－３",
+          "rider_weight": "8人 495 ◇濱尚美 55.0",
+          "time_corners": "1:49.2 6-7-7-9 42.5",
+          "gap_winner": "3.0 トップアメリカン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=7&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.07.25 良 12頭 高知 右1300 4番",
+          "rank": "8",
+          "name": "Ｃ１－３",
+          "rider_weight": "9人 496 ◇濱尚美 55.0",
+          "time_corners": "1:26.5 11-10-9-10 40.4",
+          "gap_winner": "1.2 アプサラー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "1 26.07.12 稍重 12頭 高知 右1400 5番",
+          "rank": "1",
+          "name": "ファイナルレースＣ１－７記者選",
+          "rider_weight": "9人 492 ◇濱尚美 55.0",
+          "time_corners": "1:32.1 10-10-6-6 40.0",
+          "gap_winner": "0.2 ルージュアマリア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=10&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.06.27 不良 10頭 高知 右1600 7番",
+          "rank": "7",
+          "name": "Ｃ１－５",
+          "full_name": "Ｃ１－５",
+          "rider_weight": "10人 499 佐原秀 (高知) 57.0",
+          "time_corners": "1:46.1 上がり39.8（履歴表に通過順なし）",
+          "gap_winner": "2.3 ウィズユアドリーム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F27&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F27&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30018407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "6a1cc9f01d2b9a75e49cc1490b8b7aa5c88c045cd3446033d0f8b3c4c861b0c4",
+            "saved_file": "history/h6.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "9 26.05.30 稍重 10頭 高知 右1600 8番",
+          "rank": "9",
+          "name": "Ｃ１－６",
+          "full_name": "Ｃ１－６",
+          "rider_weight": "8人 497 山田貴 (高知) 57.0",
+          "time_corners": "1:50.7 上がり42.4（履歴表に通過順なし）",
+          "gap_winner": "3.5 コスモルーテウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=4&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=4&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30018407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "6a1cc9f01d2b9a75e49cc1490b8b7aa5c88c045cd3446033d0f8b3c4c861b0c4",
+            "saved_file": "history/h6.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "取止 26.04.04 不良 0頭 高知 右1600 8番",
+          "rank": "取止",
+          "name": "Ｃ１－６",
+          "full_name": "Ｃ１－６",
+          "rider_weight": "人 － 佐原秀 (高知) 57.0",
+          "time_corners": " 上がり（履歴表に通過順なし）",
+          "gap_winner": " ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F04&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F04&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30018407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "6a1cc9f01d2b9a75e49cc1490b8b7aa5c88c045cd3446033d0f8b3c4c861b0c4",
+            "saved_file": "history/h6.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 7,
+      "name": "イエデゴロゴロ",
+      "reason": "9/6の当地1600mファイナルは5着でも0.3秒差で、同走10の7着0.7秒差に先着。公式履歴で2/3の1600m・浦ノ内湾特別Ｃ１－１選抜馬勝ちを確認。",
+      "risk": "近2走1400mは6・9着で、今回は全馬の状態比較が難しい。後ろ過ぎる位置取りなら届かない。",
+      "record_raw": "全 3- 3- 5- 34 左 0- 0- 0- 4 右 3- 3- 5- 27 場 2- 2- 4- 15 距 1- 0- 2- 2 1:45.3 良1:46.1",
+      "evidence": [
+        {
+          "overview": "9 26.10.03 稍重 12頭 高知 右1400 9番",
+          "rank": "9",
+          "name": "Ｃ１－４",
+          "rider_weight": "7人 466 石本純 55.0",
+          "time_corners": "1:34.0 9-8-9-9 40.6",
+          "gap_winner": "1.1 イナズマテーラー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=7&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.20 稍重 9頭 高知 右1400 2番",
+          "rank": "6",
+          "name": "Ｃ１－４",
+          "rider_weight": "6人 459 石本純 55.0",
+          "time_corners": "1:33.7 9-9-8-8 39.9",
+          "gap_winner": "1.4 コノヨルヲトメテヨ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F20&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F20&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "5 26.09.06 重 11頭 高知 右1600 2番",
+          "rank": "5",
+          "name": "ファイナルレースＣ１－４",
+          "rider_weight": "6人 459 石本純 55.0",
+          "time_corners": "1:49.8 6-7-7-7 42.3",
+          "gap_winner": "0.3 ノイヤー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "2 26.06.14 重 9頭 高知 右1400 7番",
+          "rank": "2",
+          "name": "Ｃ１－２",
+          "rider_weight": "5人 459 岡遼太 55.0",
+          "time_corners": "1:31.8 9-9-9-6 39.2",
+          "gap_winner": "0.4 ムサシフウジン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F14&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F14&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.05.31 稍重 12頭 高知 右1900 9番",
+          "rank": "6",
+          "name": "丸山台特別４歳以上Ｃ級以下",
+          "rider_weight": "4人 456 赤岡修 55.0",
+          "time_corners": "2:07.7 9-6-7-5 41.0",
+          "gap_winner": "1.5 ベルリネッタ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=10&k_babaCode=31"
+        },
+        {
+          "overview": "4 26.04.05 不良 8頭 高知 右1600 8番",
+          "rank": "4",
+          "name": "Ｃ１－２",
+          "full_name": "Ｃ１－２",
+          "rider_weight": "3人 454 岡遼太 (高知) 55.0",
+          "time_corners": "1:45.3 上がり38.8（履歴表に通過順なし）",
+          "gap_winner": "1.3 ネオヒューズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=10&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=10&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30075406586",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "be4281fc7711eda152728adef11614f20a1c7f45003bf12336e111b6e89a5bab",
+            "saved_file": "history/h7.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "1 26.02.03 良 9頭 高知 右1600 7番",
+          "rank": "1",
+          "name": "浦ノ内湾特別Ｃ１－１選抜馬",
+          "full_name": "浦ノ内湾特別Ｃ１－１選抜馬",
+          "rider_weight": "4人 449 岡遼太 (高知) 55.0",
+          "time_corners": "1:46.1 上がり39.3（履歴表に通過順なし）",
+          "gap_winner": "0.2 （キャリーハピネス）",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F03&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F03&k_raceNo=8&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30075406586",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "be4281fc7711eda152728adef11614f20a1c7f45003bf12336e111b6e89a5bab",
+            "saved_file": "history/h7.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 8,
+      "name": "シュクメルリ",
+      "reason": "7/25の当地1300mで逃げて2着0.2秒差。今回の先行候補で、単騎で余力を残せば勝つ別展開を持つ。",
+      "risk": "当地1600mは0勝・2着1回・3着1回・着外7回。直近の1600m4着は3.9秒差、近2走1400mも先行して6・8着。",
+      "record_raw": "全 8- 5- 7- 42 左 0- 0- 0- 0 右 8- 5- 7- 42 場 8- 5- 7- 42 距 0- 1- 1- 7 1:45.3 良1:49.8",
+      "evidence": [
+        {
+          "overview": "8 26.10.03 稍重 12頭 高知 右1400 1番",
+          "rank": "8",
+          "name": "Ｃ１－４",
+          "rider_weight": "8人 456 山崎雅 57.0",
+          "time_corners": "1:33.9 1-1-1-1 42.6",
+          "gap_winner": "1.0 イナズマテーラー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=7&k_babaCode=31"
+        },
+        {
+          "overview": "6 26.09.22 良 12頭 高知 右1400 7番",
+          "rank": "6",
+          "name": "ファイナルレースＣ１－６記者選",
+          "rider_weight": "1人 455 多田誠 57.0",
+          "time_corners": "1:35.7 2-2-2-2 43.8",
+          "gap_winner": "0.9 アンジョルラス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "4 26.09.05 不良 8頭 高知 右1600 3番",
+          "rank": "4",
+          "name": "Ｃ１－５",
+          "rider_weight": "7人 462 山崎雅 57.0",
+          "time_corners": "1:50.0 2-2-5-4 43.8",
+          "gap_winner": "3.9 モズリッキー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "2 26.07.25 良 12頭 高知 右1300 11番",
+          "rank": "2",
+          "name": "Ｃ１－３",
+          "rider_weight": "10人 459 岡遼太 57.0",
+          "time_corners": "1:25.5 1-1-1-1 40.8",
+          "gap_winner": "0.2 アプサラー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "10 26.07.12 稍重 12頭 高知 右1400 11番",
+          "rank": "10",
+          "name": "Ｃ１－３",
+          "rider_weight": "9人 462 岡遼太 57.0",
+          "time_corners": "1:33.1 1-1-2-5 41.8",
+          "gap_winner": "2.8 ガラパゴス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.05.31 稍重 9頭 高知 右1600 2番",
+          "rank": "7",
+          "name": "Ｃ１－３",
+          "full_name": "Ｃ１－３",
+          "rider_weight": "7人 463 山崎雅 (高知) 57.0",
+          "time_corners": "1:48.3 上がり42.0（履歴表に通過順なし）",
+          "gap_winner": "2.1 ビステル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30064404786",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "408adb45e61fcab186ef402d9061ea23866d86ee0f3e401fe73abe325a045eb2",
+            "saved_file": "history/h8.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "3 26.04.05 不良 8頭 高知 右1600 2番",
+          "rank": "3",
+          "name": "Ｃ１－３",
+          "full_name": "Ｃ１－３",
+          "rider_weight": "5人 462 岡遼太 (高知) 57.0",
+          "time_corners": "1:45.3 上がり40.0（履歴表に通過順なし）",
+          "gap_winner": "0.9 モノノフブルー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=9&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30064404786",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "408adb45e61fcab186ef402d9061ea23866d86ee0f3e401fe73abe325a045eb2",
+            "saved_file": "history/h8.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 9,
+      "name": "バイユーラン",
+      "reason": "6/27の当地1600mＣ１－７で3着0.9秒差。直近1400m6着では上がり38.4を記録し、差しの材料は保持。",
+      "risk": "近走1600mは8着2.9秒差。後方一辺倒で展開への依存が強く、上がりだけを独立した能力票へ重ねない。",
+      "record_raw": "全 3- 4- 6- 41 左 0- 0- 0- 3 右 3- 4- 6- 37 場 3- 4- 6- 35 距 0- 0- 1- 6 1:45.8 良1:50.6",
+      "evidence": [
+        {
+          "overview": "6 26.10.03 稍重 10頭 高知 右1400 3番",
+          "rank": "6",
+          "name": "Ｃ１－５",
+          "rider_weight": "10人 440 井上瑛 55.0",
+          "time_corners": "1:33.5 10-10-10-10 38.4",
+          "gap_winner": "2.5 メイショウジェンマ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "9 26.09.20 稍重 12頭 高知 右1400 10番",
+          "rank": "9",
+          "name": "ミラク特別３歳以上牝馬",
+          "rider_weight": "11人 441 多田誠 55.0",
+          "time_corners": "1:33.6 11-11-10-10 40.1",
+          "gap_winner": "1.6 スカンジナビア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F20&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F20&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.09.05 不良 10頭 高知 右1600 3番",
+          "rank": "8",
+          "name": "Ｃ１－６",
+          "rider_weight": "7人 445 多田誠 55.0",
+          "time_corners": "1:50.1 10-10-8-10 42.6",
+          "gap_winner": "2.9 ジャガーノート",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.07.26 良 11頭 高知 右1300 9番",
+          "rank": "8",
+          "name": "Ｃ１－６",
+          "rider_weight": "11人 440 井上瑛 55.0",
+          "time_corners": "1:27.6 11-11-11-10 39.8",
+          "gap_winner": "2.6 クレイヴィンオナー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F26&k_raceNo=4&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F26&k_raceNo=4&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.07.11 重 11頭 高知 右1400 4番",
+          "rank": "8",
+          "name": "Ｃ１－５",
+          "rider_weight": "10人 442 上田将 55.0",
+          "time_corners": "1:33.8 10-9-10-8 40.3",
+          "gap_winner": "3.0 プラウドヘリテージ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F11&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F11&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "3 26.06.27 不良 8頭 高知 右1600 2番",
+          "rank": "3",
+          "name": "Ｃ１－７",
+          "full_name": "Ｃ１－７",
+          "rider_weight": "7人 440 多田誠 (高知) 55.0",
+          "time_corners": "1:45.8 上がり39.2（履歴表に通過順なし）",
+          "gap_winner": "0.9 トップアメリカン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F27&k_raceNo=4&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F27&k_raceNo=4&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30026403786",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "253a7465eb559fd557e6b216dfc2aed8a3f268185418319eafff94643fc68b08",
+            "saved_file": "history/h9.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "6 26.05.30 稍重 10頭 高知 右1600 1番",
+          "rank": "6",
+          "name": "Ｃ１－７",
+          "full_name": "Ｃ１－７",
+          "rider_weight": "6人 441 城野慈 (高知) 54.0",
+          "time_corners": "1:49.4 上がり40.1（履歴表に通過順なし）",
+          "gap_winner": "1.7 クラウンセヘル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=3&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=3&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30026403786",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "253a7465eb559fd557e6b216dfc2aed8a3f268185418319eafff94643fc68b08",
+            "saved_file": "history/h9.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "5 26.04.18 重 10頭 高知 右1600 10番",
+          "rank": "5",
+          "name": "Ｃ２－３",
+          "full_name": "Ｃ２－３",
+          "rider_weight": "9人 446 多田誠 (高知) 55.0",
+          "time_corners": "1:48.3 上がり40.5（履歴表に通過順なし）",
+          "gap_winner": "1.2 インオービット",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F18&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F18&k_raceNo=9&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30026403786",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "253a7465eb559fd557e6b216dfc2aed8a3f268185418319eafff94643fc68b08",
+            "saved_file": "history/h9.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 10,
+      "name": "フクノルッカ",
+      "reason": "当地1600mは2勝・2着1回。9/22の1400mファイナル4着0.7秒差、10/3も1400m7着ながら0.8秒差。距離戻りの候補。",
+      "risk": "9/6の1600mは7着0.7秒差で、同走7に後れた。過去の2勝と直近の復調を同一視しない。",
+      "record_raw": "全 8- 12- 5- 25 左 0- 1- 1- 5 右 8- 11- 4- 19 場 4- 4- 3- 10 距 2- 1- 0- 2 1:43.9 良－",
+      "evidence": [
+        {
+          "overview": "7 26.10.03 稍重 12頭 高知 右1400 5番",
+          "rank": "7",
+          "name": "Ｃ１－４",
+          "rider_weight": "10人 485 城野慈 55.0",
+          "time_corners": "1:33.7 11-11-11-11 39.9",
+          "gap_winner": "0.8 イナズマテーラー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F03&k_raceNo=7&k_babaCode=31"
+        },
+        {
+          "overview": "4 26.09.22 良 12頭 高知 右1400 1番",
+          "rank": "4",
+          "name": "ファイナルレースＣ１－６記者選",
+          "rider_weight": "5人 483 山崎雅 55.0",
+          "time_corners": "1:35.5 6-6-6-5 42.9",
+          "gap_winner": "0.7 アンジョルラス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.09.06 重 11頭 高知 右1600 9番",
+          "rank": "7",
+          "name": "ファイナルレースＣ１－４",
+          "rider_weight": "8人 485 山崎雅 55.0",
+          "time_corners": "1:50.2 8-9-10-10 42.2",
+          "gap_winner": "0.7 ノイヤー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "9 26.07.04 不良 11頭 高知 右1300 1番",
+          "rank": "9",
+          "name": "ヴェガ特別３歳以上牝馬",
+          "rider_weight": "11人 480 上田将 55.0",
+          "time_corners": "1:24.1 10-10-10-11 39.4",
+          "gap_winner": "3.3 スカンジナビア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F04&k_raceNo=4&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F04&k_raceNo=4&k_babaCode=31"
+        },
+        {
+          "overview": "11 26.06.13 稍重 12頭 高知 右1400 8番",
+          "rank": "11",
+          "name": "Ｃ１－４",
+          "rider_weight": "9人 483 郷間勇 55.0",
+          "time_corners": "1:36.0 6-6-5-8 44.1",
+          "gap_winner": "5.0 ララマルシュドロワ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F13&k_raceNo=5&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F13&k_raceNo=5&k_babaCode=31"
+        },
+        {
+          "overview": "7 26.05.31 稍重 10頭 高知 右1600 8番",
+          "rank": "7",
+          "name": "Ｃ１－５",
+          "full_name": "Ｃ１－５",
+          "rider_weight": "3人 480 上田将 (高知) 55.0",
+          "time_corners": "1:48.1 上がり40.6（履歴表に通過順なし）",
+          "gap_winner": "1.3 ビッグショータイム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072404156",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "e70670cc105dab48f79b15a4166ad627b8fedbc06080beb80175927abdd3c8cb",
+            "saved_file": "history/h10.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "取止 26.04.04 不良 0頭 高知 右1600 8番",
+          "rank": "取止",
+          "name": "Ｃ１－５",
+          "full_name": "Ｃ１－５",
+          "rider_weight": "人 － 上田将 (高知) 55.0",
+          "time_corners": " 上がり（履歴表に通過順なし）",
+          "gap_winner": " ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F04&k_raceNo=7&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F04&k_raceNo=7&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30072404156",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "e70670cc105dab48f79b15a4166ad627b8fedbc06080beb80175927abdd3c8cb",
+            "saved_file": "history/h10.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-kochi-r11",
+      "number": 11,
+      "name": "ワクワクドリーム",
+      "reason": "公式履歴で3/18・当地1600mＣ１－２と5/31同距離Ｃ１－３がともに2着。52kgで、距離戻りの能力材料は残す。",
+      "risk": "9/6の同距離選抜は8着4.8秒差、6/28も9着3.2秒差。直近は9/22で、間隔だけを好転材料へしない。",
+      "record_raw": "全 7- 3- 2- 28 左 0- 0- 0- 0 右 7- 3- 2- 27 場 7- 3- 2- 24 距 1- 3- 0- 4 1:46.6 良1:49.0",
+      "evidence": [
+        {
+          "overview": "9 26.09.22 良 12頭 高知 右1400 3番",
+          "rank": "9",
+          "name": "ファイナルレースＣ１－６記者選",
+          "rider_weight": "8人 502 ▲塚本直 52.0",
+          "time_corners": "1:36.4 9-9-11-11 42.9",
+          "gap_winner": "1.6 アンジョルラス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F22&k_raceNo=12&k_babaCode=31"
+        },
+        {
+          "overview": "8 26.09.06 重 8頭 高知 右1600 6番",
+          "rank": "8",
+          "name": "琴ヶ浜特別Ｃ１－１",
+          "rider_weight": "6人 504 城野慈 55.0",
+          "time_corners": "1:51.5 6-6-7-7 43.0",
+          "gap_winner": "4.8 ララマルシュドロワ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=11&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=11&k_babaCode=31"
+        },
+        {
+          "overview": "12 26.07.25 良 12頭 高知 右1300 12番",
+          "rank": "12",
+          "name": "アイスクリン特別Ｃ１－２",
+          "rider_weight": "6人 495 ▲塚本直 52.0",
+          "time_corners": "1:27.6 3-2-2-9 42.4",
+          "gap_winner": "2.3 コスモルーテウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F25&k_raceNo=6&k_babaCode=31"
+        },
+        {
+          "overview": "5 26.07.12 稍重 11頭 高知 右1400 10番",
+          "rank": "5",
+          "name": "Ｃ１－２",
+          "rider_weight": "7人 500 上田将 55.0",
+          "time_corners": "1:31.7 2-2-2-4 41.0",
+          "gap_winner": "0.9 テーオーシリウス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F12&k_raceNo=8&k_babaCode=31"
+        },
+        {
+          "overview": "9 26.06.28 不良 10頭 高知 右1600 7番",
+          "rank": "9",
+          "name": "Ｃ１－２",
+          "rider_weight": "4人 501 ▲塚本直 52.0",
+          "time_corners": "1:49.9 5-5-8-10 43.2",
+          "gap_winner": "3.2 マジックタッチ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F28&k_raceNo=9&k_babaCode=31"
+        },
+        {
+          "overview": "2 26.05.31 稍重 9頭 高知 右1600 8番",
+          "rank": "2",
+          "name": "Ｃ１－３",
+          "full_name": "Ｃ１－３",
+          "rider_weight": "3人 495 塚本直 (高知) 52.0",
+          "time_corners": "1:46.6 上がり40.3（履歴表に通過順なし）",
+          "gap_winner": "0.4 ビステル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=8&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30022403686",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "3e1edd582174b809f28657050865723ee2e44322d56348133c49f9510f143fde",
+            "saved_file": "history/h11.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "2 26.03.18 重 9頭 高知 右1600 7番",
+          "rank": "2",
+          "name": "Ｃ１－２",
+          "full_name": "Ｃ１－２",
+          "rider_weight": "6人 496 妹尾浩 (高知) 55.0",
+          "time_corners": "1:47.7 上がり40.4（履歴表に通過順なし）",
+          "gap_winner": "0.5 ペプチドヒナタ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F18&k_raceNo=6&k_babaCode=31",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F18&k_raceNo=6&k_babaCode=31",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30022403686",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "3e1edd582174b809f28657050865723ee2e44322d56348133c49f9510f143fde",
+            "saved_file": "history/h11.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=31&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:53+09:00",
+        "sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "bytes": 256085,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "f5b52c16aaed01b9a5aa7f41ab66a0f1115caadeef7efedf006a25ba405ed5e2",
+        "raw_file": "sources/kochi/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 1,
+      "name": "アサガクル",
+      "reason": "直近の当地1400mで3着0.8秒差、その前の1300mも3着0.4秒差。当地は1勝・2着2回・3着3回・着外2回で、相手の圏内を比較。",
+      "risk": "逃げ・先行馬が多く、追走で脚を使う可能性。前走は不良で今回は良、時計をそのまま比べない。",
+      "record_raw": "全 1- 4- 5- 11 左 0- 0- 0- 1 右 1- 4- 5- 9 場 1- 2- 3- 2 距 1- 0- 1- 1 1:32.8 良1:32.8",
+      "evidence": [
+        {
+          "overview": "3 26.09.27 不良 13頭 佐賀 右1400 13番",
+          "rank": "3",
+          "name": "ＳＡＧＡリベＦＥＶＥＲ１４Ｃ２",
+          "rider_weight": "3人 483 山田貴 54.0",
+          "time_corners": "1:34.0 3-3-3-2 42.9",
+          "gap_winner": "0.8 マコトアタキギリ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=9&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=9&k_babaCode=32"
+        },
+        {
+          "overview": "3 26.09.05 重 11頭 佐賀 右1300 4番",
+          "rank": "3",
+          "name": "サガデーナイト競馬賞Ｃ２－１４",
+          "rider_weight": "2人 477 山田貴 54.0",
+          "time_corners": "1:27.4 2-2-2-1 42.2",
+          "gap_winner": "0.4 ニシノナスタチウム",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=8&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=8&k_babaCode=32"
+        },
+        {
+          "overview": "9 26.08.16 良 12頭 佐賀 右1300 12番",
+          "rank": "9",
+          "name": "ラブラドライト賞Ｃ２－１３組",
+          "rider_weight": "2人 477 山田貴 54.0",
+          "time_corners": "1:26.7 4-3-4-5 41.8",
+          "gap_winner": "2.6 ミセスジョーンズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=6&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=6&k_babaCode=32"
+        },
+        {
+          "overview": "3 26.07.11 良 12頭 佐賀 右1300 12番",
+          "rank": "3",
+          "name": "里帰りＪＣ第２戦 ウェルカＣ２",
+          "rider_weight": "2人 467 ◇木之葵 52.0",
+          "time_corners": "1:26.0 3-3-3-2 40.1",
+          "gap_winner": "0.3 ウインティターニア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F11&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F11&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "2 26.06.21 重 11頭 佐賀 右1300 8番",
+          "rank": "2",
+          "name": "Ｃ２－８組",
+          "rider_weight": "1人 469 出水拓 54.0",
+          "time_corners": "1:26.0 2-2-2-1 39.7",
+          "gap_winner": "0.1 ノイエムジーク",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F21&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F21&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.06.01 良 12頭 佐賀 右1400 4番",
+          "rank": "6",
+          "name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "full_name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "rider_weight": "2人 474 竹吉徹 (佐賀) 54.0",
+          "time_corners": "1:32.8 上がり41.0（履歴表に通過順なし）",
+          "gap_winner": "0.9 ムコリッタ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F01&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F01&k_raceNo=11&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30078405496",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "6249796856c8ec1f7b6860750b6a3eaf903e171ed5bce769b69080e425a80c3e",
+            "saved_file": "history/h1.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "1 26.05.16 良 11頭 佐賀 右1400 9番",
+          "rank": "1",
+          "name": "Ｃ２－１４組",
+          "full_name": "Ｃ２－１４組",
+          "rider_weight": "1人 468 竹吉徹 (佐賀) 54.0",
+          "time_corners": "1:33.2 上がり40.0（履歴表に通過順なし）",
+          "gap_winner": "1.4 （ランブータン）",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F16&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F16&k_raceNo=2&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30078405496",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "6249796856c8ec1f7b6860750b6a3eaf903e171ed5bce769b69080e425a80c3e",
+            "saved_file": "history/h1.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 2,
+      "name": "ウインダンスタイム",
+      "reason": "6/13に当地1750mで勝った実績は保持。勝利がない馬として扱わない。",
+      "risk": "1400mは0勝・2着0回・3着1回・着外35回。直近4走9着以下で、1750m勝ちから今回への再現性が低い。",
+      "record_raw": "全 2- 1- 3- 71 左 0- 0- 0- 0 右 2- 1- 3- 71 場 2- 0- 2- 60 距 0- 0- 1- 35 1:32.8 良1:32.8",
+      "evidence": [
+        {
+          "overview": "11 26.09.27 不良 11頭 佐賀 右1300 11番",
+          "rank": "11",
+          "name": "そして輝く！穂ミノ連合杯Ｃ２－",
+          "rider_weight": "11人 466 ▲後藤武 51.0",
+          "time_corners": "1:29.2 10-10-11-11 41.6",
+          "gap_winner": "3.7 フークモアナ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "10 26.09.06 重 11頭 佐賀 右1400 1番",
+          "rank": "10",
+          "name": "９月６日は黒い海苔の日記念Ｃ２",
+          "rider_weight": "10人 467 ▲後藤武 51.0",
+          "time_corners": "1:36.1 10-10-10-10 41.9",
+          "gap_winner": "2.7 ハプスブルグ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "9 26.08.23 良 10頭 佐賀 右1300 6番",
+          "rank": "9",
+          "name": "ミクチャ愛届けるＦＵＫＵＯＣ２",
+          "rider_weight": "9人 471 ☆青海大 53.0",
+          "time_corners": "1:28.3 10-9-9-9 40.4",
+          "gap_winner": "2.4 カシノフロイデ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F23&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F23&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "9 26.07.05 不良 12頭 佐賀 右1400 4番",
+          "rank": "9",
+          "name": "Ｃ２－１０組",
+          "rider_weight": "3人 462 ▲後藤武 51.0",
+          "time_corners": "1:35.4 10-9-10-9 41.6",
+          "gap_winner": "2.3 タガノフレミング",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "1 26.06.13 良 10頭 佐賀 右1750 9番",
+          "rank": "1",
+          "name": "ＳＡＧＡリベンジャーズロンＣ２",
+          "rider_weight": "1人 468 飛田愛 54.0",
+          "time_corners": "2:03.1 4-6-1-1 41.3",
+          "gap_winner": "1.2 ヴィアツァ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F13&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F13&k_raceNo=11&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.05.17 良 12頭 佐賀 右1400 11番",
+          "rank": "6",
+          "name": "ＳＡＧＡリベンジャーズＣ２－１",
+          "full_name": "ＳＡＧＡリベンジャーズＣ２－１",
+          "rider_weight": "6人 466 後藤武 (佐賀) 51.0",
+          "time_corners": "1:34.9 上がり40.2（履歴表に通過順なし）",
+          "gap_winner": "1.2 ロッピス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F17&k_raceNo=10&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F17&k_raceNo=10&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30077409076",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "29b2a3fab0bd7676789c5411d156deac0dbe889f5316ae4e004071c56d77de30",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "4 26.04.04 不良 11頭 佐賀 右1400 5番",
+          "rank": "4",
+          "name": "ＳＡＧＡリベンジャーズドリＣ２",
+          "full_name": "ＳＡＧＡリベンジャーズドリＣ２",
+          "rider_weight": "6人 468 田中直 (佐賀) 54.0",
+          "time_corners": "1:34.9 上がり40.7（履歴表に通過順なし）",
+          "gap_winner": "1.8 モダンレディ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F04&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F04&k_raceNo=11&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30077409076",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "29b2a3fab0bd7676789c5411d156deac0dbe889f5316ae4e004071c56d77de30",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "8 26.03.06 不良 11頭 佐賀 右1400 8番",
+          "rank": "8",
+          "name": "Ｃ２－２０組",
+          "full_name": "Ｃ２－２０組",
+          "rider_weight": "11人 453 金山昇 (佐賀) 54.0",
+          "time_corners": "1:33.2 上がり39.5（履歴表に通過順なし）",
+          "gap_winner": "1.0 ホスマニエン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F06&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F06&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30077409076",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "29b2a3fab0bd7676789c5411d156deac0dbe889f5316ae4e004071c56d77de30",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "7 26.02.21 良 10頭 佐賀 右1400 3番",
+          "rank": "7",
+          "name": "チャレンジシリーズＣ２－２１組",
+          "full_name": "チャレンジシリーズＣ２－２１組",
+          "rider_weight": "7人 454 飛田愛 (佐賀) 54.0",
+          "time_corners": "1:34.9 上がり39.6（履歴表に通過順なし）",
+          "gap_winner": "1.5 グレイトミッション",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F21&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F21&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30077409076",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "29b2a3fab0bd7676789c5411d156deac0dbe889f5316ae4e004071c56d77de30",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "8 26.02.07 良 10頭 佐賀 右1400 3番",
+          "rank": "8",
+          "name": "Ｃ２－２１組",
+          "full_name": "Ｃ２－２１組",
+          "rider_weight": "8人 460 小林凌 (佐賀) 54.0",
+          "time_corners": "1:34.9 上がり40.5（履歴表に通過順なし）",
+          "gap_winner": "1.5 サヨノフジ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F07&k_raceNo=6&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F07&k_raceNo=6&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30077409076",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "29b2a3fab0bd7676789c5411d156deac0dbe889f5316ae4e004071c56d77de30",
+            "saved_file": "history/h2.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 3,
+      "name": "レミギノテソーロ",
+      "reason": "当地1400mを近2走連続2着。9/26は0.0秒差、9/5は0.8秒差。先行して着順を残しており、14の相手を第一に比較。",
+      "risk": "前走は不良、今回は良。1・12・14と前で競合する可能性と、取りこぼしを残す。",
+      "record_raw": "全 3- 2- 1- 6 左 0- 0- 0- 2 右 3- 2- 1- 4 場 3- 2- 1- 4 距 2- 2- 0- 2 1:31.5 良1:32.8",
+      "evidence": [
+        {
+          "overview": "2 26.09.26 不良 12頭 佐賀 右1400 6番",
+          "rank": "2",
+          "name": "Ｃ２－１３組",
+          "rider_weight": "1人 480 田中直 56.0",
+          "time_corners": "1:33.8 3-3-1-1 41.7",
+          "gap_winner": "0.0 ハンデンローリエ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F26&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F26&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "2 26.09.05 重 12頭 佐賀 右1400 1番",
+          "rank": "2",
+          "name": "Ｃ２－１７組",
+          "rider_weight": "3人 492 山下裕 56.0",
+          "time_corners": "1:33.9 2-2-3-2 41.4",
+          "gap_winner": "0.8 ベリルスフィア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F05&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "5 26.08.16 良 11頭 佐賀 右1400 6番",
+          "rank": "5",
+          "name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "rider_weight": "5人 486 山下裕 56.0",
+          "time_corners": "1:33.3 3-3-3-4 42.0",
+          "gap_winner": "1.9 イアソンテソーロ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=10&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=10&k_babaCode=32"
+        },
+        {
+          "overview": "4 26.02.25 不良 12頭 佐賀 右900 8番",
+          "rank": "4",
+          "name": "ＳＡＧＡリベンジャーズダッＣ２",
+          "rider_weight": "1人 計不 筒井勇 56.0",
+          "time_corners": "0:55.3 4-4 36.7",
+          "gap_winner": "0.5 クラウンキュー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F25&k_raceNo=12&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F25&k_raceNo=12&k_babaCode=32"
+        },
+        {
+          "overview": "1 26.02.08 良 10頭 佐賀 右900 3番",
+          "rank": "1",
+          "name": "ＳＡＧＡリベンジャーズダッＣ２",
+          "rider_weight": "1人 478 △林悠翔 54.0",
+          "time_corners": "0:55.3 3-3 36.8",
+          "gap_winner": "0.5 アトラーレ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F08&k_raceNo=12&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F08&k_raceNo=12&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.01.29 良 11頭 佐賀 右1400 3番",
+          "rank": "6",
+          "name": "ＳＡＧＡリベンジャーズＣ２－１",
+          "full_name": "ＳＡＧＡリベンジャーズＣ２－１",
+          "rider_weight": "3人 493 飛田愛 (佐賀) 56.0",
+          "time_corners": "1:34.6 上がり41.9（履歴表に通過順なし）",
+          "gap_winner": "3.4 スペシャルホリデー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F29&k_raceNo=12&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F29&k_raceNo=12&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30073401696",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "749d8785dfdab25af781484d8926f726b2a5fee9004f580c80a1664613cd6884",
+            "saved_file": "history/h3.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 4,
+      "name": "スターティアラ",
+      "reason": "当地1400m2勝・2着1回・3着3回。5/23の同距離特選3着の材料と51kgを保持。",
+      "risk": "直近1400m6着2.1秒差、1300m10着2.0秒差。斤量差だけで近況の改善を断定しない。",
+      "record_raw": "全 2- 4- 3- 39 左 0- 0- 0- 2 右 2- 4- 3- 36 場 2- 4- 3- 34 距 2- 1- 3- 22 1:31.7 良1:31.7",
+      "evidence": [
+        {
+          "overview": "6 26.09.27 不良 10頭 佐賀 右1400 10番",
+          "rank": "6",
+          "name": "ＵＭＡＴＥＮＡ賞Ｃ２－１０組",
+          "rider_weight": "10人 463 ☆青海大 53.0",
+          "time_corners": "1:34.5 8-8-8-8 41.3",
+          "gap_winner": "2.1 ビサイレント",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "10 26.09.06 重 11頭 佐賀 右1300 2番",
+          "rank": "10",
+          "name": "Ｃ２－１０組",
+          "rider_weight": "9人 463 川島拓 54.0",
+          "time_corners": "1:28.4 10-10-10-9 40.3",
+          "gap_winner": "2.0 アテナパルテノス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.07.18 良 12頭 佐賀 右900 4番",
+          "rank": "6",
+          "name": "ヘルクレス座特選Ｃ２",
+          "rider_weight": "11人 468 ▲後藤武 51.0",
+          "time_corners": "0:55.8 9-9 36.5",
+          "gap_winner": "1.0 マリアブーケ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F18&k_raceNo=9&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F18&k_raceNo=9&k_babaCode=32"
+        },
+        {
+          "overview": "取止 26.06.25 不良 0頭 佐賀 右1400 7番",
+          "rank": "取止",
+          "name": "夏至賞Ｃ２－２組",
+          "rider_weight": "471 ▲後藤武 51.0",
+          "time_corners": "",
+          "gap_winner": "",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F25&k_raceNo=10&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F25&k_raceNo=10&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.06.06 稍重 11頭 佐賀 右1400 11番",
+          "rank": "6",
+          "name": "芒種賞Ｃ２－２組",
+          "rider_weight": "4人 475 加茂飛 54.0",
+          "time_corners": "1:33.1 8-9-9-7 40.2",
+          "gap_winner": "1.0 パンツタイショウ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F06&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F06&k_raceNo=11&k_babaCode=32"
+        },
+        {
+          "overview": "3 26.05.23 良 10頭 佐賀 右1400 3番",
+          "rank": "3",
+          "name": "Ｃ２－３組",
+          "full_name": "Ｃ２－３組",
+          "rider_weight": "7人 461 後藤武 (佐賀) 51.0",
+          "time_corners": "1:31.7 上がり39.3（履歴表に通過順なし）",
+          "gap_winner": "1.7 ピエナクレスコ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F23&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F23&k_raceNo=5&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30058401586",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "720dc987e6c96208d3d01d056c40b90bb078c884c8f5d413bc139860adc78347",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "6 26.05.09 良 11頭 佐賀 右1400 11番",
+          "rank": "6",
+          "name": "Ｃ２－４組",
+          "full_name": "Ｃ２－４組",
+          "rider_weight": "8人 469 後藤武 (佐賀) 51.0",
+          "time_corners": "1:33.3 上がり39.2（履歴表に通過順なし）",
+          "gap_winner": "1.3 スマートカリーナ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F09&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F09&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30058401586",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "720dc987e6c96208d3d01d056c40b90bb078c884c8f5d413bc139860adc78347",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "6 26.04.12 稍重 11頭 佐賀 右1400 12番",
+          "rank": "6",
+          "name": "Ｃ２－３組",
+          "full_name": "Ｃ２－３組",
+          "rider_weight": "5人 467 飛田愛 (佐賀) 54.0",
+          "time_corners": "1:33.0 上がり38.8（履歴表に通過順なし）",
+          "gap_winner": "1.3 シーザサンライズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F12&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F12&k_raceNo=5&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30058401586",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "720dc987e6c96208d3d01d056c40b90bb078c884c8f5d413bc139860adc78347",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "4 26.03.28 稍重 10頭 佐賀 右1400 5番",
+          "rank": "4",
+          "name": "Ｃ２－３組",
+          "full_name": "Ｃ２－３組",
+          "rider_weight": "6人 468 飛田愛 (佐賀) 54.0",
+          "time_corners": "1:33.0 上がり38.8（履歴表に通過順なし）",
+          "gap_winner": "1.3 スペシャルホリデー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F28&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F28&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30058401586",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "720dc987e6c96208d3d01d056c40b90bb078c884c8f5d413bc139860adc78347",
+            "saved_file": "history/h4.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 5,
+      "name": "ディスタービア",
+      "reason": "直近は当地1400mＣ２－１８組を1着0.1秒差、その前の1300mも2着0.0秒差。後方から進出する形を保持。",
+      "risk": "1400mの通算は2勝・着外8回。今回は組が上がり、直近勝ちの相手関係は3・1とは異なる。",
+      "record_raw": "全 2- 2- 2- 18 左 0- 0- 0- 2 右 2- 2- 2- 16 場 2- 2- 1- 11 距 2- 0- 0- 8 1:32.2 良1:32.2",
+      "evidence": [
+        {
+          "overview": "1 26.09.21 良 12頭 佐賀 右1400 10番",
+          "rank": "1",
+          "name": "Ｃ２－１８組",
+          "rider_weight": "11人 489 山田貴 54.0",
+          "time_corners": "1:34.6 11-11-4-3 41.7",
+          "gap_winner": "0.1 サスペンスクィーン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F21&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F21&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "2 26.09.03 稍重 12頭 佐賀 右1300 8番",
+          "rank": "2",
+          "name": "ＵＭＡＴＥＮＡ賞Ｃ２－２２組",
+          "rider_weight": "8人 488 竹吉徹 54.0",
+          "time_corners": "1:28.3 6-6-7-6 41.3",
+          "gap_winner": "0.0 メイショウポワロ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F03&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F03&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "8 26.08.15 良 12頭 佐賀 右1400 2番",
+          "rank": "8",
+          "name": "Ｃ２－２０組",
+          "rider_weight": "10人 486 竹吉徹 54.0",
+          "time_corners": "1:34.5 8-7-6-6 41.0",
+          "gap_winner": "3.2 ミッキーパラソル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F15&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F15&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "7 26.07.05 不良 12頭 佐賀 右1400 6番",
+          "rank": "7",
+          "name": "Ｃ２－１０組",
+          "rider_weight": "7人 479 山田貴 54.0",
+          "time_corners": "1:34.5 7-7-6-4 42.0",
+          "gap_winner": "1.4 タガノフレミング",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "8 26.06.20 不良 10頭 佐賀 右1300 10番",
+          "rank": "8",
+          "name": "Ｃ２－１０組",
+          "rider_weight": "6人 481 竹吉徹 54.0",
+          "time_corners": "1:27.2 9-9-8-5 40.6",
+          "gap_winner": "1.4 モズグランプリ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F20&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F20&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "9 26.05.31 良 11頭 佐賀 右1400 8番",
+          "rank": "9",
+          "name": "Ｃ２－１１組",
+          "full_name": "Ｃ２－１１組",
+          "rider_weight": "11人 494 竹吉徹 (佐賀) 54.0",
+          "time_corners": "1:34.8 上がり41.2（履歴表に通過順なし）",
+          "gap_winner": "3.4 スラーヴァ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406096",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "f591b32b27e9aedd9914e187583439b64e366031eb5d3cafa38d17ad1b998aa7",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "11 26.05.18 良 12頭 佐賀 右1400 6番",
+          "rank": "11",
+          "name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "full_name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "rider_weight": "8人 491 山口勲 (佐賀) 54.0",
+          "time_corners": "1:34.8 上がり41.8（履歴表に通過順なし）",
+          "gap_winner": "2.7 フタリセゾン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F18&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F18&k_raceNo=11&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406096",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "f591b32b27e9aedd9914e187583439b64e366031eb5d3cafa38d17ad1b998aa7",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "11 26.05.04 重 11頭 佐賀 右1400 4番",
+          "rank": "11",
+          "name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "full_name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "rider_weight": "5人 494 竹吉徹 (佐賀) 54.0",
+          "time_corners": "1:35.9 上がり43.4（履歴表に通過順なし）",
+          "gap_winner": "3.8 ヘキレキイッセン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F04&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F04&k_raceNo=11&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406096",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "f591b32b27e9aedd9914e187583439b64e366031eb5d3cafa38d17ad1b998aa7",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "4 26.04.19 不良 12頭 佐賀 右1400 1番",
+          "rank": "4",
+          "name": "Ｃ２－１２組",
+          "full_name": "Ｃ２－１２組",
+          "rider_weight": "2人 500 竹吉徹 (佐賀) 54.0",
+          "time_corners": "1:33.9 上がり40.9（履歴表に通過順なし）",
+          "gap_winner": "0.9 マジョレル",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F19&k_raceNo=6&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F19&k_raceNo=6&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30012406096",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "f591b32b27e9aedd9914e187583439b64e366031eb5d3cafa38d17ad1b998aa7",
+            "saved_file": "history/h5.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 6,
+      "name": "ブリージョドラード",
+      "reason": "名古屋Ｂ・Ｃ級での出走と2勝を保持。当地1400m未経験を不適性の証明にはしない。",
+      "risk": "当地初戦1300m9着3.4秒差。名古屋の級を佐賀と同一数値へ換算できず、当地1400mの比較材料は不足。",
+      "record_raw": "全 2- 3- 8- 37 左 0- 0- 1- 6 右 2- 3- 7- 27 場 0- 0- 0- 1 距 0- 0- 0- 0 － 良－",
+      "evidence": [
+        {
+          "overview": "9 26.09.27 不良 11頭 佐賀 右1300 2番",
+          "rank": "9",
+          "name": "そして輝く！穂ミノ連合杯Ｃ２－",
+          "rider_weight": "4人 473 中山蓮 56.0",
+          "time_corners": "1:28.9 4-3-5-6 42.9",
+          "gap_winner": "3.4 フークモアナ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "7 26.09.07 不良 10頭 名古屋 右920 10番",
+          "rank": "7",
+          "name": "緒川城址疾風特別Ｃ１ｃ",
+          "rider_weight": "8人 456 大畑雅 57.0",
+          "time_corners": "0:57.8 9-10 37.0",
+          "gap_winner": "2.1 センビトウリョウ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F07&k_raceNo=6&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F07&k_raceNo=6&k_babaCode=24"
+        },
+        {
+          "overview": "11 26.08.24 良 11頭 名古屋 右1700 5番",
+          "rank": "11",
+          "name": "河和特別Ｃ１ｂ",
+          "rider_weight": "6人 458 大畑雅 57.0",
+          "time_corners": "1:54.4 11-1-4-6 41.3",
+          "gap_winner": "2.2 ケイズエルミー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F24&k_raceNo=10&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F24&k_raceNo=10&k_babaCode=24"
+        },
+        {
+          "overview": "6 26.07.17 良 12頭 名古屋 右1500 1番",
+          "rank": "6",
+          "name": "金シャチ最終戦７７７Ｃ",
+          "rider_weight": "3人 465 大畑雅 57.0",
+          "time_corners": "1:38.4 12-11-10-8 39.6",
+          "gap_winner": "1.1 メタルクラフト",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F17&k_raceNo=12&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F17&k_raceNo=12&k_babaCode=24"
+        },
+        {
+          "overview": "8 26.07.03 稍重 11頭 名古屋 右1500 9番",
+          "rank": "8",
+          "name": "Ｂ９組",
+          "rider_weight": "5人 456 細川智 57.0",
+          "time_corners": "1:37.6 8-8-8-9 39.6",
+          "gap_winner": "1.5 サヤヒメ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F03&k_raceNo=8&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F03&k_raceNo=8&k_babaCode=24"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 7,
+      "name": "タマモルピナス",
+      "reason": "名古屋Ｂ級の出走を保持し、当地1400m初戦は7着2.3秒差。",
+      "risk": "当地2走とも圏外。名古屋Ｂ級の名称だけで佐賀の優位を作らず、現在の当地適応は不明。",
+      "record_raw": "全 4- 2- 0- 45 左 0- 0- 0- 2 右 4- 2- 0- 43 場 0- 0- 0- 2 距 0- 0- 0- 1 1:34.7 良－",
+      "evidence": [
+        {
+          "overview": "7 26.09.27 不良 10頭 佐賀 右1400 8番",
+          "rank": "7",
+          "name": "ＵＭＡＴＥＮＡ賞Ｃ２－１０組",
+          "rider_weight": "7人 470 田中純 54.0",
+          "time_corners": "1:34.7 10-10-10-9 40.8",
+          "gap_winner": "2.3 ビサイレント",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "9 26.09.06 重 11頭 佐賀 右1300 1番",
+          "rank": "9",
+          "name": "Ｃ２－１０組",
+          "rider_weight": "1人 468 小松丈 54.0",
+          "time_corners": "1:28.3 9-9-9-10 40.5",
+          "gap_winner": "1.9 アテナパルテノス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "7 26.07.30 良 11頭 名古屋 右1500 2番",
+          "rank": "7",
+          "name": "Ｂ６組",
+          "rider_weight": "8人 456 ▲近藤颯 52.0",
+          "time_corners": "1:38.1 11-11-11-11 39.6",
+          "gap_winner": "1.9 ブルースバローズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F30&k_raceNo=10&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F30&k_raceNo=10&k_babaCode=24"
+        },
+        {
+          "overview": "8 26.07.15 良 12頭 名古屋 右1500 12番",
+          "rank": "8",
+          "name": "Ｂ５組",
+          "rider_weight": "5人 464 ▲近藤颯 52.0",
+          "time_corners": "1:37.4 11-11-11-10 39.5",
+          "gap_winner": "1.1 セレッソレイナ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F15&k_raceNo=9&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F15&k_raceNo=9&k_babaCode=24"
+        },
+        {
+          "overview": "5 26.06.30 稍重 12頭 名古屋 右2100 9番",
+          "rank": "5",
+          "name": "彦星大空戦Ｂ４",
+          "rider_weight": "6人 464 ▲近藤颯 52.0",
+          "time_corners": "2:19.3 12-12-12-8 38.6",
+          "gap_winner": "1.7 リプリー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F30&k_raceNo=9&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F30&k_raceNo=9&k_babaCode=24"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 8,
+      "name": "マヘアラニ",
+      "reason": "7/5の当地1400mＣ２－１１組で3着、9/6の1300mは6着0.7秒差。前へ行く材料を保持。",
+      "risk": "直近1400mは9着3.0秒差。1・3・12・14との先行競合、馬体重+9の意味はパドック未確認。",
+      "record_raw": "全 3- 3- 4- 42 左 0- 1- 1- 16 右 3- 2- 3- 26 場 3- 2- 3- 26 距 1- 1- 2- 18 1:32.0 良1:32.0",
+      "evidence": [
+        {
+          "overview": "9 26.09.27 不良 10頭 佐賀 右1400 6番",
+          "rank": "9",
+          "name": "ＵＭＡＴＥＮＡ賞Ｃ２－１０組",
+          "rider_weight": "9人 445 田中直 54.0",
+          "time_corners": "1:35.4 3-5-7-6 42.9",
+          "gap_winner": "3.0 ビサイレント",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.09.06 重 11頭 佐賀 右1300 7番",
+          "rank": "6",
+          "name": "Ｃ２－１０組",
+          "rider_weight": "8人 446 田中直 54.0",
+          "time_corners": "1:27.1 3-3-4-3 41.3",
+          "gap_winner": "0.7 アテナパルテノス",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "5 26.08.23 良 10頭 佐賀 右1300 9番",
+          "rank": "5",
+          "name": "ミクチャ愛届けるＦＵＫＵＯＣ２",
+          "rider_weight": "7人 454 田中直 54.0",
+          "time_corners": "1:27.0 1-1-1-3 41.5",
+          "gap_winner": "1.1 カシノフロイデ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F23&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F23&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "3 26.07.05 不良 11頭 佐賀 右1400 4番",
+          "rank": "3",
+          "name": "Ｃ２－１１組",
+          "rider_weight": "4人 454 田中直 54.0",
+          "time_corners": "1:33.0 1-1-2-3 41.4",
+          "gap_winner": "1.4 ノブノリオウ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "8 26.05.31 良 11頭 佐賀 右1400 4番",
+          "rank": "8",
+          "name": "Ｃ２－１１組",
+          "rider_weight": "7人 460 田中直 54.0",
+          "time_corners": "1:34.3 3-3-4-7 41.7",
+          "gap_winner": "2.9 スラーヴァ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F31&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "3 26.05.17 良 11頭 佐賀 右1400 7番",
+          "rank": "3",
+          "name": "Ｃ２－１１組",
+          "full_name": "Ｃ２－１１組",
+          "rider_weight": "10人 460 田中直 (佐賀) 54.0",
+          "time_corners": "1:33.6 上がり40.9（履歴表に通過順なし）",
+          "gap_winner": "0.4 ジェイエルタイド",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F17&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F17&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30088407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "103cbdb8c4ee779cade80f83bbd48814827403b7671b34b35dc0d2d30258b9d0",
+            "saved_file": "history/h8.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "7 26.04.05 不良 11頭 佐賀 右1400 10番",
+          "rank": "7",
+          "name": "Ｃ２－１２組",
+          "full_name": "Ｃ２－１２組",
+          "rider_weight": "10人 463 田中直 (佐賀) 54.0",
+          "time_corners": "1:33.7 上がり40.1（履歴表に通過順なし）",
+          "gap_winner": "1.8 ホスマニエン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F05&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30088407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "103cbdb8c4ee779cade80f83bbd48814827403b7671b34b35dc0d2d30258b9d0",
+            "saved_file": "history/h8.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "9 26.03.08 重 11頭 佐賀 右1400 4番",
+          "rank": "9",
+          "name": "Ｃ２－１３組",
+          "full_name": "Ｃ２－１３組",
+          "rider_weight": "11人 462 田中直 (佐賀) 54.0",
+          "time_corners": "1:34.5 上がり44.2（履歴表に通過順なし）",
+          "gap_winner": "3.5 アーチーテソーロ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F08&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F03%2F08&k_raceNo=2&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30088407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "103cbdb8c4ee779cade80f83bbd48814827403b7671b34b35dc0d2d30258b9d0",
+            "saved_file": "history/h8.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "10 26.02.12 稍重 11頭 佐賀 右1400 5番",
+          "rank": "10",
+          "name": "キャプテン渡辺さん来場記念Ｃ２",
+          "full_name": "キャプテン渡辺さん来場記念Ｃ２",
+          "rider_weight": "10人 456 田中直 (佐賀) 54.0",
+          "time_corners": "1:35.2 上がり42.6（履歴表に通過順なし）",
+          "gap_winner": "2.7 ナムラカメジロー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F12&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F02%2F12&k_raceNo=4&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30088407466",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "103cbdb8c4ee779cade80f83bbd48814827403b7671b34b35dc0d2d30258b9d0",
+            "saved_file": "history/h8.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 9,
+      "name": "ミラルージュ",
+      "reason": "9/27の当地1400mは後方から4着1.1秒差。1の3着に0.3秒差で、距離成績は1勝・2着1回・3着6回。",
+      "risk": "後方の位置取りが多く、前が残る展開では届かない。直近の4着を圏内実績に書き換えない。",
+      "record_raw": "全 1- 5- 8- 39 左 0- 0- 0- 0 右 1- 5- 8- 33 場 1- 4- 6- 26 距 1- 1- 6- 16 1:32.0 良1:32.4",
+      "evidence": [
+        {
+          "overview": "4 26.09.27 不良 13頭 佐賀 右1400 10番",
+          "rank": "4",
+          "name": "ＳＡＧＡリベＦＥＶＥＲ１４Ｃ２",
+          "rider_weight": "8人 423 小松丈 54.0",
+          "time_corners": "1:34.3 11-11-11-10 39.1",
+          "gap_winner": "1.1 マコトアタキギリ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=9&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=9&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.09.06 重 12頭 佐賀 右1300 12番",
+          "rank": "6",
+          "name": "馬もノリノリ！黒い海苔の日Ｃ２",
+          "rider_weight": "8人 421 小松丈 54.0",
+          "time_corners": "1:27.7 11-11-12-11 40.1",
+          "gap_winner": "1.4 タートルインメイ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "5 26.08.23 良 11頭 佐賀 右1400 3番",
+          "rank": "5",
+          "name": "リスナーとの絆！ミクチャＶＣ２",
+          "rider_weight": "10人 424 中山蓮 54.0",
+          "time_corners": "1:33.8 7-7-10-7 40.7",
+          "gap_winner": "0.7 エルステッド",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F23&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F23&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.07.16 良 11頭 佐賀 右1400 6番",
+          "rank": "6",
+          "name": "Ｃ２－５組",
+          "rider_weight": "11人 425 田中純 54.0",
+          "time_corners": "1:34.0 6-7-10-10 40.5",
+          "gap_winner": "1.1 アトラーレ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F16&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F16&k_raceNo=4&k_babaCode=32"
+        },
+        {
+          "overview": "12 26.06.25 不良 12頭 佐賀 右1400 7番",
+          "rank": "12",
+          "name": "Ｃ２－４組",
+          "rider_weight": "10人 430 大山真 54.0",
+          "time_corners": "1:35.6 10-10-12-12 41.8",
+          "gap_winner": "4.1 スラーヴァ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F25&k_raceNo=6&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F25&k_raceNo=6&k_babaCode=32"
+        },
+        {
+          "overview": "5 26.06.07 稍重 12頭 佐賀 右1400 1番",
+          "rank": "5",
+          "name": "Ｃ２－５組",
+          "full_name": "Ｃ２－５組",
+          "rider_weight": "8人 430 中山蓮 (佐賀) 54.0",
+          "time_corners": "1:32.3 上がり39.4（履歴表に通過順なし）",
+          "gap_winner": "0.8 エイシンパルサー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F07&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F07&k_raceNo=5&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30024408986",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "ffefd734b92773ab2a5dd8323eed5043b0a2ef20187e35cdc04e816bf1fba62f",
+            "saved_file": "history/h9.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "9 26.05.23 良 12頭 佐賀 右1400 5番",
+          "rank": "9",
+          "name": "Ｃ２－４組",
+          "full_name": "Ｃ２－４組",
+          "rider_weight": "9人 432 小松丈 (佐賀) 54.0",
+          "time_corners": "1:33.7 上がり39.4（履歴表に通過順なし）",
+          "gap_winner": "1.9 シントーローズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F23&k_raceNo=4&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F23&k_raceNo=4&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30024408986",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "ffefd734b92773ab2a5dd8323eed5043b0a2ef20187e35cdc04e816bf1fba62f",
+            "saved_file": "history/h9.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "5 26.05.09 良 11頭 佐賀 右1400 11番",
+          "rank": "5",
+          "name": "Ｃ２－５組",
+          "full_name": "Ｃ２－５組",
+          "rider_weight": "8人 432 小松丈 (佐賀) 54.0",
+          "time_corners": "1:33.0 上がり40.8（履歴表に通過順なし）",
+          "gap_winner": "0.8 クリーンスレイト",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F09&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F09&k_raceNo=2&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30024408986",
+            "retrieved_at": "2026-10-18T20:06:26+09:00",
+            "sha256": "ffefd734b92773ab2a5dd8323eed5043b0a2ef20187e35cdc04e816bf1fba62f",
+            "saved_file": "history/h9.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 10,
+      "name": "ジャスタパーティー",
+      "reason": "当地1400mの前々走で5着0.8秒差。転入後の同距離実走があり、当地不明だけで除外しない。",
+      "risk": "直近同距離8着2.6秒差。当地でまだ圏内なく、過去笠松2着を今回の再現性へ直結させない。",
+      "record_raw": "全 2- 3- 3- 24 左 0- 0- 0- 0 右 2- 3- 2- 19 場 0- 0- 0- 3 距 0- 0- 0- 3 1:33.8 良1:33.8",
+      "evidence": [
+        {
+          "overview": "8 26.09.27 不良 10頭 佐賀 右1400 9番",
+          "rank": "8",
+          "name": "ＵＭＡＴＥＮＡ賞Ｃ２－１０組",
+          "rider_weight": "4人 479 加茂飛 56.0",
+          "time_corners": "1:35.0 3-4-5-5 42.9",
+          "gap_winner": "2.6 ビサイレント",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "5 26.09.06 重 11頭 佐賀 右1400 3番",
+          "rank": "5",
+          "name": "９月６日は黒い海苔の日記念Ｃ２",
+          "rider_weight": "3人 476 長谷蓮 56.0",
+          "time_corners": "1:34.2 5-5-5-5 41.3",
+          "gap_winner": "0.8 ハプスブルグ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "6 26.08.08 良 11頭 佐賀 右1400 1番",
+          "rank": "6",
+          "name": "一発逆転ファイナルレース×ＳＡ",
+          "rider_weight": "7人 486 長谷蓮 56.0",
+          "time_corners": "1:33.8 5-5-5-4 42.3",
+          "gap_winner": "2.7 ハバナローズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F08&k_raceNo=10&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F08&k_raceNo=10&k_babaCode=32"
+        },
+        {
+          "overview": "2 26.07.23 良 6頭 笠松 右1580 2番",
+          "rank": "2",
+          "name": "あおばお誕生日おめでとう記Ｃ３",
+          "rider_weight": "3人 480 加藤聡 57.0",
+          "time_corners": "1:46.6 3-3-4-1 39.4",
+          "gap_winner": "0.2 プリュムドランジュ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F23&k_raceNo=6&k_babaCode=23",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F23&k_raceNo=6&k_babaCode=23"
+        },
+        {
+          "overview": "6 26.07.09 良 10頭 笠松 右1400 4番",
+          "rank": "6",
+          "name": "流研一セカンドライフ開幕記Ｃ３",
+          "rider_weight": "8人 478 ◇深澤杏 55.0",
+          "time_corners": "1:31.7 6-5-5-6 40.1",
+          "gap_winner": "1.1 プエルタアスール",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F09&k_raceNo=2&k_babaCode=23",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F09&k_raceNo=2&k_babaCode=23"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 11,
+      "name": "サンライズプロミス",
+      "reason": "当地1400mの9/6に4着、8/16の1300mも4着。いずれも馬券内ではないが転入後の比較材料はある。",
+      "risk": "直近1300m8着3.0秒差。1400m4着も1.8秒差で、近走の安定性が不足。",
+      "record_raw": "全 2- 4- 3- 18 左 0- 0- 0- 1 右 2- 4- 3- 15 場 0- 0- 0- 3 距 0- 0- 0- 1 1:34.2 良－",
+      "evidence": [
+        {
+          "overview": "8 26.09.27 不良 11頭 佐賀 右1300 1番",
+          "rank": "8",
+          "name": "そして輝く！穂ミノ連合杯Ｃ２－",
+          "rider_weight": "2人 438 加茂飛 56.0",
+          "time_corners": "1:28.5 8-7-8-9 41.5",
+          "gap_winner": "3.0 フークモアナ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "4 26.09.06 重 11頭 佐賀 右1400 10番",
+          "rank": "4",
+          "name": "ＳＡＧＡリベンジャーズＣ２－１",
+          "rider_weight": "4人 438 ▲椿聡太 53.0",
+          "time_corners": "1:34.2 7-7-6-4 40.6",
+          "gap_winner": "1.8 グリームスター",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=9&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=9&k_babaCode=32"
+        },
+        {
+          "overview": "4 26.08.16 良 12頭 佐賀 右1300 8番",
+          "rank": "4",
+          "name": "ラブラドライト賞Ｃ２－１３組",
+          "rider_weight": "5人 437 出水拓 56.0",
+          "time_corners": "1:25.6 7-7-6-4 39.8",
+          "gap_winner": "1.5 ミセスジョーンズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=6&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=6&k_babaCode=32"
+        },
+        {
+          "overview": "11 26.07.03 稍重 12頭 名古屋 右1500 2番",
+          "rank": "11",
+          "name": "駆け上がれ！しゃちほこ賞Ｂ",
+          "rider_weight": "11人 435 友森翔 57.0",
+          "time_corners": "1:39.8 4-5-7-7 41.3",
+          "gap_winner": "3.2 グラスチアー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F03&k_raceNo=7&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F03&k_raceNo=7&k_babaCode=24"
+        },
+        {
+          "overview": "10 26.06.22 稍重 10頭 名古屋 右1500 8番",
+          "rank": "10",
+          "name": "Ｂ１３組",
+          "rider_weight": "9人 441 友森翔 57.0",
+          "time_corners": "1:39.5 10-10-10-10 40.0",
+          "gap_winner": "3.4 ルナフェイズ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F22&k_raceNo=9&k_babaCode=24",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F22&k_raceNo=9&k_babaCode=24"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 12,
+      "name": "ムーヴザクラウド",
+      "reason": "8/16の当地1300mで逃げて2着0.1秒差。公式履歴では1/5の1400m3歳－３組で3着0.1秒差も保持。",
+      "risk": "近い1400mは6/13・5/30とも7着。今回の先行競合があり、1300mの好走だけで1400mの圏内を断定しない。",
+      "record_raw": "全 1- 2- 1- 17 左 0- 0- 0- 0 右 1- 2- 1- 17 場 1- 2- 1- 12 距 0- 0- 1- 8 1:32.7 良1:32.7",
+      "evidence": [
+        {
+          "overview": "7 26.09.26 不良 12頭 佐賀 右900 4番",
+          "rank": "7",
+          "name": "ＳＡＧＡリベンジャーズダッＣ２",
+          "rider_weight": "3人 452 山下裕 54.0",
+          "time_corners": "0:57.0 3-4 39.2",
+          "gap_winner": "1.2 バリアシオン",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F26&k_raceNo=9&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F26&k_raceNo=9&k_babaCode=32"
+        },
+        {
+          "overview": "5 26.09.06 重 12頭 佐賀 右1300 8番",
+          "rank": "5",
+          "name": "馬もノリノリ！黒い海苔の日Ｃ２",
+          "rider_weight": "2人 444 山下裕 54.0",
+          "time_corners": "1:27.6 2-2-1-2 41.7",
+          "gap_winner": "1.3 タートルインメイ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "2 26.08.16 良 12頭 佐賀 右1300 5番",
+          "rank": "2",
+          "name": "Ｃ２－１４組",
+          "rider_weight": "2人 443 山下裕 54.0",
+          "time_corners": "1:25.7 1-1-1-1 39.7",
+          "gap_winner": "0.1 コスモローマ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F16&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "4 26.07.05 不良 10頭 佐賀 右1300 2番",
+          "rank": "4",
+          "name": "脳みそ夫さん来場記念３歳－４組",
+          "rider_weight": "8人 438 山下裕 54.0",
+          "time_corners": "1:25.3 1-1-1-1 40.0",
+          "gap_winner": "1.0 ヘラクレステソーロ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=1&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F05&k_raceNo=1&k_babaCode=32"
+        },
+        {
+          "overview": "7 26.06.13 良 10頭 佐賀 右1400 2番",
+          "rank": "7",
+          "name": "パッカルくんのおとしもの賞３歳",
+          "rider_weight": "8人 448 山下裕 54.0",
+          "time_corners": "1:34.2 1-1-2-3 41.9",
+          "gap_winner": "1.6 モズノシアワセ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F13&k_raceNo=1&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F13&k_raceNo=1&k_babaCode=32"
+        },
+        {
+          "overview": "7 26.05.30 良 11頭 佐賀 右1400 9番",
+          "rank": "7",
+          "name": "パッカルくんのおとしもの賞３歳",
+          "full_name": "パッカルくんのおとしもの賞３歳",
+          "rider_weight": "8人 445 林悠翔 (佐賀) 53.0",
+          "time_corners": "1:33.5 上がり39.5（履歴表に通過順なし）",
+          "gap_winner": "1.7 キャプテンレガーロ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=1&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F30&k_raceNo=1&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30097407707",
+            "retrieved_at": "2026-10-18T20:06:27+09:00",
+            "sha256": "3bb9e32e96ecaf04fb8ae678507e11a742dad852ad09eca5816261dca0170387",
+            "saved_file": "history/h12.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "3 26.01.05 良 10頭 佐賀 右1400 7番",
+          "rank": "3",
+          "name": "３歳－３組",
+          "full_name": "３歳－３組",
+          "rider_weight": "7人 438 林悠翔 (佐賀) 52.0",
+          "time_corners": "1:33.3 上がり40.4（履歴表に通過順なし）",
+          "gap_winner": "0.1 ホーンバッファロー",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F05&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F01%2F05&k_raceNo=2&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30097407707",
+            "retrieved_at": "2026-10-18T20:06:27+09:00",
+            "sha256": "3bb9e32e96ecaf04fb8ae678507e11a742dad852ad09eca5816261dca0170387",
+            "saved_file": "history/h12.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 13,
+      "name": "スマートピリカ",
+      "reason": "8/15の当地1400mＣ２－１８組を1着0.1秒差。今回も勝ち実績を保持する。",
+      "risk": "その後の1400mは8着1.3秒差・10着3.4秒差。勝ち後の相手強化に対応した裏付けが弱い。",
+      "record_raw": "全 1- 6- 6- 16 左 0- 0- 0- 1 右 1- 6- 6- 15 場 1- 1- 2- 10 距 1- 0- 0- 6 1:32.9 良1:33.3",
+      "evidence": [
+        {
+          "overview": "10 26.09.27 不良 10頭 佐賀 右1400 4番",
+          "rank": "10",
+          "name": "ＵＭＡＴＥＮＡ賞Ｃ２－１０組",
+          "rider_weight": "8人 471 竹吉徹 54.0",
+          "time_corners": "1:35.8 8-9-9-9 42.4",
+          "gap_winner": "3.4 ビサイレント",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F27&k_raceNo=5&k_babaCode=32"
+        },
+        {
+          "overview": "8 26.09.06 重 11頭 佐賀 右1400 4番",
+          "rank": "8",
+          "name": "９月６日は黒い海苔の日記念Ｃ２",
+          "rider_weight": "6人 469 竹吉徹 54.0",
+          "time_corners": "1:34.7 4-4-5-7 41.9",
+          "gap_winner": "1.3 ハプスブルグ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F06&k_raceNo=3&k_babaCode=32"
+        },
+        {
+          "overview": "1 26.08.15 良 11頭 佐賀 右1400 1番",
+          "rank": "1",
+          "name": "サガデーナイト競馬賞Ｃ２－１８",
+          "rider_weight": "9人 466 竹吉徹 54.0",
+          "time_corners": "1:33.3 4-4-6-3 39.8",
+          "gap_winner": "0.1 ウインマグノリア",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F15&k_raceNo=8&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F15&k_raceNo=8&k_babaCode=32"
+        },
+        {
+          "overview": "9 26.07.11 良 12頭 佐賀 右1400 12番",
+          "rank": "9",
+          "name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "rider_weight": "8人 459 長谷蓮 54.0",
+          "time_corners": "1:34.9 4-4-5-8 41.7",
+          "gap_winner": "2.4 ビザンティーノ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F11&k_raceNo=10&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F07%2F11&k_raceNo=10&k_babaCode=32"
+        },
+        {
+          "overview": "7 26.06.01 良 12頭 佐賀 右1400 2番",
+          "rank": "7",
+          "name": "ＳＡＧＡリベンジャーズジョＣ２",
+          "rider_weight": "6人 468 長谷蓮 54.0",
+          "time_corners": "1:33.3 8-8-9-7 39.8",
+          "gap_winner": "1.4 ムコリッタ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F01&k_raceNo=11&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F06%2F01&k_raceNo=11&k_babaCode=32"
+        },
+        {
+          "overview": "4 26.05.04 重 11頭 佐賀 右1400 9番",
+          "rank": "4",
+          "name": "パドックリニューアル記念Ｃ２－",
+          "full_name": "パドックリニューアル記念Ｃ２－",
+          "rider_weight": "7人 467 長谷蓮 (佐賀) 54.0",
+          "time_corners": "1:32.9 上がり40.1（履歴表に通過順なし）",
+          "gap_winner": "2.5 ピエナクレスコ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F04&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F05%2F04&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30025403896",
+            "retrieved_at": "2026-10-18T20:06:27+09:00",
+            "sha256": "aa5d4ed87e1b245bb787ecfb6b1e7167babee338222749606a35a21654522f8f",
+            "saved_file": "history/h13.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        },
+        {
+          "overview": "4 26.04.20 重 10頭 佐賀 右1400 5番",
+          "rank": "4",
+          "name": "Ｃ２－１１組",
+          "full_name": "Ｃ２－１１組",
+          "rider_weight": "5人 471 長谷蓮 (佐賀) 54.0",
+          "time_corners": "1:33.0 上がり40.8（履歴表に通過順なし）",
+          "gap_winner": "1.4 ハリーフラッグ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F20&k_raceNo=3&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F04%2F20&k_raceNo=3&k_babaCode=32",
+          "additional_source": {
+            "url": "https://www.keiba.go.jp/KeibaWeb/DataRoom/HorseMarkInfo?k_lineageLoginCode=30025403896",
+            "retrieved_at": "2026-10-18T20:06:27+09:00",
+            "sha256": "aa5d4ed87e1b245bb787ecfb6b1e7167babee338222749606a35a21654522f8f",
+            "saved_file": "history/h13.html"
+          },
+          "scope": "公式履歴で2026年の同場同距離を追加。出馬表近5走とは別の補足。"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "race_uid": "nar-2026-10-18-saga-r11",
+      "number": 14,
+      "name": "グランブーケ",
+      "reason": "当地1400mを8/30に1.4秒差、9/21に2.2秒差で連勝。好位4番手からと逃げの両方で勝ち、中央芝の凡走を当地ダートの能力へ混ぜない。",
+      "risk": "当地は2走だけで今回さらに相手強化。1・3・12・8が前へ行く場合の競合、馬体重+9の状態は未確認。",
+      "record_raw": "全 2- 0- 0- 3 左 0- 0- 0- 0 右 2- 0- 0- 0 場 2- 0- 0- 0 距 2- 0- 0- 0 1:31.3 良1:31.3",
+      "evidence": [
+        {
+          "overview": "1 26.09.21 良 12頭 佐賀 右1400 12番",
+          "rank": "1",
+          "name": "Ｃ２－１９組",
+          "rider_weight": "1人 449 ▲椿聡太 51.0",
+          "time_corners": "1:32.3 1-1-1-1 39.2",
+          "gap_winner": "2.2 ネオディヤマンテ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F21&k_raceNo=2&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F09%2F21&k_raceNo=2&k_babaCode=32"
+        },
+        {
+          "overview": "1 26.08.30 良 10頭 佐賀 右1400 3番",
+          "rank": "1",
+          "name": "ＳＡＧＡリベンジャーズウェＣ２",
+          "rider_weight": "4人 459 ▲椿聡太 51.0",
+          "time_corners": "1:31.3 4-2-2-1 40.6",
+          "gap_winner": "1.4 ウマナミカイドウ",
+          "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F30&k_raceNo=8&k_babaCode=32",
+          "run_id": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F08%2F30&k_raceNo=8&k_babaCode=32"
+        },
+        {
+          "overview": "13 26.07.05 重 18頭 Ｊ小倉 芝右2000 1番",
+          "rank": "13",
+          "name": "３歳未勝利",
+          "rider_weight": "12人 438 石川裕 55.0",
+          "time_corners": "2:04.2 14-12-17-17 38.3",
+          "gap_winner": "2.3 アオイハルカ",
+          "source": null,
+          "run_id": "13 26.07.05 重 18頭 Ｊ小倉 芝右2000 1番|３歳未勝利"
+        },
+        {
+          "overview": "8 26.06.13 良 18頭 Ｊ阪神 芝右1600 11番",
+          "rank": "8",
+          "name": "３歳未勝利",
+          "rider_weight": "10人 438 Ｍデム 55.0",
+          "time_corners": "1:35.2 14-11 34.1",
+          "gap_winner": "1.0 フェルギナス",
+          "source": null,
+          "run_id": "8 26.06.13 良 18頭 Ｊ阪神 芝右1600 11番|３歳未勝利"
+        },
+        {
+          "overview": "18 26.03.14 良 18頭 Ｊ中京 芝左2000 18番",
+          "rank": "18",
+          "name": "３歳未勝利",
+          "rider_weight": "13人 422 小沢大 55.0",
+          "time_corners": "2:02.8 3-3-3-3 37.2",
+          "gap_winner": "2.4 ミッキージャンプ",
+          "source": null,
+          "run_id": "18 26.03.14 良 18頭 Ｊ中京 芝左2000 18番|３歳未勝利"
+        }
+      ],
+      "missing_reason_class": [],
+      "card_source": {
+        "key": "r11",
+        "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate=2026%2F10%2F18&k_babaCode=32&k_raceNo=11",
+        "retrieved_at": "2026-10-18T20:04:54+09:00",
+        "sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "bytes": 319208,
+        "saved_file": "snapshots/r11.html",
+        "provider": "NAR",
+        "raw_sha256": "d70c1b086a367c4f412097a0cfa47c654d53dba210d619fbd5a0f08897784665",
+        "raw_file": "sources/saga/snapshots/r11.html",
+        "encoding": "utf-8"
+      }
+    }
+  ]
+}

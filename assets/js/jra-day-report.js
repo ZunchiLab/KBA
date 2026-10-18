@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const config = JSON.parse(document.getElementById('day-forecast').textContent);
+  const authority=config.authority||'jra';
   const stored = JSON.parse(document.getElementById('day-results').textContent);
   const tabs = [...document.querySelectorAll('[role=tab]')];
   const panels = [...document.querySelectorAll('.venue-panel')];
@@ -15,7 +16,7 @@
   let forecastPromise;
   let lastRefreshStarted = 0;
   let lastRefreshMessage = '';
-  const storageKey = 'kba-day-plan:jra:' + config.date + ':' + config.version;
+  const storageKey = 'kba-day-plan:'+authority+':' + config.date + ':' + config.version + (config.storageNamespace?':'+config.storageNamespace:'');
   const escapeWhitespace = text => String(text).replace(/\s/g, '');
   function chooseVenue(key, updateURL=true) {
     if (!config.venues.some(v => v.venue_key===key)) key=config.venues[0].venue_key;
@@ -71,7 +72,7 @@
   document.getElementById('horse-search').addEventListener('input',filter);
   document.getElementById('race-filter').addEventListener('change',filter);
   window.addEventListener('hashchange',()=>{if(hashVenue())chooseVenue(hashVenue());});
-  if(config.compact)document.querySelectorAll('a[href^="#jra-"]').forEach(a=>a.addEventListener('click',event=>{
+  if(config.compact)document.querySelectorAll(`a[href^="#${authority}-"]`).forEach(a=>a.addEventListener('click',event=>{
     if(a.getAttribute('aria-disabled')==='true'){event.preventDefault();return;}
     const r=config.races.find(r=>'#'+r.race_uid===a.getAttribute('href'));
     if(r){compactRaces[r.venue_key]=r.race_uid;}
@@ -119,7 +120,7 @@
       try {
         const response=await fetch(config.jsonFile,{cache:'no-store',signal:c.signal});if(!response.ok)throw new Error('固定予想の取得失敗');
         const text=(await response.text()).replace(/^\uFEFF/,'').replace(/\r\n/g,'\n');const d=JSON.parse(text);
-        if(d.authority!=='jra'||d.date_jst!==config.date||d.forecast_version!==config.version)throw new Error('固定予想の区分・版不一致');
+        if(d.authority!==authority||d.date_jst!==config.date||d.forecast_version!==config.version)throw new Error('固定予想の区分・版不一致');
         const hash=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));
         return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('');
       } finally {clearTimeout(timer);}
@@ -130,9 +131,15 @@
     if(data.schema_version!=='kba.results/1'||data.authority!=='jra'||!data.forecast_ref)throw new Error('JRA共通結果形式が不正');
     return {authority:'jra',date_jst:data.date_jst,venue_key:data.venue_key,baba_code:({tokyo:5,kyoto:8,niigata:4})[data.venue_key],forecast_version:data.forecast_ref.version,forecast_sha256:data.forecast_ref.sha256,updated_at:data.updated_at,last_poll_at:data.last_poll_at,refresh_interval_minutes:2,complete:data.races.every(r=>['confirmed','cancelled'].includes(r.status)),races:data.races.map(r=>({race:r.race_no,start_at:r.start_at,status:r.status,source:r.source,refresh_error:r.refresh_error,payouts_status:r.payouts_status||{},rows:r.rows.map(h=>({number:h.number,name:h.name,finish:Number.isInteger(h.finish)?h.finish:h.official_status_text||'未確定'})),refunds:r.payouts.map(p=>({kind:payoutKinds[p.kind]||p.kind,numbers:p.numbers,number_type:p.number_type,combination:p.numbers.join(['exacta','trifecta'].includes(p.kind)?'→':'−'),yen_per_100:p.yen_per_100}))}))};
   }
+  function adaptResults(data) {
+    if(authority!=='nar')return adaptJRA(data);
+    if(data.schema_version!==1||!Array.isArray(data.races))throw new Error('地方結果形式が不正');
+    const aliases={'枠連複':'枠連','馬連複':'馬連','馬連単':'馬単','枠連単':'枠単'};
+    return {...data,authority:'nar',races:data.races.map(r=>({...r,refunds:(r.refunds||[]).map(p=>({...p,kind:aliases[p.kind]||p.kind,number_type:p.kind.startsWith('枠')?'bracket':'horse'}))}))};
+  }
   function validate(data,key,digest) {
     const venue=config.venues.find(v=>v.venue_key===key);
-    if(data.authority!=='jra'||data.date_jst!==config.date||data.venue_key!==key||data.baba_code!==venue.baba_code||data.forecast_version!==config.version||(digest&&data.forecast_sha256!==digest))throw new Error('結果の対象・予想版が不一致');
+    if(data.authority!==authority||data.date_jst!==config.date||data.venue_key!==key||data.baba_code!==venue.baba_code||data.forecast_version!==config.version||(digest&&data.forecast_sha256!==digest))throw new Error('結果の対象・予想版が不一致');
     if(!Number.isFinite(Date.parse(data.updated_at))||!Array.isArray(data.races))throw new Error('結果の保存時刻・構造が不正');
     const expected=config.races.filter(r=>r.venue_key===key);const nums=new Set();
     for(const rr of data.races){
@@ -157,17 +164,18 @@
     const open=container.children[0]?.open;
     container.replaceChildren();
     if(!rr.rows.length&&!rr.refunds?.length)return;
+    const kinds={...payoutKinds};if((rr.refunds||[]).some(p=>p.kind==='枠単'))kinds.bracket_exacta='枠単';
     const details=document.createElement('details');details.className='official-payouts';details.open=typeof open==='boolean'?open:true;
-    const summary=document.createElement('summary');summary.textContent='結果・払戻（全8式別／100円）';details.append(summary);
+    const summary=document.createElement('summary');summary.textContent=`結果・払戻（全${Object.keys(kinds).length}式別／100円）`;details.append(summary);
     const finish=[1,2,3].map(rank=>{const nums=rr.rows.filter(r=>r.finish===rank).map(r=>r.number);return nums.length?`${rank}着 ${nums.join('・')}`:'';}).filter(Boolean);
     if(finish.length){const p=document.createElement('p');p.className='official-top-finish';p.textContent=finish.join(' / ');details.append(p);}
     const table=document.createElement('table');table.className='payout-table';const head=document.createElement('thead');const row=document.createElement('tr');
     for(const text of ['式別','的中番号・払戻金']){const th=document.createElement('th');th.scope='col';th.textContent=text;row.append(th);}head.append(row);table.append(head);
     const body=document.createElement('tbody');
-    for(const [kind,label] of Object.entries(payoutKinds)){
-      const row=document.createElement('tr');row.dataset.kind=kind;const th=document.createElement('th');th.scope='row';th.textContent=kind==='bracket_quinella'?label+'（枠番）':label;
+    for(const [kind,label] of Object.entries(kinds)){
+      const row=document.createElement('tr');row.dataset.kind=kind;const th=document.createElement('th');th.scope='row';th.textContent=['bracket_quinella','bracket_exacta'].includes(kind)?label+'（枠番）':label;
       const td=document.createElement('td');const entries=(rr.refunds||[]).filter(p=>p.kind===label);
-      for(const payout of entries){const line=document.createElement('div');line.className='payout-line';const nums=document.createElement('span');nums.textContent=payout.numbers.join(['exacta','trifecta'].includes(kind)?'→':'−');const money=document.createElement('b');money.textContent=payout.yen_per_100.toLocaleString()+'円';line.append(nums,money);td.append(line);}
+      for(const payout of entries){const line=document.createElement('div');line.className='payout-line';const nums=document.createElement('span');nums.textContent=payout.numbers.join(['exacta','trifecta','bracket_exacta'].includes(kind)?'→':'−');const money=document.createElement('b');money.textContent=payout.yen_per_100.toLocaleString()+'円';line.append(nums,money);td.append(line);}
       if(!entries.length){const span=document.createElement('span');span.className='payout-pending';span.textContent=rr.payouts_status?.[kind]==='not_offered'?'発売なし':'未掲載・確認待ち';td.append(span);}
       row.append(th,td);body.append(row);
     }
@@ -228,14 +236,14 @@
       catch (_){base='https://raw.githubusercontent.com/ZunchiLab/KBA/main/';origin='GitHub mainの保存データ（最新コミット確認不可）';}
       const outcomes=await Promise.allSettled(config.venues.map(async v=>{
         const versionPath=config.version==='v1'?'':config.version+'/';
-        const path=`data/results/jra/${config.date}/${config.version}/${v.venue_key}.json`;
+        const path=authority==='nar'?`data/results/nar/${config.date}/${versionPath}${v.venue_key}.json`:`data/results/jra/${config.date}/${config.version}/${v.venue_key}.json`;
         let incoming,fallback=false;
         try {incoming=await getJSON(base+path+'?ts='+Date.now());}
         catch(error){
           incoming=await getJSON(new URL('../',location.href).href+path+'?ts='+Date.now());
           fallback=true;
         }
-        incoming=adaptJRA(incoming);validate(incoming,v.venue_key,digest);
+        incoming=adaptResults(incoming);validate(incoming,v.venue_key,digest);
         const data=merge(incoming,v.venue_key);
         const confirmed=data.races.filter(r=>r.status==='confirmed').length;
         const errors=data.races.filter(r=>r.status==='error').length;

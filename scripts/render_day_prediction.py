@@ -3,6 +3,7 @@ from html import escape
 from pathlib import Path
 from hashlib import sha256
 import json
+from nar_display import score_summary
 
 ROOT=Path(__file__).resolve().parents[1]
 E=lambda x:escape(str(x),quote=True)
@@ -49,6 +50,9 @@ def formation_section(r):
     return '<details class="panel"><summary>券種の採否・軸と相手・フォーメーションで取れない組合せ</summary><p>'+E(a['role_detail'])+'</p>'+''.join(rows)+'<p>当日の予算は未確認のため例示。的中率・回収率の改善効果は未検証。人気順と総合順位を同点数・同費用で展開した診断基準も、固定JSONに保存しています。</p></details>'
 
 def render(d,json_name,results=None):
+    if d.get("authority","nar")=="nar" and (d.get("presentation",{}).get("layout")=="compact-v1" or d.get("date_jst","")>="2026-10-19"):
+        from render_nar_compact import render as compact
+        return compact(d,json_name,results)
     results=results or {};parts=[]
     b=d['budget']
     venue_labels='・'.join(v['label'] for v in d['venues'])
@@ -66,7 +70,7 @@ def render(d,json_name,results=None):
     if errata_path.exists():
         errata=json.loads(errata_path.read_text(encoding='utf-8'))
         if errata['forecast_version']==d['forecast_version']:
-            parts.append('<aside class="panel"><h2>過去走の表記訂正</h2>'+''.join('<p>'+E(c['text'])+'</p>' for c in errata['corrections'])+'</aside>')
+            parts.append('<aside class="panel"><h2>表記・評価方法の訂正</h2>'+''.join('<p>'+E(c['text'])+'</p>' for c in errata['corrections'])+'</aside>')
     if d.get('revision'):
         parts.append('<aside class="panel"><h2>v2の訂正内容</h2><p>'+E(d['revision']['reason'])+'</p><p>v1は保存しています。結果判明前の訂正です。</p></aside>')
     for v in d['venues']:
@@ -97,10 +101,10 @@ def render(d,json_name,results=None):
                 if p.get('one_hit_at_floor'):
                     parts.append('<p class="muted">'+E(p['one_hit_at_floor'])+'</p>')
                 parts.append(f'<p>直前条件：取消なし・状態と馬場を確認・各点の下限以上・締切前。未確認なら見送り。フォーメーションは全点条件、個別ワイドは各点条件を適用。未確認を購入可と扱いません。</p><p class="plan-result" data-plan-result="{p["plan_id"]}">掲載案の結果：未確定／実購入未記録</p></section>')
-            parts.append(f'<h3>全頭の印・評価・着順</h3><button type="button" class="sort-horses">馬番順に切替</button><p class="muted">名前を開くと根拠・懸念・過去走。順位表示指数は能力差や確率を表しません。</p><p class="race-result-status">{E(res.get("note", "結果未取得") if res else "結果未取得")}</p><div class="all-horses">')
+            parts.append(f'<h3>全頭の印・評価・着順</h3><button type="button" class="sort-horses">馬番順に切替</button><p class="muted">名前を開くと根拠・懸念・過去走。順位表示用の数値は能力差や確率を表しません。</p><p class="race-result-status">{E(res.get("note", "結果未取得") if res else "結果未取得")}</p><div class="all-horses">')
             for h in ranked:
                 f=finish(res,h);meta=h['market'];details=''.join(past_item(p) for p in h['past'])
-                parts.append(f'<details class="horse" data-number="{h["number"]}"><summary><span class="mark">{E(h["mark"])}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{str(h["rank"])+"位 / 指数"+str(h["score"]) if h["rank"] else "評価対象外"} · 単{E(meta["win_raw"])}倍</small></span><strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(meta["jockey"])} · {E(meta["weight"])}kg · 馬体重 {E(meta["body_weight"] or "未発表")}</p><p><b>評価</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p class="muted">単勝・馬体重：{E(r["market"]["page_time_raw"])}。調教・パドックは未確認。</p><details><summary>根拠の過去走（同じ走は1件として比較）</summary><ul>{details}</ul></details></div></details>')
+                parts.append(f'<details class="horse" data-number="{h["number"]}"><summary><span class="mark">{E(h["mark"])}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{E(score_summary(h))} · 単{E(meta["win_raw"])}倍</small></span><strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(meta["jockey"])} · {E(meta["weight"])}kg · 馬体重 {E(meta["body_weight"] or "未発表")}</p><p><b>評価</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p class="muted">単勝・馬体重：{E(r["market"]["page_time_raw"])}。調教・パドックは未確認。</p><details><summary>根拠の過去走（同じ走は1件として比較）</summary><ul>{details}</ul></details></div></details>')
             parts.append('</div><div class="payouts"></div><p><a href="'+E(r['source']['url'])+'">公式出馬表・変更情報</a></p></div></article>')
         parts.append('</section>')
     config=dict(date=d['date_jst'],version=d['forecast_version'],jsonFile=json_name,venues=d['venues'],races=d['races'],budget=b)
