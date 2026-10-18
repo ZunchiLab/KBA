@@ -18,7 +18,7 @@ def plan_html(p,visible=False):
     floor=' / '.join(f'{x:.1f}' for x in floors)
     count=sum(t['price_condition_at_snapshot'] is True for t in p['tickets'])
     ok=count==p['points']
-    label='本線' if p['selected_for_example'] else '入替え案' if p['role']=='alternative' else '参考・本線見送り'
+    label=('購入候補・'+p['priority'] if p.get('priority') else '本線') if p['selected_for_example'] else '入替え案' if p['role']=='alternative' else '参考・本線見送り'
     out=[f'<section class="bet-plan" data-plan="{E(p["plan_id"])}"><div class="row"><h3>{label} · {E(p["type"])}</h3><button class="copy-plan" data-plan-id="{E(p["plan_id"])}" type="button">コピー</button></div>',
          f'<p class="formation"><b>{E(brief_plan(p))}</b></p>',
          f'<p class="plan-meta">{p["points"]}点 × 100円 = <b>{p["maximum_example_yen"]:,}円例</b> · 全点{floor}倍以上</p>',
@@ -63,7 +63,7 @@ def render(d,json_name,results):
         for r in vr:
             uid=r['race_uid'];a=r['analysis'];res=result_for(results,key,r['race']);main=[p for p in r['bet_plans'] if p['selected_for_example']]
             search=' '.join([r['name'],str(r['race'])+'R']+[h['name'] for h in r['horses']])
-            confidence=a['confidence'].replace('（主観）','');decision='条件付き本線' if main else '見送り'
+            confidence=a['confidence'].replace('（主観）','');decision=(a.get('priority','条件付き本線')+'候補' if a.get('priority') else '条件付き本線') if main else '見送り'
             surface={'turf':'芝','dirt':'ダ','hurdle':'障'}[r['surface']]
             going=r['going'].replace('ダート','').replace('芝','').replace('：','').strip()
             level=r['grade'] or r['class_text']
@@ -80,16 +80,18 @@ def render(d,json_name,results):
                 secondary.append(f'<details class="plan-controls"><summary>仮プランを変更</summary><fieldset class="plan-choice"><legend>費用例の選択・購入ではありません</legend><label><input type="radio" name="{uid}" value="skip" data-cost="0" {"checked" if not default_main else ""}>見送り</label>')
                 for p in r['bet_plans']:secondary.append(f'<label><input type="radio" name="{uid}" value="{p["plan_id"]}" data-cost="{p["maximum_example_yen"]}" {"checked" if p in default_main else ""}>{E(p["type"])} {p["maximum_example_yen"]:,}円例</label>')
                 secondary.append('</fieldset></details>')
-            parts.append('<div class="row horse-toolbar"><h3>全頭の印・スコア</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>指数</span><span>着順</span></div><div class="all-horses">')
+            parts.append('<div class="row horse-toolbar"><h3>全頭の総合印・近走指数</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>指数</span><span>着順</span></div><div class="all-horses">')
             for h in sorted(r['horses'],key=lambda h:h['rank'] or 999):
                 score=h['score'] if h['score'] is not None else '保留';mark=h['mark'].replace('参考','').replace('暫定','');f=finish(res,h)
                 if f in ['保存時は発走前','未確定','全着順待ち']:f='—'
-                ref_label='市場参考' if h['score_method']=='market_reference' else '暫定比較' if r['surface']=='hurdle' else '比較指数'
+                ref_label='市場参考' if h['score_method']=='market_reference' else '暫定比較' if r['surface']=='hurdle' else ('近走実績指数' if d.get('presentation',{}).get('detailed_rank_labels') else '比較指数')
                 rank_label=str(h['rank'])+'位' if h['rank'] is not None else '取消' if h['status_at_snapshot']=='withdrawn' else '順位保留'
+                if d.get('presentation',{}).get('detailed_rank_labels'):
+                    rank_label='総合'+rank_label+' / 指数'+(str(h['model_rank'])+'位' if h.get('model_rank') else '保留')
                 history=h.get('history_audit');history_html=''
                 if history:
                     history_html='<details><summary>公式掲載戦歴の確認範囲</summary><p>'+E(history['summary'])+'</p><a href="'+E(history['source']['url'])+'">JRA公式掲載履歴</a><p>確認 '+E(history['source']['retrieved_at'])+'。掲載範囲外の経験は断定しません。</p></details>'
-                parts.append(f'<details class="horse" data-number="{h["number"]}"><summary><span class="mark">{E(mark)}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{E(rank_label)} · {E(h["style"])}</small></span><b class="score">{E(score)}</b><strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(h["jockey"])} · {h["weight"]}kg · 馬体重 {E(h["body"] or "未発表")}</p><p>{ref_label} {E(score)} · 勝比較 {E(h["win"] if h["win"] is not None else "未算定")} / 圏内比較 {E(h["place"] if h["place"] is not None else "未算定")}</p><p><b>根拠</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p><b>採否</b> {E(h["ticket_review"])}</p><details><summary>過去走と出典</summary><ul>'+''.join(past_item(p) for p in h['past'])+'</ul></details>'+history_html+'</div></details>')
+                parts.append(f'<details class="horse" data-number="{h["number"]}"><summary><span class="mark">{E(mark)}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{E(rank_label)} · {E(h["style"])}</small></span><b class="score">{E(score)}</b><strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(h["jockey"])} · {h["weight"]}kg · 馬体重 {E(h["body"] or "未発表")}</p><p>{ref_label} {E(score)} · 勝比較 {E(h["win"] if h["win"] is not None else "未算定")} / 圏内比較 {E(h["place"] if h["place"] is not None else "未算定")}</p><p><b>総合判断</b> {E(h.get("mark_override_reason") or "指数と総合順位が一致。以下の根拠と懸念を確認。")}</p><p><b>根拠</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p><b>採否</b> {E(h["ticket_review"])}</p><details><summary>過去走と出典</summary><ul>'+''.join(past_item(p) for p in h['past'])+'</ul></details>'+history_html+'</div></details>')
             parts.append('</div><div class="payouts"></div>'+''.join(secondary))
             parts.append(comparison_table(r)+formation_section(r))
             parts.append('<details class="sources"><summary>出馬表・確認時刻</summary><a href="'+E(r['source']['url'])+'">JRA公式出馬表</a><p>出馬表 '+E(r['source']['retrieved_at'])+'／価格 '+E(r['source_checked_at'])+'</p><p>馬場は出馬表取得時点。取消・馬場・状態・価格は直前再確認。</p></details></div></article>')
