@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-18T17:24:36+09:00",
+  "passed": true,
+  "races": 36,
+  "horses": 450,
+  "status_counts": {
+    "finished": 446,
+    "excluded": 2,
+    "did_not_finish": 2
+  },
+  "official_raw_sha_count": 36,
+  "originals_unchanged": [
+    "report_20261018_jra_predictions_v1.html",
+    "report_20261018_jra_predictions_v1.json",
+    "report_20261018_jra_predictions_v2.html",
+    "report_20261018_jra_predictions_v2.json"
+  ],
+  "public_forecast_unchanged": true,
+  "all_fixed_horse_values_unchanged": true,
+  "formation_checks": 270,
+  "ticket_checks": 1698,
+  "verified_refund_tickets": 6,
+  "morning_raw_count": 26,
+  "all_type_payout_rows": 288,
+  "priority_split_verified": true,
+  "fair_comparison_races": 22,
+  "fair_comparison_yen": 5500,
+  "strict_forecast_gate_passed": true,
+  "browser_verification_pending": true
+}

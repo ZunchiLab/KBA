@@ -83,5 +83,12 @@ async function test(name, action){await action();passed++;console.log('PASS '+na
     const f=fixture();f.confirm('tokyo');f.results.tokyo.races[0].payouts_status={bracket_quinella:'not_offered'};await f.click();
     const text=f.cards[0].parts['.payouts'].textContent;assert.match(text,/発売なし/);assert.match(text,/未掲載・確認待ち/);assert.doesNotMatch(text,/(^|\D)0円/);
   });
+  await test('unrelated non-finishers do not block verified tickets and affected tickets stay on hold',async()=>{
+    const plan=(id,nums)=>({plan_id:id,type:'ワイド',ordered:false,tickets:[{numbers:nums,example_stake_yen:100,price_condition_at_snapshot:true}]});
+    const f=fixture([plan('unaffected',[1,2]),plan('affected',[1,3])]);f.confirm('tokyo');f.results.tokyo.races[0].rows.find(r=>r.number===3).finish='除外';
+    f.results.tokyo.races[0].refunds=[{kind:'wide',numbers:[1,2],yen_per_100:300}];await f.click();
+    assert.match(f.cards[0].parts['[data-plan-result="unaffected"]'].textContent,/1\/1点的中、100円→300円/);
+    assert.match(f.cards[0].parts['[data-plan-result="affected"]'].textContent,/対象買い目.*照合待ち/);
+  });
   console.log(passed+' UI regression cases passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -191,7 +191,7 @@
       drawPayouts(card.querySelector('.payouts'),rr);
       for(const plan of race.bet_plans){const el=card.querySelector(`[data-plan-result="${plan.plan_id}"]`);
         if(rr.status!=='confirmed'){el.textContent=config.compact?'結果待ち · 実購入未記録':'掲載案の結果：確定待ち／実購入未記録';continue;}
-        if(rr.rows.some(row=>!Number.isInteger(row.finish))){el.textContent='取消・除外等を含むため返還の照合待ち。収支判定は保留／実購入未記録';continue;}
+        if(rr.rows.some(row=>!Number.isInteger(row.finish)&&plan.tickets.some(t=>t.numbers.includes(row.number)))){el.textContent='対象買い目に取消・除外等を含むため返還の照合待ち。収支判定は保留／実購入未記録';continue;}
         const eligible=plan.tickets.filter(t=>t.price_condition_at_snapshot===true);
         if(plan.all_points_price_condition_at_snapshot!==undefined&&eligible.length!==plan.tickets.length){el.textContent='保存価格条件では構成全点を見送り（1点以上が未達・未取得）／実購入未記録';continue;}
         if(!eligible.length){el.textContent='保存価格条件では全点見送り／実購入未記録';continue;}
