@@ -64,7 +64,7 @@ def render(d,json_name,results):
         p=next(p for p in r['bet_plans'] if p['selected_for_example'])
         status=(' · 価格未達・全点見送り' if not price_eligible(p) else ' · 直前確認で判断') if price_defaults else ''
         parts.append(f'<a href="#{r["race_uid"]}"><b>{E(r["venue"])}{r["race"]}R</b> {E(r["start"])} · {E(p["type"])}<br>{E(brief_plan(p))} · {p["maximum_example_yen"]:,}円{status}</a>')
-    parts.append(f'</div><p>各100円の例。上限例{b["day_limit_yen"]:,}円／保存価格の全点達成分{b["price_eligible_main_yen"]:,}円。直前条件は未確認。余りは再配分しません。</p><div id="plan-total" role="status">仮プラン {default_cost:,}円</div><a href="../tools/bet-planner.html">購入記録の補助</a></details></section>')
+    parts.append(f'</div><p>各100円の例。上限例{b["day_limit_yen"]:,}円／保存価格条件達成分{b["price_eligible_main_yen"]:,}円。直前条件は未確認。余りは再配分しません。</p><div id="plan-total" role="status">仮プラン {default_cost:,}円</div><a href="../tools/bet-planner.html">購入記録の補助</a></details></section>')
     parts.append('<section class="result-toolbar" id="results-panel"><button id="refresh-results" type="button">結果を更新</button><details><summary>取得状況</summary><p id="result-status" role="status" aria-live="polite">'+E('保存結果を表示' if results else '発走前・結果未取得')+'</p></details></section><p id="empty-state" hidden>該当レースなし</p>')
     for v in d['venues']:
         key=v['venue_key'];vr=[r for r in d['races'] if r['venue_key']==key]
@@ -98,7 +98,7 @@ def render(d,json_name,results):
                 ref_label='能力指数' if authority=='nar' else '市場参考' if h['score_method']=='market_reference' else '暫定比較' if r['surface']=='hurdle' else ('近走実績指数' if d.get('presentation',{}).get('detailed_rank_labels') else '比較指数')
                 rank_label=str(h['rank'])+'位' if h['rank'] is not None else '取消' if h['status_at_snapshot']=='withdrawn' else '順位保留'
                 if d.get('presentation',{}).get('detailed_rank_labels'):
-                    rank_label='総合'+rank_label+(' / 指数未算出' if authority=='nar' and h['score'] is None else ' / 指数'+(str(h['model_rank'])+'位' if h.get('model_rank') else '保留'))
+                    rank_label='総合'+('暫定' if authority=='nar' and '暫定' in h['mark'] else '')+rank_label+(' / 指数未算出' if authority=='nar' and h['score'] is None else ' / 指数'+(str(h['model_rank'])+'位' if h.get('model_rank') else '保留'))
                 history=h.get('history_audit');history_html=''
                 if history:
                     history_html='<details><summary>公式掲載戦歴の確認範囲</summary><p>'+E(history.get('summary',history.get('scope','確認範囲は原文を参照')))+'</p><a href="'+E(history['source']['url'])+'">' +authority_label+'公式掲載履歴</a><p>確認 '+E(history['source']['retrieved_at'])+'。掲載範囲外の経験は断定しません。</p></details>'

@@ -1,6 +1,6 @@
 """NAR data adapter for the same compact renderer and CSS used by JRA."""
 from copy import deepcopy
-from nar_display import ordinal_score, adapt_result
+from nar_display import ordinal_score, adapt_result, PAYOUT_ALIASES
 
 def render(data, json_name, results=None):
     from render_jra_compact import render as render_compact
@@ -11,6 +11,7 @@ def render(data, json_name, results=None):
     for race in d['races']:
         race.setdefault('grade', '')
         for plan in race['bet_plans']:
+            plan['type']=PAYOUT_ALIASES.get(plan['type'],plan['type'])
             plan['all_points_price_condition_at_snapshot'] = all(
                 t.get('price_condition_at_snapshot') is True for t in plan['tickets'])
         for horse in race['horses']:

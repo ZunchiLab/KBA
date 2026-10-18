@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T22:24:01+09:00",
+  "generated_at": "2026-10-18T22:34:11+09:00",
   "reports": [
     {
       "file": "report_20261018_jra_predictions_v2.html",
@@ -471,6 +471,26 @@
       "has_results": true,
       "document_type": "prediction",
       "reviewed_at": null
+    },
+    {
+      "file": "report_20261018_nar_review_v2.html",
+      "href": "predictions/report_20261018_nar_review_v2.html",
+      "date": "2026-10-18",
+      "category": "review",
+      "venue": "高知・佐賀",
+      "title": "2026/10/18 高知・佐賀の反省",
+      "heading": "2026/10/18 高知・佐賀の反省",
+      "note": "開催後の振り返り · 全頭の印と着順 · 買い方と購入記録の補助 · 結果取得対応",
+      "version": 2,
+      "group": "report_20261018_nar_review",
+      "fixed_at": null,
+      "scope": null,
+      "phase": "post_event_review",
+      "superseded": false,
+      "horse_names": [],
+      "has_results": true,
+      "document_type": "review",
+      "reviewed_at": "2026-10-18T22:21:25+09:00"
     },
     {
       "file": "report_20261018_nar_predictions_v1.html",
@@ -1003,7 +1023,7 @@
       "fixed_at": null,
       "scope": null,
       "phase": "post_event_review",
-      "superseded": false,
+      "superseded": true,
       "horse_names": [],
       "has_results": true,
       "document_type": "review",
