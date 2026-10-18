@@ -1,0 +1,265 @@
+{
+  "checked_at": "2026-10-18T17:24:44+09:00",
+  "passed": true,
+  "fixed_forecast_sha256": "c62a9d30f798a5d2ccf45ecaf675fe14a8f2f6fdeca6115bee15cfd5a327f8ab",
+  "original_forecasts_unchanged": true,
+  "forecast_races": 36,
+  "forecast_horses": 450,
+  "static_tables_and_raw_payouts_checked": [
+    {
+      "venue": "kyoto",
+      "race": 1,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:54+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 2,
+      "payout_types": 7,
+      "payout_lines": 10,
+      "source_checked_at": "2026-10-18T17:10:55+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 3,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:55+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 4,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:55+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 5,
+      "payout_types": 7,
+      "payout_lines": 10,
+      "source_checked_at": "2026-10-18T17:10:56+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 6,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:56+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 7,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:56+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 8,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:57+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 9,
+      "payout_types": 7,
+      "payout_lines": 11,
+      "source_checked_at": "2026-10-18T17:10:57+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 10,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:57+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 11,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:58+09:00"
+    },
+    {
+      "venue": "kyoto",
+      "race": 12,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:58+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 1,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:58+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 2,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:58+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 3,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:59+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 4,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:59+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 5,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:59+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 6,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:00+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 7,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:00+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 8,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:00+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 9,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:01+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 10,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:01+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 11,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:01+09:00"
+    },
+    {
+      "venue": "niigata",
+      "race": 12,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:11:02+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 1,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:50+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 2,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:50+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 3,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:51+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 4,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:51+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 5,
+      "payout_types": 7,
+      "payout_lines": 11,
+      "source_checked_at": "2026-10-18T17:10:52+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 6,
+      "payout_types": 7,
+      "payout_lines": 11,
+      "source_checked_at": "2026-10-18T17:10:52+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 7,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:52+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 8,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:53+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 9,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:53+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 10,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:53+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 11,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:54+09:00"
+    },
+    {
+      "venue": "tokyo",
+      "race": 12,
+      "payout_types": 8,
+      "payout_lines": 12,
+      "source_checked_at": "2026-10-18T17:10:54+09:00"
+    }
+  ],
+  "python_tests": 30,
+  "javascript_cases": 32,
+  "scope": "全8式別の静的表示・公式原文の番号と金額・順序・重複払戻保持・原本不変。実購入記録や返還精算とは区別。"
+}

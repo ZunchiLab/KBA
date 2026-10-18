@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-18T17:34:20+09:00",
+  "passed": true,
+  "review_url": "https://zunchilab.github.io/KBA/predictions/report_20261018_jra_review_v1.html",
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "page_scroll_width": 375
+  },
+  "races_in_dom": 36,
+  "horses_checked_by_independent_file_audit": 450,
+  "observed_operations": [
+    "東京・京都・新潟の競馬場切替とレース番号ジャンプ",
+    "京都の追加候補フィルターは7/9/12Rの3R、本線不的中は5R",
+    "ルトゥール検索は京都9Rの1Rと除外表示を返す",
+    "該当なし検索は0Rと空結果案内、検索解除・競馬場切替後は新潟全12Rを対象に1Rを表示",
+    "京都11Rの折畳みから全8式別の馬番・枠番・払戻金を確認",
+    "共通22R・各5500円の総合5520円／朝人気8860円／指数2170円を確認",
+    "予想ページの京都11Rは中止9番が本線対象外であり、12点1200円→3520円を表示",
+    "予想ページで馬単8→1、三連単8→1→13、公式確認17:10:58JSTを確認"
+  ],
+  "review_warning_or_error_logs": [],
+  "forecast_warning_or_error_logs": [],
+  "viewport_override_reset": true,
+  "review_tab_retained": true,
+  "limitation": "ブラウザー実操作と画面の確認。実購入・精度の将来改善を検証したものではない。"
+}
