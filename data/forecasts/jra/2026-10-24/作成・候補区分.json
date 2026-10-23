@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-24",
+  "fixed_at": "2026-10-24T07:49:27+09:00",
+  "public_forecast_sha256": "a1d7df81a465aa014ebb1420cf7afe3916b1dd589c0ac5652f59993e99273532",
+  "races": 36,
+  "horses": 468,
+  "declared_runners": 467,
+  "withdrawn": [
+    {
+      "key": "N4",
+      "number": 4,
+      "name": "ソロンゴ"
+    }
+  ],
+  "candidates": 28,
+  "priorities": {
+    "優先": {
+      "races": 14,
+      "cost": 4400,
+      "eligible_races": 10,
+      "eligible_cost": 3600
+    },
+    "追加": {
+      "races": 14,
+      "cost": 4400,
+      "eligible_races": 13,
+      "eligible_cost": 4100
+    }
+  },
+  "eligible_races": 23,
+  "all_candidates_yen": 8800,
+  "price_eligible_yen": 7700,
+  "baseline_plans": 174,
+  "listed_history_fetched": 374,
+  "listed_history_parsed": 373,
+  "unresolved": [
+    {
+      "key": "N2",
+      "number": 12,
+      "name": "スゴイジャン",
+      "status": "race_table_missing"
+    }
+  ],
+  "older_supplements": 332,
+  "source_count": 789,
+  "actual_purchase": null,
+  "results_initialized": true,
+  "unknown_future_accuracy": true
+}

@@ -13,10 +13,10 @@ on:
       - assets/js/jra-day-report.js
       - data/results/jra-targets.json
   workflow_dispatch:
-  # October 18 meeting; an active job polls every two minutes.
+  # October 24 meeting; an active job polls every two minutes.
   # Hourly backups resume after a hosted runner's six-hour lifetime.
   schedule:
-    - cron: '7 0-8 18 10 *'
+    - cron: '7 0-8 24 10 *'
 
 permissions:
   contents: write
