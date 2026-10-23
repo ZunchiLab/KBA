@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-24T08:01:08+09:00",
+  "passed": true,
+  "url": "https://zunchilab.github.io/KBA/predictions/report_20261024_jra_predictions_v1.html",
+  "browser": "ChatGPT in-app browser",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "observed_document_scroll_width": 375,
+  "horizontal_page_overflow": false,
+  "race_articles": 36,
+  "horse_details": 468,
+  "initial_open_details": 0,
+  "verified_actions": [
+    "東京・京都・新潟タブの切替と会場付きURL",
+    "京都11Rジャンプ、三連複12点1200円例・全点下限12倍・全12点の価格表",
+    "東京10Rジャンプ、馬連5点500円例・全点下限5倍・全5点達成",
+    "本線候補フィルターの選択と解除",
+    "東京4Rの見送り・市場参考見出し・市場参考順位を表示",
+    "ソロンゴ検索で新潟4Rに移動し取消行を保持",
+    "該当なし検索の案内、解除後の表示復帰",
+    "新潟1Rの共通軸なしワイドBOX3点300円例・全点下限3倍",
+    "購入候補28Rと価格達成23R7700円例を別表示",
+    "結果更新ボタンでGitHub最新コミットの3場0R確定・保存07:55:09JST、画面確認07:59:54JSTを表示"
+  ],
+  "browser_errors_or_warnings": [],
+  "viewport_reset_after_check": true,
+  "tab_retained": true,
+  "limitation": "実スマホ幅で上記操作を確認。発走前なので当日確定結果・払戻の取得成功、全機種、予測精度の改善は未確認。実購入未記録。"
+}

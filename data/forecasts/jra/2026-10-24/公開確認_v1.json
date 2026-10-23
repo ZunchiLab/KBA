@@ -1,0 +1,134 @@
+{
+  "checked_at": "2026-10-24T07:58:29+09:00",
+  "passed": true,
+  "publication_commit": "8d581ea247108aa19b8a23241ffe82e4fd8ef8e1",
+  "files": [
+    {
+      "path": "predictions/report_20261024_jra_predictions_v1.html",
+      "status": 200,
+      "bytes": 3999800,
+      "sha256": "e3171f0002f8764a900d6130aa3c11730812a93bc273bd935d46c8262ed0ce4d"
+    },
+    {
+      "path": "predictions/report_20261024_jra_predictions_v1.json",
+      "status": 200,
+      "bytes": 17137715,
+      "sha256": "a1d7df81a465aa014ebb1420cf7afe3916b1dd589c0ac5652f59993e99273532"
+    },
+    {
+      "path": "predictions/report_20261024_jra_histories_v1.json",
+      "status": 200,
+      "bytes": 4212249,
+      "sha256": "68ee3f4275fe29ff1dfe786a48c15f0ad3d0c716a934bf193c872f271104eba0"
+    },
+    {
+      "path": "predictions/archive/report_20261024_jra_predictions_v1.before-results.html",
+      "status": 200,
+      "bytes": 3993212,
+      "sha256": "f7dde6f6392e53d5d0f2034d86dcc0306750216464059e9a0502a372c1aaf386"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 218708,
+      "sha256": "2c588c30cee085364e06b4512c01fc6c1ad31c4313505c930cb90725ef9f3f89"
+    },
+    {
+      "path": "data/catalog.json",
+      "status": 200,
+      "bytes": 293793,
+      "sha256": "e5a69f827ae6ec71832e9dc686eb946654c637292d7702817563de993675b83e"
+    },
+    {
+      "path": "docs/jra-day-20261024.md",
+      "status": 200,
+      "bytes": 3600,
+      "sha256": "1fea66757b2df041002e599cb45be258647923aff24531fee7b3a505bf549eb1"
+    },
+    {
+      "path": "data/results/jra/2026-10-24/v1/tokyo.json",
+      "status": 200,
+      "bytes": 5651,
+      "sha256": "d41b71bd0091145503bef5640ac08e4af062b1be9a89cdbf3acdfe7a02d11fa2"
+    },
+    {
+      "path": "data/results/jra/2026-10-24/v1/kyoto.json",
+      "status": 200,
+      "bytes": 5651,
+      "sha256": "3f819baa7615c14945fde5ab08ae33a51ee7b51aae59a770addd4f24c6c9ea9f"
+    },
+    {
+      "path": "data/results/jra/2026-10-24/v1/niigata.json",
+      "status": 200,
+      "bytes": 5677,
+      "sha256": "e8c50ded374d1d64b6c7efc59e19ffef8dc083e6b8d1db17d22a29478e45e6f9"
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-24/作成・候補区分.json",
+      "status": 200,
+      "bytes": 1069,
+      "sha256": "d7640b090d3d19fd7756393a69acbfb25ee5fa489ec64bc7719e95886c6c85ce"
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-24/構成・価格・全頭照合_v1.json",
+      "status": 200,
+      "bytes": 7841,
+      "sha256": "6fe9efade5d458a603a09b1406697985ea20a93370ebd7dab0e00cdd1c531c4a"
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-24/公開前strict検査_v1.json",
+      "status": 200,
+      "bytes": 423,
+      "sha256": "e797adb86f2c2690c3588202c1bbcb0f51a0033a31d578b994929d0ef852f2ce"
+    }
+  ],
+  "public_forecast_sha256": "a1d7df81a465aa014ebb1420cf7afe3916b1dd589c0ac5652f59993e99273532",
+  "local_originals_unchanged": true,
+  "races": 36,
+  "horses": 468,
+  "declared_runners": 467,
+  "pages": {
+    "url": "https://github.com/ZunchiLab/KBA/actions/runs/40036667716",
+    "conclusion": "success"
+  },
+  "result_worker": {
+    "url": "https://github.com/ZunchiLab/KBA/actions/runs/40036667952",
+    "status": "in_progress",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@v6",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check the configured meeting window",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install the official-page parser dependency",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Keep official JRA results current until completion or deadline",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "name": "Post Run actions/checkout@v6",
+        "status": "pending",
+        "conclusion": null
+      }
+    ],
+    "observed_before_first_race": true,
+    "official_confirmed_races": 0
+  },
+  "actual_purchase": null,
+  "limitation": "配信一致・発走前データ・クラウド結果取得ステップの実行開始を確認。当日確定結果の取得成功や将来の継続稼働は未確認。スマホ実操作は別記録。"
+}
