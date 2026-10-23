@@ -90,7 +90,9 @@ def render(d,json_name,results):
                 secondary.append(f'<details class="plan-controls"><summary>仮プランを変更</summary><fieldset class="plan-choice"><legend>費用例の選択・購入ではありません</legend><label><input type="radio" name="{uid}" value="skip" data-cost="0" {"checked" if not default_main else ""}>見送り</label>')
                 for p in r['bet_plans']:secondary.append(f'<label><input type="radio" name="{uid}" value="{p["plan_id"]}" data-cost="{p.get("price_eligible_example_yen",p["maximum_example_yen"]) if price_defaults and p in default_main else p["maximum_example_yen"]}" {"checked" if p in default_main else ""}>{E(p["type"])} {p["maximum_example_yen"]:,}円例</label>')
                 secondary.append('</fieldset></details>')
-            parts.append('<div class="row horse-toolbar"><h3>全頭の総合印・近走指数</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>指数</span><span>着順</span></div><div class="all-horses">')
+            market_reference=authority=='jra' and all(h.get('score_method')=='market_reference' for h in r['horses'])
+            horse_heading='全頭の市場参考（能力指数ではありません）' if market_reference else '全頭の総合印・近走指数'
+            parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
             for h in sorted(r['horses'],key=lambda h:h['rank'] or 999):
                 score=h['score'] if h['score'] is not None else '未算出' if authority=='nar' else '保留';mark=h['mark'].replace('参考','').replace('暫定','');f=finish(res,h)
                 if f in ['保存時は発走前','未確定','全着順待ち']:f='—'
@@ -98,7 +100,7 @@ def render(d,json_name,results):
                 ref_label='能力指数' if authority=='nar' else '市場参考' if h['score_method']=='market_reference' else '暫定比較' if r['surface']=='hurdle' else ('近走実績指数' if d.get('presentation',{}).get('detailed_rank_labels') else '比較指数')
                 rank_label=str(h['rank'])+'位' if h['rank'] is not None else '取消' if h['status_at_snapshot']=='withdrawn' else '順位保留'
                 if d.get('presentation',{}).get('detailed_rank_labels'):
-                    rank_label='総合'+('暫定' if authority=='nar' and '暫定' in h['mark'] else '')+rank_label+(' / 指数未算出' if authority=='nar' and h['score'] is None else ' / 指数'+(str(h['model_rank'])+'位' if h.get('model_rank') else '保留'))
+                    rank_label=('市場参考'+rank_label if market_reference else '総合'+('暫定' if '暫定' in h['mark'] or r['surface']=='hurdle' else '')+rank_label+(' / 指数未算出' if authority=='nar' and h['score'] is None else ' / 指数'+(str(h['model_rank'])+'位' if h.get('model_rank') else '保留')))
                 history=h.get('history_audit');history_html=''
                 if history:
                     history_html='<details><summary>公式掲載戦歴の確認範囲</summary><p>'+E(history.get('summary',history.get('scope','確認範囲は原文を参照')))+'</p><a href="'+E(history['source']['url'])+'">' +authority_label+'公式掲載履歴</a><p>確認 '+E(history['source']['retrieved_at'])+'。掲載範囲外の経験は断定しません。</p></details>'
