@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-24T20:56:47+09:00",
+  "passed": true,
+  "review_url": "https://zunchilab.github.io/KBA/predictions/report_20261024_jra_review_v2.html",
+  "review_version": "v2",
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "page_scroll_width": 375
+  },
+  "races_in_dom": 36,
+  "horses_in_dom": 468,
+  "official_payout_rows_in_dom": 288,
+  "observed_operations": [
+    "東京・京都・新潟の競馬場切替、京都11R・新潟1Rなどのレース番号ジャンプ",
+    "京都の追加候補フィルターは6/7/8/9/12Rの5R、不的中フィルターは6/7/8/10/11Rの5R",
+    "リーチグローリー検索は京都7Rの1Rと除外表示、該当なしは0Rと空結果案内、解除後は全12Rへ復帰",
+    "東京4Rの新馬は能力指数ではなく市場参考値、ソロンゴ検索は新潟4Rの取消・順位対象外を表示",
+    "京都11Rの全8式別払戻を展開。単勝12と640円を左右に分離、馬連11−12は970円、馬単12→11は1980円、三連単12→11→15は19410円",
+    "出典SHAの長文を展開してもページ幅375、overflow-wrap:anywhereを確認",
+    "新潟1Rの本線BOXは共通軸なし、3点300円→390円、各点の朝価格・下限3.0倍・払戻と返還を表示",
+    "見出しは23R7的中、7700円→払戻3370円＋返還100円、差引−4230円、45.06%と一致"
+  ],
+  "warning_or_error_console_logs": [],
+  "viewport_override_reset": true,
+  "review_tab_retained": true,
+  "limitation": "実画面と操作の確認。実購入・未知開催の精度改善を検証したものではない。v1の払戻番号と金額が続く表示をv2で修正し、v1の公開内容は保持。"
+}
