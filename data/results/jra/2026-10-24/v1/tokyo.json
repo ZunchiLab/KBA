@@ -9,8 +9,8 @@
     "sha256": "a1d7df81a465aa014ebb1420cf7afe3916b1dd589c0ac5652f59993e99273532",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-24T16:32:57+09:00",
-  "last_poll_at": "2026-10-24T16:32:57+09:00",
+  "updated_at": "2026-10-24T16:39:23+09:00",
+  "last_poll_at": "2026-10-24T16:39:23+09:00",
   "published_at": null,
   "races": [
     {
@@ -3490,20 +3490,217 @@
       "race_uid": "jra-2026-10-24-tokyo-r12",
       "race_no": 12,
       "start_at": "2026-10-24T16:30:00+09:00",
-      "status": "pending",
+      "status": "partial",
       "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604081220261024/9C"
+        },
+        "retrieved_at": "2026-10-24T16:39:26+09:00",
+        "raw_sha256": "e187ffbfa235915b56c6652952729b08235ac5282e1f98b725f5196ec9e47446",
+        "raw_file": "data/results/sources/jra/2026-10-24/tokyo/e187ffbfa235915b56c6652952729b08235ac5282e1f98b725f5196ec9e47446.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-10-24T16:39:26+09:00",
       "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "rows": [
+        {
+          "number": 4,
+          "name": "トヨサカエ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:24.0",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "トラヴェリンバンド",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "",
+          "margin": "３",
+          "last_3f": "",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "レーティッシュ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "",
+          "margin": "２",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "マサノユニコーン",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 11,
+          "name": "メッエフアパラ",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "11",
+          "final_win_odds": null
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 250,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 120,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            9
+          ],
+          "yen_per_100": 180,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 160,
+          "popularity": null
+        },
+        {
+          "kind": "bracket_quinella",
+          "number_type": "bracket",
+          "numbers": [
+            4,
+            7
+          ],
+          "yen_per_100": 470,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            9
+          ],
+          "yen_per_100": 280,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            4
+          ],
+          "yen_per_100": 270,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            9
+          ],
+          "yen_per_100": 570,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            9
+          ],
+          "yen_per_100": 580,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            9
+          ],
+          "yen_per_100": 1060,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            4,
+            9
+          ],
+          "yen_per_100": 920,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            9,
+            3
+          ],
+          "yen_per_100": 4310,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "confirmed",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
-      "refresh_error": {
-        "at": "2026-10-24T16:32:57+09:00",
-        "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-      }
+      "refund_status": "no_runner_refund_indication",
+      "refresh_error": null
     }
   ]
 }
