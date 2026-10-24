@@ -9,8 +9,8 @@
     "sha256": "a1d7df81a465aa014ebb1420cf7afe3916b1dd589c0ac5652f59993e99273532",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-24T11:45:55+09:00",
-  "last_poll_at": "2026-10-24T11:45:55+09:00",
+  "updated_at": "2026-10-24T11:48:01+09:00",
+  "last_poll_at": "2026-10-24T11:48:01+09:00",
   "published_at": null,
   "races": [
     {
@@ -838,20 +838,217 @@
       "race_uid": "jra-2026-10-24-tokyo-r4",
       "race_no": 4,
       "start_at": "2026-10-24T11:35:00+09:00",
-      "status": "pending",
+      "status": "partial",
       "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202604080420261024/B4"
+        },
+        "retrieved_at": "2026-10-24T11:48:03+09:00",
+        "raw_sha256": "f579710a7d0d58efa5b3c4baf48ac5f200805b76ebb5ee7ce5c0c065b77822c7",
+        "raw_file": "data/results/sources/jra/2026-10-24/tokyo/f579710a7d0d58efa5b3c4baf48ac5f200805b76ebb5ee7ce5c0c065b77822c7.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-10-24T11:48:03+09:00",
       "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "rows": [
+        {
+          "number": 12,
+          "name": "ヘイヴァイタヒチ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:39.7",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "スペシャルブレンド",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "",
+          "margin": "３ 1/2",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 15,
+          "name": "ナックドリーム",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "",
+          "margin": "２",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "バーンズナイト",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "",
+          "margin": "２ 1/2",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 11,
+          "name": "コスモスピログラフ",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "12",
+          "final_win_odds": null
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 350,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            12
+          ],
+          "yen_per_100": 140,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            10
+          ],
+          "yen_per_100": 110,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            15
+          ],
+          "yen_per_100": 440,
+          "popularity": null
+        },
+        {
+          "kind": "bracket_quinella",
+          "number_type": "bracket",
+          "numbers": [
+            5,
+            6
+          ],
+          "yen_per_100": 270,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            10,
+            12
+          ],
+          "yen_per_100": 190,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            12,
+            15
+          ],
+          "yen_per_100": 1060,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            10,
+            15
+          ],
+          "yen_per_100": 870,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            10,
+            12
+          ],
+          "yen_per_100": 290,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            12,
+            10
+          ],
+          "yen_per_100": 710,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            10,
+            12,
+            15
+          ],
+          "yen_per_100": 1630,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            12,
+            10,
+            15
+          ],
+          "yen_per_100": 6570,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "confirmed",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
-      "refresh_error": {
-        "at": "2026-10-24T11:45:55+09:00",
-        "reason": "Result date mismatch"
-      }
+      "refund_status": "no_runner_refund_indication",
+      "refresh_error": null
     },
     {
       "race_uid": "jra-2026-10-24-tokyo-r5",
