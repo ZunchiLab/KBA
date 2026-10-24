@@ -9,8 +9,8 @@
     "sha256": "a1d7df81a465aa014ebb1420cf7afe3916b1dd589c0ac5652f59993e99273532",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-24T10:46:14+09:00",
-  "last_poll_at": "2026-10-24T10:46:14+09:00",
+  "updated_at": "2026-10-24T10:48:20+09:00",
+  "last_poll_at": "2026-10-24T10:48:20+09:00",
   "published_at": null,
   "races": [
     {
@@ -341,8 +341,8 @@
       "race_uid": "jra-2026-10-24-tokyo-r2",
       "race_no": 2,
       "start_at": "2026-10-24T10:35:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -350,13 +350,13 @@
         "request_fields": {
           "cname": "pw01sde0105202604080220261024/4A"
         },
-        "retrieved_at": "2026-10-24T10:46:18+09:00",
-        "raw_sha256": "5498c615c545c36fe4ae2b7760c42d3512a9dba32fba6e7f78392e71ae3ce34b",
-        "raw_file": "data/results/sources/jra/2026-10-24/tokyo/5498c615c545c36fe4ae2b7760c42d3512a9dba32fba6e7f78392e71ae3ce34b.raw.html",
+        "retrieved_at": "2026-10-24T10:48:23+09:00",
+        "raw_sha256": "a949b779dd6fe201b09731280a7fa0d4cd7a364557c419645bd1d3cc8b4c3b44",
+        "raw_file": "data/results/sources/jra/2026-10-24/tokyo/a949b779dd6fe201b09731280a7fa0d4cd7a364557c419645bd1d3cc8b4c3b44.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-24T10:46:18+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-24T10:48:23+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 4,
@@ -366,7 +366,7 @@
           "official_status_text": "1",
           "time": "1:48.4",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "34.8",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -376,9 +376,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:48.6",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "35.2",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -388,9 +388,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:48.6",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "34.9",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -400,9 +400,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:48.8",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "34.9",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -412,10 +412,34 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:49.4",
           "margin": "３ 1/2",
-          "last_3f": "",
+          "last_3f": "35.5",
           "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ミツカネリゲル",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:49.6",
+          "margin": "１ 1/4",
+          "last_3f": "35.6",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "ビタークレス",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:53.2",
+          "margin": "大差",
+          "last_3f": "38.9",
+          "final_popularity": "7",
           "final_win_odds": null
         }
       ],
