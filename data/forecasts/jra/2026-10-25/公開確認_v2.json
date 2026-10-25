@@ -1,0 +1,139 @@
+{
+  "checked_at": "2026-10-25T09:45:25+09:00",
+  "passed": true,
+  "published_commit": "7d34e5abf4f55a5157025a614e14157846018d29",
+  "files": [
+    {
+      "path": "predictions/report_20261025_jra_predictions_v2.json",
+      "bytes": 17784063,
+      "sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+      "status": 200
+    },
+    {
+      "path": "predictions/report_20261025_jra_histories_v1.json",
+      "bytes": 4195204,
+      "sha256": "fb2ad8bd4d80457e2e967a1300362ea1301404141bab5139037a0f92d44559ea",
+      "status": 200
+    },
+    {
+      "path": "predictions/archive/report_20261025_jra_predictions_v2.before-results.html",
+      "bytes": 4062409,
+      "sha256": "0c8181a860c121980cae925c56f85f1bfdf329d2145e151891247c3715b013fb",
+      "status": 200
+    },
+    {
+      "path": "docs/jra-day-20261025.md",
+      "bytes": 3416,
+      "sha256": "ce67f9f49da23d8697639f57af872b65c4fb609307bd954076e77a1cc55e7897",
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "bytes": 252464,
+      "sha256": "66f0edb7e844bc9f85c5046be94395def3b3c32e43d6fe19a01121737d01c6a1",
+      "status": 200
+    },
+    {
+      "path": "data/catalog.json",
+      "bytes": 342906,
+      "sha256": "55f050b1930c003d3381b37e47dee3a5183da194c21482f4528d226740a1b45d",
+      "status": 200
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-25/作成・候補区分.json",
+      "bytes": 1629,
+      "sha256": "063ae51faf832b0377ace63747b9b1287c93bb9ecf72edd6b312ec49fecf2b2c",
+      "status": 200
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-25/公開前strict検査_v1.json",
+      "bytes": 423,
+      "sha256": "e8fdf07779c912e6df1428a55322e3c98905eb16fca84643eb37c0d193cc9fee",
+      "status": 200
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-25/公開前strict検査_v2.json",
+      "bytes": 327,
+      "sha256": "480cffa714552c7f9eef5fa5f5fb8d6feb1fc32564b0b4ad834ac9a6cdf9ec9c",
+      "status": 200
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-25/構成・価格・全頭照合_v1.json",
+      "bytes": 8205,
+      "sha256": "8878b8c0c5af5fc387497885a24694aaffd47f23f6ebddc9b22b52fd92fe1e4e",
+      "status": 200
+    },
+    {
+      "path": "data/forecasts/jra/2026-10-25/構成・価格・全頭照合_v2.json",
+      "bytes": 8205,
+      "sha256": "8878b8c0c5af5fc387497885a24694aaffd47f23f6ebddc9b22b52fd92fe1e4e",
+      "status": 200
+    }
+  ],
+  "forecast_html_races": 36,
+  "forecast_html_horses": 467,
+  "public_forecast_sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+  "forecast_unchanged": true,
+  "results": {
+    "tokyo": {
+      "last_poll_at": "2026-10-25T09:42:01+09:00",
+      "confirmed": 0,
+      "statuses": {
+        "1": "not_started",
+        "2": "not_started",
+        "3": "not_started",
+        "4": "not_started",
+        "5": "not_started",
+        "6": "not_started",
+        "7": "not_started",
+        "8": "not_started",
+        "9": "not_started",
+        "10": "not_started",
+        "11": "not_started",
+        "12": "not_started"
+      }
+    },
+    "kyoto": {
+      "last_poll_at": "2026-10-25T09:42:01+09:00",
+      "confirmed": 0,
+      "statuses": {
+        "1": "not_started",
+        "2": "not_started",
+        "3": "not_started",
+        "4": "not_started",
+        "5": "not_started",
+        "6": "not_started",
+        "7": "not_started",
+        "8": "not_started",
+        "9": "not_started",
+        "10": "not_started",
+        "11": "not_started",
+        "12": "not_started"
+      }
+    },
+    "niigata": {
+      "last_poll_at": "2026-10-25T09:42:01+09:00",
+      "confirmed": 0,
+      "statuses": {
+        "1": "pending",
+        "2": "not_started",
+        "3": "not_started",
+        "4": "not_started",
+        "5": "not_started",
+        "6": "not_started",
+        "7": "not_started",
+        "8": "not_started",
+        "9": "not_started",
+        "10": "not_started",
+        "11": "not_started",
+        "12": "not_started"
+      }
+    }
+  },
+  "pages_run": "https://github.com/ZunchiLab/KBA/actions/runs/40147732214",
+  "pages_conclusion": "success",
+  "result_worker_run": "https://github.com/ZunchiLab/KBA/actions/runs/40147732164",
+  "result_collection_step": "in_progress",
+  "actual_purchase": null,
+  "limitation": "固定資料は公開コミットと照合。表示HTML・結果は継続更新するため構造と固定SHAへの対応を検査。ジョブ開始は後続の配信継続や全R結果の取得成功を保証しない。スマホは別記録。"
+}

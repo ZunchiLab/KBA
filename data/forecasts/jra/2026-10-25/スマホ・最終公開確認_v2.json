@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-25T09:53:23+09:00",
+  "passed": true,
+  "url": "https://zunchilab.github.io/KBA/predictions/report_20261025_jra_predictions_v2.html",
+  "forecast_sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+  "forecast_unchanged_after_results_connection": true,
+  "initial_publication": "7d34e5abf4f55a5157025a614e14157846018d29",
+  "verified_result_display_commit": "99f970fe25bfae9858cfa640011c8cb87f8191d3",
+  "pages_run": "https://github.com/ZunchiLab/KBA/actions/runs/40148275101",
+  "pages_conclusion": "success",
+  "result_worker_run": "https://github.com/ZunchiLab/KBA/actions/runs/40147732164",
+  "result_worker_status": "in_progress",
+  "browser_observed_at_jst": "2026-10-25T09:52:04+09:00",
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "document_scroll_width": 375,
+    "races": 36,
+    "horses": 467,
+    "open_horse_details_initially": 0,
+    "horizontal_overflow": false
+  },
+  "ui_checks": [
+    "東京・京都・新潟の会場タブ",
+    "レース番号ジャンプ",
+    "馬名検索と取消馬表示",
+    "本線候補フィルター",
+    "発走前フィルターで新潟1Rを除外",
+    "菊花賞の三連複12点・保存価格全点・費用",
+    "仮予算7100円と未購入の明示",
+    "結果更新による3会場データの取得と保存時刻",
+    "保存更新遅延の注意表示",
+    "検証後に検索・フィルターと画面幅を復元"
+  ],
+  "result_button_visible_message": "GitHub最新コミット / 東京: 0R確定 / 保存 09:50:40 JST / 京都: 0R確定 / 保存 09:42:01 JST / 新潟: 0R確定 / 保存 09:42:01 JST / 画面確認 9:52:04 JST",
+  "warning_observed": "新潟は保存更新から6分超。収集・公開が停止している可能性があります。",
+  "console_warnings_or_errors": [],
+  "screenshot": {
+    "filename": "スマホ公開確認_v2.png",
+    "sha256": "8584b46735b40df324d9897bd9a986deca43f7e4d6a1f0d9459f2e61e101506d",
+    "stored_in_original_output": true
+  },
+  "purchase_record": null,
+  "limitations": [
+    "結果の後続取得・全Rの配信継続は未確認。0R確定を結果照合成功としない。",
+    "スマホ検証は390×844のブラウザー表示。実機全機種の検証ではない。",
+    "形式・価格原文・公開確認は的中率や回収率の改善を保証しない。",
+    "最初の新潟1R発走より公開は後。予想固定と本文訂正は発走前、同Rの見送りは発走前にチャット通知済み。"
+  ]
+}
