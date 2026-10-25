@@ -9,8 +9,8 @@
     "sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-25T10:37:48+09:00",
-  "last_poll_at": "2026-10-25T10:37:48+09:00",
+  "updated_at": "2026-10-25T10:39:54+09:00",
+  "last_poll_at": "2026-10-25T10:39:54+09:00",
   "published_at": null,
   "races": [
     {
@@ -259,8 +259,8 @@
       "race_uid": "jra-2026-10-25-kyoto-r2",
       "race_no": 2,
       "start_at": "2026-10-25T10:30:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -268,13 +268,13 @@
         "request_fields": {
           "cname": "pw01sde0108202604090220261025/58"
         },
-        "retrieved_at": "2026-10-25T10:37:52+09:00",
-        "raw_sha256": "62260bd734d2fd8eaa1891369777d5a86543ea5e80f06be9adb88e1a62e76026",
-        "raw_file": "data/results/sources/jra/2026-10-25/kyoto/62260bd734d2fd8eaa1891369777d5a86543ea5e80f06be9adb88e1a62e76026.raw.html",
+        "retrieved_at": "2026-10-25T10:39:57+09:00",
+        "raw_sha256": "fa641b02391bff3bdfd2d4aeb640eb38207132f0edd78c271755d7659d620562",
+        "raw_file": "data/results/sources/jra/2026-10-25/kyoto/fa641b02391bff3bdfd2d4aeb640eb38207132f0edd78c271755d7659d620562.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-25T10:37:52+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-25T10:39:57+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 5,
@@ -294,7 +294,7 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:23.6",
           "margin": "ハナ",
           "last_3f": "",
           "final_popularity": "1",
@@ -306,7 +306,7 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:25.5",
           "margin": "大差",
           "last_3f": "",
           "final_popularity": "8",
@@ -318,7 +318,7 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:25.5",
           "margin": "クビ",
           "last_3f": "",
           "final_popularity": "4",
@@ -330,10 +330,70 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:25.9",
           "margin": "２",
           "last_3f": "",
           "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "タナコクシテンホウ",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:25.9",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "メイショウペルル",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:26.1",
+          "margin": "３／４",
+          "last_3f": "",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "マンノエンプレス",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:26.4",
+          "margin": "２",
+          "last_3f": "",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "メイショウギフト",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:26.7",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "イザベル",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:27.2",
+          "margin": "３",
+          "last_3f": "",
+          "final_popularity": "7",
           "final_win_odds": null
         }
       ],
