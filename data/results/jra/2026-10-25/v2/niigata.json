@@ -9,8 +9,8 @@
     "sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-25T12:02:00+09:00",
-  "last_poll_at": "2026-10-25T12:02:00+09:00",
+  "updated_at": "2026-10-25T12:12:15+09:00",
+  "last_poll_at": "2026-10-25T12:12:15+09:00",
   "published_at": null,
   "races": [
     {
@@ -1299,7 +1299,10 @@
       "payouts_status": {},
       "refunds": [],
       "refund_status": "unconfirmed",
-      "refresh_error": null
+      "refresh_error": {
+        "at": "2026-10-25T12:12:15+09:00",
+        "reason": "HTTP Error 503: Service Unavailable"
+      }
     },
     {
       "race_uid": "jra-2026-10-25-niigata-r6",
