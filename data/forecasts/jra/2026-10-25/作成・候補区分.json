@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "fixed_at": "2026-10-25T09:36:39+09:00",
+  "revision": {
+    "changed_at": "2026-10-25T09:39:22+09:00",
+    "original_selection_fixed_at": "2026-10-25T09:36:39+09:00",
+    "original_version": "v1",
+    "reason": "正式公開前に本文の休養日数を10/25基準の構造値へ整合。根拠走の日付と原文は変更しない。",
+    "changes": [
+      "本文の休養日数表記のみ訂正。印・順位・指数・買い目・保存価格・根拠走・選定時刻は不変。"
+    ],
+    "forecast_values_unchanged": true
+  },
+  "public_forecast_sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+  "races": 36,
+  "horses": 467,
+  "declared_runners": 466,
+  "withdrawn": [
+    {
+      "key": "K3",
+      "number": 5,
+      "name": "シュプレヒコール"
+    }
+  ],
+  "candidates": 29,
+  "priorities": {
+    "優先": {
+      "races": 4,
+      "cost": 1100,
+      "eligible_races": 3,
+      "eligible_cost": 900
+    },
+    "追加": {
+      "races": 25,
+      "cost": 7900,
+      "eligible_races": 18,
+      "eligible_cost": 6200
+    }
+  },
+  "eligible_races": 21,
+  "all_candidates_yen": 9000,
+  "price_eligible_yen": 7100,
+  "baseline_plans": 180,
+  "formation_checks": 270,
+  "ticket_checks": 1731,
+  "listed_history_fetched": 395,
+  "listed_history_parsed": 394,
+  "unresolved": [
+    {
+      "key": "T12",
+      "number": 9,
+      "name": "ハギンス",
+      "status": "race_table_missing"
+    }
+  ],
+  "older_supplements": 316,
+  "source_count": 796,
+  "actual_purchase": null,
+  "results_initialized": true,
+  "unknown_future_accuracy": true
+}
