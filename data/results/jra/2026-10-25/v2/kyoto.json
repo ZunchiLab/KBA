@@ -9,24 +9,250 @@
     "sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-25T10:02:55+09:00",
-  "last_poll_at": "2026-10-25T10:02:55+09:00",
+  "updated_at": "2026-10-25T10:13:09+09:00",
+  "last_poll_at": "2026-10-25T10:13:09+09:00",
   "published_at": null,
   "races": [
     {
       "race_uid": "jra-2026-10-25-kyoto-r1",
       "race_no": 1,
       "start_at": "2026-10-25T10:01:00+09:00",
-      "status": "pending",
-      "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
-      "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "status": "confirmed",
+      "official_confirmed": true,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604090120261025/A3"
+        },
+        "retrieved_at": "2026-10-25T10:13:12+09:00",
+        "raw_sha256": "1a7c4634feecf711e004ac75474fdd7c8133e43081ca9d4aaa2afebd569c9a0b",
+        "raw_file": "data/results/sources/jra/2026-10-25/kyoto/1a7c4634feecf711e004ac75474fdd7c8133e43081ca9d4aaa2afebd569c9a0b.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-10-25T10:13:12+09:00",
+      "rows_complete": true,
+      "rows": [
+        {
+          "number": 1,
+          "name": "ナオミガサイキョウ",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:52.8",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "アップルペアー",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "1:54.2",
+          "margin": "８",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "ミール",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "1:54.5",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "キミチャン",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "1:54.7",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "マリナーヴァレイ",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "1:54.7",
+          "margin": "ハナ",
+          "last_3f": "",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ウインブリーズ",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:55.4",
+          "margin": "４",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "マリアーナ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:55.6",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "オージーブラック",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:55.7",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "8",
+          "final_win_odds": null
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            1
+          ],
+          "yen_per_100": 140,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            1
+          ],
+          "yen_per_100": 110,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            5
+          ],
+          "yen_per_100": 580,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 300,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            1,
+            5
+          ],
+          "yen_per_100": 720,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            1,
+            4
+          ],
+          "yen_per_100": 520,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            5
+          ],
+          "yen_per_100": 3590,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            1,
+            5
+          ],
+          "yen_per_100": 2100,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            1,
+            5
+          ],
+          "yen_per_100": 2350,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            1,
+            4,
+            5
+          ],
+          "yen_per_100": 8520,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            1,
+            5,
+            4
+          ],
+          "yen_per_100": 27870,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "pending",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
+      "refund_status": "no_runner_refund_indication",
       "refresh_error": null
     },
     {
