@@ -9,8 +9,8 @@
     "sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-25T13:32:33+09:00",
-  "last_poll_at": "2026-10-25T13:32:33+09:00",
+  "updated_at": "2026-10-25T13:34:39+09:00",
+  "last_poll_at": "2026-10-25T13:34:39+09:00",
   "published_at": null,
   "races": [
     {
@@ -1689,8 +1689,8 @@
       "race_uid": "jra-2026-10-25-kyoto-r7",
       "race_no": 7,
       "start_at": "2026-10-25T13:20:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -1698,13 +1698,13 @@
         "request_fields": {
           "cname": "pw01sde0108202604090720261025/E1"
         },
-        "retrieved_at": "2026-10-25T13:32:37+09:00",
-        "raw_sha256": "981e7ade8321b04e831b5774939ad7ec3c30e45a7b902d6730a45516e63c8dc7",
-        "raw_file": "data/results/sources/jra/2026-10-25/kyoto/981e7ade8321b04e831b5774939ad7ec3c30e45a7b902d6730a45516e63c8dc7.raw.html",
+        "retrieved_at": "2026-10-25T13:34:42+09:00",
+        "raw_sha256": "bd3949a4f30ffb6771545e4875e31ee848a3c264c8cc22d0e2856b04f9749dda",
+        "raw_file": "data/results/sources/jra/2026-10-25/kyoto/bd3949a4f30ffb6771545e4875e31ee848a3c264c8cc22d0e2856b04f9749dda.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-10-25T13:32:37+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-10-25T13:34:42+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 3,
@@ -1724,7 +1724,7 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:47.0",
           "margin": "クビ",
           "last_3f": "33.6",
           "final_popularity": "3",
@@ -1736,7 +1736,7 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:47.2",
           "margin": "１ 1/2",
           "last_3f": "33.2",
           "final_popularity": "2",
@@ -1748,7 +1748,7 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:47.5",
           "margin": "１ 1/2",
           "last_3f": "33.9",
           "final_popularity": "5",
@@ -1760,10 +1760,58 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:47.7",
           "margin": "１ 1/2",
           "last_3f": "34.0",
           "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "レッドリガーレ",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:47.8",
+          "margin": "３／４",
+          "last_3f": "34.3",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ヴィーナスバブル",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:48.0",
+          "margin": "１ 1/4",
+          "last_3f": "34.3",
+          "final_popularity": "9",
+          "final_win_odds": null
+        },
+        {
+          "number": 9,
+          "name": "ナムラヒナギク",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:48.2",
+          "margin": "１ 1/4",
+          "last_3f": "34.1",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "メイショウショカツ",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:48.2",
+          "margin": "アタマ",
+          "last_3f": "34.3",
+          "final_popularity": "4",
           "final_win_odds": null
         }
       ],
