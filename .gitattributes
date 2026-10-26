@@ -4,3 +4,4 @@ predictions/archive/** -text
 data/reviews/**/morning-odds/** -text
 data/reviews/**/history-raw/** -text
 data/reviews/**/result-raw/** -text
+data/reviews/jra/2026-10-25/pre-race/** -text

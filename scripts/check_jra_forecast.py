@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 from datetime import datetime
 import json,math,re
 from urllib.parse import urlparse
+from jra_mark_policy import audit_race as audit_mark_selection
 
 def audit(data,strict=False):
     findings=[]
@@ -16,6 +17,8 @@ def audit(data,strict=False):
         uid=r['race_uid'];hs={h['number']:h for h in r['horses']};a=r.get('analysis',{});review=a.get('preflight_review',{})
         if uid in seen or len(hs)!=len(r['horses']):add('duplicate_identity',uid,message='レースIDまたは馬番の重複。')
         seen.add(uid)
+        if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-10-26':
+            for code,number,message in audit_mark_selection(r,data['fixed_at']):add(code,uid,number,message)
         if datetime.fromisoformat(data['fixed_at'])>=datetime.fromisoformat(r['start_at']):add('not_pre_race',uid,message='固定時刻が発走前ではない。')
         for h in hs.values():
             used=[p['run_id'] for p in h.get('evaluated_runs',[])]

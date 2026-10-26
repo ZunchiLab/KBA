@@ -28,6 +28,13 @@ class JRAResults(unittest.TestCase):
     def test_wrong_horse_identity_rejected(self):
         f=deepcopy(self.f);f['horses'][0]['name']='他の馬'
         with self.assertRaises(ValueError):parse(self.html,f,self.source)
+    def test_average_one_furlong_is_not_final_three_furlongs(self):
+        soup=BeautifulSoup(self.html,'html.parser');soup.select_one('th.f_time').string='平均1F'
+        r=parse(str(soup),self.f,self.source)
+        self.assertTrue(all(h['last_3f'] is None and 'average_1f' in h for h in r['rows']))
+        original=parse(self.html,self.f,self.source)
+        self.assertEqual(r['payouts'],original['payouts'])
+        self.assertEqual([h['average_1f'] for h in r['rows']],[h['last_3f'] for h in original['rows']])
     def test_incomplete_payouts_not_confirmed(self):
         html=self.html.replace('class="wide"','class="unknown"')
         r=parse(html,self.f,self.source)

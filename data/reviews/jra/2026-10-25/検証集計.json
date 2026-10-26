@@ -1,0 +1,938 @@
+{
+  "date_jst": "2026-10-25",
+  "fixed_at": "2026-10-25T09:36:39+09:00",
+  "selection_fixed_at": "2026-10-25T09:36:39+09:00",
+  "checked_from": "2026-10-26T12:38:50+09:00",
+  "checked_to": "2026-10-26T12:39:01+09:00",
+  "races": 36,
+  "horses": 467,
+  "groups": {
+    "all": {
+      "races": 36,
+      "main_wins": 11,
+      "main_top3": 21,
+      "market_wins": 11,
+      "market_top3": 23,
+      "index_wins": 7,
+      "index_top3": 21
+    },
+    "flat_independent": {
+      "races": 30,
+      "main_wins": 8,
+      "main_top3": 17,
+      "market_wins": 8,
+      "market_top3": 19,
+      "index_wins": 4,
+      "index_top3": 17
+    },
+    "market_reference": {
+      "races": 5,
+      "main_wins": 3,
+      "main_top3": 4,
+      "market_wins": 3,
+      "market_top3": 4,
+      "index_wins": 3,
+      "index_top3": 4
+    },
+    "hurdle": {
+      "races": 1,
+      "main_wins": 0,
+      "main_top3": 0,
+      "market_wins": 0,
+      "market_top3": 0,
+      "index_wins": 0,
+      "index_top3": 0
+    },
+    "main_selected": {
+      "races": 29,
+      "main_wins": 8,
+      "main_top3": 16,
+      "market_wins": 7,
+      "market_top3": 18,
+      "index_wins": 4,
+      "index_top3": 16
+    }
+  },
+  "main_all": {
+    "plans": 29,
+    "races": 29,
+    "points": 90,
+    "hit_plans": 9,
+    "hit_points": 10,
+    "cost": 9000,
+    "payout": 3150,
+    "winning_payout": 3150,
+    "refund": 0,
+    "net": -5850,
+    "roi": 35.0
+  },
+  "main_price_eligible": {
+    "plans": 21,
+    "races": 21,
+    "points": 71,
+    "hit_plans": 4,
+    "hit_points": 4,
+    "cost": 7100,
+    "payout": 1650,
+    "winning_payout": 1650,
+    "refund": 0,
+    "net": -5450,
+    "roi": 23.24
+  },
+  "main_by_kind": {
+    "quinella": {
+      "plans": 5,
+      "races": 5,
+      "points": 25,
+      "hit_plans": 2,
+      "hit_points": 2,
+      "cost": 2500,
+      "payout": 1090,
+      "winning_payout": 1090,
+      "refund": 0,
+      "net": -1410,
+      "roi": 43.6
+    },
+    "trio": {
+      "plans": 1,
+      "races": 1,
+      "points": 12,
+      "hit_plans": 0,
+      "hit_points": 0,
+      "cost": 1200,
+      "payout": 0,
+      "winning_payout": 0,
+      "refund": 0,
+      "net": -1200,
+      "roi": 0.0
+    },
+    "wide": {
+      "plans": 15,
+      "races": 15,
+      "points": 34,
+      "hit_plans": 2,
+      "hit_points": 2,
+      "cost": 3400,
+      "payout": 560,
+      "winning_payout": 560,
+      "refund": 0,
+      "net": -2840,
+      "roi": 16.47
+    }
+  },
+  "same_cost_baselines": {
+    "market": {
+      "all_main": {
+        "plans": 29,
+        "races": 29,
+        "points": 90,
+        "hit_plans": 8,
+        "hit_points": 9,
+        "cost": 9000,
+        "payout": 2410,
+        "winning_payout": 2410,
+        "refund": 0,
+        "net": -6590,
+        "roi": 26.78
+      },
+      "original_eligible_slots": {
+        "plans": 21,
+        "races": 21,
+        "points": 71,
+        "hit_plans": 5,
+        "hit_points": 5,
+        "cost": 7100,
+        "payout": 1850,
+        "winning_payout": 1850,
+        "refund": 0,
+        "net": -5250,
+        "roi": 26.06
+      },
+      "own_price_conditions_applied": false
+    },
+    "index": {
+      "all_main": {
+        "plans": 29,
+        "races": 29,
+        "points": 90,
+        "hit_plans": 10,
+        "hit_points": 11,
+        "cost": 9000,
+        "payout": 4470,
+        "winning_payout": 4470,
+        "refund": 0,
+        "net": -4530,
+        "roi": 49.67
+      },
+      "original_eligible_slots": {
+        "plans": 21,
+        "races": 21,
+        "points": 71,
+        "hit_plans": 4,
+        "hit_points": 4,
+        "cost": 7100,
+        "payout": 1710,
+        "winning_payout": 1710,
+        "refund": 0,
+        "net": -5390,
+        "roi": 24.08
+      },
+      "own_price_conditions_applied": false
+    }
+  },
+  "whole_price_execution_baselines": {
+    "market": {
+      "plans": 21,
+      "races": 21,
+      "points": 71,
+      "hit_plans": 5,
+      "hit_points": 5,
+      "cost": 7100,
+      "payout": 1850,
+      "winning_payout": 1850,
+      "refund": 0,
+      "net": -5250,
+      "roi": 26.06
+    },
+    "index": {
+      "plans": 22,
+      "races": 22,
+      "points": 74,
+      "hit_plans": 5,
+      "hit_points": 5,
+      "cost": 7400,
+      "payout": 2840,
+      "winning_payout": 2840,
+      "refund": 0,
+      "net": -4560,
+      "roi": 38.38
+    }
+  },
+  "paired_both_price_eligible": {
+    "market": {
+      "manual": {
+        "plans": 21,
+        "races": 21,
+        "points": 71,
+        "hit_plans": 4,
+        "hit_points": 4,
+        "cost": 7100,
+        "payout": 1650,
+        "winning_payout": 1650,
+        "refund": 0,
+        "net": -5450,
+        "roi": 23.24
+      },
+      "baseline": {
+        "plans": 21,
+        "races": 21,
+        "points": 71,
+        "hit_plans": 5,
+        "hit_points": 5,
+        "cost": 7100,
+        "payout": 1850,
+        "winning_payout": 1850,
+        "refund": 0,
+        "net": -5250,
+        "roi": 26.06
+      },
+      "race_keys": [
+        "N2",
+        "N3",
+        "N4",
+        "N6",
+        "N7",
+        "N8",
+        "N9",
+        "N10",
+        "N11",
+        "N12",
+        "T1",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "K6",
+        "K7",
+        "K8",
+        "K10",
+        "K11",
+        "K12"
+      ]
+    },
+    "index": {
+      "manual": {
+        "plans": 21,
+        "races": 21,
+        "points": 71,
+        "hit_plans": 4,
+        "hit_points": 4,
+        "cost": 7100,
+        "payout": 1650,
+        "winning_payout": 1650,
+        "refund": 0,
+        "net": -5450,
+        "roi": 23.24
+      },
+      "baseline": {
+        "plans": 21,
+        "races": 21,
+        "points": 71,
+        "hit_plans": 4,
+        "hit_points": 4,
+        "cost": 7100,
+        "payout": 1710,
+        "winning_payout": 1710,
+        "refund": 0,
+        "net": -5390,
+        "roi": 24.08
+      },
+      "race_keys": [
+        "N2",
+        "N3",
+        "N4",
+        "N6",
+        "N7",
+        "N8",
+        "N9",
+        "N10",
+        "N11",
+        "N12",
+        "T1",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "K6",
+        "K7",
+        "K8",
+        "K10",
+        "K11",
+        "K12"
+      ]
+    }
+  },
+  "all_flat_formations": {
+    "quinella": {
+      "manual": {
+        "plans": 30,
+        "races": 30,
+        "points": 150,
+        "hit_plans": 10,
+        "hit_points": 10,
+        "cost": 15000,
+        "payout": 7740,
+        "winning_payout": 7740,
+        "refund": 0,
+        "net": -7260,
+        "roi": 51.6
+      },
+      "market": {
+        "plans": 30,
+        "races": 30,
+        "points": 150,
+        "hit_plans": 6,
+        "hit_points": 6,
+        "cost": 15000,
+        "payout": 3710,
+        "winning_payout": 3710,
+        "refund": 0,
+        "net": -11290,
+        "roi": 24.73
+      },
+      "index": {
+        "plans": 30,
+        "races": 30,
+        "points": 150,
+        "hit_plans": 12,
+        "hit_points": 12,
+        "cost": 15000,
+        "payout": 9840,
+        "winning_payout": 9840,
+        "refund": 0,
+        "net": -5160,
+        "roi": 65.6
+      }
+    },
+    "trio": {
+      "manual": {
+        "plans": 30,
+        "races": 30,
+        "points": 360,
+        "hit_plans": 11,
+        "hit_points": 11,
+        "cost": 36000,
+        "payout": 31800,
+        "winning_payout": 31800,
+        "refund": 0,
+        "net": -4200,
+        "roi": 88.33
+      },
+      "market": {
+        "plans": 30,
+        "races": 30,
+        "points": 360,
+        "hit_plans": 11,
+        "hit_points": 11,
+        "cost": 36000,
+        "payout": 35830,
+        "winning_payout": 35830,
+        "refund": 0,
+        "net": -170,
+        "roi": 99.53
+      },
+      "index": {
+        "plans": 30,
+        "races": 30,
+        "points": 360,
+        "hit_plans": 10,
+        "hit_points": 10,
+        "cost": 36000,
+        "payout": 37810,
+        "winning_payout": 37810,
+        "refund": 0,
+        "net": 1810,
+        "roi": 105.03
+      }
+    },
+    "wide": {
+      "manual": {
+        "plans": 30,
+        "races": 30,
+        "points": 67,
+        "hit_plans": 11,
+        "hit_points": 13,
+        "cost": 6700,
+        "payout": 4380,
+        "winning_payout": 4380,
+        "refund": 0,
+        "net": -2320,
+        "roi": 65.37
+      },
+      "market": {
+        "plans": 30,
+        "races": 30,
+        "points": 67,
+        "hit_plans": 11,
+        "hit_points": 12,
+        "cost": 6700,
+        "payout": 3170,
+        "winning_payout": 3170,
+        "refund": 0,
+        "net": -3530,
+        "roi": 47.31
+      },
+      "index": {
+        "plans": 30,
+        "races": 30,
+        "points": 67,
+        "hit_plans": 10,
+        "hit_points": 11,
+        "cost": 6700,
+        "payout": 3800,
+        "winning_payout": 3800,
+        "refund": 0,
+        "net": -2900,
+        "roi": 56.72
+      }
+    }
+  },
+  "topk": {
+    "manual": {
+      "1": {
+        "placed": 17,
+        "all_top3_races": 0,
+        "winners": 8
+      },
+      "3": {
+        "placed": 39,
+        "all_top3_races": 2,
+        "winners": 13
+      },
+      "4": {
+        "placed": 49,
+        "all_top3_races": 3,
+        "winners": 19
+      },
+      "5": {
+        "placed": 58,
+        "all_top3_races": 4,
+        "winners": 21
+      },
+      "7": {
+        "placed": 74,
+        "all_top3_races": 16,
+        "winners": 24
+      }
+    },
+    "market": {
+      "1": {
+        "placed": 19,
+        "all_top3_races": 0,
+        "winners": 8
+      },
+      "3": {
+        "placed": 40,
+        "all_top3_races": 1,
+        "winners": 16
+      },
+      "4": {
+        "placed": 46,
+        "all_top3_races": 2,
+        "winners": 18
+      },
+      "5": {
+        "placed": 55,
+        "all_top3_races": 4,
+        "winners": 21
+      },
+      "7": {
+        "placed": 74,
+        "all_top3_races": 16,
+        "winners": 25
+      }
+    },
+    "index": {
+      "1": {
+        "placed": 17,
+        "all_top3_races": 0,
+        "winners": 4
+      },
+      "3": {
+        "placed": 39,
+        "all_top3_races": 1,
+        "winners": 13
+      },
+      "4": {
+        "placed": 49,
+        "all_top3_races": 3,
+        "winners": 18
+      },
+      "5": {
+        "placed": 54,
+        "all_top3_races": 5,
+        "winners": 20
+      },
+      "7": {
+        "placed": 71,
+        "all_top3_races": 15,
+        "winners": 25
+      }
+    }
+  },
+  "cause_counts": {
+    "quinella": {
+      "axis_captured_plans": 18,
+      "failures": {
+        "axis_out": 11,
+        "counterpart_outside": 8,
+        "group_excluded": 1
+      }
+    },
+    "trio": {
+      "axis_captured_plans": 17,
+      "failures": {
+        "axis_out": 13,
+        "counterpart_outside": 4,
+        "group_excluded": 2
+      }
+    },
+    "wide": {
+      "axis_captured_plans": 15,
+      "failures": {
+        "candidate_pair_missing": 5,
+        "axis_out": 9,
+        "counterpart_outside": 5
+      }
+    }
+  },
+  "insufficient_evidence": {
+    "horses": 38,
+    "wins": 1,
+    "top3": 8
+  },
+  "runner_status_counts": {
+    "finished": 465,
+    "did_not_finish": 1,
+    "withdrawn": 1
+  },
+  "holes": {
+    "horses": 179,
+    "wins": 8,
+    "top3": 32
+  },
+  "condition_returns": {
+    "horses": 131,
+    "wins": 8,
+    "top3": 24
+  },
+  "manual_vs_index": {
+    "same_top": 19,
+    "different_top": [
+      {
+        "key": "N1",
+        "manual": 6,
+        "manual_finish": 5,
+        "index": 9,
+        "index_finish": 4
+      },
+      {
+        "key": "N4",
+        "manual": 7,
+        "manual_finish": 6,
+        "index": 13,
+        "index_finish": 2
+      },
+      {
+        "key": "N6",
+        "manual": 3,
+        "manual_finish": 1,
+        "index": 2,
+        "index_finish": 9
+      },
+      {
+        "key": "N8",
+        "manual": 10,
+        "manual_finish": 7,
+        "index": 4,
+        "index_finish": 3
+      },
+      {
+        "key": "T2",
+        "manual": 2,
+        "manual_finish": 1,
+        "index": 7,
+        "index_finish": 3
+      },
+      {
+        "key": "T7",
+        "manual": 6,
+        "manual_finish": 1,
+        "index": 5,
+        "index_finish": 5
+      },
+      {
+        "key": "T11",
+        "manual": 4,
+        "manual_finish": 1,
+        "index": 2,
+        "index_finish": 2
+      },
+      {
+        "key": "T12",
+        "manual": 8,
+        "manual_finish": 2,
+        "index": 2,
+        "index_finish": 3
+      },
+      {
+        "key": "K3",
+        "manual": 6,
+        "manual_finish": 3,
+        "index": 2,
+        "index_finish": 2
+      },
+      {
+        "key": "K9",
+        "manual": 4,
+        "manual_finish": 5,
+        "index": 1,
+        "index_finish": 3
+      },
+      {
+        "key": "K12",
+        "manual": 12,
+        "manual_finish": 2,
+        "index": 1,
+        "index_finish": 11
+      }
+    ]
+  },
+  "main_plan_failure_counts": {
+    "candidate_pair_missing": 3,
+    "axis_out": 9,
+    "counterpart_outside": 4,
+    "group_excluded": 1
+  },
+  "main_wide_failure_counts": {
+    "candidate_pair_missing": 3,
+    "axis_out": 6,
+    "counterpart_outside": 4
+  },
+  "financial_note": "実購入未確認。朝の全点価格条件を満たした21Rの掲載構成を各100円で保有した仮定の精算。直前の価格・馬場・状態・取消確認と購入の実行時刻は不明。別案・価格未達案は加算しない。",
+  "all_three_common_price_eligible": {
+    "manual": {
+      "plans": 21,
+      "races": 21,
+      "points": 71,
+      "hit_plans": 4,
+      "hit_points": 4,
+      "cost": 7100,
+      "payout": 1650,
+      "winning_payout": 1650,
+      "refund": 0,
+      "net": -5450,
+      "roi": 23.24
+    },
+    "market": {
+      "plans": 21,
+      "races": 21,
+      "points": 71,
+      "hit_plans": 5,
+      "hit_points": 5,
+      "cost": 7100,
+      "payout": 1850,
+      "winning_payout": 1850,
+      "refund": 0,
+      "net": -5250,
+      "roi": 26.06
+    },
+    "index": {
+      "plans": 21,
+      "races": 21,
+      "points": 71,
+      "hit_plans": 4,
+      "hit_points": 4,
+      "cost": 7100,
+      "payout": 1710,
+      "winning_payout": 1710,
+      "refund": 0,
+      "net": -5390,
+      "roi": 24.08
+    },
+    "race_keys": [
+      "N2",
+      "N3",
+      "N4",
+      "N6",
+      "N7",
+      "N8",
+      "N9",
+      "N10",
+      "N11",
+      "N12",
+      "T1",
+      "T8",
+      "T9",
+      "T10",
+      "T11",
+      "K6",
+      "K7",
+      "K8",
+      "K10",
+      "K11",
+      "K12"
+    ]
+  },
+  "exclude_whole_refund_affected_plan": {
+    "plans": 21,
+    "races": 21,
+    "points": 71,
+    "hit_plans": 4,
+    "hit_points": 4,
+    "cost": 7100,
+    "payout": 1650,
+    "winning_payout": 1650,
+    "refund": 0,
+    "net": -5450,
+    "roi": 23.24
+  },
+  "priority_groups": {
+    "優先": {
+      "all_candidates": {
+        "plans": 4,
+        "races": 4,
+        "points": 11,
+        "hit_plans": 2,
+        "hit_points": 3,
+        "cost": 1100,
+        "payout": 770,
+        "winning_payout": 770,
+        "refund": 0,
+        "net": -330,
+        "roi": 70.0
+      },
+      "price_eligible": {
+        "plans": 3,
+        "races": 3,
+        "points": 9,
+        "hit_plans": 1,
+        "hit_points": 1,
+        "cost": 900,
+        "payout": 500,
+        "winning_payout": 500,
+        "refund": 0,
+        "net": -400,
+        "roi": 55.56
+      },
+      "same_cost_baselines": {
+        "market": {
+          "plans": 3,
+          "races": 3,
+          "points": 9,
+          "hit_plans": 0,
+          "hit_points": 0,
+          "cost": 900,
+          "payout": 0,
+          "winning_payout": 0,
+          "refund": 0,
+          "net": -900,
+          "roi": 0.0
+        },
+        "index": {
+          "plans": 3,
+          "races": 3,
+          "points": 9,
+          "hit_plans": 1,
+          "hit_points": 1,
+          "cost": 900,
+          "payout": 500,
+          "winning_payout": 500,
+          "refund": 0,
+          "net": -400,
+          "roi": 55.56
+        }
+      }
+    },
+    "追加": {
+      "all_candidates": {
+        "plans": 25,
+        "races": 25,
+        "points": 79,
+        "hit_plans": 7,
+        "hit_points": 7,
+        "cost": 7900,
+        "payout": 2380,
+        "winning_payout": 2380,
+        "refund": 0,
+        "net": -5520,
+        "roi": 30.13
+      },
+      "price_eligible": {
+        "plans": 18,
+        "races": 18,
+        "points": 62,
+        "hit_plans": 3,
+        "hit_points": 3,
+        "cost": 6200,
+        "payout": 1150,
+        "winning_payout": 1150,
+        "refund": 0,
+        "net": -5050,
+        "roi": 18.55
+      },
+      "same_cost_baselines": {
+        "market": {
+          "plans": 18,
+          "races": 18,
+          "points": 62,
+          "hit_plans": 5,
+          "hit_points": 5,
+          "cost": 6200,
+          "payout": 1850,
+          "winning_payout": 1850,
+          "refund": 0,
+          "net": -4350,
+          "roi": 29.84
+        },
+        "index": {
+          "plans": 18,
+          "races": 18,
+          "points": 62,
+          "hit_plans": 3,
+          "hit_points": 3,
+          "cost": 6200,
+          "payout": 1210,
+          "winning_payout": 1210,
+          "refund": 0,
+          "net": -4990,
+          "roi": 19.52
+        }
+      }
+    }
+  },
+  "priority_groups_by_kind": {
+    "優先": {
+      "quinella": {
+        "plans": 1,
+        "races": 1,
+        "points": 5,
+        "hit_plans": 1,
+        "hit_points": 1,
+        "cost": 500,
+        "payout": 500,
+        "winning_payout": 500,
+        "refund": 0,
+        "net": 0,
+        "roi": 100.0
+      },
+      "trio": {
+        "plans": 0,
+        "races": 0,
+        "points": 0,
+        "hit_plans": 0,
+        "hit_points": 0,
+        "cost": 0,
+        "payout": 0,
+        "winning_payout": 0,
+        "refund": 0,
+        "net": 0,
+        "roi": null
+      },
+      "wide": {
+        "plans": 2,
+        "races": 2,
+        "points": 4,
+        "hit_plans": 0,
+        "hit_points": 0,
+        "cost": 400,
+        "payout": 0,
+        "winning_payout": 0,
+        "refund": 0,
+        "net": -400,
+        "roi": 0.0
+      }
+    },
+    "追加": {
+      "quinella": {
+        "plans": 4,
+        "races": 4,
+        "points": 20,
+        "hit_plans": 1,
+        "hit_points": 1,
+        "cost": 2000,
+        "payout": 590,
+        "winning_payout": 590,
+        "refund": 0,
+        "net": -1410,
+        "roi": 29.5
+      },
+      "trio": {
+        "plans": 1,
+        "races": 1,
+        "points": 12,
+        "hit_plans": 0,
+        "hit_points": 0,
+        "cost": 1200,
+        "payout": 0,
+        "winning_payout": 0,
+        "refund": 0,
+        "net": -1200,
+        "roi": 0.0
+      },
+      "wide": {
+        "plans": 13,
+        "races": 13,
+        "points": 30,
+        "hit_plans": 2,
+        "hit_points": 2,
+        "cost": 3000,
+        "payout": 560,
+        "winning_payout": 560,
+        "refund": 0,
+        "net": -2440,
+        "roi": 18.67
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-26T13:03:43+09:00",
+  "passed": true,
+  "races": 36,
+  "horses": 467,
+  "status_counts": {
+    "finished": 465,
+    "did_not_finish": 1,
+    "withdrawn": 1
+  },
+  "official_raw_sha_count": 36,
+  "originals_unchanged": [
+    "report_20261025_jra_predictions_v1.html",
+    "report_20261025_jra_predictions_v1.json",
+    "report_20261025_jra_predictions_v2.json",
+    "report_20261025_jra_predictions_v2.html"
+  ],
+  "public_forecast_sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+  "public_forecast_unchanged": true,
+  "all_fixed_horse_values_unchanged": true,
+  "formation_checks": 270,
+  "ticket_checks": 1731,
+  "morning_raw_count": 29,
+  "all_type_payout_rows": 288,
+  "all_8_type_raw_payout_entries_verified": true,
+  "tie_races": [
+    "N11",
+    "N12"
+  ],
+  "third_place_tie_wide_exclusion_checked": true,
+  "priority_split_verified": true,
+  "fair_comparison_races": 21,
+  "fair_comparison_yen": 7100,
+  "fair_wide_box_and_star_shapes_verified": true,
+  "mark_diagnostic_checked": true,
+  "old_forecast_strict_passed": true,
+  "new_date_missing_mark_record_cli_exit": 1,
+  "new_mark_policy_tests": 8,
+  "existing_forecast_and_publish_gate_tests": 20,
+  "browser_verification_pending": true,
+  "result_parser_tests": 9,
+  "result_supervisor_tests": 6,
+  "compact_navigation_cases": 9,
+  "old_compact_output_unchanged_without_mark_selection": true,
+  "new_mark_count_render_smoke_passed": true,
+  "official_rank_payout_status_unchanged": true,
+  "official_timing_additions_races": 32,
+  "official_timing_additions_horses": 423,
+  "obstacle_average_1f_separated": true
+}

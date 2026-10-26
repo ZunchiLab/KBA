@@ -92,6 +92,13 @@ def render(d,json_name,results):
                 secondary.append('</fieldset></details>')
             market_reference=authority=='jra' and all(h.get('score_method')=='market_reference' for h in r['horses'])
             horse_heading='全頭の市場参考（能力指数ではありません）' if market_reference else '全頭の総合印・近走指数'
+            marks=a.get('mark_selection') if authority=='jra' else None
+            if marks:
+                count=len(marks.get('marked_numbers',[]))
+                horse_heading+=f'（印{count}頭）'
+                reviews=''.join('<p>'+E(str(e['number'])+'と'+ '・'.join(map(str,e.get('compared_with',[])))+'の比較：'+e.get('reason',''))+'</p>' for e in marks.get('boundary_reviews',[]))
+                exception='<p><b>目安を超える理由：</b>'+E(marks['exception_reason'])+'</p>' if marks.get('exception_reason') else ''
+                secondary.append('<details class="mark-selection"><summary>印'+str(count)+'頭の選定理由</summary><p>出走予定'+str(marks['field_size_at_review'])+'頭 / 印の目安'+str(marks['suggested_limit'])+'頭まで。枠を埋めず比較して選定。</p><p>'+E(marks['reason'])+'</p>'+exception+reviews+'<p>確認 '+E(marks['reviewed_at'])+'。印数の目安は的中確率や最適頭数の推定ではありません。全頭の順位・指数は保持。</p></details>')
             parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
             for h in sorted(r['horses'],key=lambda h:h['rank'] or 999):
                 score=h['score'] if h['score'] is not None else '未算出' if authority=='nar' else '保留';mark=h['mark'].replace('参考','').replace('暫定','');f=finish(res,h)

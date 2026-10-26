@@ -222,3 +222,11 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 - 開催後の表示見本・レビューは `post_event_presentation` / `post_event_review` と明示し、元の固定予想・SHAを参照する。結果後に新しい事前予想版として公開しない。
 
 2026/10/18の原本に保存されたscore値は保持し、能力指数ではないことを訂正注記へ保存。未算出表示は元の数値を再計算した意味ではない。
+
+## 2026-10-26追加：JRAの印候補選定
+
+`analysis.mark_selection`は`policy: field-size-v1`、`field_size_at_review`（取消/除外を除く）、`suggested_limit`、`marked_numbers`、`reviewed_at`、`reason`、`boundary_reviews[]`（`number/compared_with/reason/evidence_refs`）、`exception_reason`。全頭の`rank/score`と券種ごとの役割は独立して保持。印のない馬は`mark: 無印`、取消等は状態名を維持。選定時刻は固定以前・発走前。
+
+次の新規JRAは[jra-mark-policy.md](jra-mark-policy.md)を参照し、公開前ゲートで記録・頭数・印・本線の一致と境界比較を検査。保存された目安は最適頭数・確率ではない。旧予想の固定項目へ追加しない。開催後の印数診断は`post_event_diagnostic`で、元の順位/印/買い目を変更しない。compact描画は記録があるJRAだけに印数と理由を表示する。
+
+結果行の障害`average_1f`は公式見出し「平均1F」の秒数文字列（未掲載はnull等の元状態）。後3Fではないので`last_3f:null`と分離する。原文と確認時刻を保持し、能力指数・事前予想へ転記しない。

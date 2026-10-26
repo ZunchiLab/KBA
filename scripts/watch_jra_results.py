@@ -40,13 +40,15 @@ def parse(s,forecast,source):
     title=hd.select_one('.race_name')
     if not title or re.sub(r'\s+','',title.get_text())!=re.sub(r'\s+','',forecast['name']):raise ValueError('Result race title mismatch')
     rows=[]
+    f_time_heading=soup.select_one('th.f_time')
+    is_average_1f=bool(f_time_heading and '平均1F' in f_time_heading.get_text())
     for tr in soup.select('table tr'):
         num=tr.select_one('td.num');place=tr.select_one('td.place');horse=tr.select_one('td.horse')
         if not num or not place or not horse:continue
         nr=int(num.get_text(strip=True));rank=place.get_text(strip=True);name=re.sub(r'\s+','',horse.get_text())
         def txt(cls):x=tr.select_one('td.'+cls);return x.get_text(' ',strip=True) if x else None
         state='finished' if rank.isdigit() else 'withdrawn' if '取消' in rank else 'excluded' if '除外' in rank else 'did_not_finish' if '中止' in rank else 'disqualified' if '失格' in rank else 'unknown'
-        rows.append(dict(number=nr,name=name,finish=int(rank) if rank.isdigit() else None,runner_status=state,official_status_text=rank,time=txt('time'),margin=txt('margin'),last_3f=txt('f_time'),final_popularity=txt('pop'),final_win_odds=None))
+        rows.append(dict(number=nr,name=name,finish=int(rank) if rank.isdigit() else None,runner_status=state,official_status_text=rank,time=txt('time'),margin=txt('margin'),last_3f=None if is_average_1f else txt('f_time'),final_popularity=txt('pop'),final_win_odds=None,**({'average_1f':txt('f_time')} if is_average_1f else {})))
     known={h['number']:re.sub(r'\s+','',h['name']) for h in forecast['horses']};seen=set()
     for row in rows:
         if row['number'] not in known or row['name']!=known[row['number']] or row['number'] in seen:raise ValueError('Result horse identity mismatch')

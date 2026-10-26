@@ -1,0 +1,1602 @@
+{
+  "schema_version": "kba.mark-diagnostic/1",
+  "date_jst": "2026-10-25",
+  "phase": "post_event_diagnostic",
+  "policy": "field-size-v1",
+  "rule": "目安は出走予定頭数の1/3切上げ、最低2頭（実在頭数まで）。枠を埋めず人手で選び、超過は明記。",
+  "not_a_forecast": true,
+  "not_an_actual_purchase": true,
+  "summary_flat": {
+    "races": 30,
+    "old_marks": 239,
+    "proposed_prefix_marks": 136,
+    "existing_coverage": {
+      "wide": 27,
+      "quinella": 22,
+      "trio": 20
+    },
+    "prefix_coverage": {
+      "wide": 18,
+      "quinella": 10,
+      "trio": 3
+    },
+    "prefixes": {
+      "2": {
+        "wide": 8,
+        "quinella": 5,
+        "trio": 0
+      },
+      "3": {
+        "wide": 11,
+        "quinella": 7,
+        "trio": 2
+      },
+      "4": {
+        "wide": 17,
+        "quinella": 11,
+        "trio": 4
+      },
+      "5": {
+        "wide": 23,
+        "quinella": 13,
+        "trio": 5
+      },
+      "6": {
+        "wide": 24,
+        "quinella": 17,
+        "trio": 9
+      },
+      "7": {
+        "wide": 26,
+        "quinella": 21,
+        "trio": 17
+      },
+      "8": {
+        "wide": 27,
+        "quinella": 22,
+        "trio": 20
+      }
+    },
+    "old_box_points": 833,
+    "proposed_box_points": 257
+  },
+  "summary_all": {
+    "races": 36,
+    "old_marks": 287,
+    "proposed_prefix_marks": 166,
+    "existing_coverage": {
+      "wide": 33,
+      "quinella": 27,
+      "trio": 25
+    },
+    "prefix_coverage": {
+      "wide": 23,
+      "quinella": 13,
+      "trio": 6
+    },
+    "prefixes": {
+      "2": {
+        "wide": 10,
+        "quinella": 6,
+        "trio": 0
+      },
+      "3": {
+        "wide": 13,
+        "quinella": 8,
+        "trio": 3
+      },
+      "4": {
+        "wide": 21,
+        "quinella": 12,
+        "trio": 5
+      },
+      "5": {
+        "wide": 28,
+        "quinella": 17,
+        "trio": 9
+      },
+      "6": {
+        "wide": 29,
+        "quinella": 21,
+        "trio": 13
+      },
+      "7": {
+        "wide": 32,
+        "quinella": 26,
+        "trio": 22
+      },
+      "8": {
+        "wide": 33,
+        "quinella": 27,
+        "trio": 25
+      }
+    },
+    "old_box_points": 1001,
+    "proposed_box_points": 321
+  },
+  "field_bands": {
+    "6頭以下": {
+      "races": 0,
+      "old_marks": 0,
+      "proposed_prefix_marks": 0,
+      "existing_coverage": {
+        "wide": 0,
+        "quinella": 0,
+        "trio": 0
+      },
+      "prefix_coverage": {
+        "wide": 0,
+        "quinella": 0,
+        "trio": 0
+      },
+      "prefixes": {
+        "2": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        },
+        "3": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        },
+        "4": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        },
+        "5": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        },
+        "6": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        },
+        "7": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        },
+        "8": {
+          "wide": 0,
+          "quinella": 0,
+          "trio": 0
+        }
+      },
+      "old_box_points": 0,
+      "proposed_box_points": 0
+    },
+    "7〜9頭": {
+      "races": 6,
+      "old_marks": 47,
+      "proposed_prefix_marks": 18,
+      "existing_coverage": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 6
+      },
+      "prefix_coverage": {
+        "wide": 3,
+        "quinella": 2,
+        "trio": 1
+      },
+      "prefixes": {
+        "2": {
+          "wide": 3,
+          "quinella": 1,
+          "trio": 0
+        },
+        "3": {
+          "wide": 3,
+          "quinella": 2,
+          "trio": 1
+        },
+        "4": {
+          "wide": 4,
+          "quinella": 4,
+          "trio": 2
+        },
+        "5": {
+          "wide": 6,
+          "quinella": 4,
+          "trio": 2
+        },
+        "6": {
+          "wide": 6,
+          "quinella": 5,
+          "trio": 4
+        },
+        "7": {
+          "wide": 6,
+          "quinella": 6,
+          "trio": 6
+        },
+        "8": {
+          "wide": 6,
+          "quinella": 6,
+          "trio": 6
+        }
+      },
+      "old_box_points": 161,
+      "proposed_box_points": 18
+    },
+    "10〜12頭": {
+      "races": 9,
+      "old_marks": 72,
+      "proposed_prefix_marks": 36,
+      "existing_coverage": {
+        "wide": 7,
+        "quinella": 7,
+        "trio": 6
+      },
+      "prefix_coverage": {
+        "wide": 4,
+        "quinella": 4,
+        "trio": 0
+      },
+      "prefixes": {
+        "2": {
+          "wide": 2,
+          "quinella": 2,
+          "trio": 0
+        },
+        "3": {
+          "wide": 3,
+          "quinella": 3,
+          "trio": 0
+        },
+        "4": {
+          "wide": 4,
+          "quinella": 4,
+          "trio": 0
+        },
+        "5": {
+          "wide": 6,
+          "quinella": 5,
+          "trio": 1
+        },
+        "6": {
+          "wide": 7,
+          "quinella": 6,
+          "trio": 1
+        },
+        "7": {
+          "wide": 7,
+          "quinella": 7,
+          "trio": 5
+        },
+        "8": {
+          "wide": 7,
+          "quinella": 7,
+          "trio": 6
+        }
+      },
+      "old_box_points": 252,
+      "proposed_box_points": 54
+    },
+    "13〜15頭": {
+      "races": 8,
+      "old_marks": 64,
+      "proposed_prefix_marks": 40,
+      "existing_coverage": {
+        "wide": 7,
+        "quinella": 4,
+        "trio": 3
+      },
+      "prefix_coverage": {
+        "wide": 5,
+        "quinella": 1,
+        "trio": 0
+      },
+      "prefixes": {
+        "2": {
+          "wide": 1,
+          "quinella": 0,
+          "trio": 0
+        },
+        "3": {
+          "wide": 2,
+          "quinella": 0,
+          "trio": 0
+        },
+        "4": {
+          "wide": 4,
+          "quinella": 0,
+          "trio": 0
+        },
+        "5": {
+          "wide": 5,
+          "quinella": 1,
+          "trio": 0
+        },
+        "6": {
+          "wide": 5,
+          "quinella": 3,
+          "trio": 2
+        },
+        "7": {
+          "wide": 6,
+          "quinella": 4,
+          "trio": 3
+        },
+        "8": {
+          "wide": 7,
+          "quinella": 4,
+          "trio": 3
+        }
+      },
+      "old_box_points": 224,
+      "proposed_box_points": 80
+    },
+    "16〜18頭": {
+      "races": 7,
+      "old_marks": 56,
+      "proposed_prefix_marks": 42,
+      "existing_coverage": {
+        "wide": 7,
+        "quinella": 5,
+        "trio": 5
+      },
+      "prefix_coverage": {
+        "wide": 6,
+        "quinella": 3,
+        "trio": 2
+      },
+      "prefixes": {
+        "2": {
+          "wide": 2,
+          "quinella": 2,
+          "trio": 0
+        },
+        "3": {
+          "wide": 3,
+          "quinella": 2,
+          "trio": 1
+        },
+        "4": {
+          "wide": 5,
+          "quinella": 3,
+          "trio": 2
+        },
+        "5": {
+          "wide": 6,
+          "quinella": 3,
+          "trio": 2
+        },
+        "6": {
+          "wide": 6,
+          "quinella": 3,
+          "trio": 2
+        },
+        "7": {
+          "wide": 7,
+          "quinella": 4,
+          "trio": 3
+        },
+        "8": {
+          "wide": 7,
+          "quinella": 5,
+          "trio": 5
+        }
+      },
+      "old_box_points": 196,
+      "proposed_box_points": 105
+    }
+  },
+  "races": [
+    {
+      "key": "N1",
+      "field_size": 13,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        6,
+        9,
+        3,
+        5,
+        11
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 8,
+        "quinella": 12,
+        "trio": 12
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "N2",
+      "field_size": 10,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        4,
+        5,
+        9,
+        2
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 2,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "N3",
+      "field_size": 18,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        17,
+        14,
+        3,
+        8,
+        9,
+        16
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 18,
+        "trio": 18
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "N4",
+      "field_size": 13,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        7,
+        4,
+        13,
+        6,
+        12
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 3,
+        "quinella": 6,
+        "trio": 6
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "N5",
+      "field_size": 18,
+      "category": "new_ma_reference",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        17,
+        3,
+        16,
+        13,
+        2,
+        12
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 5,
+        "trio": 5
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "N6",
+      "field_size": 11,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        3,
+        9,
+        1,
+        11
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 8
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "N7",
+      "field_size": 14,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        12,
+        8,
+        7,
+        4,
+        6
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 7,
+        "quinella": 14,
+        "trio": 14
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "N8",
+      "field_size": 14,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        10,
+        12,
+        13,
+        4,
+        8
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 7,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "N9",
+      "field_size": 14,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        2,
+        6,
+        3,
+        9,
+        10
+      ],
+      "existing_marks_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 10,
+        "quinella": 12,
+        "trio": 12
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "N10",
+      "field_size": 12,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        12,
+        7,
+        1,
+        2
+      ],
+      "existing_marks_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 9,
+        "quinella": 9,
+        "trio": 11
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "N11",
+      "field_size": 17,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        14,
+        17,
+        11,
+        9,
+        3,
+        16
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 3,
+        "quinella": 4,
+        "trio": 4
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "N12",
+      "field_size": 12,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        10,
+        1,
+        12,
+        2
+      ],
+      "existing_marks_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 10,
+        "quinella": 12,
+        "trio": 12
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "T1",
+      "field_size": 16,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        2,
+        13,
+        8,
+        11,
+        5,
+        10
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 8,
+        "trio": 8
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "T2",
+      "field_size": 7,
+      "category": "flat_independent",
+      "old_marks": 7,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        2,
+        7,
+        4
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 3,
+        "trio": 3
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "T3",
+      "field_size": 12,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        10,
+        9,
+        1,
+        2
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 5
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "T4",
+      "field_size": 11,
+      "category": "hurdle_provisional",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        6,
+        4,
+        3,
+        7
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 5,
+        "trio": 5
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "T5",
+      "field_size": 13,
+      "category": "new_ma_reference",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        3,
+        11,
+        7,
+        6,
+        5
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 7,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "T6",
+      "field_size": 16,
+      "category": "new_ma_reference",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        14,
+        11,
+        7,
+        12,
+        13,
+        2
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 5,
+        "trio": 5
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "T7",
+      "field_size": 15,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        6,
+        5,
+        7,
+        3,
+        10
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 5,
+        "trio": 15
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "T8",
+      "field_size": 18,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        12,
+        11,
+        3,
+        1,
+        17,
+        6
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 2,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "T9",
+      "field_size": 11,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        9,
+        1,
+        7,
+        5
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 4,
+        "trio": 9
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "T10",
+      "field_size": 9,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        2,
+        1,
+        9
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 7,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "T11",
+      "field_size": 16,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        4,
+        2,
+        5,
+        9,
+        16,
+        3
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 2,
+        "trio": 3
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "T12",
+      "field_size": 13,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        8,
+        2,
+        12,
+        3,
+        1
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 6,
+        "trio": 6
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "K1",
+      "field_size": 8,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        1,
+        3,
+        6
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 4,
+        "trio": 6
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "K2",
+      "field_size": 10,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        4,
+        5,
+        7,
+        2
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 2,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "K3",
+      "field_size": 8,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        6,
+        2,
+        9
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 4,
+        "trio": 4
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "K4",
+      "field_size": 16,
+      "category": "new_ma_reference",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        11,
+        4,
+        7,
+        15,
+        14,
+        8
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 7,
+        "quinella": 12,
+        "trio": 12
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "K5",
+      "field_size": 8,
+      "category": "new_ma_reference",
+      "old_marks": 8,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        1,
+        8,
+        7
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 2,
+        "trio": 3
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "K6",
+      "field_size": 12,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        5,
+        11,
+        1,
+        4
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 7,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    },
+    {
+      "key": "K7",
+      "field_size": 9,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        3,
+        2,
+        4
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 2,
+        "quinella": 2,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "K8",
+      "field_size": 18,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        1,
+        6,
+        9,
+        3,
+        17,
+        15
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 7,
+        "quinella": 7,
+        "trio": 8
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "K9",
+      "field_size": 9,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 3,
+      "diagnostic_numbers": [
+        4,
+        9,
+        7
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 6,
+        "trio": 6
+      },
+      "example_box_points": {
+        "wide": 3,
+        "quinella": 3,
+        "trio": 1
+      }
+    },
+    {
+      "key": "K10",
+      "field_size": 15,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 5,
+      "diagnostic_numbers": [
+        6,
+        3,
+        13,
+        12,
+        9
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 10,
+        "trio": 10
+      },
+      "example_box_points": {
+        "wide": 10,
+        "quinella": 10,
+        "trio": 10
+      }
+    },
+    {
+      "key": "K11",
+      "field_size": 18,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 6,
+      "diagnostic_numbers": [
+        8,
+        10,
+        5,
+        9,
+        2,
+        11
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "prefix_coverage": {
+        "wide": true,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 4,
+        "quinella": 12,
+        "trio": 12
+      },
+      "example_box_points": {
+        "wide": 15,
+        "quinella": 15,
+        "trio": 20
+      }
+    },
+    {
+      "key": "K12",
+      "field_size": 12,
+      "category": "flat_independent",
+      "old_marks": 8,
+      "suggested_limit": 4,
+      "diagnostic_numbers": [
+        12,
+        1,
+        4,
+        8
+      ],
+      "existing_marks_coverage": {
+        "wide": true,
+        "quinella": true,
+        "trio": true
+      },
+      "prefix_coverage": {
+        "wide": false,
+        "quinella": false,
+        "trio": false
+      },
+      "minimum_prefix_for_official_winning_combination": {
+        "wide": 5,
+        "quinella": 5,
+        "trio": 7
+      },
+      "example_box_points": {
+        "wide": 6,
+        "quinella": 6,
+        "trio": 4
+      }
+    }
+  ],
+  "limitation": "昨日の固定順位の上位を機械的に残した場合の候補捕捉診断。式別ごとの公式的中組合せ（同着込み）で判定。BOX点数は費用規模の例で購入推奨ではない。新しい事前選馬・全点価格条件・払戻成績・未来の改善実証ではない。元予想の印・買い目は変更しない。"
+}
