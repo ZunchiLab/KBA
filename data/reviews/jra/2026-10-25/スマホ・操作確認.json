@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-26T13:12:18+09:00",
+  "passed": true,
+  "url": "https://zunchilab.github.io/KBA/predictions/report_20261025_jra_review_v1.html",
+  "viewport": [
+    390,
+    844
+  ],
+  "document_scroll_width": 375,
+  "horizontal_overflow": false,
+  "rendered_races": 36,
+  "rendered_horses": 467,
+  "all_type_payout_rows": 288,
+  "checks": [
+    "東京・京都・新潟タブとR番号で1R表示",
+    "京都本線不的中5Rの絞込みと菊花賞11R表示",
+    "取消シュプレヒコール検索で京都3Rと取消行を表示",
+    "頭数別印数目安5行と診断の折畳み",
+    "菊花賞の軸8圏外・候補外6の個別反省",
+    "新潟11Rの3着同着2頭・ワイド全5組・三連複全2組・全8式別払戻",
+    "全36R467頭を保持し固定印と確定着順を併記",
+    "検索・フィルター・折畳み・画面幅を検証後に通常状態へ復元",
+    "ブラウザーエラー・警告なし"
+  ],
+  "console_warnings_or_errors": [],
+  "screenshot": {
+    "file": "スマホ表示確認.png",
+    "sha256": "c7580688d7995ecbf7817fbf8c2cb7f32ebbb85f49954875f614541c0c361b6c"
+  },
+  "forecast_originals_changed": false,
+  "viewport_restored": true,
+  "deliverable_tab_left_open": true,
+  "limitations": "390×844のブラウザー表示検証。実機全機種・未知日の予測精度は未検証。各点100円の掲載案は仮想検証で、実購入未記録。"
+}

@@ -1,0 +1,613 @@
+{
+  "checked_at": "2026-10-26T13:08:00+09:00",
+  "passed": true,
+  "commit": "e1f71ad31d8f602829f1d2d712892812cef95d01",
+  "pages_run": "https://github.com/ZunchiLab/KBA/actions/runs/40267353866",
+  "pages_conclusion": "success",
+  "files": [
+    {
+      "path": "predictions/report_20261025_jra_review_v1.html",
+      "bytes": 1059672,
+      "sha256": "cb224e7496ed6844e7310af8139f22c8170ad95bc9ff475d7b4d8f778893be7e",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "predictions/report_20261025_jra_review_v1.json",
+      "bytes": 10458871,
+      "sha256": "9c45bf9f4218c9dd2b69a81c52bcc90cdb0a623d5b412c59e044bbb967975dce",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "predictions/report_20261025_jra_review_v1.md",
+      "bytes": 35955,
+      "sha256": "181719f36d3c3cdddfce3e7186aaf3f4c6ae1387b0891b51ce0f06001794feaf",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "docs/jra-mark-policy.md",
+      "bytes": 4915,
+      "sha256": "c3ce37f9f6c9157a758589474fe7e05424753cdd6664911a0bfd0ba6b97b64f4",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "docs/jra-day-20261025.md",
+      "bytes": 8509,
+      "sha256": "736c817600e5220a155dc677cdf7f7b90f1be28e1a86227f5e843c1a7105d32c",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "bytes": 263571,
+      "sha256": "5bc9878999b97e7faf1e3d6e22b7eff8611913724e974fa9f5ad28c7d01fc515",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/catalog.json",
+      "bytes": 359118,
+      "sha256": "ead42ffeb3628c0f3cc66b2da3112f96e839c8c99f27891ad97ad9c31b9a2b24",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "predictions/report_20261025_jra_predictions_v2.json",
+      "bytes": 17784063,
+      "sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/印数・頭数別診断.json",
+      "bytes": 32381,
+      "sha256": "89419361c2cc098749b30cfb5cfe8437f30f7dc9de3e515af1459146b704909b",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/検証集計.json",
+      "bytes": 18892,
+      "sha256": "757ca97c6aee421a811b3631b5ae691661e04883c60a675cfceae4a4e0521559",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/集計・原本・形式検算.json",
+      "bytes": 1632,
+      "sha256": "1ab8623799cb8727b09a4d62c75121000d69f7bce6d7f63c945468af4542fbf7",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/07a0ad4ea59cc17ae8a62dc23f81e78900f33381dc02eeccc57bd36a9d63eef8.raw.html",
+      "bytes": 88990,
+      "sha256": "07a0ad4ea59cc17ae8a62dc23f81e78900f33381dc02eeccc57bd36a9d63eef8",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/11fc3166a1dfb95061db26a1adc0d131a6c90fa90704264addc5bea4c70f5294.raw.html",
+      "bytes": 79466,
+      "sha256": "11fc3166a1dfb95061db26a1adc0d131a6c90fa90704264addc5bea4c70f5294",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/1b265d40e7865e099187482a25c54a5db9257c08f056e513917204f3d450529c.raw.html",
+      "bytes": 84414,
+      "sha256": "1b265d40e7865e099187482a25c54a5db9257c08f056e513917204f3d450529c",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/1de6bb80c07049a5e6beea55e595631964c4567ce067d98464bfefc3166da45b.raw.html",
+      "bytes": 84420,
+      "sha256": "1de6bb80c07049a5e6beea55e595631964c4567ce067d98464bfefc3166da45b",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/1ee7032a2f115161c1632f7f18963ef0e2b3e3436c178be33d910ec3cc62c710.raw.html",
+      "bytes": 91585,
+      "sha256": "1ee7032a2f115161c1632f7f18963ef0e2b3e3436c178be33d910ec3cc62c710",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/213fc15bba4c9f1cc9615af7db851d9862539f1cdcf274ac1eefeeff3c56f51f.raw.html",
+      "bytes": 81952,
+      "sha256": "213fc15bba4c9f1cc9615af7db851d9862539f1cdcf274ac1eefeeff3c56f51f",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/2c7e6354c349208d3336380caef52a6bfe4f5a822a022479a7115ab057581b14.raw.html",
+      "bytes": 94393,
+      "sha256": "2c7e6354c349208d3336380caef52a6bfe4f5a822a022479a7115ab057581b14",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/4d96f118271a22e399b1cc2eabd3e4b7beaacdff4dfa0d6c97f7d3da824ca0f6.raw.html",
+      "bytes": 107650,
+      "sha256": "4d96f118271a22e399b1cc2eabd3e4b7beaacdff4dfa0d6c97f7d3da824ca0f6",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/557235c8a10bd53c7113ec0a620d6088b10926d0511243419a3500f5e992c444.raw.html",
+      "bytes": 78960,
+      "sha256": "557235c8a10bd53c7113ec0a620d6088b10926d0511243419a3500f5e992c444",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/6718a1b85c8f002fe7b1b31591cb4fcdce10790614489247cc282b0c053367fc.raw.html",
+      "bytes": 83374,
+      "sha256": "6718a1b85c8f002fe7b1b31591cb4fcdce10790614489247cc282b0c053367fc",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/6bf673f40347634a091f2cb9a667561730f0fe791fe9c20ee3b93fba6e9cf8de.raw.html",
+      "bytes": 108191,
+      "sha256": "6bf673f40347634a091f2cb9a667561730f0fe791fe9c20ee3b93fba6e9cf8de",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/6da6f308a5951f24f03a24825928aca5267ad48a3a11c3c9f6784328ea517ca5.raw.html",
+      "bytes": 88999,
+      "sha256": "6da6f308a5951f24f03a24825928aca5267ad48a3a11c3c9f6784328ea517ca5",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/6f41a5090c67a6bebe16df6fa40b91609bf0bac5eb18904472214465714460f5.raw.html",
+      "bytes": 94885,
+      "sha256": "6f41a5090c67a6bebe16df6fa40b91609bf0bac5eb18904472214465714460f5",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/75a709dfea0f658e52780d227094cb3e4e9c49fff8ed723249110912ccf53962.raw.html",
+      "bytes": 94415,
+      "sha256": "75a709dfea0f658e52780d227094cb3e4e9c49fff8ed723249110912ccf53962",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/766c681026ff8ebd259ff5cb14b679046a58eb518ddfa49fd231680b678f03b4.raw.html",
+      "bytes": 91263,
+      "sha256": "766c681026ff8ebd259ff5cb14b679046a58eb518ddfa49fd231680b678f03b4",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/7fe4176ec34369e1971327a628e07fecec35605569005b119139aa5768885842.raw.html",
+      "bytes": 182892,
+      "sha256": "7fe4176ec34369e1971327a628e07fecec35605569005b119139aa5768885842",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/8acbf92a5c91c128ea7036b0d2f7b76298a8d8a97e73fe8289532688fac34f2f.raw.html",
+      "bytes": 91577,
+      "sha256": "8acbf92a5c91c128ea7036b0d2f7b76298a8d8a97e73fe8289532688fac34f2f",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/8eccf3a59d2665f5770bf60b284ce5f9b5a418227da0c4604742ee695f151728.raw.html",
+      "bytes": 89651,
+      "sha256": "8eccf3a59d2665f5770bf60b284ce5f9b5a418227da0c4604742ee695f151728",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/915ba2d9ecc03bfb95f16f2d4e8655809e7c1183ba9ac43edca281aba83dbff6.raw.html",
+      "bytes": 86596,
+      "sha256": "915ba2d9ecc03bfb95f16f2d4e8655809e7c1183ba9ac43edca281aba83dbff6",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/96a3ad0eb71eca06f1c931783b2af9bfd2f4e58b01e17fd76bff08a2506858e2.raw.html",
+      "bytes": 88291,
+      "sha256": "96a3ad0eb71eca06f1c931783b2af9bfd2f4e58b01e17fd76bff08a2506858e2",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/a64d76a47997f9c5276558fd98416cb0c85ebda6d607a1f191adb37f95ec2a39.raw.html",
+      "bytes": 83063,
+      "sha256": "a64d76a47997f9c5276558fd98416cb0c85ebda6d607a1f191adb37f95ec2a39",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/b16734de3a97d53f2bee55a358cb94866e7bca589bc4c1b0694b685304cd151d.raw.html",
+      "bytes": 88987,
+      "sha256": "b16734de3a97d53f2bee55a358cb94866e7bca589bc4c1b0694b685304cd151d",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/cd36825443e006a37cdb31127a8382154911cf79199e3588cc67ed98a5936d35.raw.html",
+      "bytes": 97421,
+      "sha256": "cd36825443e006a37cdb31127a8382154911cf79199e3588cc67ed98a5936d35",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/d0edc03f6a9b6c8f920e394786982c16dcf043eb99ba1b47377a0c824273b15a.raw.html",
+      "bytes": 89475,
+      "sha256": "d0edc03f6a9b6c8f920e394786982c16dcf043eb99ba1b47377a0c824273b15a",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/d1403d63b75a944660545835af7b8fdb9d63d6163828a29f33a6a90505b9e0c4.raw.html",
+      "bytes": 100687,
+      "sha256": "d1403d63b75a944660545835af7b8fdb9d63d6163828a29f33a6a90505b9e0c4",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/d98bcb1b4b5147861157bb767cadf8a6f57b3b1b2f3835b399bcbad9a06e037b.raw.html",
+      "bytes": 80561,
+      "sha256": "d98bcb1b4b5147861157bb767cadf8a6f57b3b1b2f3835b399bcbad9a06e037b",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/e8a6b599823905b1fc0eb3f0002cd914bf849ffc8bec84e2c58faa3ee0ac5fc7.raw.html",
+      "bytes": 87089,
+      "sha256": "e8a6b599823905b1fc0eb3f0002cd914bf849ffc8bec84e2c58faa3ee0ac5fc7",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/f7573b8f348a853cf0987d5d554cb3f1a52954c1110e27cdac607bf7760e0d57.raw.html",
+      "bytes": 107693,
+      "sha256": "f7573b8f348a853cf0987d5d554cb3f1a52954c1110e27cdac607bf7760e0d57",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/morning-odds/fe5cca4006ae5ab480ccf6e00035eb8761f50e26abdfa16f16ed069fb5c56b93.raw.html",
+      "bytes": 83035,
+      "sha256": "fe5cca4006ae5ab480ccf6e00035eb8761f50e26abdfa16f16ed069fb5c56b93",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/pre-race/report_20261025_jra_predictions_v1.html",
+      "bytes": 4061366,
+      "sha256": "2e9f2d426454c1c4659e995d8207db08adaf5f1e4088d5a8e99d1a8016f941ae",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/pre-race/report_20261025_jra_predictions_v1.json",
+      "bytes": 17782599,
+      "sha256": "78a46395f3a69d27388a26679b73b8a83794c2f107fb91e6c31bc18e0bb8fba3",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/pre-race/report_20261025_jra_predictions_v2.html",
+      "bytes": 4062409,
+      "sha256": "6086a1e56628135688da117044837d916cf04b94a871fef5588d8f79c14ec46f",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/pre-race/report_20261025_jra_predictions_v2.json",
+      "bytes": 18171398,
+      "sha256": "6d89287d924e8ae1ecfec15cfff54cf019a0335b8a2db487a88fb148eca812bd",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/pre-race/固定記録_v1.json",
+      "bytes": 387,
+      "sha256": "f1331004981a42d32c17f0e299d0c8dbacf3bead718340a66c0d72b4256974cc",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/pre-race/固定記録_v2.json",
+      "bytes": 433,
+      "sha256": "a03ab2c196c00cc1b652316dfdb8450a2e05ac6811e1df5ab7a56639709f660e",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/0801cf7a2ce22aacf15a339a347c8c0012ce078032cfa16bc8e82acf269edd7c.raw.html",
+      "bytes": 88089,
+      "sha256": "0801cf7a2ce22aacf15a339a347c8c0012ce078032cfa16bc8e82acf269edd7c",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/110d250b09479acc82cee1560974fc1ad92e44be0e5cf64eec1086d7b075c67a.raw.html",
+      "bytes": 95759,
+      "sha256": "110d250b09479acc82cee1560974fc1ad92e44be0e5cf64eec1086d7b075c67a",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/18fd52e5bbfef26f4fbaacb2bab25749078be627ec0a4cc3b2e896b38b6da18e.raw.html",
+      "bytes": 87036,
+      "sha256": "18fd52e5bbfef26f4fbaacb2bab25749078be627ec0a4cc3b2e896b38b6da18e",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/2a9b741ca777d6115a99f7ed32b07bd25c18164cce20286047fb25b15a6c7c25.raw.html",
+      "bytes": 88730,
+      "sha256": "2a9b741ca777d6115a99f7ed32b07bd25c18164cce20286047fb25b15a6c7c25",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/55adb9911321d12a1296c6f515c58788d2a2b25a3d69c0d727e2b8702948663c.raw.html",
+      "bytes": 98866,
+      "sha256": "55adb9911321d12a1296c6f515c58788d2a2b25a3d69c0d727e2b8702948663c",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/78eec2ccc80db9456f0dd5998447367b4eead152fe053c5b73fc5c978db5aa9d.raw.html",
+      "bytes": 93537,
+      "sha256": "78eec2ccc80db9456f0dd5998447367b4eead152fe053c5b73fc5c978db5aa9d",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/931381e10b0134c889a491d8222ebce66a5c33dcf621fff891c9af7ee2103a5d.raw.html",
+      "bytes": 88639,
+      "sha256": "931381e10b0134c889a491d8222ebce66a5c33dcf621fff891c9af7ee2103a5d",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/937f37c173ba6ad6e269d3531c247f452f6c8b1f36d671554011f44c0a28d5f8.raw.html",
+      "bytes": 89766,
+      "sha256": "937f37c173ba6ad6e269d3531c247f452f6c8b1f36d671554011f44c0a28d5f8",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/9fbddf15539169489e5e7a12361881031dfcaebf66239be367b2452587ab2c45.raw.html",
+      "bytes": 98157,
+      "sha256": "9fbddf15539169489e5e7a12361881031dfcaebf66239be367b2452587ab2c45",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/c13e366efecb8a34758ecb9f3631dd36c5a8452d7fecd49c303a1590b2848589.raw.html",
+      "bytes": 92542,
+      "sha256": "c13e366efecb8a34758ecb9f3631dd36c5a8452d7fecd49c303a1590b2848589",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/c8f0b6f10fbe7da3c340c70e1a630e8e5b654414c17c7da6f1f5d23ffd40f671.raw.html",
+      "bytes": 101981,
+      "sha256": "c8f0b6f10fbe7da3c340c70e1a630e8e5b654414c17c7da6f1f5d23ffd40f671",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/kyoto/e7abb3fbd9264d147972b9e95a7e5e52e7ce2d902810aceff5263b8ae8c8f747.raw.html",
+      "bytes": 88653,
+      "sha256": "e7abb3fbd9264d147972b9e95a7e5e52e7ce2d902810aceff5263b8ae8c8f747",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/1430dcf93a03cb85eb2a9340a9eb72c1046ccb3e3737b5eb5fa007770d08f653.raw.html",
+      "bytes": 94348,
+      "sha256": "1430dcf93a03cb85eb2a9340a9eb72c1046ccb3e3737b5eb5fa007770d08f653",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/19222659cf61b8854cbcae533e7f24e1f1d24086a1d6c48342ef0e518a57f95f.raw.html",
+      "bytes": 98319,
+      "sha256": "19222659cf61b8854cbcae533e7f24e1f1d24086a1d6c48342ef0e518a57f95f",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/2472dd9992e9817360dfe056f1ffd1ea570664c9b456188ce7c2c4dc204bf779.raw.html",
+      "bytes": 93943,
+      "sha256": "2472dd9992e9817360dfe056f1ffd1ea570664c9b456188ce7c2c4dc204bf779",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/2bade6759347b70fe4b0566d1d382e8324e2b11d001ddfaf451b1b09291fda25.raw.html",
+      "bytes": 90522,
+      "sha256": "2bade6759347b70fe4b0566d1d382e8324e2b11d001ddfaf451b1b09291fda25",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/46990c7451135e8682f5c8fd5a21463e70f5b63a396ea14c180af5e732ab4f11.raw.html",
+      "bytes": 93224,
+      "sha256": "46990c7451135e8682f5c8fd5a21463e70f5b63a396ea14c180af5e732ab4f11",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/584ccbe3fb64725b003fa39a5cf3b412a61f4ddcb0365cf5dee8bfb870c1b83f.raw.html",
+      "bytes": 100460,
+      "sha256": "584ccbe3fb64725b003fa39a5cf3b412a61f4ddcb0365cf5dee8bfb870c1b83f",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/60a85fffec3bdbdc30e6b4e8eb4c54c0b657d83da2caaef9bcd07c2e9b2bddc6.raw.html",
+      "bytes": 92623,
+      "sha256": "60a85fffec3bdbdc30e6b4e8eb4c54c0b657d83da2caaef9bcd07c2e9b2bddc6",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/89a01bd64e6f83974c21ff46abee1596355f0d6b37947362bc8de89b39210867.raw.html",
+      "bytes": 94124,
+      "sha256": "89a01bd64e6f83974c21ff46abee1596355f0d6b37947362bc8de89b39210867",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/bccf1f432b6d015c120b4a7643e50801d96bb2743da08d813edf7eaf184d8858.raw.html",
+      "bytes": 92600,
+      "sha256": "bccf1f432b6d015c120b4a7643e50801d96bb2743da08d813edf7eaf184d8858",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/c5dab031081e8ecbed5cc8d0d6b714bdf2cfdfd266dd9984223afb7d066e95e4.raw.html",
+      "bytes": 97253,
+      "sha256": "c5dab031081e8ecbed5cc8d0d6b714bdf2cfdfd266dd9984223afb7d066e95e4",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/ddc376227895fa701cf91ed58c8dc1d822e3d26d01abe33f3ba7edc30b6f9c73.raw.html",
+      "bytes": 96547,
+      "sha256": "ddc376227895fa701cf91ed58c8dc1d822e3d26d01abe33f3ba7edc30b6f9c73",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/niigata/decd86b0eb65296fe767f03694c8691bf1bdcbee4d76bb19310e9adacda9ff01.raw.html",
+      "bytes": 93011,
+      "sha256": "decd86b0eb65296fe767f03694c8691bf1bdcbee4d76bb19310e9adacda9ff01",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/25c0e9177a3b260aa01effbf239f32114ed51cd7665c873ea65b424b9ace85d6.raw.html",
+      "bytes": 91834,
+      "sha256": "25c0e9177a3b260aa01effbf239f32114ed51cd7665c873ea65b424b9ace85d6",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/2663d90fbc363b094f3fff1a8015770a49b7ef722a942d4695ca7bc904c51439.raw.html",
+      "bytes": 89393,
+      "sha256": "2663d90fbc363b094f3fff1a8015770a49b7ef722a942d4695ca7bc904c51439",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/3a5752eac5cdc0c5148740a8d488b89dc059a07048f953e87bb71052d9c87f8d.raw.html",
+      "bytes": 86227,
+      "sha256": "3a5752eac5cdc0c5148740a8d488b89dc059a07048f953e87bb71052d9c87f8d",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/511cfccaf66dd62b3bab38c25c775d412b1f0f2d864c807cbd834b186ed2b409.raw.html",
+      "bytes": 93455,
+      "sha256": "511cfccaf66dd62b3bab38c25c775d412b1f0f2d864c807cbd834b186ed2b409",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/6d3df3606f81e3660c7ae29031b0ec995fe6070084f7d19d2310ce30ebfb6c4a.raw.html",
+      "bytes": 97422,
+      "sha256": "6d3df3606f81e3660c7ae29031b0ec995fe6070084f7d19d2310ce30ebfb6c4a",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/70741c4bacc60a8e7b62cd1aac4f7c08a6f5ac57cc67d5c73453fdf75a7e7575.raw.html",
+      "bytes": 95945,
+      "sha256": "70741c4bacc60a8e7b62cd1aac4f7c08a6f5ac57cc67d5c73453fdf75a7e7575",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/ae19a36275dad5239d084e5450ed44672a73385cff274c401708fb3b797b1eb5.raw.html",
+      "bytes": 91403,
+      "sha256": "ae19a36275dad5239d084e5450ed44672a73385cff274c401708fb3b797b1eb5",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/c3b992d8ff9b3fb9d9ecd5f583237df38fc2009c6415ec7f112214c5c214fa09.raw.html",
+      "bytes": 98204,
+      "sha256": "c3b992d8ff9b3fb9d9ecd5f583237df38fc2009c6415ec7f112214c5c214fa09",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/d0e29650851eb168f3f9d1a92c37cb8e5bce37eb657e4a20a95ebbc45b4bbed6.raw.html",
+      "bytes": 91126,
+      "sha256": "d0e29650851eb168f3f9d1a92c37cb8e5bce37eb657e4a20a95ebbc45b4bbed6",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/d644c24e88f04c46df71972b1adbf95aa196c18642bc0aa902ac3cbf6d9ba533.raw.html",
+      "bytes": 93254,
+      "sha256": "d644c24e88f04c46df71972b1adbf95aa196c18642bc0aa902ac3cbf6d9ba533",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/dde5ee261abc4c8b69b38a473b9a000316561a294474d1c0c121d567ffb9bd80.raw.html",
+      "bytes": 94711,
+      "sha256": "dde5ee261abc4c8b69b38a473b9a000316561a294474d1c0c121d567ffb9bd80",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/reviews/jra/2026-10-25/result-raw/tokyo/fd5da3fe822424df7ea69dccbc3fe65c7af75ccff65c8ca2878516a8c64a1c1d.raw.html",
+      "bytes": 96069,
+      "sha256": "fd5da3fe822424df7ea69dccbc3fe65c7af75ccff65c8ca2878516a8c64a1c1d",
+      "hash_method": "raw-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/results/jra/2026-10-25/v2/tokyo.json",
+      "bytes": 99171,
+      "sha256": "6e1421b6d3ed3cae8dba3ed0f7c8f3cebb6deebaecffd9d24b332da33f14f00a",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/results/jra/2026-10-25/v2/kyoto.json",
+      "bytes": 94247,
+      "sha256": "2fc0deb2d52e7b22a74b3696bd91425505c993de89577b2d7ef91f28486efa91",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    },
+    {
+      "path": "data/results/jra/2026-10-25/v2/niigata.json",
+      "bytes": 104334,
+      "sha256": "5db3216f2e6f20e35e5d5bee1d970067b856b33848469e49adaea29b79db6313",
+      "hash_method": "utf8-no-bom-lf-sha256",
+      "status": 200
+    }
+  ],
+  "file_count": 85,
+  "review_races": 36,
+  "review_horses": 467,
+  "all_type_payout_rows": 288,
+  "forecast_json_sha256": "bb0ad97e53a8d59fd2bb52b2a8b68b12409e9d178eecdcb27dbb65f9b7c4cfda",
+  "forecast_unchanged": true,
+  "raw_originals_unchanged": true,
+  "all_races_official_confirmed": true,
+  "browser_verification_pending": true
+}
