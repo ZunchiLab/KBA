@@ -1,19 +1,19 @@
 {
   "refresh_status": "continuous",
   "execution_environment": "local",
-  "execution_note": "Local supervised collector on this PC. Today only Kochi/Saga 11R; requires awake host and network.",
+  "execution_note": "Local supervised collector on this PC; Sonoda and Ooi 1-12R. Requires awake host and network.",
   "refresh_interval_minutes": 2,
-  "active_until": "2026-10-18T22:05:00+09:00",
+  "active_until": "2026-10-30T22:05:00+09:00",
   "targets": [
     {
-      "date": "2026-10-18",
-      "venue": "kochi",
-      "forecast": "predictions/report_20261018_nar_predictions_v1.json"
+      "date": "2026-10-30",
+      "venue": "sonoda",
+      "forecast": "predictions/report_20261030_nar_predictions_v1.json"
     },
     {
-      "date": "2026-10-18",
-      "venue": "saga",
-      "forecast": "predictions/report_20261018_nar_predictions_v1.json"
+      "date": "2026-10-30",
+      "venue": "ooi",
+      "forecast": "predictions/report_20261030_nar_predictions_v1.json"
     }
   ]
 }

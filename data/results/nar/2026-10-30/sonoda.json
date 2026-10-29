@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-10-30",
+  "venue": "園田",
+  "venue_key": "sonoda",
+  "baba_code": 27,
+  "forecast_version": "v1",
+  "forecast_fixed_at": "2026-10-30T08:31:06+09:00",
+  "forecast_file": "report_20261030_nar_predictions_v1.json",
+  "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
+  "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
+  "updated_at": "2026-10-30T08:32:45+09:00",
+  "complete": false,
+  "refresh_interval_minutes": 2,
+  "refresh_status": "continuous",
+  "races": [
+    {
+      "race": 1,
+      "name": "Ｃ３ ３歳以上",
+      "start_at": "2026-10-30T14:20:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 2,
+      "name": "２歳未勝利二２歳二",
+      "start_at": "2026-10-30T14:50:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 3,
+      "name": "２歳未勝利一２歳一",
+      "start_at": "2026-10-30T15:20:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 4,
+      "name": "Ｃ３二３歳以上",
+      "start_at": "2026-10-30T15:50:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 5,
+      "name": "Ｃ３一３歳以上",
+      "start_at": "2026-10-30T16:25:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 6,
+      "name": "Ｃ２三３歳以上",
+      "start_at": "2026-10-30T17:00:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 7,
+      "name": "Ｃ２二３歳以上",
+      "start_at": "2026-10-30T17:35:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 8,
+      "name": "Ｃ２一３歳以上",
+      "start_at": "2026-10-30T18:10:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 9,
+      "name": "Ｃ１ ３歳以上特別",
+      "start_at": "2026-10-30T18:45:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 10,
+      "name": "トルマリン賞Ｃ２ ３歳以上",
+      "start_at": "2026-10-30T19:20:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 11,
+      "name": "第２３回 兵庫クイーンカップ３歳以上牝馬登録馬",
+      "start_at": "2026-10-30T20:00:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    },
+    {
+      "race": 12,
+      "name": "ＨＵＫ ＨＡＰＰＹ ＦＲＩＤＡＹ フィナーレＣ１ ３歳以上特別",
+      "start_at": "2026-10-30T20:40:00+09:00",
+      "status": "not_started",
+      "rows": [],
+      "refunds": [],
+      "source": null,
+      "note": "保存時点では発走前。"
+    }
+  ],
+  "actual_purchase": null,
+  "note": "結果専用データ。事前予想・価格・採否を変更しない。"
+}
