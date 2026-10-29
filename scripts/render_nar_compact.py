@@ -20,9 +20,9 @@ def render(data, json_name, results=None):
                 horse['score'] = None
                 horse['score_method'] = 'not_computed'
                 horse['model_rank'] = None
-                horse['mark_override_reason'] = ('能力指数は未算出。総合印は人手の比較順位。'
+                horse.setdefault('mark_override_reason', ('能力指数は未算出。総合印は人手の比較順位。'
                     + (f'旧原本の{original}は順位表示用数値で、能力差ではありません。'
-                       if original is not None and ordinal_score(horse) else '根拠・懸念・採否を確認してください。'))
+                       if original is not None and ordinal_score(horse) else '根拠・懸念・採否を確認してください。')))
             else:
                 horse.setdefault('score_method', 'unverified')
             horse.setdefault('style', '位置取りは詳細')

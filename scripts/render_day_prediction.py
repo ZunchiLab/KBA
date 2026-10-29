@@ -40,14 +40,14 @@ def formation_section(r):
     label=lambda n:str(n)+' '+names[n]
     rows=[]
     for p in f['plans']:
-        name={'quinella':'馬連','trio':'三連複','wide':'ワイド'}[p['kind']]
+        name={'quinella':'馬連','trio':'三連複','wide':'ワイド','trifecta':'三連単'}[p['kind']]
         decision={'main':'本線','alternative':'本線との入替え別案','skip':'見送り','reference':'参考'}[p['decision']]
         groups=' − '.join('、'.join(label(x) for x in g) for g in p['groups']) or '固定軸・組合せを採用しない'
         text='<h4>'+name+'：'+decision+'</h4><p>'+E(groups)+'</p><p>'+E(p['reason'])+'</p>'
         for z in p['excluded_combinations']:text+='<p><b>含まない組合せ '+E('−'.join(map(str,z['numbers'])))+'</b> '+E(z['reason'])+'</p>'
-        if p['role_reviews']:text+='<details><summary>軸・相手の直接比較と根拠</summary>'+''.join('<p><b>'+E(label(z['number']))+'</b>（'+E({'top_two_axis':'2着以内の軸','top_three_axis':'3着以内の軸','counterpart':'相手'}[z['role']])+'） 比較相手 '+E('・'.join(map(str,z['compared_with'])))+'。'+E(z['reason'])+'</p>' for z in p['role_reviews'])+'</details>'
+        if p['role_reviews']:text+='<details><summary>軸・相手の直接比較と根拠</summary>'+''.join('<p><b>'+E(label(z['number']))+'</b>（'+E({'top_two_axis':'2着以内の軸','top_three_axis':'3着以内の軸','win_axis':'1着固定','counterpart':'相手'}[z['role']])+'） 比較相手 '+E('・'.join(map(str,z['compared_with'])))+'。'+E(z['reason'])+'</p>' for z in p['role_reviews'])+'</details>'
         rows.append(text)
-    return '<details class="panel"><summary>券種の採否・軸と相手・フォーメーションで取れない組合せ</summary><p>'+E(a['role_detail'])+'</p>'+''.join(rows)+'<p>当日の予算は未確認のため例示。的中率・回収率の改善効果は未検証。人気順と総合順位を同点数・同費用で展開した診断基準も、固定JSONに保存しています。</p></details>'
+    return '<details class="panel"><summary>券種の採否・軸と相手・フォーメーションで取れない組合せ</summary><p>'+E(a['role_detail'])+'</p>'+''.join(rows)+'<p>当日の予算は未確認のため例示。的中率・回収率の改善効果は未検証。総合順位を同点数・同費用で展開した診断基準は固定JSONを参照。人気基準は取得価格がある場合のみ保存し、価格未取得時は未作成と明記します。</p></details>'
 
 def render(d,json_name,results=None):
     if d.get("authority","nar")=="nar" and (d.get("presentation",{}).get("layout")=="compact-v1" or d.get("date_jst","")>="2026-10-19"):

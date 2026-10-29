@@ -14,9 +14,10 @@ def price_eligible(p):
     return any(flags) if p.get("price_rule")=="individual" else all(flags)
 
 def brief_plan(p):
+    separator=' → ' if p.get('ordered') else ' − '
     if p['method']=='formation':
-        return ' − '.join(','.join(map(str,g)) for g in p['groups'])
-    return ' / '.join('−'.join(map(str,t['numbers'])) for t in p['tickets'])
+        return separator.join(','.join(map(str,g)) for g in p['groups'])
+    return ' / '.join(('→' if p.get('ordered') else '−').join(map(str,t['numbers'])) for t in p['tickets'])
 
 def plan_html(p,visible=False):
     floors=sorted(set(t['minimum_odds'] for t in p['tickets']))
@@ -30,11 +31,11 @@ def plan_html(p,visible=False):
     out=[f'<section class="bet-plan" data-plan="{E(p["plan_id"])}"><div class="row"><h3>{label} · {E(p["type"])}</h3><button class="copy-plan" data-plan-id="{E(p["plan_id"])}" type="button">コピー</button></div>',
          f'<p class="formation"><b>{E(brief_plan(p))}</b></p>',
          f'<p class="plan-meta">{p["points"]}点 × 100円 = <b>{p["maximum_example_yen"]:,}円例</b> · {condition_label}{floor}倍以上</p>',
-         f'<p class="price-status {"ok" if ok else "wait"}">保存価格 {count}/{p["points"]}点達成 · {"直前確認で判断" if ok else "この案は見送り"}</p>']
+         f'<p class="price-status {"ok" if ok else "wait"}">保存価格 {count}/{p["points"]}点達成 · {"直前確認で判断" if ok else "価格未取得・発売後に判定" if any(t.get("price_condition_at_snapshot") is None for t in p["tickets"]) else "この案は見送り"}</p>']
     # Keep the full individual tickets, saved prices and timestamps reviewable.
     rows=[]
     for t in p['tickets']:
-        rows.append('<tr><th>'+E('−'.join(map(str,t['numbers'])))+'</th><td>'+E(t['price']['raw'])+'</td><td>'+f'{t["minimum_odds"]:.1f}'+'</td></tr>')
+        rows.append('<tr><th>'+E(('→' if p.get('ordered') else '−').join(map(str,t['numbers'])))+'</th><td>'+E(t['price']['raw'])+'</td><td>'+f'{t["minimum_odds"]:.1f}'+'</td></tr>')
     table='<table class="tickets"><thead><tr><th>買い目</th><th>保存倍率</th><th>下限</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table>'
     out.append('<details><summary>保存価格・全'+str(p['points'])+'点</summary>'+table+'</details>')
     source=p['tickets'][0]['source'];token=source.get('request_fields',{}).get('cname')
@@ -62,9 +63,11 @@ def render(d,json_name,results):
     parts.append('<section class="day-summary"><details><summary>'+summary+' <span>一覧・予算</span></summary><div class="quick-picks">')
     for r in selected:
         p=next(p for p in r['bet_plans'] if p['selected_for_example'])
-        status=(' · 価格未達・全点見送り' if not price_eligible(p) else ' · 直前確認で判断') if price_defaults else ''
+        status=(' · 価格未取得・購入保留' if any(t.get('price_condition_at_snapshot') is None for t in p['tickets']) else ' · 価格未達・全点見送り' if not price_eligible(p) else ' · 直前確認で判断') if price_defaults else ''
         parts.append(f'<a href="#{r["race_uid"]}"><b>{E(r["venue"])}{r["race"]}R</b> {E(r["start"])} · {E(p["type"])}<br>{E(brief_plan(p))} · {p["maximum_example_yen"]:,}円{status}</a>')
     parts.append(f'</div><p>各100円の例。上限例{b["day_limit_yen"]:,}円／保存価格条件達成分{b["price_eligible_main_yen"]:,}円。直前条件は未確認。余りは再配分しません。</p><div id="plan-total" role="status">仮プラン {default_cost:,}円</div><a href="../tools/bet-planner.html">購入記録の補助</a></details></section>')
+    if d.get('presentation',{}).get('day_notice'):
+        parts.append('<p class="day-summary">'+E(d['presentation']['day_notice'])+'</p>')
     parts.append('<section class="result-toolbar" id="results-panel"><button id="refresh-results" type="button">結果を更新</button><details><summary>取得状況</summary><p id="result-status" role="status" aria-live="polite">'+E('保存結果を表示' if results else '発走前・結果未取得')+'</p></details></section><p id="empty-state" hidden>該当レースなし</p>')
     for v in d['venues']:
         key=v['venue_key'];vr=[r for r in d['races'] if r['venue_key']==key]
@@ -92,7 +95,7 @@ def render(d,json_name,results):
                 secondary.append('</fieldset></details>')
             market_reference=authority=='jra' and all(h.get('score_method')=='market_reference' for h in r['horses'])
             horse_heading='全頭の市場参考（能力指数ではありません）' if market_reference else '全頭の総合印・近走指数'
-            marks=a.get('mark_selection') if authority=='jra' else None
+            marks=a.get('mark_selection')
             if marks:
                 count=len(marks.get('marked_numbers',[]))
                 horse_heading+=f'（印{count}頭）'
@@ -100,11 +103,13 @@ def render(d,json_name,results):
                 exception='<p><b>目安を超える理由：</b>'+E(marks['exception_reason'])+'</p>' if marks.get('exception_reason') else ''
                 secondary.append('<details class="mark-selection"><summary>印'+str(count)+'頭の選定理由</summary><p>出走予定'+str(marks['field_size_at_review'])+'頭 / 印の目安'+str(marks['suggested_limit'])+'頭まで。枠を埋めず比較して選定。</p><p>'+E(marks['reason'])+'</p>'+exception+reviews+'<p>確認 '+E(marks['reviewed_at'])+'。印数の目安は的中確率や最適頭数の推定ではありません。全頭の順位・指数は保持。</p></details>')
             parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
+            if a.get('index_note'):
+                parts.insert(len(parts)-1,'<p class="index-note">'+E(a['index_note'])+'</p>')
             for h in sorted(r['horses'],key=lambda h:h['rank'] or 999):
                 score=h['score'] if h['score'] is not None else '未算出' if authority=='nar' else '保留';mark=h['mark'].replace('参考','').replace('暫定','');f=finish(res,h)
                 if f in ['保存時は発走前','未確定','全着順待ち']:f='—'
                 score_class='score pending' if h['score'] is None else 'score'
-                ref_label='能力指数' if authority=='nar' else '市場参考' if h['score_method']=='market_reference' else '暫定比較' if r['surface']=='hurdle' else ('近走実績指数' if d.get('presentation',{}).get('detailed_rank_labels') else '比較指数')
+                ref_label=h.get('score_label','能力指数') if authority=='nar' else '市場参考' if h['score_method']=='market_reference' else '暫定比較' if r['surface']=='hurdle' else ('近走実績指数' if d.get('presentation',{}).get('detailed_rank_labels') else '比較指数')
                 rank_label=str(h['rank'])+'位' if h['rank'] is not None else '取消' if h['status_at_snapshot']=='withdrawn' else '順位保留'
                 if d.get('presentation',{}).get('detailed_rank_labels'):
                     rank_label=('市場参考'+rank_label if market_reference else '総合'+('暫定' if '暫定' in h['mark'] or r['surface']=='hurdle' else '')+rank_label+(' / 指数未算出' if authority=='nar' and h['score'] is None else ' / 指数'+(str(h['model_rank'])+'位' if h.get('model_rank') else '保留')))

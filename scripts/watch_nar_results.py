@@ -95,12 +95,12 @@ def meeting(config, local, deadline):
     targets = [t for t in config['targets'] if t['date'] == now.date().isoformat()]
     allowed = (config.get('execution_environment', 'github') == ('local' if local else 'github')
                and config.get('refresh_status') == 'continuous' and bool(targets)
-               and now < until and 9 <= now.hour < 23)
+               and now < until and (7 if local else 9) <= now.hour < 23)
     return now, until, targets, allowed
 
 
 def run_worker(local=False, state_file=None):
-    deadline = datetime.now(JST)+(timedelta(hours=12) if local else timedelta(minutes=345))
+    deadline = datetime.now(JST)+(timedelta(hours=15) if local else timedelta(minutes=345))
     failures, last_publish = 0, None
     while True:
         try:
@@ -199,7 +199,7 @@ def single_instance():
 
 def supervise(state_file=None):
     """Restart an unexpectedly failed local child within today's configured window."""
-    deadline = datetime.now(JST)+timedelta(hours=12)
+    deadline = datetime.now(JST)+timedelta(hours=15)
     while True:
         try:
             now, until, _, allowed = meeting(load_config(), True, deadline)
