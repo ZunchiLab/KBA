@@ -9,7 +9,7 @@
   "forecast_file": "report_20261030_nar_predictions_v1.json",
   "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-30T18:54:25+09:00",
+  "updated_at": "2026-10-30T18:56:31+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -2000,7 +2000,7 @@
       "race": 9,
       "name": "Ｃ１ ３歳以上特別",
       "start_at": "2026-10-30T18:45:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 9,
@@ -2037,6 +2037,78 @@
           "body_weight": "446(-4)",
           "final_popularity": 4,
           "final_win_odds": "8.9"
+        },
+        {
+          "number": 5,
+          "name": "セレリタス",
+          "finish": 4,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "笹田知 （兵庫）",
+          "body_weight": "479(4)",
+          "final_popularity": 1,
+          "final_win_odds": "1.9"
+        },
+        {
+          "number": 3,
+          "name": "ミストルティン",
+          "finish": 5,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "▲南部楓 （兵庫）",
+          "body_weight": "473(-1)",
+          "final_popularity": 8,
+          "final_win_odds": "73.0"
+        },
+        {
+          "number": 2,
+          "name": "ヴェレノージ",
+          "finish": 6,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "548(6)",
+          "final_popularity": 9,
+          "final_win_odds": "110.7"
+        },
+        {
+          "number": 4,
+          "name": "メイショウマサツラ",
+          "finish": 7,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "山田貴 （佐賀）",
+          "body_weight": "502(5)",
+          "final_popularity": 7,
+          "final_win_odds": "19.5"
+        },
+        {
+          "number": 1,
+          "name": "バクレツマホウ",
+          "finish": 8,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "477(4)",
+          "final_popularity": 3,
+          "final_win_odds": "8.3"
+        },
+        {
+          "number": 6,
+          "name": "ハーティパーティ",
+          "finish": 9,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "竹村達 （兵庫）",
+          "body_weight": "438(1)",
+          "final_popularity": 6,
+          "final_win_odds": "18.7"
         }
       ],
       "refunds": [
@@ -2161,11 +2233,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F30&k_babaCode=27&k_raceNo=9",
-        "retrieved_at": "2026-10-30T18:54:25+09:00",
-        "sha256": "05f233f2d0ddfc347a8a3e4d9c8f0f05ad311dc227e89c88ea085de463e6ff54",
-        "saved_file": "data/results/sources/2026-10-30/sonoda/r9_185425_05f233f2d0dd.html"
+        "retrieved_at": "2026-10-30T18:56:31+09:00",
+        "sha256": "a2d7ea0ffcb394c7e6e6d18df704b1dc8e0e645d60fe50cb17405abdf9ae06a0",
+        "saved_file": "data/results/sources/2026-10-30/sonoda/r9_185631_a2d7ea0ffcb3.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 10,
