@@ -9,8 +9,8 @@
   "forecast_file": "report_20261030_nar_predictions_v1.json",
   "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-30T20:51:57+09:00",
-  "complete": false,
+  "updated_at": "2026-10-30T20:54:04+09:00",
+  "complete": true,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
   "races": [
@@ -2777,13 +2777,13 @@
       "race": 12,
       "name": "ＨＵＫ ＨＡＰＰＹ ＦＲＩＤＡＹ フィナーレＣ１ ３歳以上特別",
       "start_at": "2026-10-30T20:40:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 10,
           "name": "アラムベイ",
           "finish": 1,
-          "time": "",
+          "time": "1:19.1",
           "margin": "",
           "last_3f": "",
           "jockey": "田野豊 （兵庫）",
@@ -2795,8 +2795,8 @@
           "number": 3,
           "name": "ノックシュライン",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:19.6",
+          "margin": "3",
           "last_3f": "",
           "jockey": "土方颯 （兵庫）",
           "body_weight": "570(7)",
@@ -2807,13 +2807,121 @@
           "number": 1,
           "name": "サンライズロイ",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:19.7",
+          "margin": "1/2",
           "last_3f": "",
           "jockey": "吉村智 （兵庫）",
           "body_weight": "463(2)",
           "final_popularity": 2,
           "final_win_odds": "2.4"
+        },
+        {
+          "number": 9,
+          "name": "アップップ",
+          "finish": 4,
+          "time": "1:19.8",
+          "margin": "クビ",
+          "last_3f": "",
+          "jockey": "山本太 （兵庫）",
+          "body_weight": "424(1)",
+          "final_popularity": 11,
+          "final_win_odds": "158.8"
+        },
+        {
+          "number": 5,
+          "name": "アドミ",
+          "finish": 5,
+          "time": "1:20.0",
+          "margin": "1.1/2",
+          "last_3f": "",
+          "jockey": "小牧太 （兵庫）",
+          "body_weight": "451(1)",
+          "final_popularity": 4,
+          "final_win_odds": "13.1"
+        },
+        {
+          "number": 11,
+          "name": "イスラアズール",
+          "finish": 6,
+          "time": "1:20.1",
+          "margin": "クビ",
+          "last_3f": "",
+          "jockey": "山田貴 （佐賀）",
+          "body_weight": "458(1)",
+          "final_popularity": 5,
+          "final_win_odds": "19.3"
+        },
+        {
+          "number": 12,
+          "name": "フルリール",
+          "finish": 7,
+          "time": "1:20.8",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "450(-2)",
+          "final_popularity": 8,
+          "final_win_odds": "45.8"
+        },
+        {
+          "number": 6,
+          "name": "シークレットロゴ",
+          "finish": 8,
+          "time": "1:21.3",
+          "margin": "3",
+          "last_3f": "",
+          "jockey": "下原理 （兵庫）",
+          "body_weight": "491(1)",
+          "final_popularity": 6,
+          "final_win_odds": "24.4"
+        },
+        {
+          "number": 2,
+          "name": "モノノフイエロー",
+          "finish": 9,
+          "time": "1:21.7",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "▲南部楓 （兵庫）",
+          "body_weight": "439(1)",
+          "final_popularity": 10,
+          "final_win_odds": "157.7"
+        },
+        {
+          "number": 4,
+          "name": "ジョコーソ",
+          "finish": 10,
+          "time": "1:21.7",
+          "margin": "クビ",
+          "last_3f": "",
+          "jockey": "竹村達 （兵庫）",
+          "body_weight": "439(-7)",
+          "final_popularity": 9,
+          "final_win_odds": "114.6"
+        },
+        {
+          "number": 8,
+          "name": "ヘイスト",
+          "finish": 11,
+          "time": "1:22.2",
+          "margin": "3",
+          "last_3f": "",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "473(-2)",
+          "final_popularity": 7,
+          "final_win_odds": "29.4"
+        },
+        {
+          "number": 7,
+          "name": "グリッタードール",
+          "finish": 12,
+          "time": "1:22.6",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "山本咲 （兵庫）",
+          "body_weight": "463(4)",
+          "final_popularity": 12,
+          "final_win_odds": "223.6"
         }
       ],
       "refunds": [
@@ -2938,11 +3046,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F30&k_babaCode=27&k_raceNo=12",
-        "retrieved_at": "2026-10-30T20:51:57+09:00",
-        "sha256": "0bbbab0bcf6cdca3991f2f3810bef435ef3af3ff3318293ec06bc318e84b18ca",
-        "saved_file": "data/results/sources/2026-10-30/sonoda/r12_205157_0bbbab0bcf6c.html"
+        "retrieved_at": "2026-10-30T20:54:04+09:00",
+        "sha256": "8aec04a4300809cb90d4882c81aa30b06c892d0568df4081ada3b3d9edab5813",
+        "saved_file": "data/results/sources/2026-10-30/sonoda/r12_205404_8aec04a43008.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     }
   ],
   "actual_purchase": null,
