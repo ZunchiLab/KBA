@@ -9,7 +9,7 @@
   "forecast_file": "report_20261030_nar_predictions_v1.json",
   "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-30T15:06:05+09:00",
+  "updated_at": "2026-10-30T15:08:11+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -297,13 +297,13 @@
       "race": 2,
       "name": "２歳未勝利二２歳二",
       "start_at": "2026-10-30T14:50:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 7,
           "name": "ヴェリタレガーメ",
           "finish": 1,
-          "time": "",
+          "time": "1:35.6",
           "margin": "",
           "last_3f": "",
           "jockey": "下原理 （兵庫）",
@@ -315,8 +315,8 @@
           "number": 5,
           "name": "ウメスイショウ",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:36.4",
+          "margin": "5",
           "last_3f": "",
           "jockey": "☆小谷哲 （兵庫）",
           "body_weight": "454(6)",
@@ -327,13 +327,73 @@
           "number": 4,
           "name": "マルカハルト",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:36.4",
+          "margin": "クビ",
           "last_3f": "",
           "jockey": "山本咲 （兵庫）",
           "body_weight": "511(9)",
           "final_popularity": 2,
           "final_win_odds": "3.3"
+        },
+        {
+          "number": 8,
+          "name": "ジャンクテレボウイ",
+          "finish": 4,
+          "time": "1:36.7",
+          "margin": "1.1/2",
+          "last_3f": "",
+          "jockey": "土方颯 （兵庫）",
+          "body_weight": "464(8)",
+          "final_popularity": 8,
+          "final_win_odds": "90.8"
+        },
+        {
+          "number": 3,
+          "name": "オトワオー",
+          "finish": 5,
+          "time": "1:36.7",
+          "margin": "アタマ",
+          "last_3f": "",
+          "jockey": "田野豊 （兵庫）",
+          "body_weight": "485(-15)",
+          "final_popularity": 6,
+          "final_win_odds": "48.3"
+        },
+        {
+          "number": 1,
+          "name": "マソラ",
+          "finish": 6,
+          "time": "1:38.3",
+          "margin": "10",
+          "last_3f": "",
+          "jockey": "山本太 （兵庫）",
+          "body_weight": "408(3)",
+          "final_popularity": 5,
+          "final_win_odds": "27.8"
+        },
+        {
+          "number": 2,
+          "name": "キセキノイチマイ",
+          "finish": 7,
+          "time": "1:38.5",
+          "margin": "3/4",
+          "last_3f": "",
+          "jockey": "▲南部楓 （兵庫）",
+          "body_weight": "429(2)",
+          "final_popularity": 4,
+          "final_win_odds": "24.4"
+        },
+        {
+          "number": 6,
+          "name": "アウローラボルト",
+          "finish": 8,
+          "time": "1:38.6",
+          "margin": "1/2",
+          "last_3f": "",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "471(3)",
+          "final_popularity": 7,
+          "final_win_odds": "58.3"
         }
       ],
       "refunds": [
@@ -448,11 +508,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F30&k_babaCode=27&k_raceNo=2",
-        "retrieved_at": "2026-10-30T15:06:05+09:00",
-        "sha256": "25ad57c9d76d8592552fc79fc9384b010b6edff3fd93c72a22f9b51d638af998",
-        "saved_file": "data/results/sources/2026-10-30/sonoda/r2_150605_25ad57c9d76d.html"
+        "retrieved_at": "2026-10-30T15:08:11+09:00",
+        "sha256": "3ecb403206b1c52758b57ec489df81afe32243a04f37f4885e64a0f70c651f13",
+        "saved_file": "data/results/sources/2026-10-30/sonoda/r2_150811_3ecb403206b1.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 3,
