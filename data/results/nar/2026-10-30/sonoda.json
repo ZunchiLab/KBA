@@ -9,7 +9,7 @@
   "forecast_file": "report_20261030_nar_predictions_v1.json",
   "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-30T17:11:34+09:00",
+  "updated_at": "2026-10-30T17:13:40+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -1271,13 +1271,13 @@
       "race": 6,
       "name": "Ｃ２三３歳以上",
       "start_at": "2026-10-30T17:00:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 8,
           "name": "エロイムエッサイム",
           "finish": 1,
-          "time": "",
+          "time": "1:31.2",
           "margin": "",
           "last_3f": "",
           "jockey": "吉村智 （兵庫）",
@@ -1289,8 +1289,8 @@
           "number": 7,
           "name": "コワモテハマー",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:31.5",
+          "margin": "2",
           "last_3f": "",
           "jockey": "田野豊 （兵庫）",
           "body_weight": "494(3)",
@@ -1301,13 +1301,85 @@
           "number": 1,
           "name": "ワイズファミリア",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:31.7",
+          "margin": "3/4",
           "last_3f": "",
           "jockey": "山本咲 （兵庫）",
           "body_weight": "475(9)",
           "final_popularity": 1,
           "final_win_odds": "1.7"
+        },
+        {
+          "number": 6,
+          "name": "オフショアガール",
+          "finish": 4,
+          "time": "1:32.1",
+          "margin": "2.1/2",
+          "last_3f": "",
+          "jockey": "廣瀬航 （兵庫）",
+          "body_weight": "464(15)",
+          "final_popularity": 4,
+          "final_win_odds": "6.4"
+        },
+        {
+          "number": 3,
+          "name": "シナモンショコラ",
+          "finish": 5,
+          "time": "1:32.8",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "▲高橋洸 （兵庫）",
+          "body_weight": "514(4)",
+          "final_popularity": 3,
+          "final_win_odds": "5.3"
+        },
+        {
+          "number": 5,
+          "name": "ララアンセストラル",
+          "finish": 6,
+          "time": "1:33.0",
+          "margin": "1",
+          "last_3f": "",
+          "jockey": "杉浦健 （兵庫）",
+          "body_weight": "493(2)",
+          "final_popularity": 9,
+          "final_win_odds": "102.4"
+        },
+        {
+          "number": 4,
+          "name": "ビロウィダダ",
+          "finish": 7,
+          "time": "1:33.1",
+          "margin": "1/2",
+          "last_3f": "",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "492(0)",
+          "final_popularity": 8,
+          "final_win_odds": "67.5"
+        },
+        {
+          "number": 9,
+          "name": "エイシンリキュウ",
+          "finish": 8,
+          "time": "1:33.4",
+          "margin": "2",
+          "last_3f": "",
+          "jockey": "永井孝 （兵庫）",
+          "body_weight": "479(3)",
+          "final_popularity": 6,
+          "final_win_odds": "26.4"
+        },
+        {
+          "number": 2,
+          "name": "コスモタイシ",
+          "finish": 9,
+          "time": "1:34.0",
+          "margin": "4",
+          "last_3f": "",
+          "jockey": "小谷周 （兵庫）",
+          "body_weight": "496(8)",
+          "final_popularity": 7,
+          "final_win_odds": "29.8"
         }
       ],
       "refunds": [
@@ -1432,11 +1504,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F30&k_babaCode=27&k_raceNo=6",
-        "retrieved_at": "2026-10-30T17:11:34+09:00",
-        "sha256": "211c663de971df52392a55e5efa05303a5de38609f664ec9f7d9fe27a94d90ba",
-        "saved_file": "data/results/sources/2026-10-30/sonoda/r6_171134_211c663de971.html"
+        "retrieved_at": "2026-10-30T17:13:40+09:00",
+        "sha256": "0e94267884c4faaddbef31787bc053edc8ce1f05dc77358f454cb2ce3ba28e4f",
+        "saved_file": "data/results/sources/2026-10-30/sonoda/r6_171340_0e94267884c4.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 7,
