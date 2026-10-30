@@ -9,7 +9,7 @@
   "forecast_file": "report_20261030_nar_predictions_v1.json",
   "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-30T17:22:03+09:00",
+  "updated_at": "2026-10-30T17:24:09+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -1371,13 +1371,13 @@
       "race": 6,
       "name": "ちがいをちからに渋谷区賞Ｃ２一 二 三",
       "start_at": "2026-10-30T17:12:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 6,
           "name": "アズライトアスール",
           "finish": 1,
-          "time": "",
+          "time": "1:43.5",
           "margin": "",
           "last_3f": "",
           "jockey": "藤本現 （大井）",
@@ -1389,8 +1389,8 @@
           "number": 9,
           "name": "リバイブメイラード",
           "finish": 2,
-          "time": "",
-          "margin": "",
+          "time": "1:43.7",
+          "margin": "1.1/4",
           "last_3f": "",
           "jockey": "▲西優哉 （大井）",
           "body_weight": "447(-5)",
@@ -1401,13 +1401,97 @@
           "number": 3,
           "name": "スクラッチクラッチ",
           "finish": 3,
-          "time": "",
-          "margin": "",
+          "time": "1:44.3",
+          "margin": "3",
           "last_3f": "",
           "jockey": "▲高橋優 （大井）",
           "body_weight": "471(1)",
           "final_popularity": 10,
           "final_win_odds": "163.9"
+        },
+        {
+          "number": 1,
+          "name": "イトウ",
+          "finish": 4,
+          "time": "1:44.4",
+          "margin": "1/2",
+          "last_3f": "",
+          "jockey": "吉井章 （大井）",
+          "body_weight": "482(1)",
+          "final_popularity": 5,
+          "final_win_odds": "34.2"
+        },
+        {
+          "number": 10,
+          "name": "エクラシェール",
+          "finish": 5,
+          "time": "1:44.5",
+          "margin": "1/2",
+          "last_3f": "",
+          "jockey": "藤田凌 （大井）",
+          "body_weight": "505(-2)",
+          "final_popularity": 7,
+          "final_win_odds": "55.2"
+        },
+        {
+          "number": 8,
+          "name": "グリューネベルグ",
+          "finish": 6,
+          "time": "1:44.6",
+          "margin": "1/2",
+          "last_3f": "",
+          "jockey": "笹川翼 （大井）",
+          "body_weight": "476(1)",
+          "final_popularity": 3,
+          "final_win_odds": "8.7"
+        },
+        {
+          "number": 4,
+          "name": "シンアルマトゥラ",
+          "finish": 7,
+          "time": "1:44.7",
+          "margin": "1/2",
+          "last_3f": "",
+          "jockey": "中村尚 （大井）",
+          "body_weight": "420(7)",
+          "final_popularity": 6,
+          "final_win_odds": "36.8"
+        },
+        {
+          "number": 2,
+          "name": "クリノエーデル",
+          "finish": 8,
+          "time": "1:45.1",
+          "margin": "2",
+          "last_3f": "",
+          "jockey": "安藤洋 （大井）",
+          "body_weight": "446(-1)",
+          "final_popularity": 8,
+          "final_win_odds": "86.4"
+        },
+        {
+          "number": 7,
+          "name": "ハッチン",
+          "finish": 9,
+          "time": "1:45.3",
+          "margin": "1.1/4",
+          "last_3f": "",
+          "jockey": "和田譲 （大井）",
+          "body_weight": "472(-2)",
+          "final_popularity": 4,
+          "final_win_odds": "13.9"
+        },
+        {
+          "number": 5,
+          "name": "サヴォア",
+          "finish": 10,
+          "time": "1:48.7",
+          "margin": "大差",
+          "last_3f": "",
+          "jockey": "櫻井光 （川崎）",
+          "body_weight": "431(1)",
+          "final_popularity": 9,
+          "final_win_odds": "152.5"
         }
       ],
       "refunds": [
@@ -1542,11 +1626,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F30&k_babaCode=20&k_raceNo=6",
-        "retrieved_at": "2026-10-30T17:22:03+09:00",
-        "sha256": "f59696bd793c88f0f77557d6ac72429149f152f821028b844df32940ace028ac",
-        "saved_file": "data/results/sources/2026-10-30/ooi/r6_172203_f59696bd793c.html"
+        "retrieved_at": "2026-10-30T17:24:08+09:00",
+        "sha256": "c560cbd624f55f1b56cd279839a63a4ca7fff69decf2cef96e4a9be6aa4902d8",
+        "saved_file": "data/results/sources/2026-10-30/ooi/r6_172408_c560cbd624f5.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 7,
