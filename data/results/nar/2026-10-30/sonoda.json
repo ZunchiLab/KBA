@@ -9,7 +9,7 @@
   "forecast_file": "report_20261030_nar_predictions_v1.json",
   "forecast_sha256": "c6ac0a56d8b93881cfea49908e41b940ab03906cd0199977266255405ac3c3c8",
   "forecast_digest_method": "UTF-8 without BOM, CRLF normalized to LF",
-  "updated_at": "2026-10-30T16:00:28+09:00",
+  "updated_at": "2026-10-30T16:02:34+09:00",
   "complete": false,
   "refresh_interval_minutes": 2,
   "refresh_status": "continuous",
@@ -761,7 +761,7 @@
       "race": 4,
       "name": "Ｃ３二３歳以上",
       "start_at": "2026-10-30T15:50:00+09:00",
-      "status": "partial",
+      "status": "confirmed",
       "rows": [
         {
           "number": 2,
@@ -798,6 +798,90 @@
           "body_weight": "486(2)",
           "final_popularity": 6,
           "final_win_odds": "40.3"
+        },
+        {
+          "number": 4,
+          "name": "バイオサファイア",
+          "finish": 4,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "下原理 （兵庫）",
+          "body_weight": "406(-3)",
+          "final_popularity": 5,
+          "final_win_odds": "22.3"
+        },
+        {
+          "number": 5,
+          "name": "グランロゼ",
+          "finish": 5,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "廣瀬航 （兵庫）",
+          "body_weight": "453(-2)",
+          "final_popularity": 2,
+          "final_win_odds": "3.5"
+        },
+        {
+          "number": 7,
+          "name": "ブエイ",
+          "finish": 6,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "渡瀬和 （兵庫）",
+          "body_weight": "530(-12)",
+          "final_popularity": 7,
+          "final_win_odds": "95.6"
+        },
+        {
+          "number": 8,
+          "name": "メイプルドレフォン",
+          "finish": 7,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "▲高橋洸 （兵庫）",
+          "body_weight": "444(4)",
+          "final_popularity": 8,
+          "final_win_odds": "99.5"
+        },
+        {
+          "number": 6,
+          "name": "レンガノコブタサン",
+          "finish": 8,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "☆小谷哲 （兵庫）",
+          "body_weight": "410(-3)",
+          "final_popularity": 10,
+          "final_win_odds": "435.1"
+        },
+        {
+          "number": 9,
+          "name": "ブロンドエール",
+          "finish": 9,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "◇佐々世 （兵庫）",
+          "body_weight": "435(10)",
+          "final_popularity": 4,
+          "final_win_odds": "10.6"
+        },
+        {
+          "number": 1,
+          "name": "シトロネット",
+          "finish": 10,
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "jockey": "土方颯 （兵庫）",
+          "body_weight": "477(4)",
+          "final_popularity": 9,
+          "final_win_odds": "377.1"
         }
       ],
       "refunds": [
@@ -922,11 +1006,11 @@
       ],
       "source": {
         "url": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=2026%2F10%2F30&k_babaCode=27&k_raceNo=4",
-        "retrieved_at": "2026-10-30T16:00:28+09:00",
-        "sha256": "c93898c9e9bdb8b0597d89b4b035e200222d8df417df5656a0aa6184c81a41a5",
-        "saved_file": "data/results/sources/2026-10-30/sonoda/r4_160028_c93898c9e9bd.html"
+        "retrieved_at": "2026-10-30T16:02:34+09:00",
+        "sha256": "02befa52608a30e4ff3e0595c392784b98f863d343a5075543e71952a994da80",
+        "saved_file": "data/results/sources/2026-10-30/sonoda/r4_160234_02befa52608a.html"
       },
-      "note": "公式に掲載された速報。全頭の着順・払戻が揃うまで最終集計を保留。"
+      "note": "公式着順と払戻を照合済み。"
     },
     {
       "race": 5,
