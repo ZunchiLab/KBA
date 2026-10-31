@@ -57,7 +57,7 @@ def apply(race, numbers, *, reviewed_at, reason, boundary_reviews, exception_rea
         'policy':policy,'field_size_at_review':len(active),'suggested_limit':limit,
         'marked_numbers':[h['number'] for h in ordered], 'reviewed_at':reviewed_at,
         'reason':reason,'boundary_reviews':deepcopy(boundary_reviews),
-        'exception_reason':exception_reason,'purpose':'印と本線候補を絞る目安。的中確率や最適頭数の推定ではない。',
+        'exception_reason':exception_reason,'purpose':('3頭捕捉を優先する印の参考数。購入点数とは別。' if policy==COVERAGE_POLICY else '印と本線候補を絞る目安。')+'的中確率や最適頭数の推定ではない。',
     }
     if coverage_review is not None:result['analysis']['mark_selection']['coverage_review']=deepcopy(coverage_review)
     return result

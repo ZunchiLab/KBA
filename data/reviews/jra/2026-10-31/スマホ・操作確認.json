@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-31T21:34:34+09:00",
+  "viewport": [
+    390,
+    844
+  ],
+  "document_width": 375,
+  "horizontal_overflow": false,
+  "review_races": 24,
+  "review_horses": 305,
+  "role_view_races": 24,
+  "role_view_horses": 305,
+  "sorts": [
+    "first",
+    "second",
+    "top2",
+    "top3"
+  ],
+  "all_four_descending_verified": true,
+  "controls": [
+    "会場切替",
+    "レース番号",
+    "馬名検索",
+    "不的中フィルター",
+    "指標別ソート"
+  ],
+  "old_held_runner_numeric_example": {
+    "key": "K8",
+    "number": 12,
+    "values": [
+      68.3,
+      42.5,
+      50.0,
+      69.2
+    ]
+  },
+  "console_warnings_or_errors": [],
+  "viewport_restored": true,
+  "deliverables_left_open": true,
+  "forecast_originals_changed": false,
+  "proof_images": {
+    "4指標_スマホ確認.png": "8bd22a8475858b2e74bda48c51ab8bcf697e053ea2ae38c68a98c7ff1cfb0492",
+    "反省_スマホ確認.png": "b1508b2586de399853c5e1b36055f4463c5233b8d5402065d14752feb50841e1"
+  },
+  "limitation": "ブラウザー390px幅の操作・表示確認。未知日の精度改善や実機全機種の検証ではない。"
+}

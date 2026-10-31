@@ -101,7 +101,15 @@ def render(d,json_name,results):
                 horse_heading+=f'（印{count}頭）'
                 reviews=''.join('<p>'+E(str(e['number'])+'と'+ '・'.join(map(str,e.get('compared_with',[])))+'の比較：'+e.get('reason',''))+'</p>' for e in marks.get('boundary_reviews',[]))
                 exception='<p><b>目安を超える理由：</b>'+E(marks['exception_reason'])+'</p>' if marks.get('exception_reason') else ''
-                secondary.append('<details class="mark-selection"><summary>印'+str(count)+'頭の選定理由</summary><p>出走予定'+str(marks['field_size_at_review'])+'頭 / 印の目安'+str(marks['suggested_limit'])+'頭まで。枠を埋めず比較して選定。</p><p>'+E(marks['reason'])+'</p>'+exception+reviews+'<p>確認 '+E(marks['reviewed_at'])+'。印数の目安は的中確率や最適頭数の推定ではありません。全頭の順位・指数は保持。</p></details>')
+                coverage=marks.get('coverage_review',{})
+                coverage_html=''
+                limit_note='頭まで。枠を埋めず比較して選定。'
+                if marks.get('policy')=='coverage-first-v2':
+                    limit_note='頭を参考に、3頭捕捉を優先。購入点数とは分離。'
+                    role_labels={'first':'1着','second':'2着ちょうど','top2':'連対','top3':'3着内'}
+                    coverage_html=''.join('<p>'+role_labels.get(k,k)+'候補：'+E('・'.join(map(str,v)))+'</p>' for k,v in coverage.get('candidate_groups',{}).items())
+                    coverage_html+=''.join('<p>'+E(s['name'])+'：'+E('・'.join(map(str,s['numbers'])))+' / '+E(s['reason'])+'</p>' for s in coverage.get('scenario_groups',[]))
+                secondary.append('<details class="mark-selection"><summary>印'+str(count)+'頭の選定理由</summary><p>出走予定'+str(marks['field_size_at_review'])+'頭 / 印の目安'+str(marks['suggested_limit'])+limit_note+'</p><p>'+E(marks['reason'])+'</p>'+exception+coverage_html+reviews+'<p>確認 '+E(marks['reviewed_at'])+'。印数の目安は的中確率や最適頭数の推定ではありません。全頭の順位・指数は保持。</p></details>')
             role_view=authority=='jra' and any(h.get('role_indices') for h in r['horses'])
             if role_view:
                 options=[('rank','総合印順'),('number','馬番順'),('score','旧総合指数順'),('first','1着指数順'),('second','2着ちょうど指数順'),('top2','連対指数順'),('top3','3着内指数順')]
