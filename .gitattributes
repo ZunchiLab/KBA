@@ -7,3 +7,4 @@ data/reviews/**/result-raw/** -text
 data/reviews/jra/2026-10-25/pre-race/** -text
 
 data/reviews/jra/2026-10-31/pre-race/** -text
+data/reviews/**/debut-sort/*.raw.html -text
