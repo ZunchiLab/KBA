@@ -230,3 +230,10 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 次の新規JRAは[jra-mark-policy.md](jra-mark-policy.md)を参照し、公開前ゲートで記録・頭数・印・本線の一致と境界比較を検査。保存された目安は最適頭数・確率ではない。旧予想の固定項目へ追加しない。開催後の印数診断は`post_event_diagnostic`で、元の順位/印/買い目を変更しない。compact描画は記録があるJRAだけに印数と理由を表示する。
 
 結果行の障害`average_1f`は公式見出し「平均1F」の秒数文字列（未掲載はnull等の元状態）。後3Fではないので`last_3f:null`と分離する。原文と確認時刻を保持し、能力指数・事前予想へ転記しない。
+
+
+## 2026-10-31追加：4役割指標と3頭捕捉
+
+11/1以降の新規JRAは[jra-role-indices.md](jra-role-indices.md)と[jra-mark-policy.md](jra-mark-policy.md)の10/31更新を読む。1着・2着ちょうど・連対（2着以内）・3着内の実績指数を別表示し、全指標で並べ替える。欠損削減は全掲載履歴→異馬場参考→明示した市場参考の順で確認し、未校正の数値を確率と呼ばない。印は少数化より上位3頭の捕捉を優先し、買い目の点数と範囲を分離。過去の印・スコア・買い目は不変。新指標の表示見本は開催後の計算であり、事前成績と混ぜない。
+
+データは`horses[].role_indices`（version/calibrated/probability/computed_at/input_cutoff_at/method/label/reason/confidence/source_refs/components/omitted_runs/first.value/second.value/top2.value/top3.value）。各valueは0〜100または理由付きnull。市場参考の4値は役割未分離と明記。印は`analysis.mark_selection.policy: coverage-first-v2`と`coverage_review`に4役割候補、主/別展開、非保証、採否理由を発走前保存。新規公開のstrict検査へ接続済み。未知日の精度改善は未検証。

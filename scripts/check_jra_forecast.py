@@ -5,6 +5,7 @@ from datetime import datetime
 import json,math,re
 from urllib.parse import urlparse
 from jra_mark_policy import audit_race as audit_mark_selection
+from jra_role_indices import audit_indices
 
 def audit(data,strict=False):
     findings=[]
@@ -20,6 +21,8 @@ def audit(data,strict=False):
         if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-10-26':
             for code,number,message in audit_mark_selection(r,data['fixed_at']):add(code,uid,number,message)
         if datetime.fromisoformat(data['fixed_at'])>=datetime.fromisoformat(r['start_at']):add('not_pre_race',uid,message='固定時刻が発走前ではない。')
+        if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-11-01':
+            for code,number,message in audit_indices(r,data['fixed_at']):add(code,uid,number,message)
         for h in hs.values():
             used=[p['run_id'] for p in h.get('evaluated_runs',[])]
             if len(used)!=len(set(used)):add('duplicate_scored_run',uid,h['number'],'同じ過去走を複数回集約している。')

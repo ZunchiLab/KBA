@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "races": 24,
+  "horses": 305,
+  "official_payout_types": 192,
+  "plans": 57,
+  "baselines": 114,
+  "ticket_price_checks": 624,
+  "forecast_raw_hashes_unchanged": true,
+  "public_forecast_values_unchanged": true,
+  "main_cost": 3000,
+  "main_payout": 340,
+  "market_payout": 2190,
+  "index_payout": 190,
+  "marked_top3_captured": 30,
+  "all_top3_marked_races": 2,
+  "preview_computation_after_results": true,
+  "preview_uses_only_frozen_prior_inputs": true,
+  "future_strict_stop_exit": 1,
+  "future_missing_counts": {
+    "mark_selection_missing": 24,
+    "role_indices_missing": 305
+  },
+  "tests": {
+    "python_jra": 53,
+    "js_sort": 7,
+    "js_compact": 9,
+    "js_results": 24
+  },
+  "limitations": "形式・入力時点・集計・表示の検査。人手選馬の正しさ、未知日の予測改善、確率校正は未検証。"
+}

@@ -1,0 +1,168 @@
+{
+  "computed_at": "2026-10-31T21:24:36+09:00",
+  "input_cutoff_at": "2026-10-31T09:43:54+09:00",
+  "methods": {
+    "same_surface_history": 229,
+    "cross_surface_reference": 17,
+    "not_computed": 54,
+    "not_applicable": 1,
+    "market_reference": 4
+  },
+  "nondebut_active": 250,
+  "numeric_independent_or_reference": 250,
+  "previous_insufficient": 25,
+  "previously_held_resolved": [
+    {
+      "key": "T1",
+      "number": 4,
+      "name": "ボディビルダー",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T1",
+      "number": 6,
+      "name": "イントゥーザブルー",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T1",
+      "number": 8,
+      "name": "フィックスユー",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T1",
+      "number": 13,
+      "name": "チャリンコリン",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T2",
+      "number": 1,
+      "name": "ヒミツヘイキ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T2",
+      "number": 4,
+      "name": "キタノバトゥーキ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T8",
+      "number": 6,
+      "name": "レジーナローズ",
+      "method": "same_surface_history"
+    },
+    {
+      "key": "T9",
+      "number": 14,
+      "name": "ニシノイサリビ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T11",
+      "number": 2,
+      "name": "シーズンリッチ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "T12",
+      "number": 1,
+      "name": "フィクセルリリア",
+      "method": "same_surface_history"
+    },
+    {
+      "key": "K1",
+      "number": 6,
+      "name": "ピエナマーズ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K1",
+      "number": 8,
+      "name": "ベラジオセブン",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K1",
+      "number": 9,
+      "name": "エアロクリスタ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K1",
+      "number": 12,
+      "name": "アセンシオン",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K1",
+      "number": 16,
+      "name": "ヴァルダンセ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K2",
+      "number": 2,
+      "name": "ルガルデ",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K3",
+      "number": 6,
+      "name": "サントボーム",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K4",
+      "number": 2,
+      "name": "モルゲンゾンネ",
+      "method": "market_reference"
+    },
+    {
+      "key": "K4",
+      "number": 3,
+      "name": "ヤコブセン",
+      "method": "market_reference"
+    },
+    {
+      "key": "K4",
+      "number": 6,
+      "name": "ディープサミット",
+      "method": "market_reference"
+    },
+    {
+      "key": "K4",
+      "number": 7,
+      "name": "ローズピリオド",
+      "method": "market_reference"
+    },
+    {
+      "key": "K7",
+      "number": 7,
+      "name": "ララディアーブル",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K8",
+      "number": 12,
+      "name": "モンサンゴールデン",
+      "method": "same_surface_history"
+    },
+    {
+      "key": "K10",
+      "number": 1,
+      "name": "セブンマジシャン",
+      "method": "cross_surface_reference"
+    },
+    {
+      "key": "K12",
+      "number": 4,
+      "name": "ザラタン",
+      "method": "same_surface_history"
+    }
+  ],
+  "phase": "post_event_presentation",
+  "forecast_originals_changed": false
+}

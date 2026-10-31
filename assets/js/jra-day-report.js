@@ -99,6 +99,18 @@
     [...list.children].sort((a,b)=>byNumber?Number(a.dataset.number)-Number(b.dataset.number):rank(Number(a.dataset.number))-rank(Number(b.dataset.number))).forEach(h=>list.append(h));
     btn.dataset.order=byNumber?'number':'rank';btn.textContent=config.compact?(byNumber?'総合順':'馬番順'):(byNumber?'総合順位順に切替':'馬番順に切替');
   }));
+  document.querySelectorAll('.horse-sort').forEach(select=>select.addEventListener('change',()=>{
+    const list=select.closest('.race').querySelector('.all-horses');const key=select.value;
+    const number=e=>Number(e.dataset.number);
+    const value=e=>{const raw=e.dataset[key];return raw===undefined||raw===''?null:Number(raw);};
+    [...list.children].sort((a,b)=>{
+      const inactive=Number(a.dataset.inactive==='true')-Number(b.dataset.inactive==='true');if(inactive)return inactive;
+      if(key==='number')return number(a)-number(b);
+      const av=value(a),bv=value(b);if(av===null||bv===null){if(av!==bv)return av===null?1:-1;}
+      else if(av!==bv)return key==='rank'?av-bv:bv-av;
+      const ar=Number(a.dataset.rank)||999,br=Number(b.dataset.rank)||999;return ar-br||number(a)-number(b);
+    }).forEach(h=>list.append(h));
+  }));
   function toast(message) { const e=document.createElement('div');e.className='toast';e.role='status';e.textContent=message;document.body.append(e);setTimeout(()=>e.remove(),4000); }
   document.querySelectorAll('.copy-plan').forEach(btn=>btn.addEventListener('click',async()=>{
     const race=config.races.find(r=>r.bet_plans.some(p=>p.plan_id===btn.dataset.planId));

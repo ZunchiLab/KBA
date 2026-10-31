@@ -1,0 +1,898 @@
+{
+  "summary": {
+    "races": 19,
+    "marks": 73,
+    "actual_top3": 57,
+    "captured": 30,
+    "all_top3_races": 2,
+    "same_count_market_captured": 33,
+    "same_count_market_all": 2,
+    "same_count_index_captured": 28,
+    "same_count_index_all": 1,
+    "note": "同じレースごと同じ印頭数で比較。候補包含であり、掲載券の的中ではない。"
+  },
+  "races": [
+    {
+      "key": "T1",
+      "field_size": 16,
+      "marked_numbers": [
+        11,
+        7,
+        15,
+        14,
+        6
+      ],
+      "marked_count": 5,
+      "actual_top3": [
+        6,
+        11,
+        12
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 12,
+          "name": "ホウオウシュウ",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 3
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T2",
+      "field_size": 10,
+      "marked_numbers": [
+        9,
+        2,
+        6
+      ],
+      "marked_count": 3,
+      "actual_top3": [
+        6,
+        7,
+        9
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 7,
+          "name": "トーセンイルン",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 7
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T3",
+      "field_size": 8,
+      "marked_numbers": [
+        2,
+        8,
+        1
+      ],
+      "marked_count": 3,
+      "actual_top3": [
+        4,
+        6,
+        8
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 4,
+          "name": "リカジョンファンク",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 4,
+          "snapshot_market_rank": 6
+        },
+        {
+          "number": 6,
+          "name": "アオイゲート",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 5,
+          "snapshot_market_rank": 4
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T4",
+      "field_size": 16,
+      "marked_numbers": [],
+      "marked_count": 0,
+      "actual_top3": [
+        3,
+        4,
+        9
+      ],
+      "captured": 0,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 3,
+          "name": "ワイワイシャイニー",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 4,
+          "snapshot_market_rank": 4
+        },
+        {
+          "number": 4,
+          "name": "ホウオウビリオン",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 6
+        },
+        {
+          "number": 9,
+          "name": "ミヤルロワ",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 3,
+          "snapshot_market_rank": 3
+        }
+      ],
+      "same_count_market_captured": 0,
+      "same_count_market_all": false,
+      "same_count_index_captured": 0,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T5",
+      "field_size": 9,
+      "marked_numbers": [],
+      "marked_count": 0,
+      "actual_top3": [
+        2,
+        4,
+        8
+      ],
+      "captured": 0,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 8,
+          "name": "エクアトーレ",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 1,
+          "snapshot_market_rank": 1
+        },
+        {
+          "number": 2,
+          "name": "ラヴェーラ",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 2,
+          "snapshot_market_rank": 2
+        },
+        {
+          "number": 4,
+          "name": "ヴィルアペックス",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 8,
+          "snapshot_market_rank": 8
+        }
+      ],
+      "same_count_market_captured": 0,
+      "same_count_market_all": false,
+      "same_count_index_captured": 0,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T6",
+      "field_size": 15,
+      "marked_numbers": [
+        11,
+        14,
+        12,
+        15
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        5,
+        11,
+        16
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 16,
+          "name": "タケルムサシ",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 5,
+          "snapshot_market_rank": 8
+        },
+        {
+          "number": 5,
+          "name": "グランドスウェル",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 7,
+          "snapshot_market_rank": 4
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T7",
+      "field_size": 11,
+      "marked_numbers": [
+        2,
+        10,
+        3,
+        5
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        5,
+        10,
+        11
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 11,
+          "name": "オプレントジュエル",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 9,
+          "snapshot_market_rank": 9
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T8",
+      "field_size": 13,
+      "marked_numbers": [
+        7,
+        13,
+        3,
+        11
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        5,
+        7,
+        10
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 5,
+          "name": "レディサン",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 10,
+          "snapshot_market_rank": 8
+        },
+        {
+          "number": 10,
+          "name": "ヴィンブルレー",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 11,
+          "snapshot_market_rank": 5
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T9",
+      "field_size": 14,
+      "marked_numbers": [
+        13,
+        4,
+        7,
+        3,
+        9
+      ],
+      "marked_count": 5,
+      "actual_top3": [
+        3,
+        4,
+        9
+      ],
+      "captured": 3,
+      "all_top3_captured": true,
+      "omitted": [],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T10",
+      "field_size": 10,
+      "marked_numbers": [
+        7,
+        3,
+        10
+      ],
+      "marked_count": 3,
+      "actual_top3": [
+        1,
+        3,
+        7
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 1,
+          "name": "ケイケイ",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 7
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T11",
+      "field_size": 16,
+      "marked_numbers": [
+        13,
+        7,
+        16,
+        12
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        6,
+        9,
+        12
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 6,
+          "name": "ジェイパームス",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 8,
+          "snapshot_market_rank": 3
+        },
+        {
+          "number": 9,
+          "name": "リサシテーション",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 5
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "T12",
+      "field_size": 12,
+      "marked_numbers": [
+        7,
+        10,
+        6
+      ],
+      "marked_count": 3,
+      "actual_top3": [
+        7,
+        8,
+        10
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 8,
+          "name": "アメテュストス",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 5,
+          "snapshot_market_rank": 4
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K1",
+      "field_size": 16,
+      "marked_numbers": [
+        5,
+        14,
+        7,
+        9
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        4,
+        5,
+        13
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 13,
+          "name": "ジャスコヒラリアス",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 6
+        },
+        {
+          "number": 4,
+          "name": "ランズエンド",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 10,
+          "snapshot_market_rank": 12
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K2",
+      "field_size": 10,
+      "marked_numbers": [
+        6,
+        9,
+        1
+      ],
+      "marked_count": 3,
+      "actual_top3": [
+        5,
+        6,
+        9
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 5,
+          "name": "サウンドアミューズ",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 4,
+          "snapshot_market_rank": 5
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K3",
+      "field_size": 8,
+      "marked_numbers": [
+        8,
+        7,
+        4
+      ],
+      "marked_count": 3,
+      "actual_top3": [
+        4,
+        7,
+        8
+      ],
+      "captured": 3,
+      "all_top3_captured": true,
+      "omitted": [],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 3,
+      "same_count_index_all": true
+    },
+    {
+      "key": "K4",
+      "field_size": 10,
+      "marked_numbers": [],
+      "marked_count": 0,
+      "actual_top3": [
+        1,
+        4,
+        5
+      ],
+      "captured": 0,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 1,
+          "name": "グロリアラウス",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 1,
+          "snapshot_market_rank": 1
+        },
+        {
+          "number": 5,
+          "name": "カイコウ",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 2,
+          "snapshot_market_rank": 2
+        },
+        {
+          "number": 4,
+          "name": "セイフウサツキ",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 4,
+          "snapshot_market_rank": 4
+        }
+      ],
+      "same_count_market_captured": 0,
+      "same_count_market_all": false,
+      "same_count_index_captured": 0,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K5",
+      "field_size": 13,
+      "marked_numbers": [],
+      "marked_count": 0,
+      "actual_top3": [
+        1,
+        4,
+        10
+      ],
+      "captured": 0,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 10,
+          "name": "フォコンノワール",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 2,
+          "snapshot_market_rank": 2
+        },
+        {
+          "number": 1,
+          "name": "ソトッキー",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 4,
+          "snapshot_market_rank": 4
+        },
+        {
+          "number": 4,
+          "name": "アントレピード",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 8,
+          "snapshot_market_rank": 8
+        }
+      ],
+      "same_count_market_captured": 0,
+      "same_count_market_all": false,
+      "same_count_index_captured": 0,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K6",
+      "field_size": 16,
+      "marked_numbers": [],
+      "marked_count": 0,
+      "actual_top3": [
+        10,
+        14,
+        15
+      ],
+      "captured": 0,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 14,
+          "name": "サイモンレコルト",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 11,
+          "snapshot_market_rank": 11
+        },
+        {
+          "number": 15,
+          "name": "マスターピース",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 7,
+          "snapshot_market_rank": 7
+        },
+        {
+          "number": 10,
+          "name": "スターシーカー",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 1,
+          "snapshot_market_rank": 1
+        }
+      ],
+      "same_count_market_captured": 0,
+      "same_count_market_all": false,
+      "same_count_index_captured": 0,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K7",
+      "field_size": 12,
+      "marked_numbers": [
+        12,
+        4,
+        8,
+        10
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        2,
+        7,
+        10
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 2,
+          "name": "スカイストライプス",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 8,
+          "snapshot_market_rank": 2
+        },
+        {
+          "number": 7,
+          "name": "ララディアーブル",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 12,
+          "snapshot_market_rank": 4
+        }
+      ],
+      "same_count_market_captured": 3,
+      "same_count_market_all": true,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K8",
+      "field_size": 14,
+      "marked_numbers": [
+        3,
+        13,
+        7,
+        12
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        8,
+        12,
+        13
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 8,
+          "name": "マメタンク",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 1
+        }
+      ],
+      "same_count_market_captured": 2,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K9",
+      "field_size": 10,
+      "marked_numbers": [
+        6,
+        7,
+        3,
+        5
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        1,
+        2,
+        7
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 1,
+          "name": "ダノンカゼルタ",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 8,
+          "snapshot_market_rank": 8
+        },
+        {
+          "number": 2,
+          "name": "キタサンハナビラ",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 7,
+          "snapshot_market_rank": 7
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K10",
+      "field_size": 16,
+      "marked_numbers": [
+        2,
+        10,
+        9,
+        11,
+        14
+      ],
+      "marked_count": 5,
+      "actual_top3": [
+        3,
+        9,
+        11
+      ],
+      "captured": 2,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 3,
+          "name": "ソルチェリア",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 4
+        }
+      ],
+      "same_count_market_captured": 3,
+      "same_count_market_all": true,
+      "same_count_index_captured": 2,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K11",
+      "field_size": 11,
+      "marked_numbers": [
+        6,
+        10,
+        8,
+        3
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        4,
+        5,
+        10
+      ],
+      "captured": 1,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 4,
+          "name": "ニクスルーナ",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 7,
+          "snapshot_market_rank": 3
+        },
+        {
+          "number": 5,
+          "name": "バタフライ",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 11,
+          "snapshot_market_rank": 11
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 1,
+      "same_count_index_all": false
+    },
+    {
+      "key": "K12",
+      "field_size": 18,
+      "marked_numbers": [
+        15,
+        6,
+        17,
+        4
+      ],
+      "marked_count": 4,
+      "actual_top3": [
+        2,
+        9,
+        11
+      ],
+      "captured": 0,
+      "all_top3_captured": false,
+      "omitted": [
+        {
+          "number": 2,
+          "name": "テイエムスティール",
+          "finish": 1,
+          "mark": "無印",
+          "rank": 6,
+          "snapshot_market_rank": 1
+        },
+        {
+          "number": 11,
+          "name": "タイムレスキス",
+          "finish": 2,
+          "mark": "無印",
+          "rank": 12,
+          "snapshot_market_rank": 7
+        },
+        {
+          "number": 9,
+          "name": "アイスヴィレッジ",
+          "finish": 3,
+          "mark": "無印",
+          "rank": 8,
+          "snapshot_market_rank": 9
+        }
+      ],
+      "same_count_market_captured": 1,
+      "same_count_market_all": false,
+      "same_count_index_captured": 0,
+      "same_count_index_all": false
+    }
+  ]
+}

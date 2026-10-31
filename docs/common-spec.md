@@ -305,3 +305,10 @@ scripts/*                     取得・変換・描画・一覧生成
 ## 2026-10-26追加：JRAの可変印数
 
 次の新規JRAは[jra-mark-policy.md](jra-mark-policy.md)を参照。全頭の順位・指数は維持し、印だけを出走予定頭数・本線の候補範囲に合わせて人手で絞る。目安は6頭以下2頭、7〜9頭3頭、10〜12頭4頭、13〜15頭5頭、16〜18頭6頭。枠埋め・上位N頭の自動採用をしない。境界比較、超過理由、本線との整合を発走前保存する。10/26以降の公開前検査と任意のcompact印数表示に接続済み。過去の固定印、地方の印、予測精度を自動変更しない。未知日の有効性は未検証。
+
+
+## 2026-10-31追加：4役割指標と3頭捕捉
+
+11/1以降の新規JRAは[jra-role-indices.md](jra-role-indices.md)と[jra-mark-policy.md](jra-mark-policy.md)の10/31更新を読む。1着・2着ちょうど・連対（2着以内）・3着内の実績指数を別表示し、全指標で並べ替える。欠損削減は全掲載履歴→異馬場参考→明示した市場参考の順で確認し、未校正の数値を確率と呼ばない。印は少数化より上位3頭の捕捉を優先し、買い目の点数と範囲を分離。過去の印・スコア・買い目は不変。新指標の表示見本は開催後の計算であり、事前成績と混ぜない。
+
+データは`horses[].role_indices`（version/calibrated/probability/computed_at/input_cutoff_at/method/label/reason/confidence/source_refs/components/omitted_runs/first.value/second.value/top2.value/top3.value）。各valueは0〜100または理由付きnull。市場参考の4値は役割未分離と明記。印は`analysis.mark_selection.policy: coverage-first-v2`と`coverage_review`に4役割候補、主/別展開、非保証、採否理由を発走前保存。新規公開のstrict検査へ接続済み。未知日の精度改善は未検証。

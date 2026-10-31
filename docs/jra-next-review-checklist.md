@@ -200,3 +200,10 @@
 原本v2固定記録はhash_methodにLF正規化と書いたが保存値はCRLFの生バイトSHAだった。原本生バイトは記録と一致。原本・記録を変更せず、レビューへ生バイトと正規化の両SHAを併記。公開予想JSONの正規化SHAは上記で不変。
 
 成果物：https://zunchilab.github.io/KBA/predictions/report_20261025_jra_review_v1.html （JSON/Markdown併設）。元outputs/20261025_reviewに全頭・全構成・印数診断・公式原文36件・朝価格原文29件・原本複製を保存。公開・スマホ操作は別に確認する。
+
+
+## 2026-10-31追加：4役割指標と3頭捕捉
+
+11/1以降の新規JRAは[jra-role-indices.md](jra-role-indices.md)と[jra-mark-policy.md](jra-mark-policy.md)の10/31更新を読む。1着・2着ちょうど・連対（2着以内）・3着内の実績指数を別表示し、全指標で並べ替える。欠損削減は全掲載履歴→異馬場参考→明示した市場参考の順で確認し、未校正の数値を確率と呼ばない。印は少数化より上位3頭の捕捉を優先し、買い目の点数と範囲を分離。過去の印・スコア・買い目は不変。新指標の表示見本は開催後の計算であり、事前成績と混ぜない。
+
+データは`horses[].role_indices`（version/calibrated/probability/computed_at/input_cutoff_at/method/label/reason/confidence/source_refs/components/omitted_runs/first.value/second.value/top2.value/top3.value）。各valueは0〜100または理由付きnull。市場参考の4値は役割未分離と明記。印は`analysis.mark_selection.policy: coverage-first-v2`と`coverage_review`に4役割候補、主/別展開、非保証、採否理由を発走前保存。新規公開のstrict検査へ接続済み。未知日の精度改善は未検証。

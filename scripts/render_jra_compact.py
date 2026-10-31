@@ -102,7 +102,14 @@ def render(d,json_name,results):
                 reviews=''.join('<p>'+E(str(e['number'])+'と'+ '・'.join(map(str,e.get('compared_with',[])))+'の比較：'+e.get('reason',''))+'</p>' for e in marks.get('boundary_reviews',[]))
                 exception='<p><b>目安を超える理由：</b>'+E(marks['exception_reason'])+'</p>' if marks.get('exception_reason') else ''
                 secondary.append('<details class="mark-selection"><summary>印'+str(count)+'頭の選定理由</summary><p>出走予定'+str(marks['field_size_at_review'])+'頭 / 印の目安'+str(marks['suggested_limit'])+'頭まで。枠を埋めず比較して選定。</p><p>'+E(marks['reason'])+'</p>'+exception+reviews+'<p>確認 '+E(marks['reviewed_at'])+'。印数の目安は的中確率や最適頭数の推定ではありません。全頭の順位・指数は保持。</p></details>')
-            parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
+            role_view=authority=='jra' and any(h.get('role_indices') for h in r['horses'])
+            if role_view:
+                options=[('rank','総合印順'),('number','馬番順'),('score','旧総合指数順'),('first','1着指数順'),('second','2着ちょうど指数順'),('top2','連対指数順'),('top3','3着内指数順')]
+                control='<select class="horse-sort" aria-label="指標の並べ替え">'+''.join('<option value="'+k+'">'+v+'</option>' for k,v in options)+'</select>'
+                labels='<span class="role-scores"><span>1着</span><span>2着</span><span>連対</span><span>3着内</span></span>'
+                parts.append('<div class="row horse-toolbar role-toolbar"><h3>'+horse_heading.replace('近走指数','役割別指数')+'</h3>'+control+'</div><p class="role-legend">2着＝ちょうど2着、連対＝2着以内。0〜100の実績比較・確率ではありません。~は条件替わり等の参考。</p><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns role-columns"><span>印 / 馬番・馬名</span>'+labels+'<span>着順</span></div><div class="all-horses role-horses">')
+            else:
+                parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
             if a.get('index_note'):
                 parts.insert(len(parts)-1,'<p class="index-note">'+E(a['index_note'])+'</p>')
             for h in sorted(r['horses'],key=lambda h:h['rank'] or 999):
@@ -116,7 +123,19 @@ def render(d,json_name,results):
                 history=h.get('history_audit');history_html=''
                 if history:
                     history_html='<details><summary>公式掲載戦歴の確認範囲</summary><p>'+E(history.get('summary',history.get('scope','確認範囲は原文を参照')))+'</p><a href="'+E(history['source']['url'])+'">' +authority_label+'公式掲載履歴</a><p>確認 '+E(history['source']['retrieved_at'])+'。掲載範囲外の経験は断定しません。</p></details>'
-                parts.append(f'<details class="horse" data-number="{h["number"]}"><summary><span class="mark">{E(mark)}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{E(rank_label)} · {E(h["style"])}</small></span><b class="{score_class}">{E(score)}</b><strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(h["jockey"])} · {h["weight"]}kg · 馬体重 {E(h["body"] or "未発表")}</p><p>{ref_label} {E(score)} · 勝比較 {E(h["win"] if h["win"] is not None else "未算定")} / 圏内比較 {E(h["place"] if h["place"] is not None else "未算定")}</p><p><b>総合判断</b> {E(h.get("mark_override_reason") or "指数と総合順位が一致。以下の根拠と懸念を確認。")}</p><p><b>根拠</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p><b>採否</b> {E(h["ticket_review"])}</p><details><summary>過去走と出典</summary><ul>'+''.join(past_item(p) for p in h['past'])+'</ul></details>'+history_html+'</div></details>')
+                attrs='';role_detail='';score_html=f'<b class="{score_class}">{E(score)}</b>'
+                if role_view:
+                    indices=h.get('role_indices',{});method=indices.get('method');ref=method in ['cross_surface_reference','market_reference'] or r['surface']=='hurdle'
+                    cells=[]
+                    for role in ['first','second','top2','top3']:
+                        value=indices.get(role,{}).get('value');attrs+=' data-'+role+'="'+(str(value) if value is not None else '')+'"'
+                        cells.append('<b title="'+E(indices.get(role,{}).get('label',role))+'">'+E(('~' if ref else '')+str(value) if value is not None else '—')+'</b>')
+                    attrs+=' data-rank="'+str(h['rank'] or '')+'" data-score="'+str(h['score'] if h['score'] is not None else '')+'" data-inactive="'+str(h['status_at_snapshot'] in ['withdrawn','excluded']).lower()+'"'
+                    score_html='<span class="role-scores">'+''.join(cells)+'</span>'
+                    rank_label='総合'+(str(h['rank'])+'位' if h['rank'] else '対象外')+' / '+indices.get('label','未算出')
+                    refs=''.join('<li><a href="'+E(url)+'">根拠走 '+str(i+1)+'</a></li>' for i,url in enumerate(indices.get('source_refs',[])))
+                    role_detail='<details class="role-method"><summary>4指標の根拠・資料の強さ</summary><p>'+E(indices.get('reason','未算出'))+'</p><p>材料の充足度 '+E(indices.get('confidence','未評価'))+' / 実走 '+E(indices.get('runs',0))+'走。推定手順は未学習・未校正。</p><p>1着は着差重視、2着は過去着順と2着の近さ、連対・3着内は各範囲への実績を別集約。新馬の4指標は空欄、市場参考は能力指数と分離。</p><ul>'+refs+'</ul></details>'
+                parts.append(f'<details class="horse" data-number="{h["number"]}"{attrs}><summary><span class="mark">{E(mark)}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])}</b><small>{E(rank_label)} · {E(h["style"])}</small></span>{score_html}<strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(h["jockey"])} · {h["weight"]}kg · 馬体重 {E(h["body"] or "未発表")}</p><p>{ref_label} {E(score)} · 勝比較 {E(h["win"] if h["win"] is not None else "未算定")} / 圏内比較 {E(h["place"] if h["place"] is not None else "未算定")}</p><p><b>総合判断</b> {E(h.get("mark_override_reason") or "指数と総合順位が一致。以下の根拠と懸念を確認。")}</p><p><b>根拠</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p><b>採否</b> {E(h["ticket_review"])}</p><details><summary>過去走と出典</summary><ul>'+''.join(past_item(p) for p in h['past'])+'</ul></details>'+history_html+role_detail+'</div></details>')
             parts.append('</div>'+''.join(secondary))
             parts.append(comparison_table(r)+formation_section(r))
             parts.append('<details class="sources"><summary>出馬表・確認時刻</summary><a href="'+E(r['source']['url'])+'">' +authority_label+'公式出馬表</a><p>出馬表 '+E(r['source']['retrieved_at'])+'／価格 '+E(r['source_checked_at'])+'</p><p>馬場は出馬表取得時点。取消・馬場・状態・価格は直前再確認。</p></details></div></article>')

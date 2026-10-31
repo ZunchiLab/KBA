@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T09:44:35+09:00",
+  "generated_at": "2026-10-31T21:26:22+09:00",
   "reports": [
     {
       "file": "report_20261031_jra_predictions_v1.html",
@@ -326,6 +326,26 @@
       "has_results": true,
       "document_type": "prediction",
       "reviewed_at": null
+    },
+    {
+      "file": "report_20261031_jra_review_v1.html",
+      "href": "predictions/report_20261031_jra_review_v1.html",
+      "date": "2026-10-31",
+      "category": "review",
+      "venue": "東京・京都",
+      "title": "10/31 JRA全24Rの反省と4指標の改善",
+      "heading": "10/31 JRA全24Rの反省と4指標の改善",
+      "note": "開催後の振り返り · 全頭の印と着順 · 買い方と購入記録の補助",
+      "version": 1,
+      "group": "report_20261031_jra_review",
+      "fixed_at": null,
+      "scope": null,
+      "phase": "post_race_review",
+      "superseded": false,
+      "horse_names": [],
+      "has_results": false,
+      "document_type": "review",
+      "reviewed_at": "2026-10-31T21:24:38+09:00"
     },
     {
       "file": "report_20261030_nar_predictions_v1.html",
