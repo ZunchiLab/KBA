@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-31",
+  "fixed_at": "2026-10-31T09:43:54+09:00",
+  "public_forecast_sha256": "0b5d1387a65f76aa438083bc5f5419731a87a6e0ea79c71946f03ed29e553321",
+  "races": 24,
+  "horses": 305,
+  "declared_runners": 304,
+  "withdrawn": [
+    {
+      "key": "T6",
+      "number": 13,
+      "name": "タマモトリノ"
+    }
+  ],
+  "candidates": 19,
+  "priorities": {
+    "優先": {
+      "races": 3,
+      "cost": 300,
+      "eligible_races": 3,
+      "eligible_cost": 300
+    },
+    "追加": {
+      "races": 16,
+      "cost": 2900,
+      "eligible_races": 14,
+      "eligible_cost": 2700
+    }
+  },
+  "eligible_races": 17,
+  "all_candidates_yen": 3200,
+  "price_eligible_yen": 3000,
+  "baseline_plans": 114,
+  "listed_history_fetched": 250,
+  "listed_history_parsed": 250,
+  "older_supplements": 176,
+  "source_count": 542,
+  "mark_counts": {
+    "T1": 5,
+    "T2": 3,
+    "T3": 3,
+    "T4": 0,
+    "T5": 0,
+    "T6": 4,
+    "T7": 4,
+    "T8": 4,
+    "T9": 5,
+    "T10": 3,
+    "T11": 4,
+    "T12": 3,
+    "K1": 4,
+    "K2": 3,
+    "K3": 3,
+    "K4": 0,
+    "K5": 0,
+    "K6": 0,
+    "K7": 4,
+    "K8": 4,
+    "K9": 4,
+    "K10": 5,
+    "K11": 4,
+    "K12": 4
+  },
+  "actual_purchase": null,
+  "results_initialized": true,
+  "unknown_future_accuracy": true
+}
