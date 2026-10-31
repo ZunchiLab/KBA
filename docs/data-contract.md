@@ -237,3 +237,10 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 11/1以降の新規JRAは[jra-role-indices.md](jra-role-indices.md)と[jra-mark-policy.md](jra-mark-policy.md)の10/31更新を読む。1着・2着ちょうど・連対（2着以内）・3着内の実績指数を別表示し、全指標で並べ替える。欠損削減は全掲載履歴→異馬場参考→明示した市場参考の順で確認し、未校正の数値を確率と呼ばない。印は少数化より上位3頭の捕捉を優先し、買い目の点数と範囲を分離。過去の印・スコア・買い目は不変。新指標の表示見本は開催後の計算であり、事前成績と混ぜない。
 
 データは`horses[].role_indices`（version/calibrated/probability/computed_at/input_cutoff_at/method/label/reason/confidence/source_refs/components/omitted_runs/first.value/second.value/top2.value/top3.value）。各valueは0〜100または理由付きnull。市場参考の4値は役割未分離と明記。印は`analysis.mark_selection.policy: coverage-first-v2`と`coverage_review`に4役割候補、主/別展開、非保証、採否理由を発走前保存。新規公開のstrict検査へ接続済み。未知日の精度改善は未検証。
+
+
+## 2026-10-31セルフレビュー：v2と判断の点検
+
+現行はjra-role-relative-v2。定義は[jra-role-indices.md](jra-role-indices.md)。満点の過信を抑える相手比較・資料量補正を導入。市場値の4項目コピーを廃止し、保存単勝オッズへ分離。「~」をやめ、参考の種類と採点走数・資料量を表示する。独自比較が未解決な箇所を無理に埋めない。
+
+8開催日193Rの事後比較で全般的優位性なし。指標は補助用途。新規JRAはanalysis.role_index_usage_review（mode=auxiliary_only、benchmark_edge_unproven=true、independent_comparison_reason）、有力な除外馬のbest_caseと採用相手のpeer_case、共通必須馬を含まない組合せのdependency_reviewsを保存。11/1以降のstrictへ接続。過去の固定印・旧指数・買い目・保存価格は不変。仕様・実装・形式検査と未来の効果は分ける。

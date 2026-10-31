@@ -28,14 +28,14 @@ class RoleIndicesTest(unittest.TestCase):
     def test_old_full_history_restores_score_without_selecting_only_good_runs(self):
         r=race();h=r['horses'][0];h['past']=[past(8,'ダ')]
         rows=[dict(date=d,venue='東京',race_name='1勝クラス',grade_raw='',surface='turf',distance=1600,going='良',finish_raw=str(f),source_row=['','','','','','12'],result_url='older-'+str(f)) for d,f in [('2026-07-01',2),('2026-06-01',12)]]
-        hist={1:dict(prior_races=rows,source=dict(retrieved_at=ASOF))}
+        hist={1:dict(status='parsed',prior_races=rows,source=dict(retrieved_at=ASOF))}
         out=self.calculate(r,history_by_number=hist)['horses'][0]['role_indices']
         self.assertEqual(out['method'],'same_surface_history');self.assertEqual(out['runs'],2)
         self.assertEqual({x['finish'] for x in out['components']},{2,12})
     def test_cross_surface_is_explicit_reference_with_low_strength(self):
         r=race();r['horses'][0]['past']=[past(3,'ダ')]
         d=self.calculate(r)['horses'][0]['role_indices']
-        self.assertEqual(d['method'],'cross_surface_reference');self.assertEqual(d['confidence'],'低')
+        self.assertEqual(d['method'],'cross_surface_reference');self.assertEqual(d['confidence'],'薄')
         self.assertTrue(all(d[k]['value'] is not None for k in ROLES))
     def test_unknown_class_is_not_zero_adjustment_or_independent_score(self):
         r=race();r['horses'][0]['past']=[past(1,cl='未確認')]
@@ -44,8 +44,8 @@ class RoleIndicesTest(unittest.TestCase):
     def test_market_fallback_cannot_claim_independent_role_estimates(self):
         r=race();h=r['horses'][0];h['past']=[past(1,cl='JpnI')];h['market']=dict(win=2.0,source=dict(url='https://jra.jp/odds',retrieved_at=ASOF))
         d=self.calculate(r)['horses'][0]['role_indices']
-        self.assertEqual(d['method'],'market_reference');self.assertIn('未分離',d['label'])
-        self.assertEqual(len({d[k]['value'] for k in ROLES}),1)
+        self.assertEqual(d['method'],'market_reference');self.assertIn('市場参考',d['label'])
+        self.assertTrue(all(d[k]['value'] is None for k in ROLES));self.assertIsNotNone(d['market_reference']['value'])
     def test_today_or_future_result_rejected(self):
         r=race();r['horses'][0]['past']=[past(day='2026-11-01')]
         with self.assertRaises(ValueError):self.calculate(r)

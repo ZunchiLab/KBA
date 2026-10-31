@@ -2,6 +2,7 @@
 from copy import deepcopy
 from datetime import datetime
 from math import ceil
+from jra_role_indices import horse_evidence_refs
 
 POLICY = 'field-size-v1'
 COVERAGE_POLICY = 'coverage-first-v2'
@@ -102,14 +103,14 @@ def audit_race(race, fixed_at):
     if policy==COVERAGE_POLICY:
         credible|={n for group in a.get('coverage_review',{}).get('candidate_groups',{}).values() if isinstance(group,list) for n in group if n in known and n not in actual}
     entries={e.get('number'):e for e in a.get('boundary_reviews',[]) if isinstance(e,dict)}
-    all_refs={ref for h in active for ref in h.get('evidence_refs',[])}
+    all_refs={ref for h in active for ref in horse_evidence_refs(h)}
     for n in sorted(boundary|credible):
         e=entries.get(n,{});peers=set(e.get('compared_with',[]));refs=set(e.get('evidence_refs',[]))
         # Reference-only unbet races may have no independently selected marks.
         if not actual and not main_pool:continue
-        own=set(known[n].get('evidence_refs',[]))
+        own=horse_evidence_refs(known[n])
         valid=bool(peers and peers<=actual and e.get('reason') and refs<=all_refs)
         if own and not refs&own:valid=False
-        if any(known[p].get('evidence_refs') and not refs&set(known[p]['evidence_refs']) for p in peers if p in known):valid=False
+        if any(horse_evidence_refs(known[p]) and not refs&horse_evidence_refs(known[p]) for p in peers if p in known):valid=False
         if not valid:errors.append(('mark_boundary_comparison_missing',n,'印外の境界候補・指数上位・条件戻り・数値保留を、採用した印候補と根拠走付きで比較する。'))
     return errors

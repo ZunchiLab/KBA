@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-31T23:07:16+09:00",
+  "independent_or_cross_reference_horses": 246,
+  "market_only_horses": 4,
+  "role_values": 984,
+  "min_value": 39.2,
+  "max_value": 65.4,
+  "negative_count": 0,
+  "full_marks_count": 0,
+  "forecast_originals_changed": false,
+  "benchmark_races": 193,
+  "benchmark_input_errors": [],
+  "tests": {
+    "python": 69,
+    "sort_js": 7,
+    "compact_js": 9,
+    "result_js": 24
+  }
+}

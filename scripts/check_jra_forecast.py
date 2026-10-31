@@ -5,7 +5,8 @@ from datetime import datetime
 import json,math,re
 from urllib.parse import urlparse
 from jra_mark_policy import audit_race as audit_mark_selection
-from jra_role_indices import audit_indices
+from jra_role_indices import audit_indices,horse_evidence_refs
+from jra_decision_review import audit_race as audit_decisions
 
 def audit(data,strict=False):
     findings=[]
@@ -23,6 +24,7 @@ def audit(data,strict=False):
         if datetime.fromisoformat(data['fixed_at'])>=datetime.fromisoformat(r['start_at']):add('not_pre_race',uid,message='固定時刻が発走前ではない。')
         if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-11-01':
             for code,number,message in audit_indices(r,data['fixed_at']):add(code,uid,number,message)
+            for code,number,message in audit_decisions(r):add(code,uid,number,message)
         for h in hs.values():
             used=[p['run_id'] for p in h.get('evaluated_runs',[])]
             if len(used)!=len(set(used)):add('duplicate_scored_run',uid,h['number'],'同じ過去走を複数回集約している。')
@@ -41,10 +43,10 @@ def audit(data,strict=False):
                 valid=(history.get('status')=='parsed' and history.get('summary') and source.get('provider')=='JRA' and urlparse(source.get('url','')).hostname in ['jra.jp','www.jra.jp','jra.go.jp','www.jra.go.jp'] and re.fullmatch('[a-f0-9]{64}',source.get('raw_sha256','')) and before)
                 if not valid:add('listed_history_scope_missing',uid,n,'本線レースの全出走予定馬について、発走前のJRA公式掲載戦歴の確認範囲・出典・取得時刻・原文SHAをhistory_auditへ保存。未解決なら本線を見送る。書式通過は初条件の文章の正しさを保証しない。')
         adopted={n for p in mains for t in p['tickets'] for n in t['numbers']}
-        all_refs={ref for h in hs.values() for ref in h.get('evidence_refs',[])}
+        all_refs={ref for h in hs.values() for ref in horse_evidence_refs(h)}
         def evidence(entry,number,compared):
-            refs=set(entry.get('evidence_refs',[]));own=set(hs[number].get('evidence_refs',[]))
-            return bool(compared and refs<=all_refs and refs&own and all(n in hs and refs&set(hs[n].get('evidence_refs',[])) for n in compared))
+            refs=set(entry.get('evidence_refs',[]));own=horse_evidence_refs(hs[number])
+            return bool(compared and refs<=all_refs and refs&own and all(n in hs and refs&horse_evidence_refs(hs[n]) for n in compared))
         if (data.get('date_jst') or data['fixed_at'][:10]) >= '2026-10-18':
             # Record substantial downgrades before results; this cannot validate
             # the semantic quality of the explanation or make a horse predictable.
