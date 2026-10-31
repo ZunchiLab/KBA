@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-31T23:13:17+09:00",
+  "commit": "fa72807f563cf781bf837e9d2d57a9b4759cfdd7",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "tools/jra-self-review-20261031-v1.html",
+      "sha256": "f6e5f0bddfeeac9ad24ee232638abb551311515a0c9a3687254120c2d14a3d52"
+    },
+    {
+      "path": "tools/jra-self-review-20261031-v1.json",
+      "sha256": "0a8881f119146cd71e4b2c9bfec3af3c3e2962bdf5a34595849591ff1f4f90bc"
+    },
+    {
+      "path": "tools/jra-self-review-20261031-v1.md",
+      "sha256": "0d0fff759c17bfccc9c60b003b90cc04ba3d085d0ac97fd13a25b4dcf064210f"
+    },
+    {
+      "path": "tools/jra-role-index-preview-20261031-v2.html",
+      "sha256": "35d982694bc026163f3004906f4c5d95b8498a35b028d262d6e93b4e79ebf0ee"
+    },
+    {
+      "path": "tools/jra-role-index-preview-20261031-v2.json",
+      "sha256": "c80beda716138dea624706e27424db13c060f2ee54ac0e352a74af6637c33b04"
+    },
+    {
+      "path": "data/reviews/jra/2026-10-31/self-review/8開催日の事後比較.json",
+      "sha256": "8a5cec2b901ec3ef03928c0ed346f25b666588432ae4969d716c7032166482b6"
+    },
+    {
+      "path": "data/reviews/jra/2026-10-31/self-review/自己点検の検算.json",
+      "sha256": "115fbb081b4810d15983b51d53d1be33f6882652e3dbb74be610728f123a92e7"
+    },
+    {
+      "path": "data/reviews/jra/2026-10-31/self-review/修正版の計算確認.json",
+      "sha256": "731167abd053945e0d9e4b9cfca04c021541aaba82dd4c0599aaacbf04d88849"
+    },
+    {
+      "path": "docs/jra-role-indices.md",
+      "sha256": "36169b17cf9fd38c675b4c4563a44b0cf6724488ce27e1eff049eed71679aeed"
+    },
+    {
+      "path": "scripts/jra_role_indices.py",
+      "sha256": "e9218a8946ca3f5aab00265e914ad92a408d1154ab52bafa3c747b1fa296267d"
+    },
+    {
+      "path": "scripts/jra_decision_review.py",
+      "sha256": "8870dd7bbe80e575ba9c8d7f56b69bec74d4bc9679d3974d5dc00b9f21068583"
+    },
+    {
+      "path": "predictions/report_20261031_jra_predictions_v1.json",
+      "sha256": "0b5d1387a65f76aa438083bc5f5419731a87a6e0ea79c71946f03ed29e553321"
+    }
+  ],
+  "pages_run": 41208746847,
+  "forecast_originals_changed": false
+}

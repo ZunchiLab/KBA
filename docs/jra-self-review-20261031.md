@@ -7,3 +7,8 @@
 11/1以降のstrictはv2の定義/相対基準/資料量/時点/4項目に加えrole_index_usage_review、best_caseとpeer_case、dependency_reviewsを要求。検査は文章や選馬の正しさを保証しない。Python69件・ソート7件・既存操作9件・結果UI24件、今日の984値に負値/満点がないこと、原本不変を確認。修正版の見本では独自/異馬場参考246頭、障害4頭は市場のみ。新馬54・取消1は独自指標なし。
 
 [セルフレビュー](https://zunchilab.github.io/KBA/tools/jra-self-review-20261031-v1.html) / [修正版v2](https://zunchilab.github.io/KBA/tools/jra-role-index-preview-20261031-v2.html)。次の未知開催での精度確認はこれから。実装定義はKBA docs/jra-role-indices.md。公開・スマホ確認は別記録。
+
+
+### セルフレビューの公開・操作確認（2026-10-31T23:17:12+09:00）
+
+fa72807fをmainへpushし、Pages 41208746847成功。公開12ファイルを同コミットのバイト列へ照合。修正版v2の24R305頭と4指標降順、参考記号廃止、京都4R②③⑥⑦の市場参考を独自4指標へコピーしない表示、レビュー本文を390px幅で確認。両ページの横はみ出し・警告/エラーなし。画面幅復元・納品タブ保持。原本不変。比較は4役割v1/v2の同資料での事後再計算であり、実際の朝の印・本線成績とは別。証跡はdata/reviews/jra/2026-10-31/self-review。
