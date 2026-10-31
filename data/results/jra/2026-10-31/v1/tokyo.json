@@ -9,8 +9,8 @@
     "sha256": "0b5d1387a65f76aa438083bc5f5419731a87a6e0ea79c71946f03ed29e553321",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-10-31T15:54:24+09:00",
-  "last_poll_at": "2026-10-31T15:54:24+09:00",
+  "updated_at": "2026-10-31T16:16:40+09:00",
+  "last_poll_at": "2026-10-31T16:16:40+09:00",
   "published_at": null,
   "races": [
     {
@@ -3391,7 +3391,7 @@
       "race_uid": "jra-2026-10-31-tokyo-r12",
       "race_no": 12,
       "start_at": "2026-10-31T16:15:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
