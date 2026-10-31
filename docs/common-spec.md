@@ -319,3 +319,8 @@ scripts/*                     取得・変換・描画・一覧生成
 現行はjra-role-relative-v2。定義は[jra-role-indices.md](jra-role-indices.md)。満点の過信を抑える相手比較・資料量補正を導入。市場値の4項目コピーを廃止し、保存単勝オッズへ分離。「~」をやめ、参考の種類と採点走数・資料量を表示する。独自比較が未解決な箇所を無理に埋めない。
 
 8開催日193Rの事後比較で全般的優位性なし。指標は補助用途。新規JRAはanalysis.role_index_usage_review（mode=auxiliary_only、benchmark_edge_unproven=true、independent_comparison_reason）、有力な除外馬のbest_caseと採用相手のpeer_case、共通必須馬を含まない組合せのdependency_reviewsを保存。11/1以降のstrictへ接続。過去の固定印・旧指数・買い目・保存価格は不変。仕様・実装・形式検査と未来の効果は分ける。
+
+
+## 2026-10-31 新馬の参考4指標と朝人気ソート
+
+新馬も確認済みの関連実績から4数値を表示し、本人の実績指標と区分。定義は[jra-debut-indices.md](jra-debut-indices.md)。新馬を理由に全数値を一括欠損にしない。資料なしの基準50は未充足と表示、調教未確認を平均能力へ補完しない。保存単勝人気順を8番目のソートへ追加。表示順は印・順位・買い目を変更しない。開催後v3見本を事前成績に混ぜず、原本は保持。

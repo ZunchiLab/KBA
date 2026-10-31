@@ -244,3 +244,8 @@ JRAの `tierce` は三連単、地方の旧 `refunds` は**払戻金**。名称�
 現行はjra-role-relative-v2。定義は[jra-role-indices.md](jra-role-indices.md)。満点の過信を抑える相手比較・資料量補正を導入。市場値の4項目コピーを廃止し、保存単勝オッズへ分離。「~」をやめ、参考の種類と採点走数・資料量を表示する。独自比較が未解決な箇所を無理に埋めない。
 
 8開催日193Rの事後比較で全般的優位性なし。指標は補助用途。新規JRAはanalysis.role_index_usage_review（mode=auxiliary_only、benchmark_edge_unproven=true、independent_comparison_reason）、有力な除外馬のbest_caseと採用相手のpeer_case、共通必須馬を含まない組合せのdependency_reviewsを保存。11/1以降のstrictへ接続。過去の固定印・旧指数・買い目・保存価格は不変。仕様・実装・形式検査と未来の効果は分ける。
+
+
+## 2026-10-31 新馬の関連実績参考
+
+`horses[].role_indices.method: debut_cohort_reference`、`estimator_version: jra-debut-cohort-v1`。親のversionはjra-role-relative-v2を維持し、4項目のvalueとreference、本人runs=0、matched_starters、weighted_sample_mass、effective_runs、reliability_weight、training_status、missing、target_card_source、components（observation_id/date/name/horse_id/sire/trainer/jockey/surface/distance_m/field/finish/matched_features/weight/residuals/card_source/result_source）を保存。入力のコーパスSHAは別保存。`analysis.debut_index_review`へ使用定義・入力時点・市場未使用・調教未採点を記録。対象日以前の同種馬場・時点付き確定資料だけを使用。資料なしは理由付き50で差を作らず、指標順の利用不可として事後集計。取得済み市場を4項目へコピーしない。詳細[jra-debut-indices.md](jra-debut-indices.md)。

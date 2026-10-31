@@ -10,6 +10,7 @@ const selectors={'.race':[card],'.venue-panel':[panel],'.horse-sort':[select]};c
 const location=new URL('https://zunchilab.github.io/KBA/tools/test.html');const context={document:doc,window:{scrollY:0,addEventListener(){},scrollTo(){}},URL,location,history:{replaceState(_a,_b,u){location.href=u.href;}},localStorage:{getItem:()=>null,setItem(){}},Date,console,setInterval(){},setTimeout(){},navigator:{}};
 vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/js/jra-day-report.js'),'utf8'),context);
 const initial=ids['day-forecast'].textContent,opened=list.children[0];
-for(const [key,expected] of Object.entries({first:[2,3,5,1,4,6],second:[1,3,5,2,4,6],top2:[3,2,5,1,4,6],top3:[5,2,1,3,4,6],score:[2,5,3,1,4,6],number:[1,2,3,4,5,6],rank:[1,2,3,4,5,6]})){
+for(const e of list.children)e.dataset.market=({1:9.5,2:2.1,3:4.4,4:null,5:4.4,6:1.1})[e.dataset.number]??'';
+for(const [key,expected] of Object.entries({first:[2,3,5,1,4,6],second:[1,3,5,2,4,6],top2:[3,2,5,1,4,6],top3:[5,2,1,3,4,6],score:[2,5,3,1,4,6],number:[1,2,3,4,5,6],rank:[1,2,3,4,5,6],market:[2,3,5,1,4,6]})){
  select.value=key;select.events.change();assert.deepEqual(list.children.map(e=>Number(e.dataset.number)),expected,key);assert.equal(list.children.length,6);assert.equal(opened.open,true);assert.equal(ids['day-forecast'].textContent,initial);console.log('PASS '+key+' sorting, ties, nulls, withdrawn, details and frozen data');
 }

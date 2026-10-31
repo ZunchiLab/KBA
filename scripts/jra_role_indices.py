@@ -80,7 +80,7 @@ def normal_runs(horse,history,today):
         valid.append(dict(run_id=p.get('run_id') or p.get('source'),date=day,age_days=age,venue=p['venue'],surface=surface,distance=p['distance'],finish=p['finish'],field=p['field'],gap=p.get('gap'),going=p.get('condition'),level=lev,class_text=p.get('resolved_class'),margin_missing=p.get('gap') is None,class_checked_at=p.get('_class_checked_at')))
     return valid,omitted
 
-def apply_indices(race,*,as_of,history_by_number=None,computed_at=None):
+def apply_indices(race,*,as_of,history_by_number=None,computed_at=None,debut_observations=None):
     """Copy a race; preserve marks, old scores, ranks and ticket plans exactly."""
     out=deepcopy(race);today=date.fromisoformat(race['start_at'][:10]);stamp=datetime.fromisoformat(as_of)
     if stamp.tzinfo is None:raise ValueError('入力確認時点にタイムゾーンが必要')
@@ -142,10 +142,18 @@ def apply_indices(race,*,as_of,history_by_number=None,computed_at=None):
             d[k]['value']=round(50+10*z*d['reliability_weight'],1)
             d[k]['reference']=dict(center_raw=center,spread_raw=spread,horse_numbers=[x['number'] for x in reference_pool],formula='50+10×相対差（±3まで）×資料量補正。補正後の再標準化はしない。')
     out.setdefault('analysis',{})['role_index_version']=VERSION
+    if '新馬' in (race.get('class_text') or '') and debut_observations is not None:
+        from jra_debut_indices import apply_debut_indices
+        out=apply_debut_indices(out,observations=debut_observations,as_of=as_of,computed_at=computed_at)
     return out
 
 def audit_indices(race,fixed_at):
     errors=[];before=datetime.fromisoformat(fixed_at)
+    if race['start_at'][:10]>='2026-11-01' and '新馬' in race.get('class_text',''):
+        review=race.get('analysis',{}).get('debut_index_review',{})
+        checked=isinstance(review,dict) and review.get('version')=='jra-debut-cohort-v1' and review.get('market_used') is False and review.get('training_scored') is False
+        checked=checked and all(h.get('role_indices',{}).get('method')=='debut_cohort_reference' for h in race['horses'] if h.get('status_at_snapshot') not in ('withdrawn','excluded'))
+        if not checked:errors.append(('debut_reference_review_missing',None,'新馬も関連実績の確認を行い、利用材料・欠損・数値参考を記録。新馬という理由だけで一括空欄にしない。'))
     for h in race['horses']:
         d=h.get('role_indices',{});n=h['number']
         if d.get('version')!=VERSION:errors.append(('role_indices_missing',n,'4役割指標の定義・計算記録が必要。'));continue
@@ -156,6 +164,10 @@ def audit_indices(race,fixed_at):
         if not valid_time or not d.get('reason') or d.get('calibrated') is not False or d.get('probability') is not False:errors.append(('role_indices_definition_missing',n,'時点・根拠・未校正表示が必要。'))
         if not roles_present or any(v is not None and (not isinstance(v,(float,int)) or isinstance(v,bool) or not isfinite(v) or not 0<v<100) for v in vals):errors.append(('role_indices_invalid',n,'4項目と0/100を含まない相対指数、または理由付き欠損を保存。'))
         method=d.get('method')
+        if method=='debut_cohort_reference':
+            from jra_debut_indices import audit_debut
+            errors.extend(audit_debut(h,race,fixed_at))
+            continue
         if method not in ['same_surface_history','cross_surface_reference','not_computed','not_applicable','market_reference']:errors.append(('role_index_method_invalid',n,'指標と参考・欠損の区分が不正。'))
         if method=='market_reference' and (any(v is not None for v in vals) or not d.get('market_reference')):errors.append(('market_as_performance_index',n,'市場参考値を独自4指標へコピーしない。'))
         if method in ('same_surface_history','cross_surface_reference'):

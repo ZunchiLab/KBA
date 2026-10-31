@@ -107,7 +107,7 @@
       const inactive=Number(a.dataset.inactive==='true')-Number(b.dataset.inactive==='true');if(inactive)return inactive;
       if(key==='number')return number(a)-number(b);
       const av=value(a),bv=value(b);if(av===null||bv===null){if(av!==bv)return av===null?1:-1;}
-      else if(av!==bv)return key==='rank'?av-bv:bv-av;
+      else if(av!==bv)return ['rank','market'].includes(key)?av-bv:bv-av;
       const ar=Number(a.dataset.rank)||999,br=Number(b.dataset.rank)||999;return ar-br||number(a)-number(b);
     }).forEach(h=>list.append(h));
   }));

@@ -214,3 +214,8 @@
 現行はjra-role-relative-v2。定義は[jra-role-indices.md](jra-role-indices.md)。満点の過信を抑える相手比較・資料量補正を導入。市場値の4項目コピーを廃止し、保存単勝オッズへ分離。「~」をやめ、参考の種類と採点走数・資料量を表示する。独自比較が未解決な箇所を無理に埋めない。
 
 8開催日193Rの事後比較で全般的優位性なし。指標は補助用途。新規JRAはanalysis.role_index_usage_review（mode=auxiliary_only、benchmark_edge_unproven=true、independent_comparison_reason）、有力な除外馬のbest_caseと採用相手のpeer_case、共通必須馬を含まない組合せのdependency_reviewsを保存。11/1以降のstrictへ接続。過去の固定印・旧指数・買い目・保存価格は不変。仕様・実装・形式検査と未来の効果は分ける。
+
+
+## 2026-10-31 新馬も評価を進める
+
+次回は[jra-debut-indices.md](jra-debut-indices.md)を読む。`load_saved_observations(KBA, before_date=対象日)`→`apply_indices(..., debut_observations=observations)`で関連実績を確認し数値参考を作る。父名・厩舎の印象で加点せず、各実在出走例へ照合。本人の調教・発馬・母系の不足は別欄。新馬54頭の数値追加と予測精度の改善は別で、同じ34Rの上位7頭捕捉は3着内参考9R・市場20Rと劣る。独自指標単独で新馬の軸を決めない。本線用比較検査は緩めない。次の未知日で市場と同じ頭数・時点・費用を保存して評価する。並び順の境界は画面同様の朝順位→馬番で統一。

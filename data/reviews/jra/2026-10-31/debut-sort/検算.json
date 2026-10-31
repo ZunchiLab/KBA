@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-31T23:43:58+09:00",
+  "tests": {
+    "python": 86,
+    "sort_js": 8,
+    "compact_js": 9,
+    "result_ui_js": 24
+  },
+  "debut_horses": 54,
+  "related_examples_for_all": true,
+  "training_listings": 9,
+  "training_clocks_scored": false,
+  "originals_unchanged": true,
+  "display_races": 24,
+  "display_horses": 305,
+  "sort_options": 8,
+  "benchmark_races": 240,
+  "same_ui_tie_break": true
+}
