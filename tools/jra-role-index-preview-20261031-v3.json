@@ -371240,7 +371240,7 @@
     "source_snapshots_published": false,
     "source_snapshot_note": "このコマンドの公開対象はHTML・JSON・一覧・カタログ。取得原文、結果取得対象、workflowは別途登録する。"
   },
-  "generated_at": "2026-10-31T23:43:58+09:00",
+  "generated_at": "2026-10-31T23:50:54+09:00",
   "presentation_version": "role-demo-v3",
   "role_index_model": {
     "version": "jra-role-relative-v2+debut-cohort-v1",

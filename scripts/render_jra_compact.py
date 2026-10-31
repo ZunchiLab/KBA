@@ -112,11 +112,14 @@ def render(d,json_name,results):
                 secondary.append('<details class="mark-selection"><summary>印'+str(count)+'頭の選定理由</summary><p>出走予定'+str(marks['field_size_at_review'])+'頭 / 印の目安'+str(marks['suggested_limit'])+limit_note+'</p><p>'+E(marks['reason'])+'</p>'+exception+coverage_html+reviews+'<p>確認 '+E(marks['reviewed_at'])+'。印数の目安は的中確率や最適頭数の推定ではありません。全頭の順位・指数は保持。</p></details>')
             role_view=authority=='jra' and any(h.get('role_indices') for h in r['horses'])
             if role_view:
+                debut_view=any(h.get('role_indices',{}).get('method')=='debut_cohort_reference' for h in r['horses'])
+                if debut_view:horse_heading=horse_heading.replace('全頭の市場参考（能力指数ではありません）','全頭の新馬参考（関連実績）')
                 options=[('rank','総合印順'),('number','馬番順'),('score','旧総合指数順'),('first','1着指数順'),('second','2着ちょうど指数順'),('top2','連対指数順'),('top3','3着内指数順'),('market','保存単勝人気順')]
                 control='<select class="horse-sort" aria-label="指標の並べ替え">'+''.join('<option value="'+k+'">'+v+'</option>' for k,v in options)+'</select>'
                 labels='<span class="role-scores"><span>1着</span><span>2着</span><span>連対</span><span>3着内</span></span>'
                 relative_view=any(h.get('role_indices',{}).get('version')=='jra-role-relative-v2' for h in r['horses'])
                 legend='同一レース・同一役割の相対実績比較（基準50）。確率ではありません。2着＝ちょうど2着、連対＝2着以内。参考と資料量は馬名の下に表示。' if relative_view else '2着＝ちょうど2着、連対＝2着以内。0〜100の実績比較・確率ではありません。~は条件替わり等の参考。'
+                if debut_view:legend='新馬は父・厩舎・騎手の関連実績参考（基準50）。本人の実走評価・確率ではありません。2着＝ちょうど2着、連対＝2着以内。調教は未採点。'
                 parts.append('<div class="row horse-toolbar role-toolbar"><h3>'+horse_heading.replace('近走指数','役割別指数')+'</h3>'+control+'</div><p class="role-legend">'+E(legend)+'</p><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns role-columns"><span>印 / 馬番・馬名</span>'+labels+'<span>着順</span></div><div class="all-horses role-horses">')
             else:
                 parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
