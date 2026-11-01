@@ -115,6 +115,7 @@ def render(d,json_name,results):
                 debut_view=any(h.get('role_indices',{}).get('method')=='debut_cohort_reference' for h in r['horses'])
                 if debut_view:horse_heading=horse_heading.replace('全頭の市場参考（能力指数ではありません）','全頭の新馬参考（関連実績）')
                 options=[('rank','総合印順'),('number','馬番順'),('score','旧総合指数順'),('first','1着指数順'),('second','2着ちょうど指数順'),('top2','連対指数順'),('top3','3着内指数順'),('market','保存単勝人気順')]
+                if debut_view:options[0]=('rank','参考順位（保存単勝順）')
                 control='<select class="horse-sort" aria-label="指標の並べ替え">'+''.join('<option value="'+k+'">'+v+'</option>' for k,v in options)+'</select>'
                 labels='<span class="role-scores"><span>1着</span><span>2着</span><span>連対</span><span>3着内</span></span>'
                 relative_view=any(h.get('role_indices',{}).get('version')=='jra-role-relative-v2' for h in r['horses'])
@@ -147,6 +148,7 @@ def render(d,json_name,results):
                     attrs+=' data-market="'+str(h.get('market',{}).get('win') or '')+'"'
                     score_html='<span class="role-scores">'+''.join(cells)+'</span>'
                     rank_label='総合'+(str(h['rank'])+'位' if h['rank'] else '対象外')+' / '+indices.get('label','未算出')
+                    if method=='debut_cohort_reference' and h.get('score_method')=='market_reference':rank_label='朝単勝'+(str(h['rank'])+'番手' if h['rank'] else '対象外')+' / '+indices.get('label','未算出')
                     if relative_view:
                         runs=indices.get('runs',0);rank_label+=' / '+('関連'+str(indices['matched_starters'])+'例・薄' if method=='debut_cohort_reference' else '採点'+str(runs)+'走・'+indices.get('confidence','未評価'))
                         if h.get('pop'):rank_label+=' / 朝単勝順'+str(h['pop'])
