@@ -9,8 +9,8 @@
     "sha256": "6cf3549e563ca0bfdcf8fefcc90256ce569c18c3c45c82f9a936e8f9fe812cdf",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-01T11:16:45+09:00",
-  "last_poll_at": "2026-11-01T11:16:45+09:00",
+  "updated_at": "2026-11-01T11:26:57+09:00",
+  "last_poll_at": "2026-11-01T11:26:57+09:00",
   "published_at": null,
   "races": [
     {
@@ -917,16 +917,221 @@
       "race_uid": "jra-2026-11-01-kyoto-r4",
       "race_no": 4,
       "start_at": "2026-11-01T11:15:00+09:00",
-      "status": "pending",
+      "status": "partial",
       "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202604110420261101/0D"
+        },
+        "retrieved_at": "2026-11-01T11:27:00+09:00",
+        "raw_sha256": "a702ac11690cc9cb7610e905c2892bf78baa51dfcfa0d7119afeafc5e718aa0f",
+        "raw_file": "data/results/sources/jra/2026-11-01/kyoto/a702ac11690cc9cb7610e905c2892bf78baa51dfcfa0d7119afeafc5e718aa0f.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-11-01T11:27:00+09:00",
       "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "rows": [
+        {
+          "number": 4,
+          "name": "ヴェストラン",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "3:19.3",
+          "margin": "",
+          "last_3f": null,
+          "final_popularity": "4",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 13,
+          "name": "アウスヴァール",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "",
+          "margin": "３",
+          "last_3f": null,
+          "final_popularity": "1",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 5,
+          "name": "テイエムリステット",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "",
+          "margin": "２ 1/2",
+          "last_3f": null,
+          "final_popularity": "2",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 11,
+          "name": "ジェロニモス",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "",
+          "margin": "１ 1/2",
+          "last_3f": null,
+          "final_popularity": "7",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 3,
+          "name": "ラトラース",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "",
+          "margin": "クビ",
+          "last_3f": null,
+          "final_popularity": "8",
+          "final_win_odds": null,
+          "average_1f": ""
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 940,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 190,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            13
+          ],
+          "yen_per_100": 110,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            5
+          ],
+          "yen_per_100": 140,
+          "popularity": null
+        },
+        {
+          "kind": "bracket_quinella",
+          "number_type": "bracket",
+          "numbers": [
+            4,
+            8
+          ],
+          "yen_per_100": 290,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            13
+          ],
+          "yen_per_100": 400,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            5
+          ],
+          "yen_per_100": 540,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            5,
+            13
+          ],
+          "yen_per_100": 250,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            13
+          ],
+          "yen_per_100": 1140,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            13
+          ],
+          "yen_per_100": 2880,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            5,
+            13
+          ],
+          "yen_per_100": 1520,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            13,
+            5
+          ],
+          "yen_per_100": 15040,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "confirmed",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
+      "refund_status": "no_runner_refund_indication",
       "refresh_error": null
     },
     {
