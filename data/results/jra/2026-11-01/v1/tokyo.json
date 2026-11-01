@@ -9,8 +9,8 @@
     "sha256": "6cf3549e563ca0bfdcf8fefcc90256ce569c18c3c45c82f9a936e8f9fe812cdf",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-01T11:45:26+09:00",
-  "last_poll_at": "2026-11-01T11:45:26+09:00",
+  "updated_at": "2026-11-01T12:20:01+09:00",
+  "last_poll_at": "2026-11-01T12:20:01+09:00",
   "published_at": null,
   "races": [
     {
@@ -1330,7 +1330,7 @@
       "race_uid": "jra-2026-11-01-tokyo-r5",
       "race_no": 5,
       "start_at": "2026-11-01T12:20:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
