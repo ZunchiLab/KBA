@@ -1,0 +1,9 @@
+{
+  "fixed_at": "2026-11-01T09:17:32+09:00",
+  "hash_method": "utf8-no-bom-lf-sha256",
+  "files": {
+    "report_20261101_jra_predictions_v1.html": "1a57917db3ae1a111f8fe9a24160ff397500526772e8c1e5a414cda006a9d588",
+    "report_20261101_jra_predictions_v1.json": "6c7d4128fe44d294fd905efb00c2468b25d2f52c714422b2714d344e5d43b86e"
+  },
+  "publication_status": "not_yet_published"
+}

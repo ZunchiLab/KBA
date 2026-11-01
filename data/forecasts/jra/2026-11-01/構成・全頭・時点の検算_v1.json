@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "fixed_at": "2026-11-01T09:17:32+09:00",
+  "input_cutoff_at": "2026-11-01T09:17:26+09:00",
+  "races": 24,
+  "horses": 318,
+  "active": 316,
+  "withdrawn": [
+    {
+      "key": "T4",
+      "number": 5,
+      "name": "サルサベガ"
+    },
+    {
+      "key": "T6",
+      "number": 13,
+      "name": "ソリッドベーシス"
+    }
+  ],
+  "methods": {
+    "same_surface_history": 232,
+    "cross_surface_reference": 24,
+    "market_reference": 6,
+    "debut_cohort_reference": 54,
+    "not_applicable": 2
+  },
+  "role_values": 1240,
+  "min_role_value": 36.0,
+  "max_role_value": 62.8,
+  "candidate_races": 17,
+  "candidate_points": 65,
+  "candidate_cost_example": 6500,
+  "price_eligible_races": 14,
+  "price_eligible_points": 50,
+  "price_eligible_cost_example": 5000,
+  "priority": [
+    {
+      "key": "T7",
+      "kind": "wide",
+      "points": 1,
+      "minimum_odds": 2.0,
+      "price_eligible": true
+    },
+    {
+      "key": "T11",
+      "kind": "quinella",
+      "points": 3,
+      "minimum_odds": 3.0,
+      "price_eligible": true
+    }
+  ],
+  "plan_count": 51,
+  "plan_tickets": 219,
+  "baseline_plans": 102,
+  "source_count": 591,
+  "strict_findings": [],
+  "results_used": false,
+  "actual_purchase": null
+}
