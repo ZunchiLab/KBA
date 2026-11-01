@@ -1,0 +1,386 @@
+{
+  "passed": true,
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "documentWidth": 375
+  },
+  "races": 24,
+  "horses": 318,
+  "sorts": 24,
+  "newDebutSortChecks": [
+    {
+      "key": "first",
+      "rows": [
+        {
+          "number": "2",
+          "value": 56.4
+        },
+        {
+          "number": "7",
+          "value": 51.4
+        },
+        {
+          "number": "10",
+          "value": 51.3
+        },
+        {
+          "number": "12",
+          "value": 51.3
+        },
+        {
+          "number": "1",
+          "value": 50.6
+        },
+        {
+          "number": "9",
+          "value": 50
+        },
+        {
+          "number": "6",
+          "value": 50
+        },
+        {
+          "number": "16",
+          "value": 49.9
+        },
+        {
+          "number": "15",
+          "value": 49.3
+        },
+        {
+          "number": "13",
+          "value": 49.3
+        },
+        {
+          "number": "3",
+          "value": 49.1
+        },
+        {
+          "number": "14",
+          "value": 48.6
+        },
+        {
+          "number": "5",
+          "value": 48
+        },
+        {
+          "number": "4",
+          "value": 47.6
+        },
+        {
+          "number": "11",
+          "value": 47.5
+        },
+        {
+          "number": "8",
+          "value": 46.1
+        }
+      ]
+    },
+    {
+      "key": "second",
+      "rows": [
+        {
+          "number": "14",
+          "value": 53.6
+        },
+        {
+          "number": "2",
+          "value": 53.2
+        },
+        {
+          "number": "9",
+          "value": 51.9
+        },
+        {
+          "number": "11",
+          "value": 51.8
+        },
+        {
+          "number": "10",
+          "value": 50.7
+        },
+        {
+          "number": "12",
+          "value": 50.3
+        },
+        {
+          "number": "6",
+          "value": 49.7
+        },
+        {
+          "number": "16",
+          "value": 49.5
+        },
+        {
+          "number": "15",
+          "value": 49
+        },
+        {
+          "number": "13",
+          "value": 49
+        },
+        {
+          "number": "7",
+          "value": 49
+        },
+        {
+          "number": "3",
+          "value": 48.8
+        },
+        {
+          "number": "1",
+          "value": 48.8
+        },
+        {
+          "number": "5",
+          "value": 48
+        },
+        {
+          "number": "4",
+          "value": 47.7
+        },
+        {
+          "number": "8",
+          "value": 46.7
+        }
+      ]
+    },
+    {
+      "key": "top2",
+      "rows": [
+        {
+          "number": "2",
+          "value": 55.1
+        },
+        {
+          "number": "14",
+          "value": 52.3
+        },
+        {
+          "number": "9",
+          "value": 51.5
+        },
+        {
+          "number": "10",
+          "value": 51
+        },
+        {
+          "number": "12",
+          "value": 50.8
+        },
+        {
+          "number": "11",
+          "value": 50.4
+        },
+        {
+          "number": "7",
+          "value": 49.8
+        },
+        {
+          "number": "6",
+          "value": 49.7
+        },
+        {
+          "number": "16",
+          "value": 49.6
+        },
+        {
+          "number": "1",
+          "value": 49.3
+        },
+        {
+          "number": "15",
+          "value": 49
+        },
+        {
+          "number": "13",
+          "value": 49
+        },
+        {
+          "number": "3",
+          "value": 48.7
+        },
+        {
+          "number": "5",
+          "value": 47.7
+        },
+        {
+          "number": "4",
+          "value": 47.3
+        },
+        {
+          "number": "8",
+          "value": 45.8
+        }
+      ]
+    },
+    {
+      "key": "top3",
+      "rows": [
+        {
+          "number": "2",
+          "value": 54.6
+        },
+        {
+          "number": "5",
+          "value": 53.1
+        },
+        {
+          "number": "14",
+          "value": 52.4
+        },
+        {
+          "number": "9",
+          "value": 51.1
+        },
+        {
+          "number": "10",
+          "value": 50.6
+        },
+        {
+          "number": "11",
+          "value": 50.5
+        },
+        {
+          "number": "6",
+          "value": 50.3
+        },
+        {
+          "number": "12",
+          "value": 50
+        },
+        {
+          "number": "15",
+          "value": 49.3
+        },
+        {
+          "number": "13",
+          "value": 49.3
+        },
+        {
+          "number": "16",
+          "value": 49.2
+        },
+        {
+          "number": "7",
+          "value": 49
+        },
+        {
+          "number": "1",
+          "value": 48.3
+        },
+        {
+          "number": "3",
+          "value": 47.8
+        },
+        {
+          "number": "4",
+          "value": 47
+        },
+        {
+          "number": "8",
+          "value": 46.3
+        }
+      ]
+    },
+    {
+      "key": "market",
+      "rows": [
+        {
+          "number": "5",
+          "value": 3.8
+        },
+        {
+          "number": "8",
+          "value": 4.3
+        },
+        {
+          "number": "9",
+          "value": 5.2
+        },
+        {
+          "number": "2",
+          "value": 6.1
+        },
+        {
+          "number": "16",
+          "value": 11.6
+        },
+        {
+          "number": "10",
+          "value": 15.2
+        },
+        {
+          "number": "15",
+          "value": 23.6
+        },
+        {
+          "number": "13",
+          "value": 30.9
+        },
+        {
+          "number": "6",
+          "value": 34.8
+        },
+        {
+          "number": "3",
+          "value": 38.3
+        },
+        {
+          "number": "1",
+          "value": 40
+        },
+        {
+          "number": "4",
+          "value": 40.7
+        },
+        {
+          "number": "14",
+          "value": 41
+        },
+        {
+          "number": "12",
+          "value": 46.3
+        },
+        {
+          "number": "11",
+          "value": 48.7
+        },
+        {
+          "number": "7",
+          "value": 85.9
+        }
+      ]
+    }
+  ],
+  "venueAndRaceJump": true,
+  "searchByHorse": true,
+  "betFilter": true,
+  "threeQuinellaPrices": [
+    {
+      "numbers": [
+        1,
+        7
+      ],
+      "price": 3
+    },
+    {
+      "numbers": [
+        7,
+        17
+      ],
+      "price": 14
+    },
+    {
+      "numbers": [
+        1,
+        17
+      ],
+      "price": 12.3
+    }
+  ],
+  "consoleWarnings": [],
+  "viewportRestored": true
+}

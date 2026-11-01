@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-01T09:28:54+09:00",
+  "commit": "dc323f9c806afefe2d693e1111bdd3f02087946b",
+  "pages_run": 41256728509,
+  "pages_conclusion": "success",
+  "files": [
+    {
+      "path": "predictions/report_20261101_jra_predictions_v1.json",
+      "bytes": 17281350,
+      "sha256": "6cf3549e563ca0bfdcf8fefcc90256ce569c18c3c45c82f9a936e8f9fe812cdf"
+    },
+    {
+      "path": "predictions/report_20261101_jra_predictions_v1.html",
+      "bytes": 3150116,
+      "sha256": "3d0ac5f5150b7e9300e19d816cf6090f27dd4f76fe14bee35785696326daba7b"
+    },
+    {
+      "path": "predictions/archive/report_20261101_jra_predictions_v1.before-results.html",
+      "bytes": 3144191,
+      "sha256": "1a57917db3ae1a111f8fe9a24160ff397500526772e8c1e5a414cda006a9d588"
+    },
+    {
+      "path": "predictions/report_20261101_jra_histories_v1.json",
+      "bytes": 2980363,
+      "sha256": "51380755599c22ca42c1111a1ebfbc9248e25a01c8a86f5ff9a80d6e8cca6795"
+    },
+    {
+      "path": "data/results/jra/2026-11-01/v1/tokyo.json",
+      "bytes": 5651,
+      "sha256": "f20e14602c0c38963351e15e1f579d0927c10be607e18ee2f71fa6a93f78313d"
+    },
+    {
+      "path": "data/results/jra/2026-11-01/v1/kyoto.json",
+      "bytes": 5651,
+      "sha256": "5959adc046ad22ed0d748c63ee07bdf4c602a5a6c8035540457371370b4b440c"
+    },
+    {
+      "path": "data/results/jra-targets.json",
+      "bytes": 236,
+      "sha256": "d103136048e8381e8621d54b38e75a2484c5d7a07c5d59638119527cb4296cc1"
+    },
+    {
+      "path": "docs/jra-day-20261101.md",
+      "bytes": 2426,
+      "sha256": "d7da0e8c5b5679259d0bbbfad949b5c05e01b4435c81373f754eac69bfd4d0ff"
+    },
+    {
+      "path": "index.html",
+      "bytes": 286646,
+      "sha256": "7e926d75ec56c964692bc2e92d57ece6b3e8ca66ae3ea6717597d778989e0f32"
+    },
+    {
+      "path": "data/catalog.json",
+      "bytes": 391661,
+      "sha256": "aaae0e890d3a3716a6583757a7fe1e9e1c75abedc16b3c461a2835df5f1e980e"
+    },
+    {
+      "path": "scripts/render_jra_compact.py",
+      "bytes": 25470,
+      "sha256": "99bfd0adef3069aae32757559b21a5daa63af785f446d31d6ce4a0909b268fb6"
+    },
+    {
+      "path": "data/forecasts/jra/2026-11-01/source-raw/sources/T11.raw.html",
+      "bytes": 249988,
+      "sha256": "f2aef6ab7d9c3a9edeed80ba272f0718aaf0ede5f3cfdb4093e99afefcd96bc7"
+    },
+    {
+      "path": "data/forecasts/jra/2026-11-01/source-raw/sources_final/quinella_T11.raw.html",
+      "bytes": 90459,
+      "sha256": "4f95bd2391e28f5129859b9907bf30f00f989823422526dddd64b1af06a78843"
+    },
+    {
+      "path": "data/forecasts/jra/2026-11-01/source-raw/history-raw/T11-7.raw.html",
+      "bytes": 110707,
+      "sha256": "f078fc5c4abe8a70ac48c90f1e82d9501be0ab41764201c5e9706ab39dadef36"
+    },
+    {
+      "path": "data/forecasts/jra/2026-11-01/source-raw/sources/K1.raw.html",
+      "bytes": 145342,
+      "sha256": "6c2248f15a8b9238107b6946dfd238f8e383c789b1f91dd70e01e8d9857d8d54"
+    },
+    {
+      "path": "data/forecasts/jra/2026-11-01/source-raw/sources/training.raw.html",
+      "bytes": 140362,
+      "sha256": "9cd4327fb629037a41a48a4e53171228660ae988ec9065db9038ae01f3516e42"
+    }
+  ],
+  "result_workflow_run": 41256729385,
+  "result_workflow_steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/checkout@v6",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Check the configured meeting window",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Install the official-page parser dependency",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Keep official JRA results current until completion or deadline",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "name": "Post Run actions/checkout@v6",
+      "status": "pending",
+      "conclusion": null
+    }
+  ],
+  "results_before_first_race": true,
+  "forecast_values_unchanged": true
+}
