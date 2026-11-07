@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "fixed_at": "2026-11-07T09:18:23+09:00",
+  "input_cutoff_at": "2026-11-07T09:18:04+09:00",
+  "races": 36,
+  "horses": 501,
+  "status": {
+    "declared": 501
+  },
+  "methods": {
+    "same_surface_history": 398,
+    "cross_surface_reference": 32,
+    "debut_cohort_reference": 69,
+    "market_reference": 2
+  },
+  "role_value_count": 1996,
+  "role_value_range": [
+    37.9,
+    61.6
+  ],
+  "sources": 868,
+  "source_from": "2026-11-07T08:58:43+09:00",
+  "source_to": "2026-11-07T09:18:02+09:00",
+  "candidate_races": 28,
+  "candidate_points": 67,
+  "eligible_races": 26,
+  "eligible_points": 61,
+  "main_example_yen": 6700,
+  "eligible_example_yen": 6100,
+  "plans": 84,
+  "priority": [
+    {
+      "race": "T9",
+      "name": "神奈川新聞杯",
+      "start": "14:25",
+      "kind": "wide",
+      "price_condition": true,
+      "tickets": [
+        {
+          "numbers": [
+            5,
+            6
+          ],
+          "price": {
+            "raw": "3.2–3.6",
+            "lower": 3.2,
+            "upper": 3.6
+          },
+          "floor": 2.0,
+          "checked_at": "2026-11-07T09:17:56+09:00",
+          "market_time": "9時14分現在オッズ"
+        }
+      ]
+    },
+    {
+      "race": "K9",
+      "name": "木津川特別",
+      "start": "14:35",
+      "kind": "wide",
+      "price_condition": true,
+      "tickets": [
+        {
+          "numbers": [
+            4,
+            8
+          ],
+          "price": {
+            "raw": "4.0–4.8",
+            "lower": 4.0,
+            "upper": 4.8
+          },
+          "floor": 2.0,
+          "checked_at": "2026-11-07T09:18:01+09:00",
+          "market_time": "9時14分現在オッズ"
+        }
+      ]
+    },
+    {
+      "race": "K10",
+      "name": "貴船ステークス",
+      "start": "15:10",
+      "kind": "wide",
+      "price_condition": true,
+      "tickets": [
+        {
+          "numbers": [
+            5,
+            6
+          ],
+          "price": {
+            "raw": "2.8–3.3",
+            "lower": 2.8,
+            "upper": 3.3
+          },
+          "floor": 2.0,
+          "checked_at": "2026-11-07T09:18:01+09:00",
+          "market_time": "9時15分現在オッズ"
+        }
+      ]
+    }
+  ],
+  "actual_purchase": null,
+  "public_forecast_sha256": "ea664839c55be4b81f99dea76fc06b2ee915f8a10d383cf3fd2609c74dd9c313",
+  "source_snapshots_published": true,
+  "result_feeds_initialized": [
+    "data/results/jra/2026-11-07/v1/tokyo.json",
+    "data/results/jra/2026-11-07/v1/kyoto.json",
+    "data/results/jra/2026-11-07/v1/fukushima.json"
+  ]
+}

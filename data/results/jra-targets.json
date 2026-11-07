@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-01",
-  "forecast": "predictions/report_20261101_jra_predictions_v1.json",
+  "date": "2026-11-07",
+  "forecast": "predictions/report_20261107_jra_predictions_v1.json",
   "result_menu_cname": "pw01sli00/AF",
-  "active_until": "2026-11-01T17:30:00+09:00",
+  "active_until": "2026-11-07T17:30:00+09:00",
   "state_file": ".git/jra-results-local.health.json"
 }
