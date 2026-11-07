@@ -9,8 +9,8 @@
     "sha256": "ea664839c55be4b81f99dea76fc06b2ee915f8a10d383cf3fd2609c74dd9c313",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-07T12:33:14+09:00",
-  "last_poll_at": "2026-11-07T12:33:14+09:00",
+  "updated_at": "2026-11-07T12:35:21+09:00",
+  "last_poll_at": "2026-11-07T12:35:21+09:00",
   "published_at": null,
   "races": [
     {
@@ -1265,8 +1265,8 @@
       "race_uid": "jra-2026-11-07-kyoto-r5",
       "race_no": 5,
       "start_at": "2026-11-07T12:25:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -1274,13 +1274,13 @@
         "request_fields": {
           "cname": "pw01sde0108202605010520261107/51"
         },
-        "retrieved_at": "2026-11-07T12:33:19+09:00",
-        "raw_sha256": "c35cd52a00f4506ec251620142919ebdd148bd5273eeb16c3a9842dad2f77619",
-        "raw_file": "data/results/sources/jra/2026-11-07/kyoto/c35cd52a00f4506ec251620142919ebdd148bd5273eeb16c3a9842dad2f77619.raw.html",
+        "retrieved_at": "2026-11-07T12:35:24+09:00",
+        "raw_sha256": "8a74c9aee4d529cdea6043d531d71a804788aea0f07900050c8ec48b13901fd2",
+        "raw_file": "data/results/sources/jra/2026-11-07/kyoto/8a74c9aee4d529cdea6043d531d71a804788aea0f07900050c8ec48b13901fd2.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-07T12:33:19+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-07T12:35:24+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 2,
@@ -1290,7 +1290,7 @@
           "official_status_text": "1",
           "time": "1:50.6",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "33.9",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -1300,9 +1300,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:50.7",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "33.9",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -1312,9 +1312,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:51.8",
           "margin": "７",
-          "last_3f": "",
+          "last_3f": "34.8",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -1324,9 +1324,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:52.0",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "35.2",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -1336,10 +1336,46 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:52.1",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "34.8",
           "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "サヴィーニ",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:52.3",
+          "margin": "１ 1/2",
+          "last_3f": "35.3",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "シグロデオロ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:52.6",
+          "margin": "１ 3/4",
+          "last_3f": "35.4",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "ヴァリアントソード",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:53.1",
+          "margin": "３",
+          "last_3f": "35.3",
+          "final_popularity": "7",
           "final_win_odds": null
         }
       ],
