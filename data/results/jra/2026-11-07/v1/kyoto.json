@@ -9,16 +9,16 @@
     "sha256": "ea664839c55be4b81f99dea76fc06b2ee915f8a10d383cf3fd2609c74dd9c313",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-07T10:16:43+09:00",
-  "last_poll_at": "2026-11-07T10:16:43+09:00",
+  "updated_at": "2026-11-07T10:18:49+09:00",
+  "last_poll_at": "2026-11-07T10:18:49+09:00",
   "published_at": null,
   "races": [
     {
       "race_uid": "jra-2026-11-07-kyoto-r1",
       "race_no": 1,
       "start_at": "2026-11-07T10:05:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -26,13 +26,13 @@
         "request_fields": {
           "cname": "pw01sde0108202605010120261107/7D"
         },
-        "retrieved_at": "2026-11-07T10:16:47+09:00",
-        "raw_sha256": "123cbd4e888f7e61267b38a8c7fb09d4df6cbeeaba2015b58b3b08081e108d44",
-        "raw_file": "data/results/sources/jra/2026-11-07/kyoto/123cbd4e888f7e61267b38a8c7fb09d4df6cbeeaba2015b58b3b08081e108d44.raw.html",
+        "retrieved_at": "2026-11-07T10:18:52+09:00",
+        "raw_sha256": "de226f71c39f0ad3ec38f0f06626294213513a8241eda336da09cd9c6486b78f",
+        "raw_file": "data/results/sources/jra/2026-11-07/kyoto/de226f71c39f0ad3ec38f0f06626294213513a8241eda336da09cd9c6486b78f.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-07T10:16:47+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-07T10:18:52+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 1,
@@ -42,7 +42,7 @@
           "official_status_text": "1",
           "time": "1:53.8",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "37.6",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -52,9 +52,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:54.7",
           "margin": "５",
-          "last_3f": "",
+          "last_3f": "38.4",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -64,9 +64,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:55.9",
           "margin": "７",
-          "last_3f": "",
+          "last_3f": "39.1",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -76,9 +76,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:56.4",
           "margin": "３",
-          "last_3f": "",
+          "last_3f": "39.3",
           "final_popularity": "6",
           "final_win_odds": null
         },
@@ -88,10 +88,58 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:56.7",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "40.1",
           "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "フェリシタル",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:57.3",
+          "margin": "３ 1/2",
+          "last_3f": "40.5",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "モハラ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:57.4",
+          "margin": "１／２",
+          "last_3f": "40.4",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "マリアーナ",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:58.5",
+          "margin": "７",
+          "last_3f": "41.8",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "オージーブラック",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:58.6",
+          "margin": "３／４",
+          "last_3f": "41.7",
+          "final_popularity": "9",
           "final_win_odds": null
         }
       ],
