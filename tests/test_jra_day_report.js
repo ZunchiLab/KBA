@@ -17,7 +17,8 @@ class Element {
 function common(d){return {schema_version:'kba.results/1',authority:d.authority,date_jst:d.date_jst,venue_key:d.venue_key,forecast_ref:{version:d.forecast_version,sha256:d.forecast_sha256},updated_at:d.updated_at,races:d.races.map(r=>({race_no:r.race,start_at:r.start_at,status:r.status,source:r.source,rows:r.rows,payouts_status:r.payouts_status||{},payouts:r.refunds||[]}))};}
 function fixture(plans=[],embeddedDigest=false,thirdVenue=false) {
   const venues=[{venue_key:'tokyo',label:'東京',baba_code:5},{venue_key:'kyoto',label:'京都',baba_code:8}];
-  if(thirdVenue)venues.push({venue_key:'niigata',label:'新潟',baba_code:4});
+  if(thirdVenue==='fukushima')venues.push({venue_key:'fukushima',label:'福島',baba_code:3});
+  else if(thirdVenue)venues.push({venue_key:'niigata',label:'新潟',baba_code:4});
   const forecast={authority:'jra',date_jst:'2026-10-09',forecast_version:'v1'};
   const forecastText=JSON.stringify(forecast)+'\n';
   const digest=crypto.createHash('sha256').update(forecastText).digest('hex');
@@ -65,6 +66,7 @@ async function test(name, action){await action();passed++;console.log('PASS '+na
   await test('invalid embedded digest keeps the legacy JSON verification',async()=>{const f=fixture([],'bad');f.confirm('tokyo');await f.click();assert(f.requests.includes('day.json'));assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');});
   await test('both API and raw main outages still use the public-site saved data',async()=>{const f=fixture();f.confirm('tokyo');f.failAPI();f.rawUnavailable.add('tokyo');await f.click();assert.equal(f.cards[0].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/公開サイトの保存結果/);assert(f.requests.some(x=>x.startsWith('https://zunchilab.github.io/KBA/data/')));});
   await test('Niigata common results validate as official venue 04 and update beside Tokyo/Kyoto',async()=>{const f=fixture([],true,true);f.confirm('niigata');await f.click();assert.equal(f.cards[2].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/新潟: 1R確定/);});
+  await test('Fukushima common results validate as official venue 03 beside Tokyo/Kyoto',async()=>{const f=fixture([],true,'fukushima');f.confirm('fukushima');await f.click();assert.equal(f.cards[2].parts['.horse[data-number="1"] .horse-finish'].textContent,'1着');assert.match(f.nodes['result-status'].textContent,/福島: 1R確定/);assert.doesNotMatch(f.nodes['result-status'].textContent,/取得に失敗/);});
   await test('all eight payout types are visible with ordered arrows and bracket labels',async()=>{
     const f=fixture([formationPlan(true)]);f.confirm('tokyo');
     f.results.tokyo.races[0].refunds=[{kind:'win',numbers:[3],yen_per_100:1550},{kind:'place',numbers:[3],yen_per_100:220},{kind:'place',numbers:[1],yen_per_100:120},{kind:'bracket_quinella',numbers:[1,3],yen_per_100:390},{kind:'quinella',numbers:[1,3],yen_per_100:1190},{kind:'wide',numbers:[1,3],yen_per_100:390},{kind:'exacta',numbers:[3,1],yen_per_100:4180},{kind:'trio',numbers:[1,2,3],yen_per_100:1150},{kind:'trifecta',numbers:[3,1,2],yen_per_100:17820}];
