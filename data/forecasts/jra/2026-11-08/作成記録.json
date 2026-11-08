@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "fixed_at": "2026-11-08T09:40:51+09:00",
+  "input_cutoff_at": "2026-11-08T09:40:35+09:00",
+  "races": 36,
+  "horses": 497,
+  "status": {
+    "declared": 497
+  },
+  "methods": {
+    "same_surface_history": 383,
+    "cross_surface_reference": 27,
+    "debut_cohort_reference": 75,
+    "market_reference": 12
+  },
+  "role_value_count": 1940,
+  "role_value_range": [
+    38.6,
+    64.3
+  ],
+  "sources": 826,
+  "source_from": "2026-11-08T09:29:21+09:00",
+  "source_to": "2026-11-08T09:39:57+09:00",
+  "candidate_races": 26,
+  "candidate_points": 86,
+  "eligible_races": 24,
+  "eligible_points": 76,
+  "main_example_yen": 8600,
+  "eligible_example_yen": 7600,
+  "plans": 78,
+  "priority": [],
+  "actual_purchase": null,
+  "public_forecast_sha256": "b26d3b2f9e67a822a80bd2398da2d4de0b28b3d273fedbb71b7d7bb6d7a0c717",
+  "source_snapshots_published": true,
+  "result_feeds_initialized": [
+    "data/results/jra/2026-11-08/v1/tokyo.json",
+    "data/results/jra/2026-11-08/v1/kyoto.json",
+    "data/results/jra/2026-11-08/v1/fukushima.json"
+  ]
+}
