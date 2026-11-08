@@ -9,8 +9,8 @@
     "sha256": "b26d3b2f9e67a822a80bd2398da2d4de0b28b3d273fedbb71b7d7bb6d7a0c717",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-08T16:19:56+09:00",
-  "last_poll_at": "2026-11-08T16:19:56+09:00",
+  "updated_at": "2026-11-08T16:22:00+09:00",
+  "last_poll_at": "2026-11-08T16:22:00+09:00",
   "published_at": null,
   "races": [
     {
@@ -3545,8 +3545,8 @@
       "race_uid": "jra-2026-11-08-tokyo-r12",
       "race_no": 12,
       "start_at": "2026-11-08T16:10:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -3554,13 +3554,13 @@
         "request_fields": {
           "cname": "pw01sde0105202605021220261108/D6"
         },
-        "retrieved_at": "2026-11-08T16:19:58+09:00",
-        "raw_sha256": "768d0a7371cd9e7253768c7b8e5bafdf04b8d3e9c980b13b913688ccb69a3d4c",
-        "raw_file": "data/results/sources/jra/2026-11-08/tokyo/768d0a7371cd9e7253768c7b8e5bafdf04b8d3e9c980b13b913688ccb69a3d4c.raw.html",
+        "retrieved_at": "2026-11-08T16:22:02+09:00",
+        "raw_sha256": "7cc59209ebc1fdd032ab2ce783e5d57d05e0357cd5ddd75c192492a877911bbf",
+        "raw_file": "data/results/sources/jra/2026-11-08/tokyo/7cc59209ebc1fdd032ab2ce783e5d57d05e0357cd5ddd75c192492a877911bbf.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-08T16:19:58+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-08T16:22:02+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 4,
@@ -3580,7 +3580,7 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:22.5",
           "margin": "１ 1/2",
           "last_3f": "",
           "final_popularity": "4",
@@ -3592,7 +3592,7 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:22.5",
           "margin": "ハナ",
           "last_3f": "",
           "final_popularity": "5",
@@ -3604,7 +3604,7 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:22.7",
           "margin": "１",
           "last_3f": "",
           "final_popularity": "1",
@@ -3616,10 +3616,94 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:22.8",
           "margin": "３／４",
           "last_3f": "",
           "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 12,
+          "name": "ウォーターエアリー",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:22.8",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "チョングク",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:22.9",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "11",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "ルージュベルベット",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:23.0",
+          "margin": "３／４",
+          "last_3f": "",
+          "final_popularity": "8",
+          "final_win_odds": null
+        },
+        {
+          "number": 11,
+          "name": "アステルディーヴァ",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:23.1",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "インプロペリア",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:23.2",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 2,
+          "name": "リュウノタブーク",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:23.2",
+          "margin": "アタマ",
+          "last_3f": "",
+          "final_popularity": "12",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "グランテレーズ",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:23.2",
+          "margin": "クビ",
+          "last_3f": "",
+          "final_popularity": "9",
           "final_win_odds": null
         }
       ],
