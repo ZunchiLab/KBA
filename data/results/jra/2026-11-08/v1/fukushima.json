@@ -9,8 +9,8 @@
     "sha256": "b26d3b2f9e67a822a80bd2398da2d4de0b28b3d273fedbb71b7d7bb6d7a0c717",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-08T11:27:29+09:00",
-  "last_poll_at": "2026-11-08T11:27:29+09:00",
+  "updated_at": "2026-11-08T12:06:29+09:00",
+  "last_poll_at": "2026-11-08T12:06:29+09:00",
   "published_at": null,
   "races": [
     {
@@ -1348,7 +1348,7 @@
       "race_uid": "jra-2026-11-08-fukushima-r5",
       "race_no": 5,
       "start_at": "2026-11-08T12:05:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
