@@ -9,8 +9,8 @@
     "sha256": "378fbe9ddc343c4e09314e722cd0bd412f28aa5c83e5c767c90a021910dfb8c2",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-21T14:33:59+09:00",
-  "last_poll_at": "2026-11-21T14:33:59+09:00",
+  "updated_at": "2026-11-21T14:36:04+09:00",
+  "last_poll_at": "2026-11-21T14:36:04+09:00",
   "published_at": null,
   "races": [
     {
@@ -2590,8 +2590,8 @@
       "race_uid": "jra-2026-11-21-kyoto-r9",
       "race_no": 9,
       "start_at": "2026-11-21T14:25:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -2599,13 +2599,13 @@
         "request_fields": {
           "cname": "pw01sde0108202605050920261121/37"
         },
-        "retrieved_at": "2026-11-21T14:34:02+09:00",
-        "raw_sha256": "24f4f1aca22f3d76975f01fc6f981287c5f2904ab10b46bb24008e6a008ea93b",
-        "raw_file": "data/results/sources/jra/2026-11-21/kyoto/24f4f1aca22f3d76975f01fc6f981287c5f2904ab10b46bb24008e6a008ea93b.raw.html",
+        "retrieved_at": "2026-11-21T14:36:07+09:00",
+        "raw_sha256": "b80311a16b258ae3ace0261d000f5b53dab1c4b0e7a8c0d8d4fab29f959d48c1",
+        "raw_file": "data/results/sources/jra/2026-11-21/kyoto/b80311a16b258ae3ace0261d000f5b53dab1c4b0e7a8c0d8d4fab29f959d48c1.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-21T14:34:02+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-21T14:36:07+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 7,
@@ -2615,7 +2615,7 @@
           "official_status_text": "1",
           "time": "1:20.7",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "32.8",
           "final_popularity": "2",
           "final_win_odds": null
         },
@@ -2625,9 +2625,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:20.9",
           "margin": "１ 1/4",
-          "last_3f": "",
+          "last_3f": "32.8",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -2637,9 +2637,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:22.6",
           "margin": "１０",
-          "last_3f": "",
+          "last_3f": "34.9",
           "final_popularity": "4",
           "final_win_odds": null
         },
@@ -2649,9 +2649,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:23.4",
           "margin": "５",
-          "last_3f": "",
+          "last_3f": "34.7",
           "final_popularity": "5",
           "final_win_odds": null
         },
@@ -2661,10 +2661,46 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:23.7",
           "margin": "２",
-          "last_3f": "",
+          "last_3f": "36.0",
           "final_popularity": "3",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "アンジェリカ",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:24.3",
+          "margin": "３ 1/2",
+          "last_3f": "35.6",
+          "final_popularity": "7",
+          "final_win_odds": null
+        },
+        {
+          "number": 8,
+          "name": "アプリコットスカイ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:24.6",
+          "margin": "２",
+          "last_3f": "36.1",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 4,
+          "name": "サンタンジェロ",
+          "finish": null,
+          "runner_status": "excluded",
+          "official_status_text": "除外",
+          "time": "",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "",
           "final_win_odds": null
         }
       ],
@@ -2789,7 +2825,7 @@
         "trifecta": "confirmed"
       },
       "refunds": [],
-      "refund_status": "no_runner_refund_indication",
+      "refund_status": "unconfirmed",
       "refresh_error": null
     },
     {
