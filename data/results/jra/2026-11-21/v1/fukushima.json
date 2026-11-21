@@ -9,8 +9,8 @@
     "sha256": "378fbe9ddc343c4e09314e722cd0bd412f28aa5c83e5c767c90a021910dfb8c2",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-21T12:14:38+09:00",
-  "last_poll_at": "2026-11-21T12:14:38+09:00",
+  "updated_at": "2026-11-21T12:16:42+09:00",
+  "last_poll_at": "2026-11-21T12:16:42+09:00",
   "published_at": null,
   "races": [
     {
@@ -1362,20 +1362,222 @@
       "race_uid": "jra-2026-11-21-fukushima-r5",
       "race_no": 5,
       "start_at": "2026-11-21T12:05:00+09:00",
-      "status": "pending",
+      "status": "partial",
       "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0103202603050520261121/8F"
+        },
+        "retrieved_at": "2026-11-21T12:16:44+09:00",
+        "raw_sha256": "399c7e9bc4f89f65b75a5c4870e4c5f4723d2bb15ac69dec6ba2e75bee5b7960",
+        "raw_file": "data/results/sources/jra/2026-11-21/fukushima/399c7e9bc4f89f65b75a5c4870e4c5f4723d2bb15ac69dec6ba2e75bee5b7960.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-11-21T12:16:44+09:00",
       "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "rows": [
+        {
+          "number": 5,
+          "name": "オーサムストローク",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "3:48.3",
+          "margin": "",
+          "last_3f": null,
+          "final_popularity": "5",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 4,
+          "name": "ディベルティスマン",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "",
+          "margin": "クビ",
+          "last_3f": null,
+          "final_popularity": "4",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 11,
+          "name": "トゥラッタッタ",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "",
+          "margin": "２ 1/2",
+          "last_3f": null,
+          "final_popularity": "2",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 6,
+          "name": "ポワンキュルミナン",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "",
+          "margin": "２ 1/2",
+          "last_3f": null,
+          "final_popularity": "11",
+          "final_win_odds": null,
+          "average_1f": ""
+        },
+        {
+          "number": 13,
+          "name": "サングラデーション",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "",
+          "margin": "１",
+          "last_3f": null,
+          "final_popularity": "3",
+          "final_win_odds": null,
+          "average_1f": ""
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            5
+          ],
+          "yen_per_100": 1020,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            5
+          ],
+          "yen_per_100": 320,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 270,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            11
+          ],
+          "yen_per_100": 170,
+          "popularity": null
+        },
+        {
+          "kind": "bracket_quinella",
+          "number_type": "bracket",
+          "numbers": [
+            4,
+            4
+          ],
+          "yen_per_100": 4270,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            5
+          ],
+          "yen_per_100": 1050,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            5,
+            11
+          ],
+          "yen_per_100": 700,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            11
+          ],
+          "yen_per_100": 710,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            5
+          ],
+          "yen_per_100": 3810,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            5,
+            4
+          ],
+          "yen_per_100": 8170,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            5,
+            11
+          ],
+          "yen_per_100": 5730,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            5,
+            4,
+            11
+          ],
+          "yen_per_100": 39450,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "confirmed",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
-      "refresh_error": {
-        "at": "2026-11-21T12:14:38+09:00",
-        "reason": "Result date mismatch"
-      }
+      "refund_status": "no_runner_refund_indication",
+      "refresh_error": null
     },
     {
       "race_uid": "jra-2026-11-21-fukushima-r6",
