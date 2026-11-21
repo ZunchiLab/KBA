@@ -9,8 +9,8 @@
     "sha256": "378fbe9ddc343c4e09314e722cd0bd412f28aa5c83e5c767c90a021910dfb8c2",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-21T12:16:42+09:00",
-  "last_poll_at": "2026-11-21T12:16:42+09:00",
+  "updated_at": "2026-11-21T12:18:46+09:00",
+  "last_poll_at": "2026-11-21T12:18:46+09:00",
   "published_at": null,
   "races": [
     {
@@ -1371,12 +1371,12 @@
         "request_fields": {
           "cname": "pw01sde0103202603050520261121/8F"
         },
-        "retrieved_at": "2026-11-21T12:16:44+09:00",
+        "retrieved_at": "2026-11-21T12:18:48+09:00",
         "raw_sha256": "399c7e9bc4f89f65b75a5c4870e4c5f4723d2bb15ac69dec6ba2e75bee5b7960",
         "raw_file": "data/results/sources/jra/2026-11-21/fukushima/399c7e9bc4f89f65b75a5c4870e4c5f4723d2bb15ac69dec6ba2e75bee5b7960.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-21T12:16:44+09:00",
+      "source_checked_at": "2026-11-21T12:18:48+09:00",
       "rows_complete": false,
       "rows": [
         {
