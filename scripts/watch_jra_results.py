@@ -81,8 +81,9 @@ def initial(r):return dict(race_uid=r['race_uid'],race_no=r['race_no'],start_at=
 def update(config,recheck=False):
     forecast=ROOT/config['forecast'];text=forecast.read_text(encoding='utf-8-sig').replace('\r\n','\n');d=json.loads(text);digest=sha256(text.encode()).hexdigest();assert d['authority']=='jra' and d['date_jst']==config['date']
     stamp=now();datasets={};changed=[];wanted=[]
+    schedule=d['races']+[r for r in d.get('excluded_races',[]) if r.get('card_only')]
     for v in d['venues']:
-        key=v['venue_key'];rs=[r for r in d['races'] if r['venue_key']==key];path=ROOT/'data/results/jra'/d['date_jst']/d['forecast_version']/(key+'.json')
+        key=v['venue_key'];rs=sorted((r for r in schedule if r['venue_key']==key),key=lambda r:r['race_no']);path=ROOT/'data/results/jra'/d['date_jst']/d['forecast_version']/(key+'.json')
         data=json.loads(path.read_text(encoding='utf-8')) if path.exists() else dict(schema_version='kba.results/1',authority='jra',date_jst=d['date_jst'],venue_key=key,forecast_ref=dict(file=config['forecast'],version=d['forecast_version'],sha256=digest,hash_method='utf8-no-bom-lf-sha256'),updated_at=stamp,last_poll_at=None,published_at=None,races=[initial(r) for r in rs])
         if data['forecast_ref']['sha256']!=digest:raise ValueError('Frozen forecast changed')
         for rr in data['races']:
@@ -113,7 +114,7 @@ def update(config,recheck=False):
             if menu_error:old['refresh_error']=dict(at=stamp,reason=menu_error)
             continue
         try:
-            s,src=raw_fetch('accessS.html',urls[key,no],d['date_jst'],key);r=next(r for r in d['races'] if r['venue_key']==key and r['race_no']==no);fresh=parse(s,r,src)
+            s,src=raw_fetch('accessS.html',urls[key,no],d['date_jst'],key);r=next(r for r in schedule if r['venue_key']==key and r['race_no']==no);fresh=parse(s,r,src)
             if old['official_confirmed'] and not fresh['official_confirmed']:old['refresh_error']=dict(at=stamp,reason='New response incomplete; confirmed result retained')
             else:data['races'][i]=fresh
         except Exception as e:old['refresh_error']=dict(at=stamp,reason=str(e))

@@ -4,3 +4,25 @@
 .score.pending{font-size:11px;letter-spacing:0;line-height:1.25;overflow-wrap:anywhere}
 
 .role-toolbar{flex-wrap:wrap}.horse-sort{font-size:12px;max-width:166px;min-height:36px;padding:5px}.role-legend{font-size:10px;color:var(--muted);margin:4px 0}.role-columns{grid-template-columns:minmax(0,1fr) 144px 30px}.role-scores{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;text-align:center;font-size:11px;font-variant-numeric:tabular-nums}.role-horses>.horse>summary{grid-template-columns:20px minmax(0,1fr) 144px 30px}.role-horses .horse-label b{font-size:12px}.role-horses .horse-label small{font-size:9px}.role-horses .horse-finish{font-size:11px}.role-method{margin:5px 0}
+
+.featured-picks{border:1px solid #a8cbb5;border-radius:10px;background:#e9f4eb;padding:8px 10px;margin-top:9px}
+.featured-picks h2{font-size:14px}
+.featured-picks div{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.featured-picks a{display:block;background:white;border-radius:7px;padding:5px 8px;font-size:13px;text-decoration:none}
+.buy-guide ul{display:flex;flex-wrap:wrap;gap:5px;list-style:none;padding:0;margin:7px 0}
+.buy-guide li{background:white;border:1px solid var(--line);border-radius:7px;padding:4px 7px;font-size:13px}
+.buy-guide small,.ticket-horse{color:var(--green);font-size:10px;font-weight:700}
+.buy-guide p{font-size:12px}
+.buy-first .buy-guide + .formation{margin-top:7px}
+.ticket-horse{background:#e1f1e6;border-radius:5px;padding:2px 4px;font-style:normal;white-space:nowrap}
+.index-control{display:inline-flex;align-items:center;gap:4px;min-height:36px;font-size:12px}
+.index-control input{width:16px;height:16px}
+.buy-first:not(:has(.show-indices:checked)) .role-scores{display:none}
+.buy-first:not(:has(.show-indices:checked)) .role-columns{grid-template-columns:minmax(0,1fr) 38px}
+.buy-first:not(:has(.show-indices:checked)) .role-horses>.horse>summary{grid-template-columns:22px minmax(0,1fr) 38px}
+.buy-first:not(:has(.show-indices:checked)) .horse-label b{font-size:14px}
+.buy-first .horse-label small{font-size:11px}
+.buy-first .role-legend{font-size:11px}
+.buy-first .horse-toolbar h3{flex:1 0 100%}
+.race-closed .decision-badge{background:#e5e9e5;color:#536357}
+.race-closed .copy-plan{display:none}

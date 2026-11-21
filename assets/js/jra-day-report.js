@@ -43,11 +43,20 @@
     const q=document.getElementById('horse-search').value.trim().toLowerCase();
     const mode=document.getElementById('race-filter').value;
     const now=Date.now();let visible=0;
+    if(config.buyFirst)document.querySelectorAll('.featured-picks').forEach(section=>{
+      const links=[...section.querySelectorAll('[data-featured-start]')];
+      links.forEach(link=>link.hidden=Date.parse(link.dataset.featuredStart)<=now);
+      section.hidden=links.every(link=>link.hidden);
+    });
     const matched=[];
     cards.forEach(card=>{
       const closed=Date.parse(card.dataset.start)<=now;
       card.querySelector('.clock-state').textContent=closed?'発走時刻を経過':'';
-      card.hidden=Boolean(q&&!card.dataset.search.toLowerCase().includes(q))||(mode==='buy'&&card.dataset.bets!=='true')||(mode==='future'&&closed);
+      if(config.buyFirst&&card.classList.contains('buy-first')) {
+        card.classList.toggle('race-closed',closed);
+        if(closed)card.querySelector('.decision-badge').textContent='発走済み';
+      }
+      card.hidden=Boolean(q&&!card.dataset.search.toLowerCase().includes(q))||(mode==='buy'&&(card.dataset.bets!=='true'||(config.buyFirst&&closed)))||(mode==='future'&&closed);
       if(card.dataset.venue===active&&!card.hidden)visible++;
       if(card.dataset.venue===active&&!card.hidden)matched.push(card);
     });
@@ -77,7 +86,12 @@
     const r=config.races.find(r=>'#'+r.race_uid===a.getAttribute('href'));
     if(r){compactRaces[r.venue_key]=r.race_uid;}
   }));
-  chooseVenue(hashVenue()||new URL(location.href).searchParams.get('venue'),false);
+  if(config.buyFirst){
+    const params=new URL(location.href).searchParams;
+    const future=config.races.filter(r=>Date.parse(r.start_at)>Date.now()).sort((a,b)=>Date.parse(a.start_at)-Date.parse(b.start_at));
+    for(const race of future)compactRaces[race.venue_key] ||= race.race_uid;
+    chooseVenue(hashVenue()||params.get('venue')||future[0]?.venue_key,false);
+  } else chooseVenue(hashVenue()||new URL(location.href).searchParams.get('venue'),false);
   setInterval(filter,30000);
   try {
     const chosen=JSON.parse(localStorage.getItem(storageKey)||'{}');
@@ -100,7 +114,8 @@
     btn.dataset.order=byNumber?'number':'rank';btn.textContent=config.compact?(byNumber?'総合順':'馬番順'):(byNumber?'総合順位順に切替':'馬番順に切替');
   }));
   document.querySelectorAll('.horse-sort').forEach(select=>select.addEventListener('change',()=>{
-    const list=select.closest('.race').querySelector('.all-horses');const key=select.value;
+    const card=select.closest('.race');const list=card.querySelector('.all-horses');const key=select.value;
+    if(config.buyFirst&&['first','second','top2','top3'].includes(key))card.querySelector('.show-indices').checked=true;
     const number=e=>Number(e.dataset.number);
     const value=e=>{const raw=e.dataset[key];return raw===undefined||raw===''?null:Number(raw);};
     [...list.children].sort((a,b)=>{
