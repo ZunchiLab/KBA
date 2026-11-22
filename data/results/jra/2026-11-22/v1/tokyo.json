@@ -9,8 +9,8 @@
     "sha256": "1a302247f04be8adbae3f952b7f8bf1a287b451c8dba6fbcabb3a0a230c65ede",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-22T12:53:13+09:00",
-  "last_poll_at": "2026-11-22T12:53:13+09:00",
+  "updated_at": "2026-11-22T13:11:42+09:00",
+  "last_poll_at": "2026-11-22T13:11:42+09:00",
   "published_at": null,
   "races": [
     {
@@ -1997,7 +1997,7 @@
       "race_uid": "jra-2026-11-22-tokyo-r7",
       "race_no": 7,
       "start_at": "2026-11-22T13:10:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
