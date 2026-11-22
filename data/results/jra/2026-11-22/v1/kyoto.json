@@ -9,16 +9,16 @@
     "sha256": "1a302247f04be8adbae3f952b7f8bf1a287b451c8dba6fbcabb3a0a230c65ede",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-22T10:17:36+09:00",
-  "last_poll_at": "2026-11-22T10:17:36+09:00",
+  "updated_at": "2026-11-22T10:19:41+09:00",
+  "last_poll_at": "2026-11-22T10:19:41+09:00",
   "published_at": null,
   "races": [
     {
       "race_uid": "jra-2026-11-22-kyoto-r1",
       "race_no": 1,
       "start_at": "2026-11-22T10:05:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -26,13 +26,13 @@
         "request_fields": {
           "cname": "pw01sde0108202605060120261122/BF"
         },
-        "retrieved_at": "2026-11-22T10:17:39+09:00",
-        "raw_sha256": "a8b890dd28839c3e974a05e79f7a5be6ac59c53993499bfe3473db82a649263e",
-        "raw_file": "data/results/sources/jra/2026-11-22/kyoto/a8b890dd28839c3e974a05e79f7a5be6ac59c53993499bfe3473db82a649263e.raw.html",
+        "retrieved_at": "2026-11-22T10:19:43+09:00",
+        "raw_sha256": "886a12df71a01f57db63c8334f4f44182fd38d3e8fc03c948cde582dcfeaae20",
+        "raw_file": "data/results/sources/jra/2026-11-22/kyoto/886a12df71a01f57db63c8334f4f44182fd38d3e8fc03c948cde582dcfeaae20.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-22T10:17:39+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-22T10:19:43+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 11,
@@ -42,7 +42,7 @@
           "official_status_text": "1",
           "time": "1:56.8",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "37.6",
           "final_popularity": "7",
           "final_win_odds": null
         },
@@ -52,9 +52,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:56.8",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "37.8",
           "final_popularity": "1",
           "final_win_odds": null
         },
@@ -64,9 +64,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:56.9",
           "margin": "１",
-          "last_3f": "",
+          "last_3f": "37.5",
           "final_popularity": "3",
           "final_win_odds": null
         },
@@ -76,9 +76,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:57.5",
           "margin": "３ 1/2",
-          "last_3f": "",
+          "last_3f": "36.9",
           "final_popularity": "8",
           "final_win_odds": null
         },
@@ -88,10 +88,94 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:57.8",
           "margin": "１ 1/2",
-          "last_3f": "",
+          "last_3f": "37.9",
           "final_popularity": "12",
+          "final_win_odds": null
+        },
+        {
+          "number": 10,
+          "name": "バッテリー",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:57.8",
+          "margin": "クビ",
+          "last_3f": "38.0",
+          "final_popularity": "11",
+          "final_win_odds": null
+        },
+        {
+          "number": 1,
+          "name": "マシュマロデイズ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:58.0",
+          "margin": "１ 1/4",
+          "last_3f": "39.0",
+          "final_popularity": "2",
+          "final_win_odds": null
+        },
+        {
+          "number": 6,
+          "name": "アップルペアー",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:58.1",
+          "margin": "１／２",
+          "last_3f": "38.2",
+          "final_popularity": "4",
+          "final_win_odds": null
+        },
+        {
+          "number": 5,
+          "name": "タマモウララカ",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:58.2",
+          "margin": "１／２",
+          "last_3f": "38.9",
+          "final_popularity": "6",
+          "final_win_odds": null
+        },
+        {
+          "number": 7,
+          "name": "テムバンヴァン",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:58.3",
+          "margin": "１／２",
+          "last_3f": "38.6",
+          "final_popularity": "5",
+          "final_win_odds": null
+        },
+        {
+          "number": 3,
+          "name": "リケアワルツ",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "2:00.0",
+          "margin": "１０",
+          "last_3f": "40.4",
+          "final_popularity": "10",
+          "final_win_odds": null
+        },
+        {
+          "number": 12,
+          "name": "バンブトンウーノ",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "2:00.1",
+          "margin": "１／２",
+          "last_3f": "40.6",
+          "final_popularity": "9",
           "final_win_odds": null
         }
       ],
