@@ -2,10 +2,20 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from jra_order_objectives import evaluate, order_errors, role_positions
+from jra_order_objectives import evaluate, field_limits, order_errors, role_positions
 
 
 class TestBuyOrder(unittest.TestCase):
+    def test_fourth_pick_is_a_partner_at_every_field_size(self):
+        for size in range(4,19):
+            partner,cover=field_limits(size)
+            self.assertEqual(partner,4)
+            self.assertGreaterEqual(cover,partner)
+        result={'rows':[{'number':n,'finish':f} for n,f in [(1,1),(4,2),(8,3)]],'payouts':[]}
+        metrics=evaluate(list(range(1,9)),result,*field_limits(8))
+        self.assertTrue(metrics['axis_and_partner'])
+        self.assertFalse(metrics['joint'])
+
     def test_placing_all_and_ticket_hit_are_separate_with_tied_third(self):
         order=list(range(1,9))
         result={'rows':[{'number':n,'finish':f} for n,f in [(2,1),(1,2),(4,3),(8,3)]],

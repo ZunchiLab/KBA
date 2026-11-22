@@ -77,7 +77,8 @@ def order_panel(race):
     marked=set(race['analysis'].get('mark_selection',{}).get('marked_numbers',numbers))
     rows=[]
     for label,group in [('1番手・軸',numbers[:1]),(f'2〜{partner}番手・相手',numbers[1:partner]),(f'{partner+1}〜{cover}番手・補完',numbers[partner:cover])]:
-        group=[n for n in group if n in marked]
+        if order.get('policy')!='podium-first' or group==numbers[partner:cover]:
+            group=[n for n in group if n in marked]
         if not group:continue
         labels='、'.join(str(n)+' '+horses[n]['name'] if len(group)==1 else str(n) for n in group)
         rows.append('<div><dt>'+E(label)+'</dt><dd>'+E(labels)+'</dd></div>')
@@ -142,6 +143,8 @@ def render(d,json_name,results):
     for v in d['venues']:
         parts.append(f'<div class="race-jumps" data-venue="{v["venue_key"]}" aria-label="{E(v["label"])}レース番号">'+''.join(f'<a href="#{r["race_uid"]}" data-race-uid="{r["race_uid"]}">{r["race"]}</a>' for r in sorted(all_races,key=lambda r:r['race']) if r['venue_key']==v['venue_key'])+'</div>')
     parts.append('<div class="filters"><input id="horse-search" type="search" aria-label="馬名・レース検索" placeholder="馬名・レース検索"><select id="race-filter" aria-label="レース表示"><option value="all">全レース</option><option value="buy">本線候補</option><option value="future">発走前</option></select></div></nav>')
+    if d.get('revision',{}).get('original_fixed_at') and d.get('presentation',{}).get('podium_first'):
+        parts.append('<p class="day-summary">予想原本 '+E(d['revision']['original_fixed_at'][11:16])+' JST · 表示改訂 '+E(d['revision']['changed_at'][11:16])+' JST。全頭数で◎が3着内の軸、2〜4番手が相手です。</p>')
     if buy_first:
         featured=[r for r in eligible if r['analysis'].get('priority')=='優先']
         if featured:
@@ -173,8 +176,11 @@ def render(d,json_name,results):
             if slots:
                 slot_rows=''.join('<tr><th>'+str(s['slot'])+'番手</th><td>'+str(s['top2'])+'/'+str(s['races'])+'</td><td>'+str(s['top3'])+'/'+str(s['races'])+'</td></tr>' for s in slots)
                 diag+='<details><summary>1〜7番手を個別に見る</summary><table class="tickets"><thead><tr><th>印順</th><th>連対</th><th>3着内</th></tr></thead><tbody>'+slot_rows+'</tbody></table></details>'
+        if d.get('presentation',{}).get('podium_first'):
+            summary=audit.get('summary',{}).get('rank',{})
+            diag+='<p>◎と2〜4番手の少なくとも1頭がともに3着以内　'+E(summary.get('axis_and_partner','—'))+' / '+E(audit.get('races','—'))+'R。</p>'
         parts.append('<details class="day-summary"><summary><b>印順で買った過去成績・指標の読み方</b></summary>'+diag+
-                     '<p>◎は連対と3着内の軸。16頭以上は相手4番手・補完7番手まで。13〜15頭は4・6、10〜12頭は3・5、9頭以下は3・4を目安に印と点数を選びます。上の全体比較は従来の4・7固定です。全頭欄の連対・3着内の順位は役割別の実績値から計算し、同点は同順位です。役割値の小差は小さいまま表示します。新馬は参考欄に分けています。</p></details>')
+                     ('<p>どの頭数でも◎は最も3着内を期待する軸。2〜4番手の少なくとも1頭が3着内に入ることを狙います。補完候補と購入点数はレースごとに選びます。上の全体比較は4・7番手固定です。</p>' if d.get('presentation',{}).get('podium_first') else '<p>◎は連対と3着内の軸。16頭以上は相手4番手・補完7番手まで。13〜15頭は4・6、10〜12頭は3・5、9頭以下は3・4が目安です。</p>')+'</details>')
     elif index_guide:
         benchmark=d.get('historical_rank_comparison')
         diagnostic=''
@@ -338,6 +344,9 @@ def render(d,json_name,results):
     if buy_first:config['buyFirst']=True
     digests={value.get('forecast_sha256') for value in results.values()}
     if len(digests)==1:config['forecastSha256']=next(iter(digests))
+    ref=d.get('revision',{}).get('results_source')
+    if ref and d.get('presentation',{}).get('podium_first'):
+        config.update(version=ref['version'],jsonFile=ref['file'],forecastSha256=ref['sha256'])
     extras=''.join('<p><a href="'+E(x['file'])+'">'+E(x['purpose'])+'</a></p>' for x in d.get('supplemental_files',[]))
     parts.append('<footer><details><summary>評価方法・未確認事項・JSON</summary><p>'+E(d['model']['definition'])+'</p><ul>'+''.join('<li>'+E(x)+'</li>' for x in d['model']['limitations'])+'</ul><p>自信・波乱は主観。荒れ確率は未校正のため未算定。事前予想は固定し、結果のみ別更新。</p><p>固定 '+E(d['fixed_at'])+' · '+E(d['forecast_version'])+'</p><a id="forecast-link" href="'+E(json_name)+'">全頭・買い目・比較記録JSON</a>'+extras+'</details><noscript>JavaScript無効時は全レースを表示します。</noscript></footer>')
     js=(ROOT/'assets/js/jra-day-report.js').read_text(encoding='utf-8')

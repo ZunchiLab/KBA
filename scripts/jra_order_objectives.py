@@ -5,11 +5,11 @@ from pathlib import Path
 from jra_rank_coverage import ordered_horses
 
 
-def field_limits(size):
+def field_limits(size, *, legacy=False):
     """Inclusive partner and coverage endpoints in the forecast order."""
     partner, cover = ((4,7) if size>=16 else (4,6) if size>=13 else
                       (3,5) if size>=10 else (3,4))
-    return min(size,partner),min(size,cover)
+    return min(size,partner if legacy else 4),min(size,cover)
 
 
 def role_positions(horses, role):
@@ -38,7 +38,7 @@ def order_errors(race):
     main = [p for p in race.get('bet_plans',[]) if p.get('selected_for_example')]
     if main and (not ranks or '◎' not in active[0].get('mark','')):
         return ['本線の1番手の印が◎と一致しない']
-    partner,cover=field_limits(len(active))
+    partner,cover=field_limits(len(active),legacy=review.get('policy')!='podium-first')
     if 'partner_end' in review and (review['partner_end'],review.get('cover_end'))!=(partner,cover):
         return ['頭数と候補範囲が不一致']
     places = {k:role_positions(active,k) for k in ('top2','top3')}
@@ -78,7 +78,7 @@ def evaluate(order, result, partner_end=4, cover_end=7):
     def wins(kind):
         return {tuple(sorted(p['numbers'])) for p in result['payouts'] if p['kind'] == kind}
     return dict(axis_top2=first <= 2, axis_top3=first <= 3, partner_2_4=partner,
-                cover_7=cover, joint=first <= 3 and partner and cover,
+                axis_and_partner=first <= 3 and partner, cover_7=cover, joint=first <= 3 and partner and cover,
                 quinella=bool(q & wins('quinella')), trio=bool(trio & wins('trio')))
 
 
