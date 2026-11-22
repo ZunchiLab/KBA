@@ -1,0 +1,22 @@
+{
+  "fixed_at": "2026-11-22T09:27:02+09:00",
+  "rendered_at": "2026-11-22T09:28:58+09:00",
+  "hash_method": "utf8-no-bom-lf-sha256",
+  "files": {
+    "report_20261122_jra_predictions_v1.json": "0eb14ed987c4c7e7bbcd322c656656a892c6bf59793db73e2f352eb7ffcd415a",
+    "report_20261122_jra_predictions_v1.html": "a0ec6b11591f32774d3c783253c894394fa34130f2430dc656373c69f0442e6e"
+  },
+  "forecast_races": 24,
+  "forecast_horses": 334,
+  "card_only_races": 0,
+  "official_sources": 601,
+  "role_values": 1332,
+  "source_from": "2026-11-22T09:19:27+09:00",
+  "source_to": "2026-11-22T09:26:52+09:00",
+  "passed_strict": true,
+  "public_forecast_sha256": "1a302247f04be8adbae3f952b7f8bf1a287b451c8dba6fbcabb3a0a230c65ede",
+  "result_feeds_initialized": [
+    "data/results/jra/2026-11-22/v1/tokyo.json",
+    "data/results/jra/2026-11-22/v1/kyoto.json"
+  ]
+}
