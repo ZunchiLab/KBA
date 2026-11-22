@@ -1,0 +1,22 @@
+{
+  "fixed_at": "2026-11-23T07:34:26+09:00",
+  "rendered_at": "2026-11-23T07:35:50+09:00",
+  "hash_method": "utf8-no-bom-lf-sha256",
+  "files": {
+    "report_20261123_jra_predictions_v1.json": "c9599ce3a4965186d21302c1bf1fc2dfbf3ea06e75e3004b8fdd3fb069d90c09",
+    "report_20261123_jra_predictions_v1.html": "0e1290ba00825e59f469e75b33b98bec580bc1b92c26874bfcf4eac1ea57457e"
+  },
+  "forecast_races": 24,
+  "forecast_horses": 359,
+  "card_only_races": 0,
+  "official_sources": 610,
+  "role_values": 1416,
+  "source_from": "2026-11-23T07:19:03+09:00",
+  "source_to": "2026-11-23T07:31:15+09:00",
+  "passed_strict": true,
+  "public_forecast_sha256": "c7f86259030d6a442608b5da6bd9d19d098b4322c573d20b840166c9d109ddb1",
+  "result_feeds_initialized": [
+    "data/results/jra/2026-11-23/v1/tokyo.json",
+    "data/results/jra/2026-11-23/v1/fukushima.json"
+  ]
+}
