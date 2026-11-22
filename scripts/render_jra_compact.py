@@ -66,6 +66,52 @@ def purchase_guide(race, plan):
     why=race['analysis'].get('buy_summary',race['analysis']['headline'])
     return f'<div class="buy-guide"><p class="formation"><b>{E(combos)}</b></p><ul>{labels}</ul><p>{E(goal)}</p><p>{E(why)}</p>{prices}</div>',{n:role(n) for n in pool}
 
+def order_panel(race):
+    order = race['analysis']['purchase_order']
+    if order['mode']=='market':
+        return '<aside class="order-panel"><b>新馬は買い順を保留</b><p>全頭を朝の単勝順で掲載。馬名を開くと、父・厩舎・騎手の関連実績を確認できます。</p></aside>'
+    horses={h['number']:h for h in race['horses']}
+    numbers=order['first_seven']
+    partner=order.get('partner_end',4)
+    cover=order.get('cover_end',7)
+    marked=set(race['analysis'].get('mark_selection',{}).get('marked_numbers',numbers))
+    rows=[]
+    for label,group in [('1番手・軸',numbers[:1]),(f'2〜{partner}番手・相手',numbers[1:partner]),(f'{partner+1}〜{cover}番手・補完',numbers[partner:cover])]:
+        group=[n for n in group if n in marked]
+        if not group:continue
+        labels='、'.join(str(n)+' '+horses[n]['name'] if len(group)==1 else str(n) for n in group)
+        rows.append('<div><dt>'+E(label)+'</dt><dd>'+E(labels)+'</dd></div>')
+    title='障害の参考順' if order['mode']=='hurdle' else '買う順番'
+    comparison=''
+    if len(numbers)>=2:
+        first,second=(horses[n] for n in numbers[:2])
+        values=[]
+        for key,label in [('top2','連対'),('top3','3着内')]:
+            v1=first['role_indices'][key]['value']
+            v2=second['role_indices'][key]['value']
+            if v1 is not None and v2 is not None:
+                values.append(f'{label} {v1:.1f} / {v2:.1f}（差{abs(v1-v2):.1f}）')
+        if values:
+            comparison='<p>実績値 '+str(numbers[0])+'番 / '+str(numbers[1])+'番　'+E('、'.join(values))+'。差は得点単位です。</p>'
+    return ('<section class="order-panel"><h3>'+title+'</h3><dl>'+''.join(rows)+'</dl>'
+            '<details><summary>軸と相手をこの順にした理由</summary><p>'+E(order['axis_reason'])+'</p><p>'+
+            E(order['partners_reason'])+'</p>'+comparison+'<p><b>外れる展開</b> '+E(order['risk'])+'</p></details></section>')
+
+
+def price_comparison(race):
+    checks=race['analysis'].get('preflight_review',{}).get('same_cost_price_comparisons',[])
+    if not checks:return ''
+    kinds={'quinella':'馬連','wide':'ワイド','trio':'三連複'}
+    def line(entry):
+        raw=entry['price']
+        odds=raw['raw']+'倍' if raw['lower'] is not None else '取得なし'
+        floor=' / 下限'+str(entry['minimum_odds'])+'倍' if 'minimum_odds' in entry else ''
+        return E(kinds[entry['kind']]+' '+'–'.join(map(str,entry['numbers']))+' '+odds+floor+'（'+entry['checked_at'][11:19]+' JST）')
+    return ('<details class="analysis"><summary>同額の別の買い方と比較</summary>'+
+            ''.join('<p>採用案 '+line(c['retained'])+'<br>比較案 '+line(c['alternative'])+
+                    '</p><p>各'+str(c['cost_yen'])+'円例。'+E(c['rationale'])+'</p>' for c in checks)+'</details>')
+
+
 def card_only(race, result):
     result=result or {}
     uid=race['race_uid']
@@ -79,6 +125,7 @@ def render(d,json_name,results):
     authority=d.get('authority','jra');authority_label='地方' if authority=='nar' else 'JRA'
     buy_first=authority=='jra' and d.get('presentation',{}).get('buy_first',False)
     index_guide=buy_first and d.get('presentation',{}).get('index_guide',False)
+    order_view=buy_first and d.get('presentation',{}).get('purchase_order',False)
     excluded=[r for r in d.get('excluded_races',[]) if r.get('card_only')]
     all_races=d['races']+excluded
     b=d['budget'];n=sum(len(r['horses']) for r in d['races']);selected=[r for r in d['races'] if any(p['selected_for_example'] for p in r['bet_plans'])]
@@ -111,7 +158,24 @@ def render(d,json_name,results):
         status=(' · 価格未取得・購入保留' if any(t.get('price_condition_at_snapshot') is None for t in p['tickets']) else ' · 価格未達・全点見送り' if not price_eligible(p) else ' · 直前確認で判断') if price_defaults else ''
         parts.append(f'<a href="#{r["race_uid"]}"><b>{E(r["venue"])}{r["race"]}R</b> {E(r["start"])} · {E(p["type"])}<br>{E(brief_plan(p))} · {p["maximum_example_yen"]:,}円{status}</a>')
     parts.append(f'</div><p>各100円の例。上限例{b["day_limit_yen"]:,}円／保存価格条件達成分{b["price_eligible_main_yen"]:,}円。直前条件は未確認。余りは再配分しません。</p><div id="plan-total" role="status">仮プラン {default_cost:,}円</div><a href="../tools/bet-planner.html">購入記録の補助</a></details></section>')
-    if index_guide:
+    if order_view:
+        audit=d.get('order_objectives_baseline',{})
+        diag=''
+        if audit.get('races'):
+            items=[('◎の連対','axis_top2'),('◎の3着内','axis_top3'),('2〜4番手から1頭以上','partner_2_4'),
+                   ('7番手までで全頭捕捉','cover_7'),('3条件すべて','joint'),('馬連フォーメーション','quinella'),('三連複フォーメーション','trio')]
+            rows=''.join('<tr><th>'+label+'</th><td>'+str(audit['summary']['rank'][k])+'</td><td>'+str(audit['summary']['market'][k])+'</td></tr>' for label,k in items)
+            diag='<p>過去'+str(len(audit['dates']))+'開催日・既走平地'+str(audit['races'])+'Rの該当レース数。市場基準は同じ保存時点の単勝順です。</p><table class="tickets"><thead><tr><th>検証項目</th><th>印順</th><th>市場順</th></tr></thead><tbody>'+rows+'</tbody></table>'
+            if audit.get('field_bands'):
+                band_rows=''.join(f"<tr><th>{b['lo']}〜{b['hi']}頭</th><td>{b['races']}</td><td>{b['sized']['rank']['axis_top2']}</td><td>{b['sized']['rank']['cover_7']} / {b['fixed']['rank']['cover_7']}</td></tr>" for b in audit['field_bands'])
+                diag+='<details><summary>頭数別で絞った場合</summary><table class="tickets"><tr><th>頭数</th><th>R数</th><th>◎連対</th><th>全頭捕捉 縮小案 / 7頭</th></tr>'+band_rows+'</table><p>同じ発走前の印順での事後比較。新しい軸選定の成績は今後検証します。</p></details>'
+            slots=audit.get('by_slot',{}).get('rank',[])
+            if slots:
+                slot_rows=''.join('<tr><th>'+str(s['slot'])+'番手</th><td>'+str(s['top2'])+'/'+str(s['races'])+'</td><td>'+str(s['top3'])+'/'+str(s['races'])+'</td></tr>' for s in slots)
+                diag+='<details><summary>1〜7番手を個別に見る</summary><table class="tickets"><thead><tr><th>印順</th><th>連対</th><th>3着内</th></tr></thead><tbody>'+slot_rows+'</tbody></table></details>'
+        parts.append('<details class="day-summary"><summary><b>印順で買った過去成績・指標の読み方</b></summary>'+diag+
+                     '<p>◎は連対と3着内の軸。16頭以上は相手4番手・補完7番手まで。13〜15頭は4・6、10〜12頭は3・5、9頭以下は3・4を目安に印と点数を選びます。上の全体比較は従来の4・7固定です。全頭欄の連対・3着内の順位は役割別の実績値から計算し、同点は同順位です。役割値の小差は小さいまま表示します。新馬は参考欄に分けています。</p></details>')
+    elif index_guide:
         benchmark=d.get('historical_rank_comparison')
         diagnostic=''
         if benchmark:
@@ -144,6 +208,9 @@ def render(d,json_name,results):
             parts.append(f'<article class="{race_class}" id="{uid}" data-venue="{key}" data-start="{E(r["start_at"])}" data-search="{E(search)}" data-bets="{str(actionable).lower()}"><header class="race-head"><div class="row"><b>{E(v["label"])} {r["race"]}R · {E(r["start"])}</b><span class="decision-badge {"buy" if actionable else "skip"}">{decision}</span></div><h2>{E(r["name"])}</h2><p>{E(level)} · {surface}{r["distance_m"]}m · {E(going)} · {len(r["horses"])}頭 <span class="clock-state"></span></p><div class="badges"><span>自信 {E(confidence)}</span><span>波乱 {E(a["volatility"])}</span><small>主観評価</small></div></header><div class="race-body">')
             secondary=[]
             parts.append('<div class="payouts">'+payout_html(res)+'</div>')
+            if order_view:
+                parts.append(order_panel(r))
+                secondary.append(price_comparison(r))
             if not main and not buy_first:parts.append('<p class="one-line">'+E(a['headline'])+'</p>')
             buy_roles={}
             for p in main:
@@ -199,6 +266,9 @@ def render(d,json_name,results):
                     legend='同じレース内で高いほど上位、基準は50。馬連は「連対（2着以内）」、ワイド・三連複は「3着内」が目安。2着はちょうど2着。新馬は父・厩舎・騎手の関連実績。' if debut_view else '同じレース内で高いほど上位、基準は50。馬連は「連対（2着以内）」、ワイド・三連複は「3着内」が目安。2着はちょうど2着。着順の確率とは別の実績比較です。'
                 if index_guide:
                     legend=('新馬は父・厩舎・騎手の関連実績。本人の実走は0走。' if debut_view else '馬連は連対、ワイド・三連複は3着内。')+' 同じレース内で50が基準。55点は55％を意味しません。'
+                if order_view:
+                    horse_heading='全頭の買い順' if a['purchase_order']['mode']=='purchase' else '全頭の参考順'
+                    legend='馬名を開くと順位の理由が読めます。' + (' 新馬の実績順位は父・厩舎・騎手の参考。' if debut_view else ' 連対・3着内は実績順位。同点は同順位。')
                 parts.append('<div class="row horse-toolbar role-toolbar"><h3>'+horse_heading.replace('近走指数','役割別指数')+'</h3>'+control+toggle+'</div><p class="role-legend">'+E(legend)+'</p><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns role-columns"><span>印 / 馬番・馬名</span>'+labels+'<span>着順</span></div><div class="all-horses role-horses">')
             else:
                 parts.append('<div class="row horse-toolbar"><h3>'+horse_heading+'</h3><button class="sort-horses" type="button">馬番順</button></div><p class="race-result-status">'+E(res.get('note','結果待ち') if res else '結果待ち')+'</p><div class="horse-columns"><span>印 / 馬番・馬名</span><span>'+('市場参考' if market_reference else '指数')+'</span><span>着順</span></div><div class="all-horses">')
@@ -251,6 +321,12 @@ def render(d,json_name,results):
                 judgment=h.get("mark_override_reason") or ("旧総合指数の順位を採用。4役割指標は別の参考評価です。" if role_view else "指数と総合順位が一致。以下の根拠と懸念を確認。")
                 if index_guide and not h.get("mark_override_reason"):
                     judgment=('新馬の参考順位は保存した単勝オッズ順。' if market_reference else '今回の条件と展開を加味した予想順。採否は下の根拠と買い目に記載。')
+                if order_view and h.get('purchase_order'):
+                    order=h['purchase_order']
+                    rank_label=(str(order['rank'])+'番手・'+order['tier']+' ｜ 連対 '+(str(order['top2'])+'位' if order['top2'] else '資料不足')+
+                                ' / 3着内 '+(str(order['top3'])+'位' if order['top3'] else '資料不足'))
+                    if order['disagreement']:rank_label+=' · 順位差の理由あり'
+                    judgment=order['reason']
                 parts.append(f'<details class="horse" data-number="{h["number"]}"{attrs}><summary><span class="mark">{E(mark)}</span><span class="horse-label"><b>{h["number"]} {E(h["name"])} {chip}</b><small>{E(rank_label)} · {E(h["style"])}</small></span>{score_html}<strong class="horse-finish">{E(f)}</strong></summary><div class="horse-detail"><p>{E(h["jockey"])} · {h["weight"]}kg · 馬体重 {E(h["body"] or "未発表")}</p>{legacy_html}<p><b>総合判断</b> {E(judgment)}</p><p><b>根拠</b> {E(h["reason"])}</p><p><b>懸念</b> {E(h["risk"])}</p><p><b>採否</b> {E(h["ticket_review"])}</p><details><summary>過去走と出典</summary><ul>'+''.join(past_item(p) for p in h['past'])+'</ul></details>'+history_html+role_detail+'</div></details>')
             parts.append('</div>'+''.join(secondary))
             parts.append(comparison_table(r)+formation_section(r))

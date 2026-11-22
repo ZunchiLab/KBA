@@ -26,3 +26,10 @@
 .buy-first .horse-toolbar h3{flex:1 0 100%}
 .race-closed .decision-badge{background:#e5e9e5;color:#536357}
 .race-closed .copy-plan{display:none}
+.order-panel{margin:.5rem 0;padding:.65rem .85rem;border:1px solid #aec9bc;border-radius:.75rem;background:#f2f8f4}
+.order-panel h3,.order-panel dl{margin:0 0 .25rem}
+.order-panel dl>div{display:grid;grid-template-columns:minmax(7rem,auto) 1fr;gap:.5rem;align-items:baseline}
+.order-panel dt{font-size:.78rem;color:#39584a}
+.order-panel dd{margin:0;font-size:.95rem;font-weight:650;font-variant-numeric:tabular-nums}
+.order-panel details{margin:.3rem 0 0}
+.order-panel summary{font-size:.8rem;cursor:pointer;color:#30594a}
