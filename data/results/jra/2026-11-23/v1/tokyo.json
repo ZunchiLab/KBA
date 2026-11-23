@@ -9,8 +9,8 @@
     "sha256": "c7f86259030d6a442608b5da6bd9d19d098b4322c573d20b840166c9d109ddb1",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-23T10:43:09+09:00",
-  "last_poll_at": "2026-11-23T10:43:09+09:00",
+  "updated_at": "2026-11-23T11:01:44+09:00",
+  "last_poll_at": "2026-11-23T11:01:44+09:00",
   "published_at": null,
   "races": [
     {
@@ -689,7 +689,7 @@
       "race_uid": "jra-2026-11-23-tokyo-r3",
       "race_no": 3,
       "start_at": "2026-11-23T11:00:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
