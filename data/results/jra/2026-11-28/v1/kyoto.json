@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T14:26:29+09:00",
-  "last_poll_at": "2026-11-28T14:26:29+09:00",
+  "updated_at": "2026-11-28T14:28:34+09:00",
+  "last_poll_at": "2026-11-28T14:28:34+09:00",
   "published_at": null,
   "races": [
     {
@@ -57560,9 +57560,167 @@
             },
             "limitations": "順位の限定的な補正。補正幅・閾値は未校正、的中率向上は未検証。市場と当日傾向には相関がある。全頭の調教・状態は未評価。"
           }
+        },
+        {
+          "checked_at": "2026-11-28T14:28:39+09:00",
+          "page_time": "発走時刻： 14時31分",
+          "runners": [
+            {
+              "number": 1,
+              "win": 3.4,
+              "status": "出走",
+              "body": "458(-4)",
+              "jockey": "浜中 俊"
+            },
+            {
+              "number": 2,
+              "win": 14.5,
+              "status": "出走",
+              "body": "504(-2)",
+              "jockey": "柴田 裕一郎"
+            },
+            {
+              "number": 3,
+              "win": 54.1,
+              "status": "出走",
+              "body": "486(-8)",
+              "jockey": "杉原 誠人"
+            },
+            {
+              "number": 4,
+              "win": 31.9,
+              "status": "出走",
+              "body": "496(-2)",
+              "jockey": "幸 英明"
+            },
+            {
+              "number": 5,
+              "win": 25.0,
+              "status": "出走",
+              "body": "466(+6)",
+              "jockey": "西村 淳也"
+            },
+            {
+              "number": 6,
+              "win": 7.5,
+              "status": "出走",
+              "body": "454(0)",
+              "jockey": "松若 風馬"
+            },
+            {
+              "number": 7,
+              "win": 5.5,
+              "status": "出走",
+              "body": "454(+8)",
+              "jockey": "高杉 吏麒"
+            },
+            {
+              "number": 8,
+              "win": 93.9,
+              "status": "出走",
+              "body": "458(+4)",
+              "jockey": "小崎 綾也"
+            },
+            {
+              "number": 9,
+              "win": 166.2,
+              "status": "出走",
+              "body": "528(+12)",
+              "jockey": "森田 誠也"
+            },
+            {
+              "number": 10,
+              "win": 123.6,
+              "status": "出走",
+              "body": "466(0)",
+              "jockey": "秋山 稔樹"
+            },
+            {
+              "number": 11,
+              "win": 4.4,
+              "status": "出走",
+              "body": "478(-8)",
+              "jockey": "C.デムーロ"
+            },
+            {
+              "number": 12,
+              "win": 8.4,
+              "status": "出走",
+              "body": "492(+10)",
+              "jockey": "鮫島 克駿"
+            },
+            {
+              "number": 13,
+              "win": 8.1,
+              "status": "出走",
+              "body": "528(-4)",
+              "jockey": "J.モレイラ"
+            }
+          ],
+          "tickets": [
+            {
+              "kind": "wide",
+              "numbers": [
+                1,
+                7
+              ],
+              "lower": 3.7,
+              "upper": 4.2,
+              "minimum": 2.4,
+              "example_stake_yen": 100,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070920261128Z/3F"
+                },
+                "retrieved_at": "2026-11-28T14:28:40+09:00",
+                "raw_sha256": "507b7b1709427756a8966e3479c1e0f0e10fd45755e98dd9ea94b0310b6e663d",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/507b7b1709427756a8966e3479c1e0f0e10fd45755e98dd9ea94b0310b6e663d.raw.html",
+                "encoding": "cp932"
+              }
+            },
+            {
+              "kind": "wide",
+              "numbers": [
+                1,
+                11
+              ],
+              "lower": 3.3,
+              "upper": 3.7,
+              "minimum": 2.4,
+              "example_stake_yen": 100,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070920261128Z/3F"
+                },
+                "retrieved_at": "2026-11-28T14:28:40+09:00",
+                "raw_sha256": "507b7b1709427756a8966e3479c1e0f0e10fd45755e98dd9ea94b0310b6e663d",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/507b7b1709427756a8966e3479c1e0f0e10fd45755e98dd9ea94b0310b6e663d.raw.html",
+                "encoding": "cp932"
+              }
+            }
+          ],
+          "source": {
+            "provider": "JRA",
+            "url": "https://jra.jp/JRADB/accessO.html",
+            "method": "POST",
+            "request_fields": {
+              "cname": "pw151ouS308202605070920261128Z/2F"
+            },
+            "retrieved_at": "2026-11-28T14:28:39+09:00",
+            "raw_sha256": "e72635e205c8c950188351e6556e71d72111a2cb329b29bb8bec920a8320038f",
+            "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/e72635e205c8c950188351e6556e71d72111a2cb329b29bb8bec920a8320038f.raw.html",
+            "encoding": "cp932"
+          },
+          "revision": null
         }
       ],
-      "attempted_at": "2026-11-28T14:22:17+09:00",
+      "attempted_at": "2026-11-28T14:28:38+09:00",
       "error": null,
       "final": {
         "policy": "ipat-close-minus-five-v1",
