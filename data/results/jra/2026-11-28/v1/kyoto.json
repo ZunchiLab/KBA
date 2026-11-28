@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T16:23:56+09:00",
-  "last_poll_at": "2026-11-28T16:23:56+09:00",
+  "updated_at": "2026-11-28T16:26:01+09:00",
+  "last_poll_at": "2026-11-28T16:26:01+09:00",
   "published_at": null,
   "races": [
     {
@@ -4452,12 +4452,12 @@
         "request_fields": {
           "cname": "pw01sde0108202605071220261128/A7"
         },
-        "retrieved_at": "2026-11-28T16:23:58+09:00",
-        "raw_sha256": "4799d25cd97f06656516f483a7849c51113c348f8b839f6ba5c6e0b697928d24",
-        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/4799d25cd97f06656516f483a7849c51113c348f8b839f6ba5c6e0b697928d24.raw.html",
+        "retrieved_at": "2026-11-28T16:26:04+09:00",
+        "raw_sha256": "1d1e2996bdfdf8306b5548eb62eeb29f56f43eac0c09e2da59d9fa9f3f9945d2",
+        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/1d1e2996bdfdf8306b5548eb62eeb29f56f43eac0c09e2da59d9fa9f3f9945d2.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-28T16:23:58+09:00",
+      "source_checked_at": "2026-11-28T16:26:04+09:00",
       "rows_complete": false,
       "rows": [
         {
@@ -4473,7 +4473,10 @@
           "final_win_odds": null,
           "frame": 7,
           "jockey": "J.モレイラ",
-          "corners": []
+          "corners": [
+            1,
+            1
+          ]
         },
         {
           "number": 2,
@@ -4488,7 +4491,10 @@
           "final_win_odds": null,
           "frame": 1,
           "jockey": "川田 将雅",
-          "corners": []
+          "corners": [
+            3,
+            2
+          ]
         },
         {
           "number": 5,
@@ -4503,7 +4509,10 @@
           "final_win_odds": null,
           "frame": 3,
           "jockey": "国分 恭介",
-          "corners": []
+          "corners": [
+            7,
+            6
+          ]
         },
         {
           "number": 10,
@@ -4518,7 +4527,10 @@
           "final_win_odds": null,
           "frame": 5,
           "jockey": "小崎 綾也",
-          "corners": []
+          "corners": [
+            8,
+            8
+          ]
         },
         {
           "number": 8,
@@ -4533,7 +4545,10 @@
           "final_win_odds": null,
           "frame": 4,
           "jockey": "幸 英明",
-          "corners": []
+          "corners": [
+            13,
+            10
+          ]
         }
       ],
       "payouts": [
