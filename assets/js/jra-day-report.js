@@ -156,7 +156,7 @@
   }
   function adaptJRA(data) {
     if(data.schema_version!=='kba.results/1'||data.authority!=='jra'||!data.forecast_ref)throw new Error('JRA共通結果形式が不正');
-    return {authority:'jra',date_jst:data.date_jst,venue_key:data.venue_key,baba_code:({tokyo:5,kyoto:8,niigata:4,fukushima:3})[data.venue_key],forecast_version:data.forecast_ref.version,forecast_sha256:data.forecast_ref.sha256,updated_at:data.updated_at,last_poll_at:data.last_poll_at,refresh_interval_minutes:2,complete:data.races.every(r=>['confirmed','cancelled'].includes(r.status)),races:data.races.map(r=>({race:r.race_no,start_at:r.start_at,status:r.status,source:r.source,refresh_error:r.refresh_error,payouts_status:r.payouts_status||{},rows:r.rows.map(h=>({number:h.number,name:h.name,finish:Number.isInteger(h.finish)?h.finish:h.official_status_text||'未確定'})),refunds:r.payouts.map(p=>({kind:payoutKinds[p.kind]||p.kind,numbers:p.numbers,number_type:p.number_type,combination:p.numbers.join(['exacta','trifecta'].includes(p.kind)?'→':'−'),yen_per_100:p.yen_per_100}))}))};
+    return {authority:'jra',date_jst:data.date_jst,venue_key:data.venue_key,baba_code:({tokyo:5,kyoto:8,niigata:4,fukushima:3})[data.venue_key],forecast_version:data.forecast_ref.version,forecast_sha256:data.forecast_ref.sha256,market:data.market||{},updated_at:data.updated_at,last_poll_at:data.last_poll_at,refresh_interval_minutes:2,complete:data.races.every(r=>['confirmed','cancelled'].includes(r.status)),races:data.races.map(r=>({race:r.race_no,start_at:r.start_at,status:r.status,source:r.source,refresh_error:r.refresh_error,payouts_status:r.payouts_status||{},rows:r.rows.map(h=>({number:h.number,name:h.name,finish:Number.isInteger(h.finish)?h.finish:h.official_status_text||'未確定',runner_status:h.runner_status,jockey:h.jockey,frame:h.frame,corners:h.corners,final_popularity:h.final_popularity})),refunds:r.payouts.map(p=>({kind:payoutKinds[p.kind]||p.kind,numbers:p.numbers,number_type:p.number_type,combination:p.numbers.join(['exacta','trifecta'].includes(p.kind)?'→':'−'),yen_per_100:p.yen_per_100}))}))};
   }
   function adaptResults(data) {
     if(authority!=='nar')return adaptJRA(data);
@@ -211,7 +211,7 @@
     container.append(details);
   }
   function draw(key) {
-    const data=stored[key];if(!data)return;
+    const data=stored[key];if(!data)return; if(config.liveTrends)window.dispatchEvent(new CustomEvent("kba:results",{detail:{key,data}}));
     for(const rr of data.races){
       const race=config.races.find(r=>r.venue_key===key&&r.race===rr.race);const card=document.getElementById(race.race_uid);
       const note=card.querySelector('.race-result-status');note.replaceChildren();

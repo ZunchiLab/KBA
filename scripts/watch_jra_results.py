@@ -48,7 +48,13 @@ def parse(s,forecast,source):
         nr=int(num.get_text(strip=True));rank=place.get_text(strip=True);name=re.sub(r'\s+','',horse.get_text())
         def txt(cls):x=tr.select_one('td.'+cls);return x.get_text(' ',strip=True) if x else None
         state='finished' if rank.isdigit() else 'withdrawn' if '取消' in rank else 'excluded' if '除外' in rank else 'did_not_finish' if '中止' in rank else 'disqualified' if '失格' in rank else 'unknown'
-        rows.append(dict(number=nr,name=name,finish=int(rank) if rank.isdigit() else None,runner_status=state,official_status_text=rank,time=txt('time'),margin=txt('margin'),last_3f=None if is_average_1f else txt('f_time'),final_popularity=txt('pop'),final_win_odds=None,**({'average_1f':txt('f_time')} if is_average_1f else {})))
+        row=dict(number=nr,name=name,finish=int(rank) if rank.isdigit() else None,runner_status=state,official_status_text=rank,time=txt('time'),margin=txt('margin'),last_3f=None if is_average_1f else txt('f_time'),final_popularity=txt('pop'),final_win_odds=None,**({'average_1f':txt('f_time')} if is_average_1f else {}))
+        if forecast.get('surface') in ('turf','dirt','hurdle'):
+            frame=tr.select_one('td.waku img');frame_match=re.search(r'枠([1-8])',frame.get('alt','') if frame else '')
+            rider=tr.select_one('td.jockey a')
+            row.update(frame=int(frame_match[1]) if frame_match else None,jockey=rider.get_text(' ',strip=True) if rider else None,
+                       corners=[int(li.get_text(strip=True)) for li in tr.select('td.corner li') if li.get_text(strip=True).isdigit()])
+        rows.append(row)
     known={h['number']:re.sub(r'\s+','',h['name']) for h in forecast['horses']};seen=set()
     for row in rows:
         if row['number'] not in known or row['name']!=known[row['number']] or row['number'] in seen:raise ValueError('Result horse identity mismatch')
@@ -118,10 +124,14 @@ def update(config,recheck=False):
             if old['official_confirmed'] and not fresh['official_confirmed']:old['refresh_error']=dict(at=stamp,reason='New response incomplete; confirmed result retained')
             else:data['races'][i]=fresh
         except Exception as e:old['refresh_error']=dict(at=stamp,reason=str(e))
+    if d.get('presentation',{}).get('live_trends'):
+        from jra_live_market import update_market
+        for key,(path,data) in datasets.items():
+            update_market(data,[r for r in d['races'] if r['venue_key']==key],raw_fetch,stamp,d['date_jst'])
     for key,(path,data) in datasets.items():
         before=json.loads(path.read_text(encoding='utf-8')) if path.exists() else None
         data['last_poll_at']=stamp
-        if not before or before['races']!=data['races']:data['updated_at']=stamp;atomic(path,data);changed.append(path.relative_to(ROOT).as_posix())
+        if not before or before['races']!=data['races'] or before.get('market')!=data.get('market'):data['updated_at']=stamp;atomic(path,data);changed.append(path.relative_to(ROOT).as_posix())
     if changed:render_day_snapshot(config['forecast'])
     return all(all(r['status'] in ['confirmed','cancelled'] for r in data['races']) for _,data in datasets.values()),changed
 def git(*args,check=True):

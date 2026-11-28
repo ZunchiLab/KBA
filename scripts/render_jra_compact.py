@@ -213,6 +213,8 @@ def render(d,json_name,results):
             race_class='race buy-first' if buy_first else 'race'
             parts.append(f'<article class="{race_class}" id="{uid}" data-venue="{key}" data-start="{E(r["start_at"])}" data-search="{E(search)}" data-bets="{str(actionable).lower()}"><header class="race-head"><div class="row"><b>{E(v["label"])} {r["race"]}R · {E(r["start"])}</b><span class="decision-badge {"buy" if actionable else "skip"}">{decision}</span></div><h2>{E(r["name"])}</h2><p>{E(level)} · {surface}{r["distance_m"]}m · {E(going)} · {len(r["horses"])}頭 <span class="clock-state"></span></p><div class="badges"><span>自信 {E(confidence)}</span><span>波乱 {E(a["volatility"])}</span><small>主観評価</small></div></header><div class="race-body">')
             secondary=[]
+            if d.get('presentation',{}).get('live_trends'):
+                parts.append('<div class="live-nav" aria-label="レース表示"><button type="button" data-live-view="prediction" aria-pressed="true">予想</button><button type="button" data-live-view="odds" aria-pressed="false">オッズ</button><button type="button" data-live-view="trends" aria-pressed="false">馬場・騎手</button><button type="button" data-live-view="history" aria-pressed="false">変更履歴</button></div><section class="live-panel" hidden></section>')
             parts.append('<div class="payouts">'+payout_html(res)+'</div>')
             if order_view:
                 parts.append(order_panel(r))
@@ -342,6 +344,16 @@ def render(d,json_name,results):
     races=[{k:r[k] for k in ['race_uid','venue_key','venue','race','start_at','bet_plans']}|{'horses':[{k:h[k] for k in ['number','name','rank','status_at_snapshot']} for h in r['horses']]} for r in all_races]
     config=dict(authority=authority,date=d['date_jst'],version=d['forecast_version'],jsonFile=json_name,venues=d['venues'],races=races,budget=b,compact=True,storageNamespace=d.get('presentation',{}).get('storage_namespace',''))
     if buy_first:config['buyFirst']=True
+    if d.get('presentation',{}).get('live_trends'):
+        config['liveTrends']=True
+        config['fixedAt']=d['fixed_at']
+        for race in races:
+            original=next(r for r in all_races if r['race_uid']==race['race_uid'])
+            race['surface']=original.get('surface')
+            race['distance']=original.get('distance_m')
+            for h in race['horses']:
+                source=next(x for x in original['horses'] if x['number']==h['number'])
+                h.update(frame=source.get('frame'),style=source.get('style'),jockey=source.get('jockey'),win=source.get('odds'),market_at=source.get('market',{}).get('checked_at'))
     digests={value.get('forecast_sha256') for value in results.values()}
     if len(digests)==1:config['forecastSha256']=next(iter(digests))
     ref=d.get('revision',{}).get('results_source')
@@ -350,5 +362,7 @@ def render(d,json_name,results):
     extras=''.join('<p><a href="'+E(x['file'])+'">'+E(x['purpose'])+'</a></p>' for x in d.get('supplemental_files',[]))
     parts.append('<footer><details><summary>評価方法・未確認事項・JSON</summary><p>'+E(d['model']['definition'])+'</p><ul>'+''.join('<li>'+E(x)+'</li>' for x in d['model']['limitations'])+'</ul><p>自信・波乱は主観。荒れ確率は未校正のため未算定。事前予想は固定し、結果のみ別更新。</p><p>固定 '+E(d['fixed_at'])+' · '+E(d['forecast_version'])+'</p><a id="forecast-link" href="'+E(json_name)+'">全頭・買い目・比較記録JSON</a>'+extras+'</details><noscript>JavaScript無効時は全レースを表示します。</noscript></footer>')
     js=(ROOT/'assets/js/jra-day-report.js').read_text(encoding='utf-8')
+    if config.get('liveTrends'):
+        js+='\n'+(ROOT/'assets/js/jra-live-trends.js').read_text(encoding='utf-8')
     parts.append('<script type="application/json" id="day-forecast">'+safe(config)+'</script><script type="application/json" id="day-results">'+safe(results)+'</script><script>'+js+'</script></main></body></html>')
     return '\n'.join(parts)
