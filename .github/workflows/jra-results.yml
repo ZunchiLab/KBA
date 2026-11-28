@@ -6,11 +6,14 @@ on:
     paths:
       - .github/workflows/jra-results.yml
       - scripts/watch_jra_results.py
+      - scripts/jra_live_market.py
+      - scripts/jra_live_revision.py
       - scripts/render_jra_prediction.py
       - scripts/render_jra_compact.py
       - scripts/jra_payouts.py
       - assets/css/jra-compact.css
       - assets/js/jra-day-report.js
+      - assets/js/jra-live-trends.js
       - data/results/jra-targets.json
   workflow_dispatch:
   # November 28 meeting; an active job polls every two minutes.

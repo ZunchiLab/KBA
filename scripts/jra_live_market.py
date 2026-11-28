@@ -1,7 +1,8 @@
 """Read official odds for upcoming races at bounded intervals; retain past quotes."""
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import re
 from bs4 import BeautifulSoup
+from jra_live_revision import create_revision
 
 
 def numbers(text):
@@ -36,7 +37,8 @@ def update_market(data, races, fetch, stamp, date):
         key = str(race['race_no'])
         item = market.setdefault(key, {'snapshots':[]})
         previous = item.get('attempted_at')
-        if previous and (now-datetime.fromisoformat(previous)).total_seconds() < 300:
+        has_revision = bool(item['snapshots'] and item['snapshots'][-1].get('revision'))
+        if previous and has_revision and (now-datetime.fromisoformat(previous)).total_seconds() < 300:
             continue
         item['attempted_at'] = stamp
         try:
@@ -71,9 +73,14 @@ def update_market(data, races, fetch, stamp, date):
                 for ticket in plan['tickets']:
                     ns = tuple(sorted(ticket['numbers']))
                     odds = values.get(ns,[])
-                    quotes.append(dict(kind=kind,numbers=ns,lower=odds[0] if odds else None,upper=odds[-1] if odds else None,minimum=ticket['minimum_odds'],source=price_source))
+                    quotes.append(dict(kind=kind,numbers=ns,lower=odds[0] if odds else None,upper=odds[-1] if odds else None,minimum=ticket['minimum_odds'],example_stake_yen=ticket['example_stake_yen'],source=price_source))
             page_time = soup.select_one('.cell.time')
-            item['snapshots'].append(dict(checked_at=source['retrieved_at'],page_time=page_time.get_text(' ',strip=True) if page_time else None,runners=runners,tickets=quotes,source=source))
+            snapshot=dict(checked_at=source['retrieved_at'],page_time=page_time.get_text(' ',strip=True) if page_time else None,runners=runners,tickets=quotes,source=source)
+            calculated=datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='seconds')
+            if datetime.fromisoformat(calculated) >= datetime.fromisoformat(race['start_at']):
+                continue
+            snapshot['revision']=create_revision(race,data,races,snapshot,calculated)
+            item['snapshots'].append(snapshot)
             item['snapshots']=item['snapshots'][-30:]
             item['error']=None
         except Exception as error:
