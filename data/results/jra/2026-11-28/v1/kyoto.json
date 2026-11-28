@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T10:54:34+09:00",
-  "last_poll_at": "2026-11-28T10:54:34+09:00",
+  "updated_at": "2026-11-28T10:56:44+09:00",
+  "last_poll_at": "2026-11-28T10:56:44+09:00",
   "published_at": null,
   "races": [
     {
@@ -9557,6 +9557,417 @@
         }
       ],
       "attempted_at": "2026-11-28T10:54:34+09:00",
+      "error": null
+    },
+    "5": {
+      "snapshots": [
+        {
+          "checked_at": "2026-11-28T10:56:47+09:00",
+          "page_time": "発走時刻： 12時25分",
+          "runners": [
+            {
+              "number": 1,
+              "win": 18.4,
+              "status": "出走",
+              "body": "",
+              "jockey": "藤懸 貴志"
+            },
+            {
+              "number": 2,
+              "win": 105.9,
+              "status": "出走",
+              "body": "",
+              "jockey": "西塚 洸二"
+            },
+            {
+              "number": 3,
+              "win": 3.8,
+              "status": "出走",
+              "body": "",
+              "jockey": "C.デムーロ"
+            },
+            {
+              "number": 4,
+              "win": 27.0,
+              "status": "出走",
+              "body": "",
+              "jockey": "松若 風馬"
+            },
+            {
+              "number": 5,
+              "win": 40.1,
+              "status": "出走",
+              "body": "",
+              "jockey": "長岡 禎仁"
+            },
+            {
+              "number": 6,
+              "win": 44.0,
+              "status": "出走",
+              "body": "",
+              "jockey": "鮫島 克駿"
+            },
+            {
+              "number": 7,
+              "win": 78.9,
+              "status": "出走",
+              "body": "",
+              "jockey": "国分 恭介"
+            },
+            {
+              "number": 8,
+              "win": 6.4,
+              "status": "出走",
+              "body": "",
+              "jockey": "斎藤 新"
+            },
+            {
+              "number": 9,
+              "win": 3.4,
+              "status": "出走",
+              "body": "",
+              "jockey": "武 豊"
+            },
+            {
+              "number": 10,
+              "win": 44.9,
+              "status": "出走",
+              "body": "",
+              "jockey": "富田 暁"
+            },
+            {
+              "number": 11,
+              "win": 4.8,
+              "status": "出走",
+              "body": "",
+              "jockey": "J.モレイラ"
+            },
+            {
+              "number": 12,
+              "win": 16.6,
+              "status": "出走",
+              "body": "",
+              "jockey": "M.デムーロ"
+            },
+            {
+              "number": 13,
+              "win": 9.8,
+              "status": "出走",
+              "body": "",
+              "jockey": "浜中 俊"
+            }
+          ],
+          "tickets": [],
+          "source": {
+            "provider": "JRA",
+            "url": "https://jra.jp/JRADB/accessO.html",
+            "method": "POST",
+            "request_fields": {
+              "cname": "pw151ouS308202605070520261128Z/5B"
+            },
+            "retrieved_at": "2026-11-28T10:56:47+09:00",
+            "raw_sha256": "56ba7cc0cf137dd88bf7d34fe1ab10c0fa552f232233f44d0c350be920b160f5",
+            "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/56ba7cc0cf137dd88bf7d34fe1ab10c0fa552f232233f44d0c350be920b160f5.raw.html",
+            "encoding": "cp932"
+          },
+          "revision": {
+            "version": "race-day-review-v1",
+            "calculated_at": "2026-11-28T10:56:47+09:00",
+            "source_checked_at": "2026-11-28T10:56:47+09:00",
+            "mode": "市場参考",
+            "order": [
+              9,
+              3,
+              11,
+              8,
+              13,
+              12,
+              1,
+              4,
+              5,
+              6,
+              10,
+              7,
+              2
+            ],
+            "marks": {
+              "9": "無印",
+              "3": "無印",
+              "11": "無印",
+              "8": "無印",
+              "13": "無印",
+              "12": "無印",
+              "1": "無印",
+              "4": "無印",
+              "5": "無印",
+              "6": "無印",
+              "10": "無印",
+              "7": "無印",
+              "2": "無印"
+            },
+            "withdrawn": [],
+            "changes": [
+              {
+                "number": 6,
+                "from_rank": 11,
+                "to_rank": 10
+              },
+              {
+                "number": 10,
+                "from_rank": 10,
+                "to_rank": 11
+              }
+            ],
+            "horse_evidence": [
+              {
+                "number": 9,
+                "morning_rank": 1,
+                "base_rank": 1,
+                "correction": 0,
+                "comparison_value": 1,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.965,
+                    "morning_odds": 3.3,
+                    "latest_odds": 3.4,
+                    "weight": 0
+                  }
+                ],
+                "rank": 1
+              },
+              {
+                "number": 3,
+                "morning_rank": 2,
+                "base_rank": 2,
+                "correction": 0,
+                "comparison_value": 2,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 1.204,
+                    "morning_odds": 4.6,
+                    "latest_odds": 3.8,
+                    "weight": 0
+                  }
+                ],
+                "rank": 2
+              },
+              {
+                "number": 11,
+                "morning_rank": 3,
+                "base_rank": 3,
+                "correction": 0,
+                "comparison_value": 3,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 1.036,
+                    "morning_odds": 5.0,
+                    "latest_odds": 4.8,
+                    "weight": 0
+                  }
+                ],
+                "rank": 3
+              },
+              {
+                "number": 8,
+                "morning_rank": 4,
+                "base_rank": 4,
+                "correction": 0,
+                "comparison_value": 4,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.994,
+                    "morning_odds": 6.4,
+                    "latest_odds": 6.4,
+                    "weight": 0
+                  }
+                ],
+                "rank": 4
+              },
+              {
+                "number": 13,
+                "morning_rank": 5,
+                "base_rank": 5,
+                "correction": 0,
+                "comparison_value": 5,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.69,
+                    "morning_odds": 6.8,
+                    "latest_odds": 9.8,
+                    "weight": 0
+                  }
+                ],
+                "rank": 5
+              },
+              {
+                "number": 12,
+                "morning_rank": 6,
+                "base_rank": 6,
+                "correction": 0,
+                "comparison_value": 6,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.952,
+                    "morning_odds": 15.9,
+                    "latest_odds": 16.6,
+                    "weight": 0
+                  }
+                ],
+                "rank": 6
+              },
+              {
+                "number": 1,
+                "morning_rank": 7,
+                "base_rank": 7,
+                "correction": 0,
+                "comparison_value": 7,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 1.184,
+                    "morning_odds": 21.9,
+                    "latest_odds": 18.4,
+                    "weight": 0
+                  }
+                ],
+                "rank": 7
+              },
+              {
+                "number": 4,
+                "morning_rank": 8,
+                "base_rank": 8,
+                "correction": 0,
+                "comparison_value": 8,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.95,
+                    "morning_odds": 25.8,
+                    "latest_odds": 27.0,
+                    "weight": 0
+                  }
+                ],
+                "rank": 8
+              },
+              {
+                "number": 5,
+                "morning_rank": 9,
+                "base_rank": 9,
+                "correction": 0,
+                "comparison_value": 9,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 1.004,
+                    "morning_odds": 40.5,
+                    "latest_odds": 40.1,
+                    "weight": 0
+                  }
+                ],
+                "rank": 9
+              },
+              {
+                "number": 10,
+                "morning_rank": 10,
+                "base_rank": 10,
+                "correction": 0,
+                "comparison_value": 10,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.961,
+                    "morning_odds": 43.4,
+                    "latest_odds": 44.9,
+                    "weight": 0
+                  }
+                ],
+                "rank": 11
+              },
+              {
+                "number": 6,
+                "morning_rank": 11,
+                "base_rank": 11,
+                "correction": 0,
+                "comparison_value": 11,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 1.171,
+                    "morning_odds": 51.8,
+                    "latest_odds": 44.0,
+                    "weight": 0
+                  }
+                ],
+                "rank": 10
+              },
+              {
+                "number": 7,
+                "morning_rank": 12,
+                "base_rank": 12,
+                "correction": 0,
+                "comparison_value": 12,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.978,
+                    "morning_odds": 77.6,
+                    "latest_odds": 78.9,
+                    "weight": 0
+                  }
+                ],
+                "rank": 12
+              },
+              {
+                "number": 2,
+                "morning_rank": 13,
+                "base_rank": 13,
+                "correction": 0,
+                "comparison_value": 13,
+                "factors": [
+                  {
+                    "field": "market",
+                    "group": "単勝支持率の変化",
+                    "ratio": 0.988,
+                    "morning_odds": 105.2,
+                    "latest_odds": 105.9,
+                    "weight": 0
+                  }
+                ],
+                "rank": 13
+              }
+            ],
+            "same_surface_results": [],
+            "trend_used": false,
+            "market_comparable": true,
+            "main_review": {
+              "decision": "見送り",
+              "kind": null,
+              "tickets": [],
+              "reason": "朝の本線がない、または修正印・候補・全点価格条件を満たす構成なし。"
+            },
+            "limitations": "順位の限定的な補正。補正幅・閾値は未校正、的中率向上は未検証。市場と当日傾向には相関がある。全頭の調教・状態は未評価。"
+          }
+        }
+      ],
+      "attempted_at": "2026-11-28T10:56:44+09:00",
       "error": null
     }
   }
