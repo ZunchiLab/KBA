@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T14:07:27+09:00",
-  "last_poll_at": "2026-11-28T14:07:27+09:00",
+  "updated_at": "2026-11-28T14:09:34+09:00",
+  "last_poll_at": "2026-11-28T14:09:34+09:00",
   "published_at": null,
   "races": [
     {
@@ -2804,8 +2804,8 @@
       "race_uid": "jra-2026-11-28-kyoto-r8",
       "race_no": 8,
       "start_at": "2026-11-28T13:55:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -2813,13 +2813,13 @@
         "request_fields": {
           "cname": "pw01sde0108202605070820261128/93"
         },
-        "retrieved_at": "2026-11-28T14:05:21+09:00",
-        "raw_sha256": "8d5c4e2dae2498248c88c8ee222a86e0f01226c8d5c0a229f4fc8f8e4cb0ab56",
-        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/8d5c4e2dae2498248c88c8ee222a86e0f01226c8d5c0a229f4fc8f8e4cb0ab56.raw.html",
+        "retrieved_at": "2026-11-28T14:09:36+09:00",
+        "raw_sha256": "91a05993534483f30415f9ea17d1bdf5f0d6bf53f05163e7d8285bb77a960f1d",
+        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/91a05993534483f30415f9ea17d1bdf5f0d6bf53f05163e7d8285bb77a960f1d.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-28T14:05:21+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-28T14:09:36+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 12,
@@ -2829,12 +2829,15 @@
           "official_status_text": "1",
           "time": "1:11.8",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "35.4",
           "final_popularity": "4",
           "final_win_odds": null,
           "frame": 7,
           "jockey": "北村 友一",
-          "corners": []
+          "corners": [
+            5,
+            4
+          ]
         },
         {
           "number": 3,
@@ -2842,14 +2845,17 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:12.3",
           "margin": "３",
-          "last_3f": "",
+          "last_3f": "35.9",
           "final_popularity": "8",
           "final_win_odds": null,
           "frame": 2,
           "jockey": "松山 弘平",
-          "corners": []
+          "corners": [
+            5,
+            4
+          ]
         },
         {
           "number": 6,
@@ -2857,14 +2863,17 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:12.3",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "35.6",
           "final_popularity": "7",
           "final_win_odds": null,
           "frame": 4,
           "jockey": "川須 栄彦",
-          "corners": []
+          "corners": [
+            9,
+            7
+          ]
         },
         {
           "number": 9,
@@ -2872,14 +2881,17 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:12.4",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "35.4",
           "final_popularity": "1",
           "final_win_odds": null,
           "frame": 5,
           "jockey": "岩田 望来",
-          "corners": []
+          "corners": [
+            12,
+            11
+          ]
         },
         {
           "number": 13,
@@ -2887,14 +2899,197 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:12.5",
           "margin": "１／２",
-          "last_3f": "",
+          "last_3f": "35.3",
           "final_popularity": "6",
           "final_win_odds": null,
           "frame": 7,
           "jockey": "武 豊",
-          "corners": []
+          "corners": [
+            15,
+            14
+          ]
+        },
+        {
+          "number": 5,
+          "name": "カワキタマナレア",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:12.6",
+          "margin": "１",
+          "last_3f": "36.5",
+          "final_popularity": "13",
+          "final_win_odds": null,
+          "frame": 3,
+          "jockey": "斎藤 新",
+          "corners": [
+            2,
+            2
+          ]
+        },
+        {
+          "number": 8,
+          "name": "エスカレイト",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:12.7",
+          "margin": "クビ",
+          "last_3f": "36.1",
+          "final_popularity": "9",
+          "final_win_odds": null,
+          "frame": 5,
+          "jockey": "高杉 吏麒",
+          "corners": [
+            7,
+            7
+          ]
+        },
+        {
+          "number": 11,
+          "name": "カナタコナタ",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:12.7",
+          "margin": "クビ",
+          "last_3f": "36.4",
+          "final_popularity": "3",
+          "final_win_odds": null,
+          "frame": 6,
+          "jockey": "西村 淳也",
+          "corners": [
+            3,
+            3
+          ]
+        },
+        {
+          "number": 7,
+          "name": "ロードヴィゴラス",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:12.9",
+          "margin": "３／４",
+          "last_3f": "35.9",
+          "final_popularity": "11",
+          "final_win_odds": null,
+          "frame": 4,
+          "jockey": "和田 陽希",
+          "corners": [
+            12,
+            11
+          ]
+        },
+        {
+          "number": 15,
+          "name": "ミサビスケッツ",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:13.0",
+          "margin": "１／２",
+          "last_3f": "36.3",
+          "final_popularity": "5",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "河原田 菜々",
+          "corners": [
+            7,
+            7
+          ]
+        },
+        {
+          "number": 2,
+          "name": "リアルアルバ",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:13.4",
+          "margin": "２ 1/2",
+          "last_3f": "36.7",
+          "final_popularity": "2",
+          "final_win_odds": null,
+          "frame": 2,
+          "jockey": "田口 貫太",
+          "corners": [
+            9,
+            7
+          ]
+        },
+        {
+          "number": 10,
+          "name": "サヨノジャンボリー",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:13.6",
+          "margin": "１ 1/2",
+          "last_3f": "36.8",
+          "final_popularity": "14",
+          "final_win_odds": null,
+          "frame": 6,
+          "jockey": "吉村 誠之助",
+          "corners": [
+            9,
+            11
+          ]
+        },
+        {
+          "number": 4,
+          "name": "エコロレバン",
+          "finish": 13,
+          "runner_status": "finished",
+          "official_status_text": "13",
+          "time": "1:14.0",
+          "margin": "２",
+          "last_3f": "38.1",
+          "final_popularity": "10",
+          "final_win_odds": null,
+          "frame": 3,
+          "jockey": "酒井 学",
+          "corners": [
+            1,
+            1
+          ]
+        },
+        {
+          "number": 14,
+          "name": "ヒナアラレ",
+          "finish": 14,
+          "runner_status": "finished",
+          "official_status_text": "14",
+          "time": "1:14.3",
+          "margin": "２",
+          "last_3f": "37.3",
+          "final_popularity": "15",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "秋山 稔樹",
+          "corners": [
+            12,
+            14
+          ]
+        },
+        {
+          "number": 1,
+          "name": "ウーマンズパワー",
+          "finish": 15,
+          "runner_status": "finished",
+          "official_status_text": "15",
+          "time": "1:15.0",
+          "margin": "４",
+          "last_3f": "38.8",
+          "final_popularity": "12",
+          "final_win_odds": null,
+          "frame": 1,
+          "jockey": "田山 旺佑",
+          "corners": [
+            3,
+            4
+          ]
         }
       ],
       "payouts": [
@@ -3029,10 +3224,7 @@
       },
       "refunds": [],
       "refund_status": "no_runner_refund_indication",
-      "refresh_error": {
-        "at": "2026-11-28T14:07:27+09:00",
-        "reason": "HTTP Error 503: Service Unavailable"
-      }
+      "refresh_error": null
     },
     {
       "race_uid": "jra-2026-11-28-kyoto-r9",
