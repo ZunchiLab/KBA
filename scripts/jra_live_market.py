@@ -3,6 +3,7 @@ from datetime import datetime, timezone, timedelta
 import re
 from bs4 import BeautifulSoup
 from jra_live_revision import create_revision
+from jra_live_finalization import deadline, final_window, finalize
 
 
 def numbers(text):
@@ -29,18 +30,22 @@ def prices_for(raw, kind, wanted):
 def update_market(data, races, fetch, stamp, date):
     """Check races in the next 90 minutes every five minutes. Keep last good data."""
     market = data.setdefault('market', {})
-    now = datetime.fromisoformat(stamp)
     for race in races:
+        now = datetime.now(timezone(timedelta(hours=9)))
         remaining = (datetime.fromisoformat(race['start_at'])-now).total_seconds()
         if not 0 < remaining <= 90*60:
             continue
         key = str(race['race_no'])
         item = market.setdefault(key, {'snapshots':[]})
+        cutoff = deadline(race)
+        if now >= cutoff and not item.get('final'):
+            finalize(item,race,now)
+        final_due = now>=final_window(race) and not item.get('final')
         previous = item.get('attempted_at')
-        has_revision = bool(item['snapshots'] and item['snapshots'][-1].get('revision'))
-        if previous and has_revision and (now-datetime.fromisoformat(previous)).total_seconds() < 300:
+        has_revision = bool(item.get('final') or (item['snapshots'] and item['snapshots'][-1].get('revision')))
+        if not final_due and previous and has_revision and (now-datetime.fromisoformat(previous)).total_seconds() < 300:
             continue
-        item['attempted_at'] = stamp
+        item['attempted_at'] = now.isoformat(timespec='seconds')
         try:
             token = race['market']['source']['request_fields']['cname']
             raw, source = fetch('accessO.html',token,date,race['venue_key']+'_market')
@@ -76,12 +81,21 @@ def update_market(data, races, fetch, stamp, date):
                     quotes.append(dict(kind=kind,numbers=ns,lower=odds[0] if odds else None,upper=odds[-1] if odds else None,minimum=ticket['minimum_odds'],example_stake_yen=ticket['example_stake_yen'],source=price_source))
             page_time = soup.select_one('.cell.time')
             snapshot=dict(checked_at=source['retrieved_at'],page_time=page_time.get_text(' ',strip=True) if page_time else None,runners=runners,tickets=quotes,source=source)
-            calculated=datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='seconds')
-            if datetime.fromisoformat(calculated) >= datetime.fromisoformat(race['start_at']):
+            calculated=datetime.now(timezone(timedelta(hours=9)))
+            if calculated >= datetime.fromisoformat(race['start_at']):
+                if final_due:
+                    finalize(item,race,calculated)
                 continue
-            snapshot['revision']=create_revision(race,data,races,snapshot,calculated)
+            if not item.get('final') and calculated<=cutoff:
+                snapshot['revision']=create_revision(race,data,races,snapshot,calculated.isoformat(timespec='seconds'))
+            else:
+                snapshot['revision']=None
             item['snapshots'].append(snapshot)
             item['snapshots']=item['snapshots'][-30:]
             item['error']=None
+            if not item.get('final') and calculated>=final_window(race):
+                finalize(item,race,calculated)
         except Exception as error:
             item['error']=str(error)
+            if final_due:
+                finalize(item,race,datetime.now(timezone(timedelta(hours=9))))

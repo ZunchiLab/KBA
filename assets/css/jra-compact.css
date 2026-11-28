@@ -41,3 +41,4 @@
 .live-surface{display:flex;gap:6px;margin:8px 0}.live-surface button{flex:1}.live-panel details{margin:8px 0}.live-small{font-size:.78rem;color:#536a60}
 .live-revision{padding:12px;margin:0 0 12px;border:1px solid #afcdbf;border-radius:10px;background:#eef7f1}
 .live-revision-title{display:flex;justify-content:space-between;align-items:center;gap:6px}.live-current-order{font-weight:650}.live-revision h4{margin:8px 0 3px}.live-revision p{margin:5px 0}.live-revision table{width:100%;font-size:.76rem;border-collapse:collapse}.live-revision th,.live-revision td{padding:5px;text-align:left;border-bottom:1px solid #ccdcd2}.live-morning-label{display:inline-block;background:#e6ebe7;color:#41574c;border-radius:4px;padding:2px 5px}.live-rank-changed .mark{background:#f7e8ba;color:#6f4a04}
+.live-revision.live-final{border:2px solid #17634c;background:#e3f2e9}.live-final .live-revision-title b{color:#0d593f}
