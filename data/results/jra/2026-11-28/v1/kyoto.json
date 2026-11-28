@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T13:54:48+09:00",
-  "last_poll_at": "2026-11-28T13:54:48+09:00",
+  "updated_at": "2026-11-28T13:56:53+09:00",
+  "last_poll_at": "2026-11-28T13:56:53+09:00",
   "published_at": null,
   "races": [
     {
@@ -2804,7 +2804,7 @@
       "race_uid": "jra-2026-11-28-kyoto-r8",
       "race_no": 8,
       "start_at": "2026-11-28T13:55:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
