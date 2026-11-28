@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T11:15:49+09:00",
-  "last_poll_at": "2026-11-28T11:15:49+09:00",
+  "updated_at": "2026-11-28T11:17:55+09:00",
+  "last_poll_at": "2026-11-28T11:17:55+09:00",
   "published_at": null,
   "races": [
     {
@@ -797,16 +797,246 @@
       "race_uid": "jra-2026-11-28-kyoto-r3",
       "race_no": 3,
       "start_at": "2026-11-28T11:05:00+09:00",
-      "status": "pending",
+      "status": "partial",
       "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0108202605070320261128/0A"
+        },
+        "retrieved_at": "2026-11-28T11:17:57+09:00",
+        "raw_sha256": "42597d86874d5d3e132be0f281fb95bb978e8332b3ff9e668cfba39eae614bb5",
+        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/42597d86874d5d3e132be0f281fb95bb978e8332b3ff9e668cfba39eae614bb5.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-11-28T11:17:57+09:00",
       "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "rows": [
+        {
+          "number": 15,
+          "name": "ブロッサムスピア",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:35.1",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "J.モレイラ",
+          "corners": [
+            10,
+            10
+          ]
+        },
+        {
+          "number": 4,
+          "name": "ランゲ",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "",
+          "margin": "１",
+          "last_3f": "",
+          "final_popularity": "11",
+          "final_win_odds": null,
+          "frame": 2,
+          "jockey": "富田 暁",
+          "corners": [
+            4,
+            3
+          ]
+        },
+        {
+          "number": 8,
+          "name": "ボウアンドアロー",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null,
+          "frame": 4,
+          "jockey": "川又 賢治",
+          "corners": [
+            15,
+            13
+          ]
+        },
+        {
+          "number": 16,
+          "name": "レイヨンラゼール",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "北村 友一",
+          "corners": [
+            1,
+            1
+          ]
+        },
+        {
+          "number": 11,
+          "name": "フクノブルースカイ",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "",
+          "margin": "１ 3/4",
+          "last_3f": "",
+          "final_popularity": "6",
+          "final_win_odds": null,
+          "frame": 6,
+          "jockey": "浜中 俊",
+          "corners": [
+            7,
+            8
+          ]
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            15
+          ],
+          "yen_per_100": 180,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            15
+          ],
+          "yen_per_100": 110,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            4
+          ],
+          "yen_per_100": 1300,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            8
+          ],
+          "yen_per_100": 790,
+          "popularity": null
+        },
+        {
+          "kind": "bracket_quinella",
+          "number_type": "bracket",
+          "numbers": [
+            2,
+            8
+          ],
+          "yen_per_100": 4790,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            15
+          ],
+          "yen_per_100": 2330,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            8,
+            15
+          ],
+          "yen_per_100": 1330,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            8
+          ],
+          "yen_per_100": 18530,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            15
+          ],
+          "yen_per_100": 6440,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            15,
+            4
+          ],
+          "yen_per_100": 8060,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            4,
+            8,
+            15
+          ],
+          "yen_per_100": 52620,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            15,
+            4,
+            8
+          ],
+          "yen_per_100": 145760,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "confirmed",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
+      "refund_status": "no_runner_refund_indication",
       "refresh_error": null
     },
     {
