@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T12:48:59+09:00",
-  "last_poll_at": "2026-11-28T12:48:59+09:00",
+  "updated_at": "2026-11-28T12:51:06+09:00",
+  "last_poll_at": "2026-11-28T12:51:06+09:00",
   "published_at": null,
   "races": [
     {
@@ -1877,16 +1877,221 @@
       "race_uid": "jra-2026-11-28-tokyo-r6",
       "race_no": 6,
       "start_at": "2026-11-28T12:40:00+09:00",
-      "status": "pending",
+      "status": "partial",
       "official_confirmed": false,
-      "source": null,
-      "source_checked_at": null,
+      "source": {
+        "provider": "JRA",
+        "url": "https://jra.jp/JRADB/accessS.html",
+        "method": "POST",
+        "request_fields": {
+          "cname": "pw01sde0105202605070620261128/4B"
+        },
+        "retrieved_at": "2026-11-28T12:51:09+09:00",
+        "raw_sha256": "f52fb6d9a6fc4543c5f37fdf7877d921dbd87c627eac6a7cc7e7da07e2622129",
+        "raw_file": "data/results/sources/jra/2026-11-28/tokyo/f52fb6d9a6fc4543c5f37fdf7877d921dbd87c627eac6a7cc7e7da07e2622129.raw.html",
+        "encoding": "cp932"
+      },
+      "source_checked_at": "2026-11-28T12:51:09+09:00",
       "rows_complete": false,
-      "rows": [],
-      "payouts": [],
-      "payouts_status": {},
+      "rows": [
+        {
+          "number": 8,
+          "name": "サムフィールド",
+          "finish": 1,
+          "runner_status": "finished",
+          "official_status_text": "1",
+          "time": "1:38.8",
+          "margin": "",
+          "last_3f": "",
+          "final_popularity": "4",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "佐々木 大輔",
+          "corners": []
+        },
+        {
+          "number": 7,
+          "name": "ファインハイト",
+          "finish": 2,
+          "runner_status": "finished",
+          "official_status_text": "2",
+          "time": "",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null,
+          "frame": 7,
+          "jockey": "T.マーカンド",
+          "corners": []
+        },
+        {
+          "number": 3,
+          "name": "ナリティス",
+          "finish": 3,
+          "runner_status": "finished",
+          "official_status_text": "3",
+          "time": "",
+          "margin": "１／２",
+          "last_3f": "",
+          "final_popularity": "5",
+          "final_win_odds": null,
+          "frame": 3,
+          "jockey": "横山 武史",
+          "corners": []
+        },
+        {
+          "number": 1,
+          "name": "ムーチョブロンコ",
+          "finish": 4,
+          "runner_status": "finished",
+          "official_status_text": "4",
+          "time": "",
+          "margin": "５",
+          "last_3f": "",
+          "final_popularity": "7",
+          "final_win_odds": null,
+          "frame": 1,
+          "jockey": "岩田 康誠",
+          "corners": []
+        },
+        {
+          "number": 6,
+          "name": "リアライズアビオン",
+          "finish": 5,
+          "runner_status": "finished",
+          "official_status_text": "5",
+          "time": "",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "1",
+          "final_win_odds": null,
+          "frame": 6,
+          "jockey": "A.プーシャン",
+          "corners": []
+        }
+      ],
+      "payouts": [
+        {
+          "kind": "win",
+          "number_type": "horse",
+          "numbers": [
+            8
+          ],
+          "yen_per_100": 930,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            8
+          ],
+          "yen_per_100": 250,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            7
+          ],
+          "yen_per_100": 190,
+          "popularity": null
+        },
+        {
+          "kind": "place",
+          "number_type": "horse",
+          "numbers": [
+            3
+          ],
+          "yen_per_100": 340,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            7,
+            8
+          ],
+          "yen_per_100": 550,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            8
+          ],
+          "yen_per_100": 1210,
+          "popularity": null
+        },
+        {
+          "kind": "wide",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            7
+          ],
+          "yen_per_100": 890,
+          "popularity": null
+        },
+        {
+          "kind": "quinella",
+          "number_type": "horse",
+          "numbers": [
+            7,
+            8
+          ],
+          "yen_per_100": 2000,
+          "popularity": null
+        },
+        {
+          "kind": "exacta",
+          "number_type": "horse",
+          "numbers": [
+            8,
+            7
+          ],
+          "yen_per_100": 4120,
+          "popularity": null
+        },
+        {
+          "kind": "trio",
+          "number_type": "horse",
+          "numbers": [
+            3,
+            7,
+            8
+          ],
+          "yen_per_100": 5760,
+          "popularity": null
+        },
+        {
+          "kind": "trifecta",
+          "number_type": "horse",
+          "numbers": [
+            8,
+            7,
+            3
+          ],
+          "yen_per_100": 34740,
+          "popularity": null
+        }
+      ],
+      "payouts_status": {
+        "win": "confirmed",
+        "place": "confirmed",
+        "bracket_quinella": "pending",
+        "quinella": "confirmed",
+        "wide": "confirmed",
+        "exacta": "confirmed",
+        "trio": "confirmed",
+        "trifecta": "confirmed"
+      },
       "refunds": [],
-      "refund_status": "unconfirmed",
+      "refund_status": "no_runner_refund_indication",
       "refresh_error": null
     },
     {
