@@ -180,6 +180,15 @@
   function merge(data,key) {
     const prev=stored[key];
     if(prev&&Date.parse(prev.updated_at)>Date.parse(data.updated_at))return prev;
+    if(config.liveTrends&&prev?.market){
+      data.market ||= {};
+      for(const [no,item] of Object.entries(prev.market)){
+        if(item.final){
+          data.market[no] ||= item;
+          data.market[no].final=item.final;
+        }
+      }
+    }
     if(prev) for(let i=0;i<data.races.length;i++) {
       const r=data.races[i];const old=prev.races.find(p=>p.race===r.race);
       if(old&&(['confirmed','cancelled'].includes(old.status)&&!['confirmed','cancelled'].includes(r.status)||old.rows.length>r.rows.length&&r.status!=='confirmed')) data.races[i]={...old,refresh_error:'新しい取得では確定情報が揃わず、既知の結果を保持'};

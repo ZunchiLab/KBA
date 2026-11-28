@@ -73,6 +73,7 @@
     const frozenTickets=main.tickets||[];
     const tickets=final?finalPrices(frozenTickets,latest):frozenTickets;
     const retired=new Set((latest?.runners||[]).filter(h=>h.status!=='出走').map(h=>h.number));
+    const afterLockWithdrawals=final?ordered.filter(n=>retired.has(n)):[];
     const priceOK=Boolean(tickets.length&&tickets.every(t=>t.lower!==null&&t.lower>=t.minimum&&!t.numbers.some(n=>retired.has(n))));
     const ready=!hold&&main.decision==='条件達成'&&priceOK;
     const mainText=afterStart?'発走前に保存した判断':hold?'更新未確認・見送り':ready?'表示価格条件達成':'見送り';
@@ -87,7 +88,7 @@
     const reasonDetails=rows.length?'<details><summary>変更理由 '+rows.length+'頭</summary>'+table(['馬','順位','根拠'],rows)+'</details>':'';
     const preservedOpen=target.querySelector('details')?.open;
     target.hidden=false;
-    target.innerHTML='<div class="live-revision-title"><b>'+label+'</b><small>'+time(revision.calculated_at)+'</small></div><p class="live-small">'+esc(schedule)+'</p><p class="live-current-order">'+orderText+'</p><p>'+esc(changeText+(withdrawn.size?'／取消・除外 '+[...withdrawn].join('・')+'番':''))+'</p>'+reasonDetails+
+    target.innerHTML='<div class="live-revision-title"><b>'+label+'</b><small>'+time(revision.calculated_at)+'</small></div><p class="live-small">'+esc(schedule)+'</p><p class="live-current-order">'+orderText+'</p><p>'+esc(changeText+(withdrawn.size?'／取消・除外 '+[...withdrawn].join('・')+'番':''))+'</p>'+(afterLockWithdrawals.length?'<p><b>確定後の取消・除外：'+esc(afterLockWithdrawals.join('・'))+'番</b></p>':'')+reasonDetails+
       '<p class="live-small">同馬場の確定 '+revision.same_surface_results.length+'R。'+(revision.trend_used?'人気帯と照合した脚質・枠・騎手の傾向も比較。':'材料不足のため馬場傾向の補正は保留。')+'</p><h4>'+(final?'確定買い目':'直前の買い目判定')+'　'+esc(mainText)+'</h4>'+ticketText+
       '<p class="live-small">'+esc(main.reason)+(final?' 確定後は印と組合せを固定。価格未達・取消は見送り。':' 予想の補正は未校正。')+' 朝の買い目・近走指標は下に保存。</p>';
     if(preservedOpen&&target.querySelector('details'))target.querySelector('details').open=true;
