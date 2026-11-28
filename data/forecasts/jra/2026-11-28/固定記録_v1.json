@@ -1,0 +1,17 @@
+{
+  "fixed_at": "2026-11-28T09:06:19+09:00",
+  "rendered_at": "2026-11-28T09:10:33+09:00",
+  "hash_method": "utf8-no-bom-lf-sha256",
+  "files": {
+    "report_20261128_jra_predictions_v1.json": "aabe36c07f27f14b2e67188178259f91980f4f8b116d5e1c0ef1fb0bf05b5fe8",
+    "report_20261128_jra_predictions_v1.html": "cf0f17b681e3bd2d05819c18b8798bf0f29551bf37607d7f4085c010132f6653"
+  },
+  "forecast_races": 24,
+  "forecast_horses": 338,
+  "card_only_races": 0,
+  "official_sources": 592,
+  "role_values": 1340,
+  "source_from": "2026-11-28T09:01:59+09:00",
+  "source_to": "2026-11-28T09:04:17+09:00",
+  "passed_strict": true
+}

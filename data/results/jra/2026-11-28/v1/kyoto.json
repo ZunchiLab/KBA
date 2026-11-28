@@ -1,0 +1,525 @@
+{
+  "schema_version": "kba.results/1",
+  "authority": "jra",
+  "date_jst": "2026-11-28",
+  "venue_key": "kyoto",
+  "forecast_ref": {
+    "file": "predictions/report_20261128_jra_predictions_v1.json",
+    "version": "v1",
+    "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
+    "hash_method": "utf8-no-bom-lf-sha256"
+  },
+  "updated_at": "2026-11-28T09:14:03+09:00",
+  "last_poll_at": "2026-11-28T09:14:03+09:00",
+  "published_at": null,
+  "races": [
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r1",
+      "race_no": 1,
+      "start_at": "2026-11-28T10:05:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r2",
+      "race_no": 2,
+      "start_at": "2026-11-28T10:35:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r3",
+      "race_no": 3,
+      "start_at": "2026-11-28T11:05:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r4",
+      "race_no": 4,
+      "start_at": "2026-11-28T11:35:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r5",
+      "race_no": 5,
+      "start_at": "2026-11-28T12:25:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r6",
+      "race_no": 6,
+      "start_at": "2026-11-28T12:55:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r7",
+      "race_no": 7,
+      "start_at": "2026-11-28T13:25:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r8",
+      "race_no": 8,
+      "start_at": "2026-11-28T13:55:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r9",
+      "race_no": 9,
+      "start_at": "2026-11-28T14:31:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r10",
+      "race_no": 10,
+      "start_at": "2026-11-28T15:05:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r11",
+      "race_no": 11,
+      "start_at": "2026-11-28T15:40:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    },
+    {
+      "race_uid": "jra-2026-11-28-kyoto-r12",
+      "race_no": 12,
+      "start_at": "2026-11-28T16:15:00+09:00",
+      "status": "not_started",
+      "official_confirmed": false,
+      "source": null,
+      "source_checked_at": null,
+      "rows_complete": false,
+      "rows": [],
+      "payouts": [],
+      "payouts_status": {},
+      "refunds": [],
+      "refund_status": "unconfirmed",
+      "refresh_error": null
+    }
+  ],
+  "market": {
+    "1": {
+      "snapshots": [
+        {
+          "checked_at": "2026-11-28T09:14:05+09:00",
+          "page_time": "発走時刻： 10時05分",
+          "runners": [
+            {
+              "number": 1,
+              "win": 12.2,
+              "status": "出走",
+              "body": "474(+12)",
+              "jockey": "秋山 稔樹"
+            },
+            {
+              "number": 2,
+              "win": 46.4,
+              "status": "出走",
+              "body": "472(-2)",
+              "jockey": "▲森田 誠也"
+            },
+            {
+              "number": 3,
+              "win": 167.1,
+              "status": "出走",
+              "body": "462(+2)",
+              "jockey": "加藤 祥太"
+            },
+            {
+              "number": 4,
+              "win": 23.8,
+              "status": "出走",
+              "body": "508(+4)",
+              "jockey": "▲和田 陽希"
+            },
+            {
+              "number": 5,
+              "win": 20.2,
+              "status": "出走",
+              "body": "462(-6)",
+              "jockey": "幸 英明"
+            },
+            {
+              "number": 6,
+              "win": 27.2,
+              "status": "出走",
+              "body": "440(0)",
+              "jockey": "吉村 誠之助"
+            },
+            {
+              "number": 7,
+              "win": 18.9,
+              "status": "出走",
+              "body": "490(+14)",
+              "jockey": "菱田 裕二"
+            },
+            {
+              "number": 8,
+              "win": 96.1,
+              "status": "出走",
+              "body": "448(+6)",
+              "jockey": "荻野 琢真"
+            },
+            {
+              "number": 9,
+              "win": 66.5,
+              "status": "出走",
+              "body": "436(+8)",
+              "jockey": "田口 貫太"
+            },
+            {
+              "number": 10,
+              "win": 2.7,
+              "status": "出走",
+              "body": "466(+2)",
+              "jockey": "J.モレイラ"
+            },
+            {
+              "number": 11,
+              "win": 22.8,
+              "status": "出走",
+              "body": "444(0)",
+              "jockey": "☆田山 旺佑"
+            },
+            {
+              "number": 12,
+              "win": 6.8,
+              "status": "出走",
+              "body": "532(+6)",
+              "jockey": "坂井 瑠星"
+            },
+            {
+              "number": 13,
+              "win": 28.7,
+              "status": "出走",
+              "body": "482(+4)",
+              "jockey": "富田 暁"
+            },
+            {
+              "number": 14,
+              "win": 63.6,
+              "status": "出走",
+              "body": "468(+14)",
+              "jockey": "亀田 温心"
+            },
+            {
+              "number": 15,
+              "win": 3.1,
+              "status": "出走",
+              "body": "498(+2)",
+              "jockey": "C.デムーロ"
+            },
+            {
+              "number": 16,
+              "win": 88.0,
+              "status": "出走",
+              "body": "472(+6)",
+              "jockey": "松若 風馬"
+            }
+          ],
+          "tickets": [
+            {
+              "kind": "wide",
+              "numbers": [
+                10,
+                12
+              ],
+              "lower": 3.0,
+              "upper": 3.9,
+              "minimum": 2.4,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070120261128Z/97"
+                },
+                "retrieved_at": "2026-11-28T09:14:05+09:00",
+                "raw_sha256": "80c0a02b0ea9e3781c25c05c1b66b08cc3cd56e4e1aa0427f41ec5e41543f9d1",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/80c0a02b0ea9e3781c25c05c1b66b08cc3cd56e4e1aa0427f41ec5e41543f9d1.raw.html",
+                "encoding": "cp932"
+              }
+            },
+            {
+              "kind": "wide",
+              "numbers": [
+                10,
+                15
+              ],
+              "lower": 1.7,
+              "upper": 2.0,
+              "minimum": 2.4,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070120261128Z/97"
+                },
+                "retrieved_at": "2026-11-28T09:14:05+09:00",
+                "raw_sha256": "80c0a02b0ea9e3781c25c05c1b66b08cc3cd56e4e1aa0427f41ec5e41543f9d1",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/80c0a02b0ea9e3781c25c05c1b66b08cc3cd56e4e1aa0427f41ec5e41543f9d1.raw.html",
+                "encoding": "cp932"
+              }
+            }
+          ],
+          "source": {
+            "provider": "JRA",
+            "url": "https://jra.jp/JRADB/accessO.html",
+            "method": "POST",
+            "request_fields": {
+              "cname": "pw151ouS308202605070120261128Z/87"
+            },
+            "retrieved_at": "2026-11-28T09:14:05+09:00",
+            "raw_sha256": "ee23254b7a016770ce8f93343f961468db53a744391a579872a48869b6cdf221",
+            "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/ee23254b7a016770ce8f93343f961468db53a744391a579872a48869b6cdf221.raw.html",
+            "encoding": "cp932"
+          }
+        }
+      ],
+      "attempted_at": "2026-11-28T09:14:03+09:00",
+      "error": null
+    },
+    "2": {
+      "snapshots": [
+        {
+          "checked_at": "2026-11-28T09:14:05+09:00",
+          "page_time": "発走時刻： 10時35分",
+          "runners": [
+            {
+              "number": 1,
+              "win": 9.3,
+              "status": "出走",
+              "body": "",
+              "jockey": "◇永島 まなみ"
+            },
+            {
+              "number": 2,
+              "win": 57.4,
+              "status": "出走",
+              "body": "",
+              "jockey": "菱田 裕二"
+            },
+            {
+              "number": 3,
+              "win": 20.6,
+              "status": "出走",
+              "body": "",
+              "jockey": "坂井 瑠星"
+            },
+            {
+              "number": 4,
+              "win": 57.6,
+              "status": "出走",
+              "body": "",
+              "jockey": "▲河原田 菜々"
+            },
+            {
+              "number": 5,
+              "win": 1.7,
+              "status": "出走",
+              "body": "",
+              "jockey": "北村 友一"
+            },
+            {
+              "number": 6,
+              "win": 72.4,
+              "status": "出走",
+              "body": "",
+              "jockey": "秋山 稔樹"
+            },
+            {
+              "number": 7,
+              "win": 5.6,
+              "status": "出走",
+              "body": "",
+              "jockey": "J.モレイラ"
+            },
+            {
+              "number": 8,
+              "win": 7.6,
+              "status": "出走",
+              "body": "",
+              "jockey": "C.デムーロ"
+            },
+            {
+              "number": 9,
+              "win": 14.2,
+              "status": "出走",
+              "body": "",
+              "jockey": "幸 英明"
+            },
+            {
+              "number": 10,
+              "win": 160.3,
+              "status": "出走",
+              "body": "",
+              "jockey": "▲森田 誠也"
+            },
+            {
+              "number": 11,
+              "win": 29.5,
+              "status": "出走",
+              "body": "",
+              "jockey": "松山 弘平"
+            },
+            {
+              "number": 12,
+              "win": 15.2,
+              "status": "出走",
+              "body": "",
+              "jockey": "☆田山 旺佑"
+            }
+          ],
+          "tickets": [
+            {
+              "kind": "wide",
+              "numbers": [
+                5,
+                7
+              ],
+              "lower": 1.6,
+              "upper": 1.8,
+              "minimum": 2.0,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070220261128Z/4C"
+                },
+                "retrieved_at": "2026-11-28T09:14:06+09:00",
+                "raw_sha256": "152b1a1b311d01f912c5a5819c5feabcc7c9820cda74bf3843372152b2c2c286",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/152b1a1b311d01f912c5a5819c5feabcc7c9820cda74bf3843372152b2c2c286.raw.html",
+                "encoding": "cp932"
+              }
+            }
+          ],
+          "source": {
+            "provider": "JRA",
+            "url": "https://jra.jp/JRADB/accessO.html",
+            "method": "POST",
+            "request_fields": {
+              "cname": "pw151ouS308202605070220261128Z/3C"
+            },
+            "retrieved_at": "2026-11-28T09:14:05+09:00",
+            "raw_sha256": "64e4b37be18b2d3adb0573b5cf8ddeaaffa5453d69f5c3851d272524e19b1cd7",
+            "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/64e4b37be18b2d3adb0573b5cf8ddeaaffa5453d69f5c3851d272524e19b1cd7.raw.html",
+            "encoding": "cp932"
+          }
+        }
+      ],
+      "attempted_at": "2026-11-28T09:14:03+09:00",
+      "error": null
+    }
+  }
+}
