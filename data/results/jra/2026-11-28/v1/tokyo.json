@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T10:35:30+09:00",
-  "last_poll_at": "2026-11-28T10:35:30+09:00",
+  "updated_at": "2026-11-28T10:37:45+09:00",
+  "last_poll_at": "2026-11-28T10:37:45+09:00",
   "published_at": null,
   "races": [
     {
@@ -353,8 +353,8 @@
       "race_uid": "jra-2026-11-28-tokyo-r2",
       "race_no": 2,
       "start_at": "2026-11-28T10:20:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -362,13 +362,13 @@
         "request_fields": {
           "cname": "pw01sde0105202605070220261128/77"
         },
-        "retrieved_at": "2026-11-28T10:35:33+09:00",
-        "raw_sha256": "a02eff048b7dd020e07e39adeec34aab0b2e10a89ad8f797b7ced3d249a5c0a5",
-        "raw_file": "data/results/sources/jra/2026-11-28/tokyo/a02eff048b7dd020e07e39adeec34aab0b2e10a89ad8f797b7ced3d249a5c0a5.raw.html",
+        "retrieved_at": "2026-11-28T10:37:48+09:00",
+        "raw_sha256": "3141cbf609eddc39f83819ebee1044aeb6e514ec6e573596bec23d6fb91dc2b7",
+        "raw_file": "data/results/sources/jra/2026-11-28/tokyo/3141cbf609eddc39f83819ebee1044aeb6e514ec6e573596bec23d6fb91dc2b7.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-28T10:35:33+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-28T10:37:48+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 13,
@@ -383,7 +383,10 @@
           "final_win_odds": null,
           "frame": 7,
           "jockey": "W.ビュイック",
-          "corners": []
+          "corners": [
+            3,
+            2
+          ]
         },
         {
           "number": 6,
@@ -391,14 +394,17 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:25.6",
           "margin": "２ 1/2",
           "last_3f": "",
           "final_popularity": "6",
           "final_win_odds": null,
           "frame": 4,
           "jockey": "佐々木 大輔",
-          "corners": []
+          "corners": [
+            1,
+            1
+          ]
         },
         {
           "number": 12,
@@ -406,14 +412,17 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:25.9",
           "margin": "２",
           "last_3f": "",
           "final_popularity": "2",
           "final_win_odds": null,
           "frame": 7,
           "jockey": "横山 武史",
-          "corners": []
+          "corners": [
+            10,
+            9
+          ]
         },
         {
           "number": 8,
@@ -421,14 +430,17 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:25.9",
           "margin": "ハナ",
           "last_3f": "",
           "final_popularity": "5",
           "final_win_odds": null,
           "frame": 5,
           "jockey": "木幡 巧也",
-          "corners": []
+          "corners": [
+            4,
+            4
+          ]
         },
         {
           "number": 7,
@@ -436,14 +448,197 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:26.1",
           "margin": "１",
           "last_3f": "",
           "final_popularity": "7",
           "final_win_odds": null,
           "frame": 4,
           "jockey": "戸崎 圭太",
-          "corners": []
+          "corners": [
+            2,
+            2
+          ]
+        },
+        {
+          "number": 1,
+          "name": "ホーフアイゼン",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:26.4",
+          "margin": "１ 3/4",
+          "last_3f": "",
+          "final_popularity": "3",
+          "final_win_odds": null,
+          "frame": 1,
+          "jockey": "菅原 明良",
+          "corners": [
+            12,
+            12
+          ]
+        },
+        {
+          "number": 3,
+          "name": "ドーンオブホープ",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:26.7",
+          "margin": "２",
+          "last_3f": "",
+          "final_popularity": "10",
+          "final_win_odds": null,
+          "frame": 2,
+          "jockey": "菊沢 一樹",
+          "corners": [
+            4,
+            4
+          ]
+        },
+        {
+          "number": 14,
+          "name": "ホワイトフレアー",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:26.9",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "9",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "原 優介",
+          "corners": [
+            12,
+            14
+          ]
+        },
+        {
+          "number": 5,
+          "name": "ヴォーチェカノーラ",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:27.1",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "8",
+          "final_win_odds": null,
+          "frame": 3,
+          "jockey": "横山 典弘",
+          "corners": [
+            12,
+            12
+          ]
+        },
+        {
+          "number": 11,
+          "name": "ドッカイッチャッテ",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:27.3",
+          "margin": "１ 1/4",
+          "last_3f": "",
+          "final_popularity": "11",
+          "final_win_odds": null,
+          "frame": 6,
+          "jockey": "内田 博幸",
+          "corners": [
+            8,
+            7
+          ]
+        },
+        {
+          "number": 10,
+          "name": "アンヴォルトワ",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:27.8",
+          "margin": "３",
+          "last_3f": "",
+          "final_popularity": "15",
+          "final_win_odds": null,
+          "frame": 6,
+          "jockey": "丹内 祐次",
+          "corners": [
+            10,
+            11
+          ]
+        },
+        {
+          "number": 15,
+          "name": "ミラクルオーラ",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:28.0",
+          "margin": "１ 1/2",
+          "last_3f": "",
+          "final_popularity": "12",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "石川 裕紀人",
+          "corners": [
+            4,
+            4
+          ]
+        },
+        {
+          "number": 4,
+          "name": "ナムラマシュー",
+          "finish": 13,
+          "runner_status": "finished",
+          "official_status_text": "13",
+          "time": "1:28.9",
+          "margin": "５",
+          "last_3f": "",
+          "final_popularity": "14",
+          "final_win_odds": null,
+          "frame": 3,
+          "jockey": "丸田 恭介",
+          "corners": [
+            15,
+            14
+          ]
+        },
+        {
+          "number": 9,
+          "name": "シックスアワーズ",
+          "finish": 14,
+          "runner_status": "finished",
+          "official_status_text": "14",
+          "time": "1:30.1",
+          "margin": "７",
+          "last_3f": "",
+          "final_popularity": "13",
+          "final_win_odds": null,
+          "frame": 5,
+          "jockey": "遠藤 汰月",
+          "corners": [
+            8,
+            8
+          ]
+        },
+        {
+          "number": 2,
+          "name": "アルデシンザン",
+          "finish": 15,
+          "runner_status": "finished",
+          "official_status_text": "15",
+          "time": "1:31.1",
+          "margin": "６",
+          "last_3f": "",
+          "final_popularity": "4",
+          "final_win_odds": null,
+          "frame": 2,
+          "jockey": "A.プーシャン",
+          "corners": [
+            4,
+            9
+          ]
         }
       ],
       "payouts": [
