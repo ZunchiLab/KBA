@@ -9,15 +9,15 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T10:03:17+09:00",
-  "last_poll_at": "2026-11-28T10:03:17+09:00",
+  "updated_at": "2026-11-28T10:05:24+09:00",
+  "last_poll_at": "2026-11-28T10:05:24+09:00",
   "published_at": null,
   "races": [
     {
       "race_uid": "jra-2026-11-28-kyoto-r1",
       "race_no": 1,
       "start_at": "2026-11-28T10:05:00+09:00",
-      "status": "not_started",
+      "status": "pending",
       "official_confirmed": false,
       "source": null,
       "source_checked_at": null,
@@ -3821,6 +3821,80 @@
         }
       ],
       "attempted_at": "2026-11-28T10:01:09+09:00",
+      "error": null
+    },
+    "4": {
+      "snapshots": [
+        {
+          "checked_at": "2026-11-28T10:05:28+09:00",
+          "page_time": "発走時刻： 11時35分",
+          "runners": [
+            {
+              "number": 1,
+              "win": 1.7,
+              "status": "出走",
+              "body": "",
+              "jockey": "小牧 加矢太"
+            },
+            {
+              "number": 2,
+              "win": 10.2,
+              "status": "出走",
+              "body": "",
+              "jockey": "△坂口 智康"
+            },
+            {
+              "number": 3,
+              "win": 8.6,
+              "status": "出走",
+              "body": "",
+              "jockey": "江田 勇亮"
+            },
+            {
+              "number": 4,
+              "win": 7.3,
+              "status": "出走",
+              "body": "",
+              "jockey": "森 一馬"
+            },
+            {
+              "number": 5,
+              "win": 5.3,
+              "status": "出走",
+              "body": "",
+              "jockey": "小野寺 祐太"
+            },
+            {
+              "number": 6,
+              "win": 10.5,
+              "status": "出走",
+              "body": "",
+              "jockey": "大江原 圭"
+            },
+            {
+              "number": 7,
+              "win": 18.0,
+              "status": "出走",
+              "body": "",
+              "jockey": "中村 将之"
+            }
+          ],
+          "tickets": [],
+          "source": {
+            "provider": "JRA",
+            "url": "https://jra.jp/JRADB/accessO.html",
+            "method": "POST",
+            "request_fields": {
+              "cname": "pw151ouS308202605070420261128Z/A6"
+            },
+            "retrieved_at": "2026-11-28T10:05:28+09:00",
+            "raw_sha256": "0eba853abfb8b7b0d41f69a4cde95ea09fd7fc98b38f35a9ac513029b52e99d1",
+            "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/0eba853abfb8b7b0d41f69a4cde95ea09fd7fc98b38f35a9ac513029b52e99d1.raw.html",
+            "encoding": "cp932"
+          }
+        }
+      ],
+      "attempted_at": "2026-11-28T10:05:24+09:00",
       "error": null
     }
   }
