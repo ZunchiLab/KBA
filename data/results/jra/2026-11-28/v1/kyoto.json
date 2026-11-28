@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T15:17:13+09:00",
-  "last_poll_at": "2026-11-28T15:17:13+09:00",
+  "updated_at": "2026-11-28T15:19:23+09:00",
+  "last_poll_at": "2026-11-28T15:19:23+09:00",
   "published_at": null,
   "races": [
     {
@@ -3646,8 +3646,8 @@
       "race_uid": "jra-2026-11-28-kyoto-r10",
       "race_no": 10,
       "start_at": "2026-11-28T15:05:00+09:00",
-      "status": "partial",
-      "official_confirmed": false,
+      "status": "confirmed",
+      "official_confirmed": true,
       "source": {
         "provider": "JRA",
         "url": "https://jra.jp/JRADB/accessS.html",
@@ -3655,13 +3655,13 @@
         "request_fields": {
           "cname": "pw01sde0108202605071020261128/3D"
         },
-        "retrieved_at": "2026-11-28T15:17:15+09:00",
-        "raw_sha256": "bb140a771fbede5ea8b5ec941330336d0e7af2b8742aa0bf6e4a33f2ee4abd39",
-        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/bb140a771fbede5ea8b5ec941330336d0e7af2b8742aa0bf6e4a33f2ee4abd39.raw.html",
+        "retrieved_at": "2026-11-28T15:19:25+09:00",
+        "raw_sha256": "7f12b2564f9afd6341244debffe3007c25aa3d9307acac097f289d1f27008249",
+        "raw_file": "data/results/sources/jra/2026-11-28/kyoto/7f12b2564f9afd6341244debffe3007c25aa3d9307acac097f289d1f27008249.raw.html",
         "encoding": "cp932"
       },
-      "source_checked_at": "2026-11-28T15:17:15+09:00",
-      "rows_complete": false,
+      "source_checked_at": "2026-11-28T15:19:25+09:00",
+      "rows_complete": true,
       "rows": [
         {
           "number": 11,
@@ -3671,7 +3671,7 @@
           "official_status_text": "1",
           "time": "1:21.4",
           "margin": "",
-          "last_3f": "",
+          "last_3f": "32.7",
           "final_popularity": "4",
           "final_win_odds": null,
           "frame": 6,
@@ -3687,9 +3687,9 @@
           "finish": 2,
           "runner_status": "finished",
           "official_status_text": "2",
-          "time": "",
+          "time": "1:21.4",
           "margin": "クビ",
-          "last_3f": "",
+          "last_3f": "32.8",
           "final_popularity": "1",
           "final_win_odds": null,
           "frame": 8,
@@ -3705,9 +3705,9 @@
           "finish": 3,
           "runner_status": "finished",
           "official_status_text": "3",
-          "time": "",
+          "time": "1:21.4",
           "margin": "ハナ",
-          "last_3f": "",
+          "last_3f": "34.2",
           "final_popularity": "13",
           "final_win_odds": null,
           "frame": 2,
@@ -3723,9 +3723,9 @@
           "finish": 4,
           "runner_status": "finished",
           "official_status_text": "4",
-          "time": "",
+          "time": "1:21.7",
           "margin": "１ 3/4",
-          "last_3f": "",
+          "last_3f": "33.4",
           "final_popularity": "7",
           "final_win_odds": null,
           "frame": 3,
@@ -3741,9 +3741,9 @@
           "finish": 5,
           "runner_status": "finished",
           "official_status_text": "5",
-          "time": "",
+          "time": "1:21.9",
           "margin": "３／４",
-          "last_3f": "",
+          "last_3f": "33.0",
           "final_popularity": "12",
           "final_win_odds": null,
           "frame": 6,
@@ -3751,6 +3751,186 @@
           "corners": [
             6,
             7
+          ]
+        },
+        {
+          "number": 12,
+          "name": "キタサンダムール",
+          "finish": 6,
+          "runner_status": "finished",
+          "official_status_text": "6",
+          "time": "1:21.9",
+          "margin": "クビ",
+          "last_3f": "32.8",
+          "final_popularity": "5",
+          "final_win_odds": null,
+          "frame": 7,
+          "jockey": "田山 旺佑",
+          "corners": [
+            8,
+            8
+          ]
+        },
+        {
+          "number": 14,
+          "name": "トーホウディアス",
+          "finish": 7,
+          "runner_status": "finished",
+          "official_status_text": "7",
+          "time": "1:22.0",
+          "margin": "１／２",
+          "last_3f": "33.2",
+          "final_popularity": "14",
+          "final_win_odds": null,
+          "frame": 8,
+          "jockey": "酒井 学",
+          "corners": [
+            6,
+            6
+          ]
+        },
+        {
+          "number": 3,
+          "name": "サンタンカ",
+          "finish": 8,
+          "runner_status": "finished",
+          "official_status_text": "8",
+          "time": "1:22.0",
+          "margin": "クビ",
+          "last_3f": "32.6",
+          "final_popularity": "2",
+          "final_win_odds": null,
+          "frame": 2,
+          "jockey": "武 豊",
+          "corners": [
+            13,
+            12
+          ]
+        },
+        {
+          "number": 8,
+          "name": "フライングブレード",
+          "finish": 9,
+          "runner_status": "finished",
+          "official_status_text": "9",
+          "time": "1:22.1",
+          "margin": "クビ",
+          "last_3f": "32.8",
+          "final_popularity": "11",
+          "final_win_odds": null,
+          "frame": 5,
+          "jockey": "浜中 俊",
+          "corners": [
+            11,
+            12
+          ]
+        },
+        {
+          "number": 4,
+          "name": "セブンマジシャン",
+          "finish": 10,
+          "runner_status": "finished",
+          "official_status_text": "10",
+          "time": "1:22.3",
+          "margin": "１ 1/4",
+          "last_3f": "33.2",
+          "final_popularity": "10",
+          "final_win_odds": null,
+          "frame": 3,
+          "jockey": "斎藤 新",
+          "corners": [
+            8,
+            8
+          ]
+        },
+        {
+          "number": 6,
+          "name": "サクセスアイ",
+          "finish": 11,
+          "runner_status": "finished",
+          "official_status_text": "11",
+          "time": "1:22.4",
+          "margin": "１／２",
+          "last_3f": "32.9",
+          "final_popularity": "8",
+          "final_win_odds": null,
+          "frame": 4,
+          "jockey": "藤懸 貴志",
+          "corners": [
+            14,
+            14
+          ]
+        },
+        {
+          "number": 13,
+          "name": "シャイフ",
+          "finish": 12,
+          "runner_status": "finished",
+          "official_status_text": "12",
+          "time": "1:22.4",
+          "margin": "クビ",
+          "last_3f": "33.1",
+          "final_popularity": "3",
+          "final_win_odds": null,
+          "frame": 7,
+          "jockey": "C.デムーロ",
+          "corners": [
+            11,
+            10
+          ]
+        },
+        {
+          "number": 9,
+          "name": "ウナギノボリ",
+          "finish": 13,
+          "runner_status": "finished",
+          "official_status_text": "13",
+          "time": "1:22.5",
+          "margin": "クビ",
+          "last_3f": "33.3",
+          "final_popularity": "15",
+          "final_win_odds": null,
+          "frame": 5,
+          "jockey": "秋山 稔樹",
+          "corners": [
+            10,
+            10
+          ]
+        },
+        {
+          "number": 7,
+          "name": "アイルシャイン",
+          "finish": 14,
+          "runner_status": "finished",
+          "official_status_text": "14",
+          "time": "1:22.5",
+          "margin": "ハナ",
+          "last_3f": "33.0",
+          "final_popularity": "6",
+          "final_win_odds": null,
+          "frame": 4,
+          "jockey": "古川 吉洋",
+          "corners": [
+            14,
+            14
+          ]
+        },
+        {
+          "number": 1,
+          "name": "コスモアディラート",
+          "finish": 15,
+          "runner_status": "finished",
+          "official_status_text": "15",
+          "time": "1:22.5",
+          "margin": "ハナ",
+          "last_3f": "34.1",
+          "final_popularity": "9",
+          "final_win_odds": null,
+          "frame": 1,
+          "jockey": "国分 優作",
+          "corners": [
+            2,
+            2
           ]
         }
       ],
