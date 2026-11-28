@@ -9,8 +9,8 @@
     "sha256": "4a200754d00348c0316071d2a34f269d5751f791fbfb085a2bd74f4402cc33e6",
     "hash_method": "utf8-no-bom-lf-sha256"
   },
-  "updated_at": "2026-11-28T10:18:04+09:00",
-  "last_poll_at": "2026-11-28T10:18:04+09:00",
+  "updated_at": "2026-11-28T10:20:13+09:00",
+  "last_poll_at": "2026-11-28T10:20:13+09:00",
   "published_at": null,
   "races": [
     {
@@ -4850,9 +4850,185 @@
             "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/9be60ac03033d833ebc12ed2fb4148f336d902bc6dd30bc4e6c171723153dc82.raw.html",
             "encoding": "cp932"
           }
+        },
+        {
+          "checked_at": "2026-11-28T10:20:15+09:00",
+          "page_time": "発走時刻： 11時05分",
+          "runners": [
+            {
+              "number": 1,
+              "win": 5.0,
+              "status": "出走",
+              "body": "454(+4)",
+              "jockey": "C.デムーロ"
+            },
+            {
+              "number": 2,
+              "win": 8.6,
+              "status": "出走",
+              "body": "492(+4)",
+              "jockey": "岩田 望来"
+            },
+            {
+              "number": 3,
+              "win": 41.7,
+              "status": "出走",
+              "body": "456(-6)",
+              "jockey": "西村 淳也"
+            },
+            {
+              "number": 4,
+              "win": 45.5,
+              "status": "出走",
+              "body": "458(+4)",
+              "jockey": "富田 暁"
+            },
+            {
+              "number": 5,
+              "win": 26.3,
+              "status": "出走",
+              "body": "454(+8)",
+              "jockey": "鮫島 克駿"
+            },
+            {
+              "number": 6,
+              "win": 13.0,
+              "status": "出走",
+              "body": "476(0)",
+              "jockey": "池添 謙一"
+            },
+            {
+              "number": 7,
+              "win": 6.9,
+              "status": "出走",
+              "body": "468(+4)",
+              "jockey": "松山 弘平"
+            },
+            {
+              "number": 8,
+              "win": 30.9,
+              "status": "出走",
+              "body": "442(+6)",
+              "jockey": "川又 賢治"
+            },
+            {
+              "number": 9,
+              "win": 94.7,
+              "status": "出走",
+              "body": "434(-4)",
+              "jockey": "太宰 啓介"
+            },
+            {
+              "number": 10,
+              "win": 11.5,
+              "status": "出走",
+              "body": "468(0)",
+              "jockey": "坂井 瑠星"
+            },
+            {
+              "number": 11,
+              "win": 19.2,
+              "status": "出走",
+              "body": "482(+4)",
+              "jockey": "浜中 俊"
+            },
+            {
+              "number": 12,
+              "win": 115.1,
+              "status": "出走",
+              "body": "418(-2)",
+              "jockey": "斎藤 新"
+            },
+            {
+              "number": 13,
+              "win": 78.6,
+              "status": "出走",
+              "body": "444(-4)",
+              "jockey": "松若 風馬"
+            },
+            {
+              "number": 14,
+              "win": 48.6,
+              "status": "出走",
+              "body": "492(-6)",
+              "jockey": "川須 栄彦"
+            },
+            {
+              "number": 15,
+              "win": 2.7,
+              "status": "出走",
+              "body": "484(0)",
+              "jockey": "J.モレイラ"
+            },
+            {
+              "number": 16,
+              "win": 24.8,
+              "status": "出走",
+              "body": "466(0)",
+              "jockey": "北村 友一"
+            }
+          ],
+          "tickets": [
+            {
+              "kind": "wide",
+              "numbers": [
+                1,
+                15
+              ],
+              "lower": 3.0,
+              "upper": 3.3,
+              "minimum": 2.4,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070320261128Z/01"
+                },
+                "retrieved_at": "2026-11-28T10:20:16+09:00",
+                "raw_sha256": "0b19aff05b133397fdb72ded82770d9e5a2219508ddea7972517b27164a34b28",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/0b19aff05b133397fdb72ded82770d9e5a2219508ddea7972517b27164a34b28.raw.html",
+                "encoding": "cp932"
+              }
+            },
+            {
+              "kind": "wide",
+              "numbers": [
+                7,
+                15
+              ],
+              "lower": 3.7,
+              "upper": 4.2,
+              "minimum": 2.4,
+              "source": {
+                "provider": "JRA",
+                "url": "https://jra.jp/JRADB/accessO.html",
+                "method": "POST",
+                "request_fields": {
+                  "cname": "pw155ouS308202605070320261128Z/01"
+                },
+                "retrieved_at": "2026-11-28T10:20:16+09:00",
+                "raw_sha256": "0b19aff05b133397fdb72ded82770d9e5a2219508ddea7972517b27164a34b28",
+                "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/0b19aff05b133397fdb72ded82770d9e5a2219508ddea7972517b27164a34b28.raw.html",
+                "encoding": "cp932"
+              }
+            }
+          ],
+          "source": {
+            "provider": "JRA",
+            "url": "https://jra.jp/JRADB/accessO.html",
+            "method": "POST",
+            "request_fields": {
+              "cname": "pw151ouS308202605070320261128Z/F1"
+            },
+            "retrieved_at": "2026-11-28T10:20:15+09:00",
+            "raw_sha256": "2820f998cbdd6f4d6f5ebb03b84aa021350e0d5f9cd97e49ac27a43b41772e02",
+            "raw_file": "data/results/sources/jra/2026-11-28/kyoto_market/2820f998cbdd6f4d6f5ebb03b84aa021350e0d5f9cd97e49ac27a43b41772e02.raw.html",
+            "encoding": "cp932"
+          }
         }
       ],
-      "attempted_at": "2026-11-28T10:13:50+09:00",
+      "attempted_at": "2026-11-28T10:20:13+09:00",
       "error": null
     },
     "4": {
